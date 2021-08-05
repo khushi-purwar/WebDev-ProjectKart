@@ -1,0 +1,92 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: black;
+  }
+
+ 
+h1 {
+  margin-top: 20px;
+  color: rgb(0, 55, 128);
+  font-size: 56px;
+  text-shadow: 10px 4px 2px rgba(255, 230, 0, 0.2);
+}
+  .search {
+     margin: 38px auto;
+     width: 28%;
+     width: 25%;
+     border: 2px solid rgb(145, 145, 145);
+     border-radius: 20px;
+  }
+
+  input {
+    border-radius: 20px;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    transition: 0.3s ease-in;
+  }
+
+   input:focus{
+     box-shadow: 10px 10px 20px 10px rgba(0, 60, 102, 0.1);
+   }
+
+   .weather_body {
+    margin: 0px auto;
+    width: 26%;
+    padding: 1px;
+    border-radius: 20px;
+    height: 420px;
+    box-shadow: 10px 10px 20px 10px rgba(112, 102, 102, 0.2);
+    background-image: linear-gradient( to right, rgb(204, 213, 252) , rgb(201, 253, 203)); 
+    margin-bottom: 32px;  
+}
+
+
+  .city {
+   margin-top: 10px;
+    font-size: 35px;
+    font-weight: 450;
+    margin-bottom: 10px;
+  }
+  
+  .date {
+    font-size: 18px;
+  }
+  
+   .tmp {
+    font-size: 102px;
+    font-weight: 900;
+    margin-top: 15px;
+    text-shadow: 5px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+   .tmp span {
+    font-weight: 500;
+  }
+  
+   .visiblity {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 650;
+    font-style: oblique;
+  }
+  
+  .min_max{
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    
+  }
