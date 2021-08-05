@@ -34,3 +34,7 @@ d. BMI >=30  -> <b> Obesity  </b>
 
 
 <img src="./Assets/media/demo.gif" />
+
+## Visit Website
+
+https://khushi-purwar.github.io/Web-Dev-ProjectKart/BMI%20Calculator/
