@@ -30,3 +30,7 @@ After entering the values in the input box, UI lokks like:
 ## Live Demo
 
 <img src="./Assets/media/demo.gif" />
+
+## Visit Website
+
+https://khushi-purwar.github.io/Web-Dev-ProjectKart/Tip%20Calculator/
