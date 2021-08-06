@@ -16,3 +16,7 @@ Visit Website: https://type.fit/api/quotes
 
 ## ScreenShot
 <img src="./Assets/media/ss.png" />
+
+## Visit Website
+
+https://khushi-purwar.github.io/Web-Dev-ProjectKart/Quote%20Generator/
