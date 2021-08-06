@@ -22,3 +22,7 @@ It also maintains the heads and tails count. We can also reset the count of head
 ## Live Demo
 
 <img src="./Assets/media/demo.gif" />
+
+## Visit Website
+
+https://khushi-purwar.github.io/Web-Dev-ProjectKart/Coin%20Toss%20App/
