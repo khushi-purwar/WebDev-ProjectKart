@@ -1,0 +1,79 @@
+body{
+    background-color: #03193a;
+}
+
+
+.container{
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translateX(-50%)  translateY(-50%);
+    border-radius: 20px;
+}
+
+h1{
+    position: absolute;
+    top: -73px;
+    left: 50%;
+    width: 300px;
+    transform: translateX(-50%);
+    background-color: #FF851B;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: 100;
+    padding: 4px;
+}
+
+.wrapper{
+    padding: 10px;
+    padding-left: 50px;
+}
+
+input , select{
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #0074D9;
+    padding:8px;
+}
+
+input:focus, select:focus{
+    border: 1px solid #0074D9;
+    outline: none;
+}
+
+select{
+    width: 85% !important; 
+    background: none;
+}
+
+button{
+    margin: 20px auto;
+    width: 150px;
+    padding: 10px;
+    background-color: #39CCCC;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tip{
+    text-align: center;
+    font-size: 18px;
+    display: none;
+    font-size: 24px;
+}
+
+.tip p{
+    font-weight: bold;
+}
+
+.tip span{
+    color: rgb(85, 141, 1);
+    font-weight: 800;
+}
