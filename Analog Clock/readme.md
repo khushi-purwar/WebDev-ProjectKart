@@ -15,4 +15,4 @@ It is a circular faced clock with the numbers one to twelve and three hands, sho
 <img src="./Assets/media/ss1.png" />
 
 ## Visit Website
-https://khushi-purwar.github.io/Web-Dev-ProjectKart/Analog%20Clock/
+https://khushi-purwar.github.io/Web-Dev-ProjectKart/Analog%20Clock/index.html
