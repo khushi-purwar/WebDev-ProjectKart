@@ -1,4 +1,4 @@
-<img src="https://github.com/khushi-purwar/Web-Dev-ProjectKart/blob/master/thumbnail.png" height="500px" width="100%" />
+<img src="https://github.com/khushi-purwar/Web-Dev-ProjectKart/blob/master/thumbnail.png" height="80%" width="80%" />
 
 This repository contains different types of project vary from beginner level to advanced level.
 # Project List
