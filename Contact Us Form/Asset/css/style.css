@@ -1,0 +1,46 @@
+:root {
+    --formColor: #ee9b00;
+    --backgroundColor: #1d3557;
+    --buttonColor: #eae2b7;
+    --inputColor: #fefae0;
+}
+
+body {
+    background-color: var(--backgroundColor);
+}
+
+.form-container{
+    width: 37%;
+    margin: auto;
+    border: solid var(--formColor) .1rem;
+    background-color: var(--formColor);
+    padding: 2rem;
+    transform: translate(0%, 40%);
+    border-radius: .35rem;
+    box-shadow: 3px 3px black;
+}
+
+.form-container h1 {
+    text-align: center;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: .03rem;
+    background: -webkit-linear-gradient(#012a4a,#8c7da0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.row {
+    margin-bottom: 1rem;
+}
+
+.col-auto button {
+    background-color: var(--buttonColor);
+}
+
+.col-auto button:hover{
+    background: -webkit-linear-gradient(#fcbf49, #eae2b7);
+}
+
+.form-control {
+    background-color: var(--inputColor);
+}
