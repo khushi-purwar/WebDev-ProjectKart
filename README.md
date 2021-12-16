@@ -12,6 +12,14 @@
   <li>In the assets folder, there are two folders, css and media. css folder contains only CSS files & media folder contain only media files of the main website.</li>
   <li>In the script folder, all the script files will be there.</li>
 </ul>
+
+## This Project is a part of the following Open Source Program
+<p align="center">
+<a href="https://icc-techsahead.netlify.app/"  target="_blank"> 
+  <img src="images/icc.png" alt="ICC" width="300"/>
+</a>
+  
+</p>
   
 ## How To Contribute ? 👷 
 
