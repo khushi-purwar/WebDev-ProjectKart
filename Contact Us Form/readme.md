@@ -2,7 +2,7 @@
 
 ## About the Project
 
-It is a circular faced clock with the numbers one to twelve and three hands, shorter one to measure hours , longer one to measure minutes and red one for seconds.
+This is contact us form.
 
 ## Tech Stacks Used
 
@@ -10,4 +10,4 @@ It is a circular faced clock with the numbers one to twelve and three hands, sho
 ![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)
 
 ## Screenshots
-<img src="./Assets/media/Screenshot.png" />
+![screenshot](https://github.com/sarazm2000/WebDev-ProjectKart/blob/contactUs/Contact%20Us%20Form/Asset/media/Screenshot.png)
