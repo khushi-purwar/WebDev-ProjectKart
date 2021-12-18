@@ -25,4 +25,4 @@ When user select the correct block, the game over and ask to play again.
 
 ## Visit Website
 
-https://abaran803.github.io/Web-Dev-ProjectKart/Headlines/
+https://abaran803.github.io/WebDev-ProjectKart/Headlines/
