@@ -4,7 +4,7 @@
 }
 
 body {
-    background: url("./media/image.jpg");
+    background: url("../media/image.jpg");
     background-size: cover;
 }
 
