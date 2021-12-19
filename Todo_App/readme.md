@@ -33,4 +33,4 @@ After entering the values in the input box, UI lokks like:
 
 ## Visit Website
 
-https://khushi-purwar.github.io/Web-Dev-ProjectKart/Tip%20Calculator/
+https://khushi-purwar.github.io/Web-Dev-ProjectKart/Todo_App/
