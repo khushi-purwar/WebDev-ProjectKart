@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("../media/image.jpg");
+    background-size: cover;
+}
+
+#userInput {
+    display: flex;
+    width: 50vw;
+    margin: auto;
+    justify-content: space-between;
+    margin: 5rem auto;
+    background-color: lightblue;
+    padding: 2.5rem 4rem;
+}
+
+#getRandom {
+    padding: 1rem 1.5rem;
+}
+
+#selectedCountry {
+    padding: 0rem 4rem;
+}
+
+.news {
+    padding: 1rem;
+    width: 80vw;
+    margin: auto;
+    font-weight: 600;
+    text-align: center;
+}
