@@ -1,6 +1,6 @@
-# Tip Calculator
+# Todo App
 
-## Overview of Tip Calculator
+## Overview of Todo App
 
 > _A simple website build using HTML, CSS & JavaScript to use the todo app online._
 
