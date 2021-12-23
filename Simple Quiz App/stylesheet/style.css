@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* text-decoration: none; */
+    color: whitesmoke;
+    font-family: Roboto,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: aquamarine;
+    width: 100vw;
+}
+
+
+/* ******** custom coding of css starts from here ********  */
