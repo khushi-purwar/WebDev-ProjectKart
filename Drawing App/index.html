@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing App</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--creating a canvas to draw-->
+    <canvas id="canvas" width="800" height="500"></canvas>
+
+    <!--A Drawing Toolbox containing buttons to choose size, color and clear drawing-->
+    <div class="toolbox">
+        <button id="decrease">-</button>
+        <span id="size" style="font-family: 'Itim', cursive;">5</span>
+        <button id="increase">+</button>
+        <input type="color" id="color">
+        <button id="clear">
+            <p style="font-family: 'Itim', cursive;">C</p>
+        </button>
+        
+    </div>
+
+    <!--Connecting to JavaScript file-->
+    <script src="script.js"></script>
+</body>
+</html>
