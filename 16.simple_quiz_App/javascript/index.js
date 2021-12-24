@@ -1,33 +1,13 @@
-// alert("Inital setup");
 
-
-// count down part starts from here 
-let Time_Per_Qeustion = document.querySelector("#Time_Per_Qeustion")
-let Total_Time = document.querySelector("#Total_Time");
-
-
-let timeStart = 0;
-let timePerQ = 300;
-
-console.log(timeStart);
-// alert(timeStart)
-
-
-// count down part ends from here 
-
-
-// form creation part starts from here
-
-let qNumber = 1;
 let questionState = ["Bihar","India","Jharkhand","Mizoram","Gujrat"]
-let answerString = ["Patna","Delhi","Ranchi","Aizwal","Ahamdabad"];
+let answerString = ["Patna","New Delhi","Ranchi","Aizwal","Ahamdabad"];
 let optionString = [
-    ["Bhagalpur",`${answerString[0]}`,"Gaya","Munger"] ,
-    ["Noida",`${answerString[1]}`,"India Gate","Kolkata"] ,
-    [`${answerString[2]}`,"Dhanbaad","Tata","Jamsedpur"] ,
-    ["Kolasib","Imphal","Itanagar",`${answerString[4]}`] ,
-    ["Rohtak","Chandigadh","kanpur",`${answerString[5]}`]
-];
+                ["Bhagalpur",`${answerString[0]}`,"Gaya","Munger"] ,
+                ["Noida",`${answerString[1]}`,"India Gate","Kolkata"] ,
+                [`${answerString[2]}`,"Dhanbaad","Tata","Jamsedpur"] ,
+                ["Kolasib","Imphal",`${answerString[3]}`,"Itanagar"] ,
+                ["Rohtak","Chandigadh","kanpur",`${answerString[4]}`]
+            ];
 
 let questionString=[
     ` What is the Capital City of ${questionState[0]} ?` ,
@@ -37,26 +17,17 @@ let questionString=[
     ` What is the Capital City of ${questionState[4]}?` ,
 ];
 
-// for(i=0;i<5;++i){
-    //     alert(`
-    //         ${questionState[i]}
-    //         ${answerString[i]}
-    //         ${optionString[i]}
-    //         ${questionString[i]}
-    //     `);
-    // }
-    
-    
-    let radioBtn = document.getElementsByName("answer");
-    let outputFinel = document.querySelector("#outputFinel");
-    
-    let i=0;
-    
-    
-    let output = "";
-    
-    for(i=0;i<5;++i){
-        output += `
+let userName = prompt("Enter your random UserName?");
+// userOption = userOption.toUpperCase();
+
+// if(userOption[0]!='Y'){
+//     return;
+// }
+
+let QuestionSet =[];
+
+for(let i=0;i<questionString.length;++i){
+    QuestionSet += [`
         <div class="question">
         
         <h4>${i+1}. ${questionString[i]} </h4>
@@ -74,75 +45,86 @@ let questionString=[
         </div>
         
         <p id="outputFinel"></p>
-        `;
+        `];
+}
+
+console.log(QuestionSet);
+
+// taking id for submit button . 
+let sumbmitBtn = document.querySelector("#submit");
+
+sumbmitBtn.addEventListener("click",()=>{
+    // call stop time counter to stop the program execution
+    stopTimeCounter(2);
+});
+
+
+// taking id of question div where we will show the question.
+let questionDiv = document.querySelector("#questionDiv");
+questionDiv.innerHTML = QuestionSet;
+
+let timeLeftForQuiz = 18;
+let totalTime = 0;
+// taking id where we will show the timing counter
+const quizCounterId = document.querySelector("#Total_Time");
+quizCounterId.innerHTML = timeLeftForQuiz;
+const Time_Per_Qeustion = document.querySelector("#Time_Per_Qeustion");
+
+let timeCounter = setInterval(() => {
+    // console.log(timeLeftForQuiz);
+    quizCounterId.innerHTML = timeLeftForQuiz;
+    timeLeftForQuiz--;
+
+    Time_Per_Qeustion.innerHTML = totalTime;
+    totalTime++;
+    
+    if(timeLeftForQuiz == -2){
+        stopTimeCounter(1);
     }
-    
-    
-    
-    
-    
-    // form creation part ends from here
-    let questionDiv = document.querySelector("#questionDiv");
-    
-    questionDiv.innerHTML = output;
-    
-    function repeat(){
-            timeStart++;
-            Total_Time.innerHTML = timeStart;
-        
-            timePerQ--;
-            Time_Per_Qeustion.innerHTML = timePerQ;
-            
-        }
-        
-        let settime = setInterval(repeat, 1000);
+}, 1000);
+
+// creating stop timing counter to end the quiz.
+function stopTimeCounter(time){
+    if(time==2){
+        alert(`Congratulations!! ${userName} ,
+         you have completed your quiz in ${totalTime} sec.`)
+    }
+    else{
+        alert(`oops! ${userName} time is up for the quiz...`);
+    }
+    clearInterval(timeCounter);
+
+    // resultOfQuiz function call;
+    resultOfQuiz();
+}
 
 
-        // function to calculate result 
-        // let rightAnswer = 0;
-        // function calculateResult(){
-        //     for(i=0;i<5;++i){
-        //         let ans = "answer"+i;
-        //         let radioBtn = document.getElementsByName("ans")
-        //         for(j=0;j<radioBtn.length;++j){
-        //             if(radioBtn[j].checked){
-        //                 if(radioBtn[j].value == answerString[i]){
-        //                     rightAnswer++;
-        //                 }
-        //             }
-        //         }
-        //     }
-        // };
-        
-let submitBtn = document.querySelector("#submit")
-submitBtn.addEventListener("click",()=>{
+function resultOfQuiz(){
+    let qName="";
     let rightAnswer =0;
-    for(i=0;i<5;++i){
-        let ans = "answer"+i;
-        console.log(ans," ",i);
-        let radioBtn = document.getElementsByName("ans")
-        for(j=0;j<radioBtn.length;++j){
-            if(radioBtn[j].checked){
-                if(radioBtn[j].value == answerString[i]){
-                    rightAnswer++;
+    for(let i=0;i<5;++i){
+        qName = document.getElementsByName(`answer${i}`);
+        // console.log(qName);
+        for(let j=0;j<4;++j){
+            if(qName[j].checked){
+                if(qName[j].value == answerString[i]){
+                    ++rightAnswer;
+                    console.log(qName[j]);
+                    console.log(answerString[i],rightAnswer);
                 }
             }
         }
     }
-    // console.log(rightAnswer);
-    alert("ram");
-    alert(rightAnswer);
-});
+    alert(`${userName} ,
+            you have answered ${rightAnswer} q. Correctly. in ${totalTime} sec.
+             Thankyou So much for taking this quiz.
+    `);
 
+    
+}
 
-
-// submitBtn.addEventListener("click",()=>{
-//     let outString = "radio selected value is : "
-//     for(i=0; i<radioBtn.length;++i){
-//         if(radioBtn[i].checked){
-//             outString+=radioBtn[i].value;
-//             outputFinel.innerHTML = outString;
-//         }
-//     }
-// });
-
+    
+    
+    
+    
+    
