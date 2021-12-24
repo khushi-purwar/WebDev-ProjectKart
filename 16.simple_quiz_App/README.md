@@ -12,11 +12,12 @@
 
 Screenshots:
 
-![Stopwatch](./images/ss1)
-![Stopwatch](./images/ss2)
-![Stopwatch](./images/ss3)
-![Stopwatch](./images/ss4)
-![Stopwatch](./images/ss5)
+![Simple_Quiz_App_ss1](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/simple_quiz_app/16.simple_quiz_App/images/ss1.png?raw=true)
+![Simple_Quiz_App_ss2](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/simple_quiz_app/16.simple_quiz_App/images/ss2.png?raw=true)
+![Simple_Quiz_App_ss3](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/simple_quiz_app/16.simple_quiz_App/images/ss3.png?raw=true)
+![Simple_Quiz_App_ss4](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/simple_quiz_app/16.simple_quiz_App/images/ss4.png?raw=true)
+![Simple_Quiz_App_ss5](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/simple_quiz_app/16.simple_quiz_App/images/ss5.png?raw=true)
+
 
 
 
