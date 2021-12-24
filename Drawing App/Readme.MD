@@ -12,4 +12,4 @@ This is a Drawing App with a canvas for drawing, and additional buttons like + (
 
 
 ## Screenshots
-![screenshot]()
+![screenshot](https://github.com/chandu6111/WebDev-ProjectKart/blob/drawing_app/Drawing%20App/Assets/media/screenshot_drawingapp.png)
