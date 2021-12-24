@@ -10,12 +10,15 @@
 body{
     background-color: rgb(11, 82, 58);
     /* width: 100vw; */
+    position: relative;
 }
 
 
 /* ******** custom coding of css starts from here ********  */
 
 header {
+    position: sticky;
+    top: 0;
     height: 100px;
     background: rgb(71, 71, 133);
     display: flex;
@@ -46,7 +49,7 @@ header .circle{
 /* question area starts from here  */
 
 #questionDiv {
-    width: 350px;
+    width: 90%;
     /* height: 500px; */
     background-color: #FFF;
     padding: 20px;
@@ -77,12 +80,12 @@ header .circle{
     color: blue;
 }
 
-#questionDiv #submit{
+#submit{
     /* margin-top: 10px; */
     display: block;
-    font-size: 20px;
+    font-size: 40px;
     padding: 10px 25px;
-    margin: 16px auto;
+    margin: 16px auto 30px 50px;
     color: whitesmoke;
    background-color: blueviolet; 
    border: none;
@@ -92,4 +95,8 @@ input.radio{
     width: 15px;
     height: 15px;
     margin-right: 10px;
+}
+
+#questionDiv #outputFinel{
+    margin-bottom: 30px;
 }
