@@ -1,3 +1,4 @@
+// making dynamic question set
 
 let questionState = ["Bihar","India","Jharkhand","Mizoram","Gujrat"]
 let answerString = ["Patna","New Delhi","Ranchi","Aizwal","Ahamdabad"];
@@ -63,7 +64,7 @@ sumbmitBtn.addEventListener("click",()=>{
 let questionDiv = document.querySelector("#questionDiv");
 questionDiv.innerHTML = QuestionSet;
 
-let timeLeftForQuiz = 18;
+let timeLeftForQuiz = 180;
 let totalTime = 0;
 // taking id where we will show the timing counter
 const quizCounterId = document.querySelector("#Total_Time");
