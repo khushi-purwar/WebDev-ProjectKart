@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* text-decoration: none; */
+    /* color: whitesmoke; */
+    font-family: Roboto,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(11, 82, 58);
+    /* width: 100vw; */
+    position: relative;
+}
+
+
+/* ******** custom coding of css starts from here ********  */
+
+header {
+    position: sticky;
+    top: 0;
+    height: 100px;
+    background: rgb(71, 71, 133);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header h1{
+    color: whitesmoke;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgb(255, 12, 24);
+}
+
+
+header .circle{
+    width: 70px;
+    height: 70px;
+    background-color: whitesmoke;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bolder;
+    border-radius: 50%;
+}
+
+/* question area starts from here  */
+
+#questionDiv {
+    width: 90%;
+    /* height: 500px; */
+    background-color: #FFF;
+    padding: 20px;
+    margin:40px auto 0 auto;
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+#questionDiv h2{
+    width: 130px;
+    margin: 0 auto 10px auto;
+    color: blueviolet;
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+}
+
+#questionDiv h4{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+#questionDiv h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: blue;
+}
+
+#submit{
+    /* margin-top: 10px; */
+    display: block;
+    font-size: 40px;
+    padding: 10px 25px;
+    margin: 16px auto 30px 50px;
+    color: whitesmoke;
+   background-color: blueviolet; 
+   border: none;
+}
+
+input.radio{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+#questionDiv #outputFinel{
+    margin-bottom: 30px;
+}
