@@ -1,6 +1,6 @@
 <img src="https://github.com/khushi-purwar/Web-Dev-ProjectKart/blob/master/thumbnail.png" height="80%" width="80%" />
 
-<h1 align="center" >💻 WEBDEV - PROJECTKART 💻</h1>
+<h1 align="center" >💻 WEBDEV -PROJECTKART 💻</h1>
 
 <h3>Hello Everyone 👋🏻 Glad to see you all here !! I hope everyone is eager to give their best contributions. The repository contains the list of awesome✨ & cool web development beginner-friendly✌️ projects! </h3>
 
