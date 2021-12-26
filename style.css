@@ -15,22 +15,24 @@ body{
 }
 
 main h1{
-    width: 40vw;
+    max-width: 600px;
+    width: 90%;
     /* background-color: red; */
     text-align: center;
     padding: 20px;
     font-size: 50px;
     font-weight: bold;
-    border-bottom: 4px solid rgb(105, 92, 92);
+    border-bottom: 4px solid rgb(189, 161, 161);
     margin: 0 auto;
     margin-bottom: 40px;
 }
 
 main h3{
     /* color: whitesmoke; */
-    font-size: 1.6vw;
+    font-size: 25px;
     font-weight: bolder;
-    width: 60vw;
+    max-width: 800px;
+    width: 96%;
     border-radius: 4px;
     background-color: rgba(130, 93, 168,0.4);
     margin: 0 auto;
