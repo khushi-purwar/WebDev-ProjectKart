@@ -14,22 +14,19 @@
 Screenshots:
 
 
-![Number_Gaussing_Game_ss1](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/Number_gaussing/19.Number_gaussing_game/images/ss1.png?raw=true)
+![Number_Guessing_Game_ss1](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/Number_gaussing/19.Number_guessing_game/assets/media/ss1.png?raw=true)
+
+![Number_Guessing_Game_ss2](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/Number_gaussing/19.Number_guessing_game/assets/media/ss2.png?raw=true)
+
+![Number_Guessing_Game_ss3](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/Number_gaussing/19.Number_guessing_game/assets/media/ss3.png?raw=true)
+
+![Number_Guessing_Game_ss4](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/Number_gaussing/19.Number_guessing_game/assets/media/ss4.png?raw=true)
+
+![Number_Guessing_Game_ss5](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/Number_gaussing/19.Number_guessing_game/assets/media/ss5.png?raw=true)
+
+![Number_Guessing_Game_ss6](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/Number_gaussing/19.Number_guessing_game/assets/media/ss6.png?raw=true)
 
 
-![Number_Gaussing_Game_ss2](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/Number_gaussing/19.Number_gaussing_game/images/ss2.png?raw=true)
-
-
-![Number_Gaussing_Game_ss3](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/Number_gaussing/19.Number_gaussing_game/images/ss3.png?raw=true)
-
-
-![Number_Gaussing_Game_ss4](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/Number_gaussing/19.Number_gaussing_game/images/ss4.png?raw=true)
-
-
-![Number_Gaussing_Game_ss5](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/Number_gaussing/19.Number_gaussing_game/images/ss5.png?raw=true)
-
-
-![Number_Gaussing_Game_ss6](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/Number_gaussing/19.Number_gaussing_game/images/ss6.png?raw=true)
 
 
 
