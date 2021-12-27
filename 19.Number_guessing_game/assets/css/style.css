@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    /* display: flex; */
+    /* height: 100vh; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    text-align: center;
+    background-color: aquamarine;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: bolder;
+    margin: 15px auto 30px auto;
+    color: rgb(8, 10, 10);
+    /* margin: 10px auto; */
+    /* width: 86vw; */
+    background-color: rgb(128, 226, 197);
+    /* border-radius: 20px; */
+    /* border: 3px solid red; */
+    /* padding: 50px auto; */
+    
+}
+
+
+p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.p3{
+    font-size: 40px;
+    /* text-decoration: underline; */
+    padding: 10px;
+    display: inline-block;
+    /* border: 2px solid red; */
+    color: brown;
+    font-weight: bolder;
+    line-height: 60px;
+}
+
+
+.p3.gaussBlock{
+    height: 80px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    width: 450px;
+    height: 70px;
+    font-size: 45px;
+    font-weight: bold;
+    padding: 4px 20px;
+    text-align: center;
+}
+
+.submit{
+    width: 300px;
+    height: 70px;
+    /* padding: 10px; */
+    background-color: rgb(85, 47, 128);
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: bolder;
+    border: none;
+    /* border: 2px solid red; */
+    /* border-radius: 40px; */
+} 
+
+.previous{
+    margin: 10px auto;
+}
+
+.yourgauss{
+    width: 90%;
+    padding: 30px 0;
+    margin: 20px auto;
+    background-color: rgb(233, 151, 151);
+    padding: 5px 20px;
+    color: rgb(17, 2, 31);
+}
+.lh{
+    padding: 5px 20px;
+    width: 90%;
+    margin: 0 auto;
+    color: rgb(17, 2, 31);
+    background-color: rgb(103, 150, 9);
+}
+
+span{
+    background-color: rgb(93, 93, 170);
+    color: #FFF;
+}
+
+/* ******** custom coding of css starts from here ********  */
