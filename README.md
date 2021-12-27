@@ -1,6 +1,6 @@
 <img src="https://github.com/khushi-purwar/Web-Dev-ProjectKart/blob/master/thumbnail.png" height="80%" width="80%" />
 
-<h1 align="center" >💻 WEBDEV - PROJECTKART 💻</h1>
+<h1 align="center" >💻 WEBDEV -PROJECTKART 💻</h1>
 
 <h3>Hello Everyone 👋🏻 Glad to see you all here !! I hope everyone is eager to give their best contributions. The repository contains the list of awesome✨ & cool web development beginner-friendly✌️ projects! </h3>
 
@@ -66,6 +66,23 @@ git push -u origin <your_branch_name>
 
 **Congratulations!** Sit and relax till we review your PR, you've made your contribution to (https://github.com/khushi-purwar/WebDev-ProjectKart) project
 
+## Project Maintainer 👷👷:
+
+ 
+<table>
+<tr>
+<td align="center"><a href="https://github.com/khushi-purwar"><img src="https://media-exp1.licdn.com/dms/image/C5603AQFQjgQVGH77fQ/profile-displayphoto-shrink_400_400/0/1621153995462?e=1646265600&v=beta&t=rBye2Q3S0h5bXjy49WDcKlvmzVPvxs5wFuLERK_vsRg" width=150px height=150px /></a></br> <h4 style="color:red;">Khushi Purwar</h4>
+<a href="https://www.linkedin.com/in/khushi-purwar/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a></td>
+</tr>
+</table>
+<br>
+
+
+## Our valuable Contributors👩‍💻👨‍💻 :
+
+<a href="https://github.com/khushi-purwar/WebDev-ProjectKart/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=khushi-purwar/WebDev-ProjectKart" />
+</a>
 
 
 
