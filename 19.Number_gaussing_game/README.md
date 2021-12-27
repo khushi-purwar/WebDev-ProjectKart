@@ -1,9 +1,9 @@
 
-<h1>Number Gaussing GAme</h1>
+<h1>Number Guessing Game</h1>
 
 <h2>Overview</h2>
 
-<p>This application is made for beginners.User can use this web app to Play number gaussing game.</p>
+<p>This application is made for beginners.User can use this web app to Play number guessing game.</p>
 
 <h3>Tech Stack</h3>
 
