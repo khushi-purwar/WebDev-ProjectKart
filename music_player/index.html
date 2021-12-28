@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Assets/style.css">
+</head>
+
+<body>
+
+    <!-- <div class="container"></div> -->
+        <div class="music_container">
+
+            <div class="music_player">
+                <h1 id="title">Cartoon--on--on</h1>
+                <h3 id="artist">feat-Denial-Levi</h3>
+                <div class="img_container">
+                    <img src="Assets/img/kush1.png" alt="" id="songimg">
+                </div>
+                <audio src="Assets/songs/kush1.mp3"></audio>
+
+                 <!-- Input element for progress bar - min=0 starting value of every song - max length will change per song so leave empty -->
+                 <div class="song_duration">
+                
+
+                    <div class="currentTime"></div>
+
+                    <input type="range" id="progress-bar" min="0" max="" value="0" onchange="changeProgressBar()" />
+                    
+                    <div class="durationTime"></div>
+
+                </div>
+
+                   <div class="audio_controls">
+                   
+
+                    <span id="prev" title="previous"><img src="Assets/img/icons/backward.png" alt=""></span>
+
+                    <span id="play_pause" title="play/pause"><img src="Assets/img/icons/play.png" alt="" id="playPause"></span>
+
+                    <!-- <span id="pause"  title="pause"><img src="" alt=""></span> -->
+
+                    <span id="next" title="next"><img src="Assets/img/icons/forward.png" alt=""></span>
+
+
+                    <!-- <i class="fas fa-backword" id="prev" title="Previous"></i>
+                    <i class="fas fa-play" id="play" title="Play"></i>
+                     <i class="fas fa-forword" id="next" title="Next"></i> -->
+
+                </div>
+
+                
+               
+            
+             </div>
+
+        </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
