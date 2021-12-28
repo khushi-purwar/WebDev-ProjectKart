@@ -1,9 +1,9 @@
 
-<h1>Generate Random Background Grediant Color</h1>
+<h1>Generate Random Background Gradient Color</h1>
 
 <h2>Overview</h2>
 
-<p>This application is made for beginners. User can use this web app to get good background grediant color for their project.</p>
+<p>This application is made for beginners. User can use this web app to get good background gradient color for their project.</p>
 
 <h3>Tech Stack</h3>
 
@@ -14,16 +14,16 @@
 Screenshots:
 
 
-![Grediant_color_ss1](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/GrediantColor/21.Random_grediant_color/assets/media/ss1.png?raw=true)
+![Gradient_color_ss1](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/GrediantColor/21.Random_grediant_color/assets/media/ss1.png?raw=true)
 
 
-![Grediant_color_ss2](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/GrediantColor/21.Random_grediant_color/assets/media/ss2.png?raw=true)
+![Gradient_color_ss2](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/GrediantColor/21.Random_grediant_color/assets/media/ss2.png?raw=true)
 
 
-![Grediant_color_ss3](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/GrediantColor/21.Random_grediant_color/assets/media/ss3.png?raw=true)
+![Gradient_color_ss3](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/GrediantColor/21.Random_grediant_color/assets/media/ss3.png?raw=true)
 
 
-![Grediant_color_ss4](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/GrediantColor/21.Random_grediant_color/assets/media/ss4.png?raw=true)
+![Gradient_color_ss4](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/GrediantColor/21.Random_grediant_color/assets/media/ss4.png?raw=true)
 
 
 
