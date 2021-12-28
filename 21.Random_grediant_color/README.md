@@ -1,9 +1,9 @@
 
-<h1>Event Time Counter</h1>
+<h1>Generate Random Background Grediant Color</h1>
 
 <h2>Overview</h2>
 
-<p>This application is made for beginners. User can use this web app for counting the time for any upcoming event.</p>
+<p>This application is made for beginners. User can use this web app to get good background grediant color for their project.</p>
 
 <h3>Tech Stack</h3>
 
@@ -14,22 +14,19 @@
 Screenshots:
 
 
-![Event_time_counter_ss1](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/event_time_counter/20.Event_time_counter/assets/media/ss1.png?raw=true)
+![Grediant_color_ss1](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/GrediantColor/21.Random_grediant_color/assets/media/ss1.png?raw=true)
 
 
-![Event_time_counter_ss2](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/event_time_counter/20.Event_time_counter/assets/media/ss2.png?raw=true)
+![Grediant_color_ss2](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/GrediantColor/21.Random_grediant_color/assets/media/ss2.png?raw=true)
 
 
-![Event_time_counter_ss3](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/event_time_counter/20.Event_time_counter/assets/media/ss3.png?raw=true)
+![Grediant_color_ss3](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/GrediantColor/21.Random_grediant_color/assets/media/ss3.png?raw=true)
 
 
-![Event_time_counter_ss4](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/event_time_counter/20.Event_time_counter/assets/media/ss4.png?raw=true)
+![Grediant_color_ss4](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/GrediantColor/21.Random_grediant_color/assets/media/ss4.png?raw=true)
 
 
-![Event_time_counter_ss5](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/event_time_counter/20.Event_time_counter/assets/media/ss5.png?raw=true)
 
-
-![Event_time_counter_ss6](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/event_time_counter/20.Event_time_counter/assets/media/ss6.png?raw=true)
 
 
 
