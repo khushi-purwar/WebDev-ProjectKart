@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+.music_container{
+    border: 2px solid rgb(0, 0, 0);
+    
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    /* position:relative; */
+
+    /* background-image: linear-gradient(45deg ,rgba(255, 13, 13, 0.692),rgba(236, 50, 236, 0.664)); */
+
+}
+
+
+.music_player{
+    /* border: 2px solid rgb(54, 45, 45); */
+    background-image: linear-gradient(45deg ,rgb(250, 37, 186),rgb(255, 106, 37));
+    
+    /* position: absolute; */
+    /* background-color: azure; */
+    width: 30rem;
+    height: 37rem;
+    margin: auto;
+    margin-top: 6rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 0.6rem 0.3rem 0.3rem 0.3rem;
+    align-items: center;
+    
+  box-shadow: 0 0.3rem 3rem 0.3rem rgba(238, 222, 228, 0.753);
+}
+
+
+.music_player h1{
+    color:rgb(255, 255, 255);
+    margin-top: 0.978rem;
+    font-size: 2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    text-shadow: 0.1rem 0.1rem 0.5rem rgba(20, 20, 20, 0.692);
+}
+
+.music_player h3{
+    color: rgba(56, 49, 49, 0.836);
+    margin-top: 1.2rem;
+    margin-bottom: 0.9rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family:cursive;
+    text-transform:capitalize;
+    line-height: 2rem;
+}
+.img_container{
+    width: 12rem;
+    height: 12rem;
+  margin: auto;
+
+}
+.music_player .img_container #songimg{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  margin-top: 2.5rem;
+  object-fit: cover;
+  box-shadow: 0rem 0.4rem 2rem 0.4rem rgba(31, 28, 28, 0.849);
+  /* box-shadow: 0.3rem 0.3rem 2rem 0.7rem rgba(202, 188, 188, 0.849),-0.3rem -0.3rem 2rem 0.7rem rgba(255, 255, 255, 0.678) */
+  /* margin: auto; */
+  
+  
+}
+ .spin_img{
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+ }
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.audio_controls{
+    margin-top: 1rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    font-size: 3rem;
+    /* cursor: pointer; */
+
+}
+
+.audio_controls span{
+
+    background-color: rgb(245, 241, 241);
+    font-size: 5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  /* box-shadow: 0 0.2rem 3rem 0.03rem rgba(0, 0, 0, 0.38),0 -0.2rem 3rem 0.03rem rgba(0, 0, 0, 0.38); */
+     
+}
+
+.audio_controls span img{
+    width: 4rem;
+    height: 4rem;
+    color: rgb(252, 252, 252);
+
+}
+
+
+
+.audio_controls #play_pause,#prev,#next{
+    filter: invert(1);
+  box-shadow: 0rem 0.4rem 2rem 0.4rem rgba(241, 234, 234, 0.849);
+
+
+}
+.audio_controls #prev:hover,#play_pause:hover,#next:hover{
+
+    /* background-color: rgb(255, 255, 255); */
+    /* color: rgb(0, 0, 0); */
+  box-shadow: 0rem 0.4rem 2rem 0.4rem rgba(0, 0, 0, 0.849);
+  color: rgb(2, 2, 2);
+  filter: invert(0);
+}
+
+
+
+
+.song_duration{
+    /* border: 0.2rem solid red ; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 7rem;
+   align-items: center;
+}
+
+/* style for current time of the track */
+.currentTime {
+    cursor: pointer;
+    /* bottom: -7.5%; */
+    /* left: 17%; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgb(3, 3, 3);
+    align-items: center;
+    /* border: 0.2rem solid red ; */
+    /* background-color: blue; */
+   
+}
+
+/* style for the total length of the track */
+.durationTime {
+   
+    cursor: pointer;
+  
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    /* background-color: blue; */
+    /* border: 0.2rem solid red ; */
+
+}
+
+/* style for the progress bar */
+#progress-bar {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 0.5rem;
+    background: #000000;
+    width: 18rem;
+    /* bottom: 5%; */
+    border-radius: 3rem;
+    /* left: 17%; */
+    /* border: 0.2rem solid red ; */
+
+}
+
+/* style for the progress bar's slider thumb */
+#progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    margin-top: -0.3rem;
+    margin-left: 0rem;
+    height: 1rem;
+    width: 0.7rem;
+    border: 0;
+    background-color: rgb(255, 253, 253);
+    /* background: -webkit-linear-gradient(45deg,  rgb(213, 213, 213), rgb(193, 255, 6)); */
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+/* style for the progress bar's runnable track */
+#progress-bar::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    max-height: 0.5rem;
+    border-radius: 3rem;
+}
+
+/* style to remove blue shade of the progress bar when clicked on/selected */
+#progress-bar:focus {
+    outline: none;
+}
