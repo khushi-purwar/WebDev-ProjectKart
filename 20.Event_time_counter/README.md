@@ -14,7 +14,17 @@
 Screenshots:
 
 
-![Event_time_counter_ss1]()
+![Event_time_counter_ss1](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/event_time_counter/20.Event_time_counter/assets/media/ss1.png?raw=true)
+
+![Event_time_counter_ss2](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/event_time_counter/20.Event_time_counter/assets/media/ss2.png?raw=true)
+
+![Event_time_counter_ss3](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/event_time_counter/20.Event_time_counter/assets/media/ss3.png?raw=true)
+
+![Event_time_counter_ss4](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/event_time_counter/20.Event_time_counter/assets/media/ss4.png?raw=true)
+
+![Event_time_counter_ss5](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/event_time_counter/20.Event_time_counter/assets/media/ss5.png?raw=true)
+
+![Event_time_counter_ss6](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/event_time_counter/20.Event_time_counter/assets/media/ss6.png?raw=true)
 
 
 
