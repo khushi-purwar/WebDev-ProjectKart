@@ -14,7 +14,15 @@
 Screenshots:
 
 
-![Gradient_color_ss1](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/GrediantColor/21.Random_grediant_color/assets/media/ss1.png?raw=true)
+![Color_scheme_ss1](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/color_scheme/22.Color_scheme_switcher/assets/media/ss1.png?raw=true)
+
+![Color_scheme_ss2](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/color_scheme/22.Color_scheme_switcher/assets/media/ss2.png?raw=true)
+
+![Color_scheme_ss3](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/color_scheme/22.Color_scheme_switcher/assets/media/ss3.png?raw=true)
+
+![Color_scheme_ss4](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/color_scheme/22.Color_scheme_switcher/assets/media/ss4.png?raw=true)
+
+![Color_scheme_ss5](https://github.com/TechnicalAmanjeet/WebDev-ProjectKart/blob/color_scheme/22.Color_scheme_switcher/assets/media/ss5.png?raw=true)
 
 
 
