@@ -22,5 +22,7 @@ let birthdate = new Date(+eventDateArray[0],(+eventDateArray[1])-1,+eventDateArr
             let min = Math.floor(time/60);
             time = time%60;
             // alert(time,day,hour,min);
+
             document.querySelector("p").innerHTML = `${day}d ${hour}h ${min}m ${time}s`;
+
         }
