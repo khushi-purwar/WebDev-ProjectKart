@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+   padding: 40px 50px;
+   line-height: 60px;
+}
+.box{
+
+   display: flex;
+   /* justify-content: space-around; */
+}
+
+p{
+   height: 40px;
+   width: 40px;
+   border: 2px solid black;
+   margin-right: 10px;
+   border-radius: 50%;
+   /* float: left; */
+}
+.col1{
+   background-color: whitesmoke;
+}
+
+.col2{
+   background-color: rgb(133, 36, 36);
+}
+.col3{
+   background-color: yellow;
+}
+.col4{
+   background-color: blue;
+}
