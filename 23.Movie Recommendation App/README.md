@@ -15,15 +15,15 @@ Here you can also search the movie of your choice and enjoy watching it. Jump in
 ## Screenshots
 
 After opening the app, UI looks like:
-<img src="./Images/ss1.png" />
+<img src="./Assets/media/ss1.png" />
 
 
 At the bottom of the page you can see:
-<img src="./Images/ss2.png" />
+<img src="./Assets/media/ss2.png" />
 
 ## Live Demo
 
-<img src="./Images/ss1.png" />
+<img src="./Assets/media/demo.png" />
 
 ## Visit Website
 https://khushi-purwar.github.io/Web-Dev-ProjectKart/
