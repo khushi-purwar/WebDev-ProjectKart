@@ -23,7 +23,7 @@ At the bottom of the page you can see:
 
 ## Live Demo
 
-<img src="./Assets/media/demo.png" />
+<img src="./Assets/media/final_61cf23d0f9d9ba005ae89da9_388276.gif" />
 
 ## Visit Website
 https://khushi-purwar.github.io/Web-Dev-ProjectKart/
