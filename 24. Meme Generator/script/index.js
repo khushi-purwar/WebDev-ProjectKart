@@ -11,6 +11,7 @@ const addImage = (img) => {
 
 const createChangeImageButton = () => {
     changeImage = document.createElement('button');
+    changeImage.classList = ['button'];
     changeImage.textContent = "Change Image"
     changeImage.addEventListener('click', () => {
         // remove the changeImage button
@@ -118,6 +119,11 @@ const init = () => {
             ctx.strokeText(txt, x, y, canvas.width, canvas.height);
         }
     }
+
+    generateMeme.addEventListener('click', function() {
+        let dimage = canvas.toDataURL("image/jpg");
+        this.href = dimage;
+    })
 
 }
 
