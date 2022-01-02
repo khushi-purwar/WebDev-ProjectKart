@@ -24,7 +24,7 @@ body {
 
 .imageArea {
     flex: 5;
-    background-color: black;
+    background-color: blanchedalmond;
     height: 100vh;
     display: flex;
     justify-content: center;
