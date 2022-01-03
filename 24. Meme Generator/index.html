@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+</head>
+<body>
+
+    <div class="layout">
+        <div id="configPanel" class="panel">
+            <a download="myImage.jpg" id="generateMeme"><button class="button">Download meme</button></a>
+            <input type="file" name="" id="memeImage" accept="image/*" class="button">
+        </div>
+        <div id="image" class="imageArea">
+            <canvas id="memeCanvas"></canvas>
+        </div>
+    </div>
+
+    <script src="./script/index.js"></script>
+</body>
+</html>

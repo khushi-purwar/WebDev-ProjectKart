@@ -1,0 +1,55 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.panel {
+    flex: 2;
+    background-color: rgb(22, 190, 134);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imageArea {
+    flex: 5;
+    background-color: blanchedalmond;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    height: 60px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    background-color: bisque;
+    transition: background-color ease-in-out 0.4s;
+    font-size: larger;
+}
+
+input.button {
+    background-color: rgb(22, 190, 134);
+}
+
+input.button:hover {
+    background-color: rgb(22, 190, 134);
+}
+
+.button:hover {
+    background-color: rgb(197, 136, 56);
+}
