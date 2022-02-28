@@ -13,7 +13,10 @@ assignees: ''
 **Project Description**
 (Describe the project over here)
 
-**Stack**:
-[ ] Html
-[ ] CSS
-[ ] JavaScript
+**Stack**:  
+And in order to tick the check box just but x inside them for example - [x] like this
+
+- [] Html
+- [] CSS
+- [] JavaScript
+- [] ReactJS
