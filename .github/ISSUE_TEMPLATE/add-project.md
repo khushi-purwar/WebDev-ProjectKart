@@ -2,7 +2,7 @@
 name: Add Project
 about: Add a new Project
 title: ''
-labels: good first issue
+labels: ''
 assignees: ''
 
 ---
