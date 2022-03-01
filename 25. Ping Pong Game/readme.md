@@ -14,8 +14,6 @@ This web game is made for beginners.User can use this web app to play Ping Pong 
 
 
 ## Screenshots
-
-![App Screenshot](25. Ping Pong Game\image\image1.png)
-![App Screenshot](25. Ping Pong Game\image\image2.png)
-![App Screenshot](25. Ping Pong Game\image\image3.png)
-
+<img src="https://raw.githubusercontent.com/harshraj29/WebDev-ProjectKart/master/25.%20Ping%20Pong%20Game/image/image1.png" width="800px">
+<img src="https://raw.githubusercontent.com/harshraj29/WebDev-ProjectKart/master/25.%20Ping%20Pong%20Game/image/image2.png" width="800px">
+<img src="https://raw.githubusercontent.com/harshraj29/WebDev-ProjectKart/master/25.%20Ping%20Pong%20Game/image/image3.png" width="800px">
