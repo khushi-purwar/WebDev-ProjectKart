@@ -9,15 +9,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #10101e;
+    background:#361753;
   }
   
   .datetime {
     color: #fff;
-    background: #10101e;
+    background: #af85d6;
     width: 340px;
     padding: 15px 10px;
-    border: 3px solid #2e94e3;
+    border: 3px solid #2c0329;
     border-radius: 5px;
     -webkit-box-reflect: below 1px
       linear-gradient(transparent, rgba(255, 255, 255, 0.1));
@@ -25,8 +25,8 @@
   }
   
   .datetime:hover {
-    background-color: #2e94e3;
-    box-shadow: 0 0 30px #2e94e3;
+    background-color: #3c225f;
+    box-shadow: 0 0 30px #b587eb;
   }
   
   .date {
@@ -52,7 +52,7 @@
   }
   
   .time span:last-child {
-    background: #2e94e3;
+    background: #2c0329;
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase;
