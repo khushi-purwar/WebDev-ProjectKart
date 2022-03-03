@@ -26,7 +26,7 @@ The pictures in the clipboard are lost once the page is refreshed.
 
 ## Screenshots
 
-<img src="./Assets/media/Click!.png" />
+<img src="./Assets/media/Click!.jpeg" />
 
 
 ## Try the website right now!
