@@ -39,3 +39,9 @@ main h3{
     padding: 4px 60px;
     margin-top: 10px;
 }
+
+main h3:hover {
+  background-color: #808080;
+  transform: scale(1.05);
+  color: white;
+}
