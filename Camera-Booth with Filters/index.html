@@ -1,3 +1,4 @@
+// Open the index.html file using a Live Server for live reload and video playback.
 <!DOCTYPE html>
 <html lang = "en">
   <head>
@@ -13,13 +14,13 @@
 
   <body>
     <section id = "container">
-
+      <!-- Start of Right Container -->
       <section class = "right-container">
-
         <div class="preview-container">
           <div class="final-preview">
             <p>Snap Preview</p>
-            <canvas class="photo"></canvas>
+            <canvas class="photo"></canvas> 
+            <!-- Image data captured from the video is added to the canvas every 16 milliseconds. -->
           </div>  
         </div>
         
@@ -31,12 +32,12 @@
           <div class = "strip-container">
             <div class="strip"></div>
           </div>
+          <!-- Pictures taken are added into the <div> element of class strip. -->
         </div>
-        
       </section>
-
+      <!-- End of Right Container -->
+      <!-- Start of Left Container -->
       <section class = "left-container">
-
         <div class="text-content">
           <h1>Click!</h1>
           <h3>Camera-Booth with Amazing Filters</h3>
@@ -44,7 +45,7 @@
         </div>
 
         <section class= "media-content">
-
+          <!-- Filters are made by manipulating the pixels from the image taken from video. -->
           <div class="filters-container">
             <p>Pick any Filter!</p>
             <div class="filters">
@@ -72,7 +73,7 @@
           </div>
 
           <div class = "controls">
-            <!-- Custom-Filter -->
+            <!-- RGB values of the Custom Filter is set through the input of type range. -->
             <div class = "custom-filter">
               <p>Set Custom Filter:</p>
               <label class="red-range" for="red">Red:</label>
@@ -88,19 +89,20 @@
               <input type = "range" min = 0 max = 1 step = 0.1 name="alpha" id="alpha">
             </div>
           
-            <!-- Live Preview -->
+            <!-- Live Output from the webcam -->
             <div class="live-preview">
               <video class="player"></video>
               <p>Live Preview</p>
             </div>
           </div>
 
-          <!-- Take Photo -->
+          <!-- Takes Photo -->
           <div class="button-container">
             <button onClick = "takePhoto()">Take Photo</button>
           </div>
 
         </section>
+        <!-- End of Left Container -->
       </section>
 
       <!-- Audio Clip -->

@@ -15,7 +15,7 @@ html {
   width: 100%;
   min-height: 100vh;
 }
-
+/* Styles for Right Container. */
 .right-container {
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@ html {
   width: 40%;
   border-right: 1px dashed #ffffff;
 }
-
+/* Start of styles for Snap Preview and Canvas Element. */
 .preview-container {
   width: 100%;
   border-bottom: 1px dashed #ffffff;
@@ -48,7 +48,8 @@ html {
   width: 85%;
   margin: 0px 0px 0px 0px;
 }
-
+/* End of styles for Canvas Element. */
+/* Start of styles for Clipboard. */
 .snap-container {
   width: 100%;
   display: flex;
@@ -84,27 +85,27 @@ html {
   width: 174px;
   border: none;
 }
+/* End of styles for Clipboard. */
+/* End of Right Container Styles. */
+/* Styles for Left Container */
 .left-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 60%;
 }
-
-/* Text Content */
+/* Start of styles for Text. */
 .text-content {
   margin: 130px 0px 50px 100px;
   color: #ffffff;
-  /* width: 40%; */
 }
 
 h1 {
   font-size: 80px;
 }
-/* Text Content */
-/* ---------------------------------------- */
-/* Media Content */
 
+/* End of styles for Text. */
+/* Start of styles for Filters, Live Preview and Take Picture Button. */
 .media-content {
   display: flex;
   flex-direction: column;
@@ -289,3 +290,5 @@ label {
   font-size: 16px;
   margin-top: 5px auto;
 }
+/* End of styles for Filters, Live Preview and Take Picture Button. */
+/* End of Left Container Styles */
