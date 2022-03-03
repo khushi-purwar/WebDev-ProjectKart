@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="scoreboard"> 
+          <div class="title">
+              <img src='/assets/title.png' />
+          </div>
+          <div class="score">
+              <p>SCORE</p>
+              <h1> 0 </h1>
+          </div>
+      </div>
+      <div class="hands">
+            <div class="hand paper">
+              <img src="/assets/Paper.png" onclick="pickUserHand('paper')"/>
+            </div>
+            <div class="hand scissors">
+              <img src="/assets/Scissors.png" onclick="pickUserHand('scissors')"/>
+            </div>
+            <div class="hand rock">
+              <img src="/assets/Rock.png" onclick="pickUserHand('rock')"/>                        
+            </div>
+      </div>
+      <div class="contest">       
+        <div class="userhand">
+            <h1>YOU PICKED</h1>
+            <div class="handImageContainer">
+              <img id="userPickImage" src="/assets/Paper.png">
+            </div>
+        </div>
+        <div class="referee"> 
+            <div class="decision"><h1> YOU WIN! </h1></div>
+            <div class="newGame" onclick="restartGame()">PLAY AGAIN</div>
+        </div>
+        <div class="computerhand">
+            <h1>THE HOUSE PICKED</h1>
+            <div class="handImageContainer">
+              <img id="computerPickImage" src='/assets/Paper.png' /> 
+            </div>   
+        </div>       
+      </div>        
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
