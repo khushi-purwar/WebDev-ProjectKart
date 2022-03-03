@@ -45,3 +45,7 @@ main h3:hover {
   transform: scale(1.05);
   color: white;
 }
+
+a:hover {
+    color: white;
+}
