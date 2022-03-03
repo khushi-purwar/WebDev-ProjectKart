@@ -7,7 +7,7 @@ You can then take a picture with or without using the different filters availabl
 
 Though permission is required to access the webcam. If denied by mistake a simple reload can bring back the prompt.
 <br>
-There are 7 pre-defined filters and an option to make a custom filter based on your liking. 
+There are 5 pre-defined filters and an option to make a custom filter based on your liking. 
 Select the filter with just a click.
 
 After taking a picture the picture gets added to a clipboard.
@@ -26,7 +26,7 @@ The pictures in the clipboard are lost once the page is refreshed.
 
 ## Screenshots
 
-<img src="./Assets/media/Click!.png" />
+<img src="./Assets/media/Click!.jpeg" />
 
 
 ## Try the website right now!
