@@ -18,6 +18,9 @@
 ---
 
 - Download or clone the repository
+```
+git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
+```
 - Go to the directory
 - Run the index.html file
 - Just Type the city name you want to know the weather of, and then click on the search button.
@@ -27,3 +30,6 @@
 <h3> ScreenShots </h3>  
 <img src = "Weather-App.jpg" alt="Sample Image">
 <br>
+<video controls autoplay>
+  <source src="sample.mp4" type="video/mp4">
+</video>
