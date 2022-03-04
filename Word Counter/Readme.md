@@ -82,7 +82,7 @@ There are no prerequisites for running this program.
 
 ## Features
 <div align="center">
-<img src="https://raw.githubusercontent.com/LiQuiD-404/WebDev-ProjectKart/master/Word%20Counter/snip.png" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
+<img src="https://raw.githubusercontent.com/LiQuiD-404/WebDev-ProjectKart/master/Word%20Counter/snip.png" alt="snip"/>
 </div>
 
 The program can easily recognize the number of words, letters and whitespaces present in the paragraph. To make it more user friendly, The complete text can be cleared by clicking the **Clear Text** button.
