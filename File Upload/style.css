@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Playfair+Display&family=Roboto&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open sans", sans-serif;
+}
+
+.container{
+margin-top: 60px;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #5256ad;
+}
+
+
+#change-div{
+  padding: 40px;
+  display: flex;justify-content: center;
+  align-items: center;
+}
+.file-change{
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 500;
+  background: #fff;
+  color: #5256ad;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+}
+
+
+#file-show{
+  
+  padding: 40px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden{
+  display: none;
+}
+
+.file-upload-area{
+  border: 2px dashed #fff;
+  height: 500px;
+  width: 1000px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.file-upload-area.active{
+  border: 2px solid #fff;
+}
+.file-upload-area .icon{
+  font-size: 100px;
+  color: #fff;
+}
+.file-upload-area header{
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+}
+.file-upload-area span{
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+  margin: 10px 0 15px 0;
+}
+.file-upload-area button{
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: #fff;
+  color: #5256ad;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.file-upload-area img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}

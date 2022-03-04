@@ -1,105 +1,107 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    /* background-color: #ffc1cc; */
-    /* background: url("https://touchpoint.brownadvisory.com/brown-web/resources/images/loginFullBackground.jpg"); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 10px;
+body {
+  /* background-color: #ffc1cc; */
+  /* background: url("https://touchpoint.brownadvisory.com/brown-web/resources/images/loginFullBackground.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 10px;
 }
 
-h2{
-    font-size: 30px;
-    margin: 10px 0 20px;
-    text-align: center;
+h2 {
+  font-size: 30px;
+  margin: 10px 0 20px;
+  text-align: center;
 }
 
-input[type='checkbox']{
-    margin-right: 0;
+input[type="checkbox"] {
+  margin-right: 0;
 }
 
-.container{
-    background-color: #0c636e;
-    box-shadow: 0 2px 10px rgba(2555,255,255,0.2);
-    padding: 20px;
-    width: 350px;
-    max-width: 100%;
+.container {
+  background-color: #0c636e;
+  box-shadow: 0 2px 10px rgba(2555, 255, 255, 0.2);
+  padding: 20px;
+  width: 350px;
+  max-width: 100%;
 }
 
-.result-container{
-    background-color: rgba(0,0,0,0.4);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
-    font-size: 18px;
-    letter-spacing: 1px;
-    padding: 8px 10px;
-    height: 45px;
-    width: 100%;
+.result-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 8px 10px;
+  height: 45px;
+  width: 100%;
 }
 
-.result-container #result{
-    word-wrap: break;
-    max-width: calc(100% - 40px);
+.result-container #result {
+  word-wrap: break;
+  max-width: calc(100% - 40px);
 }
 
-.result-container .btn{
-    font-size: 20px;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    height: 40px;
-    width: 40px;
+.result-container .btn {
+  font-size: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 40px;
+  width: 40px;
 }
 
-.btn{
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 8px 12px;
-    background-color: transparent;
+.btn {
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 12px;
+  background-color: transparent;
 }
 
-.btn-large{
-    background-color:#ef476f;
-    display: block;
-    width: 100%;
+.btn-large {
+  background-color: #ef476f;
+  display: block;
+  width: 100%;
 }
 
-
-.setting{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 15px 0;
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
 }
 
-input[type='number']::-webkit-inner-spin-button,
-input[type='number']::-webkit-outer-spin-button{
-    -webkit-appearance: none;
-  
+.required {
+  color: red;
 }
 
-input[type='number']{
-    border: none;
-    outline: none;
-    padding: 2px;
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
 }
 
-@media screen and(max-width:400px){
-    .result-container{
-        font-size: 14px;
-    }
+input[type="number"] {
+  border: none;
+  outline: none;
+  padding: 2px;
+}
+
+@media screen and(max-width:400px) {
+  .result-container {
+    font-size: 14px;
+  }
 }
