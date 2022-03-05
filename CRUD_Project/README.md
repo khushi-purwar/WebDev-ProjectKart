@@ -2,6 +2,8 @@
 CRUD operation using <img src="https://img.shields.io/badge/Frontend:-HTML & CSS-5555ff">  <img src="https://img.shields.io/badge/Backend:- Javascript-E32800">
 CRUD: CREATE READ UPDATE DELETE
 
+View the website here : https://mannyp31.github.io/CRUD_operation/
+
 
 # BELOW IS THE PROJECT DESCRIPTION:
 ## Project UI-
