@@ -1,49 +1,56 @@
 body{
-    background-color:rgb(204, 200, 200);
+    background: -webkit-linear-gradient(to right, #F15F79, #b24592);
+    background: linear-gradient(to right, #F15F79, #B24592);
     height: 100vh;
 }
 h1{
     text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: #eeeeee;
+    margin-top: 2%;
 }
 .box{
     box-shadow: 10px;
-    width: 18rem;
-    height: 18rem;
-    border-radius: 50%;
+    width: 400px;
+    height: 300px;
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: linear-gradient(30deg,rgb(153, 153, 252),rgb(231, 97, 97));
-    box-shadow: 2px 2px 5px;
+    border-radius: 10px;
+    backdrop-filter: blur(14px) saturate(152%);
+    -webkit-backdrop-filter: blur(14px) saturate(152%);
+    background-color: rgba(0, 0, 0, 0.60);
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.70);
 }
 p{
     text-align: center;
     font-size: 60px;
     color: white;
+    font-family: 'Oswald', sans-serif;
 }
 #start,#reset,#stop,#lap{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Oswald', sans-serif;
     position: relative ;
     margin-left: 3px;
     font-size: 22px;
-    left: 17%;
+    left: 15%;
     border-radius: 5px;
     text-decoration: none;
     outline: 0;
     border-radius: none;
     border: none;
-    padding: 5px;
+    padding: 13px;
     top: -1rem;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px;
-
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.80);
+    border-radius: 11px;
 }
 #lap{
-    top: 2rem;
-    left: -4.9rem;
+    left: 3.7rem;
     width: 3.8rem;
-
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.80);
 }
 #stop:hover{
     background-color: rgb(65, 66, 65);
@@ -66,44 +73,40 @@ p{
     color: white;
 }
 .lap-container{
-    margin-top: 7rem;
-    width: 250px;
-    height: 250px;
+    margin-top: 4rem;
     overflow: auto;
     position: relative;
-    left: 1rem;
-}
-#laps{
-    width: 78%;
+    left: 0.5rem;
+    width: 250px;
+    height: 100%;
 }
 li{
-    border: 1px solid black;
-    width: 90%;
-    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
     text-align: center;
-    padding: 10px;
-    margin: 5px 0px 5px 0px;
-    border-radius: 50px;
     font-size: 20px;
-    box-shadow: 2px 2px 5px;
-
+    padding: 5px;
+    font-weight: 500;
+    list-style-type: decimal;
+}
+#laps {
+    width:120px;
 }
 .lap-container::-webkit-scrollbar{
     display: none;
 }
 #lap-clear-button{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Oswald', sans-serif;
     position: relative;
     font-size: 16px;
-    bottom: 30px;
-    left: 120px;
-    padding: 10px;
-    border-radius: 30px;
+    left: 320px;
+    padding: 13px;
+    border-radius: 11px;
     border: none;
     outline: none;
-    box-shadow: 2px 2px 5px;
     cursor: pointers;
     display: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.60);
+    top:-300px;
 }
 #lap-clear-button:hover{
     background-color: rgb(65, 66, 65);
