@@ -3,6 +3,8 @@
 
 ## Tech stacks used : <img src="https://img.shields.io/badge/Frontend:-HTML & CSS-5555ff">  <img src="https://img.shields.io/badge/Backend:- Javascript-E32800">
 
+## View the website here : https://markl50.github.io/Demo/
+
 # App UI:
 ![Screenshot (624)](https://user-images.githubusercontent.com/76861726/157120018-e4274618-3911-4e4e-aca8-60b6fd7e0e93.png)
 
