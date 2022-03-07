@@ -1,0 +1,41 @@
+body {
+    background-image: url('../media/bgImage.jfif');
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+}
+
+.jokeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12%;
+    padding-right: 35px;
+}
+
+.jokeContainer > h1 {
+    text-align: center;
+    max-width: 42%;
+    margin-bottom: 50px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #4277A4;
+}
+
+.jokeContainer > button {
+    border-radius: 50%;
+    height: 85px;
+    width: 85px;
+    background-color: #D2ECFD;
+    border: #4277A4 3px solid;
+    color: #4277A4;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px #72A6CA;
+}
+
+.jokeContainer > button:hover {
+    cursor: pointer;
+}

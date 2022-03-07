@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{background-color: #f1f5f8;}
+.navbar{
+  background-color:white;
+}
+.main{
+  text-align: center;
+  font-size: 2rem;
+  color: skyblue;
+}
+.container{
+  width: 80%;
+  height: 40%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: auto;
+  margin-top: 10.5rem;
+  border-radius: 30px;
+}
+.btn{
+  border:2px solid white;
+  border-radius:10px;
+  background: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1px 5px;
+  margin: 2.5rem 0rem;
+}

@@ -13,4 +13,5 @@
 | [Tip Calculator](https://khushi-purwar.github.io/WebDev-ProjectKart/Tip%20Calculator/) | A simple website build using HTML, CSS & JavaScript to calculate the tip amount for the bill.
   [Vat Calculaotr](https://khushi-purwar.github.io/WebDev-ProjectKart/VAT%20Calculator/) | This calculator calculates the Value Added Tax (VAT) on products or services.
   [Weather Application](https://khushi-purwar.github.io/WebDev-ProjectKart/Weather%20Application/) | A simple API enabled website build using HTML, CSS & JavaScript.
+  
                           
