@@ -1,64 +1,125 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #10101e;
-  }
-  
-  .datetime {
-    color: #fff;
-    background: #10101e;
-    width: 340px;
-    padding: 15px 10px;
-    border: 3px solid #2e94e3;
-    border-radius: 5px;
-    -webkit-box-reflect: below 1px
-      linear-gradient(transparent, rgba(255, 255, 255, 0.1));
-    transition: 0.5s;
-  }
-  
-  .datetime:hover {
-    background-color: #2e94e3;
-    box-shadow: 0 0 30px #2e94e3;
-  }
-  
-  .date {
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-    letter-spacing: 3px;
-  }
-  
-  .time {
-    font-size: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .time span:not(:last-child) {
-    position: relative;
-    margin: 0 6px;
-    font-weight: 600;
-    text-align: center;
-    letter-spacing: 3px;
-  }
-  
-  .time span:last-child {
-    background: #2e94e3;
-    font-size: 30px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-top: 10px;
-    padding: 0 7px;
-    border-radius: 3px;
-  }
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
-  
+.container {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #10101e;
+}
+
+.datetime {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	background: #10101e;
+	width: 50%;
+	height: 60%;
+	padding: 20px;
+	border: 3px solid #2e94e3;
+	border-radius: 5px;
+	-webkit-box-reflect: below 1px
+		linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+	transition: 0.5s;
+}
+
+.datetime:hover {
+	background-color: #2e94e3;
+	box-shadow: 0 0 30px #2e94e3;
+}
+
+.date {
+	font-size: 2rem;
+	font-weight: 600;
+	text-align: center;
+	letter-spacing: 3px;
+}
+
+#time {
+	font-size: 6rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-div {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	border: 2px dashed #2e94e3;
+	margin-top: 20px;
+	padding: 10px;
+	width: 50%;
+}
+
+.btn-div > button {
+	color: #fff;
+	background-color: #2e94e3;
+	font-size: 1rem;
+	padding: 15px;
+	border-radius: 10px;
+	border: none;
+}
+
+.btn-div > button:hover {
+	box-shadow: 0 0 30px #2e94e3;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+	#time {
+		font-size: 5rem;
+	}
+	.date {
+		font-size: 1.5rem;
+	}
+	.datetime {
+		width: 70%;
+	}
+	.btn-div {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#time {
+		font-size: 4rem;
+	}
+	.date {
+		font-size: 1.3rem;
+	}
+	.datetime {
+		width: 70%;
+		height: 50%;
+	}
+	.btn-div {
+		width: 70%;
+	}
+	.btn-div button {
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width: 436px) {
+	#time {
+		font-size: 3rem;
+	}
+	.date {
+		font-size: 1rem;
+	}
+	.datetime {
+		width: 80%;
+		height: 50%;
+	}
+	.btn-div {
+		width: 80%;
+	}
+}
