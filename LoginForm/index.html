@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.all.min.js"></script>
+    <title>Login Form</title>
+</head>
+<body>
+    <div class="login-form">
+
+        <!-- Title of our form -->
+        <div class="form-title">
+            Login Form
+        </div>
+
+        <!-- Username input  -->
+        <div class="form-input">
+            <label for="username">Username</label>
+            <input type="text" id="user">
+        </div>
+
+        <!-- Password input -->
+        <div class="form-input">
+            <label for="password">Password</label>
+            <input type="password" id="password">
+        </div>
+
+        <!-- Captcha input -->
+        <div class="captcha">
+            <label for="captcha-input">Enter Captcha</label>
+            <div class="preview"></div>
+                <div class="captcha-form">
+                    <input type="text" id="captcha-form" placeholder="Enter captcha text">
+                    <button class="captcha-refresh">
+                        <i class="fa fa-refresh"></i>
+                    </button>
+                </div>
+        </div>
+
+        <!-- Login btn -->
+        <div class="form-input">
+            <button id="login-btn">Login</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Made By Riya Bhandari | GitHub : RiyaBhandari-2811</p>
+    </footer>
+</body>
+</html>

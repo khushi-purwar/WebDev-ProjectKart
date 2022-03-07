@@ -2,7 +2,7 @@
 name: Improvements
 about: Suggesting improvements in already existing file
 title: ''
-labels: ''
+labels: GSSoC
 assignees: ''
 
 ---

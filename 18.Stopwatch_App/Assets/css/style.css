@@ -1,33 +1,111 @@
-body
-{
-    background-color: lightcoral;
+body{
+    background-color:rgb(204, 200, 200);
     height: 100vh;
 }
-.box
-{
+h1{
     text-align: center;
 }
-.box h1
-{
-    margin: 30px auto;
+.box{
+    box-shadow: 10px;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(30deg,rgb(153, 153, 252),rgb(231, 97, 97));
+    box-shadow: 2px 2px 5px;
 }
-.box p
-{
-    font-size: 50px;
-    margin: 40px auto;
+p{
+    text-align: center;
+    font-size: 60px;
+    color: white;
 }
-button
-{
-    font-size: 30px;
-    border-radius: 3px;
-    margin: 60px auto;
-    width: 90px;
-    margin-right: 10px;
+#start,#reset,#stop,#lap{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative ;
+    margin-left: 3px;
+    font-size: 22px;
+    left: 17%;
+    border-radius: 5px;
+    text-decoration: none;
+    outline: 0;
+    border-radius: none;
+    border: none;
+    padding: 5px;
+    top: -1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px;
+
+}
+#lap{
+    top: 2rem;
+    left: -4.9rem;
+    width: 3.8rem;
+
+}
+#stop:hover{
+    background-color: rgb(65, 66, 65);
+    cursor: pointer;
+    color: white;
+}
+#start:hover{
+    background-color: rgb(65, 66, 65);
+    cursor:pointer;
+    color: white;
+}
+#reset:hover{
+    background-color: rgb(65, 66, 65);
+    cursor: pointer;
+    color: white;
+}
+#lap:hover{
+    background-color: rgb(65, 66, 65);
+    cursor: pointer;
+    color: white;
+}
+.lap-container{
+    margin-top: 7rem;
+    width: 250px;
+    height: 250px;
+    overflow: auto;
+    position: relative;
+    left: 1rem;
+}
+#laps{
+    width: 78%;
+}
+li{
+    border: 1px solid black;
+    width: 90%;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+    margin: 5px 0px 5px 0px;
+    border-radius: 50px;
+    font-size: 20px;
+    box-shadow: 2px 2px 5px;
+
+}
+.lap-container::-webkit-scrollbar{
+    display: none;
+}
+#lap-clear-button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    font-size: 16px;
+    bottom: 30px;
+    left: 120px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
     outline: none;
-    color: #000;
+    box-shadow: 2px 2px 5px;
+    cursor: pointers;
+    display: none;
 }
-button:hover
-{
-    color: lightcoral;
-    border: 1px solid #fff;
+#lap-clear-button:hover{
+    background-color: rgb(65, 66, 65);
+    color: white;
 }
