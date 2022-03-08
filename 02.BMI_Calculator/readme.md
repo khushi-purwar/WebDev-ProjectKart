@@ -1,3 +1,4 @@
+
 # BMI Calculator
 ## Overview of BMI Calculator
 
@@ -16,7 +17,6 @@ c. BMI = 25 to 29.9  -> <b> Overweight </b>
 d. BMI >=30  -> <b> Obesity  </b>
 
 ## Tech Stack
-
 
 
 ![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)
