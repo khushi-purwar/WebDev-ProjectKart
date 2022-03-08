@@ -44,7 +44,7 @@ window.onload = function () {
     var clearButton=document.getElementById('lap-clear-button');
 
     Lap.onclick = function() {
-            Laps.innerHTML +="<li>"+`${seconds} : ${tens}`+"</li>";
+            Laps.innerHTML +="<li>"+`${seconds} : ${tens}`+" "+" "+"lap" + "</li>";
             myFunction();
     }
     clearButton.onclick=function(){

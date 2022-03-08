@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('./Assets/media/bg2.jpg') ; 
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.taskbar{
+    background-color: #f3f3f3;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+    display: flex;
+    z-index: 110;
+    justify-content: center;
+    
+}
+
+
+/* Start Menu */
+
+.startmenu{
+    position: absolute;
+    /*bottom: 55px;*/
+    bottom: -650px;
+    width: 100vw;
+    text-align: center;
+    transition: all 0.3s ease-in;
+    z-index: 6;
+}
+
+.startmenu img{
+    width: 480px;
+    border-radius: 4px;
+}
+
+/* Search Menu */
+
+.searchmenu{
+    position: absolute;
+    /*bottom: 55px;*/
+    bottom: -650px;
+    width: 100vw;
+    text-align: center;
+    transition: all 0.3s ease-in;
+    z-index: 6; 
+}
+
+.searchmenu img{
+    width: 545px;
+    border-radius: 4px;
+}
+
+/* Widgets Menu */
+
+.widgetsmenu{
+    position:absolute;
+    left: -950px;
+    width: 100vw;
+    text-align: left;
+    transition: all 0.3s ease-in;
+    z-index: 6;
+}
+
+.widgetsmenu img{
+    height: auto;
+    border-radius: 4px;
+    image-rendering: crisp-edges;
+    padding: 9px;
+    width: auto;
+    max-width: 100%;
+
+}
+
+.right{
+    justify-self: flex-end;
+    position: absolute;
+    right: 0;
+    margin: 6px 0;
+    height: 85%;
+}
+
+.icons{
+    margin: 5px;
+    width: 60px;
+    height: 45px;
+    text-align: center;
+    position: fixed;
+    font-size: 14px;
+    text-shadow: black;
+    text-shadow: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+   
+
+    
+}
+
+.icons img{
+    width: 45px;
+    margin: 6px;
+}
+

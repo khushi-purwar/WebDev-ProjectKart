@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./Assets/css/style.css" />
+		<title>Digital Clock</title>
+	</head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./Assets/css/style.css">
-	<title>Digital Clock</title>
-</head>
-
-<body onload="intiClock()">
-	<div class="datetime">
-		<div class="date"> <span id="dayname">Day</span>, <span id="month">Month</span> <span id="daynum">00</span>, <span id="year">Year</span> </div>
-		<div class="time"> <span id="hour">00</span>:
-			<spn id="minutes">00</spn>: <span id="seconds">00</span> <span id="period">AM</span> </div>
-	</div>
-	<script src="./script/script.js"></script>
-</body>
-
+	<body onload="intiClock()">
+		<div class="container">
+			<div class="datetime">
+				<div id="time"></div>
+				<div class="date">
+					<span id="dayname">Day</span>, <span id="month">Month</span>
+					<span id="daynum">00</span>, <span id="year">Year</span>
+				</div>
+			</div>
+			<div class="btn-div">
+				<button id="hour12" onclick="set12Hour()">12 Hour</button>
+				<button id="hour24" onclick="set24Hour()">24 Hour</button>
+			</div>
+		</div>
+		<script src="./script/script.js"></script>
+	</body>
 </html>
