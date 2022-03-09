@@ -8,11 +8,27 @@
 body {
     background-color: var(--backgroundColor);
 }
-
+section{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: whitesmoke;
+}
+section::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color:#1d3557;
+}
 .form-container{
-    width: 37%;
+    width: 52%;
+    height: 52%;
     margin: auto;
-    border: solid var(--formColor) .1rem;
+    border: solid var(--formColor) .1rem ;
     background-color: var(--formColor);
     padding: 2rem;
     transform: translate(0%, 40%);
@@ -29,6 +45,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .row {
     margin-bottom: 1rem;
 }
@@ -43,4 +60,4 @@ body {
 
 .form-control {
     background-color: var(--inputColor);
-}
+} 
