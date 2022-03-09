@@ -9,7 +9,6 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="./Asset/css/style.css">
   <script src="https://kit.fontawesome.com/67089fea78.js" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
   <title>Contact Us</title>
 </head>
 
@@ -30,14 +29,31 @@
         <input style=" font-family: 'font awesome 5 free'; font-weight:700;" type="email" class="form-control" id="exampleFormControlInput1" placeholder="&#xf0e0; name@example.com">
       </div>
       <div class="mb-3">
-         <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
+        <!-- <label for="message">Example textarea</label>  -->
         <textarea style=" font-family: 'font awesome 5 free'; font-weight:700;"placeholder=" &#xf4a3; Write your comment here..." class="form-control" id="message"
           rows="5"></textarea>
       </div>
       <div class="col-auto">
-        <button type="submit" class="btn">Submit</button>
+        <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+        <div class="popup" id="popup">
+          <img src="Asset/media/tick.png">
+          <h2>Thank You!</h2>
+          <p>Your details has been successfully submitted. Thanks!</p>
+          <button type="button" onclick="closePopup()">OK</button>
+        </div>
       </div>
     </div>
   </section>
+  <script>
+    let popup= document.getElementById("popup");
+
+    function openPopup(){
+      popup.classList.add("open-popup");
+
+    }
+    function closePopup(){
+      popup.classList.remove("open-popup");
+    }
+  </script>
 </body>
 </html>
