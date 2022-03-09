@@ -18,7 +18,9 @@
 <a href="https://icc-techsahead.netlify.app/"  target="_blank"> 
   <img src="images/icc.png" alt="ICC" width="300"/>
 </a>
-  
+<a href="https://gssoc.girlscript.tech/" target="_blank"> 
+  <img src="images/gssoc.png" alt="GSSoC" width="124"/>
+</a>
 </p>
   
 ## How To Contribute ? 👷 
