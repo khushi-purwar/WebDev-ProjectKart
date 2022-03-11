@@ -1,45 +1,27 @@
-function updateClock() {
+const clockElement = document.querySelector('.clock');
+const extraInfoElement = document.querySelector('.extra-info');
+const clockBorderElement = document.querySelector('.clock-border');
 
-	var now = new Date();
-	var dayname = now.getDay(),
-		month = now.getMonth(),
-		date = now.getDate(),
-		year = now.getFullYear(),
-		hours = now.getHours(),
-		min = now.getMinutes(),
-		sec = now.getSeconds(),
-		period = "AM";
+// helper functions
+const format = (str) => str.toString().padStart(2, '0');
 
-	var months = ["Janaury", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-	var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thrusday", "Friday", "Saturday"]
+const dateFn = () => {
+    const dt = new Date();
+    const hr = dt.getHours();
+    const min = dt.getMinutes();
 
-	if (hours == 0)
-		hours = 12;
+    clockElement.textContent = `${format(hr)}:${format(min)}`;
+    extraInfoElement.textContent = luxon.DateTime.local().toFormat(
+        'cccc, MMM dd',
+    );
+};
 
-	if (hours > 12) {
-		// hours  = hours -12;
-		period = "PM";
-	}
+dateFn();
+setInterval(dateFn, 1000);
 
-	// add 0 in the beginning of number if less than 10
-	hours = (hours < 10) ? "0" + hours : hours;
-	min = (min < 10) ? "0" + min : min;
-	sec = (sec < 10) ? '0' + sec : sec;
-
-	document.querySelector("#dayname").innerHTML = days[dayname];
-	document.querySelector("#month").innerHTML = months[month];
-	document.querySelector("#daynum").innerHTML = date;
-	document.querySelector("#year").innerHTML = year;
-	document.querySelector("#hour").innerHTML = hours;
-	document.querySelector("#minutes").innerHTML = min;
-	document.querySelector("#seconds").innerHTML = sec;
-	document.querySelector("#period").innerHTML = period;
-
-}
-
-function intiClock() {
-	updateClock();
-	window.setInterval("updateClock()", 1);
-}
-
-intiClock();
+let deg = 0;
+// animation spin
+setInterval(() => {
+    clockBorderElement.style.background = `linear-gradient(${deg}deg,  #ffb703, #fb8500)`;
+    deg = (deg + 1) % 360;
+}, 1);
