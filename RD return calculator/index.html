@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./Assets/css/style.css">
+        <title>RD return calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h3>RD return calculator</h3>
+            <p>Amount: (Rs)
+                <input type="number" id="amount" min="0">
+            </p>
+            <p>Rate of interest: (%)
+                <input type="number" id="interest" min="0" > 
+            </p>
+            <p>Year:
+                <input type="number" id="year" min="0"> 
+            </p>
+            <button id='button' onclick="calculate()">Calculate</button>
+            <p>Total invested amount: (Rs)
+                <input type="number" id="invested" disabled > 
+            </p>
+            <p>Total estimated return: (Rs)
+                <input type="number" id="estimate" disabled> 
+            </p>
+            <p>Total amount: (Rs)
+                <input type="number" id="total" disabled> 
+            </p>
+        </div>
+	
+    <script src="script.js">	
+	</script>
+
+    </body>
+
+</html>
