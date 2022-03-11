@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Sheets Api</title>
+</head>
+<body>
+    <body style="background-color: rgba(0, 0, 0, 0.9); font-family: 'Actor';">
+        <div class="ct" style="padding-top: 1%;">
+          <center>
+            <h1 style="color: white">Google SHeets Api Integration</h1>
+          </center>
+          <div class="tab">
+            <div id="left" class="tabcontent" style="    width: fit-content;">
+          
+              <summary class="table-wrapper">
+                <table id="ans" class="fl-table containerTable">
+                  <thead></thead>
+                 <tbody>
+                
+                 </tbody>
+              </table>
+            </summary>
+            </div>
+            <button class="tablink defaultOpen" onclick="opent('left', this, '#ff6666')" id="loadData">LOAD DATA</button>
+          </div>
+      
+          <div class="split">
+            <div class="container">
+              <form id="myForm">
+                <div class="row">
+                  <div class="col-25">
+                    <label>First Name:</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" name="First" placeholder="First" required>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                      <label>Last Name:</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" name="Last" placeholder="Last" required>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label>Company Name:</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" name="Company" placeholder="Company" required>
+                    </div>
+                  </div>
+      
+                <div class="row">
+                  <div class="col-25">
+                    <label>Email:</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" name="Email" placeholder="example@emali.com" required>
+                  </div>
+                </div>
+      
+                <div class="row">
+                  <div class="col-25">
+                    <label>Group :</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" name="Group" placeholder="Group">
+                  </div>
+                </div>
+      
+                <div class="row">
+                  <!-- onclick="myFunction()" -->
+                  <button type="submit" id="submit" >Send Data to Google Sheet</button>
+                  <!-- <input type="button" id="submit" value="Send Data to Google Sheet"> -->
+                </div>
+              </form>
+            </div>
+      
+           
+          </div>
+          <div id="snackbar">Sent SucessFully </div>
+        </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./config.js"></script>
+<script src="./assets/js/script.js"></script>
+
+</body>
+</html>
