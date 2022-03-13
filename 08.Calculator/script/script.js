@@ -81,5 +81,9 @@ powBtn.addEventListener('click', ()=>{
     screen.value = Math.pow(screen.value , 2).toFixed(10);
 })
 
+function changeTheme(){
+    var theme=document.body;
+    theme.classList.toggle("nightMode");
+}
 
 
