@@ -1,0 +1,67 @@
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="design.css">
+
+  <meta charset="utf-8">
+  <title>GST Calculator</title>
+</head>
+
+<body>
+  <div id="main">
+
+
+
+    <h1>
+      <center><U>GST Calculator</U></center>
+    </h1>
+    <form>
+      <table>
+        <tr>
+          <td><label>
+              Gross Price
+            </label></td>
+          <td>(in Rs)</td>
+          <td>
+            <div><input type="number" id="gross" size="125%" /></div>
+          </td>
+        </tr>
+        <tr>
+          <td><label>
+              GST Rate
+            </label></td>
+          <td>(in %)</td>
+          <td><span><input type="number" id="gstrate" size="125%" /></span></td>
+        </tr>
+        <tr>
+          <td><label>
+              Net Price
+            </label></td>
+          <td>(in Rs)</td>
+          <td><span id="netprice"></span< /td>
+        </tr>
+        <tr>
+          <td><label>
+              SGST
+            </label></td>
+          <td>(in Rs)</td>
+          <td><span id="sgst"></span></td>
+        </tr>
+        <tr>
+          <td><label>
+              CGST
+            </label></td>
+          <td>(in Rs)</td>
+          <td><span id="cgst"></span></td>
+        </tr>
+      </table>
+      <center><button type="button" id="button">Submit</button></center>
+    </form>
+  </div>
+  <script src="script.js" charset="utf-8"></script>
+
+
+
+</body>
+
+</html>

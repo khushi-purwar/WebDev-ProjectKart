@@ -1,45 +1,71 @@
-function updateClock() {
+// By default, time format is 12 hours
+// made global variable so that set12Hour() and set24Hour() can able to modify it's value.
+let timeFormat = 12;
 
+// update clock update time and date
+function updateClock() {
 	var now = new Date();
+	var time = now.toLocaleTimeString();
+
 	var dayname = now.getDay(),
 		month = now.getMonth(),
 		date = now.getDate(),
-		year = now.getFullYear(),
-		hours = now.getHours(),
-		min = now.getMinutes(),
-		sec = now.getSeconds(),
-		period = "AM";
+		year = now.getFullYear();
 
-	var months = ["Janaury", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-	var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thrusday", "Friday", "Saturday"]
-
-	if (hours == 0)
-		hours = 12;
-
-	if (hours > 12) {
-		// hours  = hours -12;
-		period = "PM";
-	}
-
-	// add 0 in the beginning of number if less than 10
-	hours = (hours < 10) ? "0" + hours : hours;
-	min = (min < 10) ? "0" + min : min;
-	sec = (sec < 10) ? '0' + sec : sec;
+	var months = [
+		"Janaury",
+		"February",
+		"March",
+		"April",
+		"May",
+		"June",
+		"July",
+		"August",
+		"September",
+		"October",
+		"November",
+		"December",
+	];
+	var days = [
+		"Sunday",
+		"Monday",
+		"Tuesday",
+		"Wednesday",
+		"Thrusday",
+		"Friday",
+		"Saturday",
+	];
 
 	document.querySelector("#dayname").innerHTML = days[dayname];
 	document.querySelector("#month").innerHTML = months[month];
 	document.querySelector("#daynum").innerHTML = date;
 	document.querySelector("#year").innerHTML = year;
-	document.querySelector("#hour").innerHTML = hours;
-	document.querySelector("#minutes").innerHTML = min;
-	document.querySelector("#seconds").innerHTML = sec;
-	document.querySelector("#period").innerHTML = period;
 
+	if (timeFormat == 12) {
+		document.querySelector("#time").innerHTML = time;
+	} else {
+		time = now.toTimeString().slice(0, 8);
+		document.querySelector("#time").innerHTML = time;
+	}
 }
 
+// change time format to 12 hour
+function set12Hour() {
+	timeFormat = 12;
+}
+
+// change time format to 24 hour
+function set24Hour() {
+	timeFormat = 24;
+}
+
+// start the clock
 function intiClock() {
 	updateClock();
+
+	// invoke updateClock() to update date and time every second
 	window.setInterval("updateClock()", 1);
 }
 
+// intiClock() called when page gets loaded
 intiClock();

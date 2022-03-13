@@ -8,7 +8,7 @@
 ## Project Structure
 
 <ul>
-  <li>Folder consists two folder (assets and script) and two files (index.html and readme.md) </li>
+  <li>Folder consists of two folder (assets and script) and two files (index.html and readme.md) </li>
   <li>In the assets folder, there are two folders, css and media. css folder contains only CSS files & media folder contain only media files of the main website.</li>
   <li>In the script folder, all the script files will be there.</li>
 </ul>
@@ -18,7 +18,9 @@
 <a href="https://icc-techsahead.netlify.app/"  target="_blank"> 
   <img src="images/icc.png" alt="ICC" width="300"/>
 </a>
-  
+<a href="https://gssoc.girlscript.tech/" target="_blank"> 
+  <img src="images/gssoc.png" alt="GSSoC" width="124"/>
+</a>
 </p>
   
 ## How To Contribute ? 👷 
