@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./Assets/css/style.css" />
-		<title>Digital Clock</title>
-	</head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/luxon@1.25.0/build/global/luxon.min.js"></script>
+</head>
 
-	<body onload="intiClock()">
-		<div class="container">
-			<div class="datetime">
-				<div id="time"></div>
-				<div class="date">
-					<span id="dayname">Day</span>, <span id="month">Month</span>
-					<span id="daynum">00</span>, <span id="year">Year</span>
-				</div>
-			</div>
-			<div class="btn-div">
-				<button id="hour12" onclick="set12Hour()">12 Hour</button>
-				<button id="hour24" onclick="set24Hour()">24 Hour</button>
-			</div>
-		</div>
-		<script src="./script/script.js"></script>
-	</body>
+<body>
+    <div class="clock-border">
+        <div class="clock-container">
+            <h1 class="clock"></h1>
+            <span class="extra-info"></span>
+        </div>
+    </div>
+
+    <script src="./script/script.js"></script>
+</body>
+
 </html>
