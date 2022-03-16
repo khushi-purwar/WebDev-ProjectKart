@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP-Address Tracker</title>
+    <link rel="stylesheet" href="design.css">
+    link
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="flex">
+        <div style="color: white;"> <a href="#c1">Home</a></div>
+        <div style="color: white;"> <a href="#about"> About </a></div>
+        <div style="color:white"> <a href="#intro1"> FAQs </a></div>
+    </div>
+
+    
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div class="c1">
+    <h2>Enter IP Address:</h2>
+   <p> <input type="text"  id="add"> </p>
+  <p > <button onclick="search()" class="button">Search</button> </p>
+  </div>
+
+  <div>&nbsp;</div>
+  <div>&nbsp;</div>
+  <div>&nbsp;</div>
+
+
+
+      <h3 style="text-align: center;">What Is An IP Address?</h3>
+  <a name="intro1"> <p> 
+    An IP address (Internet Protocol address) is a unique numerical label assigned to a device. It provides the location of the device in a network and a route on how to get there. The internet uses an IP address to send IP packets from a source to a destination. It is a building block that lets the internet function.</p>
+
+    
+  </a>
+
+  <a name="intro2">
+      <h3 style="text-align: center;">Can I track someones IP-address ?</h3>
+      <p>No, you can’t just track an Ip-address. You first need to have received one. Compare it to receiving a letter. If you receive the letter, then you can figure out where the letter came from by looking at the return address. If you don’t have the letter, then you also won’t have a return address. By the same token, if a letter does not have a destination address, you will not get a letter, and there is nothing to track it back to.
+
+        In internet terms this means you need a source address, a destination address and traffic (an email or a browser action) between the two. Normally an online business has a site or app as the destination and someone surfing the web is the source. If you are a business that has a site or an app and you are receiving internet traffic to the site or app the you will be able to see the ip-addresses coming to your site or app. Other places you can also see ip addresses are in the headers of the emails you receive or the log files of routers.</p>
+        <h3 style="text-align: center;">How does this IP tracker work? and what is it's accuracy? </h3>
+
+   
+        <p style="text-align: center;"> IP Tracker fetches data from an API called IP Stack. It has 70% accuracy. </p>
+
+
+  </a>
+
+  <a name="about">
+    <h3 style="text-align: center;">Who am I?</h3>
+    <p>I am a CSE Sophomore Currently pursuing my B.tech from Kalinga Institute of Industrial Technology, Bhubaneshwar. I am a passionate learner and intersted in Web development. Apart from these, I like to read different articles,playing badminton and travelling to new places.   </p>
+  </a>
+  <p style="text-align: center;">Made with<span style="font-size:175%;color:red;">&hearts;</span> 
+    by Aditya Raj Sinha</p>
+</body>
+
+<script>
+    function search()
+    {
+        var IP_CODE = document.querySelector("#add").value;
+        //var api_key = e2f3dc445779a1898932334804428bcf;
+        $.ajax({
+            type: "GET",
+            url: "http://api.ipstack.com/"+IP_CODE +"?access_key=79211e449d2e203b34fea52b7ba0eea5",
+            success: function(result)
+            {
+                console.log(result)
+                alert("\nCity:" + result.city + "\nType:" + result.type + "\nIP:" + result.ip + "\nCountry:"+result.country_name + "(" +result.location.country_flag_emoji+")" +"\nCountry Code:" + result.country_code +"\nNative Language:"+result.location.languages[0].native )
+            }
+        })
+    }
+</script>
+</html>
