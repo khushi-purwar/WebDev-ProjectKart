@@ -51,7 +51,7 @@ body {
     display: flex;
     align-items: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    transition: 0.5s, ease;
+    transition: 0.5s ease;
 }
 
 .profile-bottom .profile-info .material-icons {
@@ -61,4 +61,20 @@ body {
 
 .profile-bottom .profile-info:hover {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+button {
+    margin-top: 2rem;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: 0.5s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    color: #fff;
 }
