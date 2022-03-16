@@ -15,7 +15,11 @@ Random User Generator is a platform where you can generate random user img,name,
 
 ## 🎯 Features
 
-
+- Generate Random image
+- Generate Random Name
+- Generate Random Gender
+- Generate Random Phone
+- Generate Random loaction
 
 ## 📷 Screenshots
 
