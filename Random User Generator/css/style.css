@@ -34,3 +34,7 @@ body {
     border-radius: 50%;
     border: 5px solid #fff;
 }
+
+.profile-top .profile-info {
+    margin-top: 1rem;
+}
