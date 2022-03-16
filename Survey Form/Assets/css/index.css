@@ -1,0 +1,151 @@
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: url(https://i.redd.it/nx2iz5e7rdt51.png);
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ align-items: center;
+ 
+ }
+ 
+#bg-image {
+  
+ background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1RB2WarDZ_CrAo_-yhAGNuqfTjWYA9WZFzA&usqp=CAU);
+ border-radius: 2rem;
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ 
+}
+
+
+h1{
+  
+  color: #FFFDD0 !important;
+}
+
+p{
+  color: #FFFDD0 !important;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  margin-bottom: 0.5rem;
+}
+
+
+#title{
+
+font-family: 'Neonderthaw', cursive;
+font-size: 100px;
+font-weight: bold;
+text-align: center;
+
+}
+
+#description{
+
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
+font-weight: 400;
+text-align: center;
+font-style: italic;
+
+}
+
+header {
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+  border-radius: 2rem;
+}
+
+.header-blur{
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+  backdrop-filter: blur(5px);
+  webkit-backdrop-filter: blur(5px);
+  
+  border-radius: 2rem;
+ 
+}
+
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+.form-background{
+ 
+  
+  padding: 2.5rem 0.625rem;
+  border-radius: 2 rem;
+ 
+}
+
+.form-background-blur{
+  padding: 2.5rem 0.625rem;
+  backdrop-filter: blur(5px);
+  webkit-backdrop-filter: blur(5px);
+  border-radius: 2rem;
+  
+}
+
+#survey-form{
+
+font-family: Roboto;
+font-weight: 700;
+font-size: 25px;
+align-items: center;
+
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.submit-button{
+  
+  display: block;
+  background: green;
+  
+}
+
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  form-background-blur{
+    align-items: center;
+ justify-content: center;
+ display: flex;
+ }
+ }
