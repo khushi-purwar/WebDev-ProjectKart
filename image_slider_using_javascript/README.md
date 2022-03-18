@@ -1,5 +1,5 @@
 # Image Slider using js <br>
-## This project shows slideshows of images as we go on clicking. It can be used in the real world projects too where you need to add a slideshow feauture .<br><br>
+## This project shows slideshow of images as we go on clicking. It can be used in the real world projects too where you need to add a slideshow feauture .<br><br>
 ## Tech Stacks used : <img src="https://img.shields.io/badge/Frontend:-HTML & CSS-5555ff">  <img src="https://img.shields.io/badge/Backend:- Javascript-E32800"><br>
 ## UI Demonstration :<br><br>
 
