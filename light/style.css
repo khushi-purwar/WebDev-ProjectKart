@@ -44,3 +44,9 @@ label span {
 label input:checked~span {
     left: 75px;
 }
+
+label span ion-icon {
+    color: rgba(255, 255, 255, 0.25);
+    font-size: 2em;
+    transition: 00.5s;
+}
