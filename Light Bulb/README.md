@@ -21,6 +21,11 @@
 ## ⚡️  Introduction
 This is a Light Blub which can be controlled by toggle.
 
+## 📷 Screenshots
+
+![ss1](./img/off.jpg)
+![ss2](./img/on.jpg)
+
 ## ‎‍💻 Authors
 
 - [@iamrahulmahato](https://www.github.com/iamrahulmahato)
