@@ -5,7 +5,7 @@ it is my portfolio website it is created with HTML CSS and JavaScript I don't us
 
 ## DEMO
 
-
+![192 168 187 73_5503_AmolShelke-Portfolio_index html](https://user-images.githubusercontent.com/95171638/158942258-90b7658d-b9ff-4a05-9e29-cca230a37c91.png)
 
 ## Tools and Technologies
 
