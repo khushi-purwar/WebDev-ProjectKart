@@ -64,10 +64,10 @@ label input:checked~span ion-icon {
     width: 348px;
     height: 408px;
     pointer-events: none;
-    background: url(bulb_off.jpg);
+    background: url(../img/bulb_off.jpg);
     transition: 0.5s;
 }
 
 label input:checked~.bulb {
-    background: url(bulb_on.jpg);
+    background: url(../img/bulb_on.jpg);
 }
