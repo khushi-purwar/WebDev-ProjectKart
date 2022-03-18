@@ -55,3 +55,15 @@ label input:checked~span ion-icon {
     color: rgba(255, 255, 255, 1);
     filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #fff) drop-shadow(0 0 15px #fff);
 }
+
+.bulb {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 348px;
+    height: 408px;
+    pointer-events: none;
+    background: url(bulb_off.jpg);
+    transition: 0.5s;
+}
