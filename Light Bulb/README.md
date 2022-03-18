@@ -19,7 +19,7 @@
 </div>
 
 ## ⚡️  Introduction
-This is a Light Blub which can be controlled by toggle given below.
+This is a Light Blub which can be controlled by toggle.
 
 ## ‎‍💻 Authors
 
