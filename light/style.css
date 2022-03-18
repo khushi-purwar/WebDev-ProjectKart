@@ -40,3 +40,7 @@ label span {
     justify-content: center;
     align-items: center;
 }
+
+label input:checked~span {
+    left: 75px;
+}
