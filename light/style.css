@@ -11,3 +11,12 @@ body {
     background: #333;
     min-height: 100vh;
 }
+
+label {
+    position: relative;
+    top: -150px;
+    width: 150px;
+    height: 75px;
+    background: #212121;
+    border-radius: 10px;
+}
