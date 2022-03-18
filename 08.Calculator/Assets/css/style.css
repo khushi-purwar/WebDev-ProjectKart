@@ -16,6 +16,7 @@ h1{
     margin: 50px 0;
     color: rgb(17, 0, 255);
     font-size: 50px;
+    text-align:center;
 }
 .container{
     width: 45%;
@@ -112,7 +113,6 @@ h1{
                 background: #ff42a1;
                 transform: scale(1.02);
 }
-
 /* @media screen  and (max-width:1190px){
     .container{
         width: 60%;
@@ -123,6 +123,8 @@ h1{
                     -12px -12px 20px #ffffff;
     }
 } */
+
+
 
 @media screen  and (max-width:885px){
     .container{
@@ -149,3 +151,20 @@ h1{
        
     }
 }
+
+.change-theme{
+     position:fixed;
+     top:2%;
+     right:0;
+     color:white;
+     background-color:#cc0099;
+     border-radius:20px;
+     border:3px solid #99ccff
+
+}
+
+.nightMode{
+     background-color:#4d4d4d;
+}
+
+
