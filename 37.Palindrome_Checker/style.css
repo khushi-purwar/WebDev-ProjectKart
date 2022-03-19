@@ -1,0 +1,55 @@
+body{
+  background-image: url("https://img.freepik.com/free-photo/flowers-composition-romantic-white-gypsophila-flowers-photo-frame-pastel-blue-background_93853-349.jpg?w=826");
+  background-repeat: no-repeat;
+  background-size: 1100px 500px;
+  background-color: #3399ff;
+}
+
+.container {
+  margin: 50px 350px 0px 335px;
+  background-color: #f0fbff;
+  padding-bottom: 30px;
+  border-radius: 10px;
+}
+
+.button {
+  width: 25%;
+  padding: 8px 0 8px 0;
+  align-self: center;
+  font-family: 'Libre Baskerville', serif;
+  margin: 10px 0 15px 145px;
+  background-color: #db92ff;
+  border: none;
+  border-radius: 20px;
+}
+
+p {
+  font-family: 'Sansita Swashed', cursive;
+  text-align: center;
+  color: #4D77FF;
+  letter-spacing: 0.5px;
+}
+
+.box {
+  padding: 5px;
+  margin: 20px 0 15px 90px;
+  border-color: #4D77FF;
+  font-family: 'Merriweather', serif;
+  width: 50%;
+}
+
+.button:hover {
+  background-color: #FFB2A6;
+  transform: scale(1.1);
+}
+
+.box:hover {
+  background-color: #ffff99;
+}
+
+h1 {
+  margin-top: 70px;
+  color: #270082;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
