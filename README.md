@@ -73,7 +73,7 @@ git push -u origin <your_branch_name>
  
 <table>
 <tr>
-<td align="center"><a href="https://github.com/khushi-purwar"><img src="https://media-exp1.licdn.com/dms/image/C5603AQFQjgQVGH77fQ/profile-displayphoto-shrink_400_400/0/1621153995462?e=1646265600&v=beta&t=rBye2Q3S0h5bXjy49WDcKlvmzVPvxs5wFuLERK_vsRg" width=150px height=150px /></a></br> <h4 style="color:red;">Khushi Purwar</h4>
+<td align="center"><a href="https://github.com/khushi-purwar"><img src="khushipic.jpg" width=150px height=150px /></a></br> <h4 style="color:red;">Khushi Purwar</h4>
 <a href="https://www.linkedin.com/in/khushi-purwar/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a></td>
 </tr>
 </table>
