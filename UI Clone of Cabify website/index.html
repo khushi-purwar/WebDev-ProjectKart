@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Dashboard UI for eCommerce App</title>
+    <script src = "https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+        
+        * {
+            font-family: 'Red Hat Display', sans-serif;
+            -ms-overflow-style: none;  /* Internet Explorer 10+ */
+            scrollbar-width: none;  /* Firefox */
+        }
+
+        *::-webkit-scrollbar { 
+            display: none;  /* Safari and Chrome */
+        }
+    </style>
+</head>
+<body class = "bg-white text-[#8c88b1]">
+    <nav class = "flex flex-row mx-6 lg:mx-auto text-[#44307a] font-bold mt-6 lg:w-5/6">
+        <div class = "flex flex-row flex-grow items-center">
+            <h2 class = "text-2xl lg:text-4xl lg:mr-24">cabify</h2>
+            <div class = "flex flex-row items-center hidden lg:flex">
+                <h4 class = "mr-12 p-2 rounded-lg hover:bg-violet-100">Driver</h4>
+                <h4 class = "mr-12 p-2 rounded-lg hover:bg-violet-100">Business</h4>
+                <h4 class = "mr-12 p-2 rounded-lg hover:bg-violet-100">Rider</h4>
+                <h4 class = "mr-12 p-2 rounded-lg hover:bg-violet-100">Safety</h4>
+            </div>
+        </div>
+        <div class = "flex flex-row items-center">
+            <h4 class = "p-2 rounded-lg hover:bg-violet-100 hover:cursor-pointer hidden lg:block">Login</h4>
+            <div>
+                <h4 id = "toggle-main-menu" class = "flex flex-row items-center p-2 rounded-lg hover:bg-violet-100 hover:cursor-pointer lg:hidden">
+                    Menu
+                    <svg xmlns = "http://www.w3.org/2000/svg" class = "h-4 w-4 ml-1" fill = "none" viewBox = "0 0 24 24" stroke = "currentColor" stroke-width = "2">
+                        <path stroke-linecap = "round" stroke-linejoin = "round" d = "M19 9l-7 7-7-7" />
+                    </svg>
+                </h4>
+                <ul id = "main-menu" class = "bg-violet-100 absolute rounded-lg hidden px-4 py-2 mt-2">
+                    <li>Driver</li>
+                    <li>Business</li>
+                    <li>Rider</li>
+                    <li>Safety</li>
+                </ul>
+            </div>
+            <div class = "lg:ml-6">
+                <h4 id = "signup-button" class = "flex flex-row items-center p-2 rounded-lg hover:bg-violet-100 hover:cursor-pointer">
+                    Sign Up
+                    <svg xmlns = "http://www.w3.org/2000/svg" class = "h-4 w-4 ml-1" fill = "none" viewBox = "0 0 24 24" stroke = "currentColor" stroke-width = "2">
+                        <path stroke-linecap = "round" stroke-linejoin = "round" d = "M19 9l-7 7-7-7" />
+                    </svg>
+                </h4>
+                <ul id = "signup-menu" class = "bg-violet-100 absolute rounded-lg hidden px-4 py-2 mt-2">
+                    <li>As a driver</li>
+                    <li>As a passenger</li>
+                    <li>As a business</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class = "mt-16 lg:mt-24">
+        <section class = "flex flex-col lg:flex-row mx-auto text-[#44307a] font-bold mt-6 w-5/6">
+            <div class = "flex flex-col justify-center mb-12 lg:mb-0">
+                <h1 class = "text-3xl lg:text-5xl">Safer, better quality, and a city at your fingertips.</h1>
+                <h3 class = "text-xl lg:text-2xl my-6">Become a driver and start earning.</h3>
+                <span class = "bg-[#7145d6] text-white text-lg rounded-lg w-fit px-6 py-3 hover:cursor-pointer">Drive with us</span>
+            </div>
+            <img class = "h-[15rem] lg:h-[30rem] lg:rotate-6 rounded-tl-[40px] lg:rounded-tl-[100px] rounded-br-[40px] lg:rounded-br-[100px] ml-0 lg:ml-36" src = "assets/driver.jpg" alt = "cab_driver">
+        </section>
+
+        <svg xmlns = "http://www.w3.org/2000/svg" viewBox = "0 0 1440 320">
+            <path fill = "#f7f7fc" fill-opacity = "1" d = "M0,256L48,261.3C96,267,192,277,288,272C384,267,480,245,576,234.7C672,224,768,224,864,208C960,192,1056,160,1152,160C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+
+        <section class = "bg-[#f7f7fc] flex flex-col lg:flex-row text-[#44307a] font-bold px-12 lg:px-36 pt-12 pb-12">
+            <img class = "h-[36rem] lg:mr-24" src = "assets/app.jpg" alt = "cab_app_ui">
+            <div class = "flex flex-col">
+                <h3 class = "text-gray-400 text-center lg:text-left mb-12">WHY CHOOSE CABIFY</h3>
+                <div class = "flex flex-row items-center mb-12">
+                    <div class = "bg-red-300 text-white rounded-full p-2 mr-6">
+                        <svg xmlns = "http://www.w3.org/2000/svg" class = "h-6 w-6" fill = "none" viewBox = "0 0 24 24" stroke = "currentColor" stroke-width = "2">
+                            <path stroke-linecap = "round" stroke-linejoin = "round" d = "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <div class = "flex flex-col items-start">
+                        <h2 class = "text-2xl lg:text-3xl mb-2">Your safety is our priority</h2>
+                        <p class = "text-justify">With geo-tracked journeys and identified drivers. And of course, we put in place measures to protect you from COVID-19.</p>
+                    </div>
+                </div>
+                <div class = "flex flex-row items-center mb-12">
+                    <div class = "bg-red-300 text-white rounded-full p-2 mr-6">
+                        <svg xmlns = "http://www.w3.org/2000/svg" class = "h-6 w-6" fill = "none" viewBox = "0 0 24 24" stroke = "currentColor" stroke-width = "2">
+                            <path stroke-linecap = "round" stroke-linejoin = "round" d = "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <div class = "flex flex-col items-start">
+                        <h2 class = "text-2xl lg:text-3xl mb-2">The highest quality standards</h2>
+                        <p class = "text-justify">Professional drivers, modern vehicles and the ability to control your journey preferences via the app. At last, you’ll travel as you deserve to.</p>
+                    </div>
+                </div>
+                <div class = "flex flex-row items-center">
+                    <div class = "bg-red-300 text-white rounded-full p-2 mr-6">
+                        <svg xmlns = "http://www.w3.org/2000/svg" class = "h-6 w-6" fill = "none" viewBox = "0 0 24 24" stroke = "currentColor" stroke-width = "2">
+                            <path stroke-linecap = "round" stroke-linejoin = "round" d = "M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                        </svg>
+                    </div>
+                    <div class = "flex flex-col items-start">
+                        <h2 class = "text-2xl lg:text-3xl mb-2">Clear and transparent prices</h2>
+                        <p class = "text-justify">We always show you the price before you order the journey so that you can decide how best to get there. No surprises.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class = "bg-[#f7f7fc] pt-12 pb-24">
+            <div class = "bg-white flex flex-col lg:flex-row text-[#44307a] font-bold shadow-lg rounded-lg mx-6 lg:mx-auto lg:w-5/6">
+                <div class = "flex flex-col items-start p-12">
+                    <h5 class = "text-gray-400 mb-12">CABIFY BUSINESS</h5>
+                    <h2 class = "text-justify lg:text-left text-3xl mb-6">A new concept of corporate transport.</h2>
+                    <p class = "text-justify mb-12">
+                        Your employees or clients will travel in the safest, quickest way there is. From one simple platform, control all your 
+                        costs, follow all journeys in real-time and set price, time and zone limits.
+                    </p>
+                    <span class = "bg-violet-100 flex flex-row items-center text-[#7145d6] text-lg rounded-lg px-4 py-2 hover:cursor-pointer">
+                        Discover Cabify Business
+                        <svg xmlns = "http://www.w3.org/2000/svg" class = "h-5 w-5 ml-2" fill = "none" viewBox = "0 0 24 24" stroke = "currentColor" stroke-width = "2">
+                            <path stroke-linecap = "round" stroke-linejoin = "round" d = "M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </span>
+                </div>
+                <img class = "h-[13rem] w-full lg:h-[27rem] lg:w-[40rem] rounded-bl-lg lg:rounded-bl-none lg:rounded-tr-lg rounded-br-lg ml-0 lg:ml-24" src = "assets/group.jpg" alt = "group_discussion">
+            </div>
+        </section>
+
+        <section class = "py-24">
+            <div class = "flex flex-col items-start mx-auto text-[#44307a] font-bold px-6 lg:px-0 lg:w-5/6">
+                <h2 class = "text-3xl">Committed to keeping you safe.</h2>
+                <p class = "text-justify mb-12">We’ve created our service with safety in mind, down to every last detail.</p>
+                <div class = "lg:grid grid-cols-12 gap-12">
+                    <div class = "col-span-4 mb-6 lg:mb-0">
+                        <div class = "bg-violet-200 rounded-full w-fit p-3 mb-6">
+                            <svg xmlns = "http://www.w3.org/2000/svg" class = "text-red-600 h-6 w-6" fill = "none" viewBox = "0 0 24 24" stroke = "currentColor" stroke-width = "2">
+                                <path stroke-linecap = "round" stroke-linejoin = "round" d = "M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                            </svg>
+                        </div>
+                        <h3 class = "text-2xl">Protection against COVID-19</h3>
+                        <p class = "text-justify">Extra safety and hygiene measures so that you can ride around the city as safely as ever.</p>
+                    </div>
+                    <div class = "col-span-4 mb-6 lg:mb-0">
+                        <div class = "bg-violet-200 rounded-full w-fit p-3 mb-6">
+                            <svg xmlns = "http://www.w3.org/2000/svg" class = "text-red-600 h-6 w-6" fill = "none" viewBox = "0 0 24 24" stroke = "currentColor" stroke-width = "2">
+                                <path stroke-linecap = "round" stroke-linejoin = "round" d = "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap = "round" stroke-linejoin = "round" d = "M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                        <h3 class = "text-2xl">Journey tracking</h3>
+                        <p class = "text-justify">Each journey is tracked and you can share your route in real-time so your friends and family know where you are.</p>
+                    </div>
+                    <div class = "col-span-4 mb-6 lg:mb-0">
+                        <div class = "bg-violet-200 rounded-full w-fit p-3 mb-6">
+                            <svg xmlns = "http://www.w3.org/2000/svg" class = "text-red-600 h-6 w-6" fill = "none" viewBox = "0 0 24 24" stroke = "currentColor" stroke-width = "2">
+                                <path stroke-linecap = "round" stroke-linejoin = "round" d = "M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                            </svg>
+                        </div>
+                        <h3 class = "text-2xl">We’re here for you</h3>
+                        <p class = "text-justify">Our customer support team is here to help you and answer any questions you might have.</p>
+                    </div>
+                </div>
+            </div>            
+        </section>
+
+        <svg xmlns = "http://www.w3.org/2000/svg" viewBox = "0 0 1440 300">
+            <path fill = "#7145d6" fill-opacity = "1" d = "M0,256L80,250.7C160,245,320,235,480,208C640,181,800,139,960,106.7C1120,75,1280,53,1360,42.7L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+        </svg>
+
+        <section class = "bg-[#7145d6] flex flex-col text-white font-bold pt-12 lg:pt-0 pb-12">
+            <div class = "mx-12 lg:mx-auto text-justify lg:text-center lg:w-2/6 mb-24">
+                <h3 class = "text-gray-400 mb-6">CABIFY IN YOUR CITY</h3>
+                <h2 class = "text-2xl mb-12"> We’re available in 8 countries and more than 40 cities around the world.</h2>
+                <span class = "bg-[#44307a] rounded-lg px-6 py-3 hover:cursor-pointer">Learn more about what we do</span>
+            </div>
+            <div class = "lg:grid grid-cols-12 gap-12 mx-12 lg:mx-auto lg:w-4/6 mb-24">
+                <div class = "col-span-3 mb-12 lg:mb-0">
+                    <h3 class = "text-gray-400 mb-6">PRODUCT</h3>
+                    <ul>
+                        <li class = "mb-2">Drivers</li>
+                        <li class = "mb-2">Business</li>
+                        <li class = "mb-2">Cities</li>
+                        <li>Cities and rates</li>
+                    </ul>
+                </div>
+                <div class = "col-span-3 mb-12 lg:mb-0">
+                    <h3 class = "text-gray-400 mb-6">ABOUT US</h3>
+                    <ul>
+                        <li class = "mb-2">Who are we</li>
+                        <li class = "mb-2">Join the team</li>
+                        <li class = "mb-2">Blog</li>
+                        <li class = "mb-2">Press</li>
+                        <li>Sustainability</li>
+                    </ul>
+                </div>
+                <div class = "col-span-3 mb-12 lg:mb-0">
+                    <h3 class = "text-gray-400 mb-6">RESOURCES</h3>
+                    <ul>
+                        <li class = "mb-2">Help centr</li>
+                        <li class = "mb-2">Conditions</li>
+                        <li class = "mb-2">Privacy</li>
+                        <li>Quality Policy</li>
+                    </ul>
+                </div>
+                <div class = "col-span-3">
+                    <h3 class = "text-gray-400 mb-6">Language</h3>
+                    <ul class = "mb-12">
+                        <li class = "flex flex-row items-center">
+                            English
+                            <svg xmlns = "http://www.w3.org/2000/svg" class = "h-4 w-4 ml-2" fill = "none" viewBox = "0 0 24 24" stroke = "currentColor" stroke-width = "2">
+                                <path stroke-linecap = "round" stroke-linejoin = "round" d = "M19 9l-7 7-7-7" />
+                            </svg>
+                        </li>
+                    </ul>
+                    <h3 class = "text-gray-400 mb-6">DOWNLOAD NOW</h3>
+                    <ul>
+                        <li class = "mb-2">for iOS</li>
+                        <li>for Android</li>
+                    </ul>
+                </div>
+            </div>
+            <div class = "flex flex-col lg:flex-row items-center justify-between mx-auto w-4/6">
+                <h3 class = "text-gray-400 mb-6">© 2022 Cabify España</h3>
+                <div class = "flex flex-row items-center">
+                    <svg xmlns = "http://www.w3.org/2000/svg" class = "h-6 w-6 mr-2" viewBox = "0 0 30 30" style = "fill:white;">    
+                        <path d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"></path>    
+                    </svg>
+                    <svg xmlns = "http://www.w3.org/2000/svg" class = "h-6 w-6 mr-2" viewBox = "0 0 30 30" style = "fill:white;">    
+                        <path d = "M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z"></path>
+                    </svg>
+                    <svg xmlns = "http://www.w3.org/2000/svg" class = "h-6 w-6" viewBox = "0 0 30 30" style = "fill:white;">    
+                        <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
+                    </svg>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src = "./main.js"></script>
+</body>
+</html>
