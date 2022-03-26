@@ -26,7 +26,7 @@ It is a love calculator made with html,css and js
 
 ## 📷 Screenshots
 
-![ss1]()
+![ss1](./img/sc-1.jpeg)
 ![ss2]()
 
 ## ‎‍💻 Authors
