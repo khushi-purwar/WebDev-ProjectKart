@@ -8,6 +8,8 @@ function calculateLove() {
     let yourName = document.getElementById("your-name").value;
     let crushName = document.getElementById("crush-name").value;
     if (yourName != "" && crushName != "") {
+        let percentage = Math.floor(Math.random() * 101);
+
 
     }
 
