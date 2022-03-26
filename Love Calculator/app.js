@@ -9,6 +9,8 @@ function calculateLove() {
     let crushName = document.getElementById("crush-name").value;
     if (yourName != "" && crushName != "") {
         let percentage = Math.floor(Math.random() * 101);
+        document.getElementById("result-message").innerText = yourName + " and " + crushName + " 's chance of love:  ";
+
 
 
     }
