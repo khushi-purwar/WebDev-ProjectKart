@@ -1,0 +1,61 @@
+body{
+    display: block;
+    background-image: linear-gradient(to bottom right,rgb(243, 205, 78), rgb(240, 172, 151));
+    background-repeat: no-repeat;
+    padding-bottom: 60vh;
+    margin-top: 5%;
+}
+
+div.list{
+    display: block;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    background-color: rgb(198, 219, 238);
+    border-radius: 40px;
+}
+
+.text-field{
+    padding: 3px 6px;
+    border-radius: 30px;
+}
+
+.btn{
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+.btn:hover{
+    background-color: rgb(247, 222, 140);
+    cursor: pointer;
+}
+
+div.list ul li.list-item{
+    list-style: none;
+    display: inline-block;
+    padding: 1vh 2vw;
+    margin: 5px 2px;
+    background-color: rgb(198, 219, 238);
+    border-radius: 40px;
+}
+
+div#length, div#area, div#temperature, div#volume, div#mass, div#speed, div#time, div#data{
+    text-align: center;
+    padding-top: 60px;
+}
+
+.margin{
+    margin: 10px;
+}
+
+
+div#length{
+    display: block;
+}
+
+div#area, div#temperature, div#volume, div#mass, div#speed, div#time, div#data{
+    display: none;
+}
+
