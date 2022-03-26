@@ -19,9 +19,9 @@ Another feature is to copy the password to clipboard.
 
 ## Screenshots
 
-<img src="./Assets/media/ss1.png" />
+<img src="./Assets/media/DEMO1.jpg" />
 
 
 ## Live Demo
 
-<img src="./Assets/media/demo.gif" />
+<img src="./Assets/media/My Video.gif" />

@@ -1,13 +1,39 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    padding: 5px;
+    margin: 5px;
+    /* box-sizing: border-box; */
     list-style: none;
     text-decoration: none;
     font-family: Roboto, sans-serif;
 }
 
 /* now start coding of css from here  */
+
+.trynow{
+    color: white;
+    background-color: blueviolet;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+}
+
+.trynow:hover{
+
+    background-color: white;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+}
+
+.image{
+    width: 350px;
+    height: 120px;
+    padding-top: 50px;
+    padding-left: 0px;
+}
+
 
 body{
     background: whitesmoke;
@@ -28,14 +54,31 @@ main h1{
 }
 
 main h3{
-    /* color: whitesmoke; */
+
     font-size: 25px;
     font-weight: bolder;
-    max-width: 800px;
-    width: 96%;
-    border-radius: 4px;
-    background-color: rgba(130, 93, 168,0.4);
-    margin: 0 auto;
+    width: 350px;
+    height: 320px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 10px auto;
+    margin-left: 100px;
+    margin-right: 40px;
     padding: 4px 60px;
     margin-top: 10px;
+    margin-bottom: 50px;
+    float: left;
+    box-shadow: 8px 5px rgba(0, 0, 0, 0.5);
+}
+
+main h3:hover {
+ 
+  transform: scale(1.05);
+  box-shadow: 8px 5px rgba(0, 0, 0, 0.8);
+
+}
+
+a:hover {
+    /* color: white; */
+    cursor: pointer;
 }

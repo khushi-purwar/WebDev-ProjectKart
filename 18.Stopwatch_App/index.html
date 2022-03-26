@@ -4,15 +4,23 @@
         <meta charset="utf-8">
         <title>StopWatch App</title>
         <meta name="viewport" content="initial-scale=1.0,user-scalable=yes">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./Assets/css/style.css">
     </head>
 <body>
+       <h1>Vanilla Stopwatch Javascript App</h1>
     <div class="box">
-        <h1>Vanilla Stopwatch Javascript App</h1>
-        <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+        <p><span id="seconds">00</span><span>:</span><span id="tens">00</span></p>
         <button id="start">Start</button>
         <button id="reset">Reset</button>
         <button id="stop">Stop</button>
+        <button id="lap">laps</button>
+        <div class="lap-container">
+            <ol id="laps">
+        
+            </ol>
+        </div>
+        <button id="lap-clear-button">Clear All</button>
     </div>
     <script src="./script/script.js"></script>
     </body>

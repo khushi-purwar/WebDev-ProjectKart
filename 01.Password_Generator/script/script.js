@@ -1,89 +1,62 @@
 // dom elements
-const result = document.getElementById('result');
-const length = document.getElementById('length');
-const uppercase  =document.getElementById('uppercase');
-const lowercase = document.getElementById('lowercase');
-const numbers = document.getElementById('numbers');
-const symbols = document.getElementById('symbols');
-const btn = document.getElementById('generate');
-const clipboard = document.getElementById('clipboard');
 
-const randomFunc = {
-    lower: getRandomLower,
-    upper : getRandomUpper,
-    number : getRandomNumber,
-    symbol : getRandomSymbol
+const cardElement = document.querySelector('.card');
+
+const resultElement = document.getElementById('result');
+const lengthElement = document.getElementById('length');
+const copyElement = document.getElementById('copy');
+
+const lettersElement = document.getElementById('letters');
+const numbersElement = document.getElementById('numbers');
+const symbolsElement = document.getElementById('symbols');
+
+let lengthOfPassword = lengthElement.value;
+
+const changePasswordStrength = () => {
+    if (lengthOfPassword < 8) {
+        cardElement.style.borderTopColor = 'red';
+    } else if (lengthOfPassword > 8 && lengthOfPassword < 12) {
+        cardElement.style.borderTopColor = 'orange';
+    } else if (lengthOfPassword > 12) {
+        cardElement.style.borderTopColor = 'green';
+    }
 };
 
-//  generate  event listners
-btn.addEventListener('click', ()=>{
-    const len = Number(length.value);
-    const hasLower = lowercase.checked;
-    const hasUpper = uppercase.checked;
-    const hasNumber = numbers.checked;
-    const hasSymbol = symbols.checked;
-
-    result.innerHTML = generatePassword(len, hasLower, hasUpper, hasNumber, hasSymbol);
-})
-
-//  copy to clipboard
-clipboard.addEventListener('click', ()=>{
-    const textarea = document.createElement('textarea');
-    const password = result.innerText;
-
-    if(!password)
-    return;
-
-    textarea.value = password;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand('copy');
-    textarea.remove();
-    
-    alert("Password copied to clipboard!")
-})
-
-// generate password
-function generatePassword(len, lower, upper, number, symbol){
-    let generatedPassword = '';
-    const checkedCount = lower+upper+number+symbol;
-    const checkedArr = [{lower}, {upper}, {number}, {symbol}].filter( 
-        item => Object.values(item)[0]
-    )    // containing only checked setting
-
-    
-    if(checkedCount == 0){
-        return '';
+const generate_random_password = () => {
+    const letters = lettersElement.checked ?
+        'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ' :
+        '';
+    const numbers = numbersElement.checked ? '0123456789' : '';
+    const symbols = symbolsElement.checked ? '~!@#$%^&*()' : '';
+    const char_set = `${letters}${numbers}${symbols}`;
+    let password = '';
+    for (let i = 0; i < lengthOfPassword; i++) {
+        const element = char_set[Math.floor(Math.random() * char_set.length)];
+        password += element;
     }
-
-    for(let i=0;i<len;i+=checkedCount){
-        checkedArr.forEach(type =>{
-            const func = Object.keys(type)[0];
-            generatedPassword += randomFunc[func]();
-           
-        })
+    if (char_set.length === 0) {
+        password = "You can't generate password without any characters.";
     }
+    changePasswordStrength();
+    resultElement.textContent = password;
+};
 
-    const finalPassword = generatedPassword.slice(0,len);
-    return finalPassword;
-}
+lengthElement.addEventListener('change', (e) => {
+    lengthOfPassword = e.target.value;
+    generate_random_password();
+});
 
-//  generator functions
+copyElement.addEventListener('click', (e) => {
+    resultElement.select();
+    const isSuccessfull = document.execCommand('copy');
+    if (isSuccessfull) {
+        e.target.textContent = 'Copied';
+        setTimeout(() => {
+            e.target.textContent = 'Copy';
+        }, 3000);
+    } else {
+        resultElement.textContent = "Your browser doesn't support clipboard.";
+    }
+});
 
-function getRandomLower(){
-    return String.fromCharCode(Math.floor(Math.random() * 26) + 97)
-}
-
-function getRandomUpper(){
-    return String.fromCharCode(Math.floor(Math.random() * 26) + 65)
-}
-
-function getRandomNumber(){
-    return String.fromCharCode(Math.floor(Math.random() * 10) + 48)
-}
-
-function getRandomSymbol(){
-    const symbols = '!@>#$]%^&}*({[)=</,'
-    return symbols[Math.floor(Math.random() * symbols.length)]
-
-}
+generate_random_password();

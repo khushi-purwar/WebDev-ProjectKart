@@ -21,26 +21,108 @@ h1{
     text-transform:capitalize;
     /* width: 92%; */
 }
-.btn{
+a{
+    position: relative;
+    display: block;
+    text-decoration: none;
     font-size: 20px;
     font-weight: bold;
     padding: 20px;
     border: 2px solid black;
+    background: linear-gradient(90deg, #0162c8,#55e7fc);
     width: 150px;
-    border-radius: 20px;
+    border-radius: 5px;
     margin: auto;
-}
-.btn:hover{
-    border: 2px solid transparent;
-    background-color: rgb(53, 4, 4);
-    color: whitesmoke;
-    /* background: linear-gradient(); */
-}
-p{
-    font-size: 25px;
-}
-/* 
-.gredient{
+    overflow: hidden;
     
-    width: 92%;
-} */
+}
+.hi{
+    font-size: 10px;
+    font-weight: bold;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 25px;
+    padding-right: 20px;
+    box-shadow: 5px 5px 20px rgba(255,255,255,0.05);
+   
+}
+#myInput{
+    background: #fff;
+    font-size: 2.3vmin;
+    font-weight: 400;
+    color:#424565;
+    width: 44%;
+    height: 50px;
+    border-radius: 7px;
+    border:none;
+}
+.hi{
+    background: #5784f5;
+    color:#fff;
+    font-size: 18px;
+    border:none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.hi:hover{
+    background: var(--clr);
+    box-shadow: 0 0 10px var(--clr),
+    0 0 30px var(--clr),
+    0 0 60px var(--clr),
+    0 0 100px var(--clr);
+}
+
+a span{
+    position: relative;
+    z-index: 1;
+    color:#fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+a .liquid{
+    position: absolute;
+    top:-80px;
+    cursor: pointer;
+    left:0px;
+    height:200px;
+    width: 200px;
+    background: #4973ff;
+    box-shadow: inset 0 0 50px rgba(0,0,0,.5);
+    transition: 0.5s;
+}
+a:hover .liquid{
+    top:-134px;
+}
+a .liquid::before, a .liquid::after{
+    content:'';
+    position:absolute;
+    top:100px;
+    width: 200%;
+    height: 200%;
+    top:0;
+    left:50%;
+    transform: translate(-50%,-70%);
+    background: #000;
+}
+a .liquid::before
+{
+    border-radius: 45%;
+    background: rgba(20,20,20,1);
+    animation: animate 5s linear infinite;
+}
+a .liquid::after{
+    border-radius: 40%;
+    background: rgba(20,20,20,0.5);
+    animation:animate 10s linear infinite;
+
+}
+@keyframes animate{
+    0%{
+        transform: translate(-50%,-70%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-70%) rotate(360deg);
+    }
+}
+

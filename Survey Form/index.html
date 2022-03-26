@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css"></link>
+  <title>Survey Form</title>
+  </head>
+  <body>
+  <main>
+  <div class="container">
+  <header id="bg-image">
+    <div class="header-blur">
+    
+   <h1 id="title">Survey Form</h1>
+   <p id="description">
+     Thank you for being a patient audience and using this platform. 
+   </p>
+   <p id="description">  
+     Now it's your turn to help and improve it!
+   </p>
+   <p id="description">
+     •••  
+   </p>
+   </div>
+  </header>
+  <div class="form-background" id="bg-image">
+    <div class="form-background-blur">
+    <p1 style="font-family: Roboto; font-color: black; font-style: italic;">
+      *required field  
+    </p1>
+    <form id="survey-form" onsubmit="return myFunction()">
+      <label id="name-label" for="name">Name*: </label>
+      <br>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      /><br><br>
+      <label id="name-label" for="email">Email*: </label>
+      <br>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="email@example.com"
+        required
+      /><br><br>
+      <label id="name-label" for="age">Age*: </label>
+      <br>
+      <input
+        type="number"
+        name="age"
+        id="age"
+        class="form-control"
+        placeholder="Enter your age"
+        required
+      /><br><br>
+      <label id="pronouns-label" for="pronouns">What are your pronouns?</label>
+      <br>
+      <input type="radio" id="she" name="gender" value="she">
+      <label for="gender">She/Her/Hers</label><br>
+      <input type="radio" id="he" name="gender" value="he">
+      <label for="gender">He/Him/His</label><br>  
+      <input type="radio" id="they" name="gender" value="they">
+      <label for="gender">They/Them/Theirs</label><br>    
+      <input type="radio" id="preferNo" name="gender" value="preferNo">
+      <label for="gender">Prefer Not to Say</label><br>
+      <input type="radio" id="others" name="gender" value="others">
+      <label for="gender">Others </label><br>
+      <input type="text" name="gender"/>
+      <br><br>
+      <label id="languages-label" for="languages">What are your preferred Web Languages?</label>
+      <br>
+      <input type="checkbox" id="html" name="fav_language" value="HTML">
+      <label for="html">HTML</label><br>
+      <input type="checkbox" id="css" name="fav_language" value="CSS">
+      <label for="css">CSS</label><br>
+      <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
+      <label for="javascript">JavaScript</label><br><br><br>
+      <label id="feedback-label" for="feedback">Your feedback is important to us. <br> Feel free to drop some suggestions*: </label><br><br>
+      <textarea
+        type="text"
+        name="feedback"
+        id="feedback-label"
+        class="form-control"
+        placeholder="Provide your feedback and help us improve"
+        required></textarea><br><br>
+        <input class="submit-button" type='submit' style="background: green;" value="Submit"/>
+    </form>
+    </div>
+    </div>
+    </div>
+   </main>
+   
+     <script type="text/javascript" src="index.js"></script>
+        
+  </body>
+
+    
+      
+</html>

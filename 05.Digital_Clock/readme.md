@@ -2,7 +2,7 @@
 
 ## About the Project
 
-Digital Clock -> This clock includes Date (Day, Month, Year), Time (Hours, Minutes, Seconds) and Period (AM/PM). The clock is in 24 hours format.
+Digital Clock -> This clock includes Date (Day, Month), Time (Hours, Minutes).
 
 ## Tech Stacks Used
 
@@ -12,7 +12,7 @@ Digital Clock -> This clock includes Date (Day, Month, Year), Time (Hours, Minut
 
 
 ## Screenshots
-<img src="./Assets/media/ss1.png" />
+<img src="./Assets/media/SS.jpg" />
 
 ## Visit Website
 https://khushi-purwar.github.io/Web-Dev-ProjectKart/Digital%20Clock/

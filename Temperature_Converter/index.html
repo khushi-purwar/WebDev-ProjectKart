@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/main.js"></script>
+		<title>Temperature Converter</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<nav>
+			<img src="img/temperature-icon.png" alt="temp-icon">
+			<h1 class="heading">Temperature Converter</h1>
+			<img src="img/temperature-icon.png" alt="temp-icon">
+			<!-- <button class="instructionBtn">Instructions</button> -->
+		</nav>
+		<div class="container">
+		<form id="tempCalculator" onsubmit="calculateTemp();return false; ">
+			<label for="temp" class="header">Enter the Temperature :</label>
+			<br/><input type="number" step="any" name="temp" id="temp">
+
+			<br/><select name="temp_diff" id="temp_diff" class="temp_diff">
+				<option value="none">Select Scale</option>
+				<option value="cel">&#176;Celsius</option>
+				<option value="fah">&#176;Farenheit</option>
+				
+			</select><br/>
+
+			<!-- <label for="temp">Convert</label> -->
+			<input type="submit" class="submitBtn" name="temp"><br/>
+			<span id = "resultDisplay"></span>
+			<span id = "emoji"></span>
+
+		</form>
+		
+
+		</div>
+	</body>
+</html>

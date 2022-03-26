@@ -1,21 +1,33 @@
-# ☀️🌤⛈ Weather-Application-using-API
-## Overview of Weather App
+<h1>WeatherApp</h1>
 
-> _A simple API enabled website build using HTML, CSS & JavaScript._
+<p>Simple Weather app written in HTML, CSS, and JavaScript using the APIs for fetching weather and geolocation information.</p>
 
-Weather app will show the following information, the user's city and country (Etawah, IN), day and date , the temperature value (21°C) in Celsius unit,  the weather description (rainy), an Icon that shows the weather status, and then min and max temperature.
+<h3>Used Technologies</h3>
+<ul>
+  <li>HTML5</li>
+  <li>CSS3</li>
+  <li>JavaScript</li>
+</ul>
 
-## Tech Stack
+<h3>Used APIs</h4>
+<ul>
+  <li>Open Weather API</li>
+ <li>Unsplash API</li>
+</ul>
 
-**Client:** HTML, CSS , JavaScript
+#### Steps to Use:
+---
 
-**API:** [OpenWeatherMap](https://openweathermap.org/)
+- Download or clone the repository
+- Go to the directory
+- Run the index.html file
+- Just Type the city name you want to know the weather of, and then click on the search button.
+- After that it will automatically display Weather, Humidity, Wind Speed of the city.
 
 
-## ScreenShot
-
-![image](https://user-images.githubusercontent.com/52875298/126892370-bf5d82d4-a1b1-4e02-a5cc-631dde55a8e3.png)
-
-## Visit Website
-
-https://khushi-purwar.github.io/Web-Dev-ProjectKart/Weather%20Application/
+<h3> ScreenShots </h3>  
+<img src = "Weather-App.jpg" alt="Sample Image">
+<br>
+<video controls autoplay>
+  <source src="sample.mp4" type="video/mp4">
+</video>
