@@ -5,5 +5,6 @@ window.onload = function() {
 }
 
 function calculateLove() {
+    let yourName = document.getElementById("your-name").value;
 
 }
