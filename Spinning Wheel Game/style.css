@@ -1,0 +1,224 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c7e6e6;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.spinner {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    min-height: 400px;
+    min-width: 400px;
+    border-radius: 0%;
+    box-shadow: 0px 0px 160px rgba(17, 17, 17, 0.25);
+    overflow: hidden;
+}
+
+.spinner_body {
+    position: absolute;
+    border-top: 200px solid transparent;
+    border-right: 200px solid #7fc2c2;
+    border-bottom: 200px solid #7fc2c2;
+    border-left: 200px solid #7fc2c2;
+    z-index: 200;
+}
+
+.spinner_start-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 140px;
+    width: 140px;
+    border-radius: 0%;
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+    font-size: 64px;
+    color: #f5f5f5;
+    background-color: #7fc2c2;
+    outline: none;
+    border: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 300;
+    transition: height 0.1s ease-in, width 0.2s ease-in, color 0.1s ease-in, background-color 0.1s ease-in;
+}
+
+    .spinner_start-button:hover {
+        height: 150px;
+        width: 150px;
+        background-color: #8cd0d0;
+        box-shadow: 0px 0px 44px rgba(17, 17, 17, 0.25);
+    }
+
+    .spinner_start-button:active {
+        height: 135px;
+        width: 135px;
+        color: #7fc2c2;
+        background-color: #459a9a;
+        box-shadow: none;
+        -webkit-animation: shaking 0.15s ease-in-out infinite;
+        animation: shaking 0.15s ease-in-out infinite;
+    }
+
+.spinner_input {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    padding: 2px 10px;
+    transform: translatex(-50%);
+    font-family: "Dosis", sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: #7fc2c2;
+    background: #f5f5f5;
+    border-radius: 36px;
+    text-align: center;
+    outline: none;
+    border: none;
+    z-index: 300;
+    transition: 0.1s ease-in;
+}
+
+    .spinner_input:hover {
+        color: #8cd0d0;
+    }
+
+    .spinner_input:focus {
+        color: #459a9a;
+    }
+
+.spinner_plate {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+}
+
+.spinner_plate-spin {
+    -webkit-animation: spinning 2s ease-out;
+    animation: spinning 2s ease-out;
+}
+
+.spinner_item {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    height: calc(200px - 40px);
+    padding-top: 40px;
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    color: #459a9a;
+    text-align: center;
+    transform-origin: 50% 100%;
+    z-index: 10;
+}
+
+    .spinner_item:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translatex(-50%);
+        border-top: 200px solid #f5f5f5;
+        border-right: 200px solid transparent;
+        border-bottom: 200px solid transparent;
+        border-left: 200px solid transparent;
+        z-index: -1;
+    }
+
+    .spinner_item:nth-child(even):before {
+        border-top: 200px solid #ebebeb;
+    }
+
+.spinner_item-left {
+    transform: translatex(-50%) rotate(-90deg);
+}
+
+.spinner_item-top {
+    transform: translatex(-50%) rotate(0deg);
+}
+
+.spinner_item-right {
+    transform: translatex(-50%) rotate(90deg);
+}
+
+.spinner_item-bottom {
+    transform: translatex(-50%) rotate(180deg);
+}
+
+@-webkit-keyframes shaking {
+    0% {
+        top: calc(50% + 1px);
+        left: calc(50% - 1px);
+    }
+
+    25% {
+        top: calc(50% - 1px);
+        left: calc(50% + 1px);
+    }
+
+    50% {
+        top: calc(50% + 1px);
+        left: calc(50% + 1px);
+    }
+
+    75% {
+        top: calc(50% - 1px);
+        left: calc(50% - 1px);
+    }
+}
+
+@keyframes shaking {
+    0% {
+        top: calc(50% + 1px);
+        left: calc(50% - 1px);
+    }
+
+    25% {
+        top: calc(50% - 1px);
+        left: calc(50% + 1px);
+    }
+
+    50% {
+        top: calc(50% + 1px);
+        left: calc(50% + 1px);
+    }
+
+    75% {
+        top: calc(50% - 1px);
+        left: calc(50% - 1px);
+    }
+}
+
+@-webkit-keyframes spinning {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(1800deg);
+    }
+}
+
+@keyframes spinning {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(1800deg);
+    }
+}
