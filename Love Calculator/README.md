@@ -28,4 +28,8 @@ It is a love calculator made with html,css and js
 
 - [@iamrahulmahato](https://www.github.com/iamrahulmahato)
 
+## ⭐️ Show your support
+
+Give a star if this project helped you!
+
 
