@@ -24,5 +24,8 @@
 ## ⚡️  Introduction
 It is a love calculator made with html,css and js
 
+## ‎‍💻 Authors
+
+- [@iamrahulmahato](https://www.github.com/iamrahulmahato)
 
 
