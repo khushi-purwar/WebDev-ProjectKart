@@ -24,6 +24,11 @@
 ## ⚡️  Introduction
 It is a love calculator made with html,css and js
 
+## 📷 Screenshots
+
+![ss1]()
+![ss2]()
+
 ## ‎‍💻 Authors
 
 - [@iamrahulmahato](https://www.github.com/iamrahulmahato)
