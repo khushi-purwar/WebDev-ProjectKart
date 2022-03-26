@@ -3,3 +3,7 @@ window.onload = function() {
     button.addEventListener("click", calculateLove)
 
 }
+
+function calculateLove() {
+
+}
