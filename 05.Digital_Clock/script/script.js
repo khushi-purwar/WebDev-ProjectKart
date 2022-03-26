@@ -1,71 +1,27 @@
-// By default, time format is 12 hours
-// made global variable so that set12Hour() and set24Hour() can able to modify it's value.
-let timeFormat = 12;
+const clockElement = document.querySelector('.clock');
+const extraInfoElement = document.querySelector('.extra-info');
+const clockBorderElement = document.querySelector('.clock-border');
 
-// update clock update time and date
-function updateClock() {
-	var now = new Date();
-	var time = now.toLocaleTimeString();
+// helper functions
+const format = (str) => str.toString().padStart(2, '0');
 
-	var dayname = now.getDay(),
-		month = now.getMonth(),
-		date = now.getDate(),
-		year = now.getFullYear();
+const dateFn = () => {
+    const dt = new Date();
+    const hr = dt.getHours();
+    const min = dt.getMinutes();
 
-	var months = [
-		"Janaury",
-		"February",
-		"March",
-		"April",
-		"May",
-		"June",
-		"July",
-		"August",
-		"September",
-		"October",
-		"November",
-		"December",
-	];
-	var days = [
-		"Sunday",
-		"Monday",
-		"Tuesday",
-		"Wednesday",
-		"Thrusday",
-		"Friday",
-		"Saturday",
-	];
+    clockElement.textContent = `${format(hr)}:${format(min)}`;
+    extraInfoElement.textContent = luxon.DateTime.local().toFormat(
+        'cccc, MMM dd',
+    );
+};
 
-	document.querySelector("#dayname").innerHTML = days[dayname];
-	document.querySelector("#month").innerHTML = months[month];
-	document.querySelector("#daynum").innerHTML = date;
-	document.querySelector("#year").innerHTML = year;
+dateFn();
+setInterval(dateFn, 1000);
 
-	if (timeFormat == 12) {
-		document.querySelector("#time").innerHTML = time;
-	} else {
-		time = now.toTimeString().slice(0, 8);
-		document.querySelector("#time").innerHTML = time;
-	}
-}
-
-// change time format to 12 hour
-function set12Hour() {
-	timeFormat = 12;
-}
-
-// change time format to 24 hour
-function set24Hour() {
-	timeFormat = 24;
-}
-
-// start the clock
-function intiClock() {
-	updateClock();
-
-	// invoke updateClock() to update date and time every second
-	window.setInterval("updateClock()", 1);
-}
-
-// intiClock() called when page gets loaded
-intiClock();
+let deg = 0;
+// animation spin
+setInterval(() => {
+    clockBorderElement.style.background = `linear-gradient(${deg}deg,  #ffb703, #fb8500)`;
+    deg = (deg + 1) % 360;
+}, 1);

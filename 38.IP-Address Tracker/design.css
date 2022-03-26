@@ -1,0 +1,46 @@
+.c1
+{
+    text-align: center;
+    
+}
+.flex
+{
+    display: flex;
+    background-color: black;
+    align-items: center;
+  justify-content: center;
+}
+.flex > div{
+    background-color: rgb(29, 230, 29);
+    margin: 10px;
+    padding: 3px;
+    font-size: 25px;
+    
+}
+body
+{
+       color: rgb(29, 230, 29);
+       background-color: black
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(29, 230, 29);
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+  }
+  
+  .button:hover {background-color: rgb(14, 97, 14)}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
