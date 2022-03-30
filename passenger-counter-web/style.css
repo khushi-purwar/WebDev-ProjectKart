@@ -1,0 +1,54 @@
+body{
+    background-image: url("./images/michal-parzuchowski-dmH3NWhYTHQ-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:850px;
+    font-family: 'JetBrains Mono', monospace;
+    text-align:center;
+    font-size:20px;
+    backdrop-filter: blur(3px);
+}
+.main{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    margin-top:50px;
+}
+.text{
+    color:#05386B;
+}
+button{
+    margin:15px;
+    padding:15px;
+    width:250px;
+    border-radius: 20px;
+    cursor:pointer;
+    font-weight:700;
+    border:2px solid black;
+    box-shadow: 3px 2px 5px 0px black;
+}
+button:hover{
+    transform:scale(1.09);
+}
+#increment-btn:hover,#save-btn:hover,#decrement-btn:hover{
+    background-color:rgb(241, 232, 149);
+}
+#increment-btn{
+    background-color:cornflowerblue ;
+}
+#decrement-btn{
+    background-color:turquoise;
+}
+#save-btn{
+   background-color: cornsilk;
+}
+#p{
+    margin:25px;
+    color:#05386B;
+}
+#c{
+    text-decoration:underline;
+}
