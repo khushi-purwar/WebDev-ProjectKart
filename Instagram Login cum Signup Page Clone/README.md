@@ -1,6 +1,6 @@
 # Description
 
-A basic web development project that simulates Instagram App official login/signup page clone.
+A basic web development project that simulates Instagram App official login/signup page clone. This is a beginner level project Web development project. 
 
 # Tech stack used
 
