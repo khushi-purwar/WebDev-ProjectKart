@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Landing page UI of an NFT website</title>
+    <script src = "https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+        
+        * {
+            font-family: 'Fuzzy Bubbles', cursive;
+            -ms-overflow-style: none;  /* Internet Explorer 10+ */
+            scrollbar-width: none;  /* Firefox */
+        }
+
+        *::-webkit-scrollbar { 
+            display: none;  /* Safari and Chrome */
+        }
+    </style>
+</head>
+<body class = "bg-[#0f0f11] h-screen text-white px-24 py-12">
+    <nav class = "flex flex-row">
+        <div class = "flex flex-row flex-grow items-center">
+            <h1 class = "text-3xl font-bold hover:cursor-pointer mr-12">A.</h1>
+            <h3 class = "text-xs text-gray-400 hover:cursor-pointer mr-12">Discover</h3>
+            <span class = "flex flex-row text-xs text-gray-400 hover:cursor-pointer mr-12">
+                <h3 class = "mr-2">Marketplace</h3>
+                <h4 class = "bg-[#2db5a7] bg-opacity-40 text-[#2db5a7] font-bold rounded-sm px-1">PRO</h4>
+            </span>
+            <h3 class = "text-xs text-gray-400 hover:cursor-pointer">How This Works</h3>
+        </div>
+        <div class = "flex flex-row items-center">
+            <svg xmlns = "http://www.w3.org/2000/svg" class = "h-5 w-5 mr-6" fill = "none" viewBox = "0 0 24 24" stroke = "currentColor" stroke-width = "2">
+                <path stroke-linecap = "round" stroke-linejoin = "round" d = "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <span class = "text-xs border border-white rounded-full hover:bg-white hover:text-black hover:cursor-pointer p-4 mr-4">
+                <h3>Connect Wallet</h3>
+            </span>
+            <span class = "bg-[#7851eb] rounded-full hover:cursor-pointer p-3">
+                <svg xmlns = "http://www.w3.org/2000/svg" class = "h-5 w-5" fill = "none" viewBox = "0 0 24 24" stroke = "currentColor" stroke-width = "2">
+                    <path stroke-linecap = "round" stroke-linejoin = "round" d = "M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                </svg>
+            </span>
+        </div>
+    </nav>
+
+    <main class = "grid grid-cols-12 gap-12 mt-12">
+        <section class = "col-span-4 text-2xl tracking-widest pt-24">
+            <p>Discover <b class = "text-4xl font-bold">Rare</b></p>            
+            <p><b class = "text-4xl font-bold">Collections</b> Of</p>            
+            <p><b class = "text-4xl font-bold">Arts & NFTs.</b></p>
+            <p class = "text-sm text-gray-400 pt-6">Digital marketplace for crypto collectibles and non-fungible tokens <b class = "text-xl text-white">NFTS</b>.</p>
+            <span class = "flex flex-row items-center text-sm font-bold hover:cursor-pointer mt-6 mb-4">
+                Discover artwork
+                <svg xmlns = "http://www.w3.org/2000/svg" class = "h-4 w-4 ml-2" fill = "none" viewBox = "0 0 24 24" stroke = "currentColor" stroke-width = "2">
+                    <path stroke-linecap = "round" stroke-linejoin = "round" d = "M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+            </span>
+            <hr class = "w-16">
+            <span class = "flex flex-row items-center text-xs text-gray-400 mt-16">
+                Supported by
+                <img src = "images/binance.svg" alt = "binance_logo" class = "h-6 w-6 ml-12">
+                <img src = "images/kraken.svg" alt = "kraken_logo" class = "h-6 w-6 ml-4">
+                <img src = "images/bitfinex.svg" alt = "bitfinex_logo" class = "h-6 w-6 ml-4">
+            </span>            
+        </section>
+
+        <section class = "col-span-6 pt-24">
+            <img src = "images/nft.jpg" alt = "nft_demo" class = "h-96 w-96 rounded-full mx-auto">
+        </section>
+        
+        <section class = "col-span-2 pt-48">
+            <p class = "text-4xl font-bold"><b>12.1K+</b></p>
+            <p class = "text-gray-400 pb-12">Art Works</p>
+            <p class = "text-4xl font-bold"><b>1.7M+</b></p>
+            <p class = "text-gray-400 pb-12">Artists</p>
+            <p class = "text-4xl font-bold"><b>45K+</b></p>
+            <p class = "text-gray-400 pb-12">Auctions</p>
+        </section>
+    </main>
+
+    <footer class = "mt-24">
+        <section class = "flex flex-row items-center mb-8">
+            <div class = "flex flex-col flex-grow text-xl">
+                Top
+                <p class = "text-4xl font-bold">Deals.</p>
+            </div>
+            <div class = "flex flex-row items-center">
+                <div class = "border border-white hover:cursor-pointer px-2 py-4 mr-2">
+                    <svg xmlns = "http://www.w3.org/2000/svg" class = "h-6 w-6" fill = "none" viewBox = "0 0 24 24" stroke = "currentColor" stroke-width = "2">
+                        <path stroke-linecap = "round" stroke-linejoin = "round" d = "M15 19l-7-7 7-7" />
+                    </svg>
+                </div>
+                <div class = "border border-white hover:cursor-pointer px-2 py-4">
+                    <svg xmlns = "http://www.w3.org/2000/svg" class = "h-6 w-6" fill = "none" viewBox = "0 0 24 24" stroke = "currentColor" stroke-width = "2">
+                        <path stroke-linecap = "round" stroke-linejoin = "round" d = "M9 5l7 7-7 7" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        
+        <section class = "grid grid-cols-12 gap-12 mb-36">
+            <div class = "flex flex-col col-span-4 border border-white p-6">
+                <div class = "flex flex-row items-center mb-4">
+                    <h1 class = "text-3xl font-bold mr-2">A.</h1>
+                    <h2 class = "flex-grow text-lg">Clean Minimal</h2>
+                    <h5 class = "text-xs text-gray-400">@shakuro</h5>                    
+                </div>
+                <img src = "images/minimal.jpg" alt = "nft_art">
+                <div class = "flex flex-row items-center mt-4">
+                    <h2 class = "flex-grow text-lg">Fixed Price</h2>
+                    <div>
+                        <h1 class = "text-2xl font-bold">15.97 ETH</h1>
+                        <h5 class = "text-xs text-gray-400">Instant price</h5>
+                    </div>
+                </div>
+            </div>
+            <div class = "flex flex-col col-span-4 border border-white p-6">
+                <div class = "flex flex-row items-center mb-4">
+                    <h1 class = "text-3xl font-bold mr-2">A.</h1>
+                    <h2 class = "flex-grow text-lg">Weighty Matters</h2>
+                    <h5 class = "text-xs text-gray-400">@maikohatta</h5>                    
+                </div>
+                <img src = "images/weight.jpg" alt = "nft_art">
+                <div class = "flex flex-row items-center mt-4">
+                    <h2 class = "flex-grow text-lg">Fixed Price</h2>
+                    <div>
+                        <h1 class = "text-2xl font-bold">18.11 ETH</h1>
+                        <h5 class = "text-xs text-gray-400">Instant price</h5>
+                    </div>
+                </div>
+            </div>
+            <div class = "flex flex-col col-span-4 border border-white p-6">
+                <div class = "flex flex-row items-center mb-4">
+                    <h1 class = "text-3xl font-bold mr-2">A.</h1>
+                    <h2 class = "flex-grow text-lg">Lazy Breed</h2>
+                    <h5 class = "text-xs text-gray-400">@maikohatta</h5>                    
+                </div>
+                <img src = "images/lazy.jpg" alt = "nft_art">
+                <div class = "flex flex-row items-center mt-4">
+                    <h2 class = "flex-grow text-lg">Fixed Price</h2>
+                    <div>
+                        <h1 class = "text-2xl font-bold">11.47 ETH</h1>
+                        <h5 class = "text-xs text-gray-400">Instant price</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class = "flex flex-col items-center w-1/2 mx-auto pb-24">
+            <p class = "text-lg">Join our</p>
+            <p class = "text-4xl font-bold mb-6">Community.</p>
+            <p class = "text-center text-gray-400 mb-12">Meet the <b class = "text-2xl text-white">A.</b> Community, artists and collectors for platform updates, announcements and more.</p>
+            <span class = "flex flex-row items-center border border-white rounded-full hover:bg-white hover:text-black hover:cursor-pointer px-6 py-4">
+                <img src = "images/discord.svg" alt = "discord_logo" class = "h-6 w-6 mr-4">
+                Launch Discord
+            </span>
+        </section>
+    </footer>
+</body>
+</html>
