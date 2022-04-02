@@ -31,5 +31,5 @@ This is a Memory Card Game
 - [@iamrahulmahato](https://www.github.com/iamrahulmahato)
 ## ⭐️ Show your support
 
-Give a star if this project helped you!
+Give a star if this project helped you
 
