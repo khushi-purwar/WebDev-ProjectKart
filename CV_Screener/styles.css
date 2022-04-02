@@ -1,0 +1,12 @@
+body{
+    background-image: url("bg.png");
+}
+
+.head{
+    color: #fff;
+    text-decoration: underline;
+}
+.list-group-item{
+    background-image: url("table.png");
+    border: solid black 2px;
+}

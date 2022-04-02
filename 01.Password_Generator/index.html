@@ -1,65 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
-
-    <link rel="stylesheet" href="./Assets/css/style.css" />
-
     <title>Password Generator</title>
-  </head>
-  <body>
-      <form action="">
-    <div class="container">
-      <h2>Password Generator</h2>
-      <div class="result-container">
-        <span id="result"></span>
-        <button class="btn" id="clipboard">
-          <i class="far fa-clipboard"></i>
-        </button>
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+</head>
+
+<body>
+    <div class="card">
+        <h1 class="heading">Password Gen<span>.</span></h1>
+        <div class="resultContainer">
+            <div class="result">
+                <textarea id="result" class="resultTextarea" spellcheck="false">
+Loading...</textarea
+          >
+        </div>
+        <div class="userController">
+          <div class="checkboxController">
+            <div>
+              <input
+                type="checkbox"
+                id="letters"
+                onchange="generate_random_password()"
+                checked
+              />
+              <label for="letters">Letters</label>
+            </div>
+
+            <div>
+              <input
+                type="checkbox"
+                id="numbers"
+                onchange="generate_random_password()"
+                checked
+              />
+              <label for="numbers">Numbers</label>
+            </div>
+
+            <div>
+              <input
+                type="checkbox"
+                id="symbols"
+                onchange="generate_random_password()"
+                checked
+              />
+              <label for="symbols">Symbols</label>
+            </div>
+          </div>
+          <div class="rangeController">
+            <label for="length">Length</label>
+            <input type="range" id="length" max="30" min="4" value="8" />
+          </div>
+        </div>
       </div>
-      <div class="settings">
-        <div class="setting">
-          <label for="length">Password Length<span class="required">*</span></label>
-          <input
-            type="number"
-            name=""
-            id="length"
-            min="5"
-            max="20"
-            placeholder="5-20"
-            required="true"
-          />
-        </div>
-        <div class="setting">
-          <label for="uppercase">Include uppercase letters</label>
-          <input type="checkbox" name="" id="uppercase" checked />
-        </div>
-        <div class="setting">
-          <label for="lowercase">Include lowercase letters</label>
-          <input type="checkbox" name="" id="lowercase" checked />
-        </div>
-        <div class="setting">
-          <label for="numbers">Include numbers</label>
-          <input type="checkbox" name="" id="numbers" checked />
-        </div>
-        <div class="setting">
-          <label for="symbols">Include symbols</label>
-          <input type="checkbox" name="" id="symbols" checked />
-        </div>
-      </div>
-      <button class="btn btn-large" id="generate" type="submit">Generate Password</button>
+      <button class="btn btn-secondary" id="copy">Copy</button>
+      <button class="btn" id="generate" onclick="generate_random_password()">
+        Generate
+      </button>
     </div>
-</form>
-</body>
     <script src="./script/script.js"></script>
   </body>
 </html>

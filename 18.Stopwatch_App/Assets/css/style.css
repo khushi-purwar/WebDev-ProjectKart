@@ -1,33 +1,114 @@
-body
-{
-    background-color: lightcoral;
+body{
+    background: -webkit-linear-gradient(to right, #F15F79, #b24592);
+    background: linear-gradient(to right, #F15F79, #B24592);
     height: 100vh;
 }
-.box
-{
+h1{
     text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: #eeeeee;
+    margin-top: 2%;
 }
-.box h1
-{
-    margin: 30px auto;
+.box{
+    box-shadow: 10px;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    backdrop-filter: blur(14px) saturate(152%);
+    -webkit-backdrop-filter: blur(14px) saturate(152%);
+    background-color: rgba(0, 0, 0, 0.60);
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.70);
 }
-.box p
-{
-    font-size: 50px;
-    margin: 40px auto;
+p{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
 }
-button
-{
-    font-size: 30px;
-    border-radius: 3px;
-    margin: 60px auto;
-    width: 90px;
-    margin-right: 10px;
+#start,#reset,#stop,#lap{
+    font-family: 'Oswald', sans-serif;
+    position: relative ;
+    margin-left: 3px;
+    font-size: 22px;
+    left: 15%;
+    border-radius: 5px;
+    text-decoration: none;
+    outline: 0;
+    border-radius: none;
+    border: none;
+    padding: 13px;
+    top: -1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.80);
+    border-radius: 11px;
+}
+#lap{
+    left: 3.7rem;
+    width: 3.8rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.80);
+}
+#stop:hover{
+    background-color: rgb(65, 66, 65);
+    cursor: pointer;
+    color: white;
+}
+#start:hover{
+    background-color: rgb(65, 66, 65);
+    cursor:pointer;
+    color: white;
+}
+#reset:hover{
+    background-color: rgb(65, 66, 65);
+    cursor: pointer;
+    color: white;
+}
+#lap:hover{
+    background-color: rgb(65, 66, 65);
+    cursor: pointer;
+    color: white;
+}
+.lap-container{
+    margin-top: 4rem;
+    overflow: auto;
+    position: relative;
+    left: 0.5rem;
+    width: 250px;
+    height: 100%;
+}
+li{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    font-weight: 500;
+    list-style-type: decimal;
+}
+#laps {
+    width:120px;
+}
+.lap-container::-webkit-scrollbar{
+    display: none;
+}
+#lap-clear-button{
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    font-size: 16px;
+    left: 320px;
+    padding: 13px;
+    border-radius: 11px;
+    border: none;
     outline: none;
-    color: #000;
+    cursor: pointers;
+    display: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.60);
+    top:-300px;
 }
-button:hover
-{
-    color: lightcoral;
-    border: 1px solid #fff;
+#lap-clear-button:hover{
+    background-color: rgb(65, 66, 65);
+    color: white;
 }

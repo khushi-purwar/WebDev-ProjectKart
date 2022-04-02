@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="calculation.js"></script>
+    <script src="display.js"></script>
+    <title>Unit Conversion</title>
+</head>
+
+<body>
+    <nav>
+        <div class="list">
+            <ul>
+                <li class="list-item"><a href="javascript:showLength()">Length</a></li>
+                <li class="list-item"><a href="javascript:showArea()">Area</a></li>
+                <li class="list-item"><a href="javascript:showTemperature()">Temperature</a></li>
+                <li class="list-item"><a href="javascript:showVolume()">Volume</a></li>
+                <li class="list-item"><a href="javascript:showMass()">Mass</a></li>
+                <li class="list-item"><a href="javascript:showSpeed()">Speed</a></li>
+                <li class="list-item"><a href="javascript:showTime()">Time</a></li>
+                <li class="list-item"><a href="javascript:showData()">Data</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div id="main-screen">
+            <!---------------------------- length ---------------------------->
+            <div id="length">
+                <form action="">
+                    <label for="from-unit-length">From:</label>
+                    <select class="margin" name="from-unit-length" id="from-unit-length">
+                        <option value="mm">mm</option>
+                        <option value="cm">cm</option>
+                        <option value="m">m</option>
+                        <option value="km">km</option>
+                        <option value="inch">inch</option>
+                        <option value="feet">feet</option>
+                        <option value="mile">mile</option>
+                    </select>
+                    <br>
+                    <input class="margin text-field" type="number" id="from-length">
+                    <br>
+                    <label for="to-unit-length">To:</label>
+                    <select class="margin" name="to-length" id="to-unit-length">
+                        <option value="mm">mm</option>
+                        <option value="cm">cm</option>
+                        <option value="m">m</option>
+                        <option value="km">km</option>
+                        <option value="inch">inch</option>
+                        <option value="feet">feet</option>
+                        <option value="mile">mile</option>
+                    </select>
+                    <br>
+                    <input type="button" value="Calculate" onclick="lengthConversion()" class="btn">
+                    <br>
+                    <input class="margin text-field" type="number" readonly id="to-length">
+                </form>
+            </div>
+
+
+            <!---------------------------- area ---------------------------->
+            <div id="area">
+                <form action="">
+                    <label for="from-unit-area">From:</label>
+                    <select class="margin" name="from-unit-area" id="from-unit-area">
+                        <option value="cmsq">cm&sup2</option>
+                        <option value="msq">m&sup2</option>
+                        <option value="kmsq">km&sup2</option>
+                        <option value="inchsq">inch&sup2</option>
+                        <option value="feetsq">feet&sup2</option>
+                        <option value="acre">acre</option>
+                        <option value="hect">hectares</option>
+                    </select>
+                    <br>
+                    <input class="margin text-field" type="number" id="from-area">
+                    <br>
+                    <label for="to-unit-area">To:</label>
+                    <select class="margin" name="to-unit-area" id="to-unit-area">
+                        <option value="cmsq">cm&sup2</option>
+                        <option value="msq">m&sup2</option>
+                        <option value="kmsq">km&sup2</option>
+                        <option value="inchsq">inch&sup2</option>
+                        <option value="feetsq">feet&sup2</option>
+                        <option value="acre">acre</option>
+                        <option value="hect">hectares</option>
+                    </select>
+                    <br>
+                    <input type="button" value="Calculate" onclick="areaConversion()" class="btn">
+                    <br>
+                    <input class="margin text-field" type="number" readonly id="to-area">
+                </form>
+            </div>
+
+
+            <!---------------------------- temperature ---------------------------->
+            <div id="temperature">
+                <form action="">
+                    <label for="from-unit-temperature">From:</label>
+                    <select class="margin" name="from-unit-temperature" id="from-unit-temperature">
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                    <br>
+                    <input type="number" class="margin text-field" id="from-temperature">
+                    <br>
+                    <label for="to-unit-temperature">To:</label>
+                    <select class="margin" name="to-unit-temperature" id="to-unit-temperature">
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                    <br>
+                    <input type="button" value="Calculate" onclick="temperatureConversion()" class="btn">
+                    <br>
+                    <input type="number" class="margin text-field" id="to-temperature" readonly>
+                </form>
+            </div>
+
+
+            <!---------------------------- volume ---------------------------->
+            <div id="volume">
+                <form action="">
+                    <label for="from-unit-volume">From:</label>
+                    <select name="from-unit-volume" id="from-unit-volume" class="margin">
+                        <option value="ml">Millilitre</option>
+                        <option value="l">Litre</option>
+                        <option value="cm3">Cubic Centimetre</option>
+                        <option value="m3">Cubic Metre</option>
+                        <option value="inch3">Cubic Inch</option>
+                        <option value="feet3">Cubic Feet</option>
+                    </select>
+                    <br>
+                    <input type="number" id="from-volume" class="margin text-field">
+                    <br>
+                    <label for="to-unit-volume">To:</label>
+                    <select name="to-unit-volume" id="to-unit-volume" class="margin">
+                        <option value="ml">Millilitre</option>
+                        <option value="l">Litre</option>
+                        <option value="cm3">Cubic Centimetre</option>
+                        <option value="m3">Cubic Metre</option>
+                        <option value="inch3">Cubic Inch</option>
+                        <option value="feet3">Cubic Feet</option>
+                    </select>
+                    <br>
+                    <input type="button" value="Calculate" onclick="volumeConversion()" class="btn">
+                    <br>
+                    <input type="number" name="to-volume" id="to-volume" class="margin text-field" readonly>
+                </form>
+            </div>
+
+
+            <!---------------------------- mass ---------------------------->
+            <div id="mass">
+                <form action="">
+                    <label for="from-unit-mass">From:</label>
+                    <select name="from-unit-mass" id="from-unit-mass" class="margin">
+                        <option value="ton">Tons</option>
+                        <option value="lb">Pounds</option>
+                        <option value="kg">Kilograms</option>
+                        <option value="g">Grams</option>
+                    </select>
+                    <br>
+                    <input type="number" name="from-mass" id="from-mass" class="margin text-field">
+                    <br>
+                    <label for="to-unit-mass">To:</label>
+                    <select name="to-unit-mass" id="to-unit-mass" class="margin">
+                        <option value="ton">Tons</option>
+                        <option value="lb">Pounds</option>
+                        <option value="kg">Kilograms</option>
+                        <option value="g">Grams</option>
+                    </select>
+                    <br>
+                    <input type="button" value="Calculate" onclick="massConversion()" class="btn">
+                    <br>
+                    <input type="number" name="to-mass" id="to-mass" class="margin text-field" readonly>
+                </form>
+            </div>
+
+
+            <!---------------------------- speed ---------------------------->
+            <div id="speed">
+                <form action="">
+                    <label for="from-unit-speed">From:</label>
+                    <select name="from-unit-speed" id="from-unit-speed" class="margin">
+                        <option value="ms">Metre per Second</option>
+                        <option value="mh">Metre per Hour</option>
+                        <option value="kms">Kilometre per Second</option>
+                        <option value="kmh">Kilometre per Hour</option>
+                        <option value="fts">Feet per Second</option>
+                        <option value="fth">Feet per Hour</option>
+                        <option value="miles">Mile per Second</option>
+                        <option value="mileh">Mile per Hour</option>
+                    </select>
+                    <br>
+                    <input type="number" name="from-spees" id="from-speed" class="margin text-field">
+                    <br>
+                    <label for="to-speed">To:</label>
+                    <select name="to-unit-speed" id="to-unit-speed" class="margin">
+                        <option value="ms">Metre per Second</option>
+                        <option value="mh">Metre per Hour</option>
+                        <option value="kms">Kilometre per Second</option>
+                        <option value="kmh">Kilometre per Hour</option>
+                        <option value="fts">Feet per Second</option>
+                        <option value="fth">Feet per Hour</option>
+                        <option value="miles">Mile per Second</option>
+                        <option value="mileh">Mile per Hour</option>
+                    </select>
+                    <br>
+                    <input type="button" value="Calculate" onclick="speedConversion()" class="btn">
+                    <br>
+                    <input type="number" name="to-speed" id="to-speed" class="margin text-field" readonly>
+
+                </form>
+            </div>
+
+
+            <!---------------------------- time ---------------------------->
+            <div id="time">
+                <form action="">
+                    <label for="from-unit-time">From:</label>
+                    <select name="from-unit-time" id="from-unit-time" class="margin">
+                        <option value="ms">Milliseconds</option>
+                        <option value="sec">Seconds</option>
+                        <option value="min">Minutes</option>
+                        <option value="hr">Hours</option>
+                        <option value="day">Day</option>
+                        <option value="week">Weeks</option>
+                    </select>
+                    <br>
+                    <input type="number" name="from-time" id="from-time" class="margin text-field">
+                    <br>
+                    <label for="to-unit-time">From:</label>
+                    <select name="to-unit-time" id="to-unit-time" class="margin">
+                        <option value="ms">Milliseconds</option>
+                        <option value="sec">Seconds</option>
+                        <option value="min">Minutes</option>
+                        <option value="hr">Hours</option>
+                        <option value="day">Day</option>
+                        <option value="week">Weeks</option>
+                    </select>
+                    <br>
+                    <input type="button" value="Calculate" onclick="timeConversion()" class="btn">
+                    <br>
+                    <input type="number" name="to-time" id="to-time" class="margin text-field" readonly>
+                </form>
+            </div>
+
+
+            <!---------------------------- data ---------------------------->
+            <div id="data">
+                <form action="">
+                    <label for="from-unit-data">From:</label>
+                    <select name="from-unit-data" id="from-unit-data" class="margin">
+                        <option value="bit">Bits</option>
+                        <option value="b">Bytes</option>
+                        <option value="kb">Kilobytes</option>
+                        <option value="mb">Magabytes</option>
+                        <option value="gb">Gigabytes</option>
+                        <option value="tb">Terabytes</option>
+                    </select>
+                    <br>
+                    <input type="number" name="from-data" id="from-data" class="margin text-field">
+                    <br>
+                    <label for="to-unit-data">From:</label>
+                    <select name="to-unit-data" id="to-unit-data" class="margin">
+                        <option value="bit">Bits</option>
+                        <option value="b">Bytes</option>
+                        <option value="kb">Kilobytes</option>
+                        <option value="mb">Magabytes</option>
+                        <option value="gb">Gigabytes</option>
+                        <option value="tb">Terabytes</option>
+                    </select>
+                    <br>
+                    <input type="button" value="Calculate" onclick="dataConversion()" class="btn">
+                    <br>
+                    <input type="number" name="to-data" id="to-data" class="margin text-field" readonly>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

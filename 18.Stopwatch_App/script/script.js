@@ -39,4 +39,19 @@ window.onload = function () {
             appendSeconds.innerHTML = seconds;
         }
     }
+    var Lap = document.getElementById('lap');
+    var Laps = document.getElementById('laps');
+    var clearButton=document.getElementById('lap-clear-button');
+
+    Lap.onclick = function() {
+            Laps.innerHTML +="<li>"+`${seconds} : ${tens}`+" "+" "+"lap" + "</li>";
+            myFunction();
+    }
+    clearButton.onclick=function(){
+        document.querySelector('#laps').innerHTML=" ";
+        document.querySelector('#lap-clear-button').style.display = "none";
+    }
+    function myFunction() {
+        document.querySelector('#lap-clear-button').style.display = "block";
+      }
 };

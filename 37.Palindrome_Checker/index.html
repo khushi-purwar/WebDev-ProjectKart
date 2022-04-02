@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Palindrome Checker</title>
+    <!-- style sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Merriweather:ital,wght@0,400;1,900&family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <h1>Palindrome Checker</h1>
+    <div class="container">
+      <input type="text" id="input-text" class="box" placeholder="Enter a word to check">
+      <button id="btn" class="button">CHECK</button>
+      <br>
+      <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      var input = document.getElementById("input-text");
+      input.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+         event.preventDefault();
+         document.getElementById("btn").click();
+        }
+      });
+    </script>
+  </body>
+</html>
