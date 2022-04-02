@@ -5,7 +5,7 @@
 <h1 align="center">Memory Card Game </h1>
 
 <div align="center">
-  made using HTML, CSS.
+ Memory Card Game made using HTML, CSS,JS.
 </div>
 
 <br />
@@ -19,7 +19,7 @@
 </div>
 
 ## ⚡️  Introduction
-This is a 
+This is a Memory Card Game
 
 ## 📷 Screenshots
 
