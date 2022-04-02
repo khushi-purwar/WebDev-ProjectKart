@@ -23,7 +23,7 @@ This is a Memory Card Game
 
 ## 📷 Screenshots
 
-![ss1]()
+![ss1](./images/csss.jpg)
 ![ss2]()
 
 ## ‎‍💻 Authors
