@@ -22,5 +22,8 @@ Google Search Engine Clone using React js with Google Context API it can works l
 
 ## Screenshots
 
+![Screenshot (794)](https://user-images.githubusercontent.com/73753957/161445854-43b7d031-c9ea-493b-a2f5-92b8baa34e18.png)
 
-## Videos
+![Screenshot (795)](https://user-images.githubusercontent.com/73753957/161445867-7fec3586-1a9f-454a-92aa-02c9959c1d7e.png)
+
+![Screenshot (796)](https://user-images.githubusercontent.com/73753957/161445878-51f40ed9-da81-4edc-9221-fd029c2a2d44.png)
