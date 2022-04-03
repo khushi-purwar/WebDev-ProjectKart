@@ -1,8 +1,6 @@
 # Description
 
-Word Guess Game is a simple version of a hangman style game.Press any Alpha key (A-Z, a-z) to start game. Non alpha keys are ignored. If a correct letter is guessed, 
-the game will reveal the letter in its correct location. If an incorrect letter is selected, then it will add the letter to a list on incorrectly guessed letters 
-and decrement the remaining guesses count.
+Word Guess Game is a simple version of a hangman style game.Press any Alpha key (A-Z, a-z) to start game. Non alpha keys are ignored. If a correct letter is guessed, the game will reveal the letter in its correct location. If an incorrect letter is selected, then it will add the letter to a list on incorrectly guessed lettersanddecrement the remaining guesses count.
 
 
 # Tech stack used
