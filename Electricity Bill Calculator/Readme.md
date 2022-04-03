@@ -65,7 +65,7 @@ Enter your name, the total number of units consumed and the program will compute
 <img src="https://raw.githubusercontent.com/LiQuiD-404/WebDev-ProjectKart/master/Electricity%20Bill%20Calculator/snips/logic.png" alt="screenshot" >
 
 </div>
-This is the bill slab used for computing the final amount. If the amount to be paid is more than *750*  then the customer receives a additional discount of 20 percent.
+This is the bill slab used for computing the final amount. If the amount to be paid is more than 750, then the customer receives a additional discount of 20 percent.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
