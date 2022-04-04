@@ -1,0 +1,92 @@
+.Board {
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+}
+
+table tr:first-child td:first-child {
+  border-radius: 8px 0 0 0 !important;
+}
+table tr:first-child td:last-child {
+  border-radius: 0 8px 0 0 !important;
+}
+table tr:last-child td:first-child {
+  border-radius: 0 0 0 8px !important;
+}
+table tr:last-child td:last-child {
+  border-radius: 0 0 8px 0 !important;
+}
+
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+.Board-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.neon-orange {
+  font-family: neon;
+  color: #fb4264;
+  font-size: 75px;
+  text-shadow: 0 0 3vw #f40a35;
+
+  animation: neon-orange 1s ease infinite;
+  -moz-animation: neon-orange 1s ease infinite;
+  -webkit-animation: neon-orange 1s ease infinite;
+}
+
+.neon-blue {
+  font-family: neon;
+  color: #426dfb;
+  font-size: 75px;
+  text-shadow: 0 0 3vw #2356ff;
+
+  animation: neon-blue 2s linear infinite;
+  -moz-animation: neon-blue 2s linear infinite;
+  -webkit-animation: neon-blue 2s linear infinite;
+  -o-animation: neon-blue 2s linear infinite;
+}
+
+.neon-Blue {
+  font-family: neon;
+  color: #426dfb;
+  font-size: 50px;
+  text-shadow: 0 0 3vw #2356ff;
+}
+
+.winner .neon-blue,
+.winner .neon-orange {
+  font-size: 100px;
+}
+
+@keyframes neon-orange {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #fa1c16, 0 0 3vw #fa1c16, 0 0 10vw #fa1c16,
+      0 0 10vw #fa1c16, 0 0 0.4vw #fed128, 0.5vw 0.5vw 0.1vw #806914;
+    color: #fed128;
+  }
+  50% {
+    text-shadow: 0 0 0.5vw #800e0b, 0 0 1.5vw #800e0b, 0 0 5vw #800e0b,
+      0 0 5vw #800e0b, 0 0 0.2vw #800e0b, 0.5vw 0.5vw 0.1vw #40340a;
+    color: #806914;
+  }
+}
+
+@keyframes neon-blue {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #1041ff, 0 0 3vw #1041ff, 0 0 10vw #1041ff,
+      0 0 10vw #1041ff, 0 0 0.4vw #8bfdfe, 0.5vw 0.5vw 0.1vw #147280;
+    color: #28d7fe;
+  }
+  50% {
+    text-shadow: 0 0 0.5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180,
+      0 0 5vw #082180, 0 0 0.2vw #082180, 0.5vw 0.5vw 0.1vw #0a3940;
+    color: #146c80;
+  }
+}
