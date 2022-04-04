@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Zipp-ER</h1>
+    <h3>Compress any file to .zip format</h3>
+    <form class="form" enctype="multipart/form-data">
+        <label for="file-hidden">Choose File</label>
+        <input type="file" name="uFile" id="file-hidden">
+        <button type="submit" class="btn">Upload</button>
+        <h4 class="process"></h4>
+        <button  class="download">Download</button>
+    </form>
+    <script src="./scripts/index.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
