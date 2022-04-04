@@ -14,7 +14,7 @@ This sign up page is a very basic one which takes user info like
 </span>
 
 ## Quick View
-<img src="https://github.com/srijanishere/WebDev-ProjectKart/blob/master/Sign-up%20page/Assets/Sign-up%20landing%20page.png?raw=true">
+<img src="https://github.com/srijanishere/WebDev-ProjectKart/blob/master/Sign-up%20page/Assets/Sign-up%20landing%20page.png?raw=true" alt="Sign-up landing page">
 <br><br><br>
 
 ##### *Contributed by* - Srijan Bandyopadhyay
