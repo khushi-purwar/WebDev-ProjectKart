@@ -32,9 +32,7 @@ npm start
 <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="node" />
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="react" />
 
-## ScreenShots
-
-
 
 ## Gif
+![2048](https://user-images.githubusercontent.com/73753957/161476713-f025d483-372b-42d0-8f86-c4917107614a.gif)
 
