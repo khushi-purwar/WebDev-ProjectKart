@@ -1,0 +1,373 @@
+body{
+    height: 100%;
+    margin: 0%;
+    font-size: 16px;
+    overflow: hidden;
+    padding: 0%;
+    user-select: none;
+}
+.Content{
+    position: relative;
+    display: flex;
+    height: 100%;
+}
+.Left-navbar{
+    position: relative;
+    /* background-color: rgb(24,24,29); */
+    /* rgb777 */
+    background: linear-gradient(20deg, rgb(22, 22, 22) 300px, rgb(48, 48, 48));
+    width: 17vw;
+    height: 100vh;
+    /* height: 1221px; */
+
+}
+.MainContent{
+    position: relative;
+    width: 83vw;
+    background-color: black;
+}
+.Left-navbar{
+    display: flex;
+    flex-flow: column;
+}
+.Left-Brandname{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5em;
+    cursor: pointer;
+
+}
+.Heading-Brand{
+    font-weight: 500;
+    margin: 0%;
+    color: white;
+    font-size: 20px;
+    margin-left: .8em;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.MenuBar,.LibraryBar{
+    display: flex;
+    position: relative;
+    flex-flow: column;
+    gap: .8em;
+    margin-top: 3em;
+}
+.LaptopPic{
+    height: 20px;
+}
+.Hotspot{
+    height:18px
+}
+.MenuList,.LibraryList{
+    position: relative;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    color: rgb(161, 161, 161);
+    cursor: pointer;
+    margin-left: 20%;
+    letter-spacing: 1px;
+}
+.Adjust{
+    position: relative;
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+    margin-left: 20%;
+    padding: 4px 0px;
+    align-items: center;
+    cursor: pointer;
+    color: rgb(236, 236, 236);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Adjust:hover .fa-volume-down,.Adjust:hover .fa-bolt,.Adjust:hover .fa-record-vinyl,.Adjust:hover .fa-dot-circle,.Adjust:hover .fa-microphone,.Adjust:hover .fa-headphones,.Adjust:hover .fa-redo,.Adjust:hover .fa-folder{
+    color: #5C5CFF;
+}
+.Adjust:hover{
+    color: #5C5CFF;
+}
+.item{
+    position: absolute;
+    height:100%;
+    background-color: chartreuse;
+    width: 4px;
+    left: 97.6%;
+    border-radius: 2px;
+}
+.Device-setting{
+    /* background-color: #39393a; */
+    display: grid;
+    margin-left: 2em;
+    grid-template-rows: 1fr 1fr;
+    width: 9em;
+    cursor: pointer;
+    height: 3.5em;
+
+}
+.Img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2px 4px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #39393a;
+}
+.textlappy{
+    font-size: 11px;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: grey;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    justify-content: center;
+    background-color: rgb(46, 46, 46);
+}
+.playingon{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #39393A;
+    padding: 3px 6px;
+    color: rgb(177, 177, 177);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    font-weight: 600;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+}
+.AdjustDiv{
+    display: flex;
+}
+.Marg{
+    margin-top: 1.6em;
+}
+.Item{
+    position: absolute;
+    height: 100%;
+    background-color: #5C5CFF;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    width: 4px;
+    left: 98%;
+}
+.LaptopSettings{
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgb(78, 78, 78);
+    font-weight: 600;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.ExAdjust{
+    position: relative;
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+    margin-left: 20%;
+    padding: 4px 0px;
+    align-items: center;
+    cursor: pointer;
+    color: #5C5CFF;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.ExItem{
+    position: absolute;
+    height: 100%;
+    background-color: #5C5CFF;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    width: 4px;
+    left: 98%;
+
+}
+.svgConn{
+    height: 1.2em;
+    margin-right: .3em;
+}
+.coverImg{
+    position: absolute;
+    left: 69%;
+    z-index: 0;
+    transform: translateX(-50%);
+    margin-top: -22em;
+    height: 68%;
+}
+.topContentBox{
+    position: relative;
+    z-index: 10;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    background:rgba(27, 27, 27, 0.411);
+    backdrop-filter: blur(3px);
+    width: 100%;
+}
+.textcontent{
+    position: relative;
+    z-index: 1000;
+    width: 25%;
+    justify-content: space-evenly;
+    color: white;
+    display: flex;
+}
+li{
+    list-style-type: none;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:whitesmoke;
+    font-weight: 500;
+}
+.active{
+    color: #5C5CFF;
+}
+.InputBar{
+    width: 28%;
+    position: relative;
+}
+input[type="text"]
+{
+    height: 35px;
+    width: 100%;
+    background-color: #1D1D1D;
+    outline: none;
+    margin: 0%;
+    border: 0px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight:500;
+    padding: 3px 4px;
+    color: whitesmoke;
+}
+.searchicon{
+    position: absolute;
+    top: 50%;
+    left: 92%;
+    transform: translateY(-50%);
+}
+::placeholder
+ {
+     color: rgb(230, 230, 230);
+ }
+ .usersetting{
+     position: relative;
+     margin-left: auto;
+     display: flex;
+     align-items: center;
+     gap: 15px;
+     padding-right: 10px;
+ }
+.colornot{
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    top: 0%;
+    left: 20%;
+    border-radius: 50%;
+    background-color: #5C5CFF;
+}
+.SideContent{
+    /* background-color: aquamarine; */
+    position: relative;
+    z-index: 100;
+    /* color: black; */
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.FeelText{
+    margin: 0%;
+    padding-left: 1em;
+    margin-top: 1em;
+    font-size: 18px;
+    font-weight: 600;
+}
+.SongNameTrend{
+    margin: 0%;
+    margin-top: .2em;
+    padding-left: 1em;
+    font-size: 56px;
+    font-weight: 700;
+}
+.singerPlays{
+    padding-left: 3.5em;
+    display: flex;
+    align-items: center;
+}
+.SingerName{
+    margin: 0%;
+}
+.Playingcount{
+    color: rgb(133, 133, 133);
+    margin-left: 1em;
+}
+.Padit{
+    cursor: pointer;
+}
+.AttractCont{
+    margin-top: 2em;
+    display: flex;
+    padding-left: 3.5em;
+    align-items: center;
+}
+.listbutton{
+    background-color: #5672FD;
+    color: white;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.circle{
+    margin-left: 1em;
+    border: solid 2px whitesmoke;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.Devc{
+    margin-left: .4em;
+}
+.blueHrt{
+    color: #5672FD;
+
+}
+.GridSongContent{
+    position: absolute;
+    top: 49%;
+    overflow: hidden;
+    left: 0%;
+    height: 50%;
+    width: 98%;
+    z-index: 1000;
+    display: grid;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px 10px;
+    grid-gap: 10px;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: 1.3fr 2fr;
+}
+.topArtist{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background-color: #202026;
+}
+.SongContainer{
+    grid-row: 2/3;
+}
+.Player{
+    grid-row: 1/-1;
+    background-color: #202026;
+}
+

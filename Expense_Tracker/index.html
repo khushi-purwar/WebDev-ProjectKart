@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Expense tracker</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h4>Balance</h4>
+      <h1 id="balance">₹0.0</h1>
+      <div class="inc-exp-container">
+        <div>
+          <h4>Credit</h4>
+          <p id="money-plus" class="money plus">+₹0.00</p>
+        </div>
+        <div>
+          <h4>Debit</h4>
+          <p id="money-minus" class="money minus">-₹0.00</p>
+        </div>
+      </div>
+      <h3>Transaction History</h3>
+      <ul id="list" class="list"></ul>
+      <h3>Add new transation</h3>
+      <form action="" id="form">
+        <div class="form-control">
+          <label for="text">Details / Item</label>
+          <input type="text" id="text" placeholder="ID" />
+        </div>
+        <div class="form-control">
+          <label for="amount">
+            Amount
+            <br />
+            Enter negative amount for Purchase
+          </label>
+          <input
+            type="number"
+            id="amount"
+            placeholder="please enter the amount..."
+          />
+        </div>
+        <button class="btn">Perform transation</button>
+
+        <button class="btn" href="/"><a href="checkout.html">BACK</a></button>
+      </form>
+    </div>
+
+    <script src="./work.js" async defer></script>
+  </body>
+</html>

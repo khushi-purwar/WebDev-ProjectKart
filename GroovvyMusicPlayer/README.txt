@@ -1,0 +1,2 @@
+This is My project built using Javascript and Frontend technologies. I focused on UI. Also this was my
+before projects. I know the code can be optimized alot. It is live in https://groovvy.netlify.app/
