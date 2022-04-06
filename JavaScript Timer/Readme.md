@@ -8,8 +8,9 @@
 <p  align="center">
 
 A simple web based Timer built using HTML, CSS and Javascript.
+</p>
 
-<br />
+<br>
 
 
 <details>
