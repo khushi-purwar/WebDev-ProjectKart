@@ -6,7 +6,7 @@
 <h1 align="center">Burger Eye</h1>
 
 <h2> About </h2>
-<p>Eye, made with HTML, CSS and JavaScript, follows the cursor(burger here). </p>
+<p>Eyes, made with HTML, CSS and JavaScript, follow the cursor(burger here). </p>
 
 <h2> Tech Stack </h2>
 <ol>
