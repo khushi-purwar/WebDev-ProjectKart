@@ -38,7 +38,7 @@ A simple web based Timer built using HTML, CSS and Javascript.
 
 ## About The Project
 
-A simple web timer. The timer can be paused and can also be reset.
+A simple web timer built using HTML, CSS and Javascript. The timer can be paused and can also be reset.
 
 <p  align="right">(<a  href="#top">back to top</a>)</p>
 
