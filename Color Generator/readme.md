@@ -6,7 +6,9 @@
 
 
 ### About The Project
-In this project, I'll create an app that displays random famous quotes each time a button is clicked. The user can display a quote from a famous athlete, politician, or historical figure.
+
+
+I have created a web app  to generate random colors based on JS, that comes with a handful of options.
 
 <hr>
 
