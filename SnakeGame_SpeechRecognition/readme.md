@@ -1,5 +1,5 @@
 # Snake game using voice control
-This is a snake game in which a snake moves inside a box in search of food. Snake movement is controlled using voice commands - 'down', 'left', 'up', 'right' and 'stop'.
+This is a snake game in which a snake moves inside a box in search of food. Snake movement is controlled using voice commands - 'down', 'left', 'up', 'right'.
 Whenever the snake consumes it's food, it's size increases by one unit.
 If the snake touches the border of the box or it's tail, the game stops.
 
