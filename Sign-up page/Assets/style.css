@@ -1,0 +1,148 @@
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body{
+    /* background-image: linear-gradient(to bottom, rgb(42, 43, 42), rgb(83, 85, 83),rgb(121, 123, 121)); */
+    background: url(https://images.unsplash.com/photo-1648758153629-aeb52bc09b4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80) no-repeat;
+    background-size: cover;
+}
+
+header{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    color: rgb(100, 18, 18);
+    text-shadow:  4px 3px 2px rgb(226, 178, 233);
+    /* border-bottom: 3px solid rgb(100, 18, 18);
+    border-top: 3px solid rgb(100, 18, 18);
+    border-radius: 20px; */
+    font-size: 28px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(252, 250, 250, 0.8);
+    height: 500px;
+    width: 650px;
+    margin: auto;
+    padding: 50px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+}
+
+.container::before{
+    content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  filter: blur(10px);
+  margin: -20px;
+
+}
+
+.container-alignment{
+    padding: 10px;
+}    
+
+.input-icons i {
+    position: absolute;
+}
+
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.input-icons label{
+    font-size: 20px;
+}
+
+.icon {
+    padding: 18px;
+    color: rgb(7, 6, 68);
+    min-width: 50px;
+    text-align: center;
+}
+
+::placeholder{
+    color: rgb(7, 6, 68);
+    opacity: 0.5;
+}
+
+.input-field {
+    width: 400px;
+    padding: 10px;
+    text-align: center;
+    /* margin: 10px; */
+    background: rgba(78, 221, 240,0);
+    border: none;   
+    border:2px solid rgb(7, 6, 68);
+    border-radius: 20px;
+    color: rgb(7, 6, 68);
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    outline: none;
+    margin: 5px 0;
+}
+
+.input-field:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.button{
+    width: 130px;
+    height: 40px;
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+    background: rgb(98, 18, 18);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px 1px rgb(44, 5, 5);
+    font-weight: bold;
+    border: 0px solid white;
+    font-size: 15px;
+}
+
+.button:hover{
+    background-color: rgb(248, 142, 160);
+    font-weight: bolder;
+    transition: all 0.3s ease-in-out;
+}
+.check{
+    background: red;
+    margin: 20px auto;
+}
+
+.input-icons span{
+    font-size: 14px;
+}
+
+.button-align{
+    display: flex;
+}
+
+.button-align input{
+    padding: 5px;
+}
