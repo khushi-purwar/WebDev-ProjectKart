@@ -9,9 +9,8 @@ If the snake touches the border of the box or it's tail, the game stops.
 * Move the snake using voice commands.
 
 ## **Output**
-
 https://imgur.com/a/VKvJ21b
-
+https://imgur.com/a/MElkQB3
 
 ## **Author**
 **Manya Rani**
