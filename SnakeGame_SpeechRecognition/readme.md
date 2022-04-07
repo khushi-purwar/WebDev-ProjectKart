@@ -10,6 +10,8 @@ If the snake touches the border of the box or it's tail, the game stops.
 
 ## **Output**
 
+https://imgur.com/a/VKvJ21b
+
 
 ## **Author**
 **Manya Rani**
