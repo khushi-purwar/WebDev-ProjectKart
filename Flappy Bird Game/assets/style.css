@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(32, 31, 31);
+}
+
+#game{
+    width: 600px;
+    height: 750px;
+    border: 1px solid black;
+    background-color: rgb(38, 196, 196);
+    margin: auto;
+    overflow: hidden;
+}
+
+#pipe{
+    width: 80px;
+    height: 750px;
+    background-color: rgb(64, 158, 41);
+    position: relative;
+    left: 600px;
+    animation: pipe 2.5s infinite linear;
+}
+
+@keyframes pipe{
+    0%{
+        left: 600px
+    }
+    100%{
+        left: -80px
+    }
+}
+
+#space{
+    width: 80px;
+    height: 200px;
+    background-color: white;
+    position: relative;
+    left: 600px;
+    top: -750px;
+    animation: pipe 2.5s infinite linear;
+    background-color: rgb(38, 196, 196);
+}
+
+#bird{
+    background-image: url('flappy-bird.png');
+    background-repeat: no-repeat;
+    background-color: rgb(38, 196, 196);
+    object-fit: fill;
+    width: 60px;
+    height: 45px;
+    position: absolute;
+    top: 300px;
+}
