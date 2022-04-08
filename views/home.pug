@@ -1,0 +1,46 @@
+extend base.pug 
+
+block scripts 
+    script(src='/static/index.js')
+
+block style 
+    style 
+      include ../static/style.css
+
+block content 
+    
+      section#introSection 
+         div  Welcome to best Dance academy💃
+         div.sub  Eat Sleep Dance Repeat
+
+      section#missionSection 
+         h2 Our mission
+         div.card 
+            h3 Dance perfection 
+            div.card-box
+               div.card-image 
+                  img(src="../static/1.png", alt="")
+               div.card-content 
+                  p you can perfect your dance skill in pocket friendly manner
+         div.card
+            h3 Dance the way you like 
+            div.card-box
+                div.card-image 
+                    img(src="../static/2.png", alt="")
+                div.card-content 
+                     p you can learn and can be a perfect dancer in whichever style you like
+         div.card  
+            h3 Expert teaching
+            div.card-box
+                   div.card-image 
+                      img(src="../static/3.png", alt="")
+                   div.card-content 
+                      p We will teach you from the very basic level we have best mentors
+
+      section#sponsersSection 
+         h2 Our sponsers 
+         div#sponsers 
+            img(src="/static/whatsapplogo.png", alt="",class="spimage")
+            img(src="/static/linkedin.png", alt="",class="spimage")
+            img(src="/static/windows.png", alt="",class="spimage")
+            img(src="/static/youtube.png", alt="",class="spimage")

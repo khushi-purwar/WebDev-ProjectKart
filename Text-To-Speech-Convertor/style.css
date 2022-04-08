@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+:root{
+    --orange: #FF715B;
+    --white: #FFFFFF;
+    --green: #1EA896;
+    --brown: #523F38;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--orange);
+}
+.wrap{
+    width: 400px;
+    border-radius: 10px;
+    padding: 25px 30px;
+    background: var(--white);
+}
+
+.wrap header{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+
+}
+.wrap form{
+    margin: 35px 0 25px;
+}
+
+form .row{
+    display: flex;
+    flex-direction: column;
+}
+
+form .row label{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 5px;
+    opacity: 90%;
+}
+
+form :where(textarea, select, button){
+    outline: none;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+form .row textarea{
+    resize: none;
+    border: 1px solid #888;
+    height: 100px;
+    font-size: 18px;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+}
+
+form .row .outer{
+    display: flex;
+    padding: 0 15px;
+    height: 45px;
+    align-items: center;
+    border: 1px solid #888;
+    border-radius: 5px;
+}
+
+form .row select{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+form button{
+    height: 55px;
+    margin-top: 15px;
+    background: var(--orange);
+    color: var(--white);
+    font-size: 23px;
+    text-transform: capitalize;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+form button:hover{
+    background: var(--green);
+}
+
+
+
+
+
