@@ -9,3 +9,5 @@ It was a simple Quote Generator app that generate new quotes after hitting butto
 
 ## Screenshots
 
+![Screenshot (829)](https://user-images.githubusercontent.com/73753957/162485024-49769068-e231-46ec-bd4c-bcc737b715ef.png)
+![Screenshot (830)](https://user-images.githubusercontent.com/73753957/162485034-5de1d0a5-7bac-4ca8-a8f5-3501e704c6f2.png)
