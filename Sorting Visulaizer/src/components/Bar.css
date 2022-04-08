@@ -1,0 +1,78 @@
+.bar{
+    width: 2em;
+    height:200px;
+    margin:0 1em; 
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg) rotateY(-30deg);
+}
+
+.side{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(254,254,254,0.25);
+}
+
+.back{
+    transform: translateZ(-4px);
+}
+
+.left{
+    transform-origin:left ;
+    transform: rotateY(90deg);
+}
+
+.right{
+    transform-origin:right ;
+    transform: rotateY(-90deg);
+}
+
+.top{
+    height: 34px;
+    transform-origin: top;
+    transform: rotateX(-90deg);
+    background: rgba(254,254,254,0.15);
+}
+
+.bottom{
+    height: 34px;
+    transform-origin: top;
+    background: rgba(255,0,120,0.5);
+    box-shadow: rgba(255,0,120,0.2);
+    transition: 0.3s;
+}
+
+.color-bar{
+    background: rgba(255,0,120,0.5);
+    box-shadow: rgba(255,0,120,0.2);
+    transition: 0.3s;
+
+} 
+
+.input{
+    text-align: center;
+    transform: rotate(90deg);
+    height: 25px;
+    outline: none;
+}
+
+.quantity-button{
+    text-align: center;
+    background: rgba(10,255,1,0.2);
+    margin: 1px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.quantity-button::hover{
+    opacity: 0.5;
+}  
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"]{
+    -moz-appearance: none;
+}
