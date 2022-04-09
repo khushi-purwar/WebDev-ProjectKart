@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif; 
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background: #D8E1E7;
+}
+
+.container {
+  width: 330px;
+  background: #D8E1E7;
+  padding: 40px 30px;
+  box-shadow: -4px -4px 8px #ffffff73,
+              3px 3px 6px rgba(94,104,121,0.290)
+}
+
+.container .text {
+  font-size: 2.1rem;
+  font-weight: 600;
+  margin-bottom: 2.18rem;
+  color: #595959;
+}
+
+.container .field {
+  display: flex;
+  height: 3.12rem;
+  width: 100%;
+  position: relative;
+}
+
+.field input {
+  height: 100%;
+  width: 100%;
+  padding-left: 2.81rem;
+  font-size: 1.1rem;
+  outline: none;
+  background: #D8E1E7;
+  color: #8472db;
+  border: none;
+  border-radius: 1.52rem;
+  box-shadow: inset 1.5px 1.5px 4.5px #babecc,
+              inset -4.5px -4.5px 9.5px #ffffff73
+}
+
+.field input:focus {
+  box-shadow: inset 1px 1px 2px #babecc,
+              inset -1px -1px 2px #ffffff73
+}
+
+.field:nth-child(2) {
+  margin-top: 1.25rem;
+}
+
+.field span {
+  position: absolute;
+  width: 3.12rem;
+  line-height: 3.12rem;
+  color: #595959;
+}
+
+.field label {
+  position: absolute;
+  top: 50%;
+  left: 2.812em;
+  pointer-events: none;
+  color: #8472db;
+  transform: translateY(-50%);
+}
+
+.field input:valid ~ label {
+  opacity: 0;
+}
+
+.forgot {
+  text-align: center;
+  margin: .5rem 0;
+  color: #595959;
+  font-size: 1.05rem;
+}
+
+.forgot a {
+  font-size: 1.1rem;
+  color: #8472db;
+  text-decoration: none;
+}
+
+.forgot a:hover {
+  text-decoration: underline;
+}
+
+button {
+  margin: .9rem 0;
+  width: 100%;
+  height: 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #D8E1E7;
+  border: none;
+  color: #595959;
+  outline: none;
+  cursor: pointer;
+  border-radius: 1.52rem;
+  box-shadow: 1.5px 1.5px 4.5px #babecc,
+              -4.5px -4.5px 9.5px #ffffff73
+}
+
+button:focus {
+  color: #8472db;
+  box-shadow: inset 1.5px 1.5px 4.5px #babecc,
+              inset -4.5px -4.5px 9.5px #ffffff73
+}
+
+.signup {
+  font-size: 1rem;
+  color: #595959;
+  margin: .5rem 0;
+}
+
+.signup a {
+  text-decoration: none;
+  color: #8472db;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}

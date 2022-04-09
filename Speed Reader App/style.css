@@ -1,0 +1,31 @@
+#page1
+{
+    background-color: #DB7777;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: #fff;
+    text-align: center;
+    font-family: sans-serif;
+}
+#error
+{
+    background-color: #DB7777;
+    width: 50%;
+    margin: 20px auto;
+    font-size: auto;
+}
+#result
+{
+    font-size: 50px;
+    background-color: rgba(255,255,255,0.2);
+    padding: 5% 0;
+}
+.full-width-slider input
+{
+    display: none !important;
+}
+.full-width-slider .ui-slider-track
+{
+    margin-left: 15px;
+}
