@@ -1,7 +1,18 @@
-This is a  Dice Game.
+# Dice Game 2
 
-->The user needs to click play to roll the dice.
+- This is a  Dice Game.
 
--> A random number will be generated and whoever has got the highest numbers gets 1 point
+- Dice (singular: die) are the main form of movers in Monopoly.
 
--> Click Reload to Reset scores to 0.
+- They are usually standard, 6-sided (also known as d6 or D6) white dice with black pips. Some editions come with specially colored dice.
+
+- Click Reload to Reset scores to 0.
+
+
+# Tech stack used
+
+• HTML
+
+• CSS
+
+• JS
