@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: sans-serif; }
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/bg/panorama-3629120.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .main .notch {
+    padding: 6px 10px;
+    background-color: rgba(0, 0, 26, 0.2);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .main .notch .notch-left {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .main .notch .notch-left .start-menu {
+        margin-right: 10px;
+        transition: all 0.4s;
+        padding: 2px 6px;
+        border-radius: 4px; }
+        .main .notch .notch-left .start-menu:hover {
+          background-color: rgba(255, 255, 255, 0.2); }
+      .main .notch .notch-left .notch-lists {
+        display: flex; }
+        .main .notch .notch-left .notch-lists a {
+          font-size: 0.8rem;
+          color: white;
+          text-decoration: none;
+          margin: 0 2px;
+          cursor: pointer;
+          transition: all 0.4s;
+          padding: 2px 6px;
+          border-radius: 4px; }
+          .main .notch .notch-left .notch-lists a:hover {
+            background-color: rgba(255, 255, 255, 0.2); }
+          .main .notch .notch-left .notch-lists a:nth-child(1) {
+            font-weight: bold; }
+    .main .notch .notch-right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .main .notch .notch-right i {
+        display: block;
+        margin: 0 2px;
+        transition: all 0.4s;
+        cursor: pointer;
+        transition: all 0.4s;
+        padding: 4px 6px;
+        border-radius: 4px; }
+        .main .notch .notch-right i:hover {
+          background-color: rgba(255, 255, 255, 0.2); }
+      .main .notch .notch-right p {
+        font-size: 0.8rem;
+        cursor: pointer;
+        transition: all 0.4s;
+        padding: 2px 6px;
+        border-radius: 4px; }
+        .main .notch .notch-right p:hover {
+          background-color: rgba(255, 255, 255, 0.2); }
+  .main .plank {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    padding: 4px 10px;
+    background: rgba(0, 0, 26, 0.2);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .main .plank .plank_item img {
+      display: inline-block;
+      transition: all 0.3s; }
+      .main .plank .plank_item img:hover {
+        transform: scale(1.4);
+        transform: translateY(-20px);
+        margin: 0 20px; }
