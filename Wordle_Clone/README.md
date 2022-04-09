@@ -10,3 +10,5 @@ This is a simple clone of the most popular web-based word game called "Wordle" b
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="javascript" />
 
 ## Screenshot
+
+![Screenshot (1)](https://user-images.githubusercontent.com/96786500/162563452-e63f024f-e719-4a7c-a7b0-90b22430e02f.png)
