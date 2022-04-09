@@ -1,0 +1,43 @@
+.board-game {
+    border: 16px solid rgb(136, 44, 85);
+    height: 480px;
+    width: 480px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: linear;
+    box-shadow: 0 78px 78px rgba(18, 3, 3, 0.65);
+    background: #fff;
+
+}
+
+
+/*alternate cell color*/
+
+.alternate-cell {
+
+    background: rgb(116, 113, 113);
+}
+
+
+/*managing each cell*/
+
+.cell {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+    
+    
+}
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url('back.jpeg');
+}
