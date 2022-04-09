@@ -1,15 +1,16 @@
-#### React Router Fix
+## Description
+Cocktail App gives you data / list of all cocktails available in the world. you can't drink obviously,  just look and see data i imagine you are drinking it.
 
-(Fix)[https://dev.to/dance2die/page-not-found-on-netlify-with-react-router-58mc]
+## Tech Stack 
+1. ReactJS
+2. CSS
+3. API
+4. React Router Dom
 
-#### CRA Fix
-
-```
-
-"build": "CI= react-scripts build",
-
-```
-
-```sh
-npm install react-router-dom@6
-```
+## Quick Start (Run in local)
+1. clone the repo using `git clone https://github.com/khushi-purwar/WebDev-ProjectKart.git`
+2. cd `cocktail`
+3. Use `npm install` to install all the dependencies
+4. Use `npm start` to run at `localhost:3000`
+5. Enjoy
+6. Cheers !
