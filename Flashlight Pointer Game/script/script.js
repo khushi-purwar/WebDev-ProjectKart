@@ -1,4 +1,4 @@
-alert("Try to find the three rabbits hiding on this webpage.")
+
 
 var count = 3;
 
