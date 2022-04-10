@@ -10,6 +10,6 @@ It was a countdown timer works like a reminder
 
 ## Screenshots
 
+![Screenshot (855)](https://user-images.githubusercontent.com/73753957/162639925-e2ba0936-a915-4436-b86a-a5b6b80d0b70.png)
 
-## Videos
-
+![Screenshot (856)](https://user-images.githubusercontent.com/73753957/162639927-7daac8fb-2272-4a79-a223-0a4e49d97979.png)
