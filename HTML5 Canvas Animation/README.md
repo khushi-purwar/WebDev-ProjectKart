@@ -32,3 +32,6 @@ cd WebDev-ProjectKart/HTML5 Canvas Animation
 </br>
 
 <h3> ScreenShots </h3>
+
+
+![canvas](https://user-images.githubusercontent.com/72400676/162595988-563379aa-6e25-4ef1-82e8-e490faa66750.png)
