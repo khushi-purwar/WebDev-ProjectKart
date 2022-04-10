@@ -1,7 +1,7 @@
 
 
-I create a website of Dance Academy of cool frontend with the help of PUG,CSS,JavaScript,NodeJs.
-You can go to contact page and can submit a form where you can start getting training for learning dance of any type from best mentors.
+I have created a website of Dance Academy of cool frontend with the help of PUG,CSS,JavaScript,NodeJs.
+You can go checkout the contact page of the website and submit a form to get started with the training and learn dance of any kind from the best mentors.
 
 <div id="top"></div>
 
@@ -74,7 +74,7 @@ You can go to contact page and can submit a form where you can start getting tra
 
 ## Overview :
 <h3>
-  Hello Everyone 👋🏻 Glad to see you all here !! I hope everyone is eager to give their best contributions. The repository contains the list of awesome✨ & cool web development beginner-friendly✌️ projects! . </h3>
+  Hello Everyone 👋🏻 Glad to see you all here !! I hope everyone is eager to give their best contributions. This repository contains a list of awesome✨ & cool beginner-friendly web development projects ✌️! . </h3>
 
 <br>
 
@@ -292,7 +292,7 @@ Thanks to all the **people who contribute** 💜
 If you have any feedback or suggestions please reach out to Project - Maintainer.  
 * [Khushi Purwar](https://github.com/khushi-purwar) 
   
-Or you can create a  <a href="https://github.com/khushi-purwar/Web-Dev-ProjectKart/issues">issue</a> and mention there , which new features or extension can make this Project more good.
+Or you can create an  <a href="https://github.com/khushi-purwar/Web-Dev-ProjectKart/issues">issue</a> where you can mention some new features or extensions that will enhance this project✨.
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------->
 
@@ -302,7 +302,7 @@ Or you can create a  <a href="https://github.com/khushi-purwar/Web-Dev-ProjectKa
 
 <div align="center">
 
-### Show some ❤️ by starring this awesome Repository!
+### Show some ❤️ by starring this fabulous repository!
 
 </div>
   
