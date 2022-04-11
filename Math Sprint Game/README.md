@@ -1,6 +1,10 @@
 ## Math Sprint Game
 
-This game checks your iq speed, how fast you can calculate maths solutions 
+This game checks your iq speed, how fast you can calculate maths solutions with different rounds
+- 1st round 10 questions
+- 2nd round 25 questions
+- 3rd round 50 questions
+- 4th round 99 questions
 
 ## Tech Stacks
 
