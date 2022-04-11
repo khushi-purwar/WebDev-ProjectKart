@@ -1,4 +1,4 @@
-## Stylish Countdown
+## Countdown Timer
 
 It was a countdown timer works like a reminder
 

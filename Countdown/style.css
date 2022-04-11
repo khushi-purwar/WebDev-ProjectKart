@@ -9,6 +9,7 @@ body {
   min-height: 100vh;
   overflow-y: hidden;
   display: flex;
+  background-color: blue;
   align-items: center;
   font-family: Nunito, sans-serif;
 }
