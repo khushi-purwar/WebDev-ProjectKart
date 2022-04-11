@@ -65,7 +65,7 @@ In this game you have a flashlight which you can use to reveal a section of the 
 
 ### Prerequisites
 
-No prerequisites required for adding and executing this chrome extension.
+No prerequisites required executing this program.
 
 ### Installation
 
