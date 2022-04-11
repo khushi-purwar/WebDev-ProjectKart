@@ -7,6 +7,7 @@
 - HTML5
 - CSS3
 - SVG
+get SVG waves from https://getwaves.io/
 
 
 ## A view of the project 
