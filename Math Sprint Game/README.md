@@ -14,6 +14,12 @@ This game checks your iq speed, how fast you can calculate maths solutions with 
 
 ## Screenshots
 
+![Screenshot (859)](https://user-images.githubusercontent.com/73753957/162814223-a8615bb2-b184-4af7-bdf4-de78cddbb8d9.png)
+
+![Screenshot (857)](https://user-images.githubusercontent.com/73753957/162814234-1867c080-2162-4f34-a43a-24ea71adf669.png)
 
 ## Video
+
+https://user-images.githubusercontent.com/73753957/162814259-fdc5c930-b987-409d-9a14-9db17be2a54c.mp4
+
 
