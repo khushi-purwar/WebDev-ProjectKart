@@ -1,0 +1,102 @@
+:root {
+  background-color: blueviolet;
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospaces;
+  margin: 0;
+  padding: 0;
+  color: yellow;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 5.3rem;
+  color: aquamarine;
+  margin-bottom: 5rem;
+}
+h1 > span {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 4.2rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container > * {
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-centre {
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-centre {
+  justify-content: center;
+}
+.text-centre {
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+
+.btn {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  width: 20rem;
+  text-align: center;
+  border: 0.1rem solid rgb(201, 22, 22);
+  margin-bottom: 1rem;
+  text-decoration: none;
+  border-radius: 1.25rem;
+  color: rgb(11, 12, 12);
+  background-color: white;
+  /* cursor: pointer; */
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(119, 201, 241, 0.5);
+  transform: translate(0.1rem);
+  transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
