@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    height: 90vh;
+    width: 40vw;
+    background-color: rgb(13, 17, 56);
+}
+
+@keyframes mymove {
+    from {border-right: 2px solid rgb(255, 255, 255);}
+    to {border-right: 2px solid rgb(13, 17, 56);}
+  }
+
+.typewrite{
+    letter-spacing: 4px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    display: inline;
+    color: rgb(224, 150, 11);
+    position: relative;
+    top: 231px;
+    left: 726px;
+    padding: 4px;
+    animation-name: mymove;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    
+    
+}
+
+
+.container{
+    color: rgb(250, 250, 250);
+    display: flex;
+    position: relative;
+    top: 287px;
+    left: 522px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}

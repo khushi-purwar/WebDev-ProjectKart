@@ -1,0 +1,183 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-color: rgb(215, 216, 231);
+    background-image: url('pexels-pixabay-326311.jpg');
+}
+
+.ludo{
+
+    width: 750px;
+    height: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(164, 148, 148);
+    
+}
+
+.blue,.red,.yellow,.green{
+
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+
+
+/*color*/
+
+.blue{
+
+    background-color:royalblue;
+}
+
+.red{
+
+    background-color:red;
+}
+
+.yellow{
+
+    background-color:yellow;
+}
+
+.green{
+
+    background-color:green;
+}
+
+
+
+
+/*box inside*/
+
+.box{
+
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box .insidebox{
+
+    width: 40px;
+    height: 40px;
+    margin:15px;
+}
+
+
+
+
+/*color*/
+
+.blueFont{
+
+    color: royalblue;
+}
+
+.redFont{
+
+    color: red;
+}
+
+.yellowFont{
+
+    color: yellow;
+}
+
+.greenFont{
+
+    color: green;
+}
+
+
+
+.blueBackground{
+
+    background-color: royalblue;
+}
+
+.redBackground{
+
+    background-color: red;
+}
+
+.yellowBackground{
+
+    background-color: yellow;
+}
+
+.greenBackground{
+
+    background-color: green;
+}
+
+
+
+/*square box*/
+
+.square{
+
+    width: 46px;
+    height: 46px;
+    border:1px solid white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.squareContainer{
+
+    display: flex;
+}
+
+.row{
+
+    width:750px;
+    height:150px;
+   
+    display: flex;
+    justify-content: space-between;
+}
+
+.row1{
+
+    display: flex;
+}
+
+
+
+/*ludoCenter*/
+
+.ludoCenter{
+    
+    font-size: 50px;
+    color:goldenrod;
+    position: absolute;
+    background-color: rgb(29, 31, 52);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
