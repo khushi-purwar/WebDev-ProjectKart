@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    width: 100%;
+    background-color: #000;
+    height: 100vh;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    width: 100%;
+    padding: 1em;
+}
+
+.header h1{
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgb(0, 140, 255), 0 0 5px rgb(217, 217, 233);
+    font-size: 30px;
+}
+
+.words{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.word-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.word-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.word{
+    border: 1px solid #353535;
+    width: 4em;
+    height: 4em;
+    margin-right: .4em;
+    margin-bottom: .4em;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px #888888;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyboard{
+    width: 100%;
+    padding-bottom: 1em;
+}
+
+.keyboard-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.keyboard-container button{
+    background-color: black;
+    color: white;
+    outline: none;
+    border: 1px solid #353535;
+    padding: 1em;
+    cursor: pointer;
+    margin-right: .3em;
+    margin-bottom: .3em;
+    border-radius: 4px;
+}
+
+.keyboard-container button:hover{
+    color: aquamarine;
+    box-shadow: 0 5px 15px rgba(103, 241, 149, 0.4);
+}
+
+.word-green{
+    background-color: #52be80;
+    color: white !important;
+}
+
+.word-yellow{
+    background-color: #f8c471;
+    color: white !important;
+}
+
+.word-grey{
+    background-color: #839192;
+    color: white !important;
+}
