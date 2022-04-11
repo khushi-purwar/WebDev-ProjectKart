@@ -65,7 +65,7 @@ A simple Falling Snowflakes Effect built using HTML and CSS.
 
 ### Prerequisites
 
-No prerequisites required for adding and executing this chrome extension.
+No prerequisites required executing this program.
 
 ### Installation
 
