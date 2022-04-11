@@ -65,7 +65,7 @@ A simple typing animation effect built using HTMl,CSS and Javascript. The words 
 
 ### Prerequisites
 
-No prerequisites required for adding and executing this chrome extension.
+No prerequisites required executing this program.
 
 ### Installation
 
