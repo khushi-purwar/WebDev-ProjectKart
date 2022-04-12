@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body {
+    margin: 0;
+    background: linear-gradient(135deg,#8E2DE2,#4A00E0);
+    background-attachment: fixed;
+  }
+  
+  #app {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .note {
+    height: 200px;
+    box-sizing: border-box;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: aliceblue;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+    resize: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+  }
+  
+  .add-note {
+    height: 200px;
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 100px;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .add-note:hover {
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 120px;
+
+  }
+  
