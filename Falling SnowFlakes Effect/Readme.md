@@ -37,7 +37,7 @@ A simple CSS Snowflakes Effect
 
 ## About The Project
 
-A simple Falling Snowflakes Effect built using HTML and CSS. 
+A simple Falling Snowflakes Effect built using HTML, CSS and Javascript. 
 
 <p  align="right">(<a  href="#top">back to top</a>)</p>
 
