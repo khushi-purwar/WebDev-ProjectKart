@@ -98,7 +98,7 @@ git clone https://github.com/khushi-purwar/WebDev-ProjectKart.git
 
 </div>
 
-The snowflakes are randomly generated and swing to achieve a realistic animation.
+The snowflakes are randomly generated and swing to achieve a realistic animation. The particle snow effect is achieved through javascript.
 
 
   
