@@ -1,0 +1,23 @@
+{
+  "name": "reebok-clone",
+  "version": "1.0.0",
+  "description": "A Clone of Reebok India Website",
+  "main": "index.html",
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kumar-laxmi/Reebok-Clone.git"
+  },
+  "author": "Kumar Laxmikant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kumar-laxmi/Reebok-Clone/issues"
+  },
+  "homepage": "https://github.com/Kumar-laxmi/Reebok-Clone#readme"
+}
