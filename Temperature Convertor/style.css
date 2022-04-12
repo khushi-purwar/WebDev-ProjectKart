@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5a1d2;
+    height: 100vh;
+    font-family: monospace;
+    font-size: 1.25rem;
+    color:black;
+}
+section{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+}
+.heading{
+    height: 58px;
+    line-height: 58px;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 10px;
+    padding: 0 15px;
+    background: #f9f8fa75;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 10px rgba(197, 193, 193, 0.185);
+    margin-bottom: 28px;
+}
+.container{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#e74ae275;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 10px rgba(185, 74, 157, 0.185);
+}
+.box{
+    width: 90%;
+    padding: 10px 0;
+    font-weight: bold;
+}
+.input_box{
+    width: 14rem;
+    font-family: monospace;
+    padding: 5px;
+    float: right;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    color: black;
+    font-size: 1.25rem;
+}
+
+a{
+    color: rgba(255, 255, 255, 0.383);
+}
+::placeholder{
+    color: rgb(173, 169, 169);
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .main{
+        width: 87%;
+    }
+    .heading{
+        font-size: 1.5rem;
+    }
+    .container{
+        padding-bottom: 35px;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;  
+        width: 100%;
+        margin-top: 13px;
+    }
+    .input_box{
+        width: 90%;
+        padding: 3px;
+        font-size: 1.25rem;
+        margin-top: 5px;
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+    .main{
+        width: 92%;
+    }
+    .heading{
+        font-size: 1.22rem;
+        padding: 0 10px;
+    }
+}
