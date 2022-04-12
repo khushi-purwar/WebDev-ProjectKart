@@ -1,5 +1,5 @@
 This is a project built using Frontend Technologies.I've tried to implement CSS animation to at its
-most. It is fully responsive
+best. It is fully responsive.
 
 Notice:
 open the app in only fixed viewport then don't try to change it as it would affect the animation.
