@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+.icons
+{
+    font-size: 25px;
+    color: grey;
+}
+.icons2
+{
+    font-size: 30px;
+    color: black;
+}
+.icons3
+{
+    font-size: 20px;
+}
+.abc
+{
+    text-shadow: 2px 2px 2px 2px;
+}
