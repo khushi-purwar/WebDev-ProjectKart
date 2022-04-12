@@ -1,7 +1,7 @@
 
 
-I create a website of Dance Academy of cool frontend with the help of PUG,CSS,JavaScript,NodeJs.
-You can go to contact page and can submit a form where you can start getting training for learning dance of any type from best mentors.
+I have created a website of Dance Academy of cool frontend with the help of PUG,CSS,JavaScript,NodeJs.
+You can go checkout the contact page of the website and submit a form to get started with the training and learn dance of any kind from the best mentors.
 
 <div id="top"></div>
 
@@ -74,7 +74,7 @@ You can go to contact page and can submit a form where you can start getting tra
 
 ## Overview :
 <h3>
-  Hello Everyone 👋🏻 Glad to see you all here !! I hope everyone is eager to give their best contributions. The repository contains the list of awesome✨ & cool web development beginner-friendly✌️ projects! . </h3>
+  Hello Everyone 👋🏻 Glad to see you all here !! I hope everyone is eager to give their best contributions. This repository contains a list of awesome✨ & cool beginner-friendly web development projects ✌️! . </h3>
 
 <br>
 
@@ -292,7 +292,7 @@ Thanks to all the **people who contribute** 💜
 If you have any feedback or suggestions please reach out to Project - Maintainer.  
 * [Khushi Purwar](https://github.com/khushi-purwar) 
   
-Or you can create a  <a href="https://github.com/khushi-purwar/Web-Dev-ProjectKart/issues">issue</a> and mention there , which new features or extension can make this Project more good.
+Or you can create an  <a href="https://github.com/khushi-purwar/Web-Dev-ProjectKart/issues">issue</a> where you can mention some new features or extensions that will enhance this project✨.
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------->
 
@@ -302,7 +302,7 @@ Or you can create a  <a href="https://github.com/khushi-purwar/Web-Dev-ProjectKa
 
 <div align="center">
 
-### Show some ❤️ by starring this awesome Repository!
+### Show some ❤️ by starring this fabulous repository!
 
 </div>
   
@@ -481,13 +481,13 @@ Or you can create a  <a href="https://github.com/khushi-purwar/Web-Dev-ProjectKa
 | 90. | [whack a mole game](https://github.com/khushi-purwar/WebDev-ProjectKart/tree/master/whack%20a%20mole%20game) | 93. | [Colorful Rain Effect](https://github.com/rajprem4214/WebDev-ProjectKart/tree/rain/Colorful_Rain_Effect) | 94. | [Parallex Web Design](https://github.com/rajprem4214/WebDev-ProjectKart/tree/para/Parallex-Web-Design) 
 | 95. | [Claymorphism Effect Form](https://github.com/rajprem4214/WebDev-ProjectKart/tree/clay/Claymorphism-Effect) | 96. | [Wikipedia Clone](https://kumar-laxmi.github.io/Wikipedia-Clone/) | 97. | [Mobile Number Validator](https://github.com/rajprem4214/WebDev-ProjectKart/tree/mobile/Mobile-Number-Validator)
 | 98. | [Wordle Clone](./Wordle%20Clone) |
-| 99. | [Roman Numeral Converter](https://github.com/rajprem4214/WebDev-ProjectKart/tree/roman/Romman-Numeral-Converter)
+| 99. | [Roman Numeral Converter](https://github.com/rajprem4214/WebDev-ProjectKart/tree/roman/Romman-Numeral-Converter) 
 
 | 98. | [Pomodoro Clock](https://github.com/rajprem4214/WebDev-ProjectKart/tree/pomo/Pomodoro-Clock)
 
 | 98. | [Magic 8 Ball](https://github.com/rajprem4214/WebDev-ProjectKart/tree/ball/Magic-8-Ball)
 
-
+| 100. | [Inovative login Form](https://ajoe12.github.io/Login_Page/#) 
 
 
 

@@ -1,0 +1,131 @@
+html,body{
+	height: 100%;
+}
+body{
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+header{
+	position: fixed;
+	width: 100%;
+}
+.header_1{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 20px;
+	padding: 3px 0;
+	border-bottom: 1px solid #eef1f6;
+}
+.header_1 > svg{
+	padding-left: 15px;
+}
+.header_2{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+	width: 100%;
+	box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
+}
+.header_2 > .grouper{
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+.grouper > img{
+	height: 62%;
+	border-radius: 50%;
+	margin-right: 17px;
+	cursor: pointer;
+}
+.grouper > svg{
+	margin-right: 18px;
+	cursor: pointer;
+}
+.header_3{
+	height: 3px;
+	width: 100%;
+	background: linear-gradient(to right, #79589f, #8ECDEA);
+}
+
+.prof{
+	margin-top: 80px;
+	border-bottom: 1px solid #e7ebf3;
+	justify-content: space-between;
+	padding: 12px 0 10px;
+	display: flex;
+	align-items: center;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	background-color: #F7F8FB;
+	height: 39px;
+}
+.prof > button{
+	color: #79589f;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100px;
+	height: 34px;
+	border-radius: 6px;
+	background-color: transparent;
+	border: none;
+}
+.prof > button:hover{
+	background-color: #E7EAEE;
+	cursor: pointer;
+}
+
+.card{
+	border-bottom: 1px solid #eef1f6;
+	width: 100%;
+	padding: 10px 0;
+	cursor: pointer;
+	height: 30px;
+	display: flex;
+	align-items: center;
+}
+.card:hover{
+	background-color: #FBFBFD;
+}
+
+footer{
+	position: absolute;
+	align-items: center;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	border-top: 1px solid #eef1f6;
+	height: 45px;
+}
+footer > span{
+	margin-left: 1rem;
+	color: #475366;
+	cursor: pointer;
+}
+footer > button{
+	font-weight: bold;
+	height: 26px;
+	width: 80px;
+	background-color: #79589f;
+	color: #fff;
+	border: 0;
+	border-radius: 4px;
+	margin-left: 1rem;
+}
+footer > button:hover{
+	background-color: #4f3074;
+	cursor: pointer;
+}
+footer > div > span{
+	margin-right: 1rem;
+	cursor: pointer;
+}
