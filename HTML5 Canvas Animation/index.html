@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Paint</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <canvas id="canvas1" width="1000" height="500"></canvas>
+    </div>
+    <br />
+    <div class="container">
+      Select your favorite shape:
+      <select id="mySelect">
+        <option>Rectangle</option>
+        <option>Triangle</option>
+        <option>Smiley Face</option>
+        <option>Constellation</option>
+      </select>
+      <br /><br />
+    </div>
+    <br />
+    <div class="container">
+      <label for="favcolor">Select your favorite color:</label>
+      <input
+        type="color"
+        id="favcolor"
+        name="favcolor"
+        value="#ff0000"
+      /><br /><br />
+    </div>
+
+    <div class="container">
+      <input
+        class="button"
+        type="button"
+        onclick="getOption()"
+        value="Let's Draw!"
+        style="background-color: #84f14e"
+      />
+    </div>
+    <div class="container">
+      <h1 id="message">Click on the canvas to generate cool animations</h1>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

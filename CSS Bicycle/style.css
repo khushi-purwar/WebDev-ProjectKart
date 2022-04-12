@@ -1,0 +1,349 @@
+:root {
+  --white: #fbfff1;
+  --black: #0c0a03;
+  --gray: #cad7ea;
+  --red: #e74456;
+  --blue: rgb(10, 161, 161);
+  --brown: #9d5a2d;
+  --yellow: #f6d957;
+  --grey: #989b97;
+  --size: 20vmin;
+}
+
+body {
+  background: linear-gradient(rgb(254, 36, 36), rgb(250, 250, 76));
+  margin-top: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.wrapper:before {
+  content: "";
+  position: absolute;
+  bottom: -1vmin;
+  width: 100vw;
+  height: 1vmin;
+  background-image: linear-gradient(
+    90deg,
+    var(--white) 29.45%,
+    var(--grey) 29.45%,
+    var(--grey) 50%,
+    var(--white) 50%,
+    var(--white) 79.45%,
+    var(--grey) 79.45%,
+    var(--grey) 100%
+  );
+  background-size: 20vmin 20vmin;
+  -webkit-animation: drive 10s infinite linear;
+  animation: drive 10s infinite linear;
+}
+
+@-webkit-keyframes drive {
+  from {
+    background-position-x: 0vmin;
+  }
+  to {
+    background-position-x: -400vmin;
+  }
+}
+
+@keyframes drive {
+  from {
+    background-position-x: 0vmin;
+  }
+  to {
+    background-position-x: -400vmin;
+  }
+}
+.wheel {
+  width: var(--size);
+  height: var(--size);
+  border-radius: 100%;
+  border: 2vmin solid var(--black);
+  box-shadow: inset 0 0 0 2vmin rgb(48, 48, 48);
+}
+
+.sun {
+  position: absolute;
+  border-radius: 50%;
+  height: 21vmin;
+  width: 21vmin;
+  top: 8vmin;
+  left: 80vmin;
+  background: orange;
+  box-shadow: 0 0 10px orange, 0 0 8vmin orange, 0 0 28vmin yellow,
+    inset 0 0 80px yellow;
+  z-index: 12;
+  z-index: -99;
+}
+
+.wheel1 {
+  margin: 0 11vmin 0 0;
+}
+
+.wheel2 {
+  position: relative;
+}
+
+.cassette2 {
+  position: absolute;
+  left: 45.4vmin;
+  bottom: 11vmin;
+  width: 2vmin;
+  height: 2vmin;
+  border-radius: 100%;
+  background: var(--gray);
+  box-shadow: 0 0 0 0.5vmin;
+}
+
+.chainStay {
+  position: absolute;
+  left: 11vmin;
+  bottom: 11vmin;
+  height: 1.5vmin;
+  width: 17vmin;
+  background: var(--blue);
+  border-radius: 1vmin;
+  transform: rotate(5deg);
+  transform-origin: left;
+}
+
+.seatStay {
+  position: absolute;
+  left: 11vmin;
+  bottom: 11vmin;
+  height: 1vmin;
+  width: 20vmin;
+  background: var(--blue);
+  border-radius: 1vmin;
+  transform: rotate(-57deg);
+  transform-origin: left;
+}
+
+.seatTube {
+  position: absolute;
+  left: 4vmin;
+  bottom: 9vmin;
+  height: 1.5vmin;
+  width: 24vmin;
+  background: linear-gradient(90deg, var(--gray) 3vmin, var(--blue) 3vmin);
+  border-radius: 1vmin;
+  transform: rotate(72deg);
+  transform-origin: right;
+}
+
+.downTube {
+  position: absolute;
+  left: 27vmin;
+  bottom: 9vmin;
+  height: 1.5vmin;
+  width: 23vmin;
+  background: var(--blue);
+  border-radius: 1vmin;
+  transform: rotate(-48deg);
+  transform-origin: left;
+}
+
+.topTube {
+  position: absolute;
+  right: 17.5vmin;
+  top: -5vmin;
+  height: 1.5vmin;
+  width: 20vmin;
+  background: var(--blue);
+  border-radius: 1vmin;
+  transform: rotate(0deg);
+}
+
+.fork {
+  position: absolute;
+  right: -10.5vmin;
+  bottom: 10vmin;
+  height: 1.5vmin;
+  width: 23vmin;
+  background: linear-gradient(-90deg, var(--gray) 3vmin, var(--blue) 3vmin);
+  border-radius: 1vmin;
+  transform: rotate(253deg);
+  transform-origin: left;
+}
+
+.seat {
+  position: absolute;
+  top: -10vmin;
+  left: 16vmin;
+  width: 0;
+  height: 0;
+  border-radius: 50px;
+  border-style: solid;
+  border-width: 2.5vmin 8.5vmin 2.5vmin 4vmin;
+  border-color: var(--brown) transparent transparent transparent;
+}
+
+.bottomBracket {
+  position: absolute;
+  left: 24vmin;
+  bottom: 8vmin;
+  width: 3vmin;
+  height: 3vmin;
+  border: 2vmin solid var(--gray);
+  border-radius: 100%;
+}
+
+.cassette {
+  position: absolute;
+  left: 11vmin;
+  bottom: 11vmin;
+  width: 2vmin;
+  height: 2vmin;
+  border-radius: 100%;
+  background: var(--gray);
+  box-shadow: 0 0 0 0.5vmin;
+}
+
+.road {
+  position: absolute;
+  background: #989b97;
+  height: 300px;
+  width: 100%;
+  top: 400px;
+  border: 3px solid #0c0a03;
+  box-shadow: 0 0 20px 0 white;
+}
+
+.spokes {
+  position: absolute;
+  width: 17vmin;
+  height: 4px;
+  background-color: rgb(48, 48, 48);
+  top: 11.5vmin;
+  left: 4vmin;
+  transform: rotate(90deg);
+  animation: spin 1s linear infinite;
+}
+
+.spokes:before,
+.spokes:after {
+  content: "";
+  position: absolute;
+  width: 17vmin;
+  height: 4px;
+  background-color: rgb(48, 48, 48);
+}
+
+.spokes:before {
+  transform: rotate(60deg);
+}
+
+.spokes:after {
+  transform: rotate(-60deg);
+}
+
+.spokes2 {
+  position: absolute;
+  width: 17.5vmin;
+  height: 4px;
+  background-color: rgb(48, 48, 48);
+  top: 11.5vmin;
+  left: 38vmin;
+  transform: rotate(90deg);
+  animation: spin 1s linear infinite;
+}
+
+.spokes2:before,
+.spokes2:after {
+  content: "";
+  position: absolute;
+  width: 17.5vmin;
+  height: 4px;
+  background-color: rgb(48, 48, 48);
+}
+
+.spokes2:before {
+  transform: rotate(60deg);
+}
+
+.spokes2:after {
+  transform: rotate(-60deg);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.steam {
+  position: absolute;
+  top: -9vmin;
+  right: 16.5vmin;
+  border-radius: 1vmin 0 0 0;
+  width: 3vmin;
+  height: 1.5vmin;
+  background: var(--gray);
+}
+
+.handlebar {
+  position: absolute;
+  top: -9vmin;
+  right: 12.5vmin;
+  background: #6e4021;
+  width: 5vmin;
+  height: 1.5vmin;
+  border-radius: 0 0 1vmin 0;
+}
+
+.cloud {
+  background: white;
+  width: 20vmin;
+  height: 18vmin;
+  border-radius: 50%;
+  position: absolute;
+  top: 8vmin;
+  filter: blur(6px);
+  left: -8vmin;
+  animation: 15000ms cloudAnimation linear infinite;
+  opacity: 0.76;
+}
+.cloud:before {
+  content: "";
+  display: inline-block;
+  background: white;
+  width: 14vmin;
+  height: 14vmin;
+  filter: blur(3px);
+  position: relative;
+  border-radius: 50%;
+  top: -5vmin;
+  left: 10vmin;
+}
+.cloud:after {
+  content: "";
+  display: inline-block;
+  background: white;
+  width: 30vmin;
+  height: 13vmin;
+  filter: blur(3px);
+  position: relative;
+  border-radius: 50%;
+  top: -11vmin;
+  left: 10vmin;
+}
+
+@keyframes cloudAnimation {
+  0% {
+    transform: translate(-16vmin, 0);
+  }
+  100% {
+    transform: translate(82vmin, 0);
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Dicee</title>
+    
+  </head>
+  <body>
+
+    <div class="container">
+      
+      <i class="fa-solid fa-dice fa-5x green-color"></i>
+      <h1>Welcome to the Dice game!</h1>
+
+      <div class="dice">
+        <p>User</p>
+        <p id="score1" class="score">Score: 0</p>
+        <img id = "img1" class="img1" src="./images/dice6.png">
+      </div>
+
+      <div class="dice">
+        <p>CPU</p>
+        <p  id="score2" class="score">Score: 0</p>
+        <img id = "img2" class="img2" src="./images/dice6.png">
+      </div>
+
+    </div>
+    <div class="btn">
+    <button  id="btn"  >Play</button>
+    <button  id="reloadBtn"  >Reload</button>
+    <!-- onclick="window.location.reload()" -->
+  </div>
+
+  </body>
+
+  <footer>
+    &copy; 🎲 itzwow 🎲
+  </footer>
+</html>

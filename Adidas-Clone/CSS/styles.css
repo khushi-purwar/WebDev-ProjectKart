@@ -1,0 +1,183 @@
+@font-face {
+    font-family: AdihausDIN-Bold-Italics;
+    src: url(../FONT/AdihausDIN-BoldItalics/AdihausDIN-CnBoldItalic.woff2) format("opentype");
+}
+
+@font-face {
+    font-family: AdihausDIN-Bold;
+    src: url(../FONT/AdihausDIN-Bold/AdihausDIN-Bold.woff2) format("opentype");
+}
+
+@font-face {
+    font-family: AdihausDIN-Regular;
+    src: url(../FONT/AdihausDIN-Regular/AdihausDIN-Regular.woff2) format("opentype");
+}
+
+@font-face {
+    font-family: AdineuePRO-Bold;
+    src: url(../FONT/AdineuePRO-Bold/adineuePRO-Bold.woff2) format("opentype");
+}
+
+@font-face {
+    font-family: AdineuePRO-Regular;
+    src: url(../FONT/AdineuePRO-regular/adineuePRO-Regular.woff2) format("opentype");
+}
+
+body, html {
+    height: 100%;
+}
+
+a.nav-link{
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+
+a.nav-link:hover {
+    color: #000;
+}
+
+a.nav-link::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+a.nav-link:hover::before {
+    transform: scaleX(1);
+}
+
+
+a.black-bg{
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+a.black-bg:hover {
+    color: white;
+}
+
+a.black-bg::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+a.black-bg:hover::before {
+    transform: scaleX(1);
+}
+
+
+
+a.btn-dark:hover {
+    color: #000;
+    background-color: white;
+    border: solid 1px black;
+    transition: transform 0.6s ease-in-out;
+}
+
+a.btn-light:hover {
+    color: white;
+    background-color: black;
+    border: none;
+    transition: transform 0.6s ease-in-out;
+}
+
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.banner-top-title {
+    font-family: AdineuePRO-Bold;
+    font-size: 42px;
+    line-height: 38px;
+}
+
+.banner-top-para {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.banner-top-anchor {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    box-shadow: inset 0 0 0 0 white;
+    color: black;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.banner-top-anchor:hover {
+    box-shadow: inset 150px 0 0 0 black;
+    color: white;
+    text-decoration: none;
+}
+
+.carousel-caption {
+    top: 0;
+    bottom: auto;
+}
+
+.banner-bottom-title {
+    font-family: AdihausDIN-Bold-Italics;
+    font-size: 40px;
+}
+
+.card-title-shoes {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bg-yellow {
+    background-color: #ede734;
+    overflow: hidden;
+    color: #000;
+}
+
+.card-title-yellow {
+    font-family: AdineuePRO-Bold;
+    line-height: 35px;
+    font-size: 30px;
+}
+
+.Font-Pro-Bold {
+    font-family: AdineuePRO-Bold;
+}
+
+.footer-link-light {
+    font-family: AdihausDIN-Regular;
+    text-decoration: none;
+}
+
+.footer-link-bold {
+    font-family: AdihausDIN-Bold;
+    text-decoration: none;
+}
+
