@@ -1,0 +1,143 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+}
+.left {
+    width: 95vh;
+    height: 95vh;
+    position: relative;
+}
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.left svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: #fff;
+}
+
+.right {
+    padding: 2rem;
+}
+.right > * {
+    display: block;
+}
+.right svg {
+    width: 60px;
+    fill: #1D9BF0;
+}
+.right h1 {
+    margin-top: 3rem;
+    color: #0F1419;
+    font-size: 3rem;
+   
+    transform: translateX(17%) scaleX(1.35);
+}
+.right h2 {
+    color: #0F1419;
+    font-size: 2rem;
+    transform: translateX(17%) scaleX(1.35);
+    margin-top: 2rem;
+}
+
+button {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .2);
+    width: 300px;
+    padding: .6rem;
+    border-radius: 100vw;
+    font-weight: 500;
+    font-size: .9rem;
+    cursor: pointer;
+}
+.google_btn {
+    color: rgba(0, 0, 0, .7);
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+.fab {
+    font-size: 1.2rem;
+    margin-right: .3rem;
+}
+
+
+p {
+    font-size: .7rem;
+    color: rgba(0, 0, 0, .7);
+    margin: .5rem;
+}
+p a {
+    text-decoration: none;
+    color: #1D9BF0;
+}
+p a:hover {
+    text-decoration: underline;
+}
+
+.right h4 {
+    margin-top: 3rem;
+}
+.signin_btn {
+    margin-top: 1rem;
+    color: #1D9BF0;
+}
+
+button:hover {
+    background-color: rgba(30, 156, 241, .15);
+}
+.phone_btn:hover {
+    background-color: rgb(28, 142, 218);
+}
+
+footer {
+    padding: 0 3rem;
+}
+footer a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .7);
+    font-size: .8rem;
+    margin: 0 .2rem;
+    line-height: 5vh;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+.separator {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    width: 300px;
+}
+.separator h5 {
+    padding: 0 .5rem;
+    margin: 0;
+    font-size: .9rem;
+    font-weight: 400;
+}
+.separator .line {
+    height: 1px;
+    flex: 1;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.phone_btn {
+    background-color: #1D9BF0;
+    color: #fff;
+    border: none;
+}
