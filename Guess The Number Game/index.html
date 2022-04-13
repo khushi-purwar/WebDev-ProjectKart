@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main center">
+
+        <div class="box center">
+            <h1>Guess the number Game</h1>
+            <p><i>Guess A Number Between 1 to 10<i></p>
+            <p id="txt"></p>
+            <p id="chancesTxt" style="text-align:center;"></p>
+            <form action="" class="center">
+                <input type="number" id="num" >
+                <button type="submit" class="btn" id="btn">Submit</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="prompt_box center" id="prompt_box">
+
+        <h1 id="promt_txt"></h1>
+        <button type="submit" class="btn" onclick="play();">Try Again</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
