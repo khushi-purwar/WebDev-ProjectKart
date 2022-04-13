@@ -1,0 +1,228 @@
+html,body{
+	height: 100%;
+}
+body{
+	height: 100%;
+	margin: 0;
+	overflow-x: hidden;
+	background-color: #F9F9F9;
+}
+
+header{
+	border-bottom: 1px solid #e1e1e1;
+	z-index: 1000;
+	background-color: #fff;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 4.3rem;
+	width: 100%;
+}
+header > svg{
+	cursor: pointer;
+	margin-right: 40px;
+}
+header > span{
+	font-weight: bold;
+}
+.nav-item{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 100%;
+	cursor: pointer;
+	padding: 0 10px;
+}
+.nav-item:hover{
+	background-color: #FAFAFA;
+}
+.new{
+	display: flex;
+	align-items: center;
+	background-color: #ffa90a;
+	color: #fff;
+	font-size: 12px;
+	border-radius: 6px;
+	margin-left: 5px;
+	line-height: 19px;
+	height: 20px;
+	padding: 3px 5px;
+}
+header > input{
+	margin-left: 40px;
+	border: 1px solid rgba(0,0,0,0.15);
+	padding: 0 15px;
+	height: 36px;
+	font-size: 14px;
+	outline: none;
+	box-sizing: border-box;
+	border-radius: 999rem;
+}
+header > img{
+	border-radius: 50%;
+	height: 45%;
+	margin-left: 12px;
+	cursor: pointer;
+}
+
+main{
+	background-color: #F9F9F9;
+	width: 100%;
+	flex-wrap: nowrap;
+}
+main > section{
+	display: flex;
+	flex-direction: row;
+	padding: 40px 30px;
+	width: 100%;
+	height: 100%;
+}
+
+main > section > section > h1{
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 1.41;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 18px;
+	color: rgb(51, 51, 51);
+}
+.seperator{
+	height: 2px;
+	border-bottom: 1px solid rgb(225, 225, 225);
+	margin-bottom: 23px;
+	width: 256px;
+}
+.side-nav-card{
+	width: 256px;
+	display: flex;
+    box-sizing: content-box;
+    height: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 0px;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(225, 225, 225);
+    color: rgb(51, 51, 51);
+    flex-direction: row;
+    align-items: center;
+}
+.side-nav-span{
+	font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: normal;
+    margin-left: 12px;
+}
+
+.post-wrapper{
+	font-weight: 400;
+    font-size: 13px;
+    line-height: 1.7;
+    letter-spacing: normal;
+    border-radius: 4px;
+    border: 1px solid rgb(225, 225, 225);
+    background-color: rgb(250, 250, 250);
+    box-sizing: border-box;
+    padding: 16px 24px;
+}
+.input-wrapper{
+	border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 6%) 0px 2px 5px 0px;
+    padding: 16px;
+    background-color: rgb(255, 255, 255);
+}
+.tech-card{
+	display: flex;
+    margin-bottom: 14px;
+    padding-right: 10px;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+}
+.tech-icon-box{
+	display: flex;
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    min-height: 32px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3.1px;
+    border: 0.8px solid rgb(194, 194, 194);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.following{
+	margin-left: auto;
+	height: 32px;
+    display: flex;
+    border-radius: 2px;
+    border: 1px solid rgb(6, 141, 254);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(6, 141, 254);
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0px 8px;
+    width: 98px;
+    outline: none;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+footer{
+	width: 100%;
+}
+footer > section{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.4;
+    letter-spacing: normal;
+    background: rgb(51, 51, 51);
+    display: flex;
+    padding: 50px 0px 80px;
+    justify-content: center;
+    align-items: center;
+}
+.footer-div{
+	max-width: 1220px;
+	min-width: 955px;
+	display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    column-gap: 3%;
+}
+.footer-column{
+	display: flex;
+    text-align: left;
+    width: 100%;
+    flex-direction: column;
+    color: white;
+}
+.footer-column > h3{
+	font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.38px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.footer-column > span:hover{
+	color: rgb(6, 141, 254);
+	cursor: pointer;
+}
+.footer-column > div > svg, .footer-column > svg{
+	margin-right: 10px;
+	cursor: pointer;
+	fill: currentColor;
+}
+.footer-column > div > svg:hover{
+	color: #939393;
+}
