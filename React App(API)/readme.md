@@ -1,11 +1,11 @@
 ## Project Description
 That we add get user button to API calls to get user data and have a loader while API fetch the data .
 
-Stack:
-[x] html
-[x] CSS
-[x] JavaScript
-[x] react
+Stack: <br>
+[x] html <br>
+[x] CSS  <br>
+[x] JavaScript <br>
+[x] react     <br>
 
 
 
