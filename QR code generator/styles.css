@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@600&family=Montserrat:wght@100;300;400;600&family=Poppins:wght@200;300;400;500;800&family=Qwitcher+Grypen:wght@400;700&family=Roboto&family=Roboto+Mono:wght@300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #ef233c;
+}
+.wrapper{
+  height: 260px;
+  background: white;
+  max-width: 410px;
+  border-radius: 7px;
+  padding: 11px 20px;
+  transition: height 0.2s ease;
+}
+.wrapper.active{
+  height: 730px;
+}
+.qr img{
+  width: 200px;
+  height: 200px;
+}
+.wrapper .form{
+  margin: 20px 0 25px;
+}
+.form :where(input, button){
+  width: 100%;
+  height: 55px;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+}
+.form input{
+  font-size: 18px;
+  padding: 0 17px;
+  border: 1px solid #999;
+}
+.form button{
+  background: #ef233c;
+  margin-top: 20px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+.wrapper .qr{
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  padding: 33px 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.wrapper.active .qr{
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s 0.05s ease;
+}
