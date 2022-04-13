@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <a href="#"
+          ><img
+            src="https://img.icons8.com/fluency/96/000000/starbucks.png"
+            class="logo"
+            alt="logo"
+        /></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textbox">
+          <h2>It's not just Coffee<br />It's <span>Starbucks</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
+            dignissimos, reprehenderit molestiae hic doloribus perspiciatis
+            maiores distinctio dolore ipsum dolores ducimus. Ad architecto cum
+            corrupti. Tempore reprehenderit rem deleniti nam eius minus
+            blanditiis quisquam cupiditate sed, beatae aspernatur magnam illo,
+            repellat aliquam quod, magni nulla voluptate. Voluptatibus, dolore.
+            Nam, in.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="imgbox">
+          <img
+            src="https://freepngimg.com/thumb/starbucks/77325-frappuccino-drink-chocolate-starbucks-matcha-white.png"
+            alt="starbucks"
+            class="starbucks"
+          />
+        </div>
+      </div>
+      <ul class="thumb">
+        <li>
+          <img
+            src="img/thumb1.png"
+            alt="thumbnail1"
+            onclick="imgSlider('img/img1.png');changeCircleColor('#017143')"
+          />
+        </li>
+        <li>
+          <img
+            src="img/thumb2.png"
+            alt="thumbnail2"
+            onclick="imgSlider('img/img2.png');changeCircleColor('#eb7495')"
+          />
+        </li>
+        <li>
+          <img
+            src="img/thumb3.png"
+            alt="thumbnail3"
+            onclick="imgSlider('img/img3.png');changeCircleColor('#d752b1')"
+          />
+        </li>
+      </ul>
+      <ul class="social">
+        <li>
+          <a href="#"
+            ><img
+              src="https://img.icons8.com/ios-filled/50/000000/facebook-f.png"
+              alt="facebook"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="https://img.icons8.com/ios-filled/50/000000/twitter.png"
+              alt="twitter"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="https://img.icons8.com/ios/50/000000/instagram-new--v1.png"
+              alt="instagram"
+          /></a>
+        </li>
+      </ul>
+    </section>
+
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".starbucks").src = anything;
+      }
+
+      function changeCircleColor(color) {
+        const circle = document.querySelector(".circle");
+        circle.style.background = color;
+      }
+    </script>
+  </body>
+</html>
