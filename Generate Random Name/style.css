@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(34, 46, 57);
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: rgb(137, 149, 159);
+    font-size: 40px;
+    font-family: cursive;
+}
+#random-name {
+    margin: 2rem 0;
+    /* padding: 15px; */
+    /* border: 1px solid rgb(141, 84, 84); */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    color: aliceblue;
+    font-family: monospace;
+  }
+  
+.btn {
+ padding: 15px;
+ color: rgb(238, 245, 245);
+ background-color: rgb(15, 55, 104);
+ font-family:cursive;
+ font-weight: bold;
+
+}
+
+.btn:hover{
+    background-color: rgb(90, 155, 230);
+    color: rgb(11, 97, 16);
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    font-size: 60px;
+    font-family: cursive;
+    padding-left: 15px;
+    color: crimson;
+}
+h2:hover{
+    color: azure;
+}
