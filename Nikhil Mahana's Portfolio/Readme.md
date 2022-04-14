@@ -1,0 +1,2 @@
+Hey everyone, this is Nikhil Mahana's Portfolio. <br>
+I am currently engaged in turning things into Artificial Intelligence as I am so fascinated by this. Being a Tech-Enthusiast I am always up to developing my Tech Stacks, so as to build reliable and feasible projects for making everyday life's, even more, easier than it's now. And also looking forward to collaborating on different valuable projects that can heal the various vulnerabilities.
