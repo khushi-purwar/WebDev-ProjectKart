@@ -1,0 +1,100 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  overflow: hidden;
+}
+
+.gameContainer {
+  background-image: url("../assets/images/bg.png");
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.gameOver {
+  position: relative;
+  top: 63px;
+  font-size: 23px;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+}
+
+#Start {
+  background-color: #008cba;
+  top: 80px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  border-radius: 20px;
+}
+.Mario {
+  position: absolute;
+  background-image: url("../assets/images/Mario.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 110px;
+  height: 140px;
+  bottom: 0px;
+}
+
+.Enemy {
+  position: absolute;
+  background-image: url("../assets/images/Enemy.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 166px;
+  height: 113px;
+  bottom: 40px;
+  left: 80vw;
+}
+
+#Score {
+  font-size: 25px;
+  color: #54212f;
+  font-weight: bold;
+  position: absolute;
+  right: 45px;
+  top: 31px;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.animateMario {
+  animation: animateMario 0.5s linear;
+}
+
+.animateEnemy {
+  animation: animateEni 4s linear infinite;
+}
+
+@keyframes animateMario {
+  0% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 200px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+@keyframes animateEni {
+  0% {
+    left: 80vw;
+  }
+  100% {
+    left: -10vw;
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Fake Address</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <img src="bgroad.jpg" alt="404 Not Found" class="background">
+    <div class="container">
+    <h1 style="text-align: center;">Random Address Generator</h1>
+         
+    <button onclick="demo()" class="button button1">Generate</button>
+   <div class="jdkd"> <strong> <p id="rsd"></p> </strong> </div> 
+    </div>
+    
+    <script>
+        function demo()
+        {
+            $.ajax({
+                type: "GET" ,
+                url: "https://random-data-api.com/api/address/random_address" ,
+                success: function(response)
+                {
+                   document.getElementById("rsd").innerHTML =  "Random Address:\t"+ "Building No.:"+ response.building_number+ "," +response.street_name + ",Street No:" + response.street_address+"," + response.city +","+response.country+ "-" + response.zip;
+                }
+
+            });
+        }
+    </script>
+</body>
+</html>
