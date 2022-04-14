@@ -10,3 +10,4 @@ It's a animation of infinity loading or scrolling
 
 ## Screenshots
 
+![Screenshot (865)](https://user-images.githubusercontent.com/73753957/163463649-db3c2267-9bd5-4a4e-95eb-d7fe64af29f5.png)
