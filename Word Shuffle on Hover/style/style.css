@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+html, body {
+	height: 100%;
+}
+html {
+  background-color: #fff;
+  text-rendering: optimizeLegibility;
+  font-size: 12px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  background: #120514;
+  color: #fff;
+  min-width: 320px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.65em;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg,#8E2DE2,#4A00E0);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+h1 {
+  margin-bottom: 35px;
+}
+p {
+  margin-top: 27px;
+  opacity: .8;
+}
+a {
+  color: inherit;
+}
+
+ul {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+ul li {
+  display: inline-block;
+  margin: 8px 16px;
+}
+ul li a {
+  padding: 10px;  
+  cursor: pointer;
+  letter-spacing: .35em;
+}

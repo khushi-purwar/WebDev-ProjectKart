@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* 
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    
+*/
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+
+    height: 100vh;
+}
+body{
+
+    background:url('pexels-pixabay-531880.jpg');
+    background-position: 40%;
+}
+.center{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:yellow;
+    border-radius:15%;
+    
+}
+.box, .prompt_box{
+
+    width: 500px;
+    height: 400px;
+    background: rgb(84, 81, 81);
+    flex-direction: column;
+}
+.box :is(h1, p, form){
+
+    margin: 8px;
+    font-family: 'Open Sans', sans-serif;
+}
+.box h1{
+
+    font-family: 'Roboto', sans-serif;
+}
+form{
+
+    flex-direction: column;
+}
+form input{
+
+    margin-bottom: 8px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #00000073;
+}
+.btn{
+
+    width: 150px;
+    height: 35px;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(fuchsia, purple);
+    color: yellow;
+    border-radius: 40%;
+}
+
+.btn:hover{
+
+color: green;
+background: linear-gradient(orange, yellow);
+}
+
+
+.prompt_box{
+
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Open Sans', sans-serif;
+}
+.prompt_box h1{
+
+    margin-bottom: 10px;
+}
+.prompt_box.active{
+
+    display: flex;
+}

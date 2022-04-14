@@ -1,0 +1,36 @@
+@media screen and (max-width: 620px){
+    nav{
+        flex-direction: column;
+        height: 120px;
+    }
+
+    .logoAndIcons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo{
+        margin: 0 5vw;
+    }
+
+    .icons{
+        display: none;
+    }
+
+    .iconsMobile{
+        display: inline-block;
+    }
+
+    .search{
+        width: 80vw;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width:1225px){
+    .items{
+        width: auto;
+    }
+}

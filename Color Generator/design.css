@@ -1,0 +1,34 @@
+#abc{
+    text-align:center;
+    border: 2px solid yellowgreen;
+    background-color: darkslategrey;
+    width: fit-content;
+    align-items: center;
+    text-align: center;
+    margin:auto;
+    padding:30px;
+    font-size: larger;
+    border-radius: 20px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-style: italic;
+    font-size: large;
+    background-color: rgb(31, 24, 1);
+    color:beige;
+}
+.changed{
+    background-color: rgba(9, 8, 53, 0.931);
+}
+.button{
+    padding:5px;
+    margin:10px;
+    width:inherit;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color:rgb(2, 2, 128);
+    border-radius: 7px;
+}
