@@ -1,6 +1,6 @@
 # Helicopter animation
 
-An animation made using HTML , CSS and JS.
+An animation made using HTML , CSS.
 
 ## Tech stack
 
