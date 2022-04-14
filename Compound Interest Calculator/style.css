@@ -1,0 +1,88 @@
+*{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+}
+.container{
+
+      
+      width: 100%;
+      height: 100vh;
+      background-color: purple;
+      background-image: url('sunny.jpg');
+}
+.center{
+
+      width:100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.cards{
+
+      width:500px;
+      height: 50vh;
+      border-radius: 10px;
+      box-shadow: 0 15px 14px red;
+      background-color: rgb(95, 94, 94);
+}
+input{
+
+      display: flex;
+      justify-content: center;
+      width:90%;
+      margin:30px auto;
+      padding:0.3rem 10px;
+      outline: none;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 5px;
+      border: none;
+      color:blue;
+      background-color:rgb(206, 194, 194);
+
+}
+
+input:focus{
+
+      background-color: #fff;
+}
+
+
+.btn{
+
+      text-align: center;
+}
+.Result{
+
+      text-align: center;
+      margin-top: 10px;
+}
+.btn button{
+
+      padding:0.3rem 10px;
+      outline: none;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 5px;
+      border: none;
+      cursor: pointer;
+      color:#fff;
+      background-color: purple;
+}
+
+.btn button:hover{
+color:purple;
+background-color:yellowgreen;
+}
+
+.Result p{
+      
+      font-size: 27px;
+      letter-spacing: 3px;
+      color: yellow;
+      font-weight: bold;
+      text-transform: capitalize;
+}
