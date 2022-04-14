@@ -11,5 +11,9 @@ It's same as a Rock Paper Scissor game with lizard spock
 ## Video
 
 
+https://user-images.githubusercontent.com/73753957/163465709-dcda955f-bc18-4458-a874-56b591594faa.mp4
+
 
 ## Screenshots
+
+![Screenshot (839)](https://user-images.githubusercontent.com/73753957/163465797-8934c84e-a14b-41ae-8c3d-9bec72a6fcc0.png)
