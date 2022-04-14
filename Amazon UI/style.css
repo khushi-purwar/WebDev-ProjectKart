@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+}
+
+nav{
+    display: flex;
+    height: 60px;
+    background-color: #272727;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    position: sticky;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo img{
+    padding: 10px;
+    width: 150px;
+}
+
+.iconsMobile{
+    display: none;
+}
+
+.search{
+    display: flex;
+    background-color: white;
+    width: 35vw;
+    height: 36px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.search input{
+    height: 36px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    padding: 0 16px;
+    border: 0;
+    outline: none;
+}
+
+.btn{
+    border: 0;
+    cursor: pointer;
+    background: transparent;
+    padding: 6px 10px;
+}
+
+.icons{
+    margin: 10px;
+}
+
+.btn img{
+    width: 22px;
+}
+
+#profile img{
+    width: 30px;
+}
+
+#cart img{
+    width: 40px;
+}
+
+.items{
+    margin: 10px;
+    width: 48.2%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid #272727;
+}
+
+.images{
+    width: 100%;
+}
+
+.buttons{
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+    color: #272727;
+    height: 50px;
+    font-size: 25px;
+    background-color: #c9d4e1;
+}
+
+footer{
+    background-color: #272727;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
