@@ -8,7 +8,7 @@ HTML5,CSS3,JS
 
 ---
 
-## Demo:
+## Demo Video:
 
 
 https://user-images.githubusercontent.com/77873383/163334832-a8f6d259-ef6c-4eb0-be52-ada2395bc386.mp4
