@@ -32,3 +32,6 @@ cd WebDev-ProjectKart/Sentiment Analyzer Web App
 </br>
 
 <h3> ScreenShots </h3>
+
+![image](https://user-images.githubusercontent.com/72400676/163501931-7656c946-d9d4-4009-b930-5f8d15b07437.png)
+
