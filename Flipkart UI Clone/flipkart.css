@@ -1,0 +1,307 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto,Arial,sans-serif;
+}
+
+body{
+    background-color: #f1f3f6;
+}
+
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.logo a{
+    color: white;
+    font-size: .7em;
+}
+
+.logo span{
+    color: #ffe500;
+}
+
+
+.search{
+    width: calc(100% - 540px);
+    min-width: 250px;
+    margin-right: auto;
+    align-items: center;
+    color: rgb(157, 154, 154);
+}
+
+.search input{
+    font-size: .8em;
+    border: none;
+    padding: 0;
+    outline: none;
+}
+
+.search input:focus{
+    box-shadow: none  ;
+}
+
+.search-item {
+    margin-top: -1px;
+}
+
+.search-item h6{
+    color: rgb(101, 101, 104);
+    font-size: .8em;
+}
+
+.search-item  a{
+    font-size: .9em;
+    color: rgb(90, 90, 92);
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.login button{
+    border-radius: 0;
+    border: 0;
+    padding: 0.375rem 2.75rem;
+}
+
+
+.login-list a{
+    font-size: .8em;
+}
+
+#signUp{
+    font-size: 1em;
+}
+
+
+.more{
+    width: 100%;
+    padding: 0;
+    
+}
+.more-list{
+    font-size: .8em;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #87878790;
+    background-color: #fff;
+    margin-bottom: 1em;
+}
+
+
+.view-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.view-btn button{
+    font-size: .9em;
+    padding: .4em 1.5em;
+    border-radius: 0;
+}
+
+.sales{
+    cursor: pointer;
+    height: 15em;
+    padding: 0em 1em;
+    margin: .1em .2em;
+    width: 13em;
+    box-sizing: border-box;
+    border: 0;
+}
+
+.sales img{
+    height: 60%;
+    transform: scale(.97);
+}
+
+.sales img:hover{
+    transform: scale(1);
+}
+
+.sales a{
+    text-decoration: none;
+    color: #388e3c;
+    font-size: .95em;
+}
+
+.sales h6{
+    color: black;
+    font-size: .9em;
+}
+
+.Navbar a{
+    color: black;
+    font-size: .85em;
+    text-decoration: none;
+}
+
+.Nav{
+    cursor: pointer;
+    padding: .5em 0.1em;
+}
+ 
+.Nav:hover, .Nav:hover a{
+    color: #007bff;
+}
+
+
+.slider-heading h4{
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+.slider-heading h6{
+    font-size: .9em;
+    margin-bottom: 0;
+}
+
+.sales p{
+    color: #212121;
+    opacity: .6;
+    font-size: .85em;
+    margin-top: .6em;
+}
+
+.cur{
+    cursor: pointer;
+    transform: scale(.99);
+}
+
+.cur:hover{
+    transform: scale(1);
+}
+
+
+.information{
+    background-color: white;
+    color: #878787;
+    margin: 2% 0%;
+}
+
+.information h1{
+    font-size: 1.5em;
+}
+
+.information h2{
+    font-size: 1.2em;
+}
+
+.info{
+    font-size: .8em;
+    padding-bottom: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+footer{
+    background-color: #172337;
+    color: white;
+    padding-top: 3%;
+}
+
+.Footer h6{
+    color: #878787;
+    font-size: .8em;
+}
+
+.Footer > div{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    font-size: .75em;
+    font-weight: 100;
+}
+
+.Footer a{
+    color: white;
+    line-height: 1.3rem;
+}
+
+.Footer p{
+    margin: 0;
+    font-size: .96em;
+    line-height: 1.2rem;
+}
+
+footer i{
+    color: gold;
+}
+
+footer span{
+    font-size: .75em;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 576px){
+
+    .slider-heading h4{
+        font-size: 1.2em;
+        margin-bottom: 0;
+    }
+
+    view-btn button{ 
+        font-size: .8em;
+        padding: 0;
+        border-radius: 0;
+    }
+    
+    .login, .more{
+        padding: .2em .4em;
+    }
+
+    .sales img:hover{
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .login{
+        padding-left: .2em;
+    }
+    
+    .Navbar a{
+        color: black;
+        font-size: .75em;
+    }
+}
+
+@media screen and (max-width: 992px){
+
+    .view-btn button{ 
+        font-size: .8em;
+        padding: .4em 1.1em;
+        border-radius: 0;
+    }
+
+    .Navbar {
+        margin-bottom: 1em;
+        padding: .3em 0em;
+        color: #87878790;
+    
+    }
+    
+    .Navbar a{
+        color: black;
+        font-size: .75em;
+    }
+}
