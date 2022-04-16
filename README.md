@@ -1,7 +1,3 @@
-
-<p>I create a website of Dance Academy of cool frontend with the help of PUG,CSS,JavaScript,NodeJs.
-You can go to contact page and can submit a form where you can start getting training for learning dance of any type from best mentors.</p>
-
 <div id="top"></div>
 
 <h1 align="center"> WebDev ProjectKart 💻 </h1>
