@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="" height="80" src="">
+    <img alt="" height="80" src="./img/add-readme (1).png">
   </a>
 </p>
 <h1 align="center">Encode And Decode </h1>
@@ -23,6 +23,6 @@ Encoder And Decoder
 
 ## 📷 Screenshots
 
-![ss1](./images/csss.jpg)
-![ss2](./images/csss1.jpg)
+![ss1](./img/000.1.png)
+![ss2](./img/000.2.png)
 
