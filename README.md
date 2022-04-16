@@ -68,7 +68,7 @@
 
 ## Overview :
 <h3>
-  Hello Everyone 👋🏻 Glad to see you all here !! I hope everyone is eager to give their best contributions. The repository contains the list of awesome✨ & cool web development beginner-friendly✌️ projects! . </h3>
+  Hello Everyone 👋🏻 Glad to see you all here !! I hope everyone is eager to give their best contributions. The repository contains a list of awesome✨ & cool web development beginner-friendly✌️ projects! </h3>
 
 <br>
 
@@ -197,7 +197,7 @@ cd WebDev-ProjectKart
 **4.**  Make a new folder with your <b>PROJECT NAME</b> inside WebDev-ProjectKart & add your project files (eg: index.html ,style.css, script.js) inside that folder
 <br>
 
-**5.**  Also Add a README file in your project folder which consists of description/screenshots about your project !
+**5.**  Also Add a README file in your project folder which consists of description/screenshots about your project!
          
 
 **6.** Create a new branch.
@@ -221,7 +221,7 @@ git push -u origin <your_branch_name>
 
 **8.** Create a Pull Request!
 
-**Congratulations!** Sit and relax till we review your PR, you've made your contribution to [WebDev-ProjectKart](https://github.com/khushi-purwar/WebDev-ProjectKart) Repo. .
+**Congratulations!** Sit and relax till we review your PR, you've made your contribution to [WebDev-ProjectKart](https://github.com/khushi-purwar/WebDev-ProjectKart) Repo.
 
 <br>
 
