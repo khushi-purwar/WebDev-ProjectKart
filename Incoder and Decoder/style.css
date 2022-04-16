@@ -3,7 +3,7 @@ body {
     min-height: 100vh;
     margin: 0;
     padding-top: 100px;
-    background: #dadad2;
+    background: #fecaca;
 }
 
 .container {
@@ -16,7 +16,7 @@ body {
     border-bottom-right-radius: 50px;
     border-top-left-radius: 50px;
     padding: 2rem 2rem;
-    color: #6999e3;
+    color: #dc2626;
 }
 
 h1 {
