@@ -1,5 +1,5 @@
 Description 📜
-Added a new project passenger counter using HTML,CSS,JavaScript
+Added a new tip calculator using HTML,CSS,JavaScript
 
 Type of change 📝
  Add a new project
