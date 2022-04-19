@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  line-height: 15vh;
+  background-color: #27cd1f;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: rgb(231, 238, 34);
+  letter-spacing: 5px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h3 {
+  align-items: center;
+  font-size: 1.5rem;
+}
+section {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(149, 147, 150);
+}
+input {
+  width: 40%;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  background-color: #ffffff;
+  color: black;
+  margin: 2rem 0;
+  font-size: 1.1rem;
+}
+
+button {
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  margin-top: 16px;
+  color: #fed50a;
+}
+
+button.btn {
+  font-weight: 600;
+  padding: 1rem 2rem;
+  background: linear-gradient(blue,purple);
+  text-transform: uppercase;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.65, -0.25, 0.25, 1.95);
+}
+
+button.btn:hover,
+button.btn:focus,
+button.btn:active {
+  letter-spacing: 0.125rem;
+  word-spacing: 0.2rem;
+  background: linear-gradient(fuchsia,red);
+}
+
+.hidden {
+  display: none;
+}
+.gameArea {
+  width: 50%;
+  height: 400px;
+  padding: 20px 0;
+  background-color: rgb(149, 147, 150);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
