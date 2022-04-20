@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark saver</title>
+    <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=jacinto.design" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Open Modal -->
+    <h1 id="show-modal">Add Bookmark</h1>
+
+    <!-- Bookmarks -->
+    <div class="container" id="bookmarks-container">
+      <!-- <div class="item">
+        <i class="fas fa-times" id="delete-bookmark" title="Delete Bookmark"></i>
+      </div> -->
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <i class="fas fa-times close-icon" id="close-modal"></i>
+        <div class="modal-header">
+          <h3>Add bookmark</h3>
+        </div>
+        <div class="modal-content">
+          <form id="bookmark-form">
+            <!-- Website Name -->
+            <div class="form-group">
+              <label for="website-name" class="form-label">Website Name</label>
+              <input type="text" class="form-input" id="website-name" />
+            </div>
+            <!-- Website Url -->
+            <div class="form-group">
+              <label for="website-url" class="form-label">Website Url</label>
+              <input type="text" class="form-input" id="website-url" />
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
