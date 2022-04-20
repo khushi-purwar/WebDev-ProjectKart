@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Reddit - Dive into anything</title>
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<link rel="icon" href="./assets/media/icon.png">
+</head>
+
+<body>
+	<header>
+		<div class="header-wrapper">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="logo"><g><circle fill="#FF4500" cx="10" cy="10" r="10"></circle><path fill="#FFF" d="M16.67,10A1.46,1.46,0,0,0,14.2,9a7.12,7.12,0,0,0-3.85-1.23L11,4.65,13.14,5.1a1,1,0,1,0,.13-0.61L10.82,4a0.31,0.31,0,0,0-.37.24L9.71,7.71a7.14,7.14,0,0,0-3.9,1.23A1.46,1.46,0,1,0,4.2,11.33a2.87,2.87,0,0,0,0,.44c0,2.24,2.61,4.06,5.83,4.06s5.83-1.82,5.83-4.06a2.87,2.87,0,0,0,0-.44A1.46,1.46,0,0,0,16.67,10Zm-10,1a1,1,0,1,1,1,1A1,1,0,0,1,6.67,11Zm5.81,2.75a3.84,3.84,0,0,1-2.47.77,3.84,3.84,0,0,1-2.47-.77,0.27,0.27,0,0,1,.38-0.38A3.27,3.27,0,0,0,10,14a3.28,3.28,0,0,0,2.09-.61A0.27,0.27,0,1,1,12.48,13.79Zm-0.18-1.71a1,1,0,1,1,1-1A1,1,0,0,1,12.29,12.08Z"></path></g></svg>
+			<svg class="logo-text" viewBox="0 0 57 18" xmlns="http://www.w3.org/2000/svg"><g fill="#D7DADC"><path d="M54.63,16.52V7.68h1a1,1,0,0,0,1.09-1V6.65a1,1,0,0,0-.93-1.12H54.63V3.88a1.23,1.23,0,0,0-1.12-1.23,1.2,1.2,0,0,0-1.27,1.11V5.55h-1a1,1,0,0,0-1.09,1v.07a1,1,0,0,0,.93,1.12h1.13v8.81a1.19,1.19,0,0,0,1.19,1.19h0a1.19,1.19,0,0,0,1.25-1.12A.17.17,0,0,0,54.63,16.52Z"></path><circle fill="#FF4500" cx="47.26" cy="3.44" r="2.12"></circle><path d="M48.44,7.81a1.19,1.19,0,1,0-2.38,0h0v8.71a1.19,1.19,0,0,0,2.38,0Z"></path><path d="M30.84,1.19A1.19,1.19,0,0,0,29.65,0h0a1.19,1.19,0,0,0-1.19,1.19V6.51a4.11,4.11,0,0,0-3-1.21c-3.1,0-5.69,2.85-5.69,6.35S22.28,18,25.42,18a4.26,4.26,0,0,0,3.1-1.23,1.17,1.17,0,0,0,1.47.8,1.2,1.2,0,0,0,.85-1.05ZM25.41,15.64c-1.83,0-3.32-1.77-3.32-4s1.48-4,3.32-4,3.31,1.78,3.31,4-1.47,3.95-3.3,3.95Z"></path><path d="M43.28,1.19A1.19,1.19,0,0,0,42.09,0h0a1.18,1.18,0,0,0-1.18,1.19h0V6.51a4.15,4.15,0,0,0-3-1.21c-3.1,0-5.69,2.85-5.69,6.35S34.72,18,37.86,18A4.26,4.26,0,0,0,41,16.77a1.17,1.17,0,0,0,1.47.8,1.19,1.19,0,0,0,.85-1.05ZM37.85,15.64c-1.83,0-3.31-1.77-3.31-4s1.47-4,3.31-4,3.31,1.78,3.31,4-1.47,3.95-3.3,3.95Z"></path><path d="M17.27,12.44a1.49,1.49,0,0,0,1.59-1.38v-.15a4.81,4.81,0,0,0-.1-.85A5.83,5.83,0,0,0,13.25,5.3c-3.1,0-5.69,2.85-5.69,6.35S10.11,18,13.25,18a5.66,5.66,0,0,0,4.39-1.84,1.23,1.23,0,0,0-.08-1.74l-.11-.09a1.29,1.29,0,0,0-1.58.17,3.91,3.91,0,0,1-2.62,1.12A3.54,3.54,0,0,1,10,12.44h7.27Zm-4-4.76a3.41,3.41,0,0,1,3.09,2.64H10.14A3.41,3.41,0,0,1,13.24,7.68Z"></path><path d="M7.68,6.53a1.19,1.19,0,0,0-1-1.18A4.56,4.56,0,0,0,2.39,6.91V6.75A1.2,1.2,0,0,0,0,6.75v9.77a1.23,1.23,0,0,0,1.12,1.24,1.19,1.19,0,0,0,1.26-1.1.66.66,0,0,0,0-.14v-5A3.62,3.62,0,0,1,5.81,7.7a4.87,4.87,0,0,1,.54,0h.24A1.18,1.18,0,0,0,7.68,6.53Z"></path></g></svg>
+			<section class="header-home-section">
+				<button>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+					  <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+					</svg>
+					<span style="margin-left: 8px; font-weight: bold; margin-top: 5px;">Home</span>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="margin-left: auto;" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+					  <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+					</svg>
+				</button>
+			</section>
+			<section class="search-section">
+				<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" class="bi bi-search" viewBox="0 0 16 16">
+				  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+				</svg>
+				<input type="text" placeholder="Search Reddit">
+			</section>
+			<section class="nav-icons">
+				<img style="margin-left: 0;" src="./assets/media/Icons/header0.PNG">
+				<img src="./assets/media/Icons/header1.PNG">
+				<img src="./assets/media/Icons/header2.PNG">
+				<img style="margin-left: 0;" src="./assets/media/Icons/header3.PNG">
+				<img style="margin-left: 0;" src="./assets/media/Icons/header4.PNG">
+				<img style="margin-left: 12px;" src="./assets/media/Icons/header5.PNG">
+				<img style="margin-left: 12px;" src="./assets/media/Icons/header6.PNG">
+				<img src="./assets/media/Icons/header7.PNG">
+				<img style="margin-left: 0;" src="./assets/media/Icons/header8.PNG">
+			</section>
+			<section class="profile-section">
+				<img src="./assets/media/avatar.png">
+				<span>
+					<span>XZANATOL</span>
+					<span style="margin-left: 10px;">22 karma</span>
+				</span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="margin-left: auto;" fill="#D7DADC" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+				  <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+				</svg>
+			</section>
+		</div>
+	</header>
+
+	<main>
+		<section class="posts">
+			<section class="new-post">
+				<div class="new-post-wrapper">
+					<img class="pp" src="./assets/media/avatar.png">
+					<input type="text" placeholder="Create Post">
+					<img src="./assets/media/Icons/newpost0.PNG">
+					<img src="./assets/media/Icons/newpost1.PNG">
+				</div>		
+			</section>
+			<section class="categories">
+				<div class="cat-wrapper">
+					<img src="./assets/media/Icons/cat0.PNG">
+					<img src="./assets/media/Icons/cat1.PNG">
+					<img src="./assets/media/Icons/cat2.PNG">
+					<img src="./assets/media/Icons/cat3.PNG">
+					<img src="./assets/media/Icons/cat4.PNG">
+					<img src="./assets/media/Icons/cat5.PNG" style="margin-left: auto;">
+				</div>
+			</section>
+		</section>
+
+		<section class="side-nav">
+			<section class="side-nav-card">
+				<img src="./assets/media/side-nav/0.png">
+				<span class="card-title" style="padding-left: 20px; font-weight: bold;"><br><br><br>Top Aww Communities</span>
+				<section class="card-rank">
+					<div class="card-rank-wrapper">
+						<span style="width:20px; text-align: right; font-weight: bold;">1</span>
+						<img src="./assets/media/side-nav/1.png" style="margin-left: 8px;">
+						<img src="./assets/media/avatar.png" style="border-radius: 50%; height: 65%; margin-left: 8px;">
+						<span style="margin-left: 8px;">r/subreddit1</span>
+						<button class="join">Join</button>
+					</div>
+				</section>
+				<section class="card-rank">
+					<div class="card-rank-wrapper">
+						<span style="width:20px; text-align: right; font-weight: bold;">2</span>
+						<img src="./assets/media/side-nav/1.png" style="margin-left: 8px;">
+						<img src="./assets/media/avatar.png" style="border-radius: 50%; height: 65%; margin-left: 8px;">
+						<span style="margin-left: 8px;">r/subreddit2</span>
+						<button class="join">Join</button>
+					</div>
+				</section>
+				<section class="card-rank">
+					<div class="card-rank-wrapper">
+						<span style="width:20px; text-align: right; font-weight: bold;">3</span>
+						<img src="./assets/media/side-nav/1.png" style="margin-left: 8px;">
+						<img src="./assets/media/avatar.png" style="border-radius: 50%; height: 65%; margin-left: 8px;">
+						<span style="margin-left: 8px;">r/subreddit3</span>
+						<button class="join">Join</button>
+					</div>
+				</section>
+				<section class="card-rank">
+					<div class="card-rank-wrapper">
+						<span style="width:20px; text-align: right; font-weight: bold;">4</span>
+						<img src="./assets/media/side-nav/1.png" style="margin-left: 8px;">
+						<img src="./assets/media/avatar.png" style="border-radius: 50%; height: 65%; margin-left: 8px;">
+						<span style="margin-left: 8px;">r/subreddit4</span>
+						<button class="join">Join</button>
+					</div>
+				</section>
+				<section class="card-rank">
+					<div class="card-rank-wrapper">
+						<span style="width:20px; text-align: right; font-weight: bold;">5</span>
+						<img src="./assets/media/side-nav/1.png" style="margin-left: 8px;">
+						<img src="./assets/media/avatar.png" style="border-radius: 50%; height: 65%; margin-left: 8px;">
+						<span style="margin-left: 8px;">r/subreddit5</span>
+						<button class="join">Join</button>
+					</div>
+				</section>
+				<section style="display: flex; justify-content: center; width: 100%;">
+					<div style="width: 100%; padding: 12px;">
+						<button class="join" style="width: 100%; margin-left: 0; height: 32px">
+							View All
+						</button>
+					</div>
+				</section>
+				<section style="display: flex; flex-direction: row; width: 100%; height: 32px; align-items: center;">
+					<div class="c" style="height: 18px; display: flex; align-items: center; padding: 4px 8px; font-size: 12px; background-color: #272729; color: #4FBCFF; border-radius: 12px; margin-left: 12px;">
+						Top
+					</div>
+					<div class="c" style="height: 18px; display: flex; align-items: center; padding: 4px 8px; font-size: 12px; background-color: #272729; color: #4FBCFF; border-radius: 12px; margin-left: 12px;">
+						Near You
+					</div>
+					<div class="c" style="height: 18px; display: flex; align-items: center; padding: 4px 8px; font-size: 12px; background-color: #272729; color: #4FBCFF; border-radius: 12px; margin-left: 12px;">
+						Gaming
+					</div>
+					<div class="c" style="height: 18px; display: flex; align-items: center; padding: 4px 8px; font-size: 12px; background-color: #272729; color: #4FBCFF; border-radius: 12px; margin-left: 12px;">
+						News
+					</div>
+				</section>
+				<section style="height: 15px"></section>
+			</section>
+		</section>
+	</main>
+</body>
+</html>

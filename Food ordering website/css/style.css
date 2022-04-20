@@ -1,0 +1,289 @@
+/*css reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    display: flex;
+    position:sticky;
+    /* width: 100%; */
+    font-family: 'Pacifico', cursive;
+    /* height: 66px; */
+    align-items: center;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+   height: 100%;   /*90%*/
+   width: 100%;
+   z-index: -1;
+   opacity: 0.7;  /*0.9*/
+   top: 0px;
+   left: 0px;
+}
+#logo {
+    /* height: 50px; */
+    margin: 10px 34px;
+}
+#logo img{
+          height: 59px;
+          margin: 3px 6px;
+}
+
+#navbar img{
+    border: 3px solid rgb(236, 126, 86);
+    /* border-radius: 120px; */
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+}
+#navbar ul{
+    display: flex;
+    /* text-align: center;
+    justify-content: center; */
+    font-family: 'Pacifico', cursive;
+}
+#navbar ul li{
+    /* margin: 2px 20px;
+    padding: 15px 2px; */
+    list-style: none;
+    /* text-decoration: none; */
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+     text-decoration: none;
+    color: azure;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+}
+#navbar li a:hover{
+    background-color: white;
+    color: black;
+    /* font-size: 20px;
+    font-weight: 800;
+    padding: 7px 15px;
+    border-radius: 50px; */
+    
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    align-items: center;
+    justify-content:center;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    height: 550px;   /*450*/
+}
+#home::before{
+    content: "";
+    background: url('../items-images/westindian.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+   height: 677px;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+
+#home p{
+    font-size: 2.3rem;
+    /* font-weight: 700; */
+   font-family: 'Pacifico', cursive;
+   text-align: center;
+}
+
+/* 
+#services-container{
+      height: 300px; 
+} */
+#services-container h1 {
+     margin-top: 27px;
+}
+.btn{
+    margin: 17px;
+    padding: 6px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(134, 123, 123);
+    font-size: 1.5rem;
+   /* font-family: 'Pacifico', cursive; */
+}
+.btn:hover{
+    cursor: pointer;
+    font-size:25px;
+}
+#services{
+     /* border: 3px solid black; */
+    /* height: 300px;*/
+    /* display: flex; */
+    /*text-align: center;
+    justify-content: center;  */
+    display: flex;
+    margin: 34px;
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#services .box{
+    border: 3px solid black;
+    background-color: rgb(238, 213, 213);
+    margin: 2px 55px;
+    padding: 34px;
+    border-radius: 28px;
+    margin-bottom: 20px;
+
+}
+/* #services-container::before{
+    content: "";
+    background:rgb(240, 206, 194);
+    position: absolute;
+    /* top: 0px;*/
+    /*left: 0px; */
+    /* width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5; 
+} */ */
+.h-secondary{
+    font-family:'Pacifico', cursive;
+    font-size: 2.3rem;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   
+}
+#services .box p{
+    font-size: 1.7rem;
+}
+.h-primary {
+    font-family:'Pacifico', cursive;
+    display: flex; 
+     justify-content: center; 
+     text-align: center;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.center{
+    text-align: center;
+}
+#clients-container{
+    position: relative;
+}
+#clients-container::before{
+    content: "";
+    background:url('../items-images/roasted.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5; 
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.clients-items{
+    padding: 34px;
+}
+#clients img{
+    height: 124px;
+}
+/* #clients-container h1{
+    margin-top: 27px;        
+    font-size: 44px;
+} */
+/*  #clients .clients-items{
+            padding: 28px;
+} */
+/* #clients-container #clients .clients-items img{
+    width:100px;
+    height: 100px;
+} */
+#contact-container{
+    /* margin: 0px; */
+    position:relative;
+    /* bottom: 0; */
+}
+#contact-container::before{
+    content: "";
+    background: url('../contact/girl.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;  /*110*/
+    z-index: -1;
+    opacity: 0.7;  /*0.8*/
+}
+/*chnge*/
+#contacts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+/* .form-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px; 
+    margin: 8px;
+} */
+#contacts input,
+#contacts textarea{
+    border: 2px solid black;
+    border-radius: 9px;
+    width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+    font-family:'Pacifico', cursive;
+    font-size: 1.1rem;
+    
+}
+#contacts form{
+    width: 40%;
+}
+
+#contacts label{
+    font-family:'Pacifico', cursive;
+    /* padding: 12px;
+    font-weight:bolder; */
+    font-size: 1.3rem;
+}
+
+:root{
+    --navbar-height:59px;
+}
+
+footer{
+    /* display: flex;
+    justify-content: center; */
+    background-color:black;
+    color: white;
+    font-family:'Pacifico', cursive;
+    /* height: 10%; */
+    padding: 9px 22px;
+    /* top: 0; */
+    /* margin-top: 0px; */
+}
+  
+
+
+

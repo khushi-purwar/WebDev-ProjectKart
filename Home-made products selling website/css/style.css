@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav {
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.nav li {
+    list-style: none;
+    margin: 10px 25px;
+    padding: 14px 30px;
+
+}
+
+.nav li a {
+    text-decoration: none;
+    color: azure;
+    font-size: 22px;
+
+}
+
+#middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#middle h1 {
+    font-size: 40px;
+    margin: 10px 10px;
+    font-weight: bolder;
+    font-family: 'Libre Baskerville', serif;
+}
+
+#middle p {
+    margin: 25px 100px;
+    padding: 0px 20px;
+    font-size: 20px;
+    font-family: 'Slabo 27px', serif;
+}
+
+#middle::before {
+    content: "";
+    background: url('/images/bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 65%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+
+
+}
+#products{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(228, 233, 173);
+    margin-top: 0px;
+}
+#products img{
+    height: 220px;
+    width: 295px;
+}
+#products h1{
+    font-size: 40px;
+    /* margin: 10px 10px; */
+    margin-top: 0px;
+    /* margin-bottom: 10px; */
+    font-weight: bolder;
+    font-family: 'Libre Baskerville', serif;
+}
+#clients{
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      height: 400px;
+      background-color: rgb(231, 209, 209);
+      /* margin-top: 0px;
+      padding: 0px; */
+}
+#clients img{
+    margin-top: 30px;
+    height: 120px;
+    width: 200px;
+    padding: 10px 27px;
+}
+#clients h1{
+    font-size: 40px;
+    /* margin: 10px 10px; */
+    margin-top: 0px;
+    /* margin-bottom: 10px; */
+    font-weight: bolder;
+    font-family: 'Libre Baskerville', serif;
+}
+#contact{
+    height: 700px;
+    background-color: rgb(236, 229, 236);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+#contact h1{
+    font-size: 30px;
+    margin: 5px 10px;
+    font-weight: bolder;
+    font-family: 'Libre Baskerville', serif;
+}
+#contact input,
+#contact textarea{
+    padding: 10px 15px;
+    /* margin: 6px 10px; */
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 130%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+
+}
+#contact form{
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+.form label{
+    font-weight: bold;
+    font-size: 20px;
+}
+.btn{
+    border: 3px solid black;
+    border-radius: 6px;
+    padding: 8px 15px;
+    margin: 20px 10px;
+    margin-left: 200px;
+    background-color: rgb(147, 137, 137);
+    color: rgb(2, 9, 15);
+    cursor: pointer;
+    font-weight: bold;
+
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+    height: 70px;
+}

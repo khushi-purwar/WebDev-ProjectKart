@@ -1,0 +1,204 @@
+html,body{
+	height: 100%;
+	width: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	background-color: #030303;
+}
+
+header{
+	width: 100%;
+	height: 53px;
+	background-color: #1D2226;
+	border-bottom: 1px solid hsla(0, 0%, 100%, 0.12);
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.header-wrapper{
+	width: 100vw;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.header-search{
+	width: 280px;
+	color: hsla(0, 0%, 100%, 0.9);
+	font-weight: 400;
+	line-height: 1.5;
+	flex-grow: 1;
+	height: 34px;
+	display: flex;
+	flex-direction: row;
+	background-color: #38434F;
+	border-radius: 3px;
+	margin-right: 13rem;
+}
+.header-search input{
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: hsla(0, 0%, 100%, 0.9);
+	width: 100%;
+}
+
+
+nav{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 100%;
+}
+.nav-wrapper{
+	cursor: pointer;
+}
+
+
+main{
+	margin-top: 72px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+main > .side-nav{
+	display: flex;
+	flex-direction: column;
+	width: 225px;
+	margin-right: 25px;
+}
+.side-nav > section{
+	border-radius: 0.8rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: #1D2226;
+}
+.side-nav section svg{
+	border-top-left-radius: 0.8rem;
+	border-top-right-radius: 0.8rem;
+}
+.side-nav section img{
+	border-radius: 50%;
+	border: 2px solid #1d2226;
+	margin: -38px auto 12px;
+	width: 68px;
+	cursor: pointer;
+}
+.side-nav section .change_text:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.bc_er{
+	margin-top: 5px;
+	cursor: pointer;
+}
+.bc_er:hover{
+	background: #464A4D;
+}
+
+main > .posts{
+	width: 540px;
+	display: flex;
+	flex-direction: column;
+	height: 116px;
+	background-color: #1D2226;
+	border-radius: 0.8rem;
+	margin-right: 25px;
+}
+.posts > .wrapper{
+	margin: 8px 16px;
+	margin-bottom: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 56px;
+}
+.posts > .wrapper input{
+	height: 48px;
+	background: transparent;
+	outline: none;
+	cursor: pointer;
+	color: hsla(0, 0%, 100%, 0.9);
+	border-radius: 35px;
+	padding-left: 16px;
+	border: 1px solid hsla(0, 0%, 100%, 0.4);
+	width: 430px;
+	transition: 0.1s;
+}
+.posts > .wrapper input:hover{
+	background-color: #464A4D;
+}
+
+.posts > .icons{
+	width: 100%;
+	height: 52px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.posts > .icons > .wrapper{
+	height: 48px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	border-radius: 3px;
+	transition: 0.2s;
+	flex-wrap: nowrap;
+	font-weight: bold;
+}
+.posts > .icons > .wrapper:hover{
+	background-color: #464A4D;
+}
+
+main > .recommend{
+	border-radius: 0.8rem;
+	background-color: #1D2226;
+	width: 315px;
+	display: flex;
+	flex-direction: column;
+}
+.recommend h3{
+	margin: 0;
+	margin-top: 12px;
+	margin-left: 12px;
+	color: hsla(0, 0%, 100%, 0.9);
+}
+.recommend > .person-card{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin: 12px;
+	margin-right: 0;
+	margin-top: 4px;
+}
+.follow{
+	padding: 0 1rem;
+	border-radius: 1.6rem;
+	color: hsla(0, 0%, 100%, 0.9);
+	fill: hsla(0, 0%, 100%, 0.9);
+	border: 1px solid hsla(0, 0%, 100%, 0.9);
+	background-color: transparent;
+	height: 32px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	transition: 0.2s;
+	margin-top: 4px;
+	font-weight: bold;
+}
+.follow:hover{
+	background-color: #464A4D;
+}

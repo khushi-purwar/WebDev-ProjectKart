@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Domine', serif;
+    font-family: 'JetBrains Mono', monospace;
+    color:#C2E1E6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 900;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:70px; 
+    margin-bottom:10px;   
+    flex-direction: row;
+    border-radius: 15px;
+    background-color: white;
+    width:70%;
+    padding:20px;
+}
+.card1{
+    padding-left:10px;
+    width:50%;
+}
+.card2{
+    padding-left:10px;
+    width:50%;
+}
+.card22{
+    background-color: hsl(183, 100%, 15%);
+    width:85%;
+    margin:15px;
+    padding:30px;
+    border-radius: 10px;
+}
+#logo{
+    margin:10px;
+}
+#input-el{
+    background: hsl(189, 41%, 97%) url(./images/icon-dollar.svg) left no-repeat;
+}
+input{
+    border:1px solid hsl(189, 41%, 97%) ;
+    text-indent: 75%;
+    padding-left:30px;
+    width:65%;
+    height:30px;
+    margin-left:30px;
+    margin-bottom:10px;
+}
+button{
+    cursor:pointer;
+    padding:15px;
+    width:25%;
+    margin-right:5px;
+    margin-top: 5px;
+    border: none;
+    background-color:  hsl(183, 100%, 15%);
+    color:hsl(189, 41%, 97%);
+    border-radius:5px;
+    font-weight: 700;
+}
+button:hover{
+    background-color: #26C2AD;
+}
+#elp{
+    background:hsl(189, 41%, 97%) url(./images/icon-person.svg) left no-repeat ;
+}
+#reset-btn{
+    width:80%;
+    background-color:#26C2AD ;
+    color:hsl(183, 100%, 15%);
+    font-weight: bold;
+}
+#reset-btn:hover{
+    background-color:#9FE8DF;
+}
+#res{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.per{
+    color:#55878E;
+    padding-bottom:25px;
+}
+.ask{
+    color:#697C7A;
+    padding-top:20px;
+    margin-left:30px;
+}
+#buttons{
+    margin-left:30px;
+}
+#custom{
+    background-color:hsl(189, 41%, 97%);
+    width:25%;
+    margin-left:2px;
+    cursor:pointer;
+    border: none;
+    border-radius:5px;
+    font-weight: bold;
+    text-align: center;
+    text-indent: -10%;
+}
+#output-el,#amount-el{
+    margin-left:30%;
+    font-size:24px;
+    color:#26C2AD;
+}
+@media (min-width: 100px) and (max-width: 700px){
+    .main{
+        display:flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding:5px;
+    }
+    .card1{
+        width:100%;
+    }
+    .card2{
+        width:95%;
+    }
+    .card22{
+        width:95%;
+    }
+}
+.dark-mode {
+    background-color: rgb(34, 27, 27);
+    color: white;
+}
+.mode{
+    background-color: blanchedalmond;
+}
