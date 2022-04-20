@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ameera garments</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    * {
+        font-size: 16px;
+    }
+
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-image: url('images/3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    .header {
+        text-align: center;
+    }
+    .left {
+        /* border: 2px solid red; */
+        color:rgb(218, 14, 116) ;
+        display: inline-block;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        margin: 2px;
+    }
+
+    .left img {
+        width: 80px;
+        border-top-left-radius: 70px;
+        border-top-right-radius: 70px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border: 2px solid rgb(218, 14, 116);
+        height: 80px;
+    }
+
+    .mid {
+        /* border: 2px solid red; */
+        color: blue;
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+
+    }
+    
+    .navbar li a {
+        text-decoration: none;
+        padding: 5px 20px;
+        margin: 8px 8px;
+        color: black;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: brown;
+    }
+
+    .right {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        right: 35px;
+        top: 20px;
+
+    }
+
+    .btn {
+        border: 2px solid gray;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        border-radius: 10px;
+        margin: 4px 8px;
+        padding: 3px 9px;
+        cursor: pointer;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    .btn:hover {
+        color: bisque;
+    }
+    .container{
+        border: 4px solid black;
+        border-radius: 15px;
+        width: 35%;
+        height: 500%;
+        display: inline-block;
+        margin: 80px 100px;
+        }
+        .container .form input{
+            display: block;
+            width: 80%;
+            margin: 5px auto;
+            padding: 10px 10px;
+            font-family: 'Bebas Neue', cursive;
+            border: 3px solid black;
+            border-radius: 10px;
+             text-align: center;
+        }
+        .container h1{
+            display: block;
+            width: 80%;
+            margin: 20px auto;
+            font-size: 23px;
+            font-family: 'Bebas Neue', cursive;
+            text-decoration:double;
+            text-align: center;
+        }
+        .container .btn{
+            display: block;
+            width: 20%;
+            margin: auto;
+            padding: 5px 5px;
+            background-color: black;
+            font-family: 'Bebas Neue', cursive;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        .container .btn:hover{
+            background-color: grey;
+        }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="images/logoh.jpg" alt="">
+            <div> <b>Ameera garments</b></div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">MORE</a></li>
+
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <form action="backened.php"></form>
+        <h1>Let's get a Abaya from the best  Abaya store!😍</h1>
+        <div class="form">
+            <input type="text" name="name" placeholder="Enter your name">
+        </div>
+        <div class="form">
+            <input type="text" name="cntry" placeholder="your country">
+        </div>
+        <div class="form">
+            <input type="email" name="email" placeholder=" your email address" >
+        </div>
+        <div class="form">
+            <input type="number" name="contact no." placeholder="your phone number">
+        </div>
+        <div class="form">
+            <input type="text" name="address" placeholder=" your locality?" >
+        </div>
+        <div class="form">
+            <input type="text" name="product" placeholder=" product you want" >
+        </div>
+        <button class="btn">
+            <input type="submit" name="submit" placeholder="Submit Now">
+        </button>
+    </div>
+    
+    
+</body>
+
+</html>

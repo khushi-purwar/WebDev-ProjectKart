@@ -1,0 +1,385 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    /* scroll-behavior: smooth; */
+    overflow-y: scroll; 
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+/* body{
+    overflow: hidden;
+} */
+
+
+.d1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: rgb(94, 39, 39);
+}
+
+.d1 img
+{
+    width: 100%;
+    height:100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.5;
+}
+
+
+.top{
+    position: absolute;
+    padding: 40px 100px;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    
+}
+
+/* .top a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} */
+
+.l1{
+    font-size: 45px;
+    font-weight: 600;
+    color: aliceblue;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-align: center;
+    /* position: relative; */
+}
+
+.top ul li{
+    /* color: white; */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px;
+    cursor:pointer;
+    background-color: rgb(7, 1, 1);
+    position: relative;
+}
+
+.top ul li::after{
+    content: "";
+    width: 0;
+    height: 4px;
+    background: yellow;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.4s ease;
+}
+
+.top ul li:hover::after{
+    width: 100%;
+}
+
+.top ul li a{
+    color: white;
+    text-decoration: none;
+    /* background-color: black;
+    padding: 30%; */
+}
+
+.p1body{
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 37%;
+    
+    max-width: 100%;
+    font-size: 25px;
+    padding: 0 5%;
+}
+
+
+.p1body h2{
+    font-size: 46px;
+    
+}
+
+.p1body p{
+    font-size: 23px;
+
+}
+
+.page2{
+
+    display: flex;
+    flex-direction: row;
+}
+
+.page2 img , .about{
+    width: 50%;
+}
+.about{
+    background-color: rgb(173, 148, 4);
+    text-align: center;
+    padding: 95px;
+    text-align: center;
+}
+
+.about h2{
+    margin-top:32px;
+    font-size: 43px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.about p{
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page3{
+    background-color: rgb(114, 7, 7);
+    color: white;
+    padding: 100px;
+    text-align: center;
+}
+
+
+.page3 h2{
+    margin-top:32px;
+    font-size: 43px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px 0;
+
+}
+.page3 p{
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    
+}
+.card{
+    border:2px solid white ;
+    border-radius: 35px;
+    margin: 40px;
+    padding: 10px 0;
+    transition: 0.4s ease;
+
+    
+}
+.card h3, .card p{
+    border-radius: 25px;
+}
+.container :hover{
+    background: rgb(247, 44, 44);
+    /* border-radius: 25px; */
+}
+
+
+.card img{
+    width: 100%;
+    height: 240px;
+}
+
+.card h3{
+    padding top: 0px;
+    padding: 10px;
+}
+
+.page4{
+    background: rgb(214, 15, 15);
+    padding: 100px;
+    text-align: center;
+    color: white;
+    /* height: 115vh; */
+}
+.page4-div{
+    display: flex;
+    width: 80%;
+    margin: 50px auto;
+
+}
+
+.page4-div img{
+    width: 50%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: rgb(219, 175, 79);
+    padding: 50px;
+}
+
+form input,form textarea{
+    margin: 10px 0;
+    background-color: rgb(219, 175, 79);
+    padding: 5px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    border-bottom: 2px solid black;
+}
+form button {
+    cursor: pointer;
+    /* height: 36px; */
+    border-radius: 22px;
+    background-color: rgb(158, 209, 19);
+    color: aliceblue;
+    font-size: 22px;
+    padding: 6px 12px;
+    margin-left: auto;
+    width: 85px;
+    transition: 0.4s ease;
+    
+}
+form button:hover{
+    /* opacity: 1.2%; */
+    outline: 0;
+    border: none;
+    background: black;
+}
+
+
+.page4 h2{
+    margin-top:-12px;
+    font-size: 43px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px 0;
+
+}
+.page4 p{
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer{
+    background: black;
+    color: white;
+    padding: 20px 15%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 700px) and (min-width: 200px)
+{
+    .top ul{
+        display: none;
+    }
+
+    .top a{
+        margin: 0 auto;
+    }
+    .l1{
+        font-size: 32px;
+        width: 100%;
+        text-align: center;
+        /*justify-content: center; */
+    }
+    
+
+    
+
+    .p1body{
+        top: 20%;
+        
+    }
+
+    .p1body h2{
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .p1body p{
+        font-size: 18 px;
+        /* width: 80%;
+        text-align: center;
+        margin-left:45px; */
+    }
+
+    .page2{
+        flex-direction: column;
+        /* margin-right: 0%; */
+    }
+    #ul1{
+        display: none;
+    }
+
+    .page2 img, .about{
+        width: 100%;
+    }
+
+    .about{
+        padding: 10px;
+    }
+
+    .page3{
+        padding: 15px;
+    }
+
+    .container{
+        /* display: flex; */
+        flex-direction: column;
+        margin: 25px auto;
+        /* width: 250px; */
+        /* margin-left: -35px; */
+    }
+    .card{
+        /* margin: 10px; */
+        /* display: block; */
+        display: flexbox;
+        /* margin-bottom: 15px; */
+
+    }
+
+    .card img{
+        height: 100px;
+        width: 100px;
+        /* padding: 20px; */
+    }
+
+    .page4{
+        padding: 15px ;
+        /* height: 100%; */
+        /* margin-bottom: 2px; */
+    }
+    .page4-div{ 
+        padding-bottom:18px: ;
+        flex-direction: column;
+    }
+    .page4-div img,form{
+        width: 100%;
+    }
+    .page4-div form{
+        height: 45vh;
+        padding: 20px;
+        padding-bottom: 15px;
+        margin-bottom: 1px;
+    }
+    .page4-div img{
+        height: 30vh;
+    }
+    
+    .page3 p{
+        width: 100%;
+        /* padding: -10px; */
+
+    }
+}
