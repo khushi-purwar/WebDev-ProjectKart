@@ -10,3 +10,8 @@ It saves your favorite site as a bookmark
 
 ## Screenshot
 
+![Screenshot (877)](https://user-images.githubusercontent.com/73753957/164231418-c39e92af-921b-4b7f-8f86-86801c712c9f.png)
+
+![Screenshot (878)](https://user-images.githubusercontent.com/73753957/164231402-345fea91-6718-4209-8204-5627ed434c54.png)
+
+![Screenshot (879)](https://user-images.githubusercontent.com/73753957/164231388-1fffe7ae-ea40-41e0-9910-734d95c990d2.png)
