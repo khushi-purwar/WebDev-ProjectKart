@@ -182,14 +182,3 @@ Enter two numbers in the respective input boxes and the resultant GCD will be co
   
   
 
-## Contact
-
-  
-
-Shubham Singh - [LinkedIn](https://www.linkedin.com/in/shubham-singh-519769220/)
-
-  
-  
-  
-
-<p  align="right">(<a  href="#top">back to top</a>)</p>
