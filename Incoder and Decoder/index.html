@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Encoder And Decoder</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Encode And Decode</h1>
+
+
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Encode')" id="defaultOpen">Encode</button>
+            <button class="tablinks" onclick="openTab(event, 'Decode')">Decode</button>
+        </div>
+
+        <div id="Encode" class="tabcontent">
+            <textarea id="encode-text" placeholder="Type the text that you want to encode" rows="10"></textarea>
+            <button class="btn" onclick="encode()">Encode</button>
+            <textarea id="encoded-text" placeholder="Type the text that you want to encode" rows="10" disabled></textarea>
+            <div class="tooltip">
+                <button class="btn" onclick="copyText('encoded-text')" data-tooltip="encoded-text-Tooltip" onmouseout="outFunc(event)">
+				<span class="tooltiptext" id="encoded-text-Tooltip">Copy to clipboard</span>
+				Copy text
+			</button>
+            </div>
+        </div>
+
+        <div id="Decode" class="tabcontent">
+            <textarea id="decode-text" placeholder="Type the text that you want to decode" rows="10"></textarea>
+            <button class="btn" onclick="decode()">Decode</button>
+            <textarea id="decoded-text" placeholder="Type the text that you want to decode" rows="10" disabled></textarea>
+            <div class="tooltip">
+                <button class="btn" onclick="copyText('decoded-text')" data-tooltip="decoded-text-Tooltip" onmouseout="outFunc(event)">
+				<span class="tooltiptext" id="decoded-text-Tooltip">Copy to clipboard</span>
+				Copy text
+			</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
