@@ -21,6 +21,11 @@
 ## ⚡️  Introduction
 Encoder And Decoder
 
+# Tech Stack Used:
+  - HTML
+  - CSS
+  - JavaScript
+  
 ## 📷 Screenshots
 
 ![ss1](./img/000.1.png)
