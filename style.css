@@ -74,7 +74,7 @@ main h3{
 main h3:hover {
  
   transform: scale(1.05);
-  box-shadow: 8px 5px rgba(0, 0, 0, 0.8);
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.7);
 
 }
 
