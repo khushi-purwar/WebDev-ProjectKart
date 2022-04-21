@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --desired-size: 50;
+    --unit: calc((var(--desired-size) / 378) * 1vmin);
+    --tyre-base: #4d4d4d;
+    --tyre-front: #737373;
+    --tyre-hub: #dad8d8;
+    --tyre-rear-base: #333;
+    --tyre-rear-front: #595959;
+    --tyre-rear-hub: #8c8c8c;
+    --bumper-one: #ccc;
+    --grill: #e6e6e6;
+    --bonnet: #13628a;
+    --body: #1572A1;
+    --cab: #1572A1;
+    --chassis: #000;
+    --glass: #b3ffff;
+    --mirror: rgb(3, 43, 88);
+    --shine: rgba(255, 255, 255, 0.8);
+    --taillight: #c00;
+    --headlight: #fff6cc;
+    --alloy: #b3b3b3;
+    --rad: #1a1a1a;
+    --indicator: #e68019;
+    --sign: #557C55;
+    --sign-border: #fafafa;
+    --post: #734d26;
+    --post-shine: rgba(255, 255, 255, 0.2);
+    --road: #808080;
+    --sky: #7882A4;
+    --ground: #C69B7B;
+}
+
+body {
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(transparent 0 calc(50% - 6vmin), var(--ground) calc(50% - 6vmin) 50%, transparent 50%), linear-gradient(var(--sky) 0 50%, transparent 50%), linear-gradient(transparent 0 calc(50% + 10vmin), var(--ground) calc(50% + 10vmin)), linear-gradient(var(--road) 0 calc(50% + 4.5vmin), transparent calc(50% + 4.5vmin)), linear-gradient(transparent 0 calc(50% + 5.5vmin), var(--road) calc(50% + 5.5vmin)), repeating-linear-gradient(90deg, #fff 5vmin 10vmin, transparent 10vmin 12.5vmin, #fff 12.5vmin 17.5vmin) 0 calc(50% + 4.5vmin)/100vw 1vmin, var(--road);
+    -webkit-animation: road 1s infinite linear;
+    animation: road 1s infinite linear;
+}
+
+body:after {
+    content: '';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    height: calc(228 * var(--unit));
+    width: calc(378 * var(--unit));
+    -webkit-animation: bump 5s infinite linear;
+    animation: bump 5s infinite linear;
+    background: linear-gradient(113deg, transparent 32%, var(--shine) 32% 50%, transparent 50% 60%, var(--shine) 60% 70%, transparent 70%) calc(-4 * var(--unit)) calc(190 * var(--unit)) / calc(50 * var(--unit)) calc(20 * var(--unit)) no-repeat, linear-gradient(var(--bumper-one), var(--bumper-one)) calc(6 * var(--unit)) calc(190 * var(--unit)) / calc(116 * var(--unit)) calc(20 * var(--unit)) no-repeat, linear-gradient(var(--rad) 0 20%, transparent 20% 40%, var(--rad) 40% 60%, transparent 60% 80%, var(--rad) 80% 100%) calc(35 * var(--unit)) calc(153 * var(--unit)) / calc(60 * var(--unit)) calc(20 * var(--unit)) no-repeat, linear-gradient(var(--headlight), var(--headlight)) calc(14 * var(--unit)) calc(152 * var(--unit)) / calc(18 * var(--unit)) calc(18 * var(--unit)) no-repeat, linear-gradient(var(--headlight), var(--headlight)) calc(100 * var(--unit)) calc(152 * var(--unit)) / calc(18 * var(--unit)) calc(18 * var(--unit)) no-repeat, linear-gradient(var(--indicator), var(--indicator)) calc(14 * var(--unit)) calc(172 * var(--unit)) / calc(18 * var(--unit)) calc(6 * var(--unit)) no-repeat, linear-gradient(var(--indicator), var(--indicator)) calc(100 * var(--unit)) calc(172 * var(--unit)) / calc(18 * var(--unit)) calc(6 * var(--unit)) no-repeat, linear-gradient(113deg, transparent 32%, var(--shine) 32% 50%, transparent 50% 60%, var(--shine) 60% 70%, transparent 70%) calc(10 * var(--unit)) calc(150 * var(--unit)) / calc(50 * var(--unit)) calc(36 * var(--unit)) no-repeat, linear-gradient(var(--taillight), var(--taillight)) calc(362 * var(--unit)) calc(150 * var(--unit)) / calc(10 * var(--unit)) calc(20 * var(--unit)) no-repeat, radial-gradient(ellipse at center, var(--mirror) 50%, transparent 50%) calc(214 * var(--unit)) calc(130 * var(--unit)) / calc(32 * var(--unit)) calc(20 * var(--unit)) no-repeat, linear-gradient(var(--bonnet), var(--bonnet)) calc(12 * var(--unit)) calc(145 * var(--unit)) / calc(200 * var(--unit)) calc(5 * var(--unit)) no-repeat, linear-gradient(var(--bumper-one), var(--bumper-one)) calc(230 * var(--unit)) calc(202 * var(--unit)) / calc(40 * var(--unit)) calc(10 * var(--unit)) no-repeat, linear-gradient(var(--bumper-one), var(--bumper-one)) calc(350 * var(--unit)) calc(190 * var(--unit)) / calc(30 * var(--unit)) calc(20 * var(--unit)) no-repeat, linear-gradient(var(--body), var(--body)) calc(126 * var(--unit)) calc(175 * var(--unit)) / calc(15 * var(--unit)) calc(33 * var(--unit)) no-repeat, linear-gradient(var(--body), var(--body)) calc(260 * var(--unit)) calc(182 * var(--unit)) / calc(15 * var(--unit)) calc(26 * var(--unit)) no-repeat, linear-gradient(var(--body), var(--body)) calc(260 * var(--unit)) calc(174 * var(--unit)) / calc(75 * var(--unit)) calc(10 * var(--unit)) no-repeat, radial-gradient(ellipse at center, var(--alloy) 0 10%, transparent 10%) calc(268 * var(--unit)) calc(164 * var(--unit)) / calc(74 * var(--unit)) calc(74 * var(--unit)) no-repeat, radial-gradient(ellipse at center, var(--tyre-hub) 0 30%, transparent 30%) calc(268 * var(--unit)) calc(164 * var(--unit)) / calc(74 * var(--unit)) calc(74 * var(--unit)) no-repeat, radial-gradient(ellipse at center, var(--tyre-front) 0 50%, transparent 50%) calc(268 * var(--unit)) calc(164 * var(--unit)) / calc(74 * var(--unit)) calc(74 * var(--unit)) no-repeat, radial-gradient(ellipse at center, var(--tyre-base) 0 50%, transparent 50%) calc(260 * var(--unit)) calc(164 * var(--unit)) / calc(74 * var(--unit)) calc(74 * var(--unit)) no-repeat, radial-gradient(ellipse at center, var(--alloy) 0 10%, transparent 10%) calc(134 * var(--unit)) calc(164 * var(--unit)) / calc(74 * var(--unit)) calc(74 * var(--unit)) no-repeat, radial-gradient(ellipse at center, var(--tyre-hub) 0 30%, transparent 30%) calc(134 * var(--unit)) calc(164 * var(--unit)) / calc(74 * var(--unit)) calc(74 * var(--unit)) no-repeat, radial-gradient(ellipse at center, var(--tyre-front) 0 50%, transparent 50%) calc(134 * var(--unit)) calc(164 * var(--unit)) / calc(74 * var(--unit)) calc(74 * var(--unit)) no-repeat, radial-gradient(ellipse at center, var(--tyre-base) 0 50%, transparent 50%) calc(126 * var(--unit)) calc(164 * var(--unit)) / calc(74 * var(--unit)) calc(74 * var(--unit)) no-repeat, linear-gradient(var(--grill), var(--grill)) calc(12 * var(--unit)) calc(150 * var(--unit)) / calc(108 * var(--unit)) calc(36 * var(--unit)) no-repeat, linear-gradient(var(--chassis), var(--chassis)) calc(141 * var(--unit)) calc(175 * var(--unit)) / calc(60 * var(--unit)) calc(33 * var(--unit)) no-repeat, linear-gradient(var(--chassis), var(--chassis)) calc(275 * var(--unit)) calc(182 * var(--unit)) / calc(60 * var(--unit)) calc(26 * var(--unit)) no-repeat, linear-gradient(var(--mirror), var(--mirror)) calc(245 * var(--unit)) calc(152 * var(--unit)) / calc(20 * var(--unit)) calc(4 * var(--unit)) no-repeat, linear-gradient(var(--body), var(--body)) calc(12 * var(--unit)) calc(145 * var(--unit)) / calc(358 * var(--unit)) calc(63 * var(--unit)) no-repeat, linear-gradient(117deg, transparent 50%, var(--chassis) 50%) calc(196 * var(--unit)) calc(104 * var(--unit)) / calc(30 * var(--unit)) calc(62 * var(--unit)) no-repeat, linear-gradient(var(--cab), var(--cab)) calc(118 * var(--unit)) calc(88 * var(--unit)) / calc(154 * var(--unit)) calc(8 * var(--unit)) no-repeat, linear-gradient(113deg, transparent 32%, var(--shine) 32% 50%, transparent 50% 60%, var(--shine) 60% 70%, transparent 70%) calc(110 * var(--unit)) calc(95 * var(--unit)) / calc(50 * var(--unit)) calc(50 * var(--unit)) no-repeat, linear-gradient(117deg, transparent 50%, var(--glass) 50%) calc(93 * var(--unit)) calc(90 * var(--unit)) / calc(30 * var(--unit)) calc(62 * var(--unit)) no-repeat, linear-gradient(117deg, transparent 50%, var(--body) 50%) calc(90 * var(--unit)) calc(86 * var(--unit)) / calc(30 * var(--unit)) calc(62 * var(--unit)) no-repeat, linear-gradient(117deg, transparent 50%, var(--body) 50%) calc(200 * var(--unit)) calc(86 * var(--unit)) / calc(30 * var(--unit)) calc(62 * var(--unit)) no-repeat, linear-gradient(var(--glass), var(--glass)) calc(120 * var(--unit)) calc(96 * var(--unit)) / calc(148 * var(--unit)) calc(50 * var(--unit)) no-repeat, linear-gradient(var(--cab), var(--cab)) calc(120 * var(--unit)) calc(88 * var(--unit)) / calc(154 * var(--unit)) calc(60 * var(--unit)) no-repeat, radial-gradient(ellipse at center, var(--mirror) 50%, transparent 50%) calc(76 * var(--unit)) calc(130 * var(--unit)) / calc(32 * var(--unit)) calc(20 * var(--unit)) no-repeat, radial-gradient(ellipse at center, var(--tyre-rear-hub) 0 30%, transparent 30%) calc(23 * var(--unit)) calc(156 * var(--unit)) / calc(74 * var(--unit)) calc(74 * var(--unit)) no-repeat, radial-gradient(ellipse at center, var(--tyre-rear-front) 0 50%, transparent 50%) calc(23 * var(--unit)) calc(156 * var(--unit)) / calc(74 * var(--unit)) calc(74 * var(--unit)) no-repeat, radial-gradient(ellipse at center, var(--tyre-rear-base) 0 50%, transparent 50%) calc(15 * var(--unit)) calc(156 * var(--unit)) / calc(74 * var(--unit)) calc(74 * var(--unit)) no-repeat, radial-gradient(ellipse at center, var(--tyre-rear-hub) 0 30%, transparent 30%) calc(180 * var(--unit)) calc(156 * var(--unit)) / calc(74 * var(--unit)) calc(74 * var(--unit)) no-repeat, radial-gradient(ellipse at center, var(--tyre-rear-front) 0 50%, transparent 50%) calc(180 * var(--unit)) calc(156 * var(--unit)) / calc(74 * var(--unit)) calc(74 * var(--unit)) no-repeat, radial-gradient(ellipse at center, var(--tyre-rear-base) 0 50%, transparent 50%) calc(172 * var(--unit)) calc(156 * var(--unit)) / calc(74 * var(--unit)) calc(74 * var(--unit)) no-repeat;
+}
+
+body:before {
+    content: '';
+    position: absolute;
+    height: calc(220 * var(--unit));
+    width: calc(100 * var(--unit));
+    font-family: sans-serif;
+    font-size: calc(10 * var(--unit));
+    color: #fafafa;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    padding-top: calc(10 * var(--unit));
+    transform: translate(-50%, -75%) scale(0.5);
+    overflow: hidden;
+    background: linear-gradient(var(--sign), var(--sign)) calc(4 * var(--unit)) calc(4 * var(--unit)) / calc(92 * var(--unit)) calc(46 * var(--unit)) no-repeat, linear-gradient(var(--sign-border), var(--sign-border)) calc(2 * var(--unit)) calc(2 * var(--unit)) / calc(96 * var(--unit)) calc(50 * var(--unit)) no-repeat, linear-gradient(var(--sign), var(--sign)) calc(0 * var(--unit)) calc(0 * var(--unit)) / calc(100 * var(--unit)) calc(54 * var(--unit)) no-repeat, linear-gradient(var(--post-shine), var(--post-shine)) calc(45 * var(--unit)) calc(0 * var(--unit)) / calc(2 * var(--unit)) calc(220 * var(--unit)) no-repeat, linear-gradient(var(--post), var(--post)) calc(45 * var(--unit)) calc(0 * var(--unit)) / calc(10 * var(--unit)) calc(220 * var(--unit)) no-repeat;
+    -webkit-animation: travel 2s infinite linear;
+    animation: travel 2s infinite linear;
+}
+
+@-webkit-keyframes travel {
+    from {
+        transform: translate(-50%, -75%) scale(0.5) translate(-100vw, 0);
+    }
+
+    to {
+        transform: translate(-50%, -75%) scale(0.5) translate(100vw, 0);
+    }
+}
+
+@keyframes travel {
+    from {
+        transform: translate(-50%, -75%) scale(0.5) translate(-100vw, 0);
+    }
+
+    to {
+        transform: translate(-50%, -75%) scale(0.5) translate(100vw, 0);
+    }
+}
+
+@-webkit-keyframes bump {
+    50% {
+        transform: translate(-50%, -75%);
+    }
+}
+
+@keyframes bump {
+    50% {
+        transform: translate(-50%, -75%);
+    }
+}
+
+@-webkit-keyframes road {
+    to {
+        background-position: 100vw 0;
+    }
+}
+
+@keyframes road {
+    to {
+        background-position: 100vw 0;
+    }
+}
