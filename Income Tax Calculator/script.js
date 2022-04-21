@@ -1,10 +1,4 @@
-/*
-    Tax Owed Calculator
-    - £0 to £10k is taxed at 0%
-    - £10,001 to £35k is taxed at 20%
-    - £35,001 to £100,000 is taxed at 40%
-    - £100k plus is taxed at 50%
-*/
+
 
 var calculateTax = function() {
 	var income = parseFloat(document.getElementById("income").value);
