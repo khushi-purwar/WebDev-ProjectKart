@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="gold" />
+    <meta name="author" content="priyanshu-vaishnavi" />
+    <title>Temperature converter</title>
+    <!-- custom stylesheet link -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="content-container">
+      <h2 id="container-heading">Temperature Converter</h2>
+      <!-- calculation container -->
+      <div id="calculations-container">
+        <!-- Input division -->
+        <div class="content-division">
+          <div class="division-heading">From</div>
+          <div class="inputs-container">
+            <!-- input box -->
+            <input
+              type="number"
+              class="input-field inputs"
+              name="input"
+              id="input-box"
+              placeholder="0"
+              required
+            />
+            <!-- input dropdown -->
+            <div class="dropdown-container">
+              <select class="dropdown inputs" id="input-dropdown">
+                <option value="Celcius" selected>Celcius</option>
+                <option value="Farenheit">Farenheit</option>
+                <option value="Kelvin">Kelvin</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- Result division -->
+        <div class="content-division">
+          <div class="division-heading">To</div>
+          <div class="inputs-container">
+            <!-- result box -->
+            <input
+              type="text"
+              class="input-field inputs"
+              name="result"
+              id="result-box"
+              placeholder="0"
+              disabled
+            />
+            <!-- result dropdown -->
+            <div class="dropdown-container">
+              <select class="dropdown inputs" id="result-dropdown">
+                <option value="Farenheit" selected>Farenheit</option>
+                <option value="Celcius">Celcius</option>
+                <option value="Kelvin">Kelvin</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- button -->
+        <button id="convert-btn" class="inputs" onclick="converter()">
+          Convert
+        </button>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      &#169; 2022, Designed by -
+      <a href="https://www.linkedin.com/in/priyanshu-vaishnavi/" target="_blank">
+        Priyanshu Vaishnavi
+      </a>
+    </footer>
+    <!-- custom javascript link -->
+    <script src="./script.js"></script>
+  </body>
+</html>
