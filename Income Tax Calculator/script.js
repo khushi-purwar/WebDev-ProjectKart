@@ -66,7 +66,8 @@ var calculateTax = function() {
 	}
 	return [taxPrint, salaryaftertaxPrint, percentagebracketPrint, taxbandPrint];
   }}
-  
+
   window.onload = function () {
 	document.getElementById("calculate").onclick = calculateTax;
-  }
+  
+
