@@ -1,0 +1,270 @@
+/* Temperature converter css */
+
+*{
+  /* to reset default browser css properties */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+:root{
+  --largeHeading: 1.3rem;
+  --smallHeading: 0.9rem;
+  --lightColor: rgb(48, 48, 48);
+  --darkColor: rgb(17, 17, 17);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(45deg, rgb(9, 172, 131), rgb(72, 64, 136), rgb(175, 11, 66));
+}
+
+/* main content */
+#content-container{
+  position: relative;
+  width: 290px;
+  margin: 0px auto;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: rgb(152, 134, 192);
+  box-shadow: 0px 0px 5px rgb(19, 14, 14);
+}
+
+/* Heading */
+#container-heading{
+  margin: 0px auto 20px auto;
+  text-align: center;
+  font-size: var(--largeHeading);
+  font-weight: 540;
+}
+
+/* calculations-container */
+#calculations-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 15px 25px;
+  color: var(--darkColor);
+  font-size: var(--smallHeading);
+  background-color: rgb(22, 91, 241);
+  box-shadow: 0px 0px 3px grey;
+}
+
+/* content division */
+.content-division{
+  width: 100%;
+}
+
+/* sub heading */
+.division-heading{
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: var(--smallHeading);
+  font-weight: 550;
+  color: var(--lightColor);
+  padding: 0px 5px;
+  margin: 5px 0px 10px 0px;
+}
+
+.division-heading::before{
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  content: "";
+  width: 70px;
+  height: 1px;
+  background-color: var(--lightColor);
+}
+
+.division-heading::after{
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+  content: "";
+  width: 70px;
+  height: 1px;
+  background-color: var(--lightColor);
+}
+
+/* inputs container */
+.inputs-container{
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: 10px;
+}
+
+/* input elements (input boxes, dropdowns, button) */
+.inputs{
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  font-size: var(--smallHeading);
+}
+
+/* input fields and select dropdowns */
+.input-field , .dropdown {
+  padding: 5px 10px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
+  box-shadow: 0px 0px 5px grey;
+}
+
+.dropdown, #convert-btn, footer a{
+  cursor: pointer;
+}
+
+/* dropdown container */
+.dropdown-container{
+  position: relative;
+}
+
+.dropdown-container::after{
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: var(--smallHeading);
+  color: rgb(66, 61, 30);
+  content: "\25bc";
+  pointer-events: none;
+}
+
+/* dropdown */
+.dropdown{
+  appearance: none;
+}
+
+/* clickable input field */
+#input-box{
+  transition: 0.2s;
+  box-shadow: 0px 0px 5px grey, inset 0px 0px 0px gold;
+}
+
+#input-box:focus{
+  box-shadow: 0px 0px 5px grey, inset 0px -4px 1px gold;
+}
+
+/* disabled input field */
+#result-box{
+  background-color: rgb(255, 252, 207);
+}
+
+/* button */
+#convert-btn{
+  margin: 10px 0px;
+  padding: 10px;
+  color: var(--lightColor);
+  background-color: orange;
+  box-shadow: 0px 0px 4px darkgoldenrod;
+}
+
+#convert-btn:hover{
+  background-color: gold;
+}
+
+#convert-btn:active{
+  background-color: orange;
+}
+
+/* footer section */
+footer{
+  position: absolute;
+  width: 100%;
+  bottom: 5px;
+  font-size: 14px;
+  font-weight: 550;
+  color: var(--darkColor);
+  text-align: center;
+  padding: 15px 0px;
+}
+
+/* footer link */
+footer a{
+  text-decoration: none;
+  color: beige;
+}
+
+footer a:hover{
+  color: rgb(217, 255, 0);
+}
+
+
+/* For large mobile devices */
+@media(min-width: 481px){
+
+  #content-container{
+    width: 360px;
+    padding: 25px 30px;
+  }
+
+  #calculations-container{
+    padding: 20px 30px;
+  }
+
+  .input-field , .dropdown {
+    padding: 7px 10px;
+}
+}
+
+/* For tablet devices */
+@media(min-width: 768px){
+
+  :root{
+    --largeHeading: 1.6rem;
+    --smallHeading: 1.1rem;
+  }
+
+  #content-container{
+    width: 480px;
+    padding: 35px;
+  }
+
+  #container-heading{
+    margin: 0px auto 25px auto;
+  }
+
+  #calculation-container{
+    padding: 15px 40px;
+  }
+
+  .division-heading::before{
+    width: 100px;
+    height: 1.7px;
+  }
+  
+  .division-heading::after{
+    width: 100px;
+    height: 1.7px;
+  }
+  
+
+  .inputs-container{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+  }
+
+  .inputs{
+    font-weight: 550;
+  }
+
+  footer{
+    font-size: 16px;
+  }
+ }

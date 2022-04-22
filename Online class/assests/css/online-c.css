@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+
+:root{
+    --gradient: linear-gradient(90deg , #f1c40f, #f39c12);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    transition: all .2s linear;
+    text-decoration: none;
+}
+
+*::selection{
+    background: #f39c12;
+    color: #fff;
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/*
+body{
+    height: 300rem;
+}
+*/
+
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 1.5rem 7%;
+    z-index: 1000;
+    top: 0; left: 0;
+    background: var(--gradient);
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+}
+
+
+header .logo{
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+header .logo i{
+    margin-right: .2rem;
+}
+
+
+header .navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+header .navbar ul li{
+    margin: 0 1rem;
+}
+
+
+header .navbar ul li a{
+    color: #fff;
+    font-size: 2rem;
+}
+
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover{
+    color: #666;
+}
+
+
+header #login{
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+header #login:hover{
+    color: #444;
+}
+
+header #menu{
+    display: none;
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.btn{
+    font-size: 2rem;
+    color: #fff;
+    background: var(--gradient);
+    padding: .5rem 3rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+    border-radius: 5rem;
+    overflow: hidden;
+    z-index: 0;
+    position: relative;
+}
+
+
+.btn::before{
+    content: " ";
+    position: absolute;
+    background: #fff9;
+    top: -1rem; left: -120%;
+    height: 150%;
+    width: 20%;
+    transform: rotate(25deg);
+    z-index: -1;
+}
+
+.btn:hover::before{
+    left: 120%;
+    transition: .3s linear;
+}
+
+
+/*  log-in section */
+
+.login-form{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top: -120%; left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login-form.popup{
+    top: 0;
+}
+
+
+.login-form form{
+    width: 35rem;
+    background: #fff;
+    padding: 1rem 3rem;
+    margin: 0 2rem;
+    position: relative;
+    border-radius: .5rem;
+    box-shadow: 0 .1rem  .3rem #333;
+}
+
+
+.login-form form h3{
+    font-size: 2.5rem;
+    color: #f39c12;
+    padding: 1rem 0;
+}
+
+
+.login-form form .box{
+    width: 100%;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-bottom: .1rem solid #666;
+    color: #333;
+    font-size: 1.6rem;
+    text-transform: none;
+}
+
+
+.login-form form .box::placeholder{
+    text-transform: capitalize;
+}
+
+
+.login-form form .box:focus{
+    border-color: #f39c12;
+}
+
+
+.login-form form .box:nth-child(3){
+    margin-bottom: 5rem;
+}
+
+.login-form form p{
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+
+.login-form form p a{
+    color: #f39c12;
+}
+
+
+
+.login-form form .btn{
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.login-form form .btn:hover{
+    color: #444;
+}
+
+
+.login-form form i{
+    top: 1.5rem; right: 2rem;
+    cursor: pointer;
+    position: absolute;
+    color: #999;
+    font-size: 2.5rem;
+}
+
+/*  home */
+
+
+section{
+    min-height: 100vh;
+    padding: 1rem 7%;
+    padding-top: 6rem;
+}
+
+
+.Home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background-repeat: no-repeat;
+    background: url('home-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+
+.Home h1{
+    font-size: 6rem;
+    color: #666;
+}
+
+.Home p{
+    font-size: 2rem;
+    color: #999;
+    padding: 1rem 0;
+    width: 70rem;
+}
+
+
+.Home .btn:hover{
+    background: #444;
+}
+
+
+.Home .shape{
+    position: absolute;
+    bottom: -.2rem; left: 0;
+    height: 15rem; 
+    width: 100%;
+    background: url('shape.png');
+    block-size: 100rem 15rem;
+    filter: drop-shadow(0 -.1rem .1rem  rgba(0,0,0,.2));
+    animation: animate 10s infinite;
+}
+
+
+@keyframes animate{
+
+
+    0%{
+        background-position-x: 0rem;
+    }
+
+    100%{
+        background-position-x: 100rem;
+    }
+}
+
+/* heading */
+
+.heading{
+    font-size: 6rem;
+    color: #999;
+    padding: 1rem;
+    text-align: center;
+}
+
+.heading span{
+    color: #f39c12;
+}
+
+
+/* About  */
+
+.About{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.About .image{
+    flex: 1 1 40rem;
+}
+
+
+.About .image img{
+    height: 65vh;
+    width: 100%;
+}
+
+
+.About .content{
+    flex: 1 1 40rem;
+}
+
+
+.About .content h3{
+    font-size: 3.5rem;
+    color: #666;
+}
+
+
+.About .content p{
+    font-size: 2rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+
+/* course */
+
+.Courses .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Courses .box-container .box{
+    width: 35rem;
+    border: .1rem solid rgba(0,0,0,.3);
+    position: relative;
+    margin: 1.5rem;
+}
+
+
+.Courses .box-container .box img{
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.Courses .box-container .box .content{
+    padding: 1rem;
+}
+
+
+.Courses .box-container .box .content .stars i{
+    color: #f1c40f;
+    font-size: 1.7rem;
+    padding: 1rem .1rem;
+}
+
+
+.Courses .box-container .box .content .title{
+    font-size: 2.1rem;
+    color: #f39c12;
+}
+
+
+.Courses .box-container .box .content .title:hover{
+    text-decoration: underline;
+}
+
+
+.Courses .box-container .box .content p{
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+
+.Courses .box-container .box .content .info{
+    padding-top: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: .1rem solid rgba(0,0,0,.3);
+}
+
+
+.Courses .box-container .box .content .info h3{
+    font-size: 1.7rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+
+.Courses .box-container .box .content .info h3 i{
+    color: #f39c12;
+}
+
+
+.Courses .box-container .box .price{
+    position: absolute;
+    text-align: center;
+    background: var(--gradient);
+    color: #fff;
+    top: 16rem; right: 1rem;
+    line-height: 8rem;
+    border-radius: 50%;
+    height: 8rem; width: 8rem;
+    font-size: 3rem;
+}
+
+/* Teachers  */ 
+
+.Teachers{
+    text-align: center;
+    background: url('teachers.jfif');
+    background-size: cover;
+    background-position: bottom;
+}
+
+
+
+.Teachers P{
+    font-size: 2rem;
+    width: 65rem;
+    color: #666;
+    margin: 1rem auto;
+}
+
+/* contact  */
+
+.Contacts{
+    margin-bottom: -5rem;
+}
+
+
+.Contacts .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Contacts .row form{
+    flex: 1 1 50rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 1.5rem;
+    background: #eee;
+    box-shadow: 0 .1rem .5rem solid rgba(0,0,0,.3);
+}
+
+
+.Contacts .row form .box{
+    height: 5rem;
+    width: 49%;
+    border: .1rem solid rgba(0,0,0,.3);
+    padding: 0 1rem;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: #444;
+    text-transform: none;
+    text-align: center;
+}
+
+
+.Contacts .row form .box:focus{
+    border-color: #f39c12;
+}
+
+.Contacts .row form .box::placeholder{
+    text-transform: capitalize;
+}
+
+
+.Contacts .row form .address{
+    height: 15rem;
+    padding: 1rem 0;
+    width: 100%;
+    resize: none;
+}
+
+
+.Contacts .row form .btn:hover{
+    background: #fff;
+    color: #f1c40f;
+}
+
+
+.Contacts .row form .image img{
+    height: 80vh;
+    margin-top: 2rem;
+}
+
+
+/*  footer */
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+.footer .box-container .box{
+    flex: 1 1 25rem;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: #333;
+    padding: 1rem 0;
+}
+
+
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    color: #666;
+    padding: .5rem 0;
+}
+
+
+.footer .box-container .box p i{
+    color: #f39c12;
+}
+
+
+.footer .box-container .box a{
+    font-size: 2rem;
+    display: block;
+    color: #f39c12;
+    padding: .5rem 0;
+}
+
+
+.footer .box-container .box a:hover{
+    text-decoration: underline;
+}
+
+
+
+.footer .credit{
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 2rem;
+    color: #666;
+    border-top: .1rem solid rgba(0,0,0,.3);
+    font-weight: normal;
+}
+
+.footer .credit a{
+    color: #f1c40f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+    html{
+        font-size: 55%;
+    }
+
+    header #menu{
+        display: block;
+    }
+
+    header .navbar{
+        position: fixed;
+        top: -120%;
+        left: 0;
+        background: #444;
+        width: 100%;
+    }
+
+    header .navbar ul{
+        flex-flow: column;
+        padding: 2.5rem 0;
+    }
+
+    header .navbar ul li{
+        margin: 1.5rem 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    header .navbar ul li a{
+        font-size: 2.5rem;
+        display: block;
+    }
+
+    .fa-times{
+        transform: rotate(-180deg);
+    }
+
+    header .navbar.nav-toggle{
+        top: 6.4rem;
+    }
+
+    .Home h1{
+        font-size: 4rem;
+    }
+
+    .Home P{
+        width: auto;
+    }
+
+    .Teachers p{
+        width: auto;
+    }
+}
+
+
+
+
+@media(max-width:500px){
+    html{
+        font-size: 50%;
+    }
+
+    .Contacts .row form .box{
+        width: 100%;
+    }
+}
+

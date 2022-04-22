@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Name Plate Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="contents" class="plate">
+        <h1 class="header-text">Name Plate Generator</h1>
+        <hr class="my-2 divider" />
+        <div>
+          <form onsubmit="plateGenerate()" action="#">
+            <input name="userText" id="userText" type="text" placeholder="Your Text Here" class="form-text" required/>
+            <input type="submit" class="form-submit" value="Submit">
+          </form>
+          <div>
+            <ul id="out">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <script type="text/javascript" src="app.js"></script>
+  </footer>
+</html>
