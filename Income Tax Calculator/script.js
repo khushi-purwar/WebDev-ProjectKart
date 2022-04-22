@@ -1,3 +1,5 @@
+
+
 var calculateTax = function() {
 	var income = parseFloat(document.getElementById("income").value);
 	document.getElementById("tax").value = calcTaxes(income);
