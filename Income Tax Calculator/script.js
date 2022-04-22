@@ -1,4 +1,3 @@
-
 var calculateTax = function() {
 	var income = parseFloat(document.getElementById("income").value);
 	document.getElementById("tax").value = calcTaxes(income);
@@ -65,7 +64,7 @@ var calculateTax = function() {
 	}
 	return [taxPrint, salaryaftertaxPrint, percentagebracketPrint, taxbandPrint];
   }}
-  
+
   window.onload = function () {
 	document.getElementById("calculate").onclick = calculateTax;
-  }
+  } 
