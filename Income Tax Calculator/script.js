@@ -67,4 +67,4 @@ var calculateTax = function() {
 
   window.onload = function () {
 	document.getElementById("calculate").onclick = calculateTax;
-  } 
+  }
