@@ -1,0 +1,82 @@
+body {
+  font-family: 'David Libre', serif;
+  line-height: 1.25;
+  background-color: #140202;
+  color: #000000;
+  margin: 50px auto 100px auto;
+  width: 900px;
+}
+
+h1{
+  margin-left: 300px;
+  margin-top: 55px;
+  font-size: 60px;
+  color: #F5F5F5;
+}
+#RS{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: cursive;
+  color: #F5F5F5;
+
+}
+.input-salary{
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 60px;
+  color: #F5F5F5;
+}
+section {
+  width: 900px;
+  height: 600px;
+  position: relative;
+}
+#income{
+  margin-left: 15px;
+  height: 50px;
+  width: 250px;
+  border-radius: 5px;
+  border: 2px solid black;
+  font-family: cursive;
+  font-weight: bolder;
+  font-size: 22px;
+}
+
+#tax {
+    font-size:15px;
+    border: 3px solid rgb(231, 186, 160);
+    border-radius: 4px;
+    font-weight: bold;
+    font-family: cursive;
+    background-color: rgb(212, 223, 234);
+
+    
+
+}
+
+#calculate{
+  margin-top: 35px;
+  margin-left: 400px;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgb(220, 237, 237);
+  border: 2.2px solid rgb(46, 121, 46);
+  font-size: 20px;
+  font-weight: bold;
+  font-family: cursive;
+}
+#calculate:hover{
+  background-color: rgb(45, 58, 69);
+  color: #F5F5F5;
+  border: 2px solid gray;
+}
+
+#breakdown{
+  margin-left: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: cursive;
+  color: #F5F5F5;
+
+}

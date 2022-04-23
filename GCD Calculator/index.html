@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCD Calculator</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="container"> 
+        <p id="title">GCD Calculator</p>   
+            <input type="text" id="number1">
+            <label for="number1">Enter Number 1 :</label>
+
+            <input type="text" id="number2">
+            <label for="number2">Enter Number 2 :</label>
+
+            <input type="text" id="result" readonly value="0.0">
+            <label for="result">GCD Obtained :</label>
+
+            <button onclick="getInputValue(this)">Submit</button>
+            <button id="reset" onclick="reset(this)">Reset</button>
+    </div>
+
+
+</body>
+<script src="script/script.js"></script>
+
+</html>

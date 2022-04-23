@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 180px;
+    width: 100%;
+}
+.container h1{
+    color: aliceblue;
+    font-size: 40px;
+    margin: 20px 20px;
+    border-bottom: 4px solid purple;
+    padding-bottom: 12px;
+    width: 150px;
+    padding-left: 40px;
+    font-family: 'Lobster', cursive;
+}
+.container .box{
+    margin: 10px 10px;
+}
+.container input{
+    padding: 8px 10px;
+    border: 2px solid purple;
+    border-radius: 9px;
+    background: none;
+    text-align: center;
+}
+.container .box i{
+    color: aliceblue;
+    margin: 10px 10px;
+}
+.container .btn{
+    padding: 7px 12px;
+    border: 2px solid purple;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 16px;
+    background: none;
+    font-size: 17px;
+    color: white;
+    /*font-family: 'Beau Rivage', cursive; */
+}
+.btn:hover{
+    background-color: rgb(228, 155, 228);
+    color: black;
+}
