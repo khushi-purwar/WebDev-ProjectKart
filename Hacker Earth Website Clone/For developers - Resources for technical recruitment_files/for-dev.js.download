@@ -1,0 +1,352 @@
+/**
+ * For Developer Custom JS
+ */
+
+// jQuery(function() {
+//     jQuery('#hackathon').slick({
+// 		slidesToShow: 1,
+// 		slidesToScroll: 1,
+//         mobileFirst: true,
+//         arrows: false,
+//         dots: true,
+//         responsive: [
+//             {
+//                 breakpoint: 769,
+//                 settings: 'unslick' 
+//             }
+//         ]
+//     });
+
+//     jQuery('#hiring-challenge').slick({
+// 		slidesToShow: 1,
+// 		slidesToScroll: 1,
+//         mobileFirst: true,
+//         arrows: false,
+//         dots: true,
+//         responsive: [
+//             {
+//                 breakpoint: 769,
+//                 settings: 'unslick'
+//             }
+//         ]
+//     });
+
+//     jQuery(window).on('resize', function() {
+//         jQuery('#hackathon').slick('resize');
+//         jQuery('#hiring-challenge').slick('resize');
+//     });
+// });
+
+// Practice Section Accordian Scroll
+jQuery(window).scroll(reOrder)
+  jQuery(window).resize(reOrder)
+
+  function reOrder() {
+    var mq = window.matchMedia("(min-width: 992px)");
+    if (mq.matches) {
+      jQuery('.left-child').addClass('custom');
+      var scroll = jQuery(window).scrollTop(),
+        topContent = jQuery('.practice-section-wrap').position().top - 150,
+        sectionHeight = jQuery('.right').height(),
+        rightHeight = jQuery('.left-child').height(),
+        bottomContent = topContent + sectionHeight - rightHeight - 10;
+
+      if (scroll > topContent && scroll < bottomContent) {
+        jQuery('.custom').removeClass('posAbs').addClass('posFix');
+      } else if (scroll > bottomContent) {
+        jQuery('.custom').removeClass('posFix').addClass('posAbs');
+      } else if (scroll < topContent) {
+        jQuery('.custom').removeClass('posFix');
+      }
+
+    } else {
+      jQuery('.left-child').removeClass('customm posAbs posFix');
+    }
+}
+
+// On scroll activate accordian
+jQuery(window).scroll(function() {
+    var scrollDistance = jQuery(window).scrollTop() - 2400;
+
+    // Assign active class to nav links while scolling
+    jQuery('.image-section').each(function(i) {
+        if (jQuery(this).position().top <= scrollDistance) {
+            jQuery('.navigation li.active').removeClass('active');
+            jQuery('.navigation li').eq(i).addClass('active');
+        }
+    });
+}).scroll();
+
+// jQuery Loop Through Array of Words 
+
+// Our array of words
+const slidetext = [
+  "upskill",
+  "prepare",
+  "practice",
+  "learn"
+];
+
+(function ($) {
+  count = 0;
+  setInterval(function () {
+    $(".text-slide").fadeOut(400, function () {
+      $(this).text(slidetext[count % slidetext.length]).fadeIn(400);
+    });
+    count++;
+  }, 5000);
+})(jQuery);
+
+// 2nd Option
+const slidetext2 = [
+  "Upskill",
+  "Compete"
+];
+
+(function ($) {
+  count2 = 0;
+  setInterval(function () {
+    $(".text-slide2").fadeOut(400, function () {
+      $(this).text(slidetext2[count % slidetext2.length]).fadeIn(400);
+    });
+    count2++;
+  }, 3000);
+})(jQuery);
+
+// function swapImages(){
+//   var $active = jQuery('.banner-image .active');
+//   var $next = (jQuery('.banner-image .active').next().length > 0) ? jQuery('.banner-image .active').next() : jQuery('.banner-image img:first');
+//   $active.fadeOut(function(){
+//     $active.removeClass('active');
+//     $next.fadeIn().addClass('active');
+//   });
+// }
+
+// Run our swapImages() function every 5secs
+//setInterval('swapImages()', 5000);
+
+function swapImages2(){
+  var $active2 = jQuery('#image-opt-2 .active');
+  var $next2 = (jQuery('#image-opt-2 .active').next().length > 0) ? jQuery('#image-opt-2 .active').next() : jQuery('#image-opt-2 img:first');
+  $active2.fadeOut(function(){
+    $active2.removeClass('active');
+    $next2.fadeIn().addClass('active');
+  });
+}
+
+// Slick carousel
+jQuery('.card-wrapper-3').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    autoplay: false,
+    arrows: false,
+    dots: true,
+    cssEase: 'linear',
+    pauseOnHover: false,
+        responsive: [{
+            breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                    dots: true
+                }
+            }, {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    dots: true
+                }
+            }]
+});
+
+// Run our swapImages() function every 5secs
+setInterval('swapImages2()', 3000);
+
+// Fetching API URL Based on location
+    async function get_url() {
+        let response = await fetch('https://ipapi.co/country/')
+        let country_code = await response.text();
+        let url = await `https://www.hackerearth.com/kepler/v1/pages/home?country=${country_code}`;
+        return url;
+    }
+
+    // Fetching Hackathons
+    const postsContainer = document.querySelector('#hackathon');
+    get_url().then(data => {
+    const url= data
+    const postsContainer = document.querySelector('#hackathon');
+    fetch(url)
+    .then((response) => {
+        return response.json();
+    })
+    .then((data) => {
+
+    data.hackathons.map(function(author) {
+    var startDate = (author.start).split('+')[0]; 
+    startDate = moment(startDate).format('MMM DD, YYYY');
+
+    var dateFuture = new Date(author.end);
+    var dateNow = new Date(); //Todays date
+
+    var seconds = Math.floor((dateFuture - (dateNow))/1000);
+    var minutes = Math.floor(seconds/60);
+    var hours = Math.floor(minutes/60);
+    var days = Math.floor(hours/24);
+    days = days < 10 ? '0' + days : days;
+    hours = hours-(days*24);
+    hours = hours < 10 ? '0' + hours : hours;
+    minutes = minutes-(days*24*60)-(hours*60);
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
+    let innerContent =
+            ` 
+            <div class="challenge-card slide">
+                <div class="challenge-list-image challenge-card-wrapper">
+                    <div class="event-image" style="background-image: url('${author.listingImage}');">
+                        <div class="company-details">
+                            <div class="inline-block company-image" style="background-image: url('${author.companyImage}');"></div>
+                            ${author.companyName}
+                        </div>
+                    </div>
+                    <div class="challenge-content">
+                        <span class="challenge-type">${author.eventType}</span>
+                        <h4 class="challenge-name">${author.title}</h4>
+                        <div class="challenge-list-meta">
+                            <div class="challenge-desc">
+                                ${author.state == 'ongoing' 
+                                ? `<span class="starts-on">Ends in</span>
+                                    <div class="days-count">
+                                        <div class="counter">
+                                            <span>${days}</span><span>:</span><span>${hours}</span><span>:</span><span>${minutes}</span>
+                                        </div>
+                                        <div class="sub-text">
+                                            <span>DAYS</span><span>&nbsp;</span><span>HOURS</span><span>&nbsp;</span><span>MINUTES</span>
+                                        </div>
+                                    </div>` 
+                                : `<span class="starts-on">Starts on</span>
+                                        <span class="start-date">${startDate}</span>` }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="challenge-button">
+                    ${author.state == 'ongoing' 
+                        ? `<a class="startnow" id="ongoing" href="${author.url}">Start Now</a>` 
+                        : `<a class="register" id="upcoming" href="${author.url}">Register</a>` }
+                    </div>
+                </div>
+            </div>
+            `
+            if(data.hackathons.length < 2 ) {
+                const emptyContent = 
+            `
+                <div class="challenge-card slide stay-tuned">
+                    <img src="https://www.hackerearth.com/hewordpress/wp-content/themes/hackerearth-child/assets/images/page-specific/for-developers/stay-tuned.svg" alt="Stay Tuned" />
+                    <h3>Stay Tuned!</h3>
+                    <p>We’ll Soon Be Adding More Exciting Contests.</p>
+                </div>
+            `
+                innerContent += emptyContent; 
+            }
+
+            postsContainer.innerHTML += innerContent;
+
+    console.log(author.title);
+
+    });
+    })
+
+}).catch(er=> console.log(er));
+
+// Fetching Challenges
+const postsContainer2 = document.querySelector('#hiring-challenge');     
+    get_url().then(data => {
+    const url2= data
+    const postsContainer2 = document.querySelector('#hiring-challenge');
+    console.log(url2);
+    fetch(url2)
+    .then((response) => {
+    return response.json();
+    })
+    .then((data) => {
+
+    data.hiringEvents.map(function(author) {
+    var startDate2 = (author.start).split('+')[0]; 
+    startDate2 = moment(startDate2).format('MMM DD, YYYY');  
+    
+    var dateFuture2 = new Date(author.end);
+    var dateNow2 = new Date(); //Todays date
+
+    var seconds2 = Math.floor((dateFuture2 - (dateNow2))/1000);
+    var minutes2 = Math.floor(seconds2/60);
+    var hours2 = Math.floor(minutes2/60);
+    var days2 = Math.floor(hours2/24);
+    hours2 = hours2-(days2*24);
+    hours2 = hours2 < 10 ? '0' + hours2 : hours2;
+    minutes2 = minutes2-(days2*24*60)-(hours2*60);
+    minutes2 = minutes2 < 10 ? '0' + minutes2 : minutes2;
+    seconds2 = seconds2-(days2*24*60*60)-(hours2*60*60)-(minutes2*60);
+
+    console.log("Hiring Events");
+    console.log(data.hiringEvents.length);
+
+    let innerContent2 = 
+            `
+            <div class="challenge-card slide">
+                <div class="challenge-list-image challenge-card-wrapper">
+                    <div class="event-image" style="background-image: url('${author.listingImage}');">
+                        <div class="company-details">
+                            <div class="inline-block company-image" style="background-image: url('${author.companyImage}');"></div>
+                            ${author.companyName}
+                        </div>
+                    </div>
+                    <div class="challenge-content">
+                        <span class="challenge-type">${author.eventType}</span>
+                        <h4 class="challenge-name">`+author.title.replace(/</g, "&lt;").replace(/>/g, "&gt;")+`</h4>
+                        <div class="challenge-list-meta">
+                            <div class="challenge-desc">
+                            ${author.state == 'ongoing' 
+                                ? `<span class="starts-on">Ends in</span>
+                                    <div class="days-count">
+                                        <div class="counter">
+                                            <span>${days2}</span><span>:</span><span>${hours2}</span><span>:</span><span>${minutes2}</span>
+                                        </div>
+                                        <div class="sub-text">
+                                            <span>DAYS</span><span>&nbsp;</span><span>HOURS</span><span>&nbsp;</span><span>MINUTES</span>
+                                        </div>
+                                    </div>` 
+                                : `<span class="starts-on">Starts on</span>
+                                        <span class="start-date">${startDate2}</span>` }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="challenge-button">
+                        ${author.state == 'ongoing' 
+                        ? `<a class="startnow" id="ongoing" href="https://www.hackerearth.com${author.url}">Start Now</a>` 
+                        : `<a class="register" id="upcoming" href="https://www.hackerearth.com${author.url}">Register</a>` }
+                    </div>
+                </div>
+            </div>
+            `
+            if(data.hiringEvents.length < 2 ) {
+                const emptyContent2 = 
+            `
+                <div class="challenge-card slide stay-tuned">
+                    <img src="https://www.hackerearth.com/hewordpress/wp-content/themes/hackerearth-child/assets/images/page-specific/for-developers/stay-tuned.svg" alt="Stay" />
+                    <h3>Stay Tuned!</h3>
+                    <p>We’ll Soon Be Adding More Exciting Contests.</p>
+                </div>
+            `
+                console.log("test");
+                innerContent2 += emptyContent2; 
+            }
+
+            postsContainer2.innerHTML += innerContent2;
+
+    console.log(author.title);
+        });
+    })
+
+}).catch(er=> console.log(er));
+
+
+

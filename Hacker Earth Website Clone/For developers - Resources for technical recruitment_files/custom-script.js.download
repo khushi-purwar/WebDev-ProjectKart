@@ -1,0 +1,81 @@
+// Custom script for header fix on scroll
+jQuery(window).scroll(function () {
+    if (jQuery(this).scrollTop() > 1) {
+        jQuery('.site-header').addClass('fixed');
+    } else {
+        jQuery('.site-header').removeClass('fixed');
+    }
+});
+
+// WoW animate script
+wow = new WOW({ animateClass:'animated',offset:100,callback:function(box) {} });
+wow.init()
+
+// Custom Modal box script
+jQuery(function(){
+
+    var appendthis =  ("<div class='modal-overlay js-modal-close'></div>");
+    
+      jQuery('a[data-modal-id]').click(function(e) {
+        e.preventDefault();
+        jQuery("body").append(appendthis);
+        jQuery("body").addClass("modal-open");
+        jQuery(".modal-overlay").fadeTo(500, 0.7);
+        //jQuery(".js-modalbox").fadeIn(500);
+        var modalBox = jQuery(this).attr('data-modal-id');
+        jQuery('#'+modalBox).fadeIn(jQuery(this).data());
+      });  
+      
+      
+    jQuery(".js-modal-close, .modal-overlay").click(function() {
+      jQuery(".modal-box, .modal-overlay").fadeOut(500, function() {
+        jQuery(".modal-overlay").remove();
+        jQuery("body").removeClass("modal-open")
+      });
+    });
+     
+    // jQuery(window).resize(function() {
+    //   jQuery(".modal-box").css({
+    //     top: (jQuery(window).height() - jQuery(".modal-box").outerHeight()) / 2,
+    //     left: (jQuery(window).width() - jQuery(".modal-box").outerWidth()) / 2
+    //   });
+    // });
+     
+    // jQuery(window).resize();
+     
+});
+
+// Menu Custom JS
+jQuery(document).ready(function (jQuery) {
+
+	jQuery(".main-header-menu-toggle").on("click", function (a) {
+		var that = jQuery(this);
+		jQuery('.mobile-nav').toggleClass('hide show');
+		/* Close/hide the sidenav */
+		jQuery('body').toggleClass("left1-transform").promise().done(function () {
+			if (jQuery('body').hasClass("left1-transform")) {
+				that.addClass("fa-close");
+				that.removeClass("fa-bars");
+				jQuery('#header-secondary').addClass('bg-white');
+				jQuery('.zeynep').zeynep({}).open();
+				jQuery('body').css({overflow: 'hidden',height: 'auto'});
+			} else {
+				that.removeClass("fa-close");
+				that.addClass("fa-bars");
+				jQuery('#header-secondary').removeClass('bg-white');
+				jQuery('.zeynep').zeynep({}).close();
+				jQuery('body').css({overflow: 'auto',height: '100%'});
+			}
+		});
+	});
+
+	jQuery(window).scroll(function () {
+		if (jQuery(this).scrollTop() > 50) {
+			jQuery('body').addClass('header-fixed');
+			jQuery('.header-top').css('top','-50px');
+		} else {
+			jQuery('body').removeClass('header-fixed');
+			jQuery('.header-top').css('top','0px');
+		}
+	});
+});
