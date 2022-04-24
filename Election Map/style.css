@@ -1,0 +1,85 @@
+.page {
+    width: 80%;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #eee;
+  }
+  
+  body {
+    font: 16px/26px 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #454545;
+    margin: 0px;
+    padding: 0px;
+    background-color: #eee;
+  }
+  
+  header {
+    padding: 0.75em 0;
+    text-align: center;
+    font-family: 'Montserrat', serif;
+    font-size: 21px;
+    text-shadow: 1px 1px #ccc;
+  }
+  
+  .map-container {
+    width:800px;
+    margin: 0 auto;
+    position:relative;
+  }
+  
+  #stateResults {
+    width: 25%;
+    font: 12px/16px 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #454545;
+  }
+  
+  #countryResults {
+    width: 95%;
+    font: 16px/28px 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #454545;
+  }
+  #stateResults, #countryResults {
+    border-collapse: collapse;
+    background-color: #f2f2f2;
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(204,204,204,0.5);
+    -moz-box-shadow: 1px 1px 1px 1px rgba(204,204,204,0.5);
+    box-shadow: 1px 1px 1px 1px rgba(204,204,204,0.5);
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  #stateResults th{
+    background-color: #3b3b3b;
+    color: white;
+  }
+  #countryResults th {
+    background-color: #f16059;
+    color: white;
+  }
+  .name-1 {
+    background-color: rgb(132,17,11);
+    color: white;
+  }
+  .name-2 {
+    background-color: rgb(245, 141, 136);
+    color: white;
+  }
+  .winner {
+    background-color: #f16059;
+    color: white;
+  }
+  
+  footer p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  footer span {
+    color: #f16059;
+    padding: 0 5px;
+  }
+  
