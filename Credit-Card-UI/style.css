@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1c1c25;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    bottom: -40%;
+    left: 40%;
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(rgb(4, 21, 250), rgb(238, 6, 18));
+    border-radius: 50%;
+}
+
+section::after {
+    content: '';
+    position: absolute;
+    bottom: 55%;
+    left: 25%;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(rgb(250, 102, 4), rgb(238, 6, 161));
+    border-radius: 50%; 
+}
+
+.card {
+    position: relative;
+    width: 508px;
+    height: 314px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    z-index: 2;
+    
+}
+
+.card .face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(28px);
+    transform-style: preserve-3d;
+    transition: 1s;
+    backface-visibility: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card:hover .face.front {
+    transform: rotateY(180deg);
+}
+
+.card .face.back {
+    transform: rotateY(180deg);
+}
+
+.card:hover .face.back {
+    transform: rotateY(360deg);
+}
+
+.card .face.front::before {
+    content:'';
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.card .face.front::after {
+    content:'';
+    position: absolute;
+    bottom: 40px;
+    right: 80px;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+.card .face.front .debit {
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.card .face.front .bank {
+    position: absolute;
+    right: 40px;
+    top: 25px;
+    color: #fff;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.card .face.front .chip {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    max-width: 64px;
+}
+
+.card .face.front .number {
+    position: absolute;
+    bottom: 130px;
+    left: 40px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 6px;
+    font-size: 18px;
+    text-shadow: 0 2px 1px #0005;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.card .face.front .valid {
+    position: absolute;
+    bottom: 90px;
+    left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1em;
+    text-align: right;
+}
+
+.card .face.front .valid span:last-child {
+    margin-left: 20px;
+    font-size: 16px;font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.card .face.front .card-holder {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.card .face.back .blackbar {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    height: 60px;
+    background: #000;
+}
+
+.card .face.back .cvvtext {
+    position: absolute;
+    top: 120px;
+    left: 30px;
+}
+
+.card .face.back .cvvtext .white-bar {
+    position: relative;
+    width: 400px;
+    height: 40px;
+    background: #fff;
+    margin-top: 5px;
+}
+
+.card .face.back .cvvtext .cvv {
+    position: relative;
+    top: -35px;
+    left: 345px;
+    background: #ccc;
+    color: #111;
+    width: 50px;
+    height: 30px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .face.back .text {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    color: #fff;
+    font-size: 10px;
+    line-height: 1. 4em;
+    font-weight: 300;
+}
