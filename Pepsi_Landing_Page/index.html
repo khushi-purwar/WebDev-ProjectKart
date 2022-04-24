@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi Website Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="sec">
+      <header>
+        <a href="#"><img src="img/logo.png" class="logo" /></a>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <ul class="navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2>That's What<br /><span>I like</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmo, tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis strv ation ullamco laboris nisi u iquicex ea
+            mmo.
+          </p>
+          <a href="#">View All Products</a>
+        </div>
+        <div class="imgBox">
+          <img src="img/pepsi2.png" alt="pepsi" class="pepsi" id="Pepsi" />
+        </div>
+      </div>
+      <ul class="thumb">
+        <li>
+          <img
+            src="img/pepsi.png"
+            alt="thumb"
+            onclick="imgSlider('img/pepsi2.png')"
+          />
+        </li>
+      </ul>
+
+      <ul class="social">
+        <li>
+          <a href="#"
+            ><img
+              src="https://img.icons8.com/ios-filled/50/000000/facebook-f.png"
+              alt="facebook"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="https://img.icons8.com/ios-filled/50/000000/twitter.png"
+              alt="twitter"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="https://img.icons8.com/ios/50/000000/instagram-new--v1.png"
+              alt="instagram"
+          /></a>
+        </li>
+      </ul>
+    </section>
+    
+    <div class='flx'>
+    <div class="scrollbar" id="scroll-style">
+      <div class='h500'></div>
+    </div>
+    </div>
+
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        var image = document.getElementById("Pepsi");
+        if (image.src.match("img/img2.png")) {
+          image.src = "img/pepsi2.png";
+        } else {
+          image.src = "img/img2.png";
+        }
+      }
+
+      function toggleMenu(){
+        const menuToggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation')
+        menuToggle.classList.toggle('active')
+        navigation.classList.toggle('active')
+      }
+    </script>
+  </body>
+</html>
