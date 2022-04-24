@@ -1,0 +1,140 @@
+html,body{
+	height: 100%;
+}
+body{
+	height: 100%;
+	margin: 0;
+	overflow-x: hidden;
+}
+svg:hover, img:hover{
+	cursor: pointer;
+}
+button:focus, button:active, input:focus, input:active{
+	outline: none;
+}
+
+header{
+	font-size: 13px/27px;
+	color: black;
+	width: 100%;
+	border-bottom: 1px solid #DADCE0;
+}
+main{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.header-wrapper{
+	width: 100%;
+	padding: 8px;
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+.logo-wrapper{
+	height: 40px;
+	min-width: 238px;
+	white-space: nowrap;
+}
+.logo-wrapper{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-left: 12px;
+	margin-top: 3px;
+}
+
+.search-input-wrapper{
+	background-color: #F1F3F4;
+	border-radius: 6px;
+	flex: 1 1 100%;
+	height: 48px;
+	white-space: nowrap;
+	display: flex;
+	flex-direction: row;
+	margin-right: 160px;
+}
+.search-input-wrapper > input{
+	background-color: transparent;
+	border: none;
+	padding-left: 10px;
+	width: 100%;
+}
+
+
+.background_changer:hover{
+	background-color: #E3E5E6;
+}
+
+
+.side-nav{
+	display: flex;
+	flex-direction: column;
+	width: 256px;
+	overflow: hidden;
+	font-size: 13px;
+	color: #202124;
+}
+.new-wrapper{
+	width: 100%;
+	padding: 13px 11px 12px;
+}
+.new-wrapper > button{
+	box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+	align-items: center;
+	display: inline-flex;
+	border-radius: 24px;
+	font-weight: 500;
+	height: 48px;
+	line-height: 22px;
+	line-spacing: .15px;
+	width: 120px;
+	padding: 0 24px 0 0;
+	border: none;
+	background-color: #fff;
+	cursor: pointer;
+	flex-direction: row;
+	justify-content: center;
+}
+.new-wrapper > button:hover{
+	background-color: #F8F9FA;
+	transition: 0.3s;
+}
+.side-nav-wrapper{
+	width: 100%;
+}
+.nav-item{
+	color: #202124;
+	margin-right: 15px;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	height: 40px;
+	padding-left: 5px;
+	border-bottom-right-radius: 20px;
+	border-top-right-radius: 20px;
+	color: #5F6368;
+}
+.nav-item:hover{
+	background-color: #F5F5F5;
+	cursor: pointer;
+}
+
+.drive{
+	width: calc(100% - 256px);
+	display: flex;
+	flex-direction: column;
+}
+.drive-header-changer:hover{
+	background-color: #F1F3F4;
+	border-radius: 8px;
+	cursor: pointer;
+}
+.folder:hover{
+	background-color: #E8F0FE;
+	cursor: default;
+}
+.folder > svg{
+	cursor: default;
+}

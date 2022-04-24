@@ -1,0 +1,1 @@
+Temperature Converter Website is a simple one-page website built using HTML, CSS & JavaScript. Here,In this website Users will have to imput the temperature that should be either in Fahrenheit or in Celsius. And then press a "CONVERT" button. After that the converted temperature will then be displayed with the correct unit.

@@ -1,7 +1,6 @@
 
-
-I have created a website of Dance Academy of cool frontend with the help of PUG,CSS,JavaScript,NodeJs.
-You can go checkout the contact page of the website and submit a form to get started with the training and learn dance of any kind from the best mentors.
+<p>I create a website of Dance Academy of cool frontend with the help of PUG,CSS,JavaScript,NodeJs.
+You can go to contact page and can submit a form where you can start getting training for learning dance of any type from best mentors.</p>
 
 <div id="top"></div>
 
@@ -33,6 +32,7 @@ You can go checkout the contact page of the website and submit a form to get sta
 <div align="center">
   
   <img src="https://github.com/khushi-purwar/Web-Dev-ProjectKart/blob/master/thumbnail.png" width="770" height="400" />
+
   
   </div>
 
@@ -303,44 +303,8 @@ Or you can create an  <a href="https://github.com/khushi-purwar/Web-Dev-ProjectK
 
 ### Show some ❤️ by starring this fabulous repository!
 
+
 </div>
-  
-  
-<div id="Bottom"></div>
-
-
-<div id="top"></div>
-
-<h1 align="center"> WebDev ProjectKart 💻 </h1>
-
-
-
-<!-- ---------------------------------------------------------------------------------------------------------------------- -->
-
-<div align="center">
-
-![Contributors](https://img.shields.io/github/contributors/khushi-purwar/WebDev-ProjectKart?style=for-the-badge)
-  ![Forks](https://img.shields.io/github/forks/khushi-purwar/WebDev-ProjectKart?style=for-the-badge)
-![Stars](https://img.shields.io/github/stars/khushi-purwar/WebDev-ProjectKart?style=for-the-badge)
-![License](https://img.shields.io/github/license/khushi-purwar/WebDev-ProjectKart?style=for-the-badge)
-![PRs-Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)  
-
-![](https://img.shields.io/github/issues-raw/khushi-purwar/WebDev-ProjectKart?color=orange&style=for-the-badge)
-![](https://img.shields.io/github/issues-closed/khushi-purwar/WebDev-ProjectKart?style=for-the-badge)
-![](https://img.shields.io/github/issues-pr/khushi-purwar/WebDev-ProjectKart?style=for-the-badge)
-![](https://img.shields.io/github/issues-pr-closed-raw/khushi-purwar/WebDev-ProjectKart?style=for-the-badge)
-  
-</div>
-
-
-
-<!-- ---------------------------------------------------------------------------------------------------------------------- -->
-
-<div align="center">
-  
-  <img src="https://github.com/khushi-purwar/Web-Dev-ProjectKart/blob/master/thumbnail.png" width="770" height="400" />
-  
-  </div>
 
 <br>
 
@@ -396,7 +360,6 @@ Or you can create an  <a href="https://github.com/khushi-purwar/Web-Dev-ProjectK
 <br>
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
 <div id="Structure"></div>
 
@@ -412,7 +375,6 @@ Or you can create an  <a href="https://github.com/khushi-purwar/Web-Dev-ProjectK
 <p align="right"><a href="#top"><img src="https://img.shields.io/badge/-Back%20to%20Top-blueviolet?style=for-the-badge" /></a></p>
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
 <div id="Programs"></div>
 
@@ -431,13 +393,13 @@ Or you can create an  <a href="https://github.com/khushi-purwar/Web-Dev-ProjectK
 </tbody></table>
 
  </div>
+
+### Demo <a href="https://www.youtube.com/watch?v=iqqyObCkP-Q&ab_channel=KHUSHIPURWAR" style="text-decoration:none;">🎥</a>
  
 <br>
 
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-
 <div id="Projects"></div>
 
 ## Available Projects :
@@ -479,16 +441,8 @@ Or you can create an  <a href="https://github.com/khushi-purwar/Web-Dev-ProjectK
 | 90. | [music_player](https://github.com/khushi-purwar/WebDev-ProjectKart/tree/master/music_player) | 91. | [ping-pong game](https://github.com/khushi-purwar/WebDev-ProjectKart/tree/master/ping-pong%20game) | 92. | [rock-paper-scissor-game](https://github.com/khushi-purwar/WebDev-ProjectKart/tree/master/rock-paper-scissor-game) 
 | 90. | [whack a mole game](https://github.com/khushi-purwar/WebDev-ProjectKart/tree/master/whack%20a%20mole%20game) | 93. | [Colorful Rain Effect](https://github.com/rajprem4214/WebDev-ProjectKart/tree/rain/Colorful_Rain_Effect) | 94. | [Parallex Web Design](https://github.com/rajprem4214/WebDev-ProjectKart/tree/para/Parallex-Web-Design) 
 | 95. | [Claymorphism Effect Form](https://github.com/rajprem4214/WebDev-ProjectKart/tree/clay/Claymorphism-Effect) | 96. | [Wikipedia Clone](https://kumar-laxmi.github.io/Wikipedia-Clone/) | 97. | [Mobile Number Validator](https://github.com/rajprem4214/WebDev-ProjectKart/tree/mobile/Mobile-Number-Validator)
-| 98. | [Wordle Clone](./Wordle%20Clone) |
-| 99. | [Roman Numeral Converter](https://github.com/rajprem4214/WebDev-ProjectKart/tree/roman/Romman-Numeral-Converter) 
-
-| 98. | [Pomodoro Clock](https://github.com/rajprem4214/WebDev-ProjectKart/tree/pomo/Pomodoro-Clock)
-
-| 98. | [Magic 8 Ball](https://github.com/rajprem4214/WebDev-ProjectKart/tree/ball/Magic-8-Ball)
-
-| 100. | [Inovative login Form](https://ajoe12.github.io/Login_Page/#) 
-
-
+| 98. | [Pomodoro Clock](https://github.com/rajprem4214/WebDev-ProjectKart/tree/pomo/Pomodoro-Clock)| 99. | [Roman Numeral Converter](https://github.com/rajprem4214/WebDev-ProjectKart/tree/roman/Romman-Numeral-Converter)| 100. | [Magic 8 Ball](https://github.com/rajprem4214/WebDev-ProjectKart/tree/ball/Magic-8-Ball)
+| 101. | [Inovative login Form](https://ajoe12.github.io/Login_Page/#)
 
 
 <br>
@@ -496,7 +450,6 @@ Or you can create an  <a href="https://github.com/khushi-purwar/Web-Dev-ProjectK
 <p align="right"><a href="#top"><img src="https://img.shields.io/badge/-Back%20to%20Top-blueviolet?style=for-the-badge" /></a></p>
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
 <div id="Guidelines"></div>
 
@@ -566,8 +519,8 @@ git push -u origin <your_branch_name>
 
 <br>
 
+
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
 <div id="Contributors"></div>
 
@@ -581,8 +534,9 @@ git push -u origin <your_branch_name>
 
 Thanks to all the **people who contribute** 💜
 
-![Contributors](https://contributors-img.web.app/image?repo=khushi-purwar/Web-Dev-ProjectKart)
-
+<a href="https://github.com/khushi-purwar/WebDev-ProjectKart/graphs/contributors" title="Contributors">
+<img src="https://contrib.rocks/image?repo=khushi-purwar/WebDev-ProjectKart" />
+</a>
 
 
 <br>
@@ -590,7 +544,7 @@ Thanks to all the **people who contribute** 💜
 <p align="right"><a href="#top"><img src="https://img.shields.io/badge/-Back%20to%20Top-blueviolet?style=for-the-badge" /></a></p>
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
 
 <div id="Feedback"></div>
 
@@ -612,7 +566,3 @@ Or you can create a  <a href="https://github.com/khushi-purwar/Web-Dev-ProjectKa
 ### Show some ❤️ by starring this awesome Repository!
 
 </div>
-  
-  
-<div id="Bottom"></div>
-

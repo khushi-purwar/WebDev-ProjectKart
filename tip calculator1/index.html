@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Domine&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <img id="logo" src="./images/logo.svg" alt="logo">
+  <button onclick="getclick()" id="toggle">Toggle mode</button>
+  <div class="main">
+    <div class="card1">
+      <div class="ask">Bill</div>
+      <div class="input-contd">
+        <input type="text" id="input-el" placeholder="0" onfocus='this.value=""'>
+      </div>
+      <div class="ask">Select Tip %</div>
+      <div id="buttons">
+        <button id="tip1" onclick="tip1()">5%</button>
+        <button id="tip2" onclick="tip2()">10%</button>
+        <button id="tip3" onclick="tip3()">15%</button>
+        <button id="tip4" onclick="tip4()">25%</button>
+        <button id="tip5" onclick="tip5()">50%</button>
+        <input type="text" name="CUSTOM" id="custom" placeholder="Custom" onfocus='this.value=""'>
+      </div>
+      <div class="ask">Number of People</div>
+      <div class="input-contdp">
+        <input type="text" id="elp" placeholder="0" required onfocus='this.value=""'>
+      </div>
+    </div>
+    <div class="card2">
+      <div class="card22">
+        <span>Tip Amount</span>
+        <span id="output-el">$</span>
+        <div class="per">/person</div>
+        <span>Total</span>
+        <span id="amount-el">$</span>
+        <div class="per">/person</div>
+        <div id="res">
+          <button id="reset-btn" onclick="calcf()">CALCULATE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
