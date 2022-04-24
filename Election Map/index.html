@@ -1,0 +1,48 @@
+<html>
+<head>
+  <title>ELECTION MAP</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script type="text/javascript" src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/map.js"></script>
+
+</head>
+
+<body onload="onLoad();" >
+<div class="page">
+  <header>
+    <h1>ELECTION MAP</h1>
+  </header>
+
+  <div class="map-container">
+
+    <canvas id="map_canvas" width="800" height="550" style="position:relative;">
+    </canvas>
+
+    <table id='stateResults' style="position:absolute; bottom:10px; right:10px;">
+      <theader>
+        <tr><th>STATE NAME</th><th>Abbreviation</th></tr>
+      </theader>
+      <tbody>
+        <tr><td class="name-1">NAME1</td><td class="name-1">RESULTS1</td></tr>
+        <tr><td class="name-2">NAME2</td><td class="name-2">RESULTS2</td></tr>
+        <tr><td class="winner">WINNER:</td><td class="winner">WINNER NAME</td></tr>
+      </tbody>
+    </table>
+
+    <table id='countryResults' style="position:absolute; top:10px; left:10px;">
+      <tbody>
+        <tr><td class="name-1">NAME1</td><td class="name-1">RESULTS1</td><td class="name-2">NAME2</td><td class="name-2">RESULTS2</td><th>WINNER</th><th>Name</th></tr>
+      </tbody>
+    </table>
+
+  </div>
+  <br clear="all">
+
+
+  <script type="text/javascript" src="script.js"></script>
+</div>
+</body>
+</html>
