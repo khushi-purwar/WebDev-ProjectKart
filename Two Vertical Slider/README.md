@@ -29,8 +29,8 @@ Slide the two different parts of the webpage content at the same time
 
 ## 📷 Screenshots
 
-![ss1]()
-![ss2]()
+![ss1](./img/sc.1.jpeg)
+![ss2](./img/sc.2.jpeg)
 
 ## ‎‍💻 Authors
 
