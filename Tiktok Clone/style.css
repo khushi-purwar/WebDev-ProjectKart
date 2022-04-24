@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image:linear-gradient(to right,rgb(26, 25, 25),rgb(144, 26, 144));
+}
+.wrapper {
+  width: 100%;
+  max-width: 500px;
+  padding: 30px 30px;
+  background: #111112;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 15px 15px 15px 0 solid black;
+}
+.wrapper .content{
+    z-index: 999;
+    position: relative;
+    color: #fff;
+}
+.wrapper .content .tabs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.wrapper .content .tabs-banner{
+    color: #fff;
+}
+.wrapper .content .tabs .tab{
+    color: #fff;
+    font-size: 1.1em;
+    user-select: none;
+    cursor: pointer;
+}
+.wrapper .content .tabs .tab.active{
+    font-weight: 500;
+}
+.wrapper .content .tabs .tab#following{
+    position: relative;
+}
+.wrapper .content .tabs .tab#following::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 80px;
+    width: 10px;
+    height: 10px;
+    background: #FF0544;
+    border-radius: 50%;
+}
+.wrapper .content .tabs .tab#following::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 150px;
+    width: 2px;
+    height: 25px;
+    background: #bfbfbf;
+}
+.wrapper .content .video-block{
+    margin: 50px 0;
+}
+.wrapper .content .video-lab video{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.wrapper .content .left-controls{
+    position: absolute;
+    right: 0px;
+    top: 82px;
+}
+.wrapper .content .left-controls .ctrl .img img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.wrapper .content .left-controls .ctrl .img{
+    position: relative;
+    right: 6px;
+    top: 10px;
+    cursor: pointer;
+}
+.wrapper .content .left-controls .ctrl .img::before{
+    content: '+';
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    width: 18px;
+    height: 18px;
+    background: #FF0544;
+    border-radius: 50%;
+    font-size: 0.9em;
+    text-align: center;
+    line-height: 18px;
+}
+.wrapper .content .left-controls .ctrl i{
+    color: #fff;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    position: relative;
+    top: 20px;
+    cursor: pointer;
+}
+.wrapper .content .d1{
+    width: 113%;
+    margin-left: -29px;
+    background: #16171B;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    padding: 20px 20px;
+    border-radius: 20px;
+}
+.wrapper .content .d1 .bottom-controls .ctrl-2 .name,
+.wrapper .content .d1 .bottom-controls .ctrl-2 span{
+    font-size: 0.9em;
+}
+.wrapper .content .d1 .bottom-controls .ctrl-2 span{
+    color: #24eff2;
+}
+
+.wrapper .content .d1 .bottom-controls .ctrl-2 .title{
+    font-size: 0.9em;
+}
+.wrapper .content .d1 .bottom-controls .bottom .music-content{
+    font-size: 0.9em;
+}
+.wrapper .content .d1 .bottom-controls .btm-tabs .tab-btn{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.wrapper .content .d1 .bottom-controls .btm-tabs{
+    margin-top: 20px;
+    width: 100%;
+    border-top: 2px solid #f0f0f0;
+}
+.wrapper .content .d1 .bottom-controls .btm-tabs .tab-btn i{
+    font-size: 2em;
+    cursor: pointer;
+}
+.wrapper .content .d1 .bottom-controls .btm-tabs .tab-btn .tab-add{
+    border: 2px solid #24eff2;
+    border-radius: 50%;
+    width: 43px;
+    height: 43px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.wrapper .content .c5:hover .left-controls{
+    z-index: 999;
+}
+.wrapper .content .d1 .bottom-controls .btm-tabs .tab-btn .tab-add::before{
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #24eff2;
+    border-radius: 50%;
+    opacity: 0;
+}
+.wrapper .content .d1 .bottom-controls .btm-tabs .tab-btn .tab-add:hover::before{
+    animation: blinking 0.9s linear;
+}
+@keyframes blinking {
+    60%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.wrapper .content .d1 .bottom-controls .btm-tabs .tab-btn .tab-add i{
+    font-size: 2.3em;
+    text-align: center;
+    line-height: 43px;
+    cursor: pointer;
+}
+.wrapper .prev_next{
+    color: #fff;
+}
+.wrapper .prev_next .btn{
+    display: flex;
+    align-items: center;
+}
+.wrapper .prev_next .btn .prev{
+    position: absolute;
+    top: 40%;
+    left: 40px;
+    z-index: 999;
+    font-size: 2em;
+    color: #f0f0f0;
+    cursor: pointer;
+}
+.wrapper .prev_next .btn .next{
+    position: absolute;
+    top: 40%;
+    right: 58px;
+    z-index: 999;
+    font-size: 2em;
+    color: #f0f0f0;
+    cursor: pointer;
+}
+
+.play_pause{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    font-size: 6em;
+}
+.play_pause.show{
+    opacity: 1;
+    pointer-events: none;
+}
+.wrapper .content .left-controls .ctrl .img.followed::before{
+    content: '✓';
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    width: 18px;
+    height: 18px;
+    background: #FF0544;
+    border-radius: 50%;
+    font-size: 0.9em;
+    text-align: center;
+    line-height: 18px;
+}
+.wrapper .content .left-controls .ctrl .img.fade::before{
+    animation: fade 0.9s linear;
+    opacity: 0;
+}
+@keyframes fade {
+    50%{
+        opacity: 0.5;
+    }
+    70%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 0;
+    }
+}
