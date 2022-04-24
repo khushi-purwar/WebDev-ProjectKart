@@ -2,7 +2,7 @@ function reset(){
     document.getElementById("value1").value = 0;
     document.getElementById("value2").value = 0;
     document.getElementById("value3").value = 0;
-    
+    // 
     document.getElementById("monthly-interest").innerHTML =" RS/- " +0;
     document.getElementById("monthly-payment").innerHTML ="RS/-" +0;
     document.getElementById("total-repayment").innerHTML ="RS/- " +0;
