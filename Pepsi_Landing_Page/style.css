@@ -278,7 +278,7 @@ header ul li a {
   }
 
   .content .textBox h2 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   .content .textBox a {
@@ -297,6 +297,6 @@ header ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50em;
+    width: 22em;
   }
 }
