@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+/* body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Righteous", cursive;
+  min-height: 100vh;
+  background-color: #a9c9ff;
+  background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+} */
+
+.containerCard {
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 35px;
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 1000px;
+  box-shadow: 0 0 0;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background: #2a2d3e;
+  border-radius: 15px;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+}
+
+.face {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.face1 {
+  box-sizing: border-box;
+  padding: 20px;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.java {
+  background-color: #ff4a35;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.python {
+  background-color: #ff4a35;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cSharp {
+  background-color: #ff4a35;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.face2 {
+  transition: 0.5s;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 10em;
+  color: #fff;
+  transition: 0.5s;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.card:hover .face.face2 {
+  height: 60px;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.card:nth-child(1) .face.face2 {
+  background-image: linear-gradient(
+    40deg,
+    #f7a50c 0%,
+    #f75a33 45%,
+    #ec9f60 100%
+  );
+  border-radius: 15px;
+}
+
+.card:nth-child(2) .face.face2 {
+  background-image: linear-gradient(
+    40deg,
+    #dfa65d 0%,
+    #ee6f1b 45%,
+    #e9395f 100%
+  );
+  border-radius: 15px;
+}
+
+.card:nth-child(3) .face.face2 {
+  background-image: linear-gradient(
+    40deg,
+    #f12d47 0%,
+    #f38647 45%,
+    #e2661f 100%
+  );
+  border-radius: 15px;
+}
