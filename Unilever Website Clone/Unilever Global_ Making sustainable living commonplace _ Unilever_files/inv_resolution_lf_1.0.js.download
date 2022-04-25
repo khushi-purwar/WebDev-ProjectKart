@@ -1,0 +1,71 @@
+function GetVisitorDetails(uId,acId,lfTrackerId,stId){
+	
+var lfUrl = "https://sc.lfeeder.com/lftracker_" + lfTrackerId + ".js";
+
+<!-- Visitor Insights Script  -->
+function VisitorDetailsPush(uId,stId) {	
+            var gaValue = ga.getAll();
+            var ga_arr = gaValue[0];
+            var ga_clientId = ga_arr.get('clientId');
+            var url = "https://judxu4avx2.execute-api.eu-west-1.amazonaws.com/Prod/api/VisitorPush";
+			url += "?gid=" + ga_clientId + "&uid=" + uId + "&sid=" + stId;
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", url);
+            xhr.setRequestHeader("Content-Type", "text/plain");
+            xhr.send();
+            xhr.onload = function (event) { }
+            xhr.onerror = function (e) { }
+}
+VisitorDetailsPush(uId,stId);
+
+function GetVisitorDetailsByLF(lfClientId,uId,acId,stId) {
+            var data = localStorage.getItem('INV_ID');
+            var gaValue = ga.getAll();
+            var ga_arr = gaValue[0];
+            var ga_clientId = ga_arr.get('clientId');
+            var url = "https://3lz1gykyyd.execute-api.eu-west-1.amazonaws.com/Prod/api/Visitor";
+			url += "?ga=" + ga_clientId + "&UID=" + uId + "&accountId=" + acId + "&startIndex=" + stId
+            + "&LFAId=" + lfClientId;
+            if (data) {
+               url += "&encryptedData=" + data;
+            }
+            
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", url);
+            xhr.setRequestHeader("Content-Type", "text/plain");
+            xhr.send();
+            xhr.onload = function (event) {
+                if (event && event.target && event.target.responseText != null) {
+                    var response = JSON.parse(event.target.responseText);
+                    if (response != null) {
+                        if (data != response.EncryptedData) {
+                            localStorage.setItem('INV_ID', response.EncryptedData);
+                        }
+                    }
+                }
+            }
+
+            xhr.onerror = function (e) { }
+}
+
+<!-- LeadFeeder Script Callback  -->
+document.addEventListener('ldfdr.trackerReady', function(event) { 
+  GetVisitorDetailsByLF(event.tracker.getClientId(),uId,acId,stId);
+});
+
+<!-- LeadFeeder Script  -->
+  (function(){
+    window.ldfdr = window.ldfdr || {};
+    (function(d, s, ss, fs){
+      fs = d.getElementsByTagName(s)[0];
+
+      function ce(src){
+        var cs  = d.createElement(s);
+        cs.src = src;
+        setTimeout(function(){fs.parentNode.insertBefore(cs,fs)}, 1);
+      }
+      ce(ss);
+    })(document, 'script', lfUrl);
+  })();
+  
+}
