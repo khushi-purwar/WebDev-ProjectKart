@@ -1,0 +1,128 @@
+
+#border{
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+body{
+  
+background-image: linear-gradient(to right, rgb(93, 93, 159),rgb(20, 3, 45));
+
+}
+   
+   #emi-calculation{
+     width: 500px;
+     height: 300px;
+     border: 2px solid rgb(193, 214, 231);
+     box-shadow: 2px 5px 5px gray;
+     border-radius: 9px;
+      background-color: #221c1c;
+      margin-top: 60px;
+      font-family: cursive;
+      color: aliceblue;
+      margin-bottom: 30px;
+   }
+   #title{
+     font-size: 30px;
+     font-family: verdana;
+     color: rgb(173, 197, 217);
+     text-align: center;
+     text-decoration: underline;font-family: cursive;
+   }
+   
+   #emi-output{
+    
+     width: 500px;
+     height: 300px;
+     border: 2px solid rgb(171, 200, 224);
+     box-shadow: 2px 5px 5px 5px gray;
+     border-radius: 5px;
+     margin-top: 10px;
+     color: aliceblue;
+      background-color: #04181a;
+   }
+   
+   .section{
+     margin-left: 10px;
+     font-size: 20px;
+     padding: 10px;
+     font-family: verdana;
+   }
+   .result{
+     margin-top: 20px;
+     margin-left: 10px;
+     font-size: 20px;
+     padding: 5px;
+     font-family: verdana;
+   }
+   
+   .input{
+     float: right;
+     height: 25px;
+     margin-right: 10px;
+     font-weight: bold;
+     border-radius: 10px;
+   box-shadow: 2px 2px 2px 2px rgb(223, 131, 131);
+
+   }
+   
+    #calc,#reset{
+     width: 200px;
+     height: 35px;
+     font-size: 20px;
+     font-weight: bold;
+     background-color: rgb(79, 147, 203);
+     box-shadow: 2px 5px 5px rgb(32, 159, 138); 
+     border-radius: 5px;
+   }
+   #calc:hover{
+     cursor: pointer;
+     background-color: rgb(21, 62, 128);
+   }
+   .submit{
+     text-align: center;
+     margin-top: 20px;
+   }
+   #reset{
+     background-color: rgb(172, 135, 64);
+   }
+
+   #reset:hover{
+     cursor: pointer;
+     background-color: #644b4b;
+   }
+   
+   @media screen and (max-width: 500px){
+     #border{
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       margin-left: 5px;
+       margin-right: 5px;
+     }
+     .label,.result{
+       font-size: 10px;
+     }
+     #title{
+       font-size: 20px;
+     }
+     #emi-calculation{
+       max-width: 100%;
+     }
+     #emi-output{
+       width: 100%;
+       margin-left: 5px;
+       margin-right: 5px;
+      border-radius: 5px;
+     }
+     .section{
+       font-size: 16px;
+     }
+     .input{
+       width: 100px;
+     }
+     #calc, #reset{
+       width: 100px;
+     }
+     
+   }

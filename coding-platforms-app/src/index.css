@@ -1,0 +1,56 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    background-color: #bdcebe;
+}
+
+.card {
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 8px 8px 7px rgb(115, 140, 141);
+}
+
+.main_heading {
+    font-family: 'Patua One', cursive;
+    font-size: 60px;
+    text-align: center;
+    margin: auto;
+    padding: 80px;
+    color: #354a77;
+    text-shadow: 2px 2px 5px rgb(96, 96, 100);
+}
+
+.heading {
+    font-family: 'Patua One', cursive;
+    margin: auto;
+    background: #ffffff;
+    color: #eca1a6;
+    text-shadow: 2px 2px 6px rgba(94, 88, 88, 0.411);
+}
+
+.image {
+    width: 250px;
+    height: 250;
+    background: #ffffff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card > a {
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #eca1a6;
+    box-shadow: 2px 2px 5px  #5c575a;
+    margin-bottom: 10px;
+}
+
+.btn {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 5px #5c575a;
+    font-size: 20px;
+}
