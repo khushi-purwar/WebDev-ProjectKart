@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  
+  <header>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <header>
+        <link rel="stylesheet" href="style.css">
+      <body>
+      <div id="border">   
+        
+        <div id="emi-calculation">   
+          
+          <p id="title"><strong>EMI CALCULATOR<strong></p> 
+            
+            <div class="section">        
+              <label id="loanamount" class="label">Loan Amount:(RS/-)</label>
+              <input type="number" class="input" id="value1" placeholder="Enter Loan amount..."></input>
+            </div>                      
+            
+            <div class="section">  
+               <label id="interestrate" class="label">Interest Rate:(%)</label>
+              <input type="number" class="input" id="value2" placeholder="Enter IR/ Year..."></input>
+            </div>             
+            
+            <div class="section"> 
+               <label id="loanduration" class="label">Loan Duration(Months):</label>
+              <input type="number" class="input" id="value3" placeholder="Enter loan duration...."></input>
+            </div>  
+        
+       
+     
+      <div class="submit">         
+     <button type="submit" id="calc" onclick="calculation()">Calculate</button>
+      </div>                        
+      
+        </div>  
+        
+        <div id="emi-output">
+          <div class="result">Monthly Interest: <span id="monthly-interest"></span>
+          </div>
+          <div class="result">Monthly Installment: <span id="monthly-payment"></span>
+          </div>
+          <div class="result">Total Repaid Amount: <span id="total-repayment"></span>
+          </div>
+          <div class="result">Total Interest Cost: <span id="total-interest"></span>
+          </div>
+          
+        <div class="submit">           
+     <button type="submit" id="reset" onclick="reset()">Reset</button>
+      </div>                        
+          
+        </div>
+      
+      </div>
+      <script src="script.js"></script>
+    </body>
+</html>
