@@ -9,3 +9,8 @@ It's just a UI of KFC Clone
 
 ## Screenshots
 
+![Screenshot (898)](https://user-images.githubusercontent.com/73753957/165344816-0a8ebae9-214e-4f84-900e-cae70a02af25.png)
+
+![Screenshot (899)](https://user-images.githubusercontent.com/73753957/165344868-af0b3a45-a25a-4fba-bd02-2262ee66a553.png)
+
+![Screenshot (900)](https://user-images.githubusercontent.com/73753957/165344939-91d37192-534a-4ebe-932e-fd2e79a39a05.png)
