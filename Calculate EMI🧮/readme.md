@@ -15,6 +15,8 @@ It's a EMI calculator which is made using HTML,CSS,JS . Here are 3 options -->
 > HTML5,CSS3,JAVASCRIPT
 
 ## Screenshot:
+![image](https://user-images.githubusercontent.com/77873383/165212280-b990cbec-acf0-4ada-bdf6-f59cabefb32e.png)
 
 
 ## Demo:
+https://user-images.githubusercontent.com/77873383/164891388-74ac890e-2275-4f1f-9a51-d951eab22198.mp4
