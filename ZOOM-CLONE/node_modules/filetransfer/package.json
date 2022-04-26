@@ -1,0 +1,29 @@
+{
+  "name": "filetransfer",
+  "description": "file sender and receiver via webrtc datachannels",
+  "version": "2.0.5",
+  "author": "Philipp Hancke <fippo@andyet.net>",
+  "dependencies": {
+    "async": "^0.9.0",
+    "iana-hashes": "^1.0.0",
+    "wildemitter": "1.x"
+  },
+  "devDependencies": {
+    "browserify": "3.x",
+    "precommit-hook": "^1.0.0"
+  },
+  "homepage": "https://github.com/simplewebrtc/filetransfer",
+  "keywords": [
+    "webrtc",
+    "simplewebrtc",
+    "filetransfer",
+    "datachannels"
+  ],
+  "license": "MIT",
+  "main": "filetransfer.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simplewebrtc/filetransfer.git"
+  },
+  "scripts": {}
+}

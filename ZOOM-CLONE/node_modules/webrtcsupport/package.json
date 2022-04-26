@@ -1,0 +1,21 @@
+{
+  "name": "webrtcsupport",
+  "description": "Browser module to detect support for webrtc and extract proper constructors.",
+  "version": "2.2.0",
+  "author": "Henrik Joreteg <henrik@andyet.net>",
+  "browser": "index-browser.js",
+  "devDependencies": {
+    "browserify": "2.22.0",
+    "precommit-hook": "0.3.x"
+  },
+  "keywords": [
+    "browser",
+    "WebRTC"
+  ],
+  "license": "MIT",
+  "main": "index-node.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HenrikJoreteg/webrtcsupport"
+  }
+}

@@ -1,0 +1,45 @@
+filter_secrets: false
+language: node_js
+node_js:
+  - 7
+
+addons:
+  apt:
+    packages:
+      - pulseaudio
+
+env:
+  global:
+    - DBUS_SESSION_BUS_ADDRESS=/dev/null
+    - DISPLAY=:99.0
+
+matrix:
+  include:
+    - os: linux
+      env: BROWSER=chrome BVER=stable
+
+    - os: linux
+      env: BROWSER=chrome BVER=beta
+
+    - os: linux
+      env: BROWSER=firefox BVER=stable
+
+    - os: linux
+      env: BROWSER=firefox BVER=beta
+
+before_script:
+  - |
+    set -e
+    cd node_modules/travis-multirunner
+    BROWSER=chrome ./setup.sh
+    BROWSER=firefox ./setup.sh
+    export CHROME_BIN=$(pwd)/browsers/bin/chrome-$BVER
+    export FIREFOX_BIN=$(pwd)/browsers/bin/firefox-$BVER
+    cd ../..
+    if [ "${TRAVIS_OS_NAME}" == 'linux' ]; then
+      sh -e /etc/init.d/xvfb start
+      pulseaudio --start
+    fi
+script:
+  - npm run lint
+  - npm run test-travis

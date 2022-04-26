@@ -1,0 +1,20 @@
+{
+  "name": "mockconsole",
+  "version": "0.0.1",
+  "description": "An object with all the same methods as console in the browser. But does nothing.",
+  "main": "mockconsole.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HenrikJoreteg/mockconsole"
+  },
+  "keywords": [
+    "browser",
+    "console",
+    "logging"
+  ],
+  "author": "Henrik Joreteg <henrik@andyet.net>",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "2.x"
+  }
+}

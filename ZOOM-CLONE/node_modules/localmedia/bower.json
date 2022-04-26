@@ -1,0 +1,25 @@
+{
+  "name": "localmedia",
+  "description": "WebRTC abstraction for managing local media streams.",
+  "main": "index.js",
+  "authors": [
+    "Fippo Hanke <fippo@goodaadvicepages.net> Xander Dumaine <xander.dumaine@inin.com> Lance Stout <lance@lancestout.com"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "webrtc",
+    "browser"
+  ],
+  "homepage": "https://github.com/otalk/localmedia",
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

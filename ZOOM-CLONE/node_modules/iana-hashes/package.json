@@ -1,0 +1,36 @@
+{
+  "name": "iana-hashes",
+  "description": "Use the IANA registered hash names with node crypto",
+  "version": "1.1.0",
+  "author": "Lance Stout <lancestout@gmail.com>",
+  "browser": {
+    "./lib/get-hashes.js": "./lib/get-hashes-browser.js"
+  },
+  "bugs": {
+    "url": "https://github.com/legastero/iana-hashes/issues"
+  },
+  "dependencies": {
+    "create-hash": "^1.1.0",
+    "create-hmac": "^1.1.3",
+    "randombytes": "^2.0.6"
+  },
+  "devDependencies": {
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.2"
+  },
+  "homepage": "https://github.com/legastero/iana-hashes",
+  "keywords": [
+    "IANA",
+    "hash"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/legastero/iana-hashes.git"
+  },
+  "scripts": {
+    "test": "node test/index.js | tap-spec"
+  }
+}

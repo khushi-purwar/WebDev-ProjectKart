@@ -1,0 +1,28 @@
+{
+  "author": "Yuku Takahashi <taka84u9@gmail.com>",
+  "name": "jquery-textcomplete",
+  "main": "dist/jquery.textcomplete",
+  "version": "1.8.5",
+  "homepage": "http://yuku-t.com/jquery-textcomplete",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yuku-t/jquery-textcomplete.git"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "zepto-plugin"
+  ],
+  "bugs": {
+    "url": "https://github.com/yuku-t/jquery-textcomplete/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-concat": "~0.5.0",
+    "grunt-contrib-connect": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-write-bower-json": "~0.0.1"
+  }
+}
