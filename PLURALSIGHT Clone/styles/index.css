@@ -1,0 +1,1037 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#home_container {
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid black; */
+}
+#first_conatainer {
+  /* height: 700px; */
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 100px 0px 0px;
+  padding-top: 100px;
+  color: rgb(238, 238, 238);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 0%;
+  min-height: 0px;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  padding-bottom: 0px;
+  background-image: url("https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022/hero-illustration.png");
+}
+#first_conatainer_box {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  /* border: 2px solid red; */
+  margin-top: 40px;
+  /* height: 100%; */
+  /* border: 2px solid rgb(0, 255, 170); */
+}
+#first_container_content {
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 900px;
+  margin: 0px;
+  padding: 0px 15px;
+  min-height: 1px;
+  /* border: 2px solid rgb(255, 21, 0); */
+  margin: auto;
+}
+
+/* Rotating fonts */
+
+*,
+* #rotating_div:before,
+* #rotating_div:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#rotating_div {
+  /* border: 2px solid rgb(0, 119, 255); */
+
+  box-sizing: border-box;
+  margin: 45px 0px;
+  text-rendering: optimizelegibility;
+  font-size: 56px;
+  color: rgb(255, 255, 255);
+  text-transform: none;
+  font-family: "Ramabhadra", sans-serif;
+  letter-spacing: 2.2px;
+  box-sizing: content-box;
+  height: 70px;
+  display: flex;
+  border-radius: 8px;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
+  width: 74%;
+  margin: auto;
+  padding: 0px;
+  line-height: 68px;
+  margin-bottom: 45px;
+  margin-top: 85px;
+  font-weight: 700;
+}
+.words {
+  overflow: hidden;
+  /* height:100%; */
+}
+
+.words > span {
+  display: block;
+  height: 100%;
+  padding-left: 10px;
+  animation: spin_words 6s infinite;
+}
+@keyframes spin_words {
+  10% {
+    transform: translateY(-112%);
+  }
+  25% {
+    transform: translateY(-100%);
+  }
+  35% {
+    transform: translateY(-212%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  60% {
+    transform: translateY(-312%);
+  }
+  75% {
+    transform: translateY(-300%);
+  }
+  85% {
+    transform: translateY(-412%);
+  }
+  100% {
+    transform: translateY(-400%);
+  }
+}
+.subheading {
+  box-sizing: border-box;
+  margin: 0px 0px 20px;
+  padding: 0px;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 17px;
+  font-weight: 350;
+  line-height: 23.8px;
+  margin-bottom: 20px;
+  text-rendering: optimizelegibility;
+  color: rgb(238, 238, 238);
+  text-align: center;
+}
+#buttonDiv {
+  box-sizing: border-box;
+  margin: 0px;
+  max-width: 900px;
+  width: 870px;
+  padding: 0px;
+  /* border: 2px solid white; */
+  /* height: 100px; */
+}
+#viewPlansDIv {
+  box-sizing: border-box;
+  padding-left: 50px;
+  padding-right: 5px;
+  width: 435px;
+  float: left;
+  margin: 0px;
+  padding: 0px 5px 0px 50px;
+  min-height: 1px;
+  /* border: 2px solid red; */
+  /* height: 100px; */
+}
+#tryForFreeDiv {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  /* border: 2px solid greenyellow; */
+  /* height: 100px; */
+}
+#viewPlans {
+  box-sizing: border-box;
+  border: none;
+  color: rgb(255, 255, 255);
+  line-height: 16.5px;
+  text-decoration: none solid rgb(255, 255, 255);
+  transition: all 0.8s ease-in-out 0s;
+  word-break: break-word;
+  font-family: "Ramabhadra", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 18px 34px;
+  white-space: normal;
+  border-radius: 2px;
+  background: rgba(236, 0, 140, 0.725)
+    linear-gradient(
+      to right,
+      rgb(187, 113, 17),
+      rgb(202, 0, 121),
+      rgb(251, 194, 103)
+    )
+    repeat scroll -8.6944% 0% / 300% 100% padding-box border-box;
+  position: relative;
+  text-align: center;
+  display: block;
+  margin: 0px 20px 20px 0px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    to right,
+    rgb(253, 112, 17),
+    rgb(236, 0, 140),
+    rgb(253, 112, 17)
+  );
+  background-size: 300% 100%;
+  float: left;
+  margin-right: 20px;
+}
+#viewPlansButtonDiv {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+  float: right;
+}
+#viewPlans:hover {
+  cursor: pointer;
+  text-decoration: inherit;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 30px;
+  background-position: -50% 0px;
+}
+#tryForFree {
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  line-height: 16.5px;
+  text-decoration: none solid rgb(255, 255, 255);
+  transition: box-shadow 0.3s ease-in-out 0s;
+  word-break: break-word;
+  font-family: "Ramabhadra", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 19px 29px;
+  white-space: normal;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  margin: 0px 0px 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border: 1px solid white;
+  /* border: 1px solid rgb(255, 255, 255); */
+}
+#tryForFree:hover {
+  cursor: pointer;
+  text-decoration: inherit;
+  color: rgb(255, 255, 255);
+  box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px inset;
+  background: transparent;
+}
+.subheading {
+  margin-top: 48px;
+}
+#orgText {
+  box-sizing: border-box;
+  margin: 0px 0px 20px;
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  text-rendering: optimizelegibility;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgb(170, 170, 170);
+  text-align: center;
+}
+#orgLogo {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  /* border: 2px solid greenyellow; */
+  height: 50px;
+}
+.logos {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  color: rgb(221, 221, 221);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0%;
+  position: relative;
+  height: 36px;
+  /* border: 1px solid red; */
+}
+.logos > img {
+  box-sizing: border-box;
+  max-width: 100%;
+  /* height : 17px;  */
+  display: inline-block;
+  vertical-align: middle;
+}
+#separatorLine {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 0px;
+  background-color: rgb(0, 0, 0);
+  width: 6px;
+  height: 150px;
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(
+      rgb(236, 0, 140),
+      rgb(241, 91, 42),
+      rgba(0, 0, 0, 0)
+    )
+    1 100% / 1 / 0 stretch;
+  margin-top: 70px;
+}
+#secondDiv {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 50px 0px 100px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  color: rgb(238, 238, 238);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: contain, contain, contain;
+  background-position: 100% 100%, 100% 50%, 0% 50%;
+  min-height: 0px;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  background-image: url("https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022/bkgd-triangle-right.png"),
+    url("https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022/bkgd-triangle-right2.png"),
+    url("https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022/bkgd-triangle-left.png");
+  /* border: 2px solid white;  */
+  height: 600px;
+}
+#coursesDiv {
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 816.664px;
+  float: left;
+  margin: 0px;
+  padding: 0px 15px;
+  min-height: 1px;
+  display: grid;
+  grid-template-columns: repeat(2, 52%);
+
+  /* border: 2px solid red; */
+}
+#trendingTechDiv {
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 583.328px;
+  float: right;
+  margin: 0px;
+  padding: 0px 15px;
+  min-height: 1px;
+  /* border: 2px solid red; */
+}
+.courseItems {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 20px;
+  flex-basis: 50%;
+  flex-grow: 1;
+  /* border: 1px solid yellow; */
+}
+.courseItemsDiv {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 20px 30px;
+  display: flex;
+  background: rgb(34, 34, 34) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 30px 30px 0px;
+  min-height: 165px;
+  border-radius: 10px;
+  /* border: 2px solid red; */
+  cursor: pointer;
+}
+.courseItemsDivBox {
+  box-sizing: border-box;
+  color: rgb(236, 0, 140);
+  line-height: 21px;
+  text-decoration: none solid rgb(236, 0, 140);
+  transition: all 0.3s ease 0s;
+  word-break: break-word;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  /* border: 2px solid rgb(19, 253, 50); */
+}
+.courseItemsDiv:hover #arrow {
+  margin-left: 7px;
+  transition: all 0.5s ease 0s;
+}
+.takeAlook:hover #arrow {
+  margin-left: 7px;
+  transition: all 0.5s ease 0s;
+}
+.courseItemsDivBox label {
+  box-sizing: border-box;
+  margin: 0px 0px 5px;
+  padding: 0px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.title {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  line-height: 30.8px;
+  font-weight: 350;
+  letter-spacing: 1px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.totalCourses {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25.5px;
+  color: rgb(170, 170, 170);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  /* border: 1px solid white; */
+}
+.span {
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+
+  /* border: 1px solid rgb(4, 0, 255); */
+}
+.takeAlook {
+  box-sizing: border-box;
+  margin: 8.20312px 0px 0px;
+  padding: 0px;
+  margin-top: 8.20312px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 36px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue";
+}
+#arrow {
+  color: rgb(236, 0, 140);
+  font-size: 12px;
+}
+.courseImg {
+  box-sizing: border-box;
+  max-width: 100%;
+  height: 100px;
+  display: block;
+  border: 0px none rgb(236, 0, 140);
+  position: absolute;
+  top: -26px;
+  right: -36px;
+  width: 100px;
+  /* vertical-align : middle;  */
+  /* border: 2px solid yellow; */
+}
+.trendingTech {
+  box-sizing: border-box;
+  margin: 0px 0px 20px;
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  text-rendering: optimizelegibility;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgb(228, 0, 132);
+  margin-top: 50px;
+}
+.feature {
+  box-sizing: border-box;
+  margin: 0px 0px 20px;
+  padding: 0px;
+  font-family: "Ramabhadra", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38.4px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  text-rendering: optimizelegibility;
+  font-size: 32px;
+  letter-spacing: normal;
+  text-transform: none;
+  color: rgb(255, 255, 255);
+  width: 45%;
+  /* border:1px solid red; */
+}
+#trendingTechDiv > p {
+  box-sizing: border-box;
+  margin: 0px 0px 20px;
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 23.8px;
+  margin-bottom: 20px;
+  text-rendering: optimizelegibility;
+  color: rgb(238, 238, 238);
+}
+#thirdDiv {
+  box-sizing: border-box;
+  margin: 0px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  color: rgb(238, 238, 238);
+  /* background-repeat : no-repeat;  */
+  /* background-size : cover;  */
+  background-position: 50% 0%;
+  min-height: 0px;
+  background-color: rgb(24, 24, 24);
+  position: relative;
+  /* border:  2px solid rgb(255, 255, 255); */
+}
+#thirdContent {
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1400px;
+  /* float : left;  */
+  margin: 0px;
+  padding: 0px 15px;
+  min-height: 1px;
+  /* border:2px solid rgb(0, 255, 85); */
+  margin: auto;
+  background-color: rgb(24, 24, 24);
+}
+#skills {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin: auto;
+  /* border:2px solid rgb(17, 0, 255); */
+}
+#skillText {
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 25px;
+  float: left;
+  margin: 0px;
+  padding: 20px 25px 0px 30px;
+  min-height: 1px;
+  background-color: #222222;
+  /* border: 2px solid rgb(21, 255, 0); */
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#skillImg {
+  box-sizing: border-box;
+  max-width: 100%;
+  height: 455.922px;
+  display: inline-block;
+  vertical-align: middle;
+  /* border : 2px solid rgb(196, 199, 7);  */
+}
+#skillHead {
+  display: flex;
+  /* border: 2px solid red; */
+}
+.skillLogo {
+  box-sizing: border-box;
+  max-width: 100%;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  transform: matrix(1, 0, 0, 1, -57.25, 0);
+  margin-left: 57.1406px;
+  /* border: 2px solid greenyellow; */
+}
+#skillLab {
+  box-sizing: border-box;
+  margin: 0px 0px 20px;
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  text-rendering: optimizelegibility;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  margin-left: -30px;
+  /* border: 2px solid rgb(224, 0, 0); */
+}
+.skillTitle {
+  box-sizing: border-box;
+  margin: 0px 0px 20px;
+  padding: 0px;
+  font-family: "Ramabhadra", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38.4px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  text-rendering: optimizelegibility;
+  font-size: 32px;
+  letter-spacing: normal;
+  text-transform: none;
+  color: rgb(255, 255, 255);
+
+  width: 95%;
+}
+.skillAbt {
+  box-sizing: border-box;
+  margin: 0px 0px 20px;
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 23.8px;
+  margin-bottom: 20px;
+  text-rendering: optimizelegibility;
+  color: rgb(228, 228, 228);
+}
+#certificateCourse {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 50px 0px 0px;
+  padding-top: 50px;
+  color: rgb(238, 238, 238);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0%;
+  min-height: 0px;
+  background-color: rgb(24, 24, 24);
+  position: relative;
+  padding-bottom: 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  justify-content: space-around;
+}
+.certificate {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 50px 0px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: rgb(238, 238, 238);
+  min-height: 0px;
+  background-color: rgb(34, 34, 34);
+  border-radius: 18px;
+  /* border: 2px solid rgb(230, 255, 9);  */
+}
+.certificateContent {
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0px;
+  padding: 0px 30px;
+  min-height: 1px;
+  /* border: 2px solid red; */
+}
+.featureCertificate {
+  box-sizing: border-box;
+  padding: 0px;
+  font-family: "Ramabhadra", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38.4px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-rendering: optimizelegibility;
+  font-size: 31px;
+  letter-spacing: normal;
+  text-transform: none;
+  color: rgb(255, 255, 255);
+  /* width: 45%; */
+}
+#fourthDiv {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 100px 0px 50px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  color: rgb(238, 238, 238);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0%;
+  min-height: 0px;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+}
+#fourthContent {
+  box-sizing: border-box;
+  padding: 0px;
+  width: 98%;
+  margin: auto;
+}
+#forthDivBoxes {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  justify-content: space-between;
+}
+.discoverMore {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  color: rgb(221, 221, 221);
+  position: relative;
+  /* height : 387.438px;  */
+  background-color: rgba(0, 0, 0, 0);
+}
+.discoverImg {
+  box-sizing: border-box;
+  max-width: 100%;
+  height: 173.047px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 20px;
+}
+.yellowDiscoverText {
+  box-sizing: border-box;
+  margin: 0px 0px 20px;
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  text-rendering: optimizelegibility;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgb(255, 186, 14);
+  /* margin-top : 50px; */
+}
+#fifthDiv {
+  box-sizing: border-box;
+  margin: 0px;
+  /* padding : 100px 0px 50px;  */
+  padding-top: 60px;
+  padding-bottom: 50px;
+  color: rgb(238, 238, 238);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0%;
+  min-height: 0px;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+}
+#fifthContent {
+  display: grid;
+  grid-template-columns: 58% 42%;
+}
+
+#vmwareTextBox {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 100px 0px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: rgb(238, 238, 238);
+  background-position: 0% 0%;
+  min-height: 300px;
+  position: relative;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    100deg,
+    #dd2ba8 4%,
+    #ff4800 99%,
+    #ffae00 100%
+  );
+}
+#vmwareTextBox img {
+  width: 25%;
+  margin-bottom: 30px;
+}
+#vmwareText {
+  box-sizing: border-box;
+  padding-left: 60px;
+  padding-right: 60px;
+  width: 593.75px;
+  float: left;
+  margin: 0px;
+  padding: 0px 60px;
+  min-height: 1px;
+}
+.featureVMware {
+  box-sizing: border-box;
+  margin: 0px 0px 20px;
+  padding: 0px;
+  font-family: "Ramabhadra", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38.4px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  text-rendering: optimizelegibility;
+  font-size: 32px;
+  letter-spacing: normal;
+  text-transform: none;
+  color: rgb(255, 255, 255);
+  /* width: 45%; */
+}
+#howTheyDoing {
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  line-height: 16.5px;
+  text-decoration: none solid rgb(255, 255, 255);
+  transition: box-shadow 0.3s ease-in-out 0s;
+  word-break: break-word;
+  font-family: "Ramabhadra", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 18px 34px;
+  white-space: normal;
+  border-radius: 2px;
+  background: rgb(24, 24, 24) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  margin: 0px 0px 20px;
+  letter-spacing: 0.5px;
+  border: none;
+}
+#howTheyDoing:hover {
+  cursor: pointer;
+  text-decoration: inherit;
+  color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 30px;
+  background: rgb(24, 24, 24);
+}
+#followUs {
+  text-align: center;
+}
+#sixthDiv {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 41px 27px;
+  position: relative;
+  background: black;
+}
+.slider {
+  background-color: rgb(0, 0, 0);
+  margin: 0 10px;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  position: relative;
+  top: 0px;
+  display: flex;
+}
+.twitterPosts {
+  padding: 25px;
+  height: 260px;
+  min-height: 1px;
+  background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  border-radius: 8px;
+  border: 2px solid rgb(255, 21, 0);
+  position: relative;
+}
+.profile {
+  display: flex;
+  margin-bottom: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.profilePic {
+  width: 40%;
+  height: 100%;
+}
+.profile span {
+  font-size: 13px;
+  color: grey;
+}
+.profileName {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+.profileName h5:hover {
+  color: rgb(228, 0, 132);
+  transition: all 0.6s;
+}
+.twitterMsg p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 350;
+  font-size: 15px;
+  color: black;
+}
+.twitterMsg span {
+  color: rgb(228, 0, 132);
+}
+.twitterMsg a {
+  text-decoration: none;
+}
+.twitterLogo {
+  width: 12%;
+  display: flex;
+  justify-content: flex-end;
+  height: 30%;
+}
+.tweetReactions {
+  margin-top: 70px;
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 20px;
+  padding-bottom: 20px;
+}
+.tweetReactions > a {
+  text-decoration: none;
+  color: white;
+  padding: 0 7px;
+}
+#seventhDiv {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0 0 100px 0px;
+  padding-top: 100px;
+  padding-bottom: 0px;
+  color: rgb(238, 238, 238);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0%;
+  min-height: 0px;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+}
+#seventhContent {
+  box-sizing: border-box;
+  margin: 0px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: rgb(238, 238, 238);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 50%;
+  min-height: 0px;
+  background-color: rgb(24, 24, 24);
+  position: relative;
+  background-image: url("https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/generic_block_1609496607/image-res.img.1e1ba99b-60b4-4f50-ba69-f25d048d96ce.jpg");
+}
+#seventhText {
+  box-sizing: border-box;
+  max-width: 1400px;
+  width: 1400px;
+  padding: 0 20px;
+  margin: 0;
+}
+#seventhText img {
+  padding: 0;
+  margin: 0 -20px;
+}
+#seventhText > h2 {
+  box-sizing: border-box;
+  margin: 0px 0px 20px;
+  padding: 0px;
+  font-family: "Ramabhadra", sans-serif;
+  font-weight: 400;
+  line-height: 48px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  text-rendering: optimizelegibility;
+  font-size: 42px;
+  color: rgb(255, 255, 255);
+  width: 50%;
+}
+#seventhText > p {
+  width: 49%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 25px;
+  margin-bottom: 18px;
+}
+#eighthDiv {
+  box-sizing: border-box;
+  margin: 0px;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  color: rgb(238, 238, 238);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0%;
+  min-height: 0px;
+  background-color: rgb(24, 24, 24);
+  position: relative;
+}
+#eightContent {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+#eightText {
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 70%;
+  float: left;
+  margin: 0px;
+  padding: 0px 15px;
+  min-height: 1px;
+  font-size: 44px;
+}
+#eightButton {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  width: 30%;
+  /* border: none  ; */
+}
+#eightButton > button {
+  width: 60%;
+}
