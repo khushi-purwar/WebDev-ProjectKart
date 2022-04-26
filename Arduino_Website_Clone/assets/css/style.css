@@ -1,0 +1,172 @@
+html,body{
+	height: 100%;
+	width: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	background-color: #fff;
+}
+
+header{
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	background-color: #008184;
+
+}
+header > .row{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+header > .row > nav{
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+header > .row > nav > .nav-item{
+	height: 100%;
+	border-right: 1px solid #7fcbcd;
+	transition: 0.3s;
+	display: flex;
+	align-items: center;
+	color: #fff;
+}
+header > .row > nav > .nav-item:hover{
+	background-color: #005C5F;
+	cursor: pointer;
+}
+header > .row > nav > .nav-input{
+	border-radius: 30px;
+	background-color: #006d70;
+	height: 30px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 300px;
+	margin-right: 12px;
+}
+header > .row > nav > .nav-input > svg{
+	margin: 0 12px 0 16px;
+}
+header > .row > nav > .nav-input > input{
+	background: transparent;
+	border:none;
+	outline: none;
+	cursor: text;
+	font-size: 14px;
+	padding: 0 16px 0 0;
+	font-weight: 400;
+	line-height: 1em;
+	width: 100%;
+	color:  #fff;
+}
+header > .row > nav > .nav-input:hover{
+	box-shadow: 0 0 0 1px #7fcbcd;
+}
+
+
+main{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 145px;
+}
+
+main > .left-nav{
+	width: 385px;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 0;
+	margin-right: 65px;
+}
+.left-nav > .what_arduino{
+	width: 100%;
+	background-color: #ecf1f1;
+	padding: 20px;
+	flex-grow: 0;
+	color: #008184;
+	cursor: pointer;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.left-nav > .what_arduino:hover{
+	background-color: #7FCBCD;
+	color: #ecf1f1;
+}
+.left-nav > .action-card{
+	width: calc(100% + 40px);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: #fff;
+	align-items: center;
+	flex-wrap: nowrap;
+	letter-spacing: 3px;
+	height: 48px;
+	align-items: center;
+	transition: box-shadow 0.2s ease-out;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.store{
+	background-color: #E67E22;
+}
+.store:hover > div{
+	background-color: #F39C12;
+}
+.learn{
+	background-color: #00979D;
+}
+.learn:hover > div{
+	background-color: #7FCBCD;
+}
+.donate{
+	background-color: #BCAC99;
+}
+.donate:hover > div{
+	background-color: #9E846D;
+}
+.cloud{
+	background-color: #008184;
+}
+.cloud:hover > div{
+	background-color: #7FCBCD;
+}
+.career{
+	background-color: #95A5A6;
+}
+.career:hover > div{
+	background-color: #C9D2D2;
+}
+
+.main-content{
+	width: 710px;
+	display: flex;
+	flex-direction: column;
+	margin-right: 65px;
+}
+.row{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.event{
+	width: 50%;
+	cursor: pointer;
+	padding: 0 10px 20px;
+}
+.event img{
+	width: 100%;
+}

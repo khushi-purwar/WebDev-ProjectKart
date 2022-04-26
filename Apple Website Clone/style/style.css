@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+a{
+    text-decoration: none; 
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+   
+}
+
+.navbar-second{
+    background-color: #efeff5;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #1d1d1f;
+    font-weight:400;
+}
+
+.navbar ol{
+    display: flex;
+    list-style: none;
+    background: #383737;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ol li a{
+    padding: 20px;
+    color: #f5f5f7;
+    font-size: 13px;
+
+}
+
+.iphone13pro{
+
+    background-image: url('https://www.apple.com/v/home/an/images/heroes/iphone-13-pro/hero_iphone13pro_avail__iy77cld0zwii_medium.jpg');
+    height: 100vh;
+    width: 98vw;
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    
+}
+
+.iphone13pro p{
+    text-align: center;
+    position: relative;
+    top: 50px;
+    font-size: 57px;
+    font-weight: 600; 
+}
+
+.iphone13pro .oh_so_pro{
+    text-align: center;
+    position: relative;
+    top: 48px;
+    font-size: 30px;
+    font-weight: 400; 
+}
+
+.iphone13pro .iphone13_links{
+    text-align: center;
+    position: relative;
+    top: 60px;
+    font-size: 20px;
+    font-weight: 400; 
+}
+
+
+.iphone-se{
+
+    background-image: url('https://www.apple.com/v/home/an/images/heroes/iphone-se/hero_iphonese_avail__eg8srhcnpo66_medium.jpg');
+    height: 100vh;
+    width: 98vw;
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    
+}
+
+.iphone-se p{
+    text-align: center;
+    position: relative;
+    top: 65px;
+    font-size: 30px;
+    font-weight: 400; 
+}
+
+.iphone-se .iphonese{
+    text-align: center;
+    position: relative;
+    top: 55px;
+    font-size: 57px;
+    font-weight: 600; 
+}
+
+.iphone-se .iphonese img{
+    position: relative;
+    top: 6px;
+    
+}
+
+.iphone-se .iphone-se-tag{
+    position: relative;
+    top: 46px;
+    font-size: 28px;
+}
+
+
+
+.iphone-se .iphonese_links{
+    text-align: center;
+    position: relative;
+    top: 58px;
+    font-size: 20px;
+    font-weight: 400; 
+}
+
+.ipad-air{
+    overflow: hidden;
+    background-image: url('https://www.apple.com/v/home/an/images/heroes/ipad-air/hero_ipadair_avail__dsqv5nn0tpsi_large.jpg');
+    height: 100vh;
+    width: 98vw;
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    
+}
+
+.ipad-air .ipadair{
+    color: white;
+    position: relative;
+    top: 200px;
+    left: 200px;
+    font-size: 57px;
+    font-weight: 600; 
+}
+
+
+
+.ipad-air .ipad-air-tag{
+    color: white;
+    position: relative;
+    top: 180px;
+    left: 150px;
+    font-size: 28px;
+}
+
+
+
+.ipad-air .ipad_links {
+    position: relative;
+    top: 190px;
+    left: 200px;
+    font-size: 20px;
+    font-weight: 400; 
+}
+
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-auto-rows: minmax(500px, auto);
+    padding:10px;
+  }
+
+  .wwdc22 {
+    background-image: url('https://www.apple.com/v/home/an/images/promos/wwdc-announce/promo_wwdc_announce__dr6w8rxice4i_large.jpg');
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    height: 500px;
+    
+    
+    
+  }
+
+  .wwdc22 img {
+      position: relative;
+      top: 340px;
+      left: 220px;
+  }
+
+  
+  .wwdc22 p {
+    color: #c6e1e6;
+    font-size: 22px;
+    justify-content: center;
+    padding-left: 140px;
+    padding-right: 140px;
+    position: relative;
+    top: 340px;
+}
+
+.wwdc22 a{
+    position: relative;
+    font-size: 18px;
+    top: 345px;
+    left: 290px;
+}
+
+  .applewatch7 {
+    background-image: url('https://www.apple.com/v/home/an/images/promos/watch-series-7/promo_watch_lte__djeaso7ukrsm_large.jpg');
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    height: 500px;
+    
+  }
+  
+  .applewatch7 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    margin-top: 40px;
+}
+
+
+.applewatch7 p {
+  color: #5a5858;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+ 
+}
+
+.applewatch7 a{
+  position: relative;
+  font-size: 18px;
+  top: 10px;
+  left: 260px;
+}
+
+
+.applestudio {
+    background-image: url('https://www.apple.com/v/home/an/images/promos/studio-display/promo_studiodisplay_avail__d1cx9j73ooq6_large.jpg');
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    height: 500px;
+    
+  }
+
+  .applestudio p {
+    color: #000000;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    font-weight: 600;
+    top: 10px;
+   
+  }
+
+  .applestudio .studio-tag {
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    font-weight: 400;
+   
+  }
+
+  .applestudio .studio-links{
+    position: relative;
+    font-size: 23px;
+    font-weight: 400;
+    top: 10px;
+   
+  }
+
+  
+
+  .macstudio {
+    background-image: url('https://www.apple.com/v/home/an/images/promos/mac-studio/promo_macstudio_avail__byhwkp0o4gty_large.jpg');
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    height: 500px;
+    
+  }
+
+  .macstudio p {
+    color: #000000;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    font-weight: 600;
+    top: 10px;
+   
+  }
+
+  .macstudio .mac-tag {
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    font-weight: 400;
+   
+  }
+
+  .macstudio .mac-links{
+    position: relative;
+    font-size: 23px;
+    font-weight: 400;
+    top: 10px;
+   
+  }
+
+  .arcade {
+    background-image: url('https://www.apple.com/v/home/an/images/promos/arcade-gear-club-stradale/gcs_promo__ejljitxuwkae_large.jpg');
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    height: 500px;
+    
+  }
+
+  .arcade img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    margin-top: 40px;
+}
+
+.arcade p{
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    font-weight: 400;
+    top: 10px;
+}
+
+.arcade .arcade-links{
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    font-weight: 400;
+    top: 20px;
+}
+
+  .appletv {
+    background-image: url('https://www.apple.com/v/home/an/images/promos/tv-plus-severance/promo_severance__fdkdommf27mi_large.jpg');
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    height: 500px;
+    
+  }
+
+  .appletv .tv-plus {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 11%;
+    margin-top: 340px;
+}
+
+.appletv .severance {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-top: 10px;
+}
+
+.appletv .tv-links {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.appletv .tv-links a {
+    color: #f5f5f7;
+}
+
+.appletv .tv-links a:hover {
+    border-bottom: 1px solid white;
+}
+
+
+  .footer{
+      text-align: justify;
+      padding-left: 250px;
+      padding-right: 250px;
+      font-size: 13px;
+      background-color: #f5f5f7;
+      position: relative;
+      top: 10px;
+  }
+
+  .style-one {
+    height: 10px;
+    background: black;
+    width: 50%;
+    position: relative;
+    left: 1px;
+    z-index: -1;
+}
+

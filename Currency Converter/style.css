@@ -1,0 +1,218 @@
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* Eliminating browser's margin & padding */
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    max-height: 50rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(43, 42, 42);
+}
+
+/* sub div containing all elements */
+.main-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    position:relative;
+    min-width:42rem;
+    min-height:15rem;
+    background-color: #fff;
+    border-radius:0.8rem;
+    padding:2rem;
+    box-shadow: 0 6px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+.main-container h2{
+    position: relative;
+    color:#fff;
+    font-size: 2.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.32rem;
+    line-height:1.2;
+    padding:1.5rem 0 0.8rem 0;
+    margin:1rem;
+    border:0.25rem solid rgba(252, 181, 75, 0.8);
+    border-radius:0.3rem;
+}
+
+/* amount input filed */
+.amount-section{
+    justify-content: center;
+    align-items: center;
+    display: block;
+    position: relative;
+    margin:1rem auto;
+    margin-top: 0.6rem;
+    width:55%;
+    height:2.2rem;
+    border:0.083rem solid #b4b5b6;
+    border-radius: 0.3125rem;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    outline:0;
+    opacity: 0.8;
+}
+
+.from-amount label{
+    color:#566166;
+    margin:1rem 0 0 8.4rem;
+    display: block;
+    font-size: 1rem;
+}
+
+.from-section select{
+    border: 0.065rem solid #c6c7c9;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    outline:0;
+    width: 100%;
+}
+
+input[type=number]:focus{
+    border:1.5px solid #ffae00;
+}
+
+.convert-section{
+    display: flex;
+    justify-content: space-around;
+    margin-top:2rem;
+    width: 100%;
+}
+
+.from-section label, .to-section label{
+    color:#566166;
+    margin:0.8rem 0 0.4rem 0;
+    display: block;
+    font-size: 1rem; 
+}
+
+.from-section select, .to-section select{
+    border: 0.065rem solid #c6c7c9;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    outline:0;
+    width:100%;
+    height:2.2rem;
+    opacity: 0.8;
+}
+
+.icon-image{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#exchange-btn{
+  background-color:transparent;
+  border: none;
+  color: white;
+  outline:0;
+  cursor: pointer;
+  margin:2rem auto;
+  margin-top:2.2rem;
+}
+
+.icon-image img{
+    width:2.2rem;
+    height: auto;
+    border: none;
+}
+
+#exchange-btn:hover{
+    transform: scale(1.08);
+}
+
+.result-rate{
+    margin:2rem auto;
+    align-items: center;
+    text-align: center;   
+}
+
+#from-rate , #to-rate{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.result-rate p{
+    font-size: 1.2rem;
+}
+
+#from-rate{ color:rgb(5, 5, 75); }
+#to-rate{ color:rgb(255, 158, 47); }
+
+#convert-btn{
+    display: flex;
+    position: relative;
+    width:25%;
+    height: 2.6rem;
+    background-color: rgb(43, 42, 42);
+    border:none;
+    border-radius:0.3rem;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1.2rem;
+    padding:0.2rem;
+    padding-left:2.6rem;
+    margin:2rem auto;
+    align-items: center;
+}
+
+/* Media-Queries for responsiveness across various devices */
+@media screen and (max-width:2560px) and (min-width:768px){
+    .main-container{
+        margin:0;
+        padding:0;
+    }
+}
+@media screen and (max-width: 768px){
+    .main-container{
+        margin-right:2rem;
+    }
+}
+@media screen and (max-width:425px){
+
+    .main-container{
+        margin:1rem;
+    }
+    .main-content{
+        min-width:5rem; 
+        min-height:8rem;
+    }
+    .main-container h2{
+        font-size: 1rem;
+    }
+    #convert-btn{
+        padding-left: .5rem;
+    }
+    .from-amount label{
+        margin-left: 9rem;
+    }
+}
+@media screen and (max-width:376px){
+    #convert-btn{
+        padding-left: .5rem;
+        width: 35%;
+    }
+    .from-amount label{
+        margin-left: 5rem;
+    }
+    .from-section select{
+        font-size: .8rem;
+    }
+    .to-section select{
+        font-size: .8rem;
+    }
+}
