@@ -21,3 +21,5 @@ A College Landing Page whichbcontains carousel, cards etc. telling various types
 
 
 https://user-images.githubusercontent.com/93239528/165661819-19278cf6-6fb9-4fa8-912e-cc349cbed75a.mp4
+
+## Link: https://6269fec39e96054641b8865a--venerable-croquembouche-6754bc.netlify.app/
