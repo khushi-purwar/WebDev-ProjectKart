@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$medium: 800px;
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f3f7;
+}
+
+#bg-art {
+  position: absolute;
+  z-index: -10;
+  left: -150px;
+  top: 0;
+  max-width: 500px;
+  width: 50%;
+  height: 40rem;
+  border-radius: 0 0 50% 50%;
+  background: linear-gradient( #bb5ff8, #8838ff  );
+}
+
+main {
+  max-width: 900px;
+  width: 90%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: $medium) {
+    flex-direction: column;
+  }
+
+}
+
+#mobile {
+  max-width: 280px;
+  width: 90%;
+  height: 600px;
+  background-color: white;
+  box-shadow: 0 16px 64px rgba($color: #000000, $alpha: 0.15);
+  border-radius: 2rem;
+  padding: 0.5rem;
+  overflow: hidden;
+  margin-top: 3rem;
+}
+
+#chat-app {
+  overflow: hidden;
+  max-height: 100%;
+  height: 100%;
+  border-radius: 1.25rem;
+  background-color: #f5f3f7;
+  display: flex;
+  flex-flow: column;
+}
+
+#top-bar {
+  background: linear-gradient(to right, #8838ff, #e942ff);
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0.5rem;
+  padding-bottom: 0.75rem;
+  border-radius: 0 0 0.25rem 0.25rem;
+
+  #notch {
+    width: 60%;
+    height: 1.25rem;
+    border-radius: 0 0 1rem 1rem;
+    background-color: white;
+    margin-bottom: 0.75rem;
+  }
+
+  #top-bar-content {
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    > div {
+      display: flex;
+      align-items: center;
+    }
+
+    .back {
+      height: 1rem;
+    }
+
+    .avatar {
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 100%;
+      border: solid rgb(206, 206, 206) 0.1rem;
+      margin: 0 0.5rem;
+    }
+
+    .name {
+      font-weight: 500;
+      font-size: 0.85rem;
+      margin-bottom: 0.1rem;
+    }
+
+    .status {
+      color: rgb(240, 240, 240);
+      font-size: 0.6rem;
+    }
+
+    .settings-icon {
+      float: right;
+      height: 1rem;
+    }
+  }
+}
+
+#content {
+  max-width: 400px;
+
+  h1 {
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    line-height: 1.75rem;
+    color: #a39daa;
+  }
+
+  @media screen and (max-width: $medium) {
+    padding-top: 2rem;
+    text-align: center;
+  }
+
+}
+
+
+.white-fill {
+  fill: white
+}
+
+#app-body {
+  padding: 0.75rem;
+  flex: 1 1 auto;
+  max-height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#messages {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  flex: 1 1 50px;
+  margin-bottom: 0.5rem;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.message {
+  max-width: 60%;
+  font-size: 0.75rem;
+  line-height: 1.1rem;
+  margin: 0.4rem 0;
+
+  &.sender {
+    align-self: flex-end;
+    
+    p {
+      background-color: white;
+      color: #6e5d7e;
+      padding: 0.5rem 0.75rem;
+      border-radius: 0.75rem 0.75rem 0.1rem 0.75rem;
+
+      box-shadow: 0 4px 12px rgba($color: #000000, $alpha: 0.1);
+    }
+  }
+
+  &.reciever {
+    p {
+      background-color: #ebdff3;
+      color: #9241c8;
+      padding: 0.5rem 0.75rem;
+      border-radius: 0.75rem 0.75rem 0.75rem 0.1rem;
+    }
+  }
+
+  & img {
+    height: 3rem;
+    border-radius: 0.75rem;
+  }
+
+  &.checkbox {
+    border-radius: 0.75rem 0.75rem 0.75rem 0.1rem;
+    padding: 0.75rem 1rem;
+    background: linear-gradient(to right, #e942ff, #8838ff);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+    .option {
+      display: flex;
+      align-items: center;
+    }
+
+    input[type=radio] {
+      visibility: hidden;
+      position: absolute;
+
+
+      & + label:before {
+        height:12px;
+        width:12px;
+        margin-right: 0.5rem;
+        margin-top: 0.25rem;
+        content: " ";
+        display:inline-block;
+        vertical-align: baseline;
+        border:1px solid white;
+        border-radius: 100%;
+        
+      }
+
+      &:checked + label:before {
+        background: white;
+      }
+    }
+
+    .price {
+      font-weight: 700;
+      float: right;
+    }
+  }
+}
+
+
+#chat-input {
+  overflow: hidden;
+  border-radius: 1rem;
+  padding: 0.25rem;
+  height: 2rem;
+  background-color: white;
+  
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  input {
+    border: none;
+    outline: none;
+    padding-left: 1rem;
+  }
+
+  #send {
+    background-color: #000000;
+    border: 100%;
+    outline: none;
+    border-radius: 100%;
+    padding: 0.1rem;
+  }
+}
