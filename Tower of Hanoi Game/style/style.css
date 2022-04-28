@@ -1,0 +1,134 @@
+html, body, #canves #score-panel {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    
+}
+.container p{
+    justify-content: center;
+    align-items: center;
+}
+
+#canves {
+    width: 395px;
+    height: 240px;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+#canves #score-panel {
+    width: 180px;
+    height: 53px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 23px;
+    text-align: center;
+}
+#canves #score-panel li {
+    list-style: none;
+    display: inline-block;
+}
+#canves #score-panel li:last-child {
+    font-family: 'Coda', cursive;
+    display: block;
+    font-size: 7px;
+    line-height: 1;
+}
+
+.tower {
+    width: 115px;
+    height: 117px;
+    border-bottom: 5px solid #000;
+    border-radius: 7px;
+    position: relative;
+    text-align: center;
+    padding: 0;
+    margin: 0 25px 0 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    cursor: pointer;
+}
+.tower#tower-3 {
+    margin: 0;
+}
+.tower:before {
+    width: 4px;
+    height: 116px;
+    content: '';
+    display: block;
+    background: #000;
+    position: absolute;
+    bottom: -2px;
+    left: calc(50% - 2px);
+    z-index: 10;
+    border-radius: 30px;
+}
+.disk {
+    list-style: none;
+    height: 16px;
+    display: block;
+    border-radius: 9px;
+    font-size: 0;
+    z-index: 20;
+}
+.disk.hold {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.swal2-overlay {
+    background-color: rgba(255, 255, 255, 1);
+}
+.disk-1 {
+    width: 17.5px;
+    background-color: #e91e63;
+}
+.disk-2 {
+    width: 35px;
+    background-color: #aa19c7;
+}
+.disk-3 {
+    width: 52.5px;
+    background-color: #3f51b5;
+}
+.disk-4 {
+    width: 70px;
+    background-color: #00bcd4;
+}
+.disk-5 {
+    width: 87.5px;
+    background-color: #66cc07;
+}
+.disk-6 {
+    width: 105px;
+    background-color: #ffa807;
+}
+.disk-7 {
+    width: 122.5px;
+    background-color: #ff2600;
+}

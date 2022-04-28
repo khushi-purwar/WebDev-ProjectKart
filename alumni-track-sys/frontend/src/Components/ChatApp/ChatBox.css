@@ -1,0 +1,52 @@
+.ChatBox {
+  width: 550px;
+  height: 500px;
+  margin: auto;
+  background-image: linear-gradient(
+    to right,
+    rgb(219, 175, 163),
+    rgb(219, 86, 59)
+  );
+  color: white;
+  border-radius: 0 0 10px 10px;
+  border: 2px solid #ff4b2e;
+  overflow-y: auto;
+}
+
+.message {
+  background-color: rgb(199, 199, 201);
+  margin: 10px;
+  width: 24%;
+  border-radius: 10px;
+  padding: 10px;
+  color: black;
+}
+.left {
+  float: left;
+  clear: both;
+}
+
+.right {
+  float: right;
+  clear: both;
+}
+
+.boxHeading {
+  text-align: center;
+  color: white;
+  background-color: #ff4b2e;
+  font-size: 20px;
+  font-weight: 550;
+  margin: auto;
+  /* margin-top: 5px; */
+  border-radius: 10px 10px 0px 0px;
+  padding: 15px;
+  /* position: fixed; */
+  /* top: 0%; */
+  width: 550px;
+}
+
+.send {
+  margin: auto;
+  text-align: center;
+}
