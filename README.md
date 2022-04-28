@@ -31,7 +31,7 @@ You can go to contact page and can submit a form where you can start getting tra
 
 <div align="center">
   
-  <img src="https://github.com/khushi-purwar/Web-Dev-ProjectKart/blob/master/thumbnail.png" width="770" height="400" />
+  <img src="https://github.com/khushi-purwar/Web-Dev-ProjectKart/blob/master/weblogo.jpg" width="770" height="400" />
 
   
   </div>
