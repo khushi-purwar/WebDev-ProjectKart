@@ -19,11 +19,6 @@
 
 \*\*1.\*\* Clone this Repository to your local machine.
 
-\```bash
-
-git clone https://github.com/<your-github-username>/Dev-Scripts
-
-\```
 
 \*\*2.\*\* Navigate to the project directory:
 
