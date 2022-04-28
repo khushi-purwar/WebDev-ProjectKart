@@ -7,10 +7,7 @@ A simple type writer built using HTMl,CSS and Javascript.when clicking the butto
 2. CSS
 3. Javascript
 
-## Screen Shot
+## Demo
 
-<div  align="center">
-<img  src="https://user-images.githubusercontent.com/52378608/165831961-8b0826e1-1d8e-4e49-ba4a-cbea5df4d6e7.png"  alt="screenshot" >
- <br> <br>
+![demo](https://user-images.githubusercontent.com/52378608/165838291-a65de03d-1d0f-44d9-8f0d-a502bc8c72fb.gif)
 
-</div>
