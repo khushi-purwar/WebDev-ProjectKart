@@ -1,0 +1,68 @@
+html,body{
+	height: 100%;
+}
+body{
+	height: 100%;
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	background: url('https://www.gstatic.com/chat/hangouts/bg/d737e8519d5e7d6e0fe5fec9e35b2e2c-echang.jpg');
+}
+svg:hover, img:hover{
+	cursor: pointer;
+}
+button:focus, button:active, input:focus, input:active{
+	outline: none;
+}
+
+header{
+	font-size: 13px/27px;
+	color: black;
+	width: 100%;
+}
+main{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: calc(100% - 63px);
+}
+
+.header-wrapper{
+	width: 100%;
+	padding: 8px;
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+.logo-wrapper{
+	height: 40px;
+	min-width: 238px;
+	white-space: nowrap;
+}
+.logo-wrapper{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-left: 12px;
+	margin-top: 3px;
+}
+
+.background_changer:hover{
+	background-color: #E3E5E6;
+}
+
+.side-nav{
+	width: 68px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.conv{
+	width: 400px;
+	margin-top: 16px;
+	margin-left: 16px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	border-radius: 4px;
+}
