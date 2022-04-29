@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Filter Fun</title>
+<link rel="stylesheet" href="./style.css">
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+</head>
+
+<body>
+<h1>MINI PROJECT FILTER IMAGES</h1>
+<h2>Image Cnavas</h2>
+<canvas id="can"></canvas>
+<p>Upload Image:
+  <input type="file" multiple="false" accept="image/*" id="imgg" onchange="loadimg()"></p>
+  
+<p>Apply the discreet filters below to the loaded image</p>
+<input type="button" id="redd" onclick="dored()" value="Red Hue">
+<input type="button" id="green" onclick="dogreen()" value="Green Hue">
+<input type="button" id="blue" onclick="doblue()" value="Blue Hue">
+ <input type="button" id="rainbow" onclick="dorainbow()" value="Rainbow filter"> 
+<input type="button" id="clearr" onclick="clearr()" value="Clear Image"><br><br>
+<input type="button" id="blur" onclick="doblur()" value="Blur Filter">
+<input type="button" id="greyy" onclick="dogrey()" value="GreyScale Filter">
+<input type="button" id="reset" onclick="reset()" value="Reset Filter">
+ 
+  <!-- custom script file -->
+ <script type="text/javascript" src="./filter.js"></script>
+</body>
+</html>
+
