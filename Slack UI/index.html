@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>SlackClone</title>
+  
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+     
+      <header class="header">
+        <nav class="nav">
+          <div class="icons">
+            <a href="#"><i class="fas fa-arrow-left"></i></a>
+            <a href="#" class="grey"><i class="fas fa-arrow-right"></i></a>
+            <a href="#"><i class="far fa-clock"></i></a>
+          </div>
+          <form action="." class="search-bar">
+            <i class="fas fa-search"></i>
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Search Slack"
+              class="search-bar-input"
+            />
+          </form>
+
+          <div class="move-left">
+            <a href="#"><i class="far fa-question-circle"></i></a>
+            <div class="user-img-wrapper" id="user">
+              <img src="images/user1.jpg" alt="User 1" />
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+      <main class="main">
+        <section class="sidebar">
+          <article class="sidebar-1">
+            <div class="box-1"></div>
+            <div class="box-2"></div>
+            <div class="box-3">+</div>
+          </article>
+
+          <article class="sidebar-2">
+            <section class="sidebar-user">
+              <div class="sidebar-user-info">
+                <h4>Joy DADA</h4>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <p class="sidebar-user-info-additional">
+                <i class="fas fa-circle"></i>Kolkata
+              </p>
+              <span class="user-edit-icon"><i class="fas fa-edit"></i></span>
+            </section>
+            <section class="unread">
+              <h4 class="unread-header">
+                <span class="unread-icons">
+                  <i class="fas fa-minus"></i><i class="fas fa-minus fa-sm"></i
+                  ><i class="fas fa-minus fa-xs"></i>
+                </span>
+                All unread
+              </h4>
+              <ul>
+                <li>
+                  <a href="#"><i class="far fa-comment-dots"></i>Threads</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-at"></i>Mentions & reactions</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-arrow-down"></i>Show more</a>
+                </li>
+              </ul>
+            </section>
+            <section class="channels">
+              <h4 class="channels-header">
+                <i class="fas fa-sort-down"></i> Channels
+              </h4>
+              <ul>
+                <li>
+                  <a href="#"><i class="fas fa-hashtag"></i>design-crit</a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span class="make-white"
+                      ><i class="fas fa-hashtag"></i>design-team</span
+                    ><span class="counter">1</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span class="make-white"
+                      ><i class="fas fa-circle online"></i>Hubspot</span
+                    ></a
+                  >
+                </li>
+                <li class="active">
+                  <a href="#"><i class="fas fa-hashtag"></i>social-media</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-lock"></i>team-chat</a>
+                </li>
+              </ul>
+            </section>
+            <section class="direct-messages">
+              <h4 class="direct-messages-header">
+                <i class="fas fa-sort-down"></i> Direct Messages
+              </h4>
+              <ul>
+                <li>
+                  <a href="#"><i class="fas fa-heart online"></i>slackbot</a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-circle online"></i>Bahubali</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span class="make-white"
+                      ><i class="fas fa-circle offline"></i
+                    ></span>
+                   KGF2</a
+                  >
+                </li>
+              </ul>
+            </section>
+          </article>
+        </section>
+        <section class="body">
+          <section class="content">
+            <section class="content-header">
+              <article class="channel-content-header-details">
+                <h4 class="channel-content-header-name">
+                  #Rumor-media <i class="fas fa-star"></i>
+                </h4>
+                <section class="content-header-icons">
+                  <div>
+                    <i class="far fa-user"></i
+                    ><span class="content-header-counter">12</span>
+                  </div>
+                  <div>
+                    <i class="fas fa-thumbtack fa-rotate-315 last"></i
+                    ><span class="content-header-counter">145</span>
+                  </div>
+                  <p class="content-header-text">
+                    Track and cordinate Bollywood media.
+                  </p>
+                </section>
+              </article>
+              <button
+                class="btn-borderless btn-slack info"
+                id="info"
+                type="button"
+              >
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </section>
+            <section class="feeds">
+              <article class="feed">
+                <section class="feeds-user-avatar">
+                  <img src="images/user2.jfif" alt="User 1" width="40" />
+                  <span>K</span>
+                </section>
+                <section class="feed-content">
+                  <section class="feed-user-info">
+                    <h4>Katappa<span class="time-stamp">9:56am</span></h4>
+                  </section>
+                  <div>
+                    <p class="feed-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ad.
+                    </p>
+                  </div>
+                </section>
+              </article>
+              <article class="feed">
+                <section class="feeds-user-avatar">
+                  <img src="images/user3.jfif" alt="User 1" width="40" />
+                </section>
+                <section class="feed-content">
+                  <section class="feed-user-info">
+                    <h4>
+                      Amrendra Bahubali<span class="tag">app</span>
+                      <span class="time-stamp">12:45pm</span>
+                    </h4>
+                  </section>
+
+                  <p class="feed-text">Lorem ipsum dolor sit amet, consectetur adipisicing.:</p>
+                  <div class="quoted">
+                    <h5>Team status meeting</h5>
+                    <p class="quoted-text">Today from 1:00PM to 1:30PM</p>
+                  </div>
+                </section>
+              </article>
+              <article class="feed">
+                <section class="feeds-user-avatar">
+                  <img src="images/user4.jpg" alt="User 1" width="40" />
+                </section>
+                <section class="feed-content">
+                  <section class="feed-user-info">
+                    <h4>Greek God <span class="time-stamp">12:08pm</span></h4>
+                  </section>
+                  <div>
+                    <p class="feed-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum amet, facere perspiciatis doloribus quibusdam quam iste natus ducimus, dolores obcaecati omnis error minima temporibus illum nostrum ipsam expedita. Praesentium, reiciendis.
+                    </p>
+                  </div>
+                </section>
+              </article>
+              <article class="feed">
+                <section class="feeds-user-avatar">
+                  <img src="images/user5.jfif" alt="User 1" width="40" />
+                </section>
+                <section class="feed-content">
+                  <section class="feed-user-info">
+                    <h4>KGF2 <span class="time-stamp">1:48pm</span></h4>
+                  </section>
+                  <p class="feed-text">
+                    Violence...violence, violence, I don't like it, I avoid but violence likes me
+                   <span class="mention"
+                      >@Adhira</span
+                    >.
+                  </p>
+                  <div class="quoted-file">
+                    <div class="preparatory-text">
+                      <p>Post</p>
+                      <i class="fas fa-sort-down"></i>
+                    </div>
+                    <div class="file-figure">
+                      <i class="far fa-file-alt fa-2x"></i>
+                      <div class="file-detail">
+                        <h5>5/9 Meeting Notes</h5>
+                        <small>Last edited just now</small>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </article>
+              <article class="feed">
+                <section class="message-info">
+                  <article class="zenith-org">K</article>
+                  <small
+                    ><strong>Katappa</strong> is in this
+                    channel.</small
+                  >
+                </section>
+              </article>
+            </section>
+            <form action="." class="form" name="feedForm">
+              <div class="input" id="textBox" contenteditable="true">
+                <p>Message #social-media</p>
+              </div>
+              <div class="input-toolbar-icons">
+                <div class="move-right">
+                  <i class="fas fa-bolt"></i>
+                  <i class="fas fa-bold" data-command="b"></i>
+                  <i class="fas fa-italic" data-command="i"></i>
+                  <i class="fas fa-strikethrough"></i>
+                  <i class="fas fa-code" data-command="code"></i>
+                  <i class="fas fa-link" data-command="a"></i>
+                  <i class="fas fa-list-ol" data-command="ol"></i>
+                  <i class="fas fa-list-ul" data-command="ul"></i>
+                  <i class="fas fa-quote-left" data-command="blockquote"></i>
+                  <i class="far fa-file-code" data-command="pre"></i>
+                  <i class="fas fa-print" onclick="printDoc();"></i>
+                </div>
+                <div class="move-left">
+                  <i class="fas fa-at"></i>
+                  <i class="far fa-smile"></i>
+                  <button type="submit" class="btn-borderless button">
+                    <i class="fas fa-angle-double-right"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="input-toolbar-selection"></div>
+            </form>
+          </section>
+          <section class="right-sidebar">
+            <section class="right-sidebar-header">
+              <article class="right-sidebar-header-details">
+                <h4 class="right-sidebar-header-name">Details</h4>
+                <p>#social-media</p>
+              </article>
+              <i class="fas fa-times"></i>
+            </section>
+            <section class="right-sidebar-contact">
+              <article class="right-sidebar-contact-details">
+                <span><i class="fas fa-user-plus"></i></span>
+                <p>Add</p>
+              </article>
+              <article class="right-sidebar-contact-details">
+                <span><i class="fas fa-search-plus"></i></span>
+                <p>Find</p>
+              </article>
+              <article class="right-sidebar-contact-details">
+                <span><i class="fas fa-phone"></i></span>
+                <p>Call</p>
+              </article>
+              <article class="right-sidebar-contact-details">
+                <span> <i class="fas fa-ellipsis-h"></i></span>
+                <p>More</p>
+              </article>
+            </section>
+
+            <section class="right-sidebar-about">
+              <article class="about-header">
+                <h4>About</h4>
+                <i class="fas fa-chevron-down"></i>
+              </article>
+              <article class="about-details">
+                <div class="about-detail">
+                  <h5>Topic</h5>
+                  <p>Track and cordinate social media</p>
+                </div>
+                <div class="about-detail">
+                  <h5>Description</h5>
+                  <p>Home of the social media team</p>
+                </div>
+                <div class="about-img">
+                  <div class="about-img-wrapper">
+                    <img src="images/user5.jfif" alt="User 1" />
+                  </div>
+                  <small>Created on October 8th, 2020</small>
+                </div>
+              </article>
+            </section>
+            <section class="other-section">
+              <article class="other-section-header">
+                <h4>Members</h4>
+                <div>
+                  <span>21 <i class="fas fa-chevron-right"></i></span>
+                </div>
+              </article>
+            </section>
+            <section class="other-section">
+              <article class="other-section-header">
+                <h4>Organizations</h4>
+                <div>
+                  <span class="zenith-org">K</span>
+                  <span class="acme-org">A</span>
+                  <span> 2 <i class="fas fa-chevron-right"></i></span>
+                </div>
+              </article>
+            </section>
+            <section class="other-section">
+              <article class="other-section-header">
+                <h4>Pinned</h4>
+                <div>
+                  <span>1 <i class="fas fa-chevron-right"></i></span>
+                </div>
+              </article>
+            </section>
+            <section class="other-section">
+              <article class="other-section-header">
+                <h4>Shortcuts</h4>
+                <div>
+                  <span>1 <i class="fas fa-chevron-right"></i></span>
+                </div>
+              </article>
+            </section>
+          </section>
+        </section>
+
+        <div class="sidebar-wrapper" id="sidebar-wrapper">
+          <article class="user-sidebar" id="user-sidebar">
+            <section class="sidebar-user">
+              <div class="sidebar-user-info">
+                <h4>John Idogun</h4>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <p class="sidebar-user-info-additional">
+                <i class="fas fa-circle"></i>Sharon Robinson
+              </p>
+              <span class="user-edit-icon"><i class="fas fa-edit"></i></span>
+              <i class="fas fa-times close" id="close"></i>
+            </section>
+            <section class="unread">
+              <h4 class="unread-header">
+                <span class="unread-icons">
+                  <i class="fas fa-minus"></i><i class="fas fa-minus fa-sm"></i
+                  ><i class="fas fa-minus fa-xs"></i>
+                </span>
+                All unread
+              </h4>
+              <ul>
+                <li>
+                  <a href="#"><i class="far fa-comment-dots"></i>Threads</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-at"></i>Mentions & reactions</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-arrow-down"></i>Show more</a>
+                </li>
+              </ul>
+            </section>
+            <section class="channels">
+              <h4 class="channels-header">
+                <i class="fas fa-sort-down"></i> Channels
+              </h4>
+              <ul>
+                <li>
+                  <a href="#"><i class="fas fa-hashtag"></i>design-crit</a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span class="make-white"
+                      ><i class="fas fa-hashtag"></i>design-team</span
+                    ><span class="counter">1</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span class="make-white"
+                      ><i class="fas fa-circle online"></i>Hubspot</span
+                    ></a
+                  >
+                </li>
+                <li class="active">
+                  <a href="#"><i class="fas fa-hashtag"></i>social-media</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-lock"></i>team-chat</a>
+                </li>
+              </ul>
+            </section>
+            <section class="direct-messages">
+              <h4 class="direct-messages-header">
+                <i class="fas fa-sort-down"></i> Direct Messages
+              </h4>
+              <ul>
+                <li>
+                  <a href="#"><i class="fas fa-heart online"></i>slackbot</a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-circle online"></i>John Idogun(You)</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span class="make-white"
+                      ><i class="fas fa-circle offline"></i
+                    ></span>
+                    Isabel</a
+                  >
+                </li>
+              </ul>
+            </section>
+          </article>
+        </div>
+
+        <div class="right-sidebar-wrapper" id="right-sidebar-wrapper">
+          <section class="channel-right-sidebar" id="channel-right-sidebar">
+            <section class="right-sidebar-header">
+              <article class="right-sidebar-header-details">
+                <h4 class="right-sidebar-header-name">Details</h4>
+                <p>#social-media</p>
+              </article>
+              <i class="fas fa-times" id="close-right-sidebar"></i>
+            </section>
+            <section class="right-sidebar-contact">
+              <article class="right-sidebar-contact-details">
+                <span><i class="fas fa-user-plus"></i></span>
+                <p>Add</p>
+              </article>
+              <article class="right-sidebar-contact-details">
+                <span><i class="fas fa-search-plus"></i></span>
+                <p>Find</p>
+              </article>
+              <article class="right-sidebar-contact-details">
+                <span><i class="fas fa-phone"></i></span>
+                <p>Call</p>
+              </article>
+              <article class="right-sidebar-contact-details">
+                <span> <i class="fas fa-ellipsis-h"></i></span>
+                <p>More</p>
+              </article>
+            </section>
+
+            <section class="right-sidebar-about">
+              <article class="about-header">
+                <h4>About</h4>
+                <i class="fas fa-chevron-down"></i>
+              </article>
+              <article class="about-details">
+                <div class="about-detail">
+                  <h5>Topic</h5>
+                  <p>Track and cordinate social media</p>
+                </div>
+                <div class="about-detail">
+                  <h5>Description</h5>
+                  <p>Home of the social media team</p>
+                </div>
+                <div class="about-img">
+                  <div class="about-img-wrapper">
+                    <img src="images/user1.jpg" alt="User 1" />
+                  </div>
+                  <small>Created on October 8th, 2020</small>
+                </div>
+              </article>
+            </section>
+            <section class="other-section">
+              <article class="other-section-header">
+                <h4>Members</h4>
+                <div>
+                  <span>21 <i class="fas fa-chevron-right"></i></span>
+                </div>
+              </article>
+            </section>
+            <section class="other-section">
+              <article class="other-section-header">
+                <h4>Organizations</h4>
+                <div>
+                  <span class="zenith-org">Z</span>
+                  <span class="acme-org">A</span>
+                  <span> 2 <i class="fas fa-chevron-right"></i></span>
+                </div>
+              </article>
+            </section>
+            <section class="other-section">
+              <article class="other-section-header">
+                <h4>Pinned</h4>
+                <div>
+                  <span>1 <i class="fas fa-chevron-right"></i></span>
+                </div>
+              </article>
+            </section>
+            <section class="other-section">
+              <article class="other-section-header">
+                <h4>Shortcuts</h4>
+                <div>
+                  <span>1 <i class="fas fa-chevron-right"></i></span>
+                </div>
+              </article>
+            </section>
+          </section>
+        </div>
+      </main>
+    </div>
+   
+  </body>
+</html>
