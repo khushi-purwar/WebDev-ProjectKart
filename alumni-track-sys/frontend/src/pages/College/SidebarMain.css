@@ -1,0 +1,11 @@
+.color{
+    color: #f96332;
+}
+.bg-color{
+    /* background: #f96332; */
+    background: linear-gradient(to right, #FF4B2B, #FF416C);
+}
+.padding-left{
+    padding-top: 2px;
+    padding-left: 10px;
+}

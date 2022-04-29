@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    /* background-color: aquamarine; */
+    /* background-color: rgb(199, 245, 205); */
+    background-image: linear-gradient(rgb(157, 213, 157), rgb(250, 250, 250));
+    /* background-color: rgb(200, 227, 200); */
+}
+.container{
+    margin: 10px 20px;
+}
+.container .logo img {
+    height: 80px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 14px;
+}
+.container .box{
+    /* background-color:rgb(251, 188, 188); */
+    background-color: rgb(206, 232, 206);
+
+    border:  3px solid black;
+    display: block;
+    margin: auto;
+    height: 550px;
+    width: 80vh;
+    border-radius: 16px;
+    box-shadow: 20px 20px 20px  black;
+    border-left: 14px; 
+
+}
+.container .box .message{
+    border: 2px solid black;
+    width:40%;
+    padding: 4px;
+    background-color: rgb(175, 215, 167);
+    border-radius: 8px;
+    margin: 14px;
+}
+.left{
+    float: left;
+    clear: both;
+}
+.right{
+    float: right;
+    clear: both;
+
+}
+ #inp{
+    display: flex;
+    justify-content: center;
+    margin: 10px 12px;
+    margin-top: 10px;
+    /* width: 40%; */
+}
+.box{
+    overflow-y: auto;
+}
+ #inp input{
+    width: 500px;
+    height: 33px;
+    border: 1.5px solid black;
+    border-radius: 8px;
+    padding: 2px 5px;
+    border: 3px solid;
+     background-color: rgb(207, 210, 207);
+}
+ #inp .btn{
+    margin-left: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color:rgb(189, 197, 191);
+    color: black;
+    border: 3px solid black;
+    cursor: pointer;
+    /* margin: 0 8px; */
+}

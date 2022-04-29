@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple interest</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-wrapper">
+            <div class="wrapper">
+                <label for="principal">Principal($):</label>
+                <input type="number" id="principal" value="10000">
+            </div>
+            <div class="wrapper">
+                <label for="rate">Rate:</label>
+                <input type="number"  id="rate" value="5">
+            </div>
+            <label for="time">Time:</label>
+            <div class="time-wrapper">
+                <input type="number" id="time" value="1">
+                <select name="duration" id="duration">
+                    <option value="year">Year</option>
+                    <option value="month">Month</option>
+                </select>
+            </div>
+        </div>
+        <button id="calculate-btn">Calculate</button>
+        <div id="result"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
