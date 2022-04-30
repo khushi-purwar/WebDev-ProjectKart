@@ -1,0 +1,82 @@
+h1
+{
+  text-align:center;
+  color:blue;
+  font-family: arial;
+  font-style: italic;
+}
+h2
+{
+ 
+  color:green;
+  font-family: arial;
+  font-style: italic;
+  margin:25px;
+}
+canvas
+{
+  width:300pt;
+  height:250pt;
+  border:4px solid black;
+  margin:25px;
+}
+p
+{
+  font-size:25px;
+  margin:25px;
+}
+#redd
+{
+  width:150px;
+  height:50px;
+  font-size:20px;
+  background-color:red;
+}
+#green
+{
+  width:150px;
+  height:50px;
+  font-size:20px;
+  background-color:green;
+}
+#blue
+{
+  width:150px;
+  height:50px;
+  font-size:20px;
+  background-color:blue;
+}
+#rainbow
+{
+  width:150px;
+  height:50px;
+  font-size:20px;
+  background:linear-gradient(red,orange,yellow,green,blue,indigo,violet);
+}
+#clearr
+{
+  width:150px;
+  height:50px;
+  font-size:20px;
+  background-color:white;
+}
+#blur
+{
+  width:150px;
+  height:50px;
+  font-size:20px;
+  background-color:lightgrey;
+}
+#greyy
+{
+  width:200px;
+  height:50px;
+  font-size:20px;
+  background-color:grey;
+}
+#reset
+{
+  width:150px;
+  height:50px;
+  font-size:20px;
+}
