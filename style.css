@@ -1,7 +1,6 @@
 *{
-    padding: 5px;
-    margin: 5px;
-    /* box-sizing: border-box; */
+    padding: 0px;
+    margin: 0px;
     list-style: none;
     text-decoration: none;
     font-family: Roboto, sans-serif;
@@ -9,76 +8,139 @@
 
 /* now start coding of css from here  */
 
-.trynow{
-    color: white;
-    background-color: blueviolet;
-    border-radius: 5px;
-    padding: 5px;
-    text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: inline-block;
-}
-
-.trynow:hover{
-
-    background-color: white;
-    color: blueviolet;
-    border: 1px solid blueviolet;
-}
-
-.image{
-    width: 350px;
-    height: 120px;
-    padding-top: 50px;
-    padding-left: 0px;
-}
-
-
 body{
-    background: whitesmoke;
-    /* background-color: red; */
+    background: #41465D !important;
 }
 
-main h1{
-    max-width: 600px;
-    width: 90%;
-    /* background-color: red; */
+.title{
+    margin: 1em 0em .5em 0; 
+    font-family: 'Space Mono';
+    font-size: 3.5em;
+    color: white;
     text-align: center;
-    padding: 20px;
-    font-size: 50px;
-    font-weight: bold;
-    border-bottom: 4px solid rgb(189, 161, 161);
-    margin: 0 auto;
-    margin-bottom: 40px;
 }
 
-main h3{
+ @media only screen and (max-width:476px){
+    #searchbar{
+      width: 70%;
+    }
+    .title{
+      margin-top: 5em;
+      font-size: 45px;
+    }
+  }
 
-    font-size: 25px;
-    font-weight: bolder;
-    width: 350px;
-    height: 320px;
-    border-radius: 5px;
+  .image{
+    padding: .5em;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+  }
+  .image:hover{
+    padding: 0;
+  }
+  
+  .styles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 4vmin;
+    flex-wrap: wrap;
+  }
+  
+  .stylebox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
     background-color: white;
-    margin: 10px auto;
-    margin-left: 100px;
-    margin-right: 40px;
-    padding: 4px 60px;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    float: left;
-    box-shadow: 8px 5px rgba(0, 0, 0, 0.5);
-}
+    padding: .2rem;
+    text-align: center;
+    font-family: 'Bitter', sans-serif;
+    margin: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    width: 20rem;
+    transition: .2s;
+  }
+  .stylebox:hover {
+    
+    box-shadow: 15px 15px 17px #000;
+  }
+  .stylebox .image {
+    width: 98%;
+    overflow: hidden;
+    height: 13rem;
+    border-radius: .5em;
+    transition: .4s;
+  }
+  
+  .stylebox .image img{
+    height: 100%;
+    width: 100%;
+  }
+  
+  .stylebox .image:hover{
+    transform: scale(1.17);
+    border-radius: .5em;
+  }
 
-main h3:hover {
- 
-  transform: scale(1.05);
-  box-shadow: 5px 5px rgba(0, 0, 0, 0.7);
-
-}
-
-a:hover {
-    /* color: white; */
-    cursor: pointer;
-}
+  .card-heading{
+    display: flex;
+    color: #121212;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 1em .5em;
+    font-family: 'Poppins';
+  }
+  .card-body{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  button{
+    border: 0px ;
+    width: 95%;
+    font-size: 1em;
+    background-color: #FF914D;
+    font-family: 'Poppins';
+    font-weight: bold;
+    padding: .5em;
+    transition: 0.3s;
+    margin-left: .5em;
+    margin-bottom: 1em ;
+  }
+  
+  .project_link:hover{
+    background-color: #101522;
+    color: #fff;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .styles {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-around;
+      margin: 0 auto;
+      margin-top: 10vmin;
+    }
+    .stylebox {
+      padding: .3rem;
+      margin: auto;
+      width: 18rem;
+      margin-bottom: 1.5rem;
+    }
+    .stylebox .image {
+      overflow: hidden;
+      width: 17rem;
+      height: 12rem;
+      padding: 0;
+      margin: 0;
+      padding: .5em .5em 0 .5em;
+      border-radius: 0.5rem;
+      transition: .3s;
+    }
+  }
