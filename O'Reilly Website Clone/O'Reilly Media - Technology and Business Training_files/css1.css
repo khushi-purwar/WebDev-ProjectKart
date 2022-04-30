@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+/* The urw-typewriter font-face is available in thin, narrow, without additional weights or styles. */
+@font-face {
+  font-family: oreilly-urw-typewriter-narro;
+  font-weight: 400;
+  font-style: normal;
+  src: url(https://cdn.oreillystatic.com/fonts/URWTypewriter/urwtypewritertotthinnar-webfont.eot);
+  src: url(https://cdn.oreillystatic.com/fonts/URWTypewriter/urwtypewritertotthinnar-webfont.eot?#iefix) format("embedded-opentype"), url(https://cdn.oreillystatic.com/fonts/URWTypewriter/urwtypewritertotthinnar-webfont.woff) format("woff"), url(https://cdn.oreillystatic.com/fonts/URWTypewriter/urwtypewritertotthinnar-webfont.ttf) format("truetype"), url(https://cdn.oreillystatic.com/fonts/URWTypewriter/urwtypewritertotthinnar-webfont.svg#oreilly-urw-typewriter-narro) format("svg")
+}
+@font-face {
+  font-family: oreilly-urw-typewriter-narro;
+  font-weight: 400;
+  font-style: italic;
+  src: url(https://cdn.oreillystatic.com/fonts/URWTypewriter/urwtypewritertotthinnar-webfont.eot);
+  src: url(https://cdn.oreillystatic.com/fonts/URWTypewriter/urwtypewritertotthinnar-webfont.eot?#iefix) format("embedded-opentype"), url(https://cdn.oreillystatic.com/fonts/URWTypewriter/urwtypewritertotthinnar-webfont.woff) format("woff"), url(https://cdn.oreillystatic.com/fonts/URWTypewriter/urwtypewritertotthinnar-webfont.ttf) format("truetype"), url(https://cdn.oreillystatic.com/fonts/URWTypewriter/urwtypewritertotthinnar-webfont.svg#oreilly-urw-typewriter-narro) format("svg")
+}
+@font-face {
+  font-family: oreilly-urw-typewriter-narro;
+  font-weight: 700;
+  font-style: normal;
+  src: url(https://cdn.oreillystatic.com/fonts/URWTypewriter/urwtypewritertotthinnar-webfont.eot);
+  src: url(https://cdn.oreillystatic.com/fonts/URWTypewriter/urwtypewritertotthinnar-webfont.eot?#iefix) format("embedded-opentype"), url(https://cdn.oreillystatic.com/fonts/URWTypewriter/urwtypewritertotthinnar-webfont.woff) format("woff"), url(https://cdn.oreillystatic.com/fonts/URWTypewriter/urwtypewritertotthinnar-webfont.ttf) format("truetype"), url(https://cdn.oreillystatic.com/fonts/URWTypewriter/urwtypewritertotthinnar-webfont.svg#oreilly-urw-typewriter-narro) format("svg")
+}
+@font-face {
+  font-family: oreilly-urw-typewriter-narro;
+  font-weight: 700;
+  font-style: italic;
+  src: url(https://cdn.oreillystatic.com/fonts/URWTypewriter/urwtypewritertotthinnar-webfont.eot);
+  src: url(https://cdn.oreillystatic.com/fonts/URWTypewriter/urwtypewritertotthinnar-webfont.eot?#iefix) format("embedded-opentype"), url(https://cdn.oreillystatic.com/fonts/URWTypewriter/urwtypewritertotthinnar-webfont.woff) format("woff"), url(https://cdn.oreillystatic.com/fonts/URWTypewriter/urwtypewritertotthinnar-webfont.ttf) format("truetype"), url(https://cdn.oreillystatic.com/fonts/URWTypewriter/urwtypewritertotthinnar-webfont.svg#oreilly-urw-typewriter-narro) format("svg")
+}
+
+/* The guardian-text-sans font-face is available in normal, medium, and bold weights each with normal and italic styles */
+@font-face {
+  font-family: guardian-text-oreilly;
+  font-weight: 400;
+  font-style: normal;
+  src: url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-Regular-Web.eot);
+  src: url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-Regular-Web.eot?#iefix) format("embedded-opentype"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-Regular-Web.woff2) format("woff2"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-Regular-Web.woff) format("woff"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-Regular-Web.ttf) format("truetype"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-Regular-Web.svg#Guardian) format("svg")
+}
+@font-face {
+  font-family: guardian-text-oreilly;
+  font-weight: 400;
+  font-style: italic;
+  src: url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-RegularIt-Web.eot);
+  src: url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-RegularIt-Web.eot?#iefix) format("embedded-opentype"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-RegularIt-Web.woff2) format("woff2"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-RegularIt-Web.woff) format("woff"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-RegularIt-Web.ttf) format("truetype"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-RegularIt-Web.svg#Guardian) format("svg")
+}
+@font-face {
+  font-family: guardian-text-oreilly;
+  font-weight: 500;
+  font-style: normal;
+  src: url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-Medium-Web.eot);
+  src: url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-Medium-Web.eot?#iefix) format("embedded-opentype"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-Medium-Web.woff2) format("woff2"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-Medium-Web.woff) format("woff")
+}
+@font-face {
+  font-family: guardian-text-oreilly;
+  font-weight: 500;
+  font-style: italic;
+  src: url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-MediumIt-Web.eot);
+  src: url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-MediumIt-Web.eot?#iefix) format("embedded-opentype"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-MediumIt-Web.woff2) format("woff2"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-MediumIt-Web.woff) format("woff")
+}
+@font-face {
+  font-family: guardian-text-oreilly;
+  font-weight: 600;
+  font-style: normal;
+  src: url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-Medium-Web.eot);
+  src: url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-Medium-Web.eot?#iefix) format("embedded-opentype"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-Medium-Web.woff2) format("woff2"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-Medium-Web.woff) format("woff"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-Medium-Web.ttf) format("truetype"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-Medium-Web.svg#Guardian) format("svg")
+}
+@font-face {
+  font-family: guardian-text-oreilly;
+  font-weight: 600;
+  font-style: italic;
+  src: url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-MediumIt-Web.eot);
+  src: url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-MediumIt-Web.eot?#iefix) format("embedded-opentype"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-MediumIt-Web.woff2) format("woff2"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-MediumIt-Web.woff) format("woff"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-MediumIt-Web.ttf) format("truetype"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-MediumIt-Web.svg#Guardian) format("svg")
+}
+@font-face {
+  font-family: guardian-text-oreilly;
+  font-weight: 700;
+  font-style: normal;
+  src: url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-Medium-Web.eot);
+  src: url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-Medium-Web.eot?#iefix) format("embedded-opentype"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-Medium-Web.woff2) format("woff2"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-Medium-Web.woff) format("woff"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-Medium-Web.ttf) format("truetype"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-Medium-Web.svg#Guardian) format("svg")
+}
+@font-face {
+  font-family: guardian-text-oreilly;
+  font-weight: 700;
+  font-style: italic;
+  src: url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-MediumIt-Web.eot);
+  src: url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-MediumIt-Web.eot?#iefix) format("embedded-opentype"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-MediumIt-Web.woff2) format("woff2"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-MediumIt-Web.woff) format("woff"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-MediumIt-Web.ttf) format("truetype"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianTextSans-MediumIt-Web.svg#Guardian) format("svg")
+}
+
+/* The guardian-sans font-face is only bold, no italic, and should be reserved for headlines */
+@font-face {
+  font-family: guardian-oreilly;
+  font-weight: 400;
+  font-style: normal;
+  src: url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianSans-Bold-Web.eot);
+  src: url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianSans-Bold-Web.eot?#iefix) format("embedded-opentype"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianSans-Bold-Web.woff2) format("woff2"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianSans-Bold-Web.woff) format("woff")
+}
+@font-face {
+  font-family: guardian-oreilly;
+  font-weight: 400;
+  font-style: italic;
+  src: url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianSans-Bold-Web.eot);
+  src: url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianSans-Bold-Web.eot?#iefix) format("embedded-opentype"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianSans-Bold-Web.woff2) format("woff2"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianSans-Bold-Web.woff) format("woff")
+}
+@font-face {
+  font-family: guardian-oreilly;
+  font-weight: 700;
+  font-style: normal;
+  src: url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianSans-Bold-Web.eot);
+  src: url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianSans-Bold-Web.eot?#iefix) format("embedded-opentype"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianSans-Bold-Web.woff2) format("woff2"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianSans-Bold-Web.woff) format("woff")
+}
+@font-face {
+  font-family: guardian-oreilly;
+  font-weight: 700;
+  font-style: italic;
+  src: url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianSans-Bold-Web.eot);
+  src: url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianSans-Bold-Web.eot?#iefix) format("embedded-opentype"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianSans-Bold-Web.woff2) format("woff2"), url(https://cdn.oreillystatic.com/fonts/GuardianText/GuardianSans-Bold-Web.woff) format("woff")
+}
+
+/* The Gilroy font-face is available in light and semi bold, without additional weights or styles. */
+
+@font-face {
+  font-family: 'gilroy';
+  font-weight: 300;
+  font-style: normal;
+  src: url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-Light.eot');
+  src: url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-Light.eot?#iefix') format('embedded-opentype'),url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-Light.woff2') format('woff2'),url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-Light.woff') format('woff'),url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'gilroy';
+  font-weight: 300;
+  font-style: italic;
+  src: url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-LightItalic.eot');
+  src: url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-LightItalic.eot?#iefix') format('embedded-opentype'),url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-LightItalic.woff2') format('woff2'),url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-LightItalic.woff') format('woff'),url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-LightItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'gilroy';
+  font-weight: 400;
+  font-style: normal;
+  src: url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBold.eot');
+  src: url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBold.woff2') format('woff2'),url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBold.woff') format('woff'),url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'gilroy';
+  font-weight: 400;
+  font-style: italic;
+  src: url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBoldItalic.eot');
+  src: url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBoldItalic.woff2') format('woff2'),url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBoldItalic.woff') format('woff'),url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBoldItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'gilroy';
+  font-weight: 500;
+  font-style: normal;
+  src: url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBold.eot');
+  src: url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBold.woff2') format('woff2'),url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBold.woff') format('woff'),url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'gilroy';
+  font-weight: 500;
+  font-style: italic;
+  src: url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBoldItalic.eot');
+  src: url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBoldItalic.woff2') format('woff2'),url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBoldItalic.woff') format('woff'),url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBoldItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'gilroy';
+  font-weight: 700;
+  font-style: normal;
+  src: url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBold.eot');
+  src: url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBold.woff2') format('woff2'),url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBold.woff') format('woff'),url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'gilroy';
+  font-weight: 700;
+  font-style: italic;
+  src: url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBoldItalic.eot');
+  src: url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBoldItalic.woff2') format('woff2'),url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBoldItalic.woff') format('woff'),url('https://cdn.oreillystatic.com/fonts/Gilroy/Gilroy-SemiBoldItalic.ttf') format('truetype');
+}
+/* Font-family defaults */
+body, p, ol, ul, td, h1, h2, h3, h4 {
+  font-family: 'guardian-text-oreilly', Helvetica, sans-serif;
+  font-variant-ligatures: none;
+}
+.typewriter {
+  font-family: 'oreilly-urw-typewriter-narro', 'Courier New', serif;
+}
