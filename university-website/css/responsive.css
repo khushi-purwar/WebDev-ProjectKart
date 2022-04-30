@@ -1,0 +1,364 @@
+/******************************************
+    Version: 1.0
+/****************************************** */
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.top-navbar .navbar-light .navbar-nav .nav-item{
+		margin: 0px 5px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.top-navbar .navbar-light .navbar-nav .nav-item{
+		padding: 0px;
+	}
+	.top-navbar .navbar-light .navbar-nav .nav-item::after{
+		display: none;
+	}
+	.top-navbar .navbar-light .navbar-nav .nav-item .nav-link::before{
+		display: none;
+	}
+	.top-navbar .navbar-light .navbar-nav .nav-item .nav-link::after{
+		display: none;
+	}
+	.stat-wrap{
+		text-align: center !important; 
+	}
+	body.host_version .stat-wrap  .alignleft{
+		float: none;
+		margin: 0 auto;
+	}
+	body.host_version .stat-wrap h3{
+		margin-bottom: 12px;
+	}
+	.pricing-table-header h2{
+		font-size: 22px;
+	}
+	.pricing-table-features{
+		padding: 0px 0px 15px 0px;
+		margin: 15px 15px 0 15px;
+	}
+	.pricing-table-features p{
+		font-size: 13px;
+	}
+	.icon-wrapper h3{
+		clear: both;
+	}
+	.icon-wrapper p{
+		padding-left: 0px;
+	}
+	.pricingTable .heading > h3{
+		font-size: 28px;
+	}
+	.pricingTable .price-value{
+		font-size: 28px;
+	}
+	.pricingTable .pricingContent ul li{
+		font-size: 13px;
+	}
+	.widget.server a{
+		padding: 10px 20px;
+	}
+	body.host_version .footer-social .btn{
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+	}
+	.customwidget a{
+		padding: 10px 20px;
+	}
+	.contact_form{
+		margin-right: 0px;
+		margin-bottom: 30px;
+	}
+	.btn-light{
+		padding: 10px 20px;
+	}
+	.inner-hmv{
+		margin-bottom: 30px;
+	}
+	hr.hr3{
+		margin-top: 0px;
+	}
+	.course-item{
+		margin-bottom: 30px;
+	}	
+	.stat-wrap {
+		text-align: center !important;
+	}
+	.alignleft{
+		float: none;
+	}
+	.blog-item{
+		margin-bottom: 30px;
+	}
+	.blog-post-single{
+		margin-bottom: 30px;
+	}
+}
+@media (max-width: 767px) {
+	.top-navbar .navbar-light .navbar-nav .nav-item{
+		padding: 0px;
+	}
+	.top-navbar .navbar-light .navbar-nav .nav-item::after{
+		display: none;
+	}
+	.top-navbar .navbar-light .navbar-nav .nav-item .nav-link::before{
+		display: none;
+	}
+	.top-navbar .navbar-light .navbar-nav .nav-item .nav-link::after{
+		display: none;
+	}
+	.first-section h2{
+		font-size: 28px;
+	}
+	.first-section .lead{
+		font-size: 14px;
+	}
+	body.host_version .checkdomain-wrapper .form-control{
+		width: 83%;
+	}
+	body.host_version .checkdomain-wrapper .checkbox{
+		width: 20%;
+		margin-bottom: 15px;
+	}
+	.customwidget h1{
+		font-size: 34px;
+	}
+	.section-title h3{
+		font-size: 28px;
+	}
+	.message-box h2{
+		font-size: 24px;
+	}
+	.pricing-table{
+		margin-bottom: 40px;
+	}
+	.pricing-table-features{
+		padding: 0px 0px 10px 0px;
+	}
+	.testimonial h3{
+		font-size: 18px;
+	}
+	.desc h3 i{
+		font-size: 28px;
+	}
+	.footer .widget{
+		margin-bottom: 30px;
+	}
+	.copyrights{
+		padding: 20px 0px;
+		text-align: center;
+	}
+	.footer-distributed .footer-right{
+		float: none;
+	}
+	.all-title-box{
+		min-height: 200px;
+	}
+	.all-title-box h1{
+		font-size: 34px;
+	}
+	.icon-wrapper h3{
+		font-size: 14px;
+	}
+	.icon-wrapper p{
+		font-size: 13px;
+	}
+	.icon-wrapper{
+		margin-bottom: 30px;
+	}
+	.readmore a{
+		font-size: 13px;
+	}
+	body.host_version .stat-wrap p{
+		font-size: 28px;
+		clear: both;
+	}
+	body.host_version .stat-wrap h3{
+		margin-bottom: 20px;
+	}
+	.widget.server{
+		margin-bottom: 30px;
+	}
+	.section{
+		padding: 40px 0;
+	}
+	.dmoain-pricing table th{
+		font-size: 14px;
+	}
+	.contact_form{
+		margin-right: 0px;
+		margin-bottom: 30px;
+	}
+	#support .section-title{
+		padding: 0px 15px;
+	}
+	.customer-box .nav-tabs{
+		padding: 20px 0px;
+	}
+	.customer-box .tab-content{
+		padding: 20px 0px;
+	}
+	body.host_version .stat-wrap .alignleft{
+		margin-right: auto;
+	}
+	.blog-post-single{
+		margin-bottom: 30px;
+	}
+	.course-item{
+		margin-bottom: 30px;
+	}
+	hr.hr3{
+		margin-top: 0px;
+	}
+	.inner-hmv{
+		margin-bottom: 30px;
+	}
+	.stat-wrap {
+		text-align: center !important;
+	}
+	.alignleft{
+		float: none;
+	}
+	.blog-item{
+		margin-bottom: 30px;
+	}
+}
+@media only screen and (min-width: 280px) and (max-width: 599px) {
+	.top-navbar .navbar-light .navbar-nav .nav-item{
+		padding: 0px;
+	}
+	.top-navbar .navbar-light .navbar-nav .nav-item::after{
+		display: none;
+	}
+	.top-navbar .navbar-light .navbar-nav .nav-item .nav-link::before{
+		display: none;
+	}
+	.top-navbar .navbar-light .navbar-nav .nav-item .nav-link::after{
+		display: none;
+	}
+	
+	.first-section h2{
+		font-size: 28px;
+	}
+	.first-section .lead{
+		font-size: 14px;
+	}
+	.first-section .big-tagline a{
+		font-size: 14px;
+	}
+	.section-title p{
+		font-size: 14px;
+		line-height: 24px;
+	}
+	body.host_version .checkdomain-wrapper .form-control{
+		width: 83%;
+	}
+	body.host_version .checkdomain-wrapper .checkbox{
+		width: 20%;
+		margin-bottom: 15px;
+	}
+	.customwidget h1{
+		font-size: 34px;
+	}
+	.section-title h3{
+		font-size: 28px;
+	}
+	.message-box h2{
+		font-size: 24px;
+	}
+	.pricing-table{
+		margin-bottom: 40px;
+	}
+	.pricing-table-features{
+		padding: 0px 0px 10px 0px;
+	}
+	.testimonial h3{
+		font-size: 18px;
+	}
+	.desc h3 i{
+		font-size: 28px;
+	}
+	.footer .widget{
+		margin-bottom: 30px;
+	}
+	.copyrights{
+		padding: 20px 0px;
+		text-align: center;
+	}
+	.footer-distributed .footer-right{
+		float: none;
+	}
+	.all-title-box{
+		min-height: 200px;
+	}
+	.all-title-box h1{
+		font-size: 34px;
+	}
+	.icon-wrapper h3{
+		font-size: 14px;
+	}
+	.icon-wrapper p{
+		font-size: 13px;
+	}
+	.icon-wrapper{
+		margin-bottom: 30px;
+	}
+	.readmore a{
+		font-size: 13px;
+	}
+	body.host_version .stat-wrap p{
+		font-size: 28px;
+	}
+	.widget.server{
+		margin-bottom: 30px;
+	}
+	.section{
+		padding: 40px 0;
+	}
+	.dmoain-pricing table th{
+		font-size: 14px;
+	}
+	.contact_form{
+		margin-right: 0px;
+		margin-bottom: 30px;
+	}
+	#support .section-title{
+		padding: 0px 15px;
+	}
+	.customer-box .nav-tabs{
+		padding: 20px 0px;
+	}
+	.customer-box .tab-content{
+		padding: 20px 0px;
+	}
+	.logos img{
+		max-width: 120px;
+	}
+	.author-bio{
+		width: 100%;
+	}
+	.author-desc{
+		width: 100%;
+		position: relative;
+	}
+	.comment-list ul.children {
+		margin-left: 10px;
+	}
+	.blog-post-single{
+		margin-bottom: 30px;
+	}
+	.course-item{
+		margin-bottom: 30px;
+	}
+	hr.hr3{
+		margin-top: 0px;
+	}
+	.inner-hmv{
+		margin-bottom: 30px;
+	}
+	
+}
+
+
