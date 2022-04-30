@@ -1,0 +1,29 @@
+
+Project title
+(Image-editor)
+
+Project Description
+It is a very simple and basic image editor principal based on the advanced image editor like canvas and other stuff. In this project, I have created a container within the container we have two rows as the first half or rows containing the basic functionality of Image editor.
+And the second half of the container is having the upload button and with hideable div that will preview the selected image after clicking on the upload button.
+
+In the functionality we have
+
+- Blur 
+- Contrast
+- Hue-rotate
+- Sepia
+- and having with rotate functionality
+- no rotate
+- horizontal rotate
+- vertical rotate
+
+Stack
+And in order to tick the check box just put x inside them for example - [x] like this. Please delete options that are not relevant.
+
+- [x] Html
+- [x] CSS
+- [x] JavaScript
+
+
+Screenshot
+

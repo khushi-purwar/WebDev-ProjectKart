@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- icons -->
+
+  <script src="https://kit.fontawesome.com/6fe0709649.js" crossorigin="anonymous"></script>
+  <!-- favicons -->
+
+  <link rel="shortcut icon"
+    href="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/favicons/favicon-96x96.png"
+    type="image/x-icon" />
+  <!-- jquery -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles/grt-youtube-popup.css">
+  <!-- fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+  <!-- title -->
+
+  <title>Pluralsight | The tech workforce development company</title>
+
+  <!-- linked CSS -->
+
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- <link rel="stylesheet" href="./styles/footer.css"> -->
+  <!-- <link rel="stylesheet" href="./styles/nav.css"> -->
+
+</head>
+
+<body>
+  <!-- navbar -->
+  <div id="navItems"></div>
+
+  <div id="containernav">
+
+    <div id="nav"></div>
+
+    <div id="searchBar"></div>
+
+  </div>
+  <!-- content -->
+
+  <!-- first div -->
+  <div id="home_container">
+    <div id="first_conatainer">
+      <div id="first_conatainer_box">
+        <div id="first_container_content">
+          <div id="first_conatainer_heading">
+            <div id="rotating_div">
+              <p>Build better</p>
+              <div class="words">
+                <span>teams</span>
+                <span>products</span>
+                <span>workflows</span>
+                <span>skills</span>
+                <span>teams</span>
+              </div>
+            </div>
+          </div>
+          <div class="subheading">
+            <p>
+              Face the future with confidence—and with the skills and tools to
+              thrive.
+            </p>
+          </div>
+          <div id="buttonDiv">
+            <div id="viewPlansDIv">
+              <div id="viewPlansButtonDiv">
+                <button id="viewPlans">View Plans</button>
+              </div>
+            </div>
+            <div id="tryForFreeDiv">
+              <button id="tryForFree">Try for free</button>
+            </div>
+          </div>
+          <div class="subheading">
+            <h6 id="orgText">HELPING THOUSANDS OF ORGANIZATIONS BUILD TECH SKILLS AT SCALE</h6>
+          </div>
+          <div id="orgLogo">
+            <div class="logos">
+              <img src="./images/adp.png" alt="">
+            </div>
+            <div class="logos">
+              <img src="./images/adobe.png" alt="">
+            </div>
+            <div class="logos">
+              <img src="./images/vm.png" alt="">
+            </div>
+            <div class="logos">
+              <img src="./images/fujitsu.png" alt="">
+            </div>
+            <div class="logos">
+              <img src="./images/nasdaq.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="separatorLine"></div>
+    </div>
+    <!-- second div -->
+
+    <div id="secondDiv">
+      <div id="coursesDiv">
+        <div class="courseItems">
+          <div class="courseItemsDiv">
+            <div class="courseItemsDivBox">
+              <label class="path">PATH</label>
+              <p class="title">JavaScript</p>
+              <div class="totalCourses"><span class="span">11</span> Courses</div>
+              <div class="takeAlook">Take a look <i id="arrow" class="fa-solid fa-angle-right"></i></div>
+              <img class="courseImg" src="./images/javascript-542e10ea6e.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="courseItems">
+          <div class="courseItemsDiv">
+            <div class="courseItemsDivBox">
+              <label class="path">PATH</label>
+              <p class="title">Angular</p>
+              <div class="totalCourses"><span class="span">14</span> Courses</div>
+              <div class="takeAlook">Take a look <i id="arrow" class="fa-solid fa-angle-right"></i></div>
+              <img class="courseImg" src="./images/angular-14a0f6532f.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="courseItems">
+          <div class="courseItemsDiv">
+            <div class="courseItemsDivBox">
+              <label class="path">PATH</label>
+              <p class="title">Core Python</p>
+              <div class="totalCourses"><span class="span">12</span> Courses</div>
+              <div class="takeAlook">Take a look <i id="arrow" class="fa-solid fa-angle-right"></i></div>
+              <img class="courseImg" src="./images/python-7be70baaac.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="courseItems">
+          <div class="courseItemsDiv">
+            <div class="courseItemsDivBox">
+              <label class="path">PATH</label>
+              <p class="title">C#</p>
+              <div class="totalCourses"><span class="span">19</span> Courses</div>
+              <div class="takeAlook">Take a look <i id="arrow" class="fa-solid fa-angle-right"></i></div>
+              <img class="courseImg" src="./images/csharp-e7b8fcd4ce.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="trendingTechDiv">
+        <h6 class="trendingTech">Trending Technologies</h6>
+        <h3 class="feature">Popular topics to learn now</h3>
+        <p>Not sure what technologies to focus on? The Technology Index ranks 850+ technologies by their relative
+          popularity. See what’s topping the charts and get recommended courses to skill up. </p>
+        <div class="takeAlook">View the index <i id="arrow" class="fa-solid fa-angle-right"></i></div>
+      </div>
+    </div>
+    <!-- third div -->
+
+    <div id="thirdDiv">
+      <div id="thirdContent">
+        <h6 class="trendingTech">See what's new</h6>
+        <h3 class="feature">Our latest features</h3>
+        <div id="skills">
+          <div id="skillText">
+            <div id="skillHead">
+              <img class="skillLogo" src="./images/logo-skills.png" alt="">
+              <h6 id="skillLab">labs</h6>
+            </div>
+            <h3 class="skillTitle">Deepen your people's expertise with hands-on labs</h3>
+            <p class="skillAbt">Improve your teams’ confidence in their ability to deliver on business objectives by
+              building the right skills that meet your org’s needs. Pluralsight offers 950+ labs that enable hands-on
+              practice in secure environments across domains such as cloud (AWS, GCP and Azure), IT Ops, security, data
+              and software development.</p>
+            <div class="takeAlook">Learn more <i id="arrow" class="fa-solid fa-angle-right"></i></div>
+          </div>
+          <div>
+            <img id="skillImg" src="./images/Cloud-labs-image2x.png" alt="">
+          </div>
+        </div>
+        <div id="certificateCourse">
+          <div class="certificate">
+            <div class="certificateContent">
+              <img class="skillLogo" src="./images/certification-prep.png" alt="">
+              <h3 class="featureCertificate">Empower your teams to grow their skills and their careers</h3>
+              <p class="skillAbt">Prepare your team for certification exams with our expert authored content and
+                practice exams.</p>
+              <div class="takeAlook">Learn more <i id="arrow" class="fa-solid fa-angle-right"></i></div>
+            </div>
+          </div>
+          <div class="certificate">
+            <div class="certificateContent">
+              <img class="skillLogo" src="./images/delivery-module.png" alt="">
+              <h3 class="featureCertificate">Make lasting workflow improvements with insights from your Jira data</h3>
+              <p class="skillAbt">Go beyond Jira data and get visibility into what’s happening within your user stories,
+                tasks and bugs. Flow’s delivery module helps you better understand how your team is working and can make
+                lasting improvements to your workflow.</p>
+              <div class="takeAlook">Learn more <i id="arrow" class="fa-solid fa-angle-right"></i></div>
+            </div>
+          </div>
+          <div class="certificate">
+            <div class="certificateContent">
+              <img class="skillLogo" src="./images/sandboxes.png" alt="">
+              <h3 class="featureCertificate">Utilize a space for unrestricted exploration</h3>
+              <p class="skillAbt">Sandboxes gives your team a safe environment to practice what they're learning from
+                expert-authored courses..</p>
+              <div class="takeAlook">Learn more <i id="arrow" class="fa-solid fa-angle-right"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fourth div -->
+
+    <div id="fourthDiv">
+      <div id="fourthContent">
+        <h6 class="trendingTech">Keep up to date</h6>
+        <h3 class="feature">Discover more about Pluralsight</h3>
+        <div id="forthDivBoxes">
+
+
+          <a class="youtube-link" youtubeid="9h-I4lRkWH0">
+            <div class="discoverMore">
+              <img class="discoverImg" src="./images/skills grid.jpg" alt="">
+              <h6 class="yellowDiscoverText"> What is pluralsight skills?</h6>
+              <p class="skillAbt">Discover the fastest, most effective path to developing technology skills</p>
+            </div>
+          </a>
+          <div class="discoverMore">
+            <img class="discoverImg" src="./images/party.png" alt="">
+            <h6 class="yellowDiscoverText">PLURALSIGHT NAMED A LEADER FOR IT TRAINING</h6>
+            <p class="skillAbt">We're honored to be recognized in the 2021 IDC MarketScape for IT training.</p>
+          </div>
+          <div class="discoverMore">
+            <img class="discoverImg" src="./images/flow-demo-thumbnail.png" alt="">
+            <h6 class="yellowDiscoverText">LEARN HOW TO DE-FRICTION YOUR SOFTWARE DEVELOPMENT WORKFLOW WITH FLOW</h6>
+            <p class="skillAbt">Take a guided tour through Pluralsight Flow to see how visibility can take your team to
+              the next level</p>
+          </div>
+          <div class="discoverMore">
+            <img class="discoverImg" src="./images/50 free.png" alt="">
+            <h6 class="yellowDiscoverText"> create your free account</h6>
+            <p class="skillAbt">Build new tech skills on us with free access to 50+ expert-led courses, assessments and
+              more.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fifth div -->
+
+    <div id="fifthDiv">
+      <div id="fifthContent">
+        <div id="vmwareImg">
+          <img width="100%" height="100%" src="./images/typing on laptop.png" alt="">
+        </div>
+        <div id="vmwareTextBox">
+          <div id="vmwareText">
+            <img src="./images/vmware.png" alt="">
+            <h4 class="featureVMware">Winning the talent war with a scalable tech skills platform</h4>
+            <p class="skillAbt">Evolving a 20-year-old company, increasing innovation and accelerating time to delivery
+              requires fresh skills. See how VMware’s globally dispersed teams use Pluralsight to leverage the latest
+              developments in technology as they find new ways to serve customers.</p>
+            <div id="howButton">
+              <button id="howTheyDoing">HOW THEY'RE SKILLING UP</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="followUs">
+        <h6 class="trendingTech">Follow us</h6>
+        <h4 class="featureVMware">Share your skills</h4>
+      </div>
+    </div>
+    <!-- sixth div -->
+
+    <div id="sixthDiv">
+      <div id="slideShow" class="slider">
+        <div class="twitterPosts">
+          <div class="profile">
+            <div class="profilePic">
+              <img width="100%" src="https://pbs.twimg.com/profile_images/1448520867168784385/dCBGUked_bigger.jpg"
+                alt="">
+            </div>
+            <div class="profileName">
+              <div class="profileLogo">
+                <h5>Martin Therkelsen</h5>
+                <span>@Market</span>
+              </div>
+              <div class="twitterLogo">
+                <img width="40%" src="./images/twitter_PNG9.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="twitterMsg">
+            <p>Yesterday I passed the AZ-104 exam. <a target="_blank" href="https://www.twitter.com/pluralsight">
+                <span>@pluralsight</span></a> courses are great to help prepare for these exams. <a
+                href="https://www.twitter.com/hashtag/citrixctp?src=hash"> <span> #citrixctp</span></a> <a
+                href="https://www.twitter.com/hashtag/azure?src=hash"><span> #azure</span></a></p>
+          </div>
+          <div class="tweetReactions">
+            <a href="https://twitter.com/intent/tweet?in_reply_to=1362843439730196480">
+              <img src="https://img.icons8.com/small/16/000000/twitter-reply.png" />
+            </a>
+            <a target="_blank" class="tl-retweet" href="https://twitter.com/intent/retweet?tweet_id=1362843439730196480"
+              tabindex="0">
+              <img src="https://img.icons8.com/material-outlined/16/000000/retweet.png" />
+            </a>
+            <a target="_blank" class="tl-favorite"
+              href="https://twitter.com/intent/favorite?tweet_id=1362843439730196480" tabindex="0">
+              <img src="https://img.icons8.com/ios/16/000000/like--v1.png" />
+            </a>
+          </div>
+        </div>
+        <div class="twitterPosts">
+          <div class="profile">
+            <div class="profilePic">
+              <img width="100%" src="https://pbs.twimg.com/profile_images/1308211174429749248/ugAopGfO_bigger.jpg"
+                alt="">
+            </div>
+            <div class="profileName">
+              <div class="profileLogo">
+                <h5>William Masci</h5>
+                <span>@bill_ver3</span>
+              </div>
+              <div class="twitterLogo">
+                <img width="40%" src="./images/twitter_PNG9.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="twitterMsg">
+            <p>Just passed the <a target="_blank" href="https://www.twitter.com/hashtag/Cisco?src=hash"
+                tabindex="0"><span> #Cisco</span></a> DEVASC 200-901 exam! Tough exam, but it was a great experience.
+              I'm excited to be part of the <a target="_blank" href="https://www.twitter.com/hashtag/DevNet?src=hash"
+                tabindex="0"><span>#DevNet</span> </a> Class of 2020! Also big thanks to <a target="_blank"
+                href="https://www.twitter.com/nickrusso42518" tabindex="0"><span>@nickrusso42518</span></a> for his
+              amazing study plan and <a target="_blank" href="https://www.twitter.com/pluralsight"
+                tabindex="0"><span>@pluralsight</span></a> course. I highly recommend it if you're studying for DEVASC
+            </p>
+          </div>
+          <div class="tweetReactions">
+            <a href="https://twitter.com/intent/tweet?in_reply_to=1362843439730196480">
+              <img src="https://img.icons8.com/small/16/000000/twitter-reply.png" />
+            </a>
+            <a target="_blank" class="tl-retweet" href="https://twitter.com/intent/retweet?tweet_id=1362843439730196480"
+              tabindex="0">
+              <img src="https://img.icons8.com/material-outlined/16/000000/retweet.png" />
+            </a>
+            <a target="_blank" class="tl-favorite"
+              href="https://twitter.com/intent/favorite?tweet_id=1362843439730196480" tabindex="0">
+              <img src="https://img.icons8.com/ios/16/000000/like--v1.png" />
+            </a>
+          </div>
+        </div>
+        <div class="twitterPosts">
+          <div class="profile">
+            <div class="profilePic">
+              <img width="100%" src="https://pbs.twimg.com/profile_images/1289580947009155072/uegFC50F_bigger.jpg"
+                alt="">
+            </div>
+            <div class="profileName">
+              <div class="profileLogo">
+                <h5>Judy</h5>
+                <span>@judy_seyram</span>
+              </div>
+              <div class="twitterLogo">
+                <img width="40%" src="./images/twitter_PNG9.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="twitterMsg">
+            <p>The best thing that happened to me in 2020 was <a target="_blank"
+                href="https://www.twitter.com/hashtag/GADS2020?src=hash" tabindex="0"><span>#GADS2020</span> </a> which
+              introduced me to <a target="_blank" href="https://www.twitter.com/pluralsight"
+                tabindex="0"><span>@pluralsight</span> </a> . My interest in IT and programming peaked when i joined the
+              program and now i believe this is the career path i want to take.<a target="_blank"
+                href="https://www.twitter.com/hashtag/womenintech?src=hash" tabindex="0"> <span>#womenintech</span> </a>
+              <a target="_blank" href="https://www.twitter.com/hashtag/WomenWhoCode?src=hash"
+                tabindex="0"><span>#WomenWhoCode</span> </a> <a target="_blank"
+                href="https://www.twitter.com/hashtag/Andela?src=hash" tabindex="0"><span>#Andela</span> </a> <a
+                target="_blank" href="https://www.twitter.com/hashtag/Pluralsight?src=hash"
+                tabindex="0"><span>#Pluralsight</span> </a> <a target="_blank"
+                href="https://www.twitter.com/hashtag/GADS?src=hash" tabindex="0"><span>#GADS</span> </a> <a
+                target="_blank" href="https://t.co/oYchlj6V5W" tabindex="0"><span> https://t.co/oYchlj6V5W </span></a>
+            </p>
+          </div>
+          <div class="tweetReactions">
+            <a href="https://twitter.com/intent/tweet?in_reply_to=1362843439730196480">
+              <img src="https://img.icons8.com/small/16/000000/twitter-reply.png" />
+            </a>
+            <a target="_blank" class="tl-retweet" href="https://twitter.com/intent/retweet?tweet_id=1362843439730196480"
+              tabindex="0">
+              <img src="https://img.icons8.com/material-outlined/16/000000/retweet.png" />
+            </a>
+            <a target="_blank" class="tl-favorite"
+              href="https://twitter.com/intent/favorite?tweet_id=1362843439730196480" tabindex="0">
+              <img src="https://img.icons8.com/ios/16/000000/like--v1.png" />
+            </a>
+          </div>
+        </div>
+        <div class="twitterPosts">
+          <div class="profile">
+            <div class="profilePic">
+              <img width="100%" src="https://pbs.twimg.com/profile_images/1341497846168694786/Ls0jopTm_bigger.jpg"
+                alt="">
+            </div>
+            <div class="profileName">
+              <div class="profileLogo">
+                <h5>Skyler</h5>
+                <span>@SkylerDevops</span>
+              </div>
+              <div class="twitterLogo">
+                <img width="40%" src="./images/twitter_PNG9.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="twitterMsg">
+            <p>Just finished “Automation with windows <a target="_blank"
+                href="https://www.twitter.com/hashtag/Powershell?src=hash"><span>#Powershell</span> </a> Scripts” on <a
+                target="_blank" href="https://www.twitter.com/pluralsight"><span> @pluralsight</span></a> from <a
+                target="_blank" href="https://www.twitter.com/JeffHicks"><span>@JeffHicks</span></a>
+              . It was really well explained, learned a few things, definitely would recommend if you need to do some PS
+              😄</p>
+          </div>
+          <div class="tweetReactions">
+            <a href="https://twitter.com/intent/tweet?in_reply_to=1362843439730196480">
+              <img src="https://img.icons8.com/small/16/000000/twitter-reply.png" />
+            </a>
+            <a target="_blank" class="tl-retweet" href="https://twitter.com/intent/retweet?tweet_id=1362843439730196480"
+              tabindex="0">
+              <img src="https://img.icons8.com/material-outlined/16/000000/retweet.png" />
+            </a>
+            <a target="_blank" class="tl-favorite"
+              href="https://twitter.com/intent/favorite?tweet_id=1362843439730196480" tabindex="0">
+              <img src="https://img.icons8.com/ios/16/000000/like--v1.png" />
+            </a>
+          </div>
+        </div>
+        <div class="twitterPosts">
+          <div class="profile">
+            <div class="profilePic">
+              <img width="100%" src="https://pbs.twimg.com/profile_images/1370412190503739399/JS8236eg_bigger.jpg"
+                alt="">
+            </div>
+            <div class="profileName">
+              <div class="profileLogo">
+                <h5>Javier Montero</h5>
+                <span>@DataSlugger</span>
+              </div>
+              <div class="twitterLogo">
+                <img width="40%" src="./images/twitter_PNG9.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="twitterMsg">
+            <p>I love the schedule reminders feature that <a target="_blank"
+                href="https://www.twitter.com/pluralsight"><span>@pluralsight</span></a> has added (well not sure when,
+              but today I saw that) you make more simple my life, good job guys. <a target="_blank"
+                href="https://www.twitter.com/hashtag/learning?src=hash"><span> #learning</span></a> <a target="_blank"
+                href="https://t.co/0EEjxVQJbm"><span> https://t.co/0EEjxVQJbm</span></a></p>
+          </div>
+          <div class="tweetReactions">
+            <a href="https://twitter.com/intent/tweet?in_reply_to=1362843439730196480">
+              <img src="https://img.icons8.com/small/16/000000/twitter-reply.png" />
+            </a>
+            <a target="_blank" class="tl-retweet" href="https://twitter.com/intent/retweet?tweet_id=1362843439730196480"
+              tabindex="0">
+              <img src="https://img.icons8.com/material-outlined/16/000000/retweet.png" />
+            </a>
+            <a target="_blank" class="tl-favorite"
+              href="https://twitter.com/intent/favorite?tweet_id=1362843439730196480" tabindex="0">
+              <img src="https://img.icons8.com/ios/16/000000/like--v1.png" />
+            </a>
+          </div>
+        </div>
+        <div class="twitterPosts">
+          <div class="profile">
+            <div class="profilePic">
+              <img width="100%" src="https://pbs.twimg.com/profile_images/1319270197702782979/TbWPouzl_bigger.jpg"
+                alt="">
+            </div>
+            <div class="profileName">
+              <div class="profileLogo">
+                <h5>Kayode Omotoye</h5>
+                <span>@kontrepid</span>
+              </div>
+              <div class="twitterLogo">
+                <img width="40%" src="./images/twitter_PNG9.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="twitterMsg">
+            <p>One reason I love <a target="_blank"
+                href="https://www.twitter.com/pluralsight"><span>@pluralsight</span></a> training is how they curate
+              similar courses on a subject into a learning path. The diversity of content delivery &amp; repetition of
+              salient points by the SMEs helps to make the learning process efficient and memorable. Kudos to the team.
+            </p>
+          </div>
+          <div class="tweetReactions">
+            <a href="https://twitter.com/intent/tweet?in_reply_to=1362843439730196480">
+              <img src="https://img.icons8.com/small/16/000000/twitter-reply.png" />
+            </a>
+            <a target="_blank" class="tl-retweet" href="https://twitter.com/intent/retweet?tweet_id=1362843439730196480"
+              tabindex="0">
+              <img src="https://img.icons8.com/material-outlined/16/000000/retweet.png" />
+            </a>
+            <a target="_blank" class="tl-favorite"
+              href="https://twitter.com/intent/favorite?tweet_id=1362843439730196480" tabindex="0">
+              <img src="https://img.icons8.com/ios/16/000000/like--v1.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- seventh div -->
+
+    <div id="seventhDiv">
+      <div id="seventhContent">
+        <div id="seventhText">
+          <img src="./images/one.png" alt="">
+          <h2>See our growth, progress and evolution</h2>
+          <p>At Pluralsight, we see first-hand every day how technology makes the impossible, possible. It’s why
+            Pluralsight One exists: To advance our mission of democratizing technology skills, challenging assumptions
+            about solutions and create significant, lasting social impact.</p>
+          <button id="tryForFree">For nonprofits</button>
+        </div>
+      </div>
+    </div>
+    <!-- eighth div -->
+
+    <div id="eighthDiv">
+      <div id="eightContent">
+        <div id="eightText">
+          <h2 class="skillTitle">Insignts that give you an edge</h2>
+        </div>
+        <div id="eightButton">
+          <button id="viewPlans" class="viewPlans">View Plans</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+
+  <div id="footer"></div>
+
+</body>
+
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+  integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+  integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="./scripts/index.js"></script>
+
+<script src="./scripts/grt-youtube-popup.js"></script>
+
+<script> $(".youtube-link").grtyoutube({
+    autoPlay: false
+  }
+  ); </script>
+
+<script type="module" src="./scripts/impexpnavfoot.js"></script>
+<script type="module" src="./scripts/navfunctions.js"></script>
