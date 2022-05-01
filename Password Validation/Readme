@@ -1,0 +1,18 @@
+Project title
+Password Validation
+
+Project Description
+
+The idea behind this project
+Just trying to login into any Github and every time I got a msg as your password is not matching, the message was not exactly the same but it tried to convey the same. This was the process of validation. So, I decided to build the same.
+
+How does it work
+While loading this project you will have two inputs enter your password and the second one is to reenter your password for matching if your entry data will the same in both fields then while submitting you will get a pop of confirmation as matched otherwise warning message.
+If your Input field will be in empty condition then you have an alert msg.
+
+Stack:
+And in order to tick the check box just put x inside them for example - [x] like this. Please delete options that are not relevant.
+
+ Html
+ CSS
+ JavaScript

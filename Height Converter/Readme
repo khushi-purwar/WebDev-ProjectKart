@@ -1,0 +1,14 @@
+Project Description
+
+The idea behind this project
+The idea behind this project is just a javascript math calculation and by reference to another calculator
+
+How does it work
+Firstly you have to enter any value in the two respective inputs as feet and inches and it should be in a number greater than zero. After doing this just click on the calculate you will get displayed with ans.
+
+Stack:
+And in order to tick the check box just put x inside them for example - [x] like this. Please delete options that are not relevant.
+
+ Html
+ CSS
+ JavaScript
