@@ -1,108 +1,70 @@
-let btnRef = document.querySelectorAll(".button-option");
-let popupRef = document.querySelector(".popup");
-let newgameBtn = document.getElementById("new-game");
-let restartBtn = document.getElementById("restart");
-let msgRef = document.getElementById("message");
-//Winning Pattern Array 
-let winningPattern = [
-  [0, 1, 2],
-  [0, 3, 6],
-  [2, 5, 8],
-  [6, 7, 8],
-  [3, 4, 5],
-  [1, 4, 7],
-  [0, 4, 8],
-  [2, 4, 6],
-];
-//Player 'X' plays first
-let xTurn = true;
-let count = 0;
+const boardElement = document.querySelector(".board");
+const squareElements = document.querySelectorAll(".square");
+const overlayElement = document.querySelector(".overlay");
+const lottiePlayer = document.querySelector("lottie-player");
+const greet = document.querySelector(".greet");
+const greetDescription = document.querySelector(".greet-description");
 
-//Disable All Buttons
-const disableButtons = () => {
-  btnRef.forEach((element) => (element.disabled = true));
-  //enable popup
-  popupRef.classList.remove("hide");
-};
+let isXNext = false;
+let squares = Array(9).fill(null);
+let winner = null;
 
-//Enable all buttons (For New Game and Restart)
-const enableButtons = () => {
-  btnRef.forEach((element) => {
-    element.innerText = "";
-    element.disabled = false;
-  });
-  //disable popup
-  popupRef.classList.add("hide");
-};
+function handleClick(e, i) {
+    if (squares[i] === null && winner === null) {
+        squares[i] = isXNext ? 'X' : 'O';
+        isXNext = !isXNext;
+        e.innerHTML = squares[i];
+    }
+    winner = calculateWinner(squares);
+    if (winner) {
+        lottiePlayer.load("https://assets10.lottiefiles.com/packages/lf20_iijuwalz/data.json");
+        lottiePlayer.style.height = "16rem";
+        lottiePlayer.style.width = "16rem";
+        lottiePlayer.style.margin = "0rem";
 
-//This function is executed when a player wins
-const winFunction = (letter) => {
-  disableButtons();
-  if (letter == "X") {
-    msgRef.innerHTML = "&#x1F389; <br> 'X' Wins";
-  } else {
-    msgRef.innerHTML = "🥳 <br> 'O' Wins";
-  }
-};
+        greet.textContent = "Congratulations!";
+        greetDescription.textContent = `${winner} won the game. Bhai party 🎉!`;
+        overlayElement.style.display = "grid";
+    } else if (!squares.includes(null)) {
+        lottiePlayer.load("https://assets4.lottiefiles.com/packages/lf20_kyqRXF.json");
+        lottiePlayer.style.height = "10rem";
+        lottiePlayer.style.width = "10rem";
+        lottiePlayer.style.margin = "3rem";
 
-//Function for draw
-const drawFunction = () => {
-  disableButtons();
-  msgRef.innerHTML = "😎 <br> It's a Draw";
-};
+        greet.textContent = "Holy shit, it's draw!";
+        greetDescription.textContent = "Koi nhi hota hai!";
+        overlayElement.style.display = "grid";
+    }
+}
 
-//New Game
-newgameBtn.addEventListener("click", () => {
-  count = 0;
-  enableButtons();
-});
-restartBtn.addEventListener("click", () => {
-  count = 0;
-  enableButtons();
-});
+function resetGame() {
+    isXNext = false;
+    squares = Array(9).fill(null);
+    winner = null;
+    squareElements.forEach(square => {
+        square.textContent = "";
+    })
+    overlayElement.style.display = "none";
 
-//Win Logic
-const winChecker = () => {
-  //Loop through all win patterns
-  for (let i of winningPattern) {
-    let [element1, element2, element3] = [
-      btnRef[i[0]].innerText,
-      btnRef[i[1]].innerText,
-      btnRef[i[2]].innerText,
+}
+
+
+function calculateWinner(squares) {
+    const lines = [
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+        [0, 3, 6],
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 4, 8],
+        [2, 4, 6]
     ];
-    //Check if elements are filled
-    //If 3 empty elements are same and would give win as would
-    if (element1 != "" && (element2 != "") & (element3 != "")) {
-      if (element1 == element2 && element2 == element3) {
-        //If all 3 buttons have same values then pass the value to winFunction
-        winFunction(element1);
-      }
+    for (let i = 0; i < lines.length; i++) {
+        const [a, b, c] = lines[i];
+        if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+            return squares[a];
+        }
     }
-  }
-};
-
-//Display X/O on click
-btnRef.forEach((element) => {
-  element.addEventListener("click", () => {
-    if (xTurn) {
-      xTurn = false;
-      //Display X
-      element.innerText = "X";
-      element.disabled = true;
-    } else {
-      xTurn = true;
-      //Display Y
-      element.innerText = "O";
-      element.disabled = true;
-    }
-    //Increment count on each click
-    count += 1;
-    if (count == 9) {
-      drawFunction();
-    }
-    //Check for win on every click
-    winChecker();
-  });
-});
-//Enable Buttons and disable popup on page load
-window.onload = enableButtons();
+    return null;
+}
