@@ -1,0 +1,17 @@
+Project title
+Random advice Generator
+
+Project Description
+
+Idea behind the project
+Like in javascript we have many projects such as random quote generators and password generators and many more so I took the basic idea from there only.
+
+How does it works
+You just need to load the file in the browser you will have an interface as a container containing a message of Click the refresh and below three is refresh button by doing so, as it API project then it will request data from the server after fetching it you will have random advice in your container.
+
+Stack:
+And in order to tick the check box just put x inside them for example - [x] like this. Please delete options that are not relevant.
+
+ Html
+ CSS [tailwind]
+ JavaScript
