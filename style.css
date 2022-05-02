@@ -1,146 +1,53 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
-    text-decoration: none;
-    font-family: Roboto, sans-serif;
-}
-
-/* now start coding of css from here  */
-
-body{
-    background: #41465D !important;
-}
-
-.title{
-    margin: 1em 0em .5em 0; 
-    font-family: 'Space Mono';
-    font-size: 3.5em;
-    color: white;
-    text-align: center;
-}
-
- @media only screen and (max-width:476px){
-    #searchbar{
-      width: 70%;
-    }
-    .title{
-      margin-top: 5em;
-      font-size: 45px;
-    }
-  }
-
-  .image{
-    padding: .5em;
-    position: relative;
-    z-index: 1;
-    transition: 0.3s;
-  }
-  .image:hover{
-    padding: 0;
-  }
-  
-  .styles {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 4vmin;
-    flex-wrap: wrap;
-  }
-  
-  .stylebox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    overflow: hidden;
-    background-color: white;
-    padding: .2rem;
-    text-align: center;
-    font-family: 'Bitter', sans-serif;
-    margin: 1.5rem;
-    border-radius: 5px;
-    border: none;
-    width: 20rem;
-    transition: .2s;
-  }
-  .stylebox:hover {
-    
-    box-shadow: 15px 15px 17px #000;
-  }
-  .stylebox .image {
-    width: 98%;
-    overflow: hidden;
-    height: 13rem;
-    border-radius: .5em;
-    transition: .4s;
-  }
-  
-  .stylebox .image img{
+html{
     height: 100%;
-    width: 100%;
-  }
-  
-  .stylebox .image:hover{
-    transform: scale(1.17);
-    border-radius: .5em;
-  }
+}
+body{
+    background: linear-gradient(to right, #45a2d4, #a5b1c0);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#output{
+    font-size: 13px;
+}
 
-  .card-heading{
+h1{
     display: flex;
-    color: #121212;
-    font-size: 18px;
-    font-weight: 500;
-    margin: 1em .5em;
-    font-family: 'Poppins';
-  }
-  .card-body{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  button{
-    border: 0px ;
-    width: 95%;
-    font-size: 1em;
-    background-color: #FF914D;
-    font-family: 'Poppins';
-    font-weight: bold;
-    padding: .5em;
-    transition: 0.3s;
-    margin-left: .5em;
-    margin-bottom: 1em ;
-  }
-  
-  .project_link:hover{
-    background-color: #101522;
-    color: #fff;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .styles {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: space-around;
-      margin: 0 auto;
-      margin-top: 10vmin;
-    }
-    .stylebox {
-      padding: .3rem;
-      margin: auto;
-      width: 18rem;
-      margin-bottom: 1.5rem;
-    }
-    .stylebox .image {
-      overflow: hidden;
-      width: 17rem;
-      height: 12rem;
-      padding: 0;
-      margin: 0;
-      padding: .5em .5em 0 .5em;
-      border-radius: 0.5rem;
-      transition: .3s;
-    }
-  }
+    justify-content: center;
+    padding-top: 70px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+span{
+    color: rgb(13, 255, 0);
+    white-space: nowrap;
+    font-size: 13px;
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgb(26, 120, 175) 0px 20px 30px -10px;
+
+}
+input{
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+select{
+    outline: none;
+}
+button{
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: #08510c;
+    /* background: none; */
+    cursor: pointer;
+    border-radius: 5px;
+}
