@@ -1,0 +1,26 @@
+html,body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont,'Lato','sans-serif', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.wave2{
+  background-image: url('wave2.png');
+  background-size: cover;
+
+}
+
+.wave4{
+  background-image: url('wave4.png');
+  background-size: cover;
+}
