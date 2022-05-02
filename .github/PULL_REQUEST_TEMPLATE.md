@@ -35,7 +35,7 @@ Please delete options that are not relevant. In order to tick the check box just
 
 - [] I have performed a self-review of my own code or work.
 - [] I have commented on my code, particularly in hard-to-understand areas.
-- [] My changes generates no new warnings.
+- [] My changes generate no new warnings.
 - [] I'm GSSoC'22 contributor
 
 
