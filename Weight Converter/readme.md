@@ -15,4 +15,6 @@ And in order to tick the check box just put x inside them for example - [x] like
 - [x] CSS
 - [x] JavaScript
 
+**ScreenShot of website**
+![Website image](https://user-images.githubusercontent.com/84850243/166218593-b40e33c1-715e-479f-962f-04a17f33f44f.png)
 
