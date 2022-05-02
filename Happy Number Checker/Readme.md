@@ -13,7 +13,7 @@
 
 <p  align="center">
 
-A simple JavaScript Project to check if a number is a HappyNumber or not.
+A simple JavaScript Project to check if a number is a Happy Number or not.
 </p>
 
 <br>
