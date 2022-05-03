@@ -9,3 +9,9 @@ const closeCardBtn = document.getElementById("close-card");
 const question = document.getElementById("question");
 const answer = document.getElementById("answer");
 const addNewCardBtn = document.getElementById("add-card-btn");
+
+const clearBtn = document.getElementById("clear-btn");
+
+let currentActiveCard = 0;
+
+const cardsData = getCardsData();
