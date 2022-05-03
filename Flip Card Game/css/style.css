@@ -4,6 +4,7 @@
 }
 
 body {
+    color: white;
     background-color: #84cc16;
     display: flex;
     flex-direction: column;
@@ -53,7 +54,7 @@ h1 button {
 }
 
 .card-container {
-    background: #d9f99d;
+    background-image: url("../img/ainesy190100008.jpg");
     position: relative;
     height: 300px;
     width: 500px;
@@ -62,7 +63,6 @@ h1 button {
 }
 
 .card {
-    background: #d9f99d;
     position: absolute;
     opacity: 0;
     top: 0;
@@ -101,6 +101,7 @@ h1 button {
 
 .card-front,
 .card-back {
+    color: white;
     position: absolute;
     top: 0;
     left: 0;
@@ -109,7 +110,7 @@ h1 button {
     justify-content: center;
     height: 100%;
     width: 100%;
-    background-color: #d9f99d;
+    background-image: url("../img/ainesy190100008.jpg");
     backface-visibility: hidden;
 }
 
