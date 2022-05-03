@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #ecf0f1;
+    background-color: #84cc16;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,6 +53,7 @@ h1 button {
 }
 
 .card-container {
+    background: #d9f99d;
     position: relative;
     height: 300px;
     width: 500px;
@@ -61,6 +62,7 @@ h1 button {
 }
 
 .card {
+    background: #d9f99d;
     position: absolute;
     opacity: 0;
     top: 0;
@@ -107,7 +109,7 @@ h1 button {
     justify-content: center;
     height: 100%;
     width: 100%;
-    background-color: white;
+    background-color: #d9f99d;
     backface-visibility: hidden;
 }
 
@@ -151,7 +153,7 @@ h1 button {
 .add-card-container {
     opacity: 0;
     z-index: -1;
-    background-color: #ecf0f1;
+    background-color: #84cc16;
     display: flex;
     flex-direction: column;
     align-items: center;
