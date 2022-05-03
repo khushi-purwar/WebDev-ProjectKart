@@ -21,6 +21,5 @@ Create a Card containing the question and answer that you want to memorize.
 
 ## 📷 Screenshots
 
-![ss1](./img/Web%20capture_2-5-2022_175752_127.0.0.1.jpeg)
-![ss2](./img/Web%20capture_2-5-2022_175838_127.0.0.1.jpeg)
+![ss1](./img/Web%20capture_2-5-2022_221757_127.0.0.1.jpeg)
 
