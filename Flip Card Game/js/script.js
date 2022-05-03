@@ -40,3 +40,110 @@ function createCard(data, index) {
               </div>
           </div>
       `;
+
+    card.addEventListener("click", () => card.classList.toggle("show-answer"));
+
+    cardElements.push(card);
+
+    cardContainer.appendChild(card);
+
+    updateCurrentCardText();
+}
+
+
+function updateCurrentCardText() {
+    currentCard.innerHTML = `<p>${currentActiveCard + 1}/${
+    cardElements.length
+  }</p>`;
+}
+
+
+function getCardsData() {
+    const cards = JSON.parse(localStorage.getItem("cards"));
+    return cards === null ? [] : cards;
+}
+
+
+function saveCardData(cards) {
+
+    localStorage.setItem("cards", JSON.stringify(cards));
+
+    window.location.reload();
+}
+
+createCards();
+
+
+nextBtn.addEventListener("click", () => {
+
+    cardElements[currentActiveCard].className = "card left";
+
+    currentActiveCard++;
+
+    if (currentActiveCard > cardElements.length - 1) {
+        currentActiveCard = cardElements.length - 1;
+    }
+
+    cardElements[currentActiveCard].className = "card active";
+
+    updateCurrentCardText();
+});
+
+prevBtn.addEventListener("click", () => {
+
+    cardElements[currentActiveCard].className = "card right";
+
+    currentActiveCard--;
+
+    if (currentActiveCard < 0) {
+        currentActiveCard = 0;
+    }
+
+    cardElements[currentActiveCard].className = "card active";
+
+    updateCurrentCardText();
+});
+
+
+addCardBtn.addEventListener("click", () => {
+    addCardContainer.classList.add("show");
+});
+
+
+closeCardBtn.addEventListener("click", () => {
+    addCardContainer.classList.remove("show");
+});
+
+addNewCardBtn.addEventListener("click", () => {
+
+    const questionInput = question.value;
+    const answerInput = answer.value;
+
+    if (questionInput.trim() && answerInput.trim()) {
+
+        const newCard = { question: questionInput, answer: answerInput };
+
+        createCard(newCard);
+
+        question.value = "";
+        answer.value = "";
+
+        addCardContainer.classList.remove("show");
+
+        cardsData.push(newCard);
+
+        saveCardData(cardsData);
+    }
+});
+
+
+clearBtn.addEventListener("click", () => {
+
+    localStorage.clear();
+
+    cardContainer.innerHTML = "";
+
+    window.location.reload;
+
+    currentCard.innerHTML = `<p></p>`;
+});
