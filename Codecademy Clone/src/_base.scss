@@ -1,0 +1,50 @@
+$color-black: hsl(240, 1%, 20%);
+$color-yellow: hsl(50, 100%, 50%);
+$color-purple-dark: #10162f;
+$color-purple: hsl(252, 87%, 48%);
+$color-bg-cream: #fff0e5;
+$font-size-sml: 0.875rem;
+
+$margin-sml: 0.25em;
+$margin-md: 0.5em;
+$margin-lg: 1em;
+$margin-xlg: 1.5em;
+
+$padding-sml: 0.25em;
+$padding-md: 0.5em;
+$padding-lg: 1em;
+$padding-xlg: 1.5em;
+
+:root {
+	box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+	box-sizing: inherit;
+}
+
+body {
+	background-color: $color-bg-cream;
+	margin: 0;
+	font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	line-height: 1.6;
+}
+
+.btn {
+	cursor: pointer;
+	text-transform: capitalize;
+	padding: 0.8em $padding-xlg;
+	border-radius: 3px;
+	outline: none;
+	background-color: hsl(252, 87%, 48%);
+	color: white;
+	border: 0;
+	font-size: 1rem;
+}
+
+.btn:hover {
+	background-color: hsl(252, 87%, 55%);
+}

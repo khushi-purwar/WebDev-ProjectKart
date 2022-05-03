@@ -1,0 +1,75 @@
+.quiz {
+	margin-top: 6.5em;
+	&__catalog-btn {
+		min-width: 100%;
+		padding: $padding-md 0;
+		font-size: 1.125rem;
+		font-weight: 500;
+		background: none;
+		border: 1px solid #10162f;
+		cursor: pointer;
+		font-weight: 700;
+		border-radius: 2px;
+		margin-bottom: $margin-lg;
+	}
+	&__catalog-btn:hover {
+		background-color: #10162f;
+		color: white;
+	}
+
+	&__box {
+		color: #10162f;
+		text-decoration: none;
+
+		&-items {
+			background-color: $color-yellow;
+			position: relative;
+			display: block;
+			padding: $padding-md 0;
+			overflow: hidden;
+
+			& > p {
+				padding-left: 1em;
+				z-index: 200;
+				letter-spacing: 0.05em;
+				margin-left: 4em;
+				font-weight: 700;
+				margin-bottom: 0;
+				margin-top: 0;
+			}
+
+			&-link {
+				color: white;
+				text-decoration: none;
+				font-weight: 700;
+				font-size: 1em;
+				letter-spacing: 0.05em;
+				color: #6400e4;
+			}
+			&-link:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+.quizSvg_1,
+.quizSvg_2 {
+	z-index: 100;
+}
+.quizSvg_1 {
+	position: absolute;
+	left: -40px;
+	bottom: 0;
+	height: 50px;
+}
+.quizSvg_2--bg {
+	position: absolute;
+	bottom: 0;
+	height: 65px;
+}
+.quizSvg_2 {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 35px;
+}
