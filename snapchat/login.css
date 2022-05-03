@@ -1,0 +1,53 @@
+
+*{
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+}
+.login
+{
+    height: auto;
+    background-color: white;
+    z-index: 2;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vh;
+    margin-bottom: auto;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+
+.logoimg
+{
+    height:10vh;
+    padding-top: 20px;
+}
+.pr
+{
+    font-size: 16px;
+    color: gray;
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.button
+{
+   height: 6vh;
+   background-color: #FFFC01;
+   width: 7vw;
+   border-radius: 200px;
+   padding: 8px;
+   font-family: 'Mulish', sans-serif;
+   
+}
+
+.button a
+{
+    text-decoration: none;
+    color: black;
+}
+
+
+

@@ -1,0 +1,9 @@
+.popularCalalog,
+.newsNoteWorth {
+	margin-top: 3em;
+
+	& > h2 {
+		color: $color-black;
+		text-transform: capitalize;
+	}
+}

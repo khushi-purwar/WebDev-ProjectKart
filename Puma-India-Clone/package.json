@@ -1,0 +1,19 @@
+{
+  "name": "puma-clone",
+  "version": "1.0.0",
+  "description": "A Puma-India website Front-End UI Clone",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kumar-laxmi/Puma-Clone.git"
+  },
+  "author": "Kumar Laxmikant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kumar-laxmi/Puma-Clone/issues"
+  },
+  "homepage": "https://github.com/Kumar-laxmi/Puma-Clone#readme"
+}
