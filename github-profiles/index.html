@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link href="./styles/styles.css" rel="stylesheet">
+    <title>GitHub Profile Search</title>
+</head>
+
+<body>
+    <div class="switch-container">
+        <label class="switch">
+            <input type="checkbox" value="L" id="dark-toggle">
+            <span class="slider round"></span>
+        </label>
+        <p id="theme-name">☀️</p>
+    </div>
+    <h1>GitHub Profile Search</h1>
+    <div class="main-container">
+        <div class="form-container">
+            <input type="text" name="username" id="username-field" placeholder="Username" />
+            <label for="username-field">Username you want to search</label>
+            <button id="submit-button">Submit</button>
+        </div>
+        <div class="main-data">
+            <div class="photo-container">
+
+            </div>
+            <div class="primary-data">
+                <p id="fullname"></p>
+                <p id="username"></p>
+                <p id="followers"></p>
+                <p id="repos"></p>
+            </div>
+        </div>
+        <div class="repos-container">
+
+        </div>
+    </div>
+    <script src="./scripts/init.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
