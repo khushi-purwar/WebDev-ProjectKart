@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style>
+	#canvas {
+		background-color: #000000;
+	}
+</style>
+<script type="text/javascript" src="raf.js"></script>
+<script type="text/javascript" src="paddle.js"></script>
+<script type="text/javascript" src="ball.js"></script>	
+<script type="text/javascript" src="brick.js"></script>			
+<script type="text/javascript">
+	var canvas;
+	var ctx;
+	
+	var paddle;
+	var PADDLE_WIDTH;
+	var PADDLE_HEIGHT;
+	var MARGIN;
+	
+	var ball;
+	var BALL_WIDTH;
+	var BALL_HEIGHT;
+	
+	var bricks;
+	var NROWS;
+	var NCOLS;
+	var BRICK_WIDTH;
+	var BRICK_HEIGHT;
+	var PADDING;
+	
+	var rightDown = false;
+	var leftDown = false;
+	var releaseDown = false;
+	var resetDown = false;
+	
+	var lives;
+	var score;
+	
+	var livesEle;
+	var scoreEle;
+		
+	function init() {
+		canvas = document.getElementById('canvas');
+		ctx = canvas.getContext('2d');
+		
+		PADDLE_WIDTH = 120;
+		PADDLE_HEIGHT = 20;
+		MARGIN = 15;
+		paddle = new Paddle(canvas.width / 2 - (PADDLE_WIDTH / 2),
+							canvas.height - PADDLE_HEIGHT - MARGIN,
+							PADDLE_WIDTH,
+							PADDLE_HEIGHT,
+							'#FFFFFF');
+		
+		BALL_WIDTH = 20;
+		BALL_HEIGHT = 20;
+		ball = new Ball(canvas.width / 2, canvas.height/ 2, BALL_WIDTH, '#FFFFFF');
+		
+		NROWS = 5;
+		NCOLS = 9;
+		BRICK_WIDTH = (canvas.width/NCOLS) - 1;
+		BRICK_HEIGHT = 20;
+		PADDING = 1;
+
+		//initialises a 2D array of bricks	
+		bricks = new Array(NROWS);
+		for (var i = 0; i < NROWS; i++) {
+			bricks[i] = new Array(NCOLS);
+			for (var j = 0; j < NCOLS; j++) {
+				bricks[i][j] = new Brick((BRICK_WIDTH + PADDING) * j,
+										 ((BRICK_HEIGHT + PADDING) * i) + MARGIN,
+										 BRICK_WIDTH,
+										 BRICK_HEIGHT,
+										 '#FFFFFF');
+			}
+		}
+		
+		ball.dx = 0;
+		
+		lives = 3;
+		livesEle = document.getElementById('lives');
+		livesEle.innerHTML = lives;
+		
+		score = 0;
+		scoreEle = document.getElementById('score');
+		scoreEle.innerHTML = score;
+		
+		loop();
+	}
+	
+	function loop() {
+		ctx.clearRect(0, 0, canvas.width, canvas.height);
+		requestAnimationFrame(loop);
+		
+		if(lives >= 0) {
+			livesEle.innerHTML = lives;
+			
+			scoreEle.innerHTML = score;
+			
+			// prevents the ball from leaving the stage
+			ball.bound(canvas);
+			
+			// resets the ball and decrements lives if
+			// it passes off the bottom of the screen
+			if(ball.y - (ball.radius * 2) >= canvas.height) {
+				paddle.x = canvas.width / 2 - (PADDLE_WIDTH / 2);
+				
+				ball.x = canvas.width / 2;
+				ball.y = canvas.height/ 2;
+				
+				ball.dx = 0;
+				
+				lives--;
+			}
+			
+			// ball/paddle collision detection
+			paddle.collide(ball);
+			
+			// ball/brick collision detection
+			for (var i = 0; i < NROWS; i++) {
+				for (var j = 0; j < NCOLS; j++) {
+					if(bricks[i][j].collide(ball) == true) {
+						score++;
+					}
+				}
+			}
+			
+			// update ball coords
+			ball.x += ball.dx;
+			ball.y += ball.dy;
+			
+			
+			// update paddle coords based on user input
+			if(leftDown == true && paddle.x >= 0) {
+				paddle.x -= paddle.dx;
+			}
+			if(rightDown == true && paddle.x + paddle.width <= canvas.width) {
+				paddle.x += paddle.dx;
+			}
+			
+			//draw
+			ball.draw(ctx);
+			paddle.draw(ctx);
+			for (i=0; i < NROWS; i++) {
+				for (j=0; j < NCOLS; j++) {
+					if(bricks[i][j].state == true) {
+						bricks[i][j].draw(ctx);
+					}
+				}
+			}
+		}
+		else {
+			// draw game over text and restart instructions
+			ctx.fillStyle = '#FFFFFF';
+			ctx.font = '64px Arial';
+			ctx.fillText('You lose', 400, 300);
+			ctx.font = '18px Arial';
+			ctx.fillText('Press [r] to start again', 400, 380);
+			
+			// reset all game elements
+			if(resetDown == true) {
+				lives = 2;
+				score = 0;
+				
+				for (i=0; i < NROWS; i++) {
+					for (j=0; j < NCOLS; j++) {
+							bricks[i][j].state = true;
+					}
+				}
+			}
+		}
+	}
+	
+	function onKeyDown(evt) {
+	  if (evt.keyCode == 39) rightDown = true;
+	  else if (evt.keyCode == 37) leftDown = true;
+	  else if (evt.keyCode == 38) leftDown = true;
+	  else if (evt.keyCode == 82) resetDown = true;
+	}
+	
+	function onKeyUp(evt) {
+	  if (evt.keyCode == 39) rightDown = false;
+	  else if (evt.keyCode == 37) leftDown = false;
+	  else if (evt.keyCode == 38) leftDown = false;
+	  else if (evt.keyCode == 82) resetDown = false;
+	}
+	
+window.onresize = function() {
+ console.log('resize');
+}
+		
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Breakout</title>
+</head>
+
+<body onload="init()" onkeydown="onKeyDown(event)" onkeyup="onKeyUp(event)">
+	<h2>Breakout</h2>
+	<canvas id="canvas" width="800" height="600">
+			Canvas is not supported
+	</canvas>
+	<table>
+		<tr>
+			<td>Lives: </td>
+			<td id="lives"></td>
+		</tr>
+		<tr>
+			<td>Score: </td>
+			<td id="score"></td>
+		</tr>
+	</table>
+</body>
+</html>
