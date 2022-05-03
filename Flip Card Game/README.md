@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="" height="80" src="">
+    <img alt="" height="80" src="./img/add-read.png">
   </a>
 </p>
 <h1 align="center">Flip Card Game</h1>
@@ -21,6 +21,6 @@ Create a Card containing the question and answer that you want to memorize.
 
 ## 📷 Screenshots
 
-![ss1]()
-![ss2]()
+![ss1](./img/Web%20capture_2-5-2022_175752_127.0.0.1.jpeg)
+![ss2](./img/Web%20capture_2-5-2022_175838_127.0.0.1.jpeg)
 
