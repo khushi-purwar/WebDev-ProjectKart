@@ -1,0 +1,80 @@
+*
+{
+    box-sizing: border-box;
+    
+}
+
+.r1
+{ 
+    margin-bottom: 10px;
+}
+
+.part1
+{
+    background-color:#F6F6F6;
+    overflow-y: scroll;
+    
+}
+.image1
+{
+    width: -webkit-fill-available;
+}
+
+.profile
+{
+    height: 8vh;
+    width: 4vw;
+    border-radius: 500px;
+}
+
+.i1
+{
+    height: 7vh;
+    width: 3vw;
+    border-radius: 500px;
+}
+
+.font
+{
+    font-family: 'Mulish', sans-serif;
+    font-size: 21px;
+}
+.newsnap
+{
+    color: rgb(234, 24, 108);
+    font-family: 'Mulish', sans-serif;
+}
+.time
+{
+    font-family: 'Mulish', sans-serif;
+    color: grey;
+}
+.strike
+{
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+}
+.fire
+{
+    height: 3vh;
+    width: 1vw;
+}
+.emoji
+{
+    color: rgb(245, 193, 8);
+}
+.camera
+{
+    height: 4vh;
+}
+.font2
+{
+    font-family: 'Playfair Display', serif;
+    font-size: 41px;
+    
+}
+
+
+
+
+
