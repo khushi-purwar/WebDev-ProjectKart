@@ -1,6 +1,6 @@
-﻿<h1>Recipe Finder App<h1>
+﻿<h1>Movie Seat Booking App<h1>
 
-<p> It will help you find awesome recipes and some random recipes.</p>
+<p> It will help you find the seats avilable for currently running movies and the prices.</p>
 
 <h3>Used Technologies</h3>
 
