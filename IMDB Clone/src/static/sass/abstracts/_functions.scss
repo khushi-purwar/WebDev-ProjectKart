@@ -1,0 +1,143 @@
+/* Media query manager */
+@mixin responsive($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      // 600px --> 600 / 16
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab_medium {
+    // 980px
+    @media only screen and (max-width: 61.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab_port {
+    @media only screen and (max-width: 74em) {
+      // 1184px
+      @content;
+    }
+  }
+
+  @if $breakpoint == lg_desktop {
+    @media only screen and (max-width: 102em) {
+      // 1633px
+      @content;
+    }
+  }
+}
+
+@mixin sectionTitle {
+  color: $color-primary;
+  letter-spacing: 0.00735em;
+  text-decoration: inherit;
+  text-transform: inherit;
+  font-weight: 500;
+  font-size: 2.125rem;
+  line-height: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+
+  @include responsive(phone) {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+
+@mixin carousel-arrow {
+  border: 1px solid white !important;
+  border-radius: 0.25rem !important;
+  padding: 2rem 1.5rem !important;
+
+  &::before {
+    content: none !important;
+  }
+}
+
+@mixin carousel-right-arrow {
+  background: rgba($color: #000000, $alpha: 0.5)
+    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='white' width='24' height='24' viewBox='0 0 24 24'%3e%3cpath d='M5.622.631A2.153 2.153 0 0 0 5 2.147c0 .568.224 1.113.622 1.515l8.249 8.34-8.25 8.34a2.16 2.16 0 0 0-.548 2.07c.196.74.768 1.317 1.499 1.515a2.104 2.104 0 0 0 2.048-.555l9.758-9.866a2.153 2.153 0 0 0 0-3.03L8.62.61C7.812-.207 6.45-.207 5.622.63z'/%3e%3c/svg%3e")
+    no-repeat 50% / 100% 100% !important;
+  background-size: 1.5rem !important;
+  right: calc(1% + 1px) !important;
+  z-index: 1 !important;
+
+  &:hover {
+    background: rgba($color: #000000, $alpha: 0.5)
+      url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='orange' width='24' height='24' viewBox='0 0 24 24'%3e%3cpath d='M5.622.631A2.153 2.153 0 0 0 5 2.147c0 .568.224 1.113.622 1.515l8.249 8.34-8.25 8.34a2.16 2.16 0 0 0-.548 2.07c.196.74.768 1.317 1.499 1.515a2.104 2.104 0 0 0 2.048-.555l9.758-9.866a2.153 2.153 0 0 0 0-3.03L8.62.61C7.812-.207 6.45-.207 5.622.63z'/%3e%3c/svg%3e")
+      no-repeat 50% / 100% 100% !important;
+    background-size: 1.5rem !important;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+@mixin carousel-left-arrow {
+  background: rgba($color: #000000, $alpha: 0.5)
+    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='white' width='24' height='24' viewBox='0 0 24 24'%3e%3cpath d='M18.378 23.369c.398-.402.622-.947.622-1.516 0-.568-.224-1.113-.622-1.515l-8.249-8.34 8.25-8.34a2.16 2.16 0 0 0 .548-2.07A2.132 2.132 0 0 0 17.428.073a2.104 2.104 0 0 0-2.048.555l-9.758 9.866A2.153 2.153 0 0 0 5 12.009c0 .568.224 1.114.622 1.515l9.758 9.866c.808.817 2.17.817 2.998-.021z'/%3e%3c/svg%3e")
+    no-repeat 50% / 100% 100% !important;
+  background-size: 1.5rem !important;
+  left: calc(0%) !important;
+  z-index: 1 !important;
+
+  &:hover {
+    background: rgba($color: #000000, $alpha: 0.5)
+      url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='orange' width='24' height='24' viewBox='0 0 24 24'%3e%3cpath d='M18.378 23.369c.398-.402.622-.947.622-1.516 0-.568-.224-1.113-.622-1.515l-8.249-8.34 8.25-8.34a2.16 2.16 0 0 0 .548-2.07A2.132 2.132 0 0 0 17.428.073a2.104 2.104 0 0 0-2.048.555l-9.758 9.866A2.153 2.153 0 0 0 5 12.009c0 .568.224 1.114.622 1.515l9.758 9.866c.808.817 2.17.817 2.998-.021z'/%3e%3c/svg%3e")
+      no-repeat 50% / 100% 100% !important;
+    background-size: 1.5rem !important;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+/* mixin for multiline */
+@mixin multiLineEllipsis($lineHeight: 1.2em, $lineCount: 1, $bgColor: black) {
+  overflow: hidden;
+  position: relative;
+  line-height: $lineHeight;
+  max-height: $lineHeight * $lineCount;
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+  &:before {
+    content: "...";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: $bgColor;
+  }
+}
+
+@mixin form-button {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  width: 100%;
+  background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+  border: 1px solid #ccc;
+  color: black;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset;
+  font-size: 0.8rem;
+  padding: 0.5rem 0;
+  border-radius: 0.25rem;
+
+  &:active,
+  &:active:focus {
+    color: black;
+    border: 1px solid #e77600;
+    box-shadow: 0 0 3px 2px rgba(grey, 0.5);
+  }
+}

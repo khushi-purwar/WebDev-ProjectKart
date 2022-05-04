@@ -1,0 +1,146 @@
+@mixin header-text-style {
+  font-size: 0.9rem;
+  color: white !important;
+}
+
+.header {
+  .navbar-custom {
+    background-color: $color-dark;
+    margin: 0 auto;
+  }
+
+  .navbar-dark {
+    align-items: center;
+    .navbar-nav {
+      width: 100%;
+    }
+  }
+
+  .watchlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .watchlist-cart {
+      margin-left: 0.5rem;
+      color: black;
+      text-align: center;
+      padding: 0 0.4rem;
+      border-radius: 0.9rem;
+      background-color: $color-primary;
+      font-size: 0.8rem;
+    }
+  }
+
+  .profile {
+    position: relative;
+  }
+
+  .sign-out {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      margin: 0 0.25rem;
+    }
+  }
+
+  .sign-out,
+  a {
+    @include header-text-style();
+    padding: 0.4rem 1rem;
+    margin: 0 0.25rem;
+
+    &:hover {
+      background-color: rgba($color: gray, $alpha: 0.5);
+      border-radius: 0.25rem;
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+    top: 0;
+    left: 0;
+  }
+
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+
+  .navbar-toggler {
+    margin: 0.5rem;
+    padding: 0;
+    border: none;
+  }
+
+  .navbar-brand {
+    margin-right: 0;
+  }
+  .logo {
+    width: 4rem;
+    cursor: pointer;
+  }
+  .sign-out,
+  .nav-items {
+    padding: 0.4rem 1.25rem;
+    margin: 0 0.25rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba($color: gray, $alpha: 0.5);
+      border-radius: 0.25rem;
+    }
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .menu-hamburger {
+      color: gray;
+    }
+  }
+
+  .header-text {
+    @include header-text-style();
+  }
+
+  .verticle-line {
+    border-right: 2px solid gray;
+    width: 1px;
+    height: 2.2rem;
+  }
+}
+
+@include responsive(phone) {
+  .header {
+    .navbar-custom {
+      background-color: black;
+
+      .container {
+        padding: 0;
+      }
+    }
+
+    .navbar-search-sm {
+      padding-left: 0;
+      padding-right: 0;
+      background-color: $color-dark2;
+    }
+    .hide-responsive {
+      display: none;
+    }
+  }
+}
+
+@include responsive(tab_medium) {
+  .hide-responsive {
+    display: none;
+  }
+}
