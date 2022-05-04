@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    /* background-color: rgb(250, 245, 238); */
+}
+nav img {
+    height: 72px;
+    width: 72px;
+
+}
+nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+nav .logo {
+    margin: 5px 20px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    /* background-color: yellowgreen; */
+}
+
+nav ul li {
+    list-style: none;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 26px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: aqua;
+}
+
+nav .right-nav {
+    /* background-color: blueviolet; */
+    width: 50%;
+    text-align: right;
+    justify-content: center;
+}
+
+nav .right-nav input {
+    padding: 9px 13px;
+    margin: 10px 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 23px;
+}
+
+nav .right-nav .btnsm {
+    padding: 6px 6px;
+    margin: 5px 2px;
+    margin-right: 20px;
+}
+.burger{
+    position:absolute;
+    top: 15px;
+    cursor: pointer;
+    right:5%;
+    display: none;
+}
+.line{
+    width: 39px;
+    margin: 7px 7px;
+    background-color: white;
+    height: 5px;
+}
+.background {
+    background: rgba(0, 0, 0, 0.7) url('/images/bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.first-half {
+    width: 40%;
+    align-items: center;
+    margin: auto;
+    margin: 30px 100px;
+    /* margin-left: 300PX; */
+    color: white;
+    /* text-align: center; */
+
+    
+}
+ .text-big{
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ .text-small{
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     
+}
+.btn{
+    cursor: pointer;
+    border: 2px solid white;
+    padding: 8px 14px;
+    margin: 18px 8px;
+    border-radius: 7px;
+    vertical-align: middle;
+    background: transparent;
+    color: white;
+}
+.second-half {
+    width: 30%;
+    text-align: left;
+}
+
+.first-section .second-half img {
+    height: 270px;
+    width: 270px;
+}
+
+.first-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.section{
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 200px;
+}
+.para{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+}
+.section img{
+    height: 180px;
+    width: 180px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.box2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.contact{
+    font-family: 'Orelega One', cursive;
+    background-color: rgb(232, 221, 221);
+    height: 600px;
+    font-size: 23px;
+}
+.contact h1{
+    text-align: center;
+    padding: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 50%; */
+}
+.inp{
+    border: 2px solid gray;
+    border-radius: 6px;
+    padding: 6px 10px;
+    width: 50%;
+    margin: 7px 0px;
+}
+.cont-btn{
+    border: 2px solid gray;
+    color: black;
+    background-color: transparent;
+    /* margin-left: 370px; */
+    text-align: center;
+}
+footer{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

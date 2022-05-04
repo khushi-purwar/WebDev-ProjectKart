@@ -1,0 +1,87 @@
+@media only screen and (max-width:1144px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        transition: all 0.7s ease-out;
+        height: 450px;
+    }
+    .right-nav .btnsm{
+        /* text-align: center; */
+        /* margin-left: 100px; */
+        margin: auto;
+        display: block;
+        margin-left: 600px;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-nav {
+        /* display: flex;
+        flex-direction: column;
+        text-align: center; */
+        width: 100%;
+        display: block;
+        margin: auto;
+        /* margin-left: 180px; */
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 800px;
+        margin: 0px 15px;
+    }
+
+    .first-section {
+        height: 150vh;
+        justify-content: center;
+    }
+
+    .box-main {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100vh;
+        margin: 0px;
+    }
+
+    .para {
+        padding: 0;
+        margin: 0;
+    }
+
+    .first-half {
+        margin-left: 30px;
+    }
+
+    .second-half {
+        /* width: 30%; */
+        text-align: left;
+    }
+
+    .first-section .second-half img {
+        height: 170px;
+        width: 170px;
+        margin-top: 100px;
+    }
+
+    .v-class-resp {
+        opacity: 0;
+    }
+
+    .h-nav-resp {
+        height: 80px;
+    }
+
+}
