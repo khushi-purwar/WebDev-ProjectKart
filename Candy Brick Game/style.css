@@ -1,3 +1,13 @@
+body{
+  background-image: linear-gradient(rgb(17, 220, 118),pink);
+}
+.name
+{
+  color:rgb(221, 6, 6);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .container {
     height: 400px;
     width: 80%;
@@ -6,7 +16,7 @@
     border: 1px solid black;
     margin-top: 20px;
     position: relative;
-    background-color: darkgrey;
+    background-image: linear-gradient(yellow,rgb(12, 153, 153));
 }
 
 .score,
@@ -26,4 +36,22 @@
     font-size: 1.8em;
     text-align: center;
     line-height: 40px;
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+
+  .container {
+    height: 300px;
+    width: 60%;
+    margin-left: 6%;
+  }
+.brick {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 71px;
+    height: 25px;
+    padding: 0.4px;
+}
+
 }
