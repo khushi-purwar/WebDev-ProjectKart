@@ -12,4 +12,3 @@ jobs:
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         issue_message: 'Hello @${{github.actor}}, <br>
-                        Thank you for opening an issue. :octocat: <br>
