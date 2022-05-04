@@ -1,0 +1,74 @@
+.getInspireContainer {
+	margin-top: 4em;
+}
+.getInspire__grid--1 {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	column-gap: 2em;
+}
+.getInspire__grid--2 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 2em;
+	// position: relative;
+}
+
+// .getInspire__grid--2 .getInspireLink:nth-child(5),
+// .getInspire__grid--2 .getInspireLink:nth-child(6),
+// .getInspire__grid--2 .getInspireLink:nth-child(7),
+// .getInspire__grid--2 .getInspireLink:nth-child(8) {
+// 	grid-column: 1 / span 2;
+// }
+
+.getInspire__subgrid-col-3 {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-column: 1 / span 2;
+}
+
+// .getInspire__grid--3 .getInspireLink {
+// 	grid-column: 1 / span 2;
+// }
+
+.getInspireLink,
+.inspireLinkWithImg {
+	margin-bottom: 2em;
+
+	& > p {
+		color: $color-purple;
+		margin: 0;
+		text-transform: uppercase;
+		font-size: $font-size-sml;
+	}
+
+	& > a {
+		text-decoration: none;
+		font-size: 1.2rem;
+		color: $color-black;
+		font-weight: 600;
+	}
+	& > a:hover {
+		text-decoration: underline;
+	}
+}
+
+.inspireLinkWithImg {
+	& > img {
+		width: 100%;
+	}
+}
+
+.getInspire--btn {
+	display: block;
+	margin: 1em auto;
+	background-color: $color-bg-cream;
+	border: 1px solid rgb(100, 0, 228);
+	color: rgb(100, 0, 228);
+	font-weight: 600;
+	padding: $padding-md 3em;
+}
+
+.getInspire--btn:hover {
+	background-color: rgb(100, 0, 228);
+	color: white;
+}

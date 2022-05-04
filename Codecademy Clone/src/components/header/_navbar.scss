@@ -1,0 +1,76 @@
+.navbarItems {
+	display: none;
+}
+
+.navbar {
+	background-color: hsl(0, 0%, 100%);
+	padding: $padding-lg;
+	border-bottom: 1px solid black;
+	min-width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 200;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	&__notification {
+		text-align: center;
+	}
+
+	&__toggleNofi-btn,
+	&__toggleMenu-btn {
+		background: none;
+		outline: none;
+		border: none;
+	}
+
+	&__toggleMenu-btn {
+		margin-left: $padding-xlg;
+	}
+	&__logo {
+		height: 27px;
+	}
+
+	&__icon--sml {
+		height: 20px;
+	}
+	&__icon--md {
+		height: 26px;
+	}
+
+	&__mobile-list {
+		margin: $margin-md;
+		display: flex;
+		flex-direction: column;
+		& > a {
+			padding-top: $padding-xlg;
+			text-decoration: none;
+			color: $color-black;
+			display: flex;
+			& > img {
+				margin-right: $margin-lg;
+			}
+		}
+		& > a:hover {
+			color: hsl(266, 100%, 45%);
+		}
+	}
+}
+
+#navbar__toggle {
+	display: none;
+	position: absolute;
+	top: 60px;
+	width: 100%;
+}
+
+.dropdown-mobile-btn {
+	margin: 0 auto;
+	margin-top: 3.5em;
+}
+
+.user-photo {
+	object-fit: cover;
+	width: 26px;
+	border-radius: 50%;
+}
