@@ -1,0 +1,103 @@
+.footerContainer__outer {
+	border-top: 1px solid $color-black;
+}
+
+.footerContainer__inner {
+	margin: $margin-xlg $margin-lg;
+}
+
+.infoContainer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.courseContainer__outer,
+.copyWriteInfo__Container {
+	border-top: 1px solid $color-black;
+	margin-top: $margin-xlg;
+}
+.courseContainer__outer > h3 {
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+.footerItems {
+	padding-top: $padding-md;
+	&__title {
+		font-size: $font-size-sml;
+		font-weight: 400;
+		text-transform: uppercase;
+		margin-bottom: 0;
+	}
+	&__items {
+		display: flex;
+		flex-direction: column;
+		padding-top: $padding-lg;
+		& > a {
+			font-size: $font-size-sml;
+			text-transform: capitalize;
+			color: $color-black;
+			text-decoration: none;
+		}
+		& > a:hover {
+			color: $color-purple;
+		}
+		& > a + a {
+			padding-top: $padding-sml;
+		}
+	}
+}
+
+.footerItems {
+	& > .mobileIcon {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		& > a > img {
+			width: 119.656px;
+			height: 39.9844px;
+			margin-left: 0;
+			padding-left: 0;
+		}
+
+		& > a + a {
+			padding-top: 0;
+			padding-left: 1em;
+		}
+	}
+}
+
+.courseContainer__inner {
+	.footerItems {
+		&__title {
+			font-size: 0.75em;
+			font-weight: 600;
+		}
+	}
+}
+.courseItems {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.copyWriteInfo {
+	margin-top: $margin-md;
+	& > a {
+		font-size: $font-size-sml;
+		text-transform: capitalize;
+		color: $color-black;
+		text-decoration: none;
+	}
+}
+.copyWriteInfo__company {
+	margin-top: 0;
+}
+
+.copyWriteInfo__company,
+.copyWriteInfo {
+	text-align: center;
+	margin-left: 2em;
+	margin-right: 2em;
+	font-size: $font-size-sml;
+}
