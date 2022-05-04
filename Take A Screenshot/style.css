@@ -1,0 +1,80 @@
+body{
+  font-family: cursive;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, #222242, rgb(57, 60, 9));
+}
+
+#title{
+  font-size: 50px;
+  color: rgb(193, 184, 184);
+  box-shadow: 10px 10px 10px 0 whitesmoke;
+}
+
+.container {
+  margin: 50px auto;
+  max-width: 1100px;
+  
+}
+
+.image {
+  margin-top: 10vh;
+  height: 50vh;
+  width: 40vw;
+  font-size: 1.7rem;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #A9A9A9;
+  font-family: cursive;
+  background-color: rgb(239, 224, 224);
+  padding-top: 60px;
+}
+
+.screenshot {
+  height: 100%;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#url {
+  padding: .7rem .7rem;
+  margin: .3rem .3rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  border: 1px solid #A9A9A9;;
+}
+
+#btn {
+  background-color: #222242;
+  padding: 10px 38px;
+  border: 1px solid #A9A9A9;
+  border-radius: 28px;
+  color: #fff;
+  transition: all .2s ease;
+  outline: 0;
+ font-weight: bold;
+ font-family: cursive;
+ font-size:17px;
+}
+
+button:hover,
+button:focus,
+#url:hover,
+#url:focus,
+.image:hover,
+.image:focus
+{
+    cursor:pointer;
+    border-color: #F6B400;
+    color: #F6B400;
+    box-shadow: 0px 4px 27px -12px #F6B400;
+}
