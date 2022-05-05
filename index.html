@@ -1,575 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebDev Projectkart</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's travel</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="#">Let's travel</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Contacts</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="tel" placeholder="Phone number" aria-label="Phone number">
+                  <button class="btn btn-outline-primary text-nowrap" type="submit">Call me</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="container my-3">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/slider-1.jpg" class="d-block w-100" alt="Golden Gate Bridge">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Golden Gate Bridge</h5>
+                      <p>San Francisco, U.S.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/slider-2.jpg" class="d-block w-100" alt="Niagara Falls">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Niagara Falls</h5>
+                      <p>Border of Ontario, Canada, and New York, United States</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/slider-3.jpg" class="d-block w-100" alt="Stonehenge">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Stonehenge</h5>
+                      <p>Wiltshire, England</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div class="container">
+            <div class="row row-cols-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="images/img-1.jpg" class="card-img-top" alt="Image 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Eiffel Tower</h5>
+                            <p class="card-text">The Eiffel Tower is a wrought iron lattice tower on the Champ de Mars in Paris, France.</p>
+                            <button class="btn btn-primary">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/img-2.jpg" class="card-img-top" alt="Image 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Big Ben</h5>
+                            <p class="card-text">Big Ben is the nickname for the Great Bell of the clock at the north end of the Palace of Westminster in London.</p>
+                            <button class="btn btn-primary">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/img-3.jpg" class="card-img-top" alt="Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Statue of Liberty</h5>
+                            <p class="card-text">The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York City, in the United States.</p>
+                            <button class="btn btn-primary">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/img-4.jpg" class="card-img-top" alt="Image 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Sydney Opera House</h5>
+                            <p class="card-text">The Sydney Opera House is a multi-venue performing arts centre in Sydney, Australia. It is one of the 20th century's most famous and distinctive buildings.</p>
+                            <button class="btn btn-primary">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/img-5.jpg" class="card-img-top" alt="Image 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Parliament Hill</h5>
+                            <p class="card-text">Parliament Hill, colloquially known as The Hill, is an area of Crown land on the southern banks of the Ottawa River in downtown Ottawa, Ontario. Its Gothic revival suite of buildings is the home of the Parliament of Canada and has architectural elements of national symbolic importance.</p>
+                            <button class="btn btn-primary">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/img-6.jpg" class="card-img-top" alt="Image 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Great Wall of China</h5>
+                            <p class="card-text">The Great Wall of China is a series of fortifications made of stone, brick, rammed earth, wood, and other materials, generally built to protect the Chinese states and empires against the raids and invasions.</p>
+                            <button class="btn btn-primary">Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="navbar navbar-expand-lg navbar-light bg-light mt-3">
+        <div class="container py-3">
+            <p class="copy mb-0"><a href="https://github.com/RAHULBAWA777"> Made with ❤ by RAHULBAWA</a></p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contact-us-modal">Contact Us</button>
+        </div>
+    </footer>
 
-    <!-- linking custum stylesheet  -->
-    <link rel="stylesheet" href="./style.css" />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-
-    <!-- linking google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- favicon -->
-    <link rel="icon" href="favicon/favicon.ico" />
-  </head>
-  <body>
-    <!-- **** Main coding for website starts from here **** -->
-    <h1 class="title">
-      <span style="color: #ff914d">WebDev</span> ProjectKart
-    </h1>
-
-    <div class="container">
-    <div class="row" class="styles">
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./01.Password_Generator/Assets/media/DEMO1.jpg"
-            class="image"
-            alt="..."
-          />
+    <div class="modal fade" tabindex="-1" id="contact-us-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Contact Us</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Your name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="phone" class="form-label">Phone number</label>
+                      <input type="text" class="form-control" id="phone" placeholder="Phone">
+                    </div>
+                    <div class="mb-3">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea class="form-control" id="message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
           </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>Password Generator</b></h5>
-            <a href="./01.Password_Generator/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
+        </div>
       </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./02.BMI_Calculator/Assets/media/ss1.png"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>BMI Calculator</b></h5>
-            <a href="./02.BMI_Calculator/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./03.TIP_Calculator/Assets/media/ss1.png"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>TIP Calculator</b></h5>
-            <a href="./03.TIP_Calculator/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./04.VAT_Calculator/Assets/media/ss1.png"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>VAT Calculator</b></h5>
-            <a href="./04.VAT_Calculator/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./05.Digital_Clock/Assets/media/SS.jpg"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>Digital Clock</b></h5>
-            <a href="./05.Digital_Clock/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./06.Loan_Calculator/Assets/media/ss1.png"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>Loan Calculator</b></h5>
-            <a href="./06.Loan_Calculator/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./07.Coin_Toss_App/Assets/media/ss1.png"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>Coin Toss App</b></h5>
-            <a href="./07.Coin_Toss_App/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./08.Calculator/Assets/media/ss1.png"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>Calculator</b></h5>
-            <a href="./08.Calculator/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./09.Quote_Generator/Assets/media/ss.png"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>Quote Generator</b></h5>
-            <a href="./09.Quote_Generator/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./10.Battery_Indicator_App/Assets/media/ss1.png"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>Battery Indicator App</b></h5>
-            <a href="./10.Battery_Indicator_App/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./11.Contact_Us_Form/Asset/media/Screenshot.png"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>Contact US Form </b></h5>
-            <a href="./11.Contact_Us_Form/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./12.Analog_Clock/Assets/media/clock.png"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b> Analog Clock </b></h5>
-            <a href="./12.Analog_Clock/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./13.Headlines/Assets/media/ss1.png"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b> Headlines</b></h5>
-            <a href="./13.Headlines/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./14.Todo_App/public/"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b> ToDO App</b></h5>
-            <a href="./14.Todo_App/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./15.Weather_Application/Weather-App.jpg"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b> Weather Application</b></h5>
-            <a href="./15.Weather_Application/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./16.simple_quiz_App/images/ss2.png"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b> Simple Quiz</b></h5>
-            <a href="./16.simple_quiz_App/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./17.Drawing_App/Assets/media/screenshot_drawingapp.png"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>Drawing App</b></h5>
-            <a href="./17.Drawing_App/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./18.Stopwatch_App/Assets/media/Stopwatch.PNG"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b> Stopwatch App</b></h5>
-            <a href="./18.Stopwatch_App/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./19.Number_guessing_game/assets/media/ss1.png"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b> Number Guessing Game</b></h5>
-            <a href="./19.Number_guessing_game/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./20.Event_time_counter/assets/media/ss1.png"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>Event Time Counter </b></h5>
-            <a href="./20.Event_time_counter/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./21.Random_grediant_color/assets/media/ss1.png"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>Random Grediant Color </b></h5>
-            <a href="./21.Random_grediant_color/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./22.Color_scheme_switcher/assets/media/ss1.png"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>Color scheme switcher </b></h5>
-            <a href="./22.Color_scheme_switcher/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./23.Movie Recommendation App/Assets/media/ss1.png"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>Movie Recommendation App </b></h5>
-            <a href="./23.Movie Recommendation App/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./24. Meme Generator/assets/media/output.gif"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>Meme Generator </b></h5>
-            <a href="./24. Meme Generator/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./25. Curruncy Converter/"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b> Currency Converter</b></h5>
-            <a href="./25. Curruncy Converter/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./25. Github_Homepage_Clone/assets/media/Capture.PNG"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>Github Clone </b></h5>
-            <a href="./25. Github_Homepage_Clone/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./25. Ping Pong Game/image/image1.png"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>Ping Pong Game </b></h5>
-            <a href="./25. Ping Pong Game/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./25. Tenzies game/Screenshot (103).png"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>Tenzies Game</b></h5>
-            <a href="./25. Tenzies game/public/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./25.2048_Game/"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>2048 Game</b></h5>
-            <a href="./25.2048_Game/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./25.Codekaro/src/image/Codeing.svg"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b> Codekaro</b></h5>
-            <a href="./25.Codekaro/public/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./25.Google_Clone/assets/media/logo.jpg"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>Google Clone</b></h5>
-            <a href="./25.Google_Clone/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./25.Word_Definition/"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>Word Definition</b></h5>
-            <a href="./25.Word_Definition/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./26.CryptoRush-Application/Cryptoworld/working Photos of Website/1.JPG"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>CryptoRush Application</b></h5>
-            <a href="./26.CryptoRush-Application/Cryptoworld/public/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./29.Score-Keeper-App/demo1.png"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>Score Keeper App</b></h5>
-            <a href="./29.Score-Keeper-App/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./30.Drum-Kit/images/crash.png"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>Drum Kit</b></h5>
-            <a href="./30.Drum-Kit/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-            src="./40. Location Tracker/SS.png"
-            
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><b>Location Tracker</b></h5>
-            <a href="./40. Location Tracker/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-            
-          </div>
-      </div>
-      
-      <div class="stylebox">
-        <div class="image"  >
-          <img
-         
-            src="./Custom-Range-Slider/Custom-Range-Slider.png"
-            class="image"
-            alt="..."
-          />
-          </div>
-          <div class="card-body">
-         
-            <h5 class="card-title"><b>Custom Range Slider</b></h5>
-            <a href="./Custom-Range-Slider/index.html" target="_blank" ><button class="project_link">Explore</button></a>
-          </div>
-      </div>
-
-    </div>
-    </div>
-
-
-    <!-- **** Main coding for website ends here **** -->
-
-    <!-- linking font awesone -->
-    <script
-      src="https://kit.fontawesome.com/fd33b06809.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- linking custum javascript file -->
-    <script src="./javascript/index.js"></script>
-  </body>
+    <script src="js/bootstrap.min.js"></script>
+</body>
 </html>
