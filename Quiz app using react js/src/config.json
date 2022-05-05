@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "baseUrl": "./src",
+      "checkJs": true,
+      "jsx": "react",
+      "printWidth": 100,
+      "trailingComma": "all",
+      "tabWidth": 2,
+      "semi" : true
+    }
+  }
