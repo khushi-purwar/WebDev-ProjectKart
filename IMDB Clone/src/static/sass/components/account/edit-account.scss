@@ -1,0 +1,61 @@
+.edit-account {
+  .form-page {
+    .container {
+      .main {
+        width: 22rem;
+        .title {
+          margin-top: 2rem;
+          font-weight: 400;
+          margin-bottom: 0;
+        }
+
+        .form-container {
+          .subtitle {
+            font-size: 0.8rem;
+          }
+
+          .form-group {
+            margin-top: 1rem;
+
+            input {
+              width: 70%;
+            }
+
+            #formBasicOldEmail {
+              border: none;
+              padding: 0;
+            }
+          }
+          button {
+            width: 30%;
+
+            background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+
+            &:active,
+            &:active:focus {
+              box-shadow: 0 0 3px 2px rgba(228, 121, 17, 0.5);
+            }
+
+            @include responsive(phone) {
+              width: 70%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include responsive(phone) {
+  .edit-account {
+    .form-page {
+      .container {
+        .main {
+          .form-container {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

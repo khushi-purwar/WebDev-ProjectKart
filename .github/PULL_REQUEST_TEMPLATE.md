@@ -10,7 +10,7 @@ Fixes #<issue_number_here>
 
 ## Type of change 📝
 
-Please delete options that are not relevant. And in order to tick the check box just put x inside them for example [x] like this
+Please delete options that are not relevant. In order to tick the check box just put x inside them for example [x] like this
 
 - [] Add a new project
 - [] Modified or enhanced the existing projects
@@ -21,7 +21,7 @@ Please delete options that are not relevant. And in order to tick the check box 
 
 ## Domain of Contribution 📊
 
-Please delete options that are not relevant. And in order to tick the check box just put x inside them for example [x] like this
+Please delete options that are not relevant. In order to tick the check box just put x inside them for example [x] like this
 
 - [] Project using only HTML & CSS
 - [] Project using HTML, CSS & JS
@@ -31,11 +31,11 @@ Please delete options that are not relevant. And in order to tick the check box 
  
 ## Checklist ✅
 
-Please delete options that are not relevant.And in order to tick the check box just but x inside them for example [x] like this
+Please delete options that are not relevant. In order to tick the check box just put x inside them for example [x] like this
 
 - [] I have performed a self-review of my own code or work.
 - [] I have commented on my code, particularly in hard-to-understand areas.
-- [] My changes generates no new warnings.
+- [] My changes generate no new warnings.
 - [] I'm GSSoC'22 contributor
 
 

@@ -1,0 +1,120 @@
+.form-inline {
+  flex-grow: 1;
+  display: flex;
+  margin: 0 1rem;
+  position: relative;
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    z-index: 2;
+  }
+
+  .search-category-selector {
+    display: flex;
+    position: relative;
+    background-color: white;
+    height: 2rem;
+    color: black;
+    border-radius: 0.25rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 1px solid grey;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0rem 1rem 0.5rem;
+  }
+  .search-input-container {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  input {
+    display: flex;
+    flex-grow: 1;
+    height: 2rem;
+    border-radius: 0;
+    border: none;
+    width: 100%;
+  }
+
+  .search-button {
+    position: relative;
+    background-color: white;
+    height: 2rem;
+    color: black;
+    border-radius: 0.25rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: none;
+    justify-content: center;
+    align-items: center;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .cancel-search {
+    display: none;
+  }
+}
+
+@include responsive(phone) {
+  .form-inline {
+    margin: 0;
+
+    .search-category-selector,
+    input {
+      display: none;
+    }
+
+    .search-input-container {
+      display: flex;
+      width: 100%;
+      align-items: center;
+
+      .search-sm {
+        display: block;
+        font-size: 1rem;
+        padding: 1.5rem 1rem;
+        color: white;
+        background: transparent;
+
+        &:focus {
+          background: transparent;
+          outline: none;
+          border: none;
+          box-shadow: none;
+          color: white;
+        }
+      }
+      .cancel-search-expanded {
+        display: block;
+        width: 2.75rem;
+        margin: 0 0.5rem;
+        cursor: pointer;
+        font-size: 1.25rem;
+        color: $color-alpha-white;
+      }
+    }
+
+    .search-btn-container {
+      width: 100%;
+      text-align: right;
+      .search-button {
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}

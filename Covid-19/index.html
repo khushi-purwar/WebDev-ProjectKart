@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title> COVID - 19 </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="E:\Covid-19\css\style-c.css">
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none !important;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root{
+    --main-color:#fa9805;
+    --black:#244361;
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+}
+
+
+html{
+    scroll-padding-top: 6rem;
+}
+
+
+header{
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+}
+
+
+header .logo {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+
+header .logo span{
+    color: var(--main-color);
+}
+
+
+header .navbar a{
+    margin-left: 3px;
+    padding: 5px 15px;
+    color: var(--black);
+    border-radius: 50px;
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    background: var(--main-color);
+    color: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+
+.menu{
+    color: var(--black);
+    cursor: pointer;
+    font-size: 25px;
+    transition: .2s linear;
+}
+
+
+
+/* Home Section */
+
+section{
+    padding: 20px 0;
+}
+
+section:nth-child(odd){
+    background: #f8f8fe;
+}
+
+
+.Home{
+    min-height: 100vh;
+    background: url('img/home-bg.png') no repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.Home .content span{
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+
+.Home .content h3{
+    font-size: 50px;
+    color: var(--black);
+    font-weight: bolder;
+}
+
+
+.link-btn{
+    font-size: 17px;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    padding: 5px 25px;
+    display: inline-block;
+}
+
+
+.link-btn:hover{
+    background: var(--black);
+    color: #fff;
+}
+
+
+/* About */
+
+.About .content h3{
+    font-size: 33px;
+    color: var(--black);
+}
+
+
+.About .content p{
+    font: 14px;
+    color: #777;
+}
+
+
+.About .content a{
+    margin-top: 1rem;
+}
+
+
+/*  prevent section  */
+
+.heading{
+    text-align: center;
+    padding: 0 15px;
+    color: var(--black);
+    font-size: 30px;
+}
+
+.heading span{
+    color: var(--main-color);
+}
+
+.Prevent .box{
+    flex: 1 1 300px;
+    background: #f8f8fe;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.Prevent .box img{
+    margin-bottom: 10px;
+    height: 70px;
+}
+
+
+.Prevent .box h3{
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+
+.Prevent .box p{
+    color: var(--black);
+    font-size: 15px;
+}
+
+
+/* experts section */
+
+
+.Experts .heading{
+    margin-bottom: 30px;
+}
+
+
+.Experts .box{
+    width: 260px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    margin: 5px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.Experts .box img{
+    background: #f8f8fe;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+.Experts .box h3{
+    font-size: 2rem;
+    color: var(--black);
+    margin: 2px 0;
+}
+
+
+.Experts .box p{
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+
+
+.Experts .box .share{
+    position: absolute;
+    transition: .2s;
+    top: 5px;
+    right: -50px;
+}
+
+
+.Experts .box .share a{
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin-top: 5px;
+    display: block;
+}
+
+
+.Experts .box .share a:hover{
+    background: var(--black);
+}
+
+
+.Experts .box:hover .share{
+    right: 15px;
+}
+
+/*  contact form */
+
+
+.Contacts form{
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+
+.Contacts form textarea{
+    resize: none;
+    height: 200px;
+}
+
+.Contacts form .box,
+.Contacts form textarea{
+    background: #f8f8fe;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 10px;
+    margin: 7px 0;
+    width: 100%;
+    text-transform: none;
+    color: var(--black);
+}
+
+
+.Contacts .map{
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* blogs */
+
+
+.Blogs .box{
+    width: 350px;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+}
+
+
+.Blogs .box .image{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #f8f8fe;
+}
+
+
+
+.Blogs .box .image img{
+    transition: .2s linear;
+}
+
+.Blogs .box:hover .image img{
+    transform: scale(1.1);
+}
+
+
+.Blogs .box .content h3{
+    padding: 5px 0;
+    font-size: 20px;
+    color: var(--black);
+}
+
+
+.Blogs .box .content .icons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+
+.Blogs .box .content .icons a{
+    color: #777;
+    font-size: 13px;
+}
+
+
+.Blogs .box .content .icons a:hover{
+    color: var(--main-color);
+}
+
+
+.Blogs .box .content .icons a i{
+    padding-right: 7px;
+}
+
+
+/* footer */
+
+
+.footer .box{
+    flex: 1 1 250px;
+}
+
+.footer .box h3{
+    color: var(--black);
+    font-size: 20px;
+}
+
+
+.footer .box a{
+    display: block;
+    font-size: 14px;
+    color: #777;
+    padding: 5px 0;
+}
+
+
+.footer .box a:hover{
+    color: var(--main-color);
+}
+
+
+.footer .credit{
+    text-align: center;
+    color: var(--black);
+    border-top: 1px solid rgba(0,0,0,0.1);
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+
+.footer .credit span{
+    color: var(--main-color);
+}
+
+
+
+/* Media Queries */
+
+
+@media(max-width:991px){
+    .Home .content h3{
+        font-size: 30px;
+    }
+}
+
+@media(max-width:768px){
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #fff;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0,0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0 , 100% 0, 100% 100% , 0% 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        width: 100%;
+        margin: 10px;
+    }
+
+    .fa-times{
+        transform: rotate(180deg);
+    }
+}
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <header class="fixed-top py-3">
+
+        <div class="container d-flex align-items-center justify-content-between">
+            <a href="#" class="logo"> C <span class="fas fa-virus"></span> vid-19 </a>
+
+            <div id="menu" class="fas fa-bars d-inline-block d-md-none"></div>
+
+            <nav class="navbar">
+                <a href="#Home" class="active">Home</a>
+                <a href="#About">About</a>
+                <a href="#Prevent">Prevent</a>
+                <a href="#Experts">Experts</a>
+                <a href="#Contacts">Contacts</a>
+                <a href="#Blogs">Blogs</a>
+            </nav>
+
+        </div>
+
+
+    </header>
+
+
+    <section class="Home" id="Home">
+        <div class="container">
+
+            <div class="row min-vh-100 align-items-center pt-5">
+
+                <div class="col-md-6">
+                    <img src="css/img/home.svg" class="w-100" alt="Home-img">
+                </div>
+
+                <div class="col-md-6 content text-center text-md-start pl-md-5">
+                    <span> Stay Home , Stay Safe </span>
+                    <h3> protect yourself, from covid-19 </h3>
+                    <a href="#" class="link-btn">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="About" id="About"> 
+
+        <div class="container">
+            <div class="row align-items-center flex-wrap-reverse">
+                <div class="col-md-6 content">
+                    <h3> What is novel coronavirus ? </h3>
+                    <p>Coronavirus disease 2019 (COVID-19) is defined as illness caused by a novel coronavirus called severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2; formerly called 2019-nCoV),
+                         which was first identified amid an outbreak of respiratory illness cases in Wuhan City, Hubei Province, China.
+                    </p>
+                    <p>
+                         It was initially reported to the World Health Organization (WHO) on December 31, 2019. On January 30, 2020, the WHO declared the COVID-19 outbreak a global health emergency.
+                         On March 11, 2020, the WHO declared COVID-19 a global pandemic, its first such designation since declaring H1N1 influenza a pandemic in 2009. 
+                    </p>
+
+                    <a href="#" class="link-btn"> Learn more </a>
+                </div>
+
+                <div class="col-md-6">
+                    <img src="css/img/about.svg" class="w-100" alt="about-img">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="Prevent" id="Prevent">
+        <h1 class="heading"> How to <span> prevent </span> ? </h1>
+
+        <div class="container">
+
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="box p-4 m-2">
+                 <img src="css/img/01.png" alt="">
+                 <h3>Wear a mask</h3>
+                 <p>It is mandatory for everyone to wear mask and maintain it properly.</p>
+                </div>
+
+                <div class="box p-4 m-2">
+                    <img src="css/img/02.png" alt="">
+                    <h3> Social Care </h3>
+                    <p> Everyone is requested to prevent him or her, for proper safety. </p>
+                   </div>
+
+                   <div class="box p-4 m-2">
+                    <img src="css/img/03.png" alt="">
+                    <h3>Consult a doctor</h3>
+                    <p>It is mandatory for everyone to consult with a doctor, whether you're cure or not.</p>
+                   </div>
+
+                   <div class="box p-4 m-2">
+                    <img src="css/img/04.png" alt="">
+                    <h3> Wash your hands </h3>
+                    <p>It is mandatory for everyone to wash their hands with proper sanitization.</p>
+                   </div>
+
+                   <div class="box p-4 m-2">
+                    <img src="css/img/05.png" alt="">
+                    <h3> Avoid contact </h3>
+                    <p>It is mandatory for everyone to maintain social distancing and maintain it properly.</p>
+                   </div>
+
+                   <div class="box p-4 m-2">
+                    <img src="css/img/06.png" alt="">
+                    <h3> Clean everyday </h3>
+                    <p>It is mandatory for everyone to wear only clean clothes and maintain it daily.</p>
+                   </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="Experts" id="Experts">
+
+        <h1 class="heading"> Meet our <span> Experts </span>  </h1>
+
+        <div class="container">
+            <div class="d-flex justify-content-center flex-wrap">
+                <div class="box ">
+                    <img src="css/img/exp-1.png" alt="">
+                    <h3> John Deo </h3>
+                    <p> Virus Experts </p>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-youtube"></a>
+                    </div>
+                </div>
+
+
+                <div class="box ">
+                    <img src="css/img/exp-2.png" alt="">
+                    <h3> Lara seri </h3>
+                    <p> Virus Experts </p>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-youtube"></a>
+                    </div>
+                </div>
+
+
+                <div class="box ">
+                    <img src="css/img/exp-3.png" alt="">
+                    <h3> Jack seri </h3>
+                    <p> Virus Experts </p>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-youtube"></a>
+                    </div>
+                </div>
+
+
+                <div class="box ">
+                    <img src="css/img/exp-4.png" alt="">
+                    <h3> Ceri Gomes </h3>
+                    <p> Virus Experts </p>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-youtube"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="Contacts" id="Contacts">
+
+        <h1 class="heading"> contact <span> for assistance </span>  </h1>
+
+        <div class="container">
+
+            <div class="row flex-wrap-reverse">
+
+                <div class="col-md-7 p-2">
+                    <form action="">
+                        <input type="text" placeholder="Name" class="box">
+                        <input type="email" placeholder="Email" class="box">
+                        <input type="number" placeholder="Number" class="box">
+                        <textarea name="" placeholder="Message" id="" cols="30" rows="10"></textarea>
+                        <input type="submit" class="link-btn" name="" id="" value="send message">
+                    </form>
+                </div>
+
+                <div class="col-md-5">
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.922992038017!2d88.
+                    45850911484294!3d22.581983338317425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02753dc1e1
+                    e0ed%3A0xe15266fe069dc633!2sApollo%20Clinic%20Newtown!5e0!3m2!1sen!2sin!4v1630391692981!5m2!1sen!2sin"
+                      style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="Blogs" id="Blogs"> 
+        <h1 class="heading"> Our latest <span> Blogs </span>  </h1>
+        <div class="container">
+            <div class="d-flex justify-content-center flex-wrap">
+
+                <div class="box p-3 m-2">
+                    <div class="image">
+                        <img src="css/img/blog-1.svg" alt="" class="w-100 h-100">
+                    </div> 
+
+                    <div class="content p-2">
+                        <h3> World is fighting against COVID-19 </h3>
+                        <a href="#" class="link-btn"> Read more </a>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-user"></i> By Admin </a>
+                            <a href="#"><i class="fas fa-calender"></i> 31 aug,2021 </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="box p-3 m-2">
+                    <div class="image">
+                        <img src="css/img/blog-2.svg" alt="" class="w-100 h-100">
+                    </div> 
+
+                    <div class="content p-2">
+                        <h3> World is fighting against COVID-19 </h3>
+                        <a href="#" class="link-btn"> Read more </a>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-user"></i> By Admin </a>
+                            <a href="#"><i class="fas fa-calender"></i> 31 aug,2021 </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="box p-3 m-2">
+                    <div class="image">
+                        <img src="css/img/blog-3.svg" alt="" class="w-100 h-100">
+                    </div> 
+
+                    <div class="content p-2">
+                        <h3> World is fighting against COVID-19 </h3>
+                        <a href="#" class="link-btn"> Read more </a>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-user"></i> By Admin </a>
+                            <a href="#"><i class="fas fa-calender"></i> 31 aug,2021 </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer">
+
+        <div class="container">
+
+            <div class="d-flex justify-content-center flex-wrap text-center text-sm-start">
+                <div class="box p-3 m-2">
+                    <h3> Locations </h3>
+                    <a href="#">India</a>
+                    <a href="#">USA</a>
+                    <a href="#">Japan</a>
+                    <a href="#">France</a>
+                    <a href="#">Russia</a>
+                </div>
+
+                <div class="box p-3 m-2">
+                    <h3> Quick links </h3>
+                    <a href="#">home</a>
+                    <a href="#">about</a>
+                    <a href="#">prevents</a>
+                    <a href="#">agents</a>
+                    <a href="#">contacts</a>
+                    <a href="#">blogs</a>
+                </div>
+
+                <div class="box p-3 m-2">
+                    <h3> Follow us </h3>
+                    <a href="#">facebook</a>
+                    <a href="#">instagram</a>
+                    <a href="#">linkedin</a>
+                    <a href="#">twitter</a>
+                </div>
+
+                <div class="box p-3 m-2">
+                    <h3> Contact info </h3>
+                    <a href="#">+91 8617566866</a>
+                    <a href="#">+91 89827157195</a>
+                    <a href="#">bosedipayan2000@gmail.com</a>
+                    <a href="#">Kolkata, West Bengal-743263</a>
+                </div>
+
+            </div>
+
+            <div class="credit"> Created by <span> special partners </span> <br/>
+                 <i class="fas fa-copyright"></i> All Rights Reserved </div>
+        </div>
+
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        let menu = document.querySelector('#menu');
+            let nav = document.querySelector('.navbar');
+
+
+            menu.onclick = () => {
+                menu.classList.toggle('fa-times');
+                nav.classList.toggle('active');
+            }
+
+            let section = document.querySelectorAll('section');
+            let navlinks = document.querySelectorAll('header .navbar a');
+
+
+            window.onscroll = () => {
+                menu.classList.remove('fa-times');
+                nav.classList.remove('active');
+
+                section.forEach(sec => {
+
+                    let top = window.scrollY;
+                    let height = sec.offsetHeight;
+                    let offset = sec.offsetTop - 150;
+                    let id = sec.getAttribute('id');
+
+
+                    if (top >= offset && offset + height) {
+                        navlinks.forEach(links => {
+                            links.classList.remove('active');
+                            document.querySelector('header .nav a[href*=' + id + ']').classList.add('active');
+                        });
+                    };
+                });
+            }
+    </script>
+</body>
+</html>

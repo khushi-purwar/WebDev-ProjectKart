@@ -1,0 +1,210 @@
+@mixin sign-in-buttons {
+  background: white;
+  outline: none;
+  margin: 0.25rem 0;
+  box-shadow: none;
+  border: 1px solid #ddd;
+  padding: 0.25rem 0;
+  padding-left: 2.5rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  color: $color-text-dark2;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+@mixin divider-text {
+  border-top: 0.5px solid #555555;
+  content: "";
+  position: absolute;
+  height: 5px;
+  top: 50%;
+  width: 90px;
+}
+
+.registration {
+  background-color: $color-bg-light;
+
+  .title-sm {
+    display: none;
+  }
+
+  .registration-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-text-dark;
+    height: 50vh;
+    background: no-repeat 100% -webkit-linear-gradient(
+        top,
+        rgba(0, 0, 0, 0.3) 0%,
+        transparent 7px
+      ) #fff;
+    border-bottom: 1px solid #ccc;
+    padding-top: 2rem;
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .col {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .options {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 55%;
+      margin-right: 2rem;
+
+      .buttons {
+        display: flex;
+        flex-direction: column;
+
+        .btn-container {
+          display: flex;
+          position: relative;
+          flex-direction: row;
+          align-items: center;
+
+          button {
+            @include sign-in-buttons();
+          }
+
+          img {
+            position: absolute;
+            margin-left: 0.5rem;
+            width: 1.25rem;
+          }
+        }
+      }
+      .divider-text {
+        line-height: 0.5;
+        margin-top: 1rem;
+
+        span {
+          display: inline-block;
+          position: relative;
+          width: 1rem;
+          &::before {
+            right: 100%;
+            margin-right: 1rem;
+            @include divider-text();
+          }
+          &::after {
+            left: 100%;
+            margin-left: 1rem;
+            @include divider-text();
+          }
+        }
+      }
+
+      .create-account-btn {
+        @include sign-in-buttons();
+        color: $color-dark;
+        text-align: center;
+        padding-left: 0;
+        background-color: $color-primary;
+      }
+
+      .terms {
+        width: 100%;
+        margin-top: 1rem;
+        font-size: 0.75rem;
+      }
+    }
+
+    .benefits {
+      height: 80%;
+      border-left: 1px solid rgba(#ccc, 0.8);
+      padding-left: 2rem;
+
+      span {
+        font-weight: bold;
+      }
+      p {
+        font-size: 0.75rem;
+      }
+    }
+  }
+
+  .recently-viewed-container {
+    background-color: $color-div-light;
+    color: $color-text-dark2;
+    .row {
+      padding-top: 1rem;
+      padding-bottom: 5rem;
+      display: flex;
+      width: 100%;
+      margin: 0;
+      justify-content: space-between;
+      h3 {
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+      span {
+        font-size: 0.75rem;
+        cursor: pointer;
+        color: #136cb2;
+      }
+    }
+  }
+}
+
+@include responsive(phone) {
+  .registration {
+    background: #ffffff;
+    color: $color-dark;
+    height: 70vh;
+
+    .title-sm {
+      display: block;
+      width: 100%;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      border-bottom: 1px solid #ccc;
+    }
+    .registration-container {
+      padding-top: 1rem;
+      background: none;
+      border: none;
+
+      .col {
+        flex-basis: auto;
+        position: relative;
+
+        h3 {
+          display: none;
+        }
+
+        .options {
+          width: 70%;
+
+          .buttons .btn-container {
+            button {
+              padding: 0.5rem;
+              padding-left: 4.5rem;
+            }
+            img {
+              width: 2rem;
+              margin-left: 1.5rem;
+            }
+          }
+        }
+      }
+      .benefits {
+        display: none;
+      }
+    }
+
+    .recently-viewed-container {
+      display: none;
+    }
+  }
+}

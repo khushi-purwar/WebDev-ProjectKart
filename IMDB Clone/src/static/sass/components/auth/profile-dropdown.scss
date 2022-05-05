@@ -1,0 +1,43 @@
+.profile-dropdown {
+  position: absolute;
+  top: 2.5rem;
+  right: 0;
+  height: 10rem;
+  background-color: $color-dark2;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  padding: 0.5rem 0;
+  border-radius: 0.25rem;
+  transform-origin: top right;
+  transition: opacity 100ms, transform 1000ms;
+  overflow: hidden;
+  overflow-x: hidden;
+
+  span {
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba($color: gray, $alpha: 0.5);
+    }
+  }
+  .name {
+    display: none;
+  }
+}
+
+@include responsive(phone) {
+  .profile-dropdown {
+    right: 0;
+    height: 13rem;
+
+    .name {
+      display: block;
+      color: $color-primary;
+      border-bottom: 1px solid rgba($color: #fff, $alpha: 0.5);
+      margin-bottom: 0.25rem;
+    }
+  }
+}
