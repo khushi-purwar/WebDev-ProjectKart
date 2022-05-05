@@ -53,24 +53,7 @@ const Home = ({ name, setName, fetchQuestions }) => {
             ))}
           </TextField>
 
-          <TextField
-            select
-            label="Select Difficulty"
-            variant="outlined"
-            style={{ marginBottom: 30 }}
-            onChange={(e) => setDifficulty(e.target.value)}
-            value={setDifficulty}
-          >
-            <MenuItem key="Easy" value="easy">
-              Easy
-            </MenuItem>
-            <MenuItem key="Medium" value="medium">
-              Medium
-            </MenuItem>
-            <MenuItem key="Hard" value="hard">
-              Hard
-            </MenuItem>
-          </TextField>
+          
 
           <Button
             variant="contained"
