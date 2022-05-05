@@ -13,7 +13,7 @@
 
 <p  align="center">
 
-A simple JavaScript Project to check a number is Special Number or not.
+A simple JavaScript Project to check whether a number is a Special Number or not.
 </p>
 
 <br>
