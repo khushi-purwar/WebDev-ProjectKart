@@ -1,0 +1,70 @@
+.account {
+  .form-page {
+    .container {
+      .main {
+        width: 22rem;
+        .title {
+          margin-top: 2rem;
+          font-weight: 400;
+          margin-bottom: 0;
+        }
+
+        .done {
+          @include form-button();
+          width: 20%;
+          background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+
+          &:active,
+          &:active:focus {
+            box-shadow: 0 0 3px 2px rgba(228, 121, 17, 0.5);
+          }
+
+          @include responsive(phone) {
+            width: 100%;
+          }
+        }
+      }
+
+      .form-container {
+        padding: 0;
+        width: 100%;
+        .form-group {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0.5rem 1rem;
+          margin: 0;
+          border-bottom: 1px solid rgba($color: #ccc, $alpha: 0.8);
+
+          label {
+            margin: 0;
+          }
+          .form-info {
+            width: 70%;
+          }
+          .form-control-plaintext {
+            width: 100%;
+            border: none;
+            padding: 0;
+            font-size: 0.8rem;
+          }
+
+          .email {
+            font-size: 0.8rem;
+            white-space: pre-wrap;
+            word-break: break-all;
+            padding: 0;
+          }
+
+          .btn-primary {
+            width: 4rem;
+          }
+
+          &:last-child {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}

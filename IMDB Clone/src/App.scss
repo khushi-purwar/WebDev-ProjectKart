@@ -1,0 +1,43 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.light-bg {
+  background-color: #fff;
+  color: black;
+
+  .footer {
+    a {
+      color: rgb(90, 90, 90);
+
+      &:hover {
+        color: #e0a800;
+      }
+    }
+  }
+}
+
+.Toastify {
+  .Toastify__toast-container--top-right {
+    top: 3.5em;
+    right: 0;
+    left: unset;
+    width: 15rem;
+
+    @media only screen and (max-width: 37.5em) {
+      right: 0.5rem;
+    }
+  }
+  .Toastify__toast--success {
+    background: #105220 !important;
+    border-radius: 0.25rem;
+    padding-left: 1rem;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}

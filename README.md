@@ -4,22 +4,12 @@
 
 <h1 align="center"> WebDev ProjectKart 💻 </h1>
 
-
-
 <!-- ---------------------------------------------------------------------------------------------------------------------- -->
 
 <div align="center">
 
-![Contributors](https://img.shields.io/github/contributors/khushi-purwar/WebDev-ProjectKart?style=for-the-badge)
-  ![Forks](https://img.shields.io/github/forks/khushi-purwar/WebDev-ProjectKart?style=for-the-badge)
-![Stars](https://img.shields.io/github/stars/khushi-purwar/WebDev-ProjectKart?style=for-the-badge)
-![License](https://img.shields.io/github/license/khushi-purwar/WebDev-ProjectKart?style=for-the-badge)
-![PRs-Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)  
-
-![](https://img.shields.io/github/issues-raw/khushi-purwar/WebDev-ProjectKart?color=orange&style=for-the-badge)
-![](https://img.shields.io/github/issues-closed/khushi-purwar/WebDev-ProjectKart?style=for-the-badge)
-![](https://img.shields.io/github/issues-pr/khushi-purwar/WebDev-ProjectKart?style=for-the-badge)
-![](https://img.shields.io/github/issues-pr-closed-raw/khushi-purwar/WebDev-ProjectKart?style=for-the-badge)
+![Contributors](https://img.shields.io/github/contributors/khushi-purwar/WebDev-ProjectKart?style=for-the-badge) ![Forks](https://img.shields.io/github/forks/khushi-purwar/WebDev-ProjectKart?style=for-the-badge) ![Stars](https://img.shields.io/github/stars/khushi-purwar/WebDev-ProjectKart?style=for-the-badge) ![License](https://img.shields.io/github/license/khushi-purwar/WebDev-ProjectKart?style=for-the-badge)
+![PRs-Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge) ![](https://img.shields.io/github/issues-raw/khushi-purwar/WebDev-ProjectKart?color=orange&style=for-the-badge) ![](https://img.shields.io/github/issues-closed/khushi-purwar/WebDev-ProjectKart?style=for-the-badge) ![](https://img.shields.io/github/issues-pr/khushi-purwar/WebDev-ProjectKart?style=for-the-badge) ![](https://img.shields.io/github/issues-pr-closed-raw/khushi-purwar/WebDev-ProjectKart?style=for-the-badge)
   
 </div>
 
@@ -84,9 +74,7 @@
 
  ### Tech-Stack used :
 
-  ![HTML 5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-  ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-  ![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+  ![HTML 5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
 
 
@@ -258,9 +246,7 @@ git push -u origin <your_branch_name>
 <div id="Contributors"></div>
 
 ## Our valuable Contributors 👨‍💻 :
-<a href="https://github.com/khushi-purwar/Web-Dev-ProjectKart"><img src="https://forthebadge.com/images/badges/built-by-developers.svg"  ></a> 
-<a href="https://github.com/khushi-purwar/Web-Dev-ProjectKart"><img src="https://forthebadge.com/images/badges/built-with-love.svg"  ></a> 
-<a href="https://github.com/khushi-purwar/Web-Dev-ProjectKart"><img src="https://forthebadge.com/images/badges/built-with-swag.svg" ></a>   
+<a href="https://github.com/khushi-purwar/Web-Dev-ProjectKart"><img src="https://forthebadge.com/images/badges/built-by-developers.svg"  ></a> <a href="https://github.com/khushi-purwar/Web-Dev-ProjectKart"><img src="https://forthebadge.com/images/badges/built-with-love.svg"  ></a> <a href="https://github.com/khushi-purwar/Web-Dev-ProjectKart"><img src="https://forthebadge.com/images/badges/built-with-swag.svg" ></a>   
 
 <br>
 

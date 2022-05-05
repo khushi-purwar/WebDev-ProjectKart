@@ -1,0 +1,101 @@
+.watchlist-item {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  margin-left: 0;
+  max-width: 200px;
+  align-items: center;
+
+  .image-item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+
+    img {
+      height: 18rem;
+    }
+
+    .remove-item {
+      display: none;
+    }
+
+    &:hover {
+      img {
+        opacity: 0.5;
+      }
+
+      .remove-item {
+        display: block;
+        position: absolute;
+        font-size: 2rem;
+        bottom: 1rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .featured-details {
+    background: $color-dark2;
+    padding: 0.5rem;
+    width: 100%;
+    height: 100%;
+    .info {
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      svg {
+        color: $color-primary;
+        margin-left: 0.25rem;
+      }
+    }
+  }
+}
+
+.watchlist-ribbon {
+  position: absolute;
+  top: 0;
+  left: -8px;
+  z-index: 3;
+  color: white;
+  opacity: 0.8;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  .watchlist-ribbon__bg {
+    position: relative;
+    background-size: 2rem;
+    width: 50px;
+    height: 50px;
+
+    &.selected {
+      color: $color-primary;
+      opacity: 1;
+    }
+
+    .watchlist-ribbon__bg-shadow {
+      fill: black;
+      opacity: 0.5;
+    }
+  }
+  .watchlist-ribbon__icon {
+    position: absolute;
+    top: 5px;
+    left: 1rem;
+    font-size: 1.25rem;
+  }
+}
+
+@include responsive(phone) {
+  .watchlist-item {
+    width: 44%;
+    .image-item img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.sidenav {
+  .menu-icon {
+    svg {
+      display: none;
+
+      @include responsive(phone) {
+        display: block;
+        padding: 0 0.5rem;
+        height: 2.5rem;
+        width: 2.5rem;
+        color: $color-alpha-white;
+      }
+    }
+  }
+
+  nav {
+    background-color: $color-dark2 !important;
+    width: 70% !important;
+  }
+  h1 {
+    background: $color-dark2
+      repeating-linear-gradient(45deg, #222, #222 2px, #333 2px, #333 7px) !important;
+    padding: 2rem 1rem !important;
+    border-bottom: 1px solid gray;
+    margin-bottom: 2rem;
+    color: $color-alpha-white !important;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    svg {
+      height: 1.25rem;
+      color: $color-alpha-white !important;
+      cursor: pointer;
+    }
+  }
+
+  ul {
+    padding-left: 1rem;
+    margin-top: 1rem;
+  }
+  li {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    padding: 0 !important;
+    background-color: $color-dark2 !important;
+    align-items: center;
+    margin-top: 1rem;
+
+    span {
+      font-size: 1.25rem;
+      padding: 0 1rem;
+      color: $color-alpha-white;
+    }
+
+    svg {
+      width: 1.25rem !important;
+      height: 1.25rem !important;
+      color: $color-alpha-white;
+    }
+  }
+}
