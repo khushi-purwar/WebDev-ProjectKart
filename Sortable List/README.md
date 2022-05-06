@@ -28,3 +28,4 @@ Display a scrambled list that can be sorted with drag and drop
 ## 📷 Screenshots
 
 ![ss1](./img/sortablelistss.png)
+![ss1](./img/sortablelistss2.png))
