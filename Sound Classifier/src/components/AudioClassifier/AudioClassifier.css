@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr repeat(11, minmax(auto, 10em)) 1fr;
+    grid-template-rows: minmax(1em, auto) 1fr auto minmax(1em, auto);
+    margin-left: 13.5%;
+    margin-top: 9%;
+}
+
+.logs {
+    grid-column: 1/5;
+}
+
+.main { 
+    grid-column: 5/11;
+    margin-left: 20px;
+    height: 500px;
+}
+
+.list-grp {
+    align-items: center;
+    margin-left: -40px;
+    margin-right: 0px;
+    border-radius: 5px;
+    max-height: 350px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.card-div-logs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: rgb(88, 96, 105);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;
+    padding: 2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
+}
+
+.card-div {
+    display: flex;
+    flex-direction: column-reverse;
+    color: rgb(88, 96, 105);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;
+    padding: 2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 100%;
+  }
+
+.tts-container {
+    position: relative;
+    top: -5%;
+    right: 40%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10px;
+}
+
+.tts-text {
+    padding-right: 10px;
+}
+
+.background {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.audio-class {
+    display: flex;
+    position: absolute;
+    top: -10;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+}
+
+.label {
+  position: relative;
+  text-align: center;
+  top: -50%;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #053768;
+}
+
+.label-log {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #053768;
+  }
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: -600px;
+    margin: auto;
+}
+
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 50%;
+    bottom: 50%;
+    background-image: linear-gradient(to top, #59D48F 20%, #59D48F 80%);
+}
+
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+
+.bgBottom {
+    z-index: 5;
+}
+
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+
+.waveTop {
+    background-size: 50% 100px;
+}
+
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+
+.waveMiddle {
+    background-size: 50% 120px;
+}
+
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+
+.waveBottom {
+    background-size: 50% 100px;
+}
+
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
