@@ -1,0 +1,12 @@
+.footer-text {
+    text-align: center;
+    font-weight: bold;
+    font-family: "Source Sans Pro";
+    font-size: 18px;
+  }
+  
+  .footer-div {
+    margin-top: -3rem;
+    width: 100vw;
+  }
+  
