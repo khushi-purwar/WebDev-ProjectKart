@@ -1,4 +1,12 @@
+## Markdown Blog
 This is a Markdown powered Next.js blog!
+
+## Tech Stack
+
+- Next JS
+
+## Video 
+
 
 ## Getting Started
 
