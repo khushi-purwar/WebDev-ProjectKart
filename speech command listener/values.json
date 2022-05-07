@@ -1,0 +1,17 @@
+{
+    "questions": [
+        {
+            "q1": "fraction",
+            "a1": "fraction, In arithmetic, a number expressed as a quotient, in which a numerator is divided by a denominator."
+        },
+        {
+            "q2": "tyndall effect",
+            "a2": "The Tyndall effect is light scattering by particles in a colloid or in a very fine suspension.",
+            "a22": "https://en.wikipedia.org/wiki/Tyndall_effect"
+        },
+        {
+            "q3": "table of 72",
+            "a3":"https://www.cuemath.com/multiplication-tables/table-of-72/"
+        }
+    ]
+}
