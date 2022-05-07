@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f7fa;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.side {
+    min-width: 320px;
+    height: 200px;
+    background-color: #fff;
+    height: 100%;
+    min-height: 100vh;
+    border-right: 1px solid #e1e1e1;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    flex-direction: column;
+}
+
+.side .header {
+    background: linear-gradient(262deg, #ff7854, #fd267d);
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 1px 8px 0 rgba(0, 20, 20, 0.2);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.side .header .avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px solid #fff;
+    box-shadow: 0 1px 8px 0 rgba(0, 20, 20, 0.2);
+}
+
+.side .header .title {
+    padding: 0 10px;
+    color: #fff;
+    font-size: 23px;
+}
+
+.side .menu ul {
+    display: flex;
+    padding: 0 20px;
+}
+
+.side .menu ul li {
+    list-style: none;
+    margin: 0 10px;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.side .menu .active {
+    border-bottom: 3px solid #fd5068;
+    padding-bottom: 2px;
+}
+
+.side .messages {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.2s box-shadow;
+}
+
+.side .messages .avatar img {
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+}
+
+.side .messages .user {
+    padding: 0 10px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+}
+
+.side .messages .text {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 10px;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.side .messages:hover {
+    box-shadow: 0 0 15px 0 rgba(43, 78, 78, 0.1);
+    border-right: 5px solid #fd5068;
+}
+
+.container .card {
+    position: relative;
+    height: 450px;
+}
+
+.content .card .user {
+    width: 380px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px 0 rgba(0, 20, 20, 0.5);
+}
+
+.content .card .user .profile {
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+}
+
+.content .card .user .name {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 5px #444;
+}
+
+.content .card .user .name span {
+    font-size: 26px;
+}
+
+.content .card .local {
+    display: flex;
+    align-items: center;
+    padding: 0 0 20px 0;
+}
+
+.content .card .local i {
+    margin: 5px 0;
+    color: #fff;
+}
+
+.content .card .local span {
+    color: #fff;
+    padding: 0 10px;
+    text-shadow: 1px 1px 5px #444;
+}
+
+.content .buttons {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.content .buttons .no i {
+    color: #fd2e79;
+    font-size: 33px;
+}
+
+.content .buttons .star i {
+    color: #2bb1ff;
+    font-size: 22px;
+}
+
+.content .buttons .heart i {
+    color: #11e298;
+    font-size: 32px;
+}
+
+.content .buttons .no,
+.content .buttons .star,
+.content .buttons .heart {
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0 1px 10px 0 rgba(0, 20, 20, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 70px;
+    margin: 4px;
+    transition: 0.2s transform;
+}
+
+.content .buttons .no:hover,
+.content .buttons .star:hover,
+.content .buttons .heart:hover {
+    transform: scale(1.1);
+}
+
+.content .buttons .star {
+    width: 60px;
+    height: 60px;
+}
