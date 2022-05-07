@@ -1,0 +1,39 @@
+@mixin carousel-control-icons {
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  padding: 2rem 1.5rem;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+}
+
+.carousel-control-prev-icon {
+  @include carousel-arrow;
+  @include carousel-left-arrow;
+}
+
+.carousel-control-next-icon {
+  @include carousel-arrow;
+  @include carousel-right-arrow;
+}
+
+.carousel-indicators {
+  display: none !important;
+}
+
+.carousel-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.react-multiple-carousel__arrow {
+  @include carousel-arrow;
+
+  @include responsive(phone) {
+    display: none;
+  }
+}
+.react-multiple-carousel__arrow--right {
+  @include carousel-right-arrow;
+}
+.react-multiple-carousel__arrow--left {
+  @include carousel-left-arrow;
+}

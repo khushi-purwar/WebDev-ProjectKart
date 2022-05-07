@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: "Roboto", Helvetica, Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .display-none {
+    display: none !important;
+  }
+}
+
+.hide-display {
+  display: none !important;
+}

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./build/output.css">
+</head>
+
+<body class="font-gotham antialiased">
+    <nav class="container mx-auto flex items-center justify-between py-16">
+        <div>
+            <h1 class="text-black-400 text-xl">Beauty Store</h1>
+        </div>
+        <div class="flex items-center">
+            <div>
+                <a class="ml-10 text-sm hover:text-orange-200" href="#">New</a>
+                <a class="ml-10 text-sm hover:text-orange-200" href="#">Catalogue</a>
+                <a class="ml-10 text-sm hover:text-orange-200" href="#">Payment</a>
+                <a class="ml-10 text-sm hover:text-orange-200" href="#">Shipping</a>
+                <a class="ml-10 text-sm hover:text-orange-200" href="#">Blog</a>
+                <a class="ml-10 text-sm hover:text-orange-200" href="#">Wishlist</a>
+                <a class="ml-10 text-sm hover:text-orange-200" href="#">Contact</a>
+            </div>
+            <div class="flex items-center ml-64">
+                <a class="ml-12" href="#"><img src="./images/user.svg" alt=""></a>
+                <a class="ml-12" href="#"><img src="./images/search.svg" alt=""></a>
+                <a class="ml-12" href="#"><img src="./images/shopping-bag.svg" alt=""></a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container mx-auto relative">
+        <div class="slider">
+            <div class="slide">
+                <div class="flex relative">
+                    <div class="bg-blue-200 w-2/3 flex items-center">
+                        <img src="./images/cosmetic-bottle.png" alt="">
+                        <div class="absolute hero__heading -mt-16">
+                            <h4 class="text-3xl text-gray-300">New</h4>
+                            <h1 class="text-8xl font-medium leading-tight mb-4">Shower Gel</h1>
+                            <p class="w-144 text-gray-300 leading-normal">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit.
+                                Nullam non eros
+                                leo. Duis non
+                                massa eu massa commodo sollicitudin id non velit. Nunc id convallis mi. Fusce ut
+                                ultricies velit.</p>
+                        </div>
+                    </div>
+                    <div class="bg-green-200 w-1/3 flex flex-col justify-end">
+                        <button class="bg-orange-200 flex items-center justify-between p-16 hover:bg-orange-300">
+                            <span class="text-white">SEE ALL</span>
+                            <img src="./images/arrow-right.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="flex relative">
+                    <div class="bg-blue-200 w-2/3 flex items-center">
+                        <img src="./images/cosmetic-bottle.png" alt="">
+                        <div class="absolute hero__heading -mt-16">
+                            <h4 class="text-3xl text-gray-300">New</h4>
+                            <h1 class="text-8xl font-medium leading-tight mb-4">Hair Oil</h1>
+                            <p class="w-144 text-gray-300 leading-normal">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit.
+                                Nullam non eros
+                                leo. Duis non
+                                massa eu massa commodo sollicitudin id non velit. Nunc id convallis mi. Fusce ut
+                                ultricies velit.</p>
+                        </div>
+                    </div>
+                    <div class="bg-green-200 w-1/3 flex flex-col justify-end">
+                        <button class="bg-orange-200 flex items-center justify-between p-16 hover:bg-orange-300">
+                            <span class="text-white">SEE ALL</span>
+                            <img src="./images/arrow-right.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="flex relative">
+                    <div class="bg-blue-200 w-2/3 flex items-center">
+                        <img src="./images/cosmetic-bottle.png" alt="">
+                        <div class="absolute hero__heading -mt-16">
+                            <h4 class="text-3xl text-gray-300">New</h4>
+                            <h1 class="text-8xl font-medium leading-tight mb-4">Face Cream</h1>
+                            <p class="w-144 text-gray-300 leading-normal">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit.
+                                Nullam non eros
+                                leo. Duis non
+                                massa eu massa commodo sollicitudin id non velit. Nunc id convallis mi. Fusce ut
+                                ultricies velit.</p>
+                        </div>
+                    </div>
+                    <div class="bg-green-200 w-1/3 flex flex-col justify-end">
+                        <button class="bg-orange-200 flex items-center justify-between p-16 hover:bg-orange-300">
+                            <span class="text-white">SEE ALL</span>
+                            <img src="./images/arrow-right.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-dots absolute"></div>
+    </header>
+
+    <section class="container mx-auto py-40 flex">
+        <div class="w-2/6">
+            <div class="mb-16">
+                <h6 class="font-medium mb-2 text-xl">Offer</h6>
+                <h2 class="text-6xl font-medium leading-tight">OFF</h2>
+                <h2 class="text-6xl font-medium leading-tight upto">Upto 20%</h2>
+                <h6 class="py-8">For all cosmetics</h6>
+            </div>
+            <div>
+                <ul>
+                    <li class="py-3">
+                        <a class="menu-trigger font-medium hover:text-orange-200" href="#">New</a>
+                        <ul class="sub-menu ml-4">
+                            <li class="py-2 pt-5"><a class="hover:text-orange-200" href="#">Cream</a></li>
+                            <li class="py-2"><a class="hover:text-orange-200" href="#">Oil</a></li>
+                            <li class="py-2"><a class="hover:text-orange-200" href="#">Mask</a></li>
+                            <li class="py-2"><a class="hover:text-orange-200" href="#">Lipstic</a></li>
+                            <li class="py-2"><a class="hover:text-orange-200" href="#">Spray</a></li>
+                        </ul>
+                    </li>
+                    <li class="py-3">
+                        <a class="menu-trigger font-medium hover:text-orange-200" href="#">For body</a>
+                        <ul class="sub-menu ml-4">
+                            <li class="py-2 pt-5"><a class="hover:text-orange-200" href="#">Cream</a></li>
+                            <li class="py-2"><a class="hover:text-orange-200" href="#">Oil</a></li>
+                            <li class="py-2"><a class="hover:text-orange-200" href="#">Mask</a></li>
+                            <li class="py-2"><a class="hover:text-orange-200" href="#">Lipstic</a></li>
+                            <li class="py-2"><a class="hover:text-orange-200" href="#">Spray</a></li>
+                        </ul>
+                    </li>
+                    <li class="py-3">
+                        <a class="menu-trigger font-medium hover:text-orange-200" href="#">For Hair</a>
+                        <ul class="sub-menu ml-4">
+                            <li class="py-2 pt-5"><a class="hover:text-orange-200" href="#">Cream</a></li>
+                            <li class="py-2"><a class="hover:text-orange-200" href="#">Oil</a></li>
+                            <li class="py-2"><a class="hover:text-orange-200" href="#">Mask</a></li>
+                            <li class="py-2"><a class="hover:text-orange-200" href="#">Lipstic</a></li>
+                            <li class="py-2"><a class="hover:text-orange-200" href="#">Spray</a></li>
+                        </ul>
+                    </li>
+                    <li class="py-3">
+                        <a class="menu-trigger font-medium hover:text-orange-200" href="#">Makeup</a>
+                        <ul class="sub-menu ml-4">
+                            <li class="py-2 pt-5"><a class="hover:text-orange-200" href="#">Cream</a></li>
+                            <li class="py-2"><a class="hover:text-orange-200" href="#">Oil</a></li>
+                            <li class="py-2"><a class="hover:text-orange-200" href="#">Mask</a></li>
+                            <li class="py-2"><a class="hover:text-orange-200" href="#">Lipstic</a></li>
+                            <li class="py-2"><a class="hover:text-orange-200" href="#">Spray</a></li>
+                        </ul>
+                    </li>
+                    <li class="py-3">
+                        <a class="menu-trigger font-medium hover:text-orange-200" href="#">Perfumes</a>
+                        <ul class="sub-menu ml-4">
+                            <li class="py-2 pt-5"><a class="hover:text-orange-200" href="#">Cream</a></li>
+                            <li class="py-2"><a class="hover:text-orange-200" href="#">Oil</a></li>
+                            <li class="py-2"><a class="hover:text-orange-200" href="#">Mask</a></li>
+                            <li class="py-2"><a class="hover:text-orange-200" href="#">Lipstic</a></li>
+                            <li class="py-2"><a class="hover:text-orange-200" href="#">Spray</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-4/6 flex mt-16">
+            <div class="w-1/2 mr-6">
+                <div class="bg-green-300 mb-6 box-1 w-2/3 ml-auto">
+                    <img src="./images/cosmetics-two-bottles.png" alt="">
+                    <div class="absolute bottom-0 right-0 bg-white font-medium py-4 px-16"><a
+                            class="hover:text-orange-200" href="#">For Body</a>
+                    </div>
+                </div>
+                <div class="bg-gray-400 mb-6 box-2 w-full pt-32 relative">
+                    <img src="./images/cosmetics-yellow-jar.png" alt="">
+                    <div class="absolute top-0 left-0 bg-white font-medium py-4 px-16"><a class="hover:text-orange-200"
+                            href="#">For Face</a>
+                    </div>
+                </div>
+                <div class="bg-pink-100 mb-6 box-3 w-2/3 ml-auto h-64 relative">
+                    <img src="./images/cosmetic-cream.png" alt="">
+                    <div class="absolute top-0 right-0 bg-white font-medium py-4 px-16"><a class="hover:text-orange-200"
+                            href="#">For Hair</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/2">
+                <div class="bg-gray-200 mb-6 box-4 w-2/3">
+                    <img src="./images/Cosmetics.png" alt="">
+                    <div class="absolute bottom-0 left-0 bg-white font-medium py-4 px-16"><a
+                            class="hover:text-orange-200" href="#">Perfumes</a>
+                    </div>
+                </div>
+                <div class="bg-orange-100 mb-6 box-5 w-full">
+                    <img src="./images/cosmetics-bottles.png" alt="">
+                    <div class="absolute top-0 right-0 bg-white font-medium py-4 px-16"><a class="hover:text-orange-200"
+                            href="#">Make up</a>
+                    </div>
+                </div>
+                <div class="bg-blue-300 mb-6 box-6 w-2/3 pt-32 pb-12 pr-6 relative">
+                    <img src="./images/cosmetics-jar.png" alt="">
+                    <div class="absolute top-0 left-0 bg-white font-medium py-4 px-16"><a class="hover:text-orange-200"
+                            href="#">For Men</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="flex w-11/12 ml-auto">
+        <div class="bg-orange-200 w-2/5 p-24">
+            <div class="w-64">
+                <h4 class="text-white font-medium text-3xl">Special</h4>
+                <h3 class="text-white font-medium text-6xl leading-tight border-b-4 border-white pb-4">Offer</h3>
+                <p class="text-white py-4">Subscribe to mail list <br>and get 15% off on first order</p>
+            </div>
+            <div class="mt-16">
+                <form action="">
+                    <div class="mb-4">
+                        <input
+                            class="bg-orange-300 text-white text-sm placeholder-white w-full p-4 outline-none focus:bg-orange-400"
+                            type="text" placeholder="Name">
+                    </div>
+                    <div class="mb-4">
+                        <input
+                            class="bg-orange-300 text-white text-sm placeholder-white w-full p-4 outline-none focus:bg-orange-400"
+                            type="email" placeholder="Email">
+                    </div>
+                    <div>
+                        <button
+                            class="bg-black-400 text-white w-full p-4 uppercase text-sm tracking-wide hover:bg-black-200 focus:outline-none"
+                            type="submit">Subscribe now</button>
+                    </div>
+                    <div class="flex items-center mt-6">
+                        <div>
+                            <input type="checkbox" id="check" class="agree__checkbox hidden" checked>
+                            <label for="check"></label>
+                        </div>
+                        <div class="ml-3 text-white text-sm font-thin">
+                            By clicking subscribe, you agree to our terms <br>and <a href="#"
+                                class="text-yellow-100 hover:text-black-200">Privacy policy</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="w-3/5">
+            <img src="./images/cosmetics-tools.png" alt="">
+        </div>
+    </section>
+    <section class="container mx-auto py-48 flex">
+        <div class="w-2/5">
+            <div class="w-64 text-black-200">
+                <h4 class="font-medium text-3xl">Blog</h4>
+                <h3 class="font-medium text-6xl leading-tight border-b-4 border-orange-200 pb-4">Popular</h3>
+                <p class="py-4">Article about indian cosmetic market. Must Read article</p>
+            </div>
+            <div class="mt-16">
+                <button
+                    class="bg-orange-200 text-white w-1/2 uppercase flex items-center justify-between hover:bg-orange-300 p-8">
+                    <span>Read all articles</span>
+                    <img src="./images/arrow-right.svg" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="w-3/5 flex items-center pl-16">
+            <div class="w-4/6">
+                <img src="./images/cosmetics-lady.png" alt="">
+            </div>
+            <div class="w-2/6">
+                <h1 class="text-3xl leading-normal font-semibold text-black-100">The best beauty vlog that
+                    the internet
+                    has to offer</h1>
+                <div class="w-16 h-px bg-orange-200 my-8"></div>
+                <p class="text-blck-300 text-sm leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Nullam non
+                    eros leo.
+                    Duis non massa eu massa
+                    commodo sollicitudin id non velit.</p>
+                <div class="flex items-center mt-16">
+                    <img src="./images/logo.svg" alt="">
+                    <span class="ml-4"> voice</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative">
+        <div class="slider2">
+            <div class="slide">
+                <div class="inner__box">
+                    <div class="bg-gray-100 relative">
+                        <div class="label bg-white absolute top-0 right-0 text-xl text-black-200 py-8 px-48">New</div>
+                        <img src="./images/cosmetics-yellow-jar.png" alt="">
+                        <div class="bg-orange-200 py-4 px-6 absolute bottom-0 left-0 text-white number">1</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="inner__box">
+                    <div class="bg-gray-100 relative">
+                        <div class="label bg-white absolute top-0 right-0 text-xl text-black-200 py-8 px-48">New</div>
+                        <img src="./images/cosmetics-yellow-jar.png" alt="">
+                        <div class="bg-orange-200 py-4 px-6 absolute bottom-0 left-0 text-white number">2</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="inner__box">
+                    <div class="bg-gray-100 relative">
+                        <div class="label bg-white absolute top-0 right-0 text-xl text-black-200 py-8 px-48">New</div>
+                        <img src="./images/cosmetics-yellow-jar.png" alt="">
+                        <div class="bg-orange-200 py-4 px-6 absolute bottom-0 left-0 text-white number">3</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="inner__box">
+                    <div class="bg-gray-100 relative">
+                        <div class="label bg-white absolute top-0 right-0 text-xl text-black-200 py-8 px-48">New</div>
+                        <img src="./images/cosmetics-yellow-jar.png" alt="">
+                        <div class="bg-orange-200 py-4 px-6 absolute bottom-0 left-0 text-white number">4</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="inner__box">
+                    <div class="bg-gray-100 relative">
+                        <div class="label bg-white absolute top-0 right-0 text-xl text-black-200 py-8 px-48">New</div>
+                        <img src="./images/cosmetics-yellow-jar.png" alt="">
+                        <div class="bg-orange-200 py-4 px-6 absolute bottom-0 left-0 text-white number">5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider2-dots"></div>
+    </section>
+
+    <footer class="container mx-auto pt-64">
+        <section class="flex justify-between">
+            <div class="flex-1">
+                <h1 class="font-bold mb-8">Useful links</h1>
+                <div class="flex">
+                    <div class="flex flex-col w-1/2">
+                        <a class="mb-3 text-sm text-black-100 hover:text-orange-200" href="#">Catalogue</a>
+                        <a class="mb-3 text-sm text-black-100 hover:text-orange-200" href="#">Payment</a>
+                        <a class="mb-3 text-sm text-black-100 hover:text-orange-200" href="#">Shipping</a>
+                        <a class="mb-3 text-sm text-black-100 hover:text-orange-200" href="#">Features</a>
+                    </div>
+                    <div class="flex flex-col w-1/2">
+                        <a class="mb-3 text-sm text-black-100 hover:text-orange-200" href="#">Blog</a>
+                        <a class="mb-3 text-sm text-black-100 hover:text-orange-200" href="#">Privacy policy</a>
+                        <a class="mb-3 text-sm text-black-100 hover:text-orange-200" href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1">
+                <h1 class="font-bold mb-8">Contacts</h1>
+                <div class="flex">
+                    <div>
+                        <h2 class="font-bold text-sm">Moscow</h2>
+                        <span class="text-sm text-black-100">
+                            Red squere, 1
+                            Kremel <br> business
+                            Office. 17
+                        </span>
+                    </div>
+                    <div class="ml-8">
+                        <h2 class="font-bold text-sm">Mumbai</h2>
+                        <span class="text-sm text-black-100">Nepeansea road, Mumbai, <br>
+                            Maharashtra 400052, India</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1">
+                <h1 class="font-bold mb-8">Register</h1>
+                <form action="" class="flex flex-col">
+                    <input
+                        class="border mb-6 border-orange-200 placeholder-black-100 p-2 text-sm rounded outline-none focus:shadow-outline"
+                        type="text" placeholder="Name">
+                    <input
+                        class="border mb-6 border-orange-200 placeholder-black-100 p-2 text-sm rounded outline-none focus:shadow-outline"
+                        type="email" placeholder="Email">
+                    <button class="bg-orange-200 p-2 text-sm text-white rounded hover:bg-orange-400 uppercase">Register
+                        Now</button>
+                </form>
+            </div>
+        </section>
+        <section class="border-t border-gray-100 py-6 flex justify-between items-center mt-16">
+            <div class="text-xs text-black-100">© 2022 Not Really lol.</div>
+            <div class="flex items-center">
+            </div>
+        </section>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+.fan-favorites-container {
+  margin-top: 2rem;
+
+  .title {
+    @include sectionTitle;
+  }
+
+  .sub-title {
+    position: relative;
+    line-height: 1.5rem;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+
+    &::before {
+      background: $color-primary;
+      height: 1.5rem;
+      position: absolute;
+      align-self: flex-start;
+      width: 4px;
+      content: "";
+      left: 0;
+      border-radius: 0.25rem;
+    }
+  }
+  .sub-title__desc {
+    color: rgba($color: #fff, $alpha: 0.7);
+    margin: 0;
+  }
+  .react-multi-carousel-item {
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  .carousel-img {
+    position: relative;
+    width: 95%;
+    height: 15rem;
+    background: $color-dark2;
+  }
+
+  .featured-details {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-dark;
+    height: 8rem;
+    width: 95%;
+    padding: 0.5rem;
+
+    .rating {
+      color: $color-primary;
+      display: flex;
+      align-items: center;
+      svg {
+        width: 1rem;
+        margin-right: 0.5rem;
+      }
+    }
+    span {
+      color: white;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: block;
+      overflow: hidden;
+    }
+
+    button {
+      margin-top: 1rem;
+      width: 100%;
+    }
+  }
+}
+
+@include responsive(phone) {
+  .fan-favorites-container {
+    padding-top: 1rem;
+
+    .title {
+      margin-bottom: 1rem;
+    }
+
+    .sub-title {
+      font-size: 1.25rem;
+    }
+
+    .main-container {
+      .container {
+        padding-top: 1rem;
+        background: $color-dark;
+      }
+    }
+
+    .react-multi-carousel-list {
+      width: 100%;
+
+      .carousel-img {
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), black);
+      }
+    }
+
+    .featured-details {
+      background-color: $color-dark2;
+      p {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include responsive(tab_medium) {
+  .fan-favorites-container {
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,32 @@
+.error {
+  text-align: center;
+  height: 70vh;
+  
+  .error-image {
+    display: flex;
+    justify-content: center;
+
+    svg {
+      width: 40%;
+      height: 100%;
+    }
+  }
+  span {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .error {
+    .error-image {
+      svg {
+        width: 100%;
+      }
+    }
+    span {
+      font-size: 1rem;
+    }
+  }
+}

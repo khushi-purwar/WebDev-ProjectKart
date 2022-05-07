@@ -1,0 +1,371 @@
+/* Base Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+   background: #2B292E;
+  color: #fafafa;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+    color: #6F439C;
+}
+
+span {
+    color: white;
+    text-transform: uppercase;
+}
+
+p {
+    display: flex;
+    margin: 1em;
+}
+
+/* Container */
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+
+/* Header */
+
+.header {
+  background: #6F439C;
+  color:white;
+  padding: 1.6rem 0;
+}
+
+.header__title {
+  font-size: 3.2rem;
+  margin-bottom: .4rem;
+}
+
+.header__subtitle {
+  /* color: #777; */
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+/* Actions Bar */
+
+.actions {
+    background-color: #353239;
+    /* border-bottom: 1px solid #dedfe0; */
+    /* color: #333333; */
+    padding: 1rem
+}
+
+.actions__container {
+    align-items: center;
+    display: flex;
+    max-width: 60rem;
+    margin: 0 auto;
+    min-height: 3rem;
+    padding: 0 1.6rem;
+}
+
+.actions__container--spaced {
+    justify-content: space-between
+}
+
+/* Form Inputs */
+
+.input {
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 300;
+    height: 3rem;
+    margin-right: 1.6rem;
+    margin-bottom: 1rem;
+    padding: .4rem .8rem;
+}
+
+textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 100%
+}
+
+textarea::placeholder{
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 300;
+    height: 3rem;
+    margin-right: 1.4rem;
+    padding: .4rem .8rem;
+    font-family: Arial;
+    color: grey;
+    font-style: italic;
+
+}
+
+.checkbox {
+    margin-right: 1em;
+}
+
+.text-element {
+    margin-right: 1em;
+}
+
+.remove-element {
+    background: rgb(231, 78, 78);
+    border: none;
+    border-bottom: 2px solid #bb2323;
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: .8rem;
+    transition: background .3s ease, color .3s ease;
+    border-radius: 5px;
+}
+
+.button {
+    background: #7044a0;
+    border: none;
+    border-bottom: 2px solid #603a88;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: .8rem;
+    transition: background .3s ease, color .3s ease;
+    margin: 1em 0em;
+    border-radius: 5px;
+}
+
+.button-danger {
+    background: rgb(231, 78, 78);
+    border: none;
+    border-bottom: 2px solid #bb2323;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: .8rem;
+    transition: background .3s ease, color .3s ease;
+    border-radius: 5px;
+    margin: 2.5em 0em;
+}
+
+.button--add {
+    background: #603a88;
+    border: none;
+    border-bottom: 2px solid #7044a0;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: .8rem;
+    transition: background .3s ease, color .3s ease;
+    margin-top: 1rem;
+}
+
+.button:hover {
+    background: #5F3A87;
+}
+
+.button--secondary {
+    background: #888888;
+    border-bottom: 2px solid #717171;
+}
+
+.button--secondary:hover {
+    background: #6E6E6E;
+}
+
+.button--text {
+    background: none;
+    border: none;
+    color: #aaa;
+}
+
+.button--text:hover {
+    background: none;
+    color: white;
+    text-decoration: underline;
+}
+
+/* Note editor */
+
+.title-input {
+    border: 1px solid #DEDFE0;
+    font-size: 2rem;
+    font-weight: 300;
+    display: block;
+    margin: 2.4rem 0;
+    padding: .8rem;
+    width: 100%;
+}
+
+.body-input {
+    border: 1px solid #DEDFE0;
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 300;
+    display: block;
+    margin: 2.4rem 0;
+    min-height: 15rem;
+    padding: .8rem;
+    width: 100%;
+}
+
+/* Note List Item */
+
+.list-item {
+    text-decoration: none;
+    color: #fafafa;
+    cursor: pointer;
+    background: #353239;
+    border: 1px solid #423e47;
+    margin: 1.6rem 0;
+    padding: 1rem 1.6rem;
+    display: block;
+    transition: background .3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.list-item__container {
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 300;
+    align-items: baseline;
+}
+
+.list-item__container > *:first-child {
+    margin-right: .8rem;
+}
+
+.list-item:hover {
+    background: #3d3941;
+}
+
+.list-item__title {
+    font-size: 1.8rem;
+    margin-bottom: .4rem
+}
+
+.list-item__subtitle {
+    color: #666;
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.list-title {
+    margin: 3.2rem 0 1.6rem;
+}
+
+.empty-message {
+    margin: 3.2rem 0;
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+
+    .container {
+        max-width: 50rem;
+        margin: 0 auto;
+        padding: 0 1.2rem;
+      }
+      
+      /* Header */
+      
+      .header {
+        background: #6F439C;
+        color:white;
+        padding: 1.2rem 0;
+      }
+      
+      .header__title {
+        font-size: 2.2rem;
+        margin-bottom: .1rem;
+      }
+      .header__subtitle {
+        /* color: #777; */
+        font-size: 1.1rem;
+        font-weight: 200;
+      }
+      
+      /* Actions Bar */
+      
+      .actions {
+          background-color: #353239;
+          /* border-bottom: 1px solid #dedfe0; */
+          /* color: #333333; */
+          padding: 0.6rem
+      }
+      
+      .actions__container {
+          align-items: center;
+          display: flex;
+          max-width: 40rem;
+          margin: 0 auto;
+          min-height: 2rem;
+          padding: 0 1.2rem;
+      }
+      
+      .actions__container--spaced {
+          justify-content: space-between
+      }
+      
+      /* Form Inputs */
+      
+      .input {
+          border: none;
+          font-size: 1rem;
+          font-weight: 200;
+          height: 1.5rem;
+          margin-right: 1.2rem;
+          margin-bottom: 1.2rem;
+          padding: .2rem .5rem;
+      }
+      
+      textarea {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          max-width: 100%
+      }
+      
+      textarea::placeholder{
+          border: none;
+          font-size: 1.4rem;
+          font-weight: 300;
+          height: 3rem;
+          margin-right: 1.4rem;
+          padding: .4rem .8rem;
+          font-family: Arial;
+          color: grey;
+          font-style: italic;
+      
+      }
+    .remove-element {
+      height: 300px;
+      width: 60%;
+      margin-left: 6%;
+    }
+  .button {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 71px;
+      height: 25px;
+      padding: 0.4px;
+  }
+  
+  }
