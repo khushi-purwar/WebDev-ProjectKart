@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="D:\OneDrive\Desktop\tinder_clone\Product\style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <title>Products</title>
+
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f7fa;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.side {
+    min-width: 320px;
+    height: 200px;
+    background-color: #fff;
+    height: 100%;
+    min-height: 100vh;
+    border-right: 1px solid #e1e1e1;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    flex-direction: column;
+}
+
+.side .header {
+    background: linear-gradient(262deg, #ff7854, #fd267d);
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 1px 8px 0 rgba(0, 20, 20, 0.2);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.side .header .avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px solid #fff;
+    box-shadow: 0 1px 8px 0 rgba(0, 20, 20, 0.2);
+}
+
+.side .header .title {
+    padding: 0 10px;
+    color: #fff;
+    font-size: 23px;
+}
+
+.side .menu ul {
+    display: flex;
+    padding: 0 20px;
+}
+
+.side .menu ul li {
+    list-style: none;
+    margin: 0 10px;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.side .menu .active {
+    border-bottom: 3px solid #fd5068;
+    padding-bottom: 2px;
+}
+
+.side .messages {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.2s box-shadow;
+}
+
+.side .messages .avatar img {
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+}
+
+.side .messages .user {
+    padding: 0 10px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+}
+
+.side .messages .text {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 10px;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.side .messages:hover {
+    box-shadow: 0 0 15px 0 rgba(43, 78, 78, 0.1);
+    border-right: 5px solid #fd5068;
+}
+
+.container .card {
+    position: relative;
+    height: 450px;
+}
+
+.content .card .user {
+    width: 380px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px 0 rgba(0, 20, 20, 0.5);
+}
+
+.content .card .user .profile {
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+}
+
+.content .card .user .name {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 5px #444;
+}
+
+.content .card .user .name span {
+    font-size: 26px;
+}
+
+.content .card .local {
+    display: flex;
+    align-items: center;
+    padding: 0 0 20px 0;
+}
+
+.content .card .local i {
+    margin: 5px 0;
+    color: #fff;
+}
+
+.content .card .local span {
+    color: #fff;
+    padding: 0 10px;
+    text-shadow: 1px 1px 5px #444;
+}
+
+.content .buttons {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.content .buttons .no i {
+    color: #fd2e79;
+    font-size: 33px;
+}
+
+.content .buttons .star i {
+    color: #2bb1ff;
+    font-size: 22px;
+}
+
+.content .buttons .heart i {
+    color: #11e298;
+    font-size: 32px;
+}
+
+.content .buttons .no,
+.content .buttons .star,
+.content .buttons .heart {
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0 1px 10px 0 rgba(0, 20, 20, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 70px;
+    margin: 4px;
+    transition: 0.2s transform;
+}
+
+.content .buttons .no:hover,
+.content .buttons .star:hover,
+.content .buttons .heart:hover {
+    transform: scale(1.1);
+}
+
+.content .buttons .star {
+    width: 60px;
+    height: 60px;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="side">
+            <div class="header">
+                <div class="avatar">
+                    <img src="https://randomuser.me/api/portraits/women/64.jpg" alt="" />
+                </div>
+                <div class="title">Menu Profile</div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>Matches</li>
+                    <li class="active">Messages</li>
+                </ul>
+            </div>
+            <div class="messages">
+                <div class="avatar">
+                    <img src="https://randomuser.me/api/portraits/women/38.jpg" alt="" />
+                </div>
+                <div class="message">
+                    <div class="user">Laurie</div>
+                    <div class="text">Heyy, What are you doing ???</div>
+                </div>
+            </div>
+            <div class="messages">
+                <div class="avatar">
+                    <img src="https://randomuser.me/api/portraits/women/39.jpg" alt="" />
+                </div>
+                <div class="message">
+                    <div class="user">Sarah</div>
+                    <div class="text">Heyy, should we catch up ???</div>
+                </div>
+            </div>
+            <div class="messages">
+                <div class="avatar">
+                    <img src="https://randomuser.me/api/portraits/women/40.jpg" alt="" />
+                </div>
+                <div class="message">
+                    <div class="user">Janelle</div>
+                    <div class="text">Then, should we meet.</div>
+                </div>
+            </div>
+            <div class="messages">
+                <div class="avatar">
+                    <img src="https://randomuser.me/api/portraits/women/41.jpg" alt="" />
+                </div>
+                <div class="message">
+                    <div class="user">Zerona</div>
+                    <div class="text">Heyy, I'm excited to meet you.</div>
+                </div>
+            </div>
+            <div class="messages">
+                <div class="avatar">
+                    <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="" />
+                </div>
+                <div class="message">
+                    <div class="user">Liz</div>
+                    <div class="text">Heyy, I'm interested in you.</div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="card">
+                <div class="user">
+                    <img class="user"
+                        src="https://images.unsplash.com/photo-1532910404247-7ee9488d7292?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80"
+                        alt="" />
+                    <div class="profile">
+                        <div class="name">Irina <span>20</span></div>
+                        <div class="local">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>a 20 kilometers away</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="no">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="star">
+                    <i class="fas fa-star fa"></i>
+                </div>
+                <div class="heart">
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
