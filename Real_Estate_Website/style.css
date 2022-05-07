@@ -1,0 +1,670 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+
+:root {
+  --red: #0CA7B7;
+  --light-red: #f9edeb;
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+body {
+  background: linear-gradient(45deg , #00BCB4 , #C4E86B );
+}
+.intro {
+	display: table;
+	width: 100%;
+	padding: 0;
+	background: url(img/home.jpg) center center no-repeat;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.intro .overlay {
+	background: rgba(0,0,0,0.3);
+}
+.intro h1 {
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	font-size: 62px;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 10px;
+	text-shadow: 0 0 15px rgba(0,0,0,0.5)
+}
+.intro p {
+	color: #fff;
+	font-size: 17px;
+	line-height: 28px;
+	padding: 15px;
+	max-width: 600px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	background: rgba(0,0,0,.45);
+}
+.intro-text {
+	padding-top: 350px;
+	padding-bottom: 150px;
+	text-align: center;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 3.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.7rem;
+  color: var(--red);
+  background: var(--light-red);
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background: var(--red);
+  color: #fff;
+}
+
+.heading {
+  text-align: center;
+  color: #333;
+  font-size: 4rem;
+  padding-bottom: 3rem;
+}
+
+.heading span {
+  color: var(--red);
+  background: var(--light-red);
+  border-radius: 0.5rem;
+  padding: 0.2rem 1.5rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #fff;
+  padding: 1.5rem 9%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  font-weight: bolder;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+header .logo span {
+  color: var(--red);
+}
+
+header .navbar a {
+  color: #333;
+  font-size: 2rem;
+  padding: 0 1.5rem;
+}
+
+header .navbar a:hover {
+  color: var(--red);
+}
+
+header .icons #menu-bars,
+header .icons a {
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 5rem;
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+  color: var(--red);
+  background: var(--light-red);
+  text-align: center;
+}
+
+header .icons #menu-bars:hover,
+header .icons a:hover {
+  background-color: var(--red);
+  color: #fff;
+}
+
+header .icons #menu-bars {
+  display: none;
+}
+
+.home {
+  min-height: 100vh;
+  background: url(../images/home-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home form {
+  margin-top: 7rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  width: 70rem;
+  padding: 2rem;
+}
+
+.home form h3 {
+  text-align: center;
+  color: #333;
+  font-size: 3rem;
+}
+
+.home form .buttons-container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.home form .buttons-container .btn {
+  flex: 1;
+}
+
+.home form .inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.home form .inputBox input,
+.home form .inputBox select {
+  flex: 1 1 25rem;
+  border: 0.1rem solid #333;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-transform: none;
+}
+
+.home form .btn {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.services .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.services .box-container .box {
+  flex: 1 1 30rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 2rem;
+}
+
+.services .box-container .box h3 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.services .box-container .box p {
+  font-size: 1.5rem;
+  color: #666;
+  padding: 0.5rem 0;
+  line-height: 2;
+}
+
+.featured .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.featured .box-container .box {
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: #fff;
+  flex: 1 1 30rem;
+}
+
+.featured .box-container .box .image-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 25rem;
+}
+
+.featured .box-container .box .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.2s linear;
+}
+
+.featured .box-container .box:hover .image-container img {
+  transform: scale(1.1);
+}
+
+.featured .box-container .box .image-container .info {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  display: flex;
+}
+
+.featured .box-container .box .image-container .info h3 {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  margin-left: 1rem;
+}
+
+.featured .box-container .box .image-container .icons {
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+  display: flex;
+}
+
+.featured .box-container .box .image-container .icons a {
+  font-size: 1.4rem;
+  color: #fff;
+  display: flex;
+  border-radius: 0.5rem;
+  background: rgba(0, 0, 0, 0.3);
+  margin-right: 1rem;
+  padding: 0.7rem;
+}
+
+.featured .box-container .box .image-container .icons a h3 {
+  font-weight: 500;
+  padding-left: 0.5rem;
+}
+
+.featured .box-container .box .image-container .icons a:hover {
+  background: var(--red);
+}
+
+.featured .box-container .box .content {
+  padding: 1.5rem;
+}
+
+.featured .box-container .box .content .price {
+  display: flex;
+  align-items: center;
+}
+
+.featured .box-container .box .content .price h3 {
+  color: var(--red);
+  font-size: 2rem;
+  margin-right: auto;
+}
+
+.featured .box-container .box .content .price a {
+  color: #666;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  background: #f7f7f7;
+}
+
+.featured .box-container .box .content .price a:hover {
+  background: var(--red);
+  color: #fff;
+}
+
+.featured .box-container .box .content .location {
+  padding: 1rem 0;
+}
+
+.featured .box-container .box .content .location h3 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.featured .box-container .box .content .location p {
+  font-size: 1.5rem;
+  color: #666;
+  line-height: 1.5;
+  padding-top: 0.5rem;
+}
+
+.featured .box-container .box .content .details {
+  padding: 0.5rem 0;
+  display: flex;
+}
+
+.featured .box-container .box .content .details h3 {
+  flex: 1;
+  padding: 1rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  color: #999;
+  font-size: 1.3rem;
+}
+
+.featured .box-container .box .content .details h3 i {
+  color: #333;
+  padding-left: 0.5rem;
+}
+
+.featured .box-container .box .content .buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.featured .box-container .box .content .buttons .btn {
+  flex: 1;
+  font-size: 1.5rem;
+}
+
+.agents .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.agents .box-container .box {
+  background: #fff;
+  text-align: center;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  position: relative;
+  width: 26rem;
+}
+
+.agents .box-container .box .fa-envelope {
+  position: absolute;
+  top: 1.8rem;
+  left: 2rem;
+  color: #333;
+  font-size: 2rem;
+}
+
+.agents .box-container .box .fa-envelope:hover {
+  color: var(--red);
+}
+
+.agents .box-container .box .fa-phone {
+  position: absolute;
+  top: 1.8rem;
+  right: 2rem;
+  color: #333;
+  font-size: 2rem;
+}
+
+.agents .box-container .box .fa-phone:hover {
+  color: var(--red);
+}
+
+.agents .box-container .box img {
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  height: 10rem;
+  width: 10rem;
+  margin: 1rem 0;
+}
+
+.agents .box-container .box h3 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.agents .box-container .box span {
+  font-size: 1.7rem;
+  color: var(--red);
+}
+
+.agents .box-container .box .share {
+  padding-top: 2rem;
+}
+
+.agents .box-container .box .share a {
+  margin: 0 0.3rem;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  background: #f7f7f7;
+  color: #666;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+}
+
+.agents .box-container .box .share a:hover {
+  background: var(--red);
+  color: #fff;
+}
+
+.contact .icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.contact .icons-container .icons {
+  flex: 1 1 25rem;
+  background: #fff;
+  padding: 2rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact .icons-container .icons img {
+  height: 6rem;
+}
+
+.contact .icons-container .icons h3 {
+  font-size: 2.5rem;
+  color: #333;
+  padding: 1rem 0;
+}
+
+.contact .icons-container .icons p {
+  font-size: 1.5rem;
+  color: #666;
+  padding: 0.2rem 0;
+}
+
+.contact .row {
+  background: url(img/home-bg.jpg);
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  padding: 1rem;
+}
+
+.contact .row form {
+  flex: 1 1 50rem;
+  padding: 0.5rem 1rem;
+}
+
+.contact .row .map {
+  flex: 1 1 30rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.contact .row form .inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact .row form textarea,
+.contact .row form .inputBox input {
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: #333;
+  background: #f7f7f7;
+  border-radius: 0.5rem;
+  text-transform: none;
+  width: 49%;
+}
+
+.contact .row form textarea {
+  width: 100%;
+  height: 20rem;
+  resize: none;
+}
+
+.contact .row form textarea:focus,
+.contact .row form .inputBox input:focus {
+  background-color: var(--light-red);
+}
+
+.footer .footer-container {
+  background: #fff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.footer .footer-container .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer .footer-container .box-container .box {
+  flex: 1 1 25rem;
+}
+
+.footer .footer-container .box-container .box h3 {
+  font-size: 2.5rem;
+  color: #333;
+  padding: 0.5rem 0;
+}
+
+.footer .footer-container .box-container .box a {
+  display: block;
+  font-size: 1.5rem;
+  color: #666;
+  padding: 0.5rem 0;
+}
+
+.footer .footer-container .box-container .box a:hover {
+  color: var(--red);
+  text-decoration: underline;
+}
+
+.footer .footer-container .credit {
+  margin-top: 2rem;
+  padding: 0.5rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+
+.footer .footer-container .credit span {
+  color: var(--red);
+}
+
+.footer .footer-container {
+  margin-bottom: 8rem;
+}
+
+/* media queries  */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    padding: 1.5rem 1rem;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header .icons #menu-bars {
+    display: inline-block;
+  }
+
+  header .navbar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: #f7f7f7;
+    border-top: 0.1rem solid #333;
+    border-bottom: 0.1rem solid #333;
+    transition: 0.2s linear;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  header .navbar a {
+    display: block;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    background: #fff;
+    border: 0.1rem solid #333;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .contact .row form .inputBox input {
+    width: 100%;
+  }
+}
