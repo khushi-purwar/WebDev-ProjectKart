@@ -1,0 +1,63 @@
+body,
+html {
+    padding: 15;
+    height: 100%;
+    background: #ECE9E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#gridTitle {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align-last: right;
+    text-transform: uppercase;
+}
+
+[colorValue~="default"] {
+    color: cornflowerblue;
+}
+
+[colorValue~="void"] {
+    color: purple;
+}
+
+[colorValue~="arc"] {
+    color: lightskyblue;
+}
+
+[colorValue~="solar"] {
+    color: rgb(255, 136, 0);
+}
+
+.gridStyle {
+    border: 1px solid rgb(46, 46, 46);
+    border-top: 2px solid;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a[class~="active"] {
+    font-weight: bold;
+}
+
+[blockValue~="deadend"] {
+    background-color: orange;
+}
+
+
+[blockValue~="path"] {
+    background-color: darkgrey;
+}
+
+[blockValue~="wall"] {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4JyBoZWlnaHQ9JzgnPgogIDxyZWN0IHdpZHRoPSc4JyBoZWlnaHQ9JzgnIGZpbGw9JyNmZmYnLz4KICA8cGF0aCBkPSdNMCAwTDggOFpNOCAwTDAgOFonIHN0cm9rZS13aWR0aD0nMC41JyBzdHJva2U9JyNhYWEnLz4KPC9zdmc+Cg==");
+    background-repeat: repeat;
+}
+
+[blockValue~="step"] {
+    background-color: cornflowerblue;
+}
