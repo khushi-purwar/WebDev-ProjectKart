@@ -1,0 +1,65 @@
+body {
+    background-image: radial-gradient( #fcf876, #ffcd3c, #cf7500);
+  
+    margin-right: 100px;
+  
+    text-align: center;
+  }
+  
+  h1 {
+    font-family: "Indie Flower", cursive;
+    color: #b7472a;
+    font-size: 6rem;
+    text-decoration: underline;
+    text-shadow: 3px 0 3px #342b38;
+    margin: 10px 0;
+  
+  }
+  
+  p {
+  
+    font-size: 3rem;
+    font-family: "Indie Flower", cursive;
+    color: #b7472a;
+  }
+  
+  footer {
+    color: #581c0c;
+    margin-bottom: 5%;
+    padding: 20px auto;
+  }
+  
+  .guitar-position {
+  
+    background-image: url("images/guitar.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 70px 0 ;
+    margin: 50px 0;
+  }
+  
+  .guitar-button {
+    text-align: center;
+    outline: none;
+    font-size: 5rem;
+    font-family: "Indie Flower", cursive;
+    margin: 1.5rem 1.5rem 0;
+    color: #581c0c;
+    background-color: #ffe277;
+    display: inline-block;
+    border: 3px solid #cf7500;
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .guitar-button:hover {
+    color: #d92027;
+  }
+  
+  
+  .pressed {
+    box-shadow: 0 4px 5px 0 #d92027;
+  
+  }
+  
