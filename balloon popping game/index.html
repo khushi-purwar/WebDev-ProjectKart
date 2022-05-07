@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Balloons popper</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body style="    background: linear-gradient(to bottom right, #33ccff 0%, #ffcccc 100%);
+">
+<div style="z-index: -1; display: flex; align-items: center; justify-content: center; font-size: 3rem; text-align: center; margin-top: 0px;
+margin-bottom: 50px;
+text-align: center;
+font-family: sans-serif;
+font-size: 3rem;
+letter-spacing: 0.15rem;
+text-transform: uppercase;
+color: rgb(0, 0, 0);
+text-shadow: -4px 4px #ef3550,
+			 -8px 8px #f48fb1,
+			 -12px 12px #7e57c2,
+			 -16px 16px #2196f3,
+			 -20px 20px #26c6da,
+			 -24px 24px #43a047,
+			 -28px 28px #eeff41,
+			 -32px 32px #f9a825,
+			 -36px 36px #ff5722;"> <a href="https://github.com/RAHULBAWA777">  made with ❤ by RAHULBAWA </a></div>
+	<div class="score-block">
+		<p>You popped <span class="score">0</span> balloons</p>
+	</div>
+
+	<div class="total-shadow">
+		<div style="background-color:rgb(104, 182, 255) ;" class="total-block">
+			<div class="total-wrapper win">
+				<h4>Congratulations!</h4>
+				<img src="happy.png" alt="Winner">
+				<h4>You popped all 100 balloons.</h4>
+				<p>You are a champion!</p>
+			</div>
+
+			<div style="background-color:rgb(104, 182, 255) ;" class="total-wrapper lose">
+				<h4>Sorry!</h4>
+				<img src="sad.png" alt="Loser">
+				<h4>You popped <span class="score">0</span> balloons.</h4>
+				<p>Play again?</p>
+				<button  style="background-color:rgb(255, 162, 104) ;border: none;font-size: larger; border-radius: 4px;padding: 5px 15px;cursor: pointer;" class="restart">Yes</button>
+				<button style="background-color:rgb(255, 162, 104) ;border: none;font-size: larger; border-radius: 4px;padding: 5px 15px;cursor: pointer;" class="cencel">No</button>
+			</div>
+		</div>
+	</div>
+	
+	<div class="start-game-window">
+		<h2>Are you ready to start?</h2>
+		<button style="border: none; background-color: #7e57c2; font-size: larger; border-radius: 4px;padding: 5px 15px;cursor: pointer;" class="start-game-button">Start</button>
+	</div>
+
+	<audio src="bg-music.mp3" class="bg-music" loop></audio>
+
+	<script src="script.js"></script>
+</body>
+</html>
