@@ -1,0 +1,114 @@
+body {
+    font-family: 'Garamond', serif;
+    background-color: #111d4a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.heading {
+    color: #eee;
+    margin-bottom: 30px;
+}
+
+.container {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#emojiList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-gap: 20px;
+}
+
+
+  
+.emoji {
+    list-style-type: none;
+    background-color: #eaeaea;
+    border-radius: 3px;
+    padding: 10px 10px;
+    display: grid;
+    grid-template-columns: none;
+    grid-template-areas:
+       'emoji emoji emoji'
+       'space space space'
+       'description description description'
+       'category category category';
+    text-align: left;
+}
+
+
+@media screen and (max-width: 600px){
+  
+  #emojiList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 15px;
+}
+
+  .emoji {
+    list-style-type: none;
+    background-color: #eaeaea;
+    border-radius: 3px;
+    padding: 10px 10px;
+    display: grid;
+    grid-template-columns: none;
+    grid-template-areas:
+       'emoji emoji emoji'
+       'space space space'
+       'description description description'
+       'category category category';
+    text-align: left;
+}
+}
+
+.emoji > h1 {
+    grid-area: emoji;
+    margin-bottom: 0px;
+    
+    
+}
+
+.emoji > h3 {
+  grid-area: space;
+  margin: 0;
+}
+
+.emoji > p {
+  grid-area: category;
+   
+}
+
+.emoji > h2 {
+    grid-area: description;
+    margin: 0;
+    margin-top: -18px;
+    
+  
+}
+#searchBar {
+    width: 100%;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+#searchWrapper {
+    position: relative;
+}
+
+#searchWrapper::after {
+    content: '🔍';
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
