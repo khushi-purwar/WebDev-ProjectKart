@@ -1,0 +1,82 @@
+.body__tittle {
+  text-align: left;
+  margin: 5px 0 0 14px;
+  color: white;
+}
+.rows {
+  padding: 10px;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.rows::-webkit-scrollbar {
+  display: none;
+}
+.Row__content {
+  transition: all 0.2s linear;
+}
+.Row__content--small {
+  width: 187px;
+  padding: 0.5px;
+  transition: all 0.2s linear;
+}
+.Row__content--small:hover {
+  transform: scale(1.15);
+}
+.Row__content:hover {
+  transform: scale(1.1);
+}
+img {
+  width: 150px;
+  padding: 5px 5px 2px 8px;
+}
+/**Small Content Button **/
+.Row_button {
+  display: flex;
+  position: absolute;
+  margin-top: -70px;
+  margin-left: 32px;
+  top: 100px;
+  display: none;
+}
+.Row_button:hover {
+  display: flex;
+}
+img:hover + .Row_button {
+  display: flex;
+}
+/**Big Content Button **/
+.Row__button {
+  position: absolute;
+  margin-top: -15px;
+  margin-left: 35px;
+  top: 110px;
+  display: none;
+}
+.Row__button:hover {
+  display: flex;
+}
+img:hover + .Row__button {
+  display: flex;
+}
+button {
+  cursor: pointer;
+  outline: 0;
+  margin-right: 15px;
+  border: 0;
+  background-color: transparent;
+  color: red;
+}
+/** -- MATERIAL UI CSS --**/
+.info {
+  border-radius: 100px;
+  height: 25px;
+  margin-top: 5px;
+  color: white !important;
+  background-color: rgba(46, 49, 49, 0.5);
+}
+.MuiDialog-paperScrollBody {
+  background-color: black !important;
+}
