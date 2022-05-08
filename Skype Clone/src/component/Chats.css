@@ -1,0 +1,36 @@
+.Chats {	
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	margin: 0 auto;
+	overflow-y: scroll;
+	
+	
+
+}
+
+.Chat {
+	margin: 1rem 1.5rem;
+	padding: 1rem;
+	background: linear-gradient(90deg, #1986d8, #7b9cc2);	
+	border-radius: 10px;
+	max-width: 85%;
+
+	
+}
+.Chats .is-user-msg {
+	margin-left: auto;
+	background: rgba(116, 116, 128, 1);
+	
+
+}
+
+
+@media(min-width: 576px) {
+	.Chat {
+		max-width: 60%;
+	}
+
+
+}

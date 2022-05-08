@@ -363,15 +363,66 @@ aside.right-sidebar {
 	padding: 0 18px;
 }
 
+/* ============================= */
+/* Main Website UI ====================== */
+/* ============================= */
 
+.title{
+	text-align: center;
+	margin: 3rem;
+	font-size: 3rem;
+}
 
+.stylebox{
+	border: 2px solid red;
+	background-color: rgb(193, 246, 255);
+	display: inline-block;
+	width: 32%;
+	margin: 1rem 0;
+	padding: 1rem;
+	border-radius: 1rem;
+}
 
+.stylebox .card-body h5{
+	font-size: 1.5rem;
+}
 
+.stylebox .card-body a button{
+	border-radius: .3rem;
+	padding: .2rem .8rem;
+	margin-top: 1rem;
+	font-weight: 500;
+}
 
+.stylebox .card-body a button:hover{
+	background-color: #f9d86e;
+}
 
+.stylebox .card-body{
+	text-align: center;
+}
 
+.stylebox .image img{
+	height: 200px;
+}
 
+.styles{
+	/* border: 2px solid green; */
+	display: flex;
+	justify-content: space-between;
+}
 
+@media only screen and (max-width: 992px) and (min-width:768px) {
+	.stylebox{
+		width: 45%;
+	}
+}
 
-
-
+@media only screen and (max-width: 768px) {
+	.stylebox{
+		width: 55%;
+	}
+	.styles{
+		justify-content: center;
+	}
+}
