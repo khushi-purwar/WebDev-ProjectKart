@@ -1,0 +1,120 @@
+.header__wrapper{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: rgb(255, 255, 255);
+}
+.border-bottom{
+    border-bottom: 1px solid lightgray;
+}
+
+.header{
+    padding: 0.4rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.header__Logo{
+    width: 2.7rem;
+    height: 2.7rem;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.header__leftInfo{
+    margin: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__leftInfo > h4{
+    font-weight: 500;
+}
+
+.header__input{
+    margin: 0 0.4rem;
+    padding:0.4rem 0.6rem;
+    border-radius: 50px;
+    background-color: rgba(211, 211, 211, 0.414);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    transition: all 0.2s ease ;
+}
+
+.header__input:hover{
+    border: 1px solid lightgray;
+}
+.header__input:focus-within{
+    background-color: transparent;
+    border: 1px solid lightgray;
+}
+
+.header__inputField{
+    margin: 0 0.5rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+
+.header__icon,.header__rightIcon{
+    color: rgb(128, 128, 128);
+    cursor: pointer;
+}
+
+.header__rightIcon{
+    margin: 0 1rem;
+}
+
+.header__icon:hover ,.header__rightIcon:hover{
+    color: rgb(36, 35, 35);
+}
+
+.header__right{
+    padding:0.4rem 0.2rem 0.4rem 0.6rem;
+    display: flex;
+    align-items: center;
+}
+
+.header__rightButtonWrapper{
+    margin-left: 1rem;
+}
+
+.header__rightButton{
+    text-transform: none !important;
+    margin: 0 0.5rem !important;
+}
+
+.header__rightMenuItem{
+    font-size: 0.9rem ;
+}
+
+.header__rightAvatar{
+    width: 2rem !important;
+    height: 2rem !important;
+    cursor: pointer;
+}
+
+@media screen and (max-width:700px){
+    .header__rightButton,
+    .header__rightBellIcon{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width:500px){
+    .header{
+        padding: 0.3rem 0.5rem;
+    }
+    .header__input{
+        margin: 0 0 0 0.4rem;
+    }
+    .header__right{
+        padding:0.4rem 0;
+    }
+}
