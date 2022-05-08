@@ -1,0 +1,28 @@
+html, body, svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0; padding: 0;
+}
+svg {
+  background: blanchedalmond;
+  stroke: blanchedalmond;
+  stroke-width: 2px;
+  stroke-linejoin: round;
+}
+
+.grapes {
+  fill: purple;
+}
+.bananas {
+  fill: yellow;
+}
+.pears {
+  fill: lightGreen;
+}
+.clementines {
+  fill: orange;
+}
+.strawberries {
+  fill: red;
+}
