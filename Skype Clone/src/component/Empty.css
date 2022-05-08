@@ -1,0 +1,40 @@
+.empty {
+	display: flex;
+	flex-direction: column;		
+	align-items: center;
+	justify-content: center;
+	height: 100%
+
+
+
+}
+.emptyname {
+	color: rgba(255,255,255,1);
+}
+
+.emptyimg {
+	border-radius: 50%
+
+}
+
+.emptystatus  {
+	color: rgba(255,255,255,0.8);
+	margin: 2rem 0 1.5rem 0;
+	padding: 0 0.5rem 1rem 0.5rem;
+	border-bottom: 1px solid rgba(189, 189, 192, 0.5);
+}
+
+.emptybutton {
+	border-radius: 15px;
+	border: none;
+	padding: 0.5rem 1rem 0.5rem 1rem;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.emptyinfo {
+	color: rgba(255,255,255,0.5);
+
+}
+
+
