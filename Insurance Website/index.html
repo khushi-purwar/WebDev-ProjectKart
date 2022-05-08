@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            z-index: 1;
+        }
+        
+        body {
+            font-family: 'Raleway';
+            margin: 0;
+        }
+        
+        .title {
+            background: rgba(255, 255, 255, 0.7);
+            color: #333;
+            position: fixed;
+            text-align: right;
+            top: 0;
+            right: 0;
+            padding: 10px 15px;
+            margin: 0;
+            z-index: 100;
+        }
+        
+        .slider {
+            position: relative;
+            overflow: hidden;
+            height: 92vh;
+            width: 100vw;
+        }
+        
+        .slide {
+            background-position: center center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .slide.active {
+            transform: translateX(-100%);
+        }
+        
+        .slide .info {
+            background-color: rgba(255, 255, 255, 0.7);
+            color: #333;
+            padding: 20px 15px;
+            position: absolute;
+            opacity: 0.1;
+            /* top: 80px; */
+            top: 50%;
+            left: 40px;
+            text-align: center;
+            width: 300px;
+            max-width: 100%;
+        }
+        
+        .slide.active .info {
+            opacity: 1;
+            transform: translateY(-40px);
+            transition: all 0.5s ease-in-out 0.8s;
+        }
+        
+        .slide .info h1 {
+            margin: 10px 0;
+        }
+        
+        .slide .info p {
+            letter-spacing: 1px;
+        }
+        
+        .eraser {
+            background: #f5f5f5;
+            position: absolute;
+            transition: transform 0.5s ease-in-out;
+            opacity: 0.95;
+            top: 0;
+            left: 100%;
+            height: 100%;
+            width: 100%;
+            z-index: 100;
+        }
+        
+        .eraser.active {
+            transform: translateX(-100%);
+        }
+        
+        .buttons-container {
+            position: absolute;
+            bottom: 10%;
+            right: 60px;
+            color: #fff;
+            /*   display: flex; */
+        }
+        
+        .buttons-container button {
+            border: 2px solid #fff;
+            background-color: transparent;
+            color: rgb(0, 174, 255);
+            cursor: pointer;
+            padding: 8px 30px;
+            margin-right: 10px;
+            font-weight: 600;
+            font-size: 1.2rem;
+            background-color: rgba(0, 0, 0, 0.534);
+        }
+        
+        .buttons-container button:hover {
+            background-color: #fff;
+            color: #A9A9A9;
+            opacity: 0.9;
+        }
+        
+        @media (max-width: 400px) {
+            .slide .info {
+                top: 100px;
+                left: 10px;
+            }
+        }
+        
+        .hc {
+            width: 100vw;
+            min-height: 12vh;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            background: rgb(51, 0, 112);
+            background: linear-gradient(90deg, rgba(51, 0, 112, 0.9612219887955182) 0%, rgba(32, 95, 139, 1) 23%, rgba(0, 77, 182, 1) 100%);
+        }
+        
+        .right {
+            font-size: clamp(1em, 1.1em, 1.2em);
+            position: absolute;
+            right: 5%;
+            display: flex;
+            cursor: pointer;
+            transition: 0.1s ease-in-out;
+        }
+        
+        .right li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        .right li a:hover {
+            text-decoration: overline;
+            color: rgb(233, 74, 74);
+        }
+        
+        .left {
+            cursor: pointer;
+            position: absolute;
+            left: 5%;
+        }
+        
+        .right li {
+            list-style: none;
+            padding: 10px 12px;
+        }
+        
+        .left h2 span {
+            color: rgb(233, 74, 74);
+        }
+        
+        @media(max-width: 1000px) {
+            .left h2 span {
+                font-size: 20px;
+            }
+            .right li {
+                display: none;
+            }
+            .right {
+                width: 60px;
+                height: 60px;
+                background: url(https://i.ibb.co/HrfVRcx/menu.png);
+                background-repeat: no-repeat;
+                background-size: 30px;
+                background-position: center;
+                cursor: pointer;
+            }
+        }
+        
+        .hidden {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* height: 97vh; */
+            height: 0vh;
+            display: flex;
+            list-style: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* font-size: 1.5em; */
+            font-size: 0px;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+        }
+        
+        .hidden li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        .hidden li a:hover {
+            text-decoration: underline;
+            color: rgb(207, 29, 29);
+        }
+        
+        body {
+            height: 100vh;
+        }
+        
+        html {
+            height: 100vh;
+        }
+        
+        main {
+            min-height: max-content;
+            /* padding: 100px; */
+        }
+        
+        footer {
+            background-color: rgba(0, 0, 0, 0.856);
+            /* width: 100%;
+        cursor: pointer;
+        height: 55%; */
+            color: whitesmoke;
+            margin-top: 35px;
+            min-height: 60vh;
+            max-height: max-content;
+            /* background: gray; */
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .containerd {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-between;
+        }
+        
+        .cont1 {
+            margin-left: 20px;
+            margin-top: 50px;
+        }
+        
+        .cont2 {
+            margin-left: 20px;
+            margin-top: 50px;
+        }
+        
+        .cont3 {
+            margin-left: 20px;
+            margin-top: 50px;
+        }
+        
+        .cont4 {
+            margin-left: 20px;
+            margin-top: 50px;
+        }
+        
+        .cont5 {
+            margin-left: 20px;
+            margin-top: 50px;
+        }
+        
+        .rowa {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+        
+        li {
+            list-style: none;
+            margin-top: 4px;
+        }
+        
+        .fa {
+            text-decoration: none;
+            color: white!important;
+        }
+        
+        li .fa {
+            text-decoration: none;
+            color: white!important;
+        }
+        
+        u .fa {
+            text-decoration: none;
+            color: white!important;
+        }
+        
+        .cpy p {
+            position: relative;
+            bottom: -34px;
+        }
+        
+        @media(min-width:1000px) {
+            .cpy p {
+                bottom: -100px;
+            }
+        }
+        
+        .cont1 h1 {
+            color: rgb(0, 153, 255);
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .card {
+            width: 350px;
+            height: 600px;
+            /* border: 3px solid black; */
+            box-shadow: 0px 1px 5px black;
+            margin: 5px 5px;
+            position: relative;
+            border-radius: 2px;
+        }
+        
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        
+        .iamge {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .gold {
+            width: 230px;
+        }
+        
+        .plat {
+            width: 160px;
+            margin-bottom: 30px;
+        }
+        
+        .bronze {
+            width: 160px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            font-family: "Poppins", sans-serif;
+        }
+        
+        h2 {
+            font-size: 20px;
+            margin-left: 10px;
+            margin-top: -10px;
+            font-family: "Poppins", sans-serif;
+        }
+        
+        .tick {
+            width: 15px;
+        }
+        
+        li {
+            list-style: none;
+            padding: 5px 10px;
+        }
+        
+        .features {
+            margin-top: 0px;
+        }
+        
+        span {
+            font-weight: bold;
+        }
+        
+        .btn-grad {
+            background-image: linear-gradient(to right, #e53935 0%, #e35d5b 51%, #e53935 100%)
+        }
+        
+        .btn-grad {
+            /* margin: 10px; */
+            padding: 12px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            box-shadow: 0 0 20px #eee;
+            /* border-radius: 10px; */
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            display: block;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .btn-grad:hover {
+            background-position: right center;
+            /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .mainhead {
+            padding: 40px 10px;
+            background-color: goldenrod;
+            font-family: "Poppins", sans-serif;
+        }
+        
+        .extra {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            background-color: rgb(211, 162, 39);
+        }
+        
+        @media (max-width:715px) {
+            .extra {
+                display: none;
+            }
+            .main {
+                background-color: rgba(243, 164, 17, 0.199);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="hc">
+            <div class="left">
+                <h2><span id="ch">PHAM INSURANCES</span></h2>
+            </div>
+            <div class="right" id="right">
+                <li id="n1"><a href="index.html">Home</a></li>
+                <li id="n2"><a href="profile.html">My Profile</a></li>
+                <li id="n1"><a href="login.html">Sign Up</a></li>
+                <li id="n5"><a href="aboutUs.html">About Us</a></li>
+                <li id="n5"><a href="TermsAndCondition.html">Terms And Condition</a></li>
+            </div>
+        </div>
+    </header>
+    <div class="hidden" id="hidden">
+        <li id="n2"><a href="#">Home</a></li>
+        <li id="n2"><a href="profile.html">My Profile</a></li>
+        <li id="n1"><a href="login.html">Sign Up</a></li>
+        <li id="n5"><a href="aboutUs.html">About Us</a></li>
+        <li id="n5"><a href="TermsAndCondition.html">Terms And Condition</a></li>
+
+    </div>
+    <script>
+        let w = document.getElementById("ch");
+        w.addEventListener("click", () => {
+            location.href = "index.html"
+        })
+    </script>
+    <script>
+        let x = window.matchMedia("(max-width:1000px)");
+        let a = document.getElementById("right");
+        let b = document.getElementById("hidden");
+
+        let count = 0;
+        a.addEventListener("click", () => {
+            if (x.matches) {
+                count++;
+                if (count % 2 != 0) {
+                    a.style.background = "url(https://i.ibb.co/rt3HybH/close.png)no-repeat center center/cover";
+                    a.style.backgroundSize = "25px";
+                    b.style.height = "100vh";
+                    b.style.opacity = "1";
+                    b.style.fontSize = "1.5em";
+                    b.style.width = "100%";
+                    b.style.zIndex = "100";
+                } else {
+                    a.style.background = "url(https://i.ibb.co/HrfVRcx/menu.png)no-repeat center center/cover";
+                    a.style.backgroundSize = "30px";
+                    b.style.height = "0vh";
+                    b.style.opacity = "0";
+                    b.style.fontSize = "0px";
+                    b.style.width = "0%";
+                    b.style.zIndex = "1";
+                }
+            }
+        });
+    </script>
+    <!-- <h5 class="title">Based on Florin-pop's tutorial https://www.florin-pop.com/blog/2019/03/full-page-slider/</h5> -->
+    <main>
+        <div class="slider">
+            <div class="slider-container">
+                <div class="slide" style="background-image: url('https://m.economictimes.com/thumb/msid-75421339,width-1200,height-900,resizemode-4,imgsize-385559/health-i.jpg');">
+                    <div class="info">
+                        <h1>PHAM Insurance PVT</h1>
+                        <p>Now you will be getting every advantages and facilites that you deserve.</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('3.jpeg');">
+                    <div class="info">
+                        <h1>Health insurance</h1>
+                        <p>An helping hand at the time of need.</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('5.jpeg');">
+                    <div class="info">
+                        <h1>PHAM Insurance PVT</h1>
+                        <p>Get wearable health patches so you have always watch on your health.</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('2.jpeg');">
+                    <div class="info">
+                        <h1>Health Insurance</h1>
+                        <p>Noone can surely predict the future but we can surely protect it by this small steps.</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('4.jpeg');">
+                    <div class="info">
+                        <h1>PHAM Insurance PVT</h1>
+                        <p>Get 25% off atleast in your nearest gym from our health insurance.</p>
+                    </div>
+                </div>
+                <div class="slide active" style="background-image: url('1.jpeg');">
+                    <div class="info">
+                        <h1>Health Insurance</h1>
+                        <p>Neccessary and Vital step to make your family future secured. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="eraser"></div>
+            <div class="buttons-container">
+                <button id="previous">L</button>
+                <button id="next">R</button>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <h1 class="mainhead">INSURANCE PLANS</h1>
+        <div class="main">
+            <div class="extra"></div>
+            <div class="card">
+                <h1>GOLD SECURE PLAN</h1>
+                <div class="iamge">
+                    <img src="https://www.kumaralpha.com/wp-content/uploads/2017/04/bronze_new.png" class="bronze" alt="">
+                </div>
+                <h2>Key Features :</h2>
+                <div class="features">
+                    <li>
+                        <img src="https://smallimg.pngkey.com/png/small/1005-10058321_free-png-check-mark-png-png-image-with.png" alt="" class="tick">
+                        <span>Sum Insured</span> from 5Lacs-10Lacs.
+                    </li>
+                    <li>
+                        <img src="https://smallimg.pngkey.com/png/small/1005-10058321_free-png-check-mark-png-png-image-with.png" alt="" class="tick">
+                        <span>Protect Benifit</span> Get 1.25x Coverage from Day 1.
+                    </li>
+                    <li>
+                        <img src="https://smallimg.pngkey.com/png/small/1005-10058321_free-png-check-mark-png-png-image-with.png" alt="" class="tick">
+                        <span>Restore Benefit</span>100% restores your base coverage .
+                    </li>
+                    <li>
+                        <img src="https://smallimg.pngkey.com/png/small/1005-10058321_free-png-check-mark-png-png-image-with.png" alt="" class="tick">
+                        <span>Plus Benifit</span>100% increase in coverage after 3 years.
+                    </li>
+                    <li>
+                        <img src="https://smallimg.pngkey.com/png/small/1005-10058321_free-png-check-mark-png-png-image-with.png" alt="" class="tick">
+                        <span>Payless</span>,Get More
+                    </li>
+                </div>
+                <button class=" btn-grad">Buy Now</button>
+
+            </div>
+            <div class="card">
+                <h1>GOLD SECURE PLAN</h1>
+                <div class="iamge">
+                    <img src="https://www.zauca.com/wp-content/uploads/2017/12/Gold2.png" class="gold" alt="">
+                </div>
+                <h2>Key Features :</h2>
+                <div class="features">
+                    <li>
+                        <img src="https://smallimg.pngkey.com/png/small/1005-10058321_free-png-check-mark-png-png-image-with.png" alt="" class="tick">
+                        <span>Sum Insured</span> from 5Lacs-1Cr.
+                    </li>
+                    <li>
+                        <img src="https://smallimg.pngkey.com/png/small/1005-10058321_free-png-check-mark-png-png-image-with.png" alt="" class="tick">
+                        <span>Protect Benifit</span> Get 2x Coverage from Day 1.
+                    </li>
+                    <li>
+                        <img src="https://smallimg.pngkey.com/png/small/1005-10058321_free-png-check-mark-png-png-image-with.png" alt="" class="tick">
+                        <span>Restore Benefit</span>100% restores your base coverage .
+                    </li>
+                    <li>
+                        <img src="https://smallimg.pngkey.com/png/small/1005-10058321_free-png-check-mark-png-png-image-with.png" alt="" class="tick">
+                        <span>Plus Benifit</span>100% increase in coverage after 2 years.
+                    </li>
+                    <li>
+                        <img src="https://smallimg.pngkey.com/png/small/1005-10058321_free-png-check-mark-png-png-image-with.png" alt="" class="tick">
+                        <span>Payless</span>,Get More
+                    </li>
+                </div>
+                <button class=" btn-grad">Buy Now</button>
+
+
+
+            </div>
+            <div class="card">
+                <h1>PLATINUM SECURE PLAN</h1>
+                <div class="iamge">
+                    <img src="https://cdn.antshum.com/wp-content/uploads/2020/11/04-Platinum-plan.png" class="plat" alt="">
+                </div>
+                <h2>Key Features :</h2>
+                <div class="features">
+                    <li>
+                        <img src="https://smallimg.pngkey.com/png/small/1005-10058321_free-png-check-mark-png-png-image-with.png" alt="" class="tick">
+                        <span>Sum Insured</span> from 5Lacs-2Cr.
+                    </li>
+                    <li>
+                        <img src="https://smallimg.pngkey.com/png/small/1005-10058321_free-png-check-mark-png-png-image-with.png" alt="" class="tick">
+                        <span>Protect Benifit</span> Get 2x Coverage from Day 1.
+                    </li>
+                    <li>
+                        <img src="https://smallimg.pngkey.com/png/small/1005-10058321_free-png-check-mark-png-png-image-with.png" alt="" class="tick">
+                        <span>Restore Benefit</span>100% restores your base coverage .
+                    </li>
+
+
+                    <li>
+                        <img src="https://smallimg.pngkey.com/png/small/1005-10058321_free-png-check-mark-png-png-image-with.png" alt="" class="tick">
+                        <span>Up to 20</span> Critical Illness covered
+                    </li>
+                    <li>
+                        <img src="https://smallimg.pngkey.com/png/small/1005-10058321_free-png-check-mark-png-png-image-with.png" alt="" class="tick">
+                        <span>Yearly</span>,2years,3years options available
+                    </li>
+                </div>
+                <button class=" btn-grad">Buy Now</button>
+            </div>
+            <div class="card">
+                <h1>CANCER SECURE PLAN (women)</h1>
+                <span></span>
+                <div class="iamge">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6M1AfNbU-JmRH3tHlyYFOpyXkO5Px7mdNHA&usqp=CAU" class="bronze" alt="">
+                </div>
+                <h2>Key Features :</h2>
+                <div class="features">
+                    <li>
+                        <img src="https://smallimg.pngkey.com/png/small/1005-10058321_free-png-check-mark-png-png-image-with.png" alt="" class="tick">
+                        <span>All Types</span> of Cancer Covered.
+                    </li>
+                    <li>
+                        <img src="https://smallimg.pngkey.com/png/small/1005-10058321_free-png-check-mark-png-png-image-with.png" alt="" class="tick">
+                        <span>Cashless</span> Cancer Treatement.
+                    </li>
+                    <li>
+                        <img src="https://smallimg.pngkey.com/png/small/1005-10058321_free-png-check-mark-png-png-image-with.png" alt="" class="tick">
+                        <span>55% Sum</span> insured available for lump sum payout.
+                    </li>
+                    <li>
+                        <img src="https://smallimg.pngkey.com/png/small/1005-10058321_free-png-check-mark-png-png-image-with.png" alt="" class="tick">
+                        <span>100%</span> SI for Cancer Treatement.
+                    </li>
+                    <li>
+                        <img src="https://smallimg.pngkey.com/png/small/1005-10058321_free-png-check-mark-png-png-image-with.png" alt="" class="tick">
+                        <span>Payless</span>,Get More
+                    </li>
+                </div>
+                <button class=" btn-grad">Buy Now</button>
+
+            </div>
+
+        </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div class="containerd">
+            <div class="rowa">
+                <div class="cont1">
+                    <div class="1hu">
+                        <h1>PHAM Insurance PVT</h1>
+                        <br>
+                        <p>Get Insurance with Best Benifits.</p>
+                        <span><b>Be Responsible.</b></span>
+                    </div>
+                </div>
+                <div class="cont2">
+                    <div class="2hu">
+                        <h3>Explore</h2>
+                            <li><a href="profile.html" class="fa">Profile</a></li>
+                            <li><a href="TermsAndCondition.html" class="fa">TermsAndConditions</a></li>
+                            <li><a href="login.html" class="fa">login</a></li>
+                    </div>
+                </div>
+                <div class="cont3">
+                    <div class="3hu">
+                        <h3>Creators</h2>
+                            <li>Aarya Ahjolia</li>
+                            <br>
+                            <h3>ContactUs</h3><br>
+                            <a href="#" class="fa">PHAM@gmail.com</a>
+                            <br>
+                            <p>9999999999</p>
+                    </div>
+                </div>
+                <div class="cont4">
+                    <div class="4hu">
+                        <h3>Follow</h3>
+                        <li><a href="#" class="fa">Instagram</a></li>
+                        <li><a href="#" class="fa">Twitter</a></li>
+                        <li><a href="#" class="fa">LinkedIn</a></li>
+                    </div>
+                </div>
+                <div class="cont5">
+                    <div class="5hu">
+                        <h3>
+                            <u>Next</u>
+                            <u> : </u>
+                            <u> <a href="aboutUs.html" class="fa">AboutUs</a></u>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="rowa">
+                <div class="cpy">
+                    <p> Copyright © 2022 PHAM Insurance PVT. All Rights Reserved </p>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </footer>
+    <script>
+        const slides = document.querySelectorAll('.slider-container .slide'); // get all the slides
+        const eraser = document.querySelector('.eraser'); // the eraser
+        const prev = document.getElementById('previous'); // previous button
+        const next = document.getElementById('next'); // next button
+        const intervalTime = 6000; // time until nextSlide triggers in miliseconds
+        const eraserActiveTime = 500; // time to wait until the .eraser goes all the way
+        let sliderInterval; // variable used to save the setInterval and clear it when needed
+
+
+        const nextSlide = () => {
+            // Step 1. Add the .active class to the eraser - this will trigger the eraser to move to the left.
+            eraser.classList.add('active');
+            // Step 2. Set a timeout that will allow the eraser to move all the way to the left. This is where we'll use the eraserActiveTime - it has to be the same as the CSS value we mentioned above.
+            setTimeout(() => {
+                // Step 3. Get the active .slide and toggle the .active class on it (in this case, remove it).
+                const active = document.querySelector('.slide.active');
+                active.classList.toggle('active');
+                // Step 4. Check to see if the .slide has a next element sibling available. If it has, add the .active class to it.
+                if (active.nextElementSibling) {
+                    active.nextElementSibling.classList.toggle('active');
+                } else {
+                    // Step 5. If it's the last element in the list, add the .active class to the first slide (the one with index 0).
+                    slides[0].classList.toggle('active');
+                }
+                // Step 6.Remove the .active class from the eraser - this will trigger the eraser to move back to the right. It also waits 200 ms before doing this (just to give enough time for the next .slide to move in place).
+                setTimeout(() => {
+                    eraser.classList.remove('active');
+                }, 180);
+            }, eraserActiveTime);
+        }
+
+        //Button functionality
+        const prevSlide = () => {
+            eraser.classList.add('active');
+            setTimeout(() => {
+                const active = document.querySelector('.slide.active');
+                active.classList.toggle('active');
+                // The *changed* part from the nextSlide code
+                if (active.previousElementSibling) {
+                    active.previousElementSibling.classList.toggle('active');
+                } else {
+                    slides[slides.length - 1].classList.toggle('active');
+                }
+                // End of the changed part
+                setTimeout(() => {
+                    eraser.classList.remove('active');
+                }, 180);
+            }, eraserActiveTime);
+        }
+
+        next.addEventListener('click', () => {
+            nextSlide();
+            clearInterval(sliderInterval);
+            sliderInterval = setInterval(nextSlide, intervalTime);
+        });
+
+        prev.addEventListener('click', () => {
+            prevSlide();
+            clearInterval(sliderInterval);
+            sliderInterval = setInterval(nextSlide, intervalTime);
+        });
+
+        sliderInterval = setInterval(nextSlide, intervalTime);
+
+        // Initial slide
+        setTimeout(nextSlide, 500);
+    </script>
+</body>
+
+</html>
