@@ -40,7 +40,8 @@ body {
     bottom: 0;
     width: 100%;
     padding: 5px 0;
-    background: #94B3FD;
+    background: #38221e;
+    /* background: #632626; */
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
     user-select: none;
     transition: bottom 0.4s;
