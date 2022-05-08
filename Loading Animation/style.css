@@ -1,0 +1,12 @@
+html{
+	font-size:1vw;
+}
+body{
+	margin:0;
+}
+svg{
+	height:50%;
+	width:100%;
+	top:20%;
+	position:fixed;
+}
