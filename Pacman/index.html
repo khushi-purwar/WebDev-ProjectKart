@@ -1,0 +1,117 @@
+<html>
+
+<head>
+	<meta charset="utf8">
+	<title>PacMan</title>
+	<meta name="description">
+	<meta name="keywords">
+	<link rel="shortcut icon" href="favicon.png">
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+		.wrapper {
+			width: 960px;
+			margin: 0 auto;
+			color: #999;
+		}
+
+		canvas {
+			display: block;
+			background: #000;
+		}
+
+		.mod-game .info {
+			padding: 10px 0;
+			margin-bottom: 5px;
+			line-height: 20px;
+			text-align: center;
+			color: #666;
+		}
+
+		.mod-game .info p {
+			line-height: 20px;
+			font-size: 14px;
+			color: #666;
+		}
+
+		.mod-game .intro {
+			padding: 10px 15px;
+			background: #f8f8f8;
+			border-radius: 5px;
+		}
+
+		.mod-game .intro p {
+			line-height: 22px;
+			text-indent: 2em;
+			font-size: 14px;
+			color: #666;
+		}
+
+		.mod-button {
+			height: 32px;
+			padding: 15px 0;
+			text-align: center;
+		}
+
+		.mod-button span,
+		.mod-button a {
+			vertical-align: middle;
+		}
+
+		.mod-button .btn {
+			display: inline-block;
+			padding: 0 12px;
+			line-height: 26px;
+			color: #24292f;
+			border: 1px solid #dddede;
+			text-decoration: none;
+			font-size: 13px;
+			color: #24292f;
+			border-radius: 2px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="mod-game">
+			<canvas id="canvas" width="960" height="640"></canvas>
+			<div class="info">
+				<p>Press [space] to pause or continue</p>
+			</div>
+			<div class="intro">
+			</div>
+		</div>
+	</div>
+	<script src="game.js"></script>
+	<script src="index.js"></script>
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+	<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?b86879c9cc57dd112fe1f7dd75206b82";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	<script>
+		(function () {
+			var bp = document.createElement('script');
+			var curProtocol = window.location.protocol.split(':')[0];
+			if (curProtocol === 'https') {
+				bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+			}
+			else {
+				bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+			}
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(bp, s);
+		})();
+	</script>
+</body>
+
+</html>

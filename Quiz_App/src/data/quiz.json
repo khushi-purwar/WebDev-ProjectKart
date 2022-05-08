@@ -1,0 +1,49 @@
+{
+  "data": [
+    {
+      "question": " What is actually electricity?",
+      "choices": [" A flow of water", " A flow of air", "A flow of electrons", "A flow of atoms"],
+      "answer": "A flow of electrons"
+    },
+    {
+      "question": "Which of the following is not an international organisation?",
+      "choices": ["FIFA", "NATO", "ASEAN", "FBI"],
+      "answer": "FBI"
+    },
+    {
+      "question": "Which of the following disorders is the fear of being alone?",
+      "choices": ["Agoraphobia", "Aerophobia", "Acrophobia", "Arachnophobia"],
+      "answer": "Agoraphobia"
+    },
+    {
+      "question": "What is the speed of sound?",
+      "choices": ["120 km/h", "1,200 km/h", "400 km/h", "700 km/h"],
+      "answer": "1,200 km/h"
+    },
+    {
+      "question": "What was the first country to use tanks in combat during World War I?",
+      "choices": [" France", "Japan", "Britain", "Germany"],
+      "answer": "Britain"
+    },
+    {
+      "question": " Where did the powers of Spiderman come from?",
+      "choices": ["He was born with them", "He was bitten by a radioactive spider", " He went through a scientific experiment", "He woke up with them after a dream"],
+      "answer": "He was bitten by a radioactive spider"
+    },
+    {
+      "question": "In the series “Game of Thrones”, Winterfell is the ancestral home of which family?",
+      "choices": [" The Lannisters", "The Starks", "The Tullys", "The Targaryens"],
+      "answer": "The Starks"
+    },
+    {
+      "question": "Which company is known for publishing the Mario video game?",
+      "choices": ["Xbox", "Nintendo", "SEGA", "Electronic Arts"],
+      "answer": "Nintendo"
+    },
+    {
+      "question": "Which was the first film by Disney to be produced in colour?",
+      "choices": ["Toy Story", " Sleeping Beauty", "Snow White and the Seven Dwarfs", "Cinderella"],
+      "answer": "Snow White and the Seven Dwarfs"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+*{
+    margin: 0px ;
+    padding: 0px ;
+}
+body{
+    background: url("../img/vaccine2.jpg") no-repeat center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+#navbar{
+    display: flex;
+    background-color: black;
+    position: sticky;
+    top:0px;
+    left: 0px;
+}
+#navbar img{
+    height: 71px;
+    margin: 8px 19px;
+    border-radius: 42px;
+    width: 71px;
+    transition: all 0.5s ease-in-out;
+}
+#navbar img:hover{
+    transform: rotate(360deg);
+}
+.item{
+    display: flex;
+}
+#navbar li{
+    list-style: none;
+    padding: 27px 36px;
+    font-size: 25px;
+    font-weight: bold;
+}
+#navbar li a{
+    font-family: 'Bitter', serif;
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+#navbar li a:hover {
+    color: grey;
+}
+.container{
+    border: 4px solid black;
+    border-radius: 20px;
+    position: relative;
+    z-index: -1;
+    width: 80%;
+    padding: 20px 0px;
+    margin: 48px auto;
+    background-color: white;
+    opacity: 0.7;
+}
+h1{
+    font-family: 'Bitter', serif;
+    text-decoration: underline;
+    font-size: 2.5rem;
+    padding: 25px 0px;
+    text-align: center;
+}
+li{
+    font-weight: bold;
+    color: #0c09d1;
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 8px 25px;
+    font-size: 17px
+}
+h2{
+    font-weight: bold;
+    font-family: 'Bitter', serif;
+    padding: 16px 15px;
+}
+#navbar li{
+    padding: 17px 36px;
+}
+@media only screen and (max-width:1328px) {
+    #navbar li {
+        font-size: 20px;
+        list-style: none;
+        padding: 10px 11px;
+        margin: 7px 0px;
+    } 
+    #navbar li a {
+        padding: 0px 0px ;
+    }
+    .item{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #navbar img {
+        height: 64px;
+        margin: 3px 19px;
+    }
+    body {
+        width: 100%;
+    }
+    #navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+}

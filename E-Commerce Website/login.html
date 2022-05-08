@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign In</title>
+  <link rel="shortcut icon" href="Images/online-shopping.png" type="image/x-icon" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .main {
+      height: 100vh;
+      background: url("C.jpg") no-repeat;
+      background-size: cover;
+    }
+
+    .box {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 300px;
+      background-color: rgba(68, 63, 63, 0.39);
+      color: white;
+      padding: 10px 10px;
+      top: 25%;
+      right: 170px;
+      box-shadow: 0px 0px 4px black;
+    }
+
+    .head {
+      color: white;
+      font-weight: bold;
+      padding: 10px 10px;
+    }
+
+    .note {
+      color: white;
+      opacity: 0.6;
+      padding: 10px 30px;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    section {
+      position: relative;
+      min-height: 100vh;
+      background: #fee648;
+      background: url("C.jpg") no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-shadow: 1px 1px 10px black;
+    }
+
+    .container {
+      position: relative;
+      width: 1200px;
+      height: 600px;
+      background: #fff;
+      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      box-shadow: 2px 2px 20px black;
+    }
+
+    .container .user {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+    }
+
+    .container .user .imgBx {
+      position: relative;
+      width: 50%;
+      height: 100%;
+      background: #ff0;
+      transition: 0.5s;
+    }
+
+    .container .user .imgBx img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .container .user .formBx {
+      position: relative;
+      width: 50%;
+      height: 100%;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      transition: 0.5s;
+    }
+
+    .container .user .formBx form h2 {
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    .container .user .formBx form input {
+      position: relative;
+      width: 100%;
+      padding: 10px;
+      background: #f5f5f5;
+      color: #333;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      margin: 8px 0;
+      font-size: 14px;
+      letter-spacing: 1px;
+      font-weight: 300;
+    }
+
+    .container .user .formBx form input[type="submit"] {
+      max-width: 100px;
+      background: #677eff;
+      color: #fff;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      transition: 0.5s;
+    }
+
+    .container .user .formBx form .signup {
+      position: relative;
+      margin-top: 20px;
+      font-size: 12px;
+      letter-spacing: 1px;
+      color: black;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+
+    .container .user .formBx form .signup a {
+      font-weight: 600;
+      text-decoration: none;
+      color: black;
+
+    }
+
+    .container .signupBx {
+      pointer-events: none;
+    }
+
+    .active .signupBx {
+      pointer-events: initial;
+    }
+
+    .container .signupBx .formBx {
+      left: 100%;
+    }
+
+    .active .signupBx .formBx {
+      left: 0;
+    }
+
+    .container .signupBx .imgBx {
+      left: -100%;
+    }
+
+    .active .signupBx .imgBx {
+      left: 0;
+    }
+
+    .container .signinBx .formBx {
+      left: 0;
+    }
+
+    .active .signinBx .formBx {
+      left: 100%;
+    }
+
+    .container .signinBx .imgBx {
+      left: 0;
+    }
+
+    .active .signinBx .imgBx {
+      left: -100%;
+    }
+
+    @media (max-width: 991px) {
+      section .container {
+        max-width: 400px;
+      }
+
+      section .container .imgBx {
+        display: none;
+      }
+
+      section .container .user .formBx {
+        width: 100%;
+      }
+    }
+
+    .err,
+    .err1 {
+      color: red;
+      font-size: 15px;
+      font-style: italic;
+      display: block;
+      text-align: center;
+      opacity: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="container active">
+      <div class="user signinBx">
+        <div class="imgBx">
+          <img
+            src="https://images.unsplash.com/photo-1636902740104-07d5fcbc03b9?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+        </div>
+        <div class="formBx">
+          <form>
+            <h2>Sign In</h2>
+            <input type="text" name="" placeholder="Username" class="loginuser" required />
+            <input type="password" name="" placeholder="Password" class="loginpass" required />
+            <span class="err1">
+              error
+            </span>
+            <input type="submit" name="" value="Login" class="alreadycreated" />
+
+            <p class="signup">
+              Don't have an account ?<a href="#" onclick="toggleForm();" id="gop1">
+                Sign Up
+              </a>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="user signupBx">
+        <div class="formBx">
+          <form>
+            <h2>Create an Account</h2>
+            <input type="text" name="" placeholder="Username" class="usercreate" required />
+            <input type="email" name="" placeholder="Email Id" class="useremail" required />
+            <input type="password" name="" placeholder="Create Password" class="userpass1" required />
+            <input type="password" name="" placeholder="Confirm Password" class="userpass2" required />
+            <span class="err">
+              error
+            </span>
+            <input type="submit" name="" value="Sign Up" class="created" />
+
+            <p class="signup">
+              Already have an account ?
+              <a href="#" onclick="toggleForm();"> Sign In </a>
+            </p>
+          </form>
+        </div>
+        <div class="imgBx">
+          <img
+            src="https://images.unsplash.com/photo-1636958849806-756177640e08?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <div class="main"></div> -->
+  <!-- <div class="box">
+        <h1 class="head">SIGN UP </h1>
+        <p class="note">
+            Note : As it is running on local host   you can sign in only once ,so choose your account wisely
+        </p>
+    </div> -->
+  <script>
+    function toggleForm() {
+      var container = document.querySelector(".container");
+      container.classList.toggle("active");
+    }
+
+    // login
+
+    const alreadycreated = document.querySelector('.alreadycreated');
+    const loginuser = document.querySelector('.loginuser');
+    const loginpass = document.querySelector('.loginpass');
+
+    // signup
+
+    const created = document.querySelector('.created');
+    const usernamesignup = document.querySelector('.usercreate');
+    const useremail = document.querySelector('.useremail');
+    const userpass1 = document.querySelector('.userpass2');
+    const userpass2 = document.querySelector('.userpass1');
+    const err = document.querySelector('.err');
+    const error = document.querySelector('.err1');
+
+    const a1 = document.getElementById('gop');
+    const a2 = document.getElementById('gop1');
+    console.log(a1);
+
+
+    let oc = localStorage.getItem('users');
+    let ocobj = JSON.parse(oc);
+    if (ocobj != null) {
+      ocobj.forEach((ele, i) => {
+        if (ele.status == 1) {
+          location.href = 'index.html';
+        }
+      });
+    }
+
+
+
+    console.log(err.innerHTML);
+    let obj1;
+    created.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (usernamesignup.value == '' || useremail.value == '') {
+        err.innerHTML = 'name and email cant be set empty';
+        err.style.opacity = 1;
+      }
+      else if (usernamesignup.value.length <= 3) {
+        err.innerHTML = 'Username must be More than 3 characters';
+        err.style.opacity = 1;
+      }
+      else if (!emailchecking(useremail.value)) {
+        err.innerHTML = 'Enter Valid Email';
+        err.style.opacity = 1;
+      }
+
+      else {
+        if (userpass1.value == '' || userpass2.value == '') {
+          err.innerHTML = 'pls write pass correctly';
+          err.style.opacity = 1;
+
+        }
+        else if (userpass1.value.length <= 3) {
+          err.innerHTML = 'Password must be greater than 3 characters';
+          err.style.opacity = 1;
+        }
+        else {
+          if (userpass1.value != userpass2.value) {
+            err.innerHTML = 'pass not matching';
+            err.style.opacity = 1;
+
+          }
+          else {
+            let users = localStorage.getItem("users");
+            console.log(users);
+            let checkuser = usernamesignup.value;
+            let checkemail = useremail.value;
+            if (users == null) {
+              obj1 = {
+                username: usernamesignup.value,
+                email: useremail.value,
+                password: userpass1.value,
+                status: 1
+              }
+              dataobj = [];
+              dataobj.push(obj1);
+              localStorage.setItem('users', JSON.stringify(dataobj));
+              usernamesignup.value = ''
+              useremail.value = ''
+              userpass1.value = ''
+              userpass2.value = ''
+              err.innerHTML = 'success'
+              err.style.opacity = 1;
+
+              console.log('innull');
+              callme();
+            }
+            else {
+              dataobj = JSON.parse(users);
+              count = 0;
+              dataobj.forEach((ele, i) => {
+                if (ele.username == checkuser || ele.email == checkemail) {
+                  count++;
+                }
+                console.log('elsenullloop' + count);
+              });
+              if (count != 0) {
+                err.innerHTML = 'Acct with this name already exist pls login';
+                err.style.opacity = 1;
+
+
+                console.log('count not 0');
+              }
+              else {
+                dataobj.forEach(element => {
+                  element.status = 0;
+                });
+
+                obj1 = {
+                  username: usernamesignup.value,
+                  email: useremail.value,
+                  password: userpass1.value,
+                  status: 1
+                }
+                dataobj.push(obj1);
+                localStorage.setItem('users', JSON.stringify(dataobj));
+                usernamesignup.value = ''
+                useremail.value = ''
+                userpass1.value = ''
+                userpass2.value = ''
+                err.innerHTML = 'success'
+                err.style.opacity = 1;
+
+                callme();
+
+              }
+            }
+          }
+        }
+      }
+
+    })
+
+    alreadycreated.addEventListener('click', (e) => {
+      e.preventDefault();
+      let detname = loginuser.value;
+      console.log(detname);
+
+      let detpass = loginpass.value;
+
+      let users1 = localStorage.getItem('users');
+
+      if (users1 == null) {
+        error.innerHTML = 'Create Acct first than login';
+        error.style.opacity = 1;
+
+      }
+      else {
+        dataobj1 = JSON.parse(users1);
+        c = 0;
+        dataobj1.forEach((ele, i) => {
+          if (ele.username == detname) {
+            if (ele.password == detpass) {
+
+              dataobj1.forEach((ele, ind) => {
+                ele.status = 0;
+                if (i == ind) {
+                  ele.status = 1;
+                }
+                c++;
+              });
+              localStorage.setItem('users', JSON.stringify(dataobj1));
+            }
+
+          }
+        });
+        if (c != 0) {
+          error.innerHTML = 'Login Success';
+          error.style.opacity = 1;
+
+          callme();
+          console.log('here');
+          // a1.href='movie.html';
+
+        }
+        else {
+          error.innerHTML = 'Check Again'
+          error.style.opacity = 1;
+
+        }
+      }
+    })
+    function callme() {
+      console.log('csall');
+      location.href = 'index.html'
+    }
+
+    const emailchecking = (emailVal) => {
+      // console.log('running')
+      var dot = emailVal.lastIndexOf('.')
+      var symbol = emailVal.indexOf("@");
+      if (symbol < 1) {
+        return false;
+      }
+      else if (dot <= symbol + 4) return false;
+      else if (dot == emailVal.length - 1) return false;
+      else return true;
+    }
+
+
+  </script>
+</body>
+
+</html>

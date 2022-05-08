@@ -1,0 +1,142 @@
+.weather {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.weather__container {
+  display: flex;
+  margin: auto;
+  margin-top: 15vh;
+  width: 80%;
+  box-shadow: 10px 10px 10px -3px rgba(48, 46, 46, 0.75);
+  -webkit-box-shadow: 10px 10px 10px -3px rgba(158, 143, 143, 0.75);
+  -moz-box-shadow: 10px 10px 10px -3px rgba(158, 143, 143, 0.75);
+  border-radius: 20px;
+}
+
+.weather__left {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 10px;
+  flex: 0.2;
+  border-radius: 20px 0px 0px 20px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.weather__left > form {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  margin-left: 20px;
+  padding: 5px;
+}
+
+.weather__left > form > input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.weather__logo {
+  color: gray;
+}
+
+.weather__leftButton {
+  display: none;
+}
+
+.weather__leftImage {
+  margin-left: 20px;
+  width: 200px;
+}
+
+.weather__right {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 10px;
+  display: flex;
+  flex: 0.8;
+  border-radius: 0px 20px 20px 0px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.weather__rightInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.weather__leftTemp {
+  font-weight: 400;
+  font-size: 48px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.weather__leftDate {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.weather__leftTime {
+  color: gray;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.weather__title {
+  text-align: center;
+  font-size: 40px;
+  color: black;
+}
+
+.weather__leftLine {
+  border-top: 0.2px solid rgb(206, 204, 204);
+  margin: 20px;
+}
+
+.weather__leftLocation {
+  background: url("https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=400");
+  padding: 20px;
+  background-position: center;
+  color: white;
+  font-weight: 500;
+  font-size: 26px;
+  border-radius: 20px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.weather__leftWeather {
+  margin: 20px;
+}
+
+@media (max-width: 800px) {
+  .weather__container {
+    flex-direction: column;
+    margin-top: 5vh;
+  }
+  .weather__left {
+    border-radius: 20px 20px 0px 0px;
+  }
+  .weather__right {
+    border-radius: 0px 0px 20px 20px;
+  }
+  .weather__left > form {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,2462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Products</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="Images/online-shopping.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="ecom.css" />
+    <style>
+
+      .up {
+        width: 600px;
+        margin: 5px auto;
+        border-bottom: 4px solid orangered;
+        margin-top: 80px;
+      }
+      .down {
+        width: 600px;
+        margin: 5px auto;
+        border-bottom: 4px solid orangered;
+        margin-bottom: 0px;
+      }
+      body {
+        position: relative;
+        height: 100%;
+      }
+      .top {
+        background-color: rgb(49, 52, 54);
+        width: 100%;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      .list {
+        list-style: none;
+        text-align: center;
+        display: flex;
+        margin: 0px 20px;
+        padding: 10px 10px;
+        align-items: center;
+      }
+
+      .imagelist {
+        width: 25px;
+        height: 25px;
+        padding: 5px 5px;
+        margin: 5px 10px;
+        color: orangered;
+        background-color: rgb(161, 161, 9);
+        border-radius: 50%;
+      }
+
+      h3 {
+        font-weight: 200;
+        font-size: 16px;
+        color: white;
+      }
+      h3:hover {
+        color: rgb(223, 223, 91);
+      }
+      a {
+        text-decoration: none;
+      }
+      .cart {
+        position: absolute;
+        display: flex;
+        right: 15px;
+        top: 6px;
+        justify-content: center;
+        align-items: center;
+      }
+      .cart span {
+        color: white;
+        font-size: 20px;
+      }
+      .cart img {
+        width: 30px;
+        height: 30px;
+      }
+      .navi {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 50;
+        margin-top: 0px;
+        background: rgba(71, 67, 67, 0.219);
+      }
+      .navi ul {
+        display: flex;
+        justify-content: unset;
+        justify-items: center;
+        align-items: center;
+      }
+
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="top">
+      <ul>
+        <li class="list" active>
+          <img
+            src="Images/home-outline.svg"
+            alt="image error"
+            class="imagelist"
+          /><a href="index.html" class="listt"><h3>Home</h3></a>
+        </li>
+        <li class="list">
+          <img
+            src="Images/call-outline.svg"
+            alt="image error"
+            class="imagelist"
+          /><a href="#" class="listt"><h3>Contact Us</h3></a>
+        </li>
+        <li class="list">
+          <img
+            src="Images/help-circle-outline.svg"
+            alt="image error"
+            class="imagelist"
+          /><a href="#" class="listt"><h3>Help</h3></a>
+        </li>
+        <li class="list">
+          <img
+            src="Images/log-in-outline.svg"
+            alt="image error"
+            class="imagelist"
+          /><a href="login.html" class="listt signs"><h3>Sign Out</h3></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="cart">
+      <a href="cart.html" class="cartss"
+        ><img src="Images/cart-outline.svg" alt="" class="imagelist"
+      /></a>
+      <span>0</span>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black" id="secondnavbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Welcome!</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDarkDropdown"
+          aria-controls="navbarNavDarkDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDarkDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-light"
+                aria-labelledby="navbarDarkDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="cart.html">Your Cart</a></li>
+                <li><a class="dropdown-item" href="index.html">Home</a></li>
+                <li>
+                  <a class="dropdown-item" href="phones.html">Products</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="contactform.html">Feedback</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="contactnew.html">SignUp</a>
+                </li>
+                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                <li>
+                  <a class="dropdown-item" href="#Smartphones">Smart Phones</a>
+                </li>
+                <li><a class="dropdown-item" href="#Laptop">Laptops</a></li>
+                <li><a class="dropdown-item" href="#audio">Audio</a></li>
+                <li><a class="dropdown-item" href="#Fitness">Fitness</a></li>
+                <li>
+                  <a class="dropdown-item" href="#Fitness">Accessories</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="navi">
+      <ul>
+        <div class="logo"></div>
+        <li class="accesories">
+          <a href="#smartphones" class="acc">Mobile Phones</a>
+        </li>
+        <li class="accesories"><a href="#Laptop" class="acc">Laptops</a></li>
+        <li class="accesories"><a href="#TV" class="acc">TV</a></li>
+        <li class="accesories"><a href="#Fitness" class="acc">Fitness</a></li>
+        <li class="accesories"><a href="#audio" class="acc">Audio</a></li>
+        <li class="accesories">
+          <a href="#Fitness" class="acc">Accessories</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="up"></div>
+    <h1
+      style="text-align: center; font-weight: bold; font-size: 37px"
+      id="smartphones"
+    >
+      Smart Phones
+    </h1>
+    <div class="down"></div>
+
+    <!-- //cards -->
+
+    <!-- //mobile table -->
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4">
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.mi.com/in/mi-10t-pro/"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://trak.in/wp-content/uploads/2020/09/IMG_20200912_113803-1024x655.jpg"
+                id="oneman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Smart Phone
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Mi 10T Pro 5G
+              </h2>
+              <a href="https://www.mi.com/in/mi-10t-pro/" class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹39,000</p>
+
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: rgb(161, 161, 9);
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.oppo.com/in/smartphones/series-reno/reno5-pro-5g/?utm_source=Search&utm_medium=CPC&gclid=Cj0KCQjwyN-DBhCDARIsAFOELTmfJjgPh0zJ_R8t_okETNhiiv36AZS76ogdAeWfFleuazCMEnU9TKkaAoZLEALw_wcB"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://image.oppo.com/content/dam/oppo/common/mkt/v2-2/reno5-pro-5g-chaka/listpage/Reno5-pro-chaka-listpage-series-black-blue-v2-mobile.jpg"
+                id="twoman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Smart Phone
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Oppo Reno 5 Pro 5G
+              </h2>
+              <a
+                href="https://www.oppo.com/in/smartphones/series-reno/reno5-pro-5g/?utm_source=Search&utm_medium=CPC&gclid=Cj0KCQjwyN-DBhCDARIsAFOELTmfJjgPh0zJ_R8t_okETNhiiv36AZS76ogdAeWfFleuazCMEnU9TKkaAoZLEALw_wcB"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹45,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: orangered;
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.oppo.com/in/smartphones/series-f/f17-pro/?utm_source=Google&utm_medium=Enhanced%20CPC&utm_campaign=IN_Search_F17%20Pro%20_Exact_2nd%20Sep_2020&gclid=Cj0KCQjwyN-DBhCDARIsAFOELTnxdGsTB_fDxmNBfTzxLMIgA1z8UabT7lgVn0KPjLBnkRM_l6GowRkaAtTXEALw_wcB"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://images.news18.com/ibnlive/uploads/2020/10/1602954693_1200x800-1.jpg?impolicy=website&width=534&height=356"
+                id="threeman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Smart Phone
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Oppo F17 Pro (Diwali Edition)
+              </h2>
+              <a
+                href="https://www.oppo.com/in/smartphones/series-f/f17-pro/?utm_source=Google&utm_medium=Enhanced%20CPC&utm_campaign=IN_Search_F17%20Pro%20_Exact_2nd%20Sep_2020&gclid=Cj0KCQjwyN-DBhCDARIsAFOELTnxdGsTB_fDxmNBfTzxLMIgA1z8UabT7lgVn0KPjLBnkRM_l6GowRkaAtTXEALw_wcB"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹25,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: rgb(161, 161, 9);
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="oneplus.in/nord"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://cdn.i-scmp.com/sites/default/files/styles/1200x800/public/d8/images/methode/2020/08/07/215304e4-d6d0-11ea-a9df-dfa023813e67_image_hires_162645.jpg?itok=gG4LLXL_&v=1596788829"
+                id="fourman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Smart Phone
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                One Plus NORD
+              </h2>
+              <a href="oneplus.in/nord" class="text-black">Specs</a>
+              <p class="mt-1">₹26,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: orangered;
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.oneplus.in/9-pro?from=head"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://images.indianexpress.com/2021/03/OnePlus9Pro_Green_Cropped.jpg"
+                id="fiveman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Flagship
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                One Plus 9 Pro
+              </h2>
+              <a
+                href="https://www.oneplus.in/9-pro?from=head"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹65,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: orangered;
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.apple.com/in/iphone-12/?afid=p238%7Cs8W8iCZm4-dc_mtid_20925gyh65756_pcrid_476224261886_pgrid_112235616420_&cid=wwa-in-kwgo-iphone-slid--Brand-iPhone12-Tradein-"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://static.toiimg.com/thumb/msid-78288348,width-1070,height-580,imgsize-1390281,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
+                id="sixman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Flagship
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                I Phone 12
+              </h2>
+              <a
+                href="https://www.apple.com/in/iphone-12/?afid=p238%7Cs8W8iCZm4-dc_mtid_20925gyh65756_pcrid_476224261886_pgrid_112235616420_&cid=wwa-in-kwgo-iphone-slid--Brand-iPhone12-Tradein-"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹70,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: rgb(161, 161, 9);
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.apple.com/in/iphone-12-pro/?afid=p238%7Csg0ZSAbzs-dc_mtid_20925gyh65756_pcrid_499998985584_pgrid_119810614468_&cid=wwa-in-kwgo-iphone-slid--Brand-iPhone12Pro--"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://resize.indiatvnews.com/en/resize/newbucket/715_-/2020/10/iphone-12-pro-pro-max-1602825781.jpg"
+                id="sevenman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Flagship
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                I Phone 12 Pro Max
+              </h2>
+              <a
+                href="https://www.apple.com/in/iphone-12-pro/?afid=p238%7Csg0ZSAbzs-dc_mtid_20925gyh65756_pcrid_499998985584_pgrid_119810614468_&cid=wwa-in-kwgo-iphone-slid--Brand-iPhone12Pro--"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹1,30,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: orangered;
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.samsung.com/in/smartphones/galaxy-s21-5g/buy/?modelCode=SM-G998BZKGINU&cid=in_paid_ppc_google_galaxy-s21_none_samsunggalaxys21-eshop-bau-rlsa-tactical_text_20210115_12087086301-121997768368-samsung%20s21%20ultra--512606039695-aud-926077346581:kwd-891304497520&gclid=Cj0KCQjwyN-DBhCDARIsAFOELTlcf4EQO2PFcAie-ZWMQaUuqKWO9F-6jinwxMakOAoKDXt2oKCQQbMaAvphEALw_wcB"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://www.counterpointresearch.com/wp-content/uploads/2021/01/Galaxy-S21_plus_violet_silver_black-uai-2880x1946.jpg"
+                id="eightman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Flagship
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Samsung S21 ULTRA 5G
+              </h2>
+              <a
+                href="https://www.samsung.com/in/smartphones/galaxy-s21-5g/buy/?modelCode=SM-G998BZKGINU&cid=in_paid_ppc_google_galaxy-s21_none_samsunggalaxys21-eshop-bau-rlsa-tactical_text_20210115_12087086301-121997768368-samsung%20s21%20ultra--512606039695-aud-926077346581:kwd-891304497520&gclid=Cj0KCQjwyN-DBhCDARIsAFOELTlcf4EQO2PFcAie-ZWMQaUuqKWO9F-6jinwxMakOAoKDXt2oKCQQbMaAvphEALw_wcB"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹1,05,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: rgb(161, 161, 9);
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.lg.com/global/lgwing"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://i.ytimg.com/vi/HIu15rdAaBs/maxresdefault.jpg"
+                id="nineman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Flagship
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                LG Wing
+              </h2>
+              <a href="https://www.lg.com/global/lgwing" class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹75,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: rgb(161, 161, 9);
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.mi.com/in/mi-10/"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://static.hub.91mobiles.com/wp-content/uploads/2020/12/mi-10-image-featured.png"
+                id="tenman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Smart Phone
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Mi 10
+              </h2>
+              <a href="https://www.mi.com/in/mi-10/" class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹50,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: orangered;
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.mi.com/global/mi-11/overview"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://www.91-cdn.com/hub/wp-content/uploads/2021/03/Mi-11-Pro-1.jpg"
+                id="elevenman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Flagship[
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Mi 11 Pro
+              </h2>
+              <a
+                href="https://www.mi.com/global/mi-11/overview"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹75,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: rgb(161, 161, 9);
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.vivo.com/in/products/v20"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://assets.mspimages.in/wp-content/uploads/2020/10/Vivo-V20-main.jpg"
+                id="tweleveman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Smart Phone
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Vivo V20
+              </h2>
+              <a href="https://www.vivo.com/in/products/v20" class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹22,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: orangered;
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div
+          class="swiper-slide"
+          style="
+            background-image: url('https://images.indianexpress.com/2021/03/OnePlus9Pro_Green_Cropped.jpg');
+          "
+        ></div>
+        <div
+          class="swiper-slide"
+          style="
+            background-image: url('https://assets.mspimages.in/wp-content/uploads/2020/10/Vivo-V20-main.jpg');
+          "
+        ></div>
+        <div
+          class="swiper-slide"
+          style="
+            background-image: url('https://trak.in/wp-content/uploads/2020/09/IMG_20200912_113803-1024x655.jpg');
+          "
+        ></div>
+
+        <div
+          class="swiper-slide"
+          style="
+            background-image: url('https://www.counterpointresearch.com/wp-content/uploads/2021/01/Galaxy-S21_plus_violet_silver_black-uai-2880x1946.jpg');
+          "
+        ></div>
+        <div
+          class="swiper-slide"
+          style="
+            background-image: url('https://resize.indiatvnews.com/en/resize/newbucket/715_-/2020/10/iphone-12-pro-pro-max-1602825781.jpg');
+          "
+        ></div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+      <!-- footer -->
+    </div>
+    <!-- card end -->
+
+    <div class="up" id="TV"></div>
+    <h1 style="text-align: center; font-weight: bold; font-size: 37px">
+      Television
+    </h1>
+    <div class="down"></div>
+
+    <!-- t\v table -->
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4">
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.mi.com/global/product/mi-tv-q1-75/overview"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://i.gadgets360cdn.com/large/mi_tv_q1_75_1612849715023.jpg?downsize=950:*&output-quality=80"
+                id="oneman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                TV
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Mi TV Q1 75'
+              </h2>
+              <a
+                href="https://www.mi.com/global/product/mi-tv-q1-75/overview"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹40,000</p>
+
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: rgb(161, 161, 9);
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.mi.com/global/mitv-4a32/"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://images.indianexpress.com/2018/03/xiaomi-mi-tv-4a-main.jpg"
+                id="twoman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                TV
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Mi TV 4A
+              </h2>
+              <a href="https://www.mi.com/global/mitv-4a32/" class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹25000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: orangered;
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.mi.com/global/mitv-4s43/"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://www.geekmall.eu/7211-large_default/xiaomi-mi-tv-4s-43-4k-smart-tv-global-version.jpg"
+                id="threeman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                TV
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Mi TV 4S Pro 43'
+              </h2>
+              <a href="https://www.mi.com/global/mitv-4s43/" class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹50,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: rgb(161, 161, 9);
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.mi.com/in/redmi-smart-tv/"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://st1.bgr.in/wp-content/uploads/2020/09/Xiaomi-Mi-TV-Horizon-Edition-leaked-design.jpg"
+                id="fourman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Tv
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Mi TV Horizon
+              </h2>
+              <a href="https://www.mi.com/in/redmi-smart-tv/" class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹33,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: orangered;
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.samsung.com/in/tvs/uhd-4k-tv/tu8000-55-inch-crystal-uhd-smart-tv-ua55tu8000kxxl/"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://images.samsung.com/is/image/samsung/in-uhd-tv-tu8000-ua43tu8000kxxl-frontblack-232234133?$720_576_PNG$"
+                id="fiveman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Flagship TV
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Samsung TU800 4K 43'
+              </h2>
+              <a
+                href="https://www.samsung.com/in/tvs/uhd-4k-tv/tu8000-55-inch-crystal-uhd-smart-tv-ua55tu8000kxxl/"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹47,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: orangered;
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.samsung.com/levant/tvs/uhd-4k-tv/tu8500-55-inch-crystal-uhd-smart-tv-ua55tu8500uxtw/"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://images.samsung.com/is/image/samsung/levant-uhd-tu8500-ua55tu8500uxtw-frontblack-229855928?$720_576_PNG$"
+                id="sixman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Flagship TV
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Samsung TU8500 4K 55'
+              </h2>
+              <a
+                href="https://www.samsung.com/levant/tvs/uhd-4k-tv/tu8500-55-inch-crystal-uhd-smart-tv-ua55tu8500uxtw/"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹60,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: rgb(161, 161, 9);
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.samsung.com/in/support/model/UA40K5570AULXL/"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://images.samsung.com/is/image/samsung/in-full-hd-k5700-ua32k5570aulxl-001-front-black?$LazyLoad_Home_IMG$"
+                id="sevenman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                TV
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Samsung K5570 Full HD 32'
+              </h2>
+              <a
+                href="https://www.samsung.com/in/support/model/UA40K5570AULXL/"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹30,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: orangered;
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.samsung.com/in/tvs/qled-tv/q95t-55-inch-qled-4k-smart-tv-qa55q95takxxl/"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://images.samsung.com/is/image/samsung/uk-qledtv-q95t-qe55q95tatxxu-frontsilver-226439231?$720_576_PNG$"
+                id="eightman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Flagship TV
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Samsung Q95T QLED 4k HDR 55'
+              </h2>
+              <a
+                href="https://www.samsung.com/in/tvs/qled-tv/q95t-55-inch-qled-4k-smart-tv-qa55q95takxxl/"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹1,15,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: rgb(161, 161, 9);
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.oneplus.in/tv-y-series"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://fdn.gsmarena.com/imgroot/news/20/06/oneplus-certify-32-43-tv-bluetooth/-1220x526/gsmarena_001.jpg"
+                id="nineman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                TV
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                One Plus 43'
+              </h2>
+              <a href="https://www.oneplus.in/tv-y-series" class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹38,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: rgb(161, 161, 9);
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.oneplus.in/tv-y-series"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://images.news18.com/ibnlive/uploads/2020/07/1593702296_oneplus-tv-55u1.jpg"
+                id="tenman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                FlagshipTV
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                One Plus 55U1 4K
+              </h2>
+              <a href="https://www.oneplus.in/tv-y-series" class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹52,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: orangered;
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.oneplus.in/tv-q1-series"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://static.toiimg.com/photo/msid-71372686/71372686.jpg"
+                id="elevenman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Flagship TV
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                One Plus TV Q1
+              </h2>
+              <a href="https://www.oneplus.in/tv-q1-series" class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹70,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: rgb(161, 161, 9);
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- //swiper for third one -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div
+          class="swiper-slide"
+          style="
+            background-image: url('https://images.samsung.com/is/image/samsung/in-uhd-tv-tu8000-ua43tu8000kxxl-frontblack-232234133?$720_576_PNG$');
+          "
+        ></div>
+        <div
+          class="swiper-slide"
+          style="
+            background-image: url('https://st1.bgr.in/wp-content/uploads/2020/09/Xiaomi-Mi-TV-Horizon-Edition-leaked-design.jpg');
+          "
+        ></div>
+        <div
+          class="swiper-slide"
+          style="
+            background-image: url('https://www.geekmall.eu/7211-large_default/xiaomi-mi-tv-4s-43-4k-smart-tv-global-version.jpg');
+          "
+        ></div>
+
+        <div
+          class="swiper-slide"
+          style="
+            background-image: url('https://images.indianexpress.com/2018/03/xiaomi-mi-tv-4a-main.jpg');
+          "
+        ></div>
+        <div
+          class="swiper-slide"
+          style="
+            background-image: url('https://i.gadgets360cdn.com/large/mi_tv_q1_75_1612849715023.jpg?downsize=950:*&output-quality=80');
+          "
+        ></div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="up" id="Fitness"></div>
+
+    <h1 style="text-align: center; font-weight: bold; font-size: 37px">
+      LifeStyle And Accessories
+    </h1>
+    <div class="down"></div>
+    <!-- footer -->
+
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4">
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://in.amazfit.com/products/amazfit-bip-u"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://fdn.gsmarena.com/imgroot/news/20/10/amazfit-bip-u-india-price-sale-date/-1200/gsmarena_001.jpg"
+                id="oneman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Smart Watch
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Amazefit bip U
+              </h2>
+              <a
+                href="https://in.amazfit.com/products/amazfit-bip-u"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹5,000</p>
+
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: rgb(161, 161, 9);
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://in.amazfit.com/products/amazfit-gtr-2?gclid=Cj0KCQjwyN-DBhCDARIsAFOELTm2EFd0gjFdjkbA8HvFe2Rn-cWOdRo8lT9Vd2jamPTITsq1InCCMToaAnyUEALw_wcB&utm_campaign=Search_Brand_gtr2&utm_medium=Paid&utm_source=Google"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://i.ytimg.com/vi/-4LxYHem0uE/maxresdefault.jpg"
+                id="twoman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Smart Watch
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Amzaefit GTR2
+              </h2>
+              <a
+                href="https://in.amazfit.com/products/amazfit-gtr-2?gclid=Cj0KCQjwyN-DBhCDARIsAFOELTm2EFd0gjFdjkbA8HvFe2Rn-cWOdRo8lT9Vd2jamPTITsq1InCCMToaAnyUEALw_wcB&utm_campaign=Search_Brand_gtr2&utm_medium=Paid&utm_source=Google"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹7000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: orangered;
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.amazfit.com/en/"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://www.wareable.com/media/imager/202002/34782-original.jpg"
+                id="threeman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Smart Watch
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Amazefit GTX
+              </h2>
+              <a href="https://www.amazfit.com/en/" class="text-black">Specs</a>
+              <p class="mt-1">₹8,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: rgb(161, 161, 9);
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://in.amazfit.com/products/amazfit-bip-s?utm_source=Google&utm_medium=Paid&utm_campaign=Search_Brand_BipS&gclid=Cj0KCQjwyN-DBhCDARIsAFOELTkRCs-x9VnXEnmA578-LcGsYBpf4hv0FZ0p82qCbZs61fiaVUb3lNkaAthvEALw_wcB"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWCwG6QsvfNFD--RFrCc31Txy6gH7MSvRTXA&usqp=CAU"
+                id="fourman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Fitness Band
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Amazefit Bip S
+              </h2>
+              <a
+                href="https://in.amazfit.com/products/amazfit-bip-s?utm_source=Google&utm_medium=Paid&utm_campaign=Search_Brand_BipS&gclid=Cj0KCQjwyN-DBhCDARIsAFOELTkRCs-x9VnXEnmA578-LcGsYBpf4hv0FZ0p82qCbZs61fiaVUb3lNkaAthvEALw_wcB"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹10,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: orangered;
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.oneplus.in/product/oneplus-band"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://images.financialexpress.com/2021/01/oneplus-band.jpg"
+                id="fiveman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Smart Watch
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                One Plus Band
+              </h2>
+              <a
+                href="https://www.oneplus.in/product/oneplus-band"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹15,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: orangered;
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.apple.com/in/apple-watch-se/?afid=p238%7Cs8V4CWi3K-dc_mtid_187079nc38483_pcrid_509949306607_pgrid_110632497774_&cid=aos-IN-kwgo-brand--slid---product-"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/apple-watch-se-202009?wid=600&hei=315&fmt=jpeg&qlt=95&.v=1599936776000"
+                id="sixman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Flagship Watch
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Apple Watch SE
+              </h2>
+              <a
+                href="https://www.apple.com/in/apple-watch-se/?afid=p238%7Cs8V4CWi3K-dc_mtid_187079nc38483_pcrid_509949306607_pgrid_110632497774_&cid=aos-IN-kwgo-brand--slid---product-"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹30,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: rgb(161, 161, 9);
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.mi.com/global/mi-smart-band-5/"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://i01.appmifile.com/webfile/globalimg/mi-band-5/bg1.jpg"
+                id="sevenman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Smart Band
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Mi Band Pro
+              </h2>
+              <a
+                href="https://www.mi.com/global/mi-smart-band-5/"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹2,500</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: orangered;
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://store.mi.com/in/item/3203800026"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://i.gadgets360cdn.com/large/Mi_power_bank_3i_1600761112731.jpg?downsize=950:*&output-quality=80"
+                id="eightman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Accessories
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Mi Power Bank 3i
+              </h2>
+              <a
+                href="https://store.mi.com/in/item/3203800026"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹1,500</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: rgb(161, 161, 9);
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden" href="#">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://www.maxbhi.com/images/detailed/3017/mobile_phone_charger_for_xiaomi_mi_play_maxbhicom.jpg"
+                id="nineman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Accessories
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Charger C with Cable
+              </h2>
+              <a href="#" class="text-black">Specs</a>
+              <p class="mt-1">₹1,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: rgb(161, 161, 9);
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- fourth swiper -->
+
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div
+          class="swiper-slide"
+          style="
+            background-image: url('https://images.financialexpress.com/2021/01/oneplus-band.jpg');
+          "
+        ></div>
+        <div
+          class="swiper-slide"
+          style="
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWCwG6QsvfNFD--RFrCc31Txy6gH7MSvRTXA&usqp=CAU');
+          "
+        ></div>
+        <div
+          class="swiper-slide"
+          style="
+            background-image: url('https://www.wareable.com/media/imager/202002/34782-original.jpg');
+          "
+        ></div>
+
+        <div
+          class="swiper-slide"
+          style="
+            background-image: url('https://i.ytimg.com/vi/-4LxYHem0uE/maxresdefault.jpg');
+          "
+        ></div>
+        <div
+          class="swiper-slide"
+          style="
+            background-image: url('https://fdn.gsmarena.com/imgroot/news/20/10/amazfit-bip-u-india-price-sale-date/-1200/gsmarena_001.jpg');
+          "
+        ></div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="up" id="Laptop"></div>
+    <h1 style="text-align: center; font-weight: bold; font-size: 37px">
+      Laptops
+    </h1>
+    <div class="down"></div>
+    <!-- footer -->
+
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4">
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.dell.com/en-in/shop/deals/computer-deals?gacd=10415953-9017-5761040-285934062-0&dgc=ST&gclid=Cj0KCQjwyN-DBhCDARIsAFOELTmx-ZUkPaUVd8wZUBrWdI3gqKcjkMnOLmWqqj8GGypkE3bSHSEhV_caAheEEALw_wcB&gclsrc=aw.ds"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://images.indianexpress.com/2020/12/Dell_XPS13_BIG1.jpg"
+                id="oneman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Laptops
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Dell XPS 13 11th gen
+              </h2>
+              <a
+                href="https://www.dell.com/en-in/shop/deals/computer-deals?gacd=10415953-9017-5761040-285934062-0&dgc=ST&gclid=Cj0KCQjwyN-DBhCDARIsAFOELTmx-ZUkPaUVd8wZUBrWdI3gqKcjkMnOLmWqqj8GGypkE3bSHSEhV_caAheEEALw_wcB&gclsrc=aw.ds"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹65,000</p>
+
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: rgb(161, 161, 9);
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.asus.com/in/Laptops/For-Home/VivoBook/"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://www.bgr.in/wp-content/uploads/2020/11/VivoBook-15_X513_Product-Photo_All-colors_02.png"
+                id="twoman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Laptops
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Asus Vivobook 11th Gen
+              </h2>
+              <a
+                href="https://www.asus.com/in/Laptops/For-Home/VivoBook/"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹70500</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: orangered;
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.hp.com/us-en/shop/mdp/laptops/hp-pavilion-x360-387003--1"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://s.yimg.com/os/creatr-uploaded-images/2020-09/073fb9a0-fcad-11ea-97d4-47c4837d0715"
+                id="threeman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Laptops
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                HP Pavillion 360
+              </h2>
+              <a
+                href="https://www.hp.com/us-en/shop/mdp/laptops/hp-pavilion-x360-387003--1"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹60,500</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: rgb(161, 161, 9);
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.lenovo.com/in/en/laptops/yoga/yoga-s-series/Yoga-Slim-7i-Carbon-13/p/88YGS701517?cid=in:sem:zcfhwy&ef_id=Cj0KCQjwyN-DBhCDARIsAFOELTn6-6VMex_K8Q64soKQa2GViDStF3gK5LvSb5aFtJjdp1nTQrHLDrYaAqFnEALw_wcB:G:s&s_kwcid=AL!8093!3!459252083403!b!!g!!%2Blenovo%20%2Byoga&gclid=Cj0KCQjwyN-DBhCDARIsAFOELTn6-6VMex_K8Q64soKQa2GViDStF3gK5LvSb5aFtJjdp1nTQrHLDrYaAqFnEALw_wcB"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://i.gadgets360cdn.com/large/lenovo_yoga_slim_7i_pro_oled_image_1610354237951.jpg"
+                id="fourman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Laptops
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Lenovo Yoga Slim 7i Pro
+              </h2>
+              <a
+                href="https://www.lenovo.com/in/en/laptops/yoga/yoga-s-series/Yoga-Slim-7i-Carbon-13/p/88YGS701517?cid=in:sem:zcfhwy&ef_id=Cj0KCQjwyN-DBhCDARIsAFOELTn6-6VMex_K8Q64soKQa2GViDStF3gK5LvSb5aFtJjdp1nTQrHLDrYaAqFnEALw_wcB:G:s&s_kwcid=AL!8093!3!459252083403!b!!g!!%2Blenovo%20%2Byoga&gclid=Cj0KCQjwyN-DBhCDARIsAFOELTn6-6VMex_K8Q64soKQa2GViDStF3gK5LvSb5aFtJjdp1nTQrHLDrYaAqFnEALw_wcB"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹85,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: orangered;
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.apple.com/in/macbook-pro-13/"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://www.rollingstone.com/wp-content/uploads/2020/11/MacBook-Pro-FI.jpg?resize=1800,1200&w=450"
+                id="fiveman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Premium Laptops
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                MacBook Pro 13'
+              </h2>
+              <a
+                href="https://www.apple.com/in/macbook-pro-13/"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹1,17,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: orangered;
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.mi.com/in/mi-notebook-14-horizon/"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202006/mibookpro.jpeg?1FNAZwuVUgOrxxem2FkajT9xWfqZ63zY&size=770:433"
+                id="sixman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Laptop
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Mi Notebook Horizon
+              </h2>
+              <a
+                href="https://www.mi.com/in/mi-notebook-14-horizon/"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹50,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: rgb(161, 161, 9);
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.asus.com/in/Laptops/For-Gaming/TUF-Gaming/ASUS-TUF-Gaming-F17/"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://dlcdnimgs.asus.com/websites/global/PDCustomizedKVSection/video/4532.jpg"
+                id="sevenman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Gaming Laptops
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Asus TUF F17
+              </h2>
+              <a
+                href="https://www.asus.com/in/Laptops/For-Gaming/TUF-Gaming/ASUS-TUF-Gaming-F17/"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹85,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: orangered;
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.dell.com/en-in/shop/deals/new-product-deals?gacd=10398392-9024-5761040-286092735-0&dgc=ST&gclid=Cj0KCQjwyN-DBhCDARIsAFOELTnpkjsEq4uiaWp7v-YJhblarHwhf5TvOmmC82U9UKI74fMX6pDQHMYaAmzTEALw_wcB&gclsrc=aw.ds"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://5.imimg.com/data5/EY/HD/EI/GLADMIN-3775210/selection-365-500x500.png"
+                id="eightman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Gaming Laptops
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Dell G3 15
+              </h2>
+              <a
+                href="https://www.dell.com/en-in/shop/deals/new-product-deals?gacd=10398392-9024-5761040-286092735-0&dgc=ST&gclid=Cj0KCQjwyN-DBhCDARIsAFOELTnpkjsEq4uiaWp7v-YJhblarHwhf5TvOmmC82U9UKI74fMX6pDQHMYaAmzTEALw_wcB&gclsrc=aw.ds"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹90,500</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: rgb(161, 161, 9);
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.acer.com/ac/en/US/content/predator-series/predatortriton500"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://i.pcmag.com/imagery/roundups/01hiB08j7yaJGJmPl2YhRRH-5..1569470765.jpg"
+                id="nineman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Gaming Laptop
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Acer Predator Triton
+              </h2>
+              <a
+                href="https://www.acer.com/ac/en/US/content/predator-series/predatortriton500"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹1,15,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: rgb(161, 161, 9);
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div
+          class="swiper-slide"
+          style="
+            background-image: url('https://i.pcmag.com/imagery/roundups/01hiB08j7yaJGJmPl2YhRRH-5..1569470765.jpg');
+          "
+        ></div>
+        <div
+          class="swiper-slide"
+          style="
+            background-image: url('https://akm-img-a-in.tosshub.com/indiatoday/images/story/202006/mibookpro.jpeg?1FNAZwuVUgOrxxem2FkajT9xWfqZ63zY&size=770:433');
+          "
+        ></div>
+        <div
+          class="swiper-slide"
+          style="
+            background-image: url('https://5.imimg.com/data5/EY/HD/EI/GLADMIN-3775210/selection-365-500x500.png');
+          "
+        ></div>
+
+        <div
+          class="swiper-slide"
+          style="
+            background-image: url('https://dlcdnimgs.asus.com/websites/global/PDCustomizedKVSection/video/4532.jpg');
+          "
+        ></div>
+        <div
+          class="swiper-slide"
+          style="
+            background-image: url('https://root-nation.com/wp-content/uploads/2020/04/asus-tuf-gaming-a17-2.jpg');
+          "
+        ></div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- //audio -->
+    <div class="up" id="audio"></div>
+    <h1 style="text-align: center; font-weight: bold; font-size: 37px">
+      Audio
+    </h1>
+    <div class="down"></div>
+
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4">
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://store.mi.com/in/item/3203500003"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://st1.bgr.in/wp-content/uploads/2020/08/Redmi-earphones.jpg"
+                id="oneman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Audio(wired)
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Mi Earphones (New Edition)
+              </h2>
+              <a
+                href="https://store.mi.com/in/item/3203500003"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹500</p>
+
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: rgb(161, 161, 9);
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden" href="">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://i.ytimg.com/vi/orfZcwI4A7k/maxresdefault.jpg"
+                id="twoman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Audio(wireless)
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Boat Rockerz 255
+              </h2>
+              <a href="" class="text-black">Specs</a>
+              <p class="mt-1">₹1,500</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: orangered;
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.boat-lifestyle.com/products/rockerz-550"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://i0.wp.com/technosports.co.in/wp-content/uploads/2020/07/Annotation-2020-07-13-035528.png?fit=561%2C261&ssl=1"
+                id="threeman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Audio(wireless)
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Boat Rockerz 550 OverEar
+              </h2>
+              <a
+                href="https://www.boat-lifestyle.com/products/rockerz-550"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹2,500</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: rgb(161, 161, 9);
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.boat-lifestyle.com/collections/true-wireless-earbuds/products/airdopes-491"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://i.gadgets360cdn.com/large/boat_airdopes_131_1597990761121.jpg"
+                id="fourman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Audio(wireless)
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Boat Airdopes 131
+              </h2>
+              <a
+                href="https://www.boat-lifestyle.com/collections/true-wireless-earbuds/products/airdopes-491"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹4,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: orangered;
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a
+              class="block relative h-48 rounded overflow-hidden"
+              href="https://www.apple.com/in/airpods-pro/?afid=p238%7CssLf8XhrG-dc_mtid_187079nc38483_pcrid_475852023556_pgrid_113271653247_&cid=aos-IN-kwgo-btb--slid---product-"
+            >
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="https://www.apple.com/v/airpods-pro/c/images/meta/og__ch3csr9zmviq_overview.png"
+                id="fiveman"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                Premium Audio
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Apple Airpods Pro
+              </h2>
+              <a
+                href="https://www.apple.com/in/airpods-pro/?afid=p238%7CssLf8XhrG-dc_mtid_187079nc38483_pcrid_475852023556_pgrid_113271653247_&cid=aos-IN-kwgo-btb--slid---product-"
+                class="text-black"
+                >Specs</a
+              >
+              <p class="mt-1">₹25,000</p>
+              <a
+                href="#"
+                class="buynow"
+                style="
+                  font-size: 18px;
+                  padding: 0px 5px;
+                  background-color: orangered;
+                  color: white;
+                  border-radius: 3px;
+                "
+                >Add To Cart</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <footer class="text-gray-600 body-font" style="background-color:rgb(163, 156, 156);" id="foot">
+        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+              <span class="ml-3 text-xl">Developer - Aarya Ahjolia </span>
+            </a>
+            <p class="mt-2 text-sm text-gray-500">Just practise project base website (content taken from official website - just a dummy piece)</p>
+          </div>
+          <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SUPPORT</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Online Help</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Customer Service</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Shipping Details</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Warranty</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">RETAIL STORES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Service Centres</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Home</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Authorized Centre</a>
+                </li>
+               
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">ABOUT US</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800"> Culture</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">User Agreement</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Privacy Policies</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Declarations</a>
+                </li>
+              </nav>
+            </div>
+            
+          </div>
+        </div>
+        <div class="bg-gray-100" style="background-color: rgb(163, 156, 156);">
+          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-500 text-sm text-center sm:text-left">© 2022 Aarya —
+              <a href="" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@copyrightclaimer</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </footer>
+
+      <footer class="text-gray-600 body-font" style="background-color:rgb(163, 156, 156);" id="ehel">
+        <div
+          class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+                viewBox="0 0 24 24">
+                <!-- <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path> -->
+              </svg>
+              <span class="ml-3 text-xl">Developer - Aarya Ahjolia </span>
+            </a>
+            <p class="mt-2 text-sm text-gray-500">Just practise project base website (content taken from official website
+              - just a dummy piece)</p>
+          </div>
+          <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SUPPORT</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Online Help</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Customer Service</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Shipping Details</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Warranty</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">RETAIL STORES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Service Centres</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Home</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Authorized Centre</a>
+                </li>
+  
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">ABOUT US</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800"> Culture</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">User Agreement</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Privacy Policies</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Declarations</a>
+                </li>
+              </nav>
+            </div>
+  
+          </div>
+        </div>
+        <div class="bg-gray-100" style="background-color: rgb(163, 156, 156);">
+          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-500 text-sm text-center sm:text-left">© 2022 Aarya —
+              <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1"
+                target="_blank">@copyrightclaimer</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                  </path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none"
+                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        effect: "cube",
+        grabCursor: true,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+
+      let local = localStorage.getItem('users');
+      let localobj = JSON.parse(local);
+     let out = document.querySelector('.signs');
+     out.addEventListener('click',()=>{
+      localobj.forEach((ele,i) => {
+         ele.status=0;
+        });
+        localStorage.setItem('users',JSON.stringify(localobj));
+        location.href='signup.html'
+      })
+    </script>
+    <script src="ecom.js"></script>
+  </body>
+</html>
