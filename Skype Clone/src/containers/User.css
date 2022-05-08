@@ -1,0 +1,52 @@
+.User {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.User:hover {
+    background-color: rgba(0,0,0, 0.3);
+    cursor: pointer;
+}
+
+.UserPic {
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+.UserDetail {
+    display: none;
+
+}
+
+/* not small devices  */
+@media (min-width: 576px) {
+    .UserDetail {
+      display: block;
+      padding: 0 0 0 1rem;
+    }
+    .UserName {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 1rem;
+    }
+  }
+
+    UserName {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1rem;
+
+    }
+    
+
+
+/* .UserDetail
+.UserName
+.UserStatus */
+
+
+
+
+
