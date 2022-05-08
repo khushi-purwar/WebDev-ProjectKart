@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html, body{
+  height: 100%;
+}
+body{
+  font-family: cursive;
+  /* background-color: #fae19d; */
+  background-image: linear-gradient(to right, rgb(215, 24, 24), blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 1em;
+  display: flex;
+  margin-left: -100px;
+  margin-right: 40px;
+  font-size: 45px;
+  color: whitesmoke;
+}
+.container{
+  height: 700px;
+  width: 700px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1em;
+}
+
+.card{
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transform: rotateY(180deg);
+  animation: 2s hideCard linear;
+  transition: transform 0.5s;
+}
+@keyframes hideCard{
+  0%, 70%{
+    transform: rotateY(0);
+  }
+  100%{
+    transform: rotateY(180deg);
+  }
+}
+.card img{
+  max-width: 80%;
+  max-height: 80%;
+  transition: transform 0.5s;
+  transform: scale(0);
+  animation: 2s hideImage linear;
+}
+@keyframes hideImage{
+  0%, 70%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(0);
+  }
+}
+
+.card.active{
+  transform: rotateY(0);
+}
+.card.correct{
+  background-color: #65e469;
+}
+.card.wrong{
+  background-color: #fd245a;
+}
+.card.active img{
+  transform: scale(1);
+}
