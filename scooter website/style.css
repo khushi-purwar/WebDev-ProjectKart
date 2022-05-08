@@ -1,0 +1,210 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.navbar-custom {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Playfair Display', serif;
+    
+}
+
+.navbar-custom .navbar-brand{
+    color: whitesmoke;
+    margin-left:7rem;
+}
+
+#nav-head-center-red
+ {
+    color: red;
+   
+}
+
+.nav-link{
+    color: whitesmoke;
+}
+
+.navbar-nav{
+    margin-left:20rem;
+  }
+
+  .ml-1 {
+    margin-left:18rem;
+  }
+
+  .ml-5 {
+    margin-left:2rem;
+  }
+
+  .semi-navbar{
+    font-family: 'Poly', serif;
+    background-color: rgb(0, 0, 0);
+    max-width: 100%;
+    width: 100vw;
+    height: 6rem;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 4rem;
+    
+  }
+  .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-right: 15rem;
+    }
+  .one{
+    width: 60px;
+    position: absolute;
+     z-index: 1;
+      }
+  .two{
+    width: 40px;
+    position: absolute;
+    z-index: 2;
+  }
+  .three{
+    width: 20px;
+    position: absolute;
+    z-index: 3;
+  }
+  .semi-navbar-ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 30px;
+    height: 2.5rem;
+  }
+  .semi-navbar-ul-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0px 30px;
+    list-style: none;
+  }
+
+  .semi-navbar-ul-content a{
+    display: block;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: whitesmoke;
+    height: max-content;
+  }
+
+  .noBtn a:hover{
+    border-bottom:3px solid red;
+    overflow: hidden;
+  }
+
+  .btn-dealership{
+    background-color: red;
+    font-size: larger;
+    padding: 5px 15px;
+    color: whitesmoke;
+    border: none;
+  }
+  .btn-dealership:hover{
+    background-color: white;
+    color: black;
+  }
+
+  .btn-dropDownArrow{
+    background-color: black;
+    color: red;
+    border: none;
+  }
+
+
+  .dropDownContent{
+    font-family: 'Poly', serif;
+    background-color: rgb(231, 230, 230);
+    max-width: 100%;
+    width: 100vw;
+    height: 9rem;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    padding-right: 4rem;
+    justify-content: space-around;
+    z-index: 2;
+  }
+
+
+  .dropDownContent-ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 30px;
+    height: 2.5rem;
+    /* background-color: red; */
+    width: 90rem;
+    height: 4rem;
+    justify-content: space-around;
+
+  }
+  .dropDownContent-ul-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0px 30px;
+    list-style: none;
+  }
+
+  .dropDownContent-ul-content a{
+    display: block;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 35px;
+    color: rgb(99, 99, 99);
+    height: max-content;
+  }
+
+  .body-content{
+    display: flex;
+  flex-direction: row;
+  font-family: 'Playfair Display', serif;
+}
+
+  .virus{
+    z-index: 1;
+   height: 35rem;
+   margin-top: 10rem;
+   position: absolute;
+   box-sizing: border-box;
+  }
+  .scooter{
+    z-index: 2;
+    position: relative;
+    height: 45rem;
+    margin-left: 10rem;
+    margin-top: 2rem;
+  }
+
+  .letters{
+    display: flex;
+    font-size: 50px;
+    margin-top: 10rem;
+    margin-left:3rem ;
+    font-size: 60px;
+  }
+  .para{
+    width: 20rem;
+    margin-left:3rem ;
+  }
+  .btn-show{
+    background-color: red;
+    font-size: larger;
+    padding: 5px 15px;
+    color: whitesmoke;
+    border: none;
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+  .btn-show:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fascinating Number Checker</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="container"> 
+        <p id="title">Fascinating Number Checker</p>
+        <p id="fascinating">A fascinating Number is a number that when multiplied by 2 and 3, and the product is concatenated with the original number gives all the digits from 1 to 9, regardless of the number of zeroes..</p>
+        
+            <input type="text" id="userinput">
+            <label for="userinput">Enter a Number :</label>
+
+            <input type="text" id="result" readonly value=" ">
+            <label for="result">Result :</label>
+
+            <button onclick="getInputValue(this)">Submit</button>
+            <button id="reset" onclick="reset(this)">Reset</button>
+    </div>
+
+
+</body>
+<script src="script/script.js"></script>
+
+</html>

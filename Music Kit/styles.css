@@ -1,0 +1,38 @@
+body {
+    background-image:radial-gradient(#fc9d9d, #07031a);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+  }
+ 
+  h1 {
+    color: #fbc687;
+    font-size: 5rem;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 5px 0 #900c3f;
+    margin: 50px 0;
+ 
+  }
+ 
+ .buttons{
+   background-image: url("images/music-note.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+ 
+ }
+ .btn{
+   outline: none;
+   border: 3px solid #900c3f;
+   background-image: radial-gradient( #393e46 , #fc9d9d);
+   border-radius: 20px;
+   display: inline-block;
+   margin: 1.5rem 1rem;
+ }
+ footer{
+   padding: 50px 0;
+   color:  #fbc687;
+ }
+ 

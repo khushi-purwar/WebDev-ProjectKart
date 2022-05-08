@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+.main{
+    height: 100vh;
+    background: url('https://cdn57.androidauthority.net/wp-content/uploads/2019/06/Tubi-best-movie-apps-for-Android.jpg')no-repeat;
+    /* background-position: ; */
+    background-size: cover;
+    opacity: 0.8;
+   
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 1 !important;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(240, 248, 255, 0.699);
+    padding: 50px 10px;
+}
+.appname{
+    font-weight: bold;
+    font-size: 80px;
+    color: rgb(179, 135, 24);
+    display: flex;
+    position: relative;
+    letter-spacing: 5px;
+    /* background-image: linear-gradient(90deg, #ff7d7d, #ce5ce8); */
+    /* background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text; */
+
+}
+li{
+    list-style: none;
+    position: relative;
+    animation: wave 7s 1 ;
+    top: 0;
+    left: 0;
+    transition: 0.9s;
+    
+    
+}
+li:nth-child(1){
+    animation-delay: 0s;
+}
+li:nth-child(2){
+    animation-delay: 1s;
+}
+li:nth-child(3){
+    animation-delay: 0s;
+}
+li:nth-child(4){
+    animation-delay: 1s;
+}
+li:nth-child(5){
+    animation-delay: 0s;
+}
+li:nth-child(6){
+    animation-delay: 1s;
+}
+li:nth-child(7){
+    animation-delay: 0s;
+}
+@keyframes wave {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    30%{
+        top: -50px;
+        left: 0;
+        color: darkolivegreen;
+    }
+    70%{
+        top: 50px;
+        left: 0;
+        color: darkslateblue;
+    }
+    100%{
+        top: 0;
+        left: 0;
+        color: red;
+    }
+}
+
+.para{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(155, 12, 40);
+    display: none;
+}
+.next{
+    font-size: 16px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(223, 177, 61);
+    border: none;margin-top: 20px;
+    display: none;
+}
+.next:hover{
+    background-color: rgb(223, 186, 92);
+    cursor: pointer;
+}
+.tag{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+@media (max-width:385px) {
+    .appname{
+        font-size: 62px;
+
+    }
+    .para{
+        font-size: 14px;
+    }
+}

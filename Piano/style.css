@@ -1,0 +1,95 @@
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background: linear-gradient(to top, #000000, #434343);
+}
+
+.piano{
+    display: flex;
+    position: relative;
+    margin-left: 4px;
+}
+
+
+.white-key.active {
+    background-color: #c0c0c0;
+}
+
+.white-key{
+    width: 69px;
+     height: 267px;
+     background-color: #FFF;
+     border: 4px solid black;
+     border-radius: 0 0 6px 6px;
+     margin-left: -4px;
+     outline: none;
+     cursor: pointer;
+}
+.black-key {
+    position: absolute;
+    width: 41px;
+    height: 169px;
+    background-image: linear-gradient(#000000, #303030);
+    border: 3px solid black;
+    border-radius: 0 0 2px 2px;
+    outline: none;
+    cursor: pointer;
+}
+
+.black-key.active {
+    background-image: linear-gradient(#000000, #101010);
+
+}
+
+.Db4-key {
+    left: 496px;
+  }
+  
+  .Eb4-key {
+    left: 563px;
+  }
+  
+  .Gb4-key {
+    left: 692px;
+  }
+  
+  .Ab4-key {
+    left: 757px;
+  }
+  
+  .Bb4-key {
+    left: 823px;
+  }
+  
+  .Db5-key {
+    left: 953px;
+  }
+  
+  .Eb5-key {
+    left: 1018px;
+  }
+  .Bb3-key {
+    left: 367px;
+  }
+  .Gb3-key {
+    left: 237px;
+  }
+  .Ab3-key {
+    left: 303px;
+  }
+  .Eb3-key {
+    left: 108px;
+  }
+  .Db3-key {
+    left: 42px;
+  }

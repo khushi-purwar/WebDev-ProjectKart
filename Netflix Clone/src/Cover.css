@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.banner {
+  height: 480px;
+  object-fit: contain;
+  text-align: left;
+  padding-left: 40px;
+}
+.banner__name {
+  padding: 160px 0 10px 0;
+}
+.banner button {
+  padding: 5px 30px 5px 30px;
+  margin: 0 20px 20px 0;
+  background-color: rgba(46, 49, 49, 0.5);
+  outline: 0;
+  border: 0;
+  color: white;
+  cursor: pointer;
+}
+.banner__overview {
+  padding-right: 80px;
+}

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Maze Runner : Survival Challenge</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="d-flex flex-column h-100" onload="displayGrid(grid3,'Grid3-void')">
+    <div class="container-fluid">
+        <nav class="nav">
+            <a class="nav-link " href="Index.html">Home</a>
+            <a class="nav-link active" href="survival.html">Final rush</a>
+        </nav>
+        <div class="row mt-1 mx-auto">
+            <div class="col-md-4">
+                <div class="card">
+                    <h3 class="card-header bg-primary text-white">Final Rush Challenge </h3>
+                    <div class="card-body">
+                        <!--description for  challenge-->
+                        <div>
+                            <p>You are given a choice to survive in this maze that represents a board. Each right choice 
+                                can change outcome or a wall. Each wrong choice leads to more  a tile you can walk on.
+                                Given this maze with an unknown start coordinate and an unkown end coordinate return
+                                the number of steps required to reach the end coordinate from the start. The start
+                                square is
+                                located in row 0 and the end coordiante is located on the last row. If there is no
+                                possible path, then return null. You can move up, left, down, and right. You cannot move
+                                through walls. You cannot wrap around the edges of the board.</p>
+                        </div>
+                        <div>
+                            <h6>For example, given the following board:</h6>
+                            <div class="card card-body card-text text-center gridstyle">
+                                [[t, t, t, f, t],<br>
+                                [t, t, t, f, f],<br>
+                                [f, f, f, t, f],<br>
+                                [f, t, f, f, f],<br>
+                                [f, f, t, t, t],<br>
+                                [t, f, t, t, t]]
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button"
+                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Pick a Grid
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <button class="dropdown-item" id="btnGrid3"
+                                                onclick="displayGrid(grid3,'Grid3-void')"
+                                                type="button">Grid3-Void</button>
+                                            <button class="dropdown-item" id="btnGrid4"
+                                                onclick="displayGrid(grid4,'Grid4-arc')"
+                                                type="button">Grid4-Arc</button>
+                                            <button class="dropdown-item" id="btnGrid5"
+                                                onclick="displayGrid(grid5,'Grid5-solar')"
+                                                type="button">Grid5-Solar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col text-right">
+                                    <button class="btn btn-primary" onclick="solveMazeZH()">Solve</button>
+                                </div>
+                            </div>
+                            <div class="row align-items-start">
+                                <div class="col align-self-start text-success mt-3 " id="results"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h1 id="gridTitle" colorValue="void">Grid3-void</h1>
+                <table id="gridDisplay" class="table h-100 gridStyle">
+                    <!--template for grid items go here-->
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer class="footer mt-auto py-3">
+        <div class="container text-center">
+            <span class="text-muted">end</a></span>
+        </div>
+    </footer>
+    <!--load after the page loads-->
+    <script src="template.js"></script>
+    <script src="mazerunner.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+.button-boxshadow {
+  box-shadow: 0px 100px 80px rgba(36, 77, 77, 0.1),
+    0px 64.8148px 46.8519px rgba(36, 77, 77, 0.0759259),
+    0px 38.5185px 25.4815px rgba(36, 77, 77, 0.0607407),
+    0px 20px 13px rgba(36, 77, 77, 0.05),
+    0px 8.14815px 6.51852px rgba(36, 77, 77, 0.0392593),
+    0px 1.85185px 3.14815px rgba(36, 77, 77, 0.0240741);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hidescrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hidescrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #244d4d !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f4f6f6;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #eeeeee;
+}

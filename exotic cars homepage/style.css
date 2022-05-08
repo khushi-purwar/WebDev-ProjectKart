@@ -1,0 +1,291 @@
+/*=========RESET CSS=========*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*=========BASE STYLE=========*/
+body{
+	color: #fff;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 1.4;
+}
+.wrapper{
+	width: 1120px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+/*========= HEADER =========*/
+
+.page-header{
+	height: 66px;
+	width: 100%;
+	background: rgba(0,0,0,0.8);
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.page-header .logo{
+	float: left;
+	padding-top: 23px;
+	box-sizing: border-box;
+}
+.page-header .main-nav{
+	float: right;
+}
+
+.main-nav li{
+	float: left;
+	margin-left: 90px;
+}
+.main-nav li a{
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 66px;
+}
+.main-nav li a:hover {
+	color: #ff0000;
+}
+/*========= MAIN =========*/
+/*========= Banner =========*/
+.banner{
+	height: 612px;
+	background: url(banner.png);
+	background-size: cover;
+	padding-top: 230px;
+	box-sizing: border-box;
+}
+
+.banner-block{
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: center;
+}
+h1{
+	text-transform: uppercase;
+
+}
+.subtitle{
+	font-size: 21px;
+	font-weight: 300;
+	margin: 25px 0;
+}
+.learn-more{
+	display: block;
+	padding: 20px 30px;
+	color: inherit;
+	text-transform: uppercase;
+	background: #ca0500;
+	font-size: 14px;
+	text-decoration: none;
+	width: 166px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+.learn-more:hover {
+	box-shadow: inset 0 0 50px rgba(0,0,0,0.5);
+	border: 1px solid #ff0000;
+}
+
+
+/*========= Articles =========*/
+.articles{
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(-5deg, #ffffff 0%, #ffffff 50%, #1b1b1b 50%, #1b1b1b 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-5deg, #ffffff 0%,#ffffff 50%,#1b1b1b 50%,#1b1b1b 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(95deg, #ffffff 0%,#ffffff 50%,#1b1b1b 50%,#1b1b1b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.articles>.wrapper::after, .page-footer>.wrapper::after{
+	content: '.';
+	font-size: 0;
+	height: 1px;
+	width: 100%;
+	display: block;
+	clear: both;
+}
+article{
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+	padding-top: 60px;
+}
+article:first-of-type{
+	padding-right: 65px;
+	color: #000;
+}
+article:last-of-type{
+	padding-left: 65px;
+}
+h2{
+	font-size: 36px;
+	font-weight: 300;
+}
+h2::after{
+	content: '.';
+	font-size: 0;
+	display: block;
+	height: 2px;
+	width: 38px;
+	background: #ca0500;
+	margin: 25px 0 28px;
+}
+.quote{
+	font-size: 22px;
+	font-style: italic;
+	font-weight: 300;
+	margin-bottom: 25px;
+}
+.text{
+	font-weight: 300;
+	margin-bottom: 60px;
+}
+
+/*========= Footer =========*/
+.page-footer {
+	background: #111111;
+	padding-top: 25px;
+}
+.footer-col {
+	width: 25%;
+	float: left;
+}
+.page-footer h3 {
+	font-size: 13px;
+	text-transform: uppercase;
+}
+.page-footer h3::after {
+	content: '.';
+	font-size: 0;
+	width: 90%;
+	height: 1px;
+	background: #292929;
+	display: block;
+	margin: 15px 0;
+}
+.page-footer li {
+	font-size: 13px;
+	color: #999;
+	line-height: 1.6;
+}
+.page-footer li:hover {
+	color: #fff;
+	cursor: pointer;
+}
+.copy {
+	color: #585858;
+	margin-top: 32px;
+}
+.social a {
+	display: block;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	line-height: 44px;
+}
+.social a:hover {
+	background: #fff;
+	color: #ff0000;
+}
+.social li {
+	display: inline-block;
+}
+
+.RAHULBAWA{
+	display: flex;
+	font-size: 30px;
+	flex-direction: row;
+	color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Maze Runner </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="d-flex flex-column h-100" onload="displayGrid(grid1,'Grid1-Default')">
+    <div class="container-fluid">
+        <nav class="nav">
+            <a class="nav-link active" href="Index.html">Home</a>
+            <a class="nav-link" href="survival.html">Final rush</a>
+        </nav>
+        <div class="row mt-1 mx-auto">
+            <div class="col-md-4">
+                <!--directions card goes here-->
+                <div class="card">
+                    <h3 class="card-header bg-primary text-white">Maze Runner : Survival Challenge</h3>
+                    <div class="card-body">
+                        <!--description for  challenge-->
+                        <div>
+                            <p>You are placed in a maze given consisting of walls that represents a board. Each direction
+                                can change outcome represents a wall. Each wrong direction represents a tile you can walk on.</p>
+                            <p>Given this maze, a start coordinate, and an end coordinate, return the minimum number
+                                of steps required to reach the end coordinate from the start. If there is no possible
+                                path, then return null. You can move up, left, down, and right. You cannot move through
+                                walls. You cannot wrap around the edges of the board. </p>
+                        </div>
+                        <div>
+                            <h6>For example, given the following board:</h6>
+                            <div class="card card-body card-text text-center gridstyle">
+                                [[f, f, f, f],<br>
+                                [t, t, f, t],<br>
+                                [f, f, f, f],<br>
+                                [f, f, f, f]]
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button"
+                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Pick a Grid
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <button class="dropdown-item" id="btnGrid1"
+                                                onclick="displayGrid(grid1,'grid1-default')"
+                                                type="button">Grid1-Default</button>
+                                            <button class="dropdown-item" id="btnGrid2"
+                                                onclick="displayGrid(grid2,'grid1-more complicated')"
+                                                type="button">Grid2-More
+                                                Complicated</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col text-right">
+                                    <button class="btn btn-primary" onclick="solveMaze()">Solve</button>
+                                </div>
+                            </div>
+                            <div class="row align-items-start">
+                                <div class="col align-self-start text-success mt-3" id="results"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h1 id="gridTitle" colorValue="default">Grid 1- Default</h1>
+                <table id="gridDisplay" class="table h-100 gridStyle">
+                    <!--template for grid items go here-->
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer mt-auto py-3">
+        <div class="text-center">
+            <span class="text-muted"></a></span>
+        </div>
+    </footer>
+
+    <!--load after the page loads-->
+    <script src="template.js"></script>
+    <script src="mazerunner.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
