@@ -1,6 +1,0 @@
-This logo was generated using the following font:
-
-- Font Title: Chicle
-- Font Author: Copyright (c) 2007 Angel Koziupa (sudtipos@sudtipos.com), Copyright (c) 2007 Alejandro Paul (sudtipos@sudtipos.com), with Reserved Font Name "Chicle"
-- Font Source: http://fonts.gstatic.com/s/chicle/v11/lJwG-pw9i2dqU-BDyWKuobYSxw.ttf
-- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

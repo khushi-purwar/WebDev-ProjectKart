@@ -1,0 +1,52 @@
+.categories{
+    width: 100%;
+    display: flex;
+}
+
+.categories__item{
+    display: block;
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+    padding: 1rem 0.5rem;
+    margin: 0 0.5rem;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    overflow-wrap: unset;
+    display: inline-block;
+}
+
+.categories__item:hover{
+    color: black;
+}
+
+.categories__item--active{
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.categories__breaker{
+    border-left: 1px solid rgb(211, 211, 211);
+    margin: 0.4rem 0;
+}
+
+.categories__list{
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.categories__list{
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+ .categories__list::-webkit-scrollbar {
+   display: none;  
+}
+
+@media screen and (max-width:450px){
+    .categories__breaker{
+        display: none;
+    }
+}
