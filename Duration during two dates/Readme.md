@@ -1,5 +1,5 @@
 **Project title**
-Character Limit in the text area.
+Duration between two dates.
 
 **Project Description**
 ### The idea behind this project
