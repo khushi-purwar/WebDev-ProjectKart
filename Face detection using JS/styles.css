@@ -1,0 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #ffbe0b;
+  justify-content: center;
+  align-items: center;
+}
