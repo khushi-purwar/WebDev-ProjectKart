@@ -29,3 +29,15 @@ body::before {
     z-index: -1;
     animation: test 1s ease infinite;
 }
+
+@keyframes test {
+    0% {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    50% {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
