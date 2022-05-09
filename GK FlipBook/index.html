@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="book">
+
+        <input type="checkbox" id="c1">
+        <input  type="checkbox" id="c2">
+        <input  type="checkbox" id="c3">
+        <input  type="checkbox" id="c4">
+        <!-- COVER -->
+        <div id="cover"><div class="pg"> 1</div>
+        <img src="">
+        </div>
+
+        <!-- PAGE 1 -->
+
+        <div class="flip-book">
+
+            <div class="flip" id="p1">
+                <div class="back" id="p1back">
+                    <img src="" alt="" srcset="">
+                    <div class="pg"> 3</div>
+
+                    <label for="c1" class="back-btn">BACK</label>
+                </div>
+                <div class="front">
+                    <div class="frontpg" id="p1front"></div>
+                    <div class="header" id="p1fH"></div>
+                    <div class="bodyy" id="p1fB"><ul class="ul" id="ul1"></ul></div>
+                    <div class="footer" id="p1fF"></div>
+                    <div class="pg"> 2</div>
+                    <label for="c1" class="front-btn">NEXT</label>
+                </div>
+            </div>
+
+            <!-- PAGE 2 -->
+
+
+            <div class="flip" id="p2">
+                <div class="back" id="p2back">
+                    <img src="" alt="" srcset="">
+                    <div class="pg"> 5</div>
+                    <label for="c2" class="back-btn">BACK</label>
+                </div>
+                <div class="front">
+                    <div class="frontpg" id="p2front"></div>
+
+                    <div class=" header" id="p2fH"></div>
+                    <div class=" bodyy" id="p2fB"><ul class="ul" id="ul2"></ul></div>
+                    <div class=" footer" id="p2fF"></div>
+                    <div class="pg"> 4</div>
+                    <label for="c2" class="front-btn">NEXT</label>
+                </div>
+            </div>
+
+            <!-- PAGE 3 -->
+
+
+            <div class="flip" id="p3">
+                <div class="back" id="p3back">
+                    <img src="" alt="" srcset="">
+                    <div class="pg"> 7</div>
+                    <label for="c3" class="back-btn">BACK</label>
+                </div>
+                <div class="front">
+                    <div class="frontpg" id="p3front"></div>
+
+                    <div class=" header" id="p3fH"></div>
+                    <div class=" bodyy" id="p3fB"><ul class="ul" id="ul3"></ul></div>
+                    <div class=" footer" id="p3fF"></div>
+                    <div class="pg"> 6</div>
+                    <label for="c3" class="front-btn">NEXT</label>
+                </div>
+            </div>
+            <!-- PAGE 4 -->
+
+
+            <div class="flip" id="p4">
+                <div class="back" id="p4back">
+                    <img src="" alt="" srcset="">
+                    <div class="pg"> 9</div>
+                    <label for="c4" class="back-btn">BACK</label>
+                </div>
+                <div class="front">
+                    <div class="frontpg" id="p4front"></div>
+
+                    <div class=" header" id="p4fH"></div>
+                    <div class=" bodyy" id="p4fB"><ul class="ul" id="ul4"></ul></div>
+                    <div class=" footer" id="p4fF"></div>
+                    <div class="pg"> 8</div>
+                    <label for="c4" class="front-btn">NEXT</label>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="box"></div>
+
+    <footer style="position: absolute; bottom: 0px;" class="waterMark"><a style="color: aliceblue;" href="https://github.com/RAHULBAWA777">made with ❤ by RAHULBAWA</a></footer>
+</body>
+<script src="script.js"></script>
+
+</html>
