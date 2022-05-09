@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset=utf8>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <div id="main"></div>
+
+  </body>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.10/backbone-min.js"></script>
+
+  <script src="./javascript/views/base.view.js"></script>
+  <script src="./javascript/views/login.view.js"></script>
+  <script src="./javascript/router.js"></script>
+  
+
+  <script>
+    $(document).ready(function() {
+      application = new Application.Router();
+    });
+  </script>
+</html>
