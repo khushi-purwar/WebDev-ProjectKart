@@ -1,3 +1,5 @@
+/* DEFAULTS */
+
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +17,7 @@ body {
 }
 
 body {
-    background: black url("../img/istockphoto-1291217473-640x640.jpg") no-repeat;
+    background: black url("./images/istockphoto-1291217473-640x640.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -108,4 +110,10 @@ button p {
     border-radius: 50%;
     border: 2px solid white;
     font-size: 1rem;
+}
+
+@media only screen and (max-width: 385px) {
+    ul {
+        grid-template-columns: 1fr;
+    }
 }
