@@ -1,0 +1,156 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="aboutUs.css">
+    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <div class="hc">
+            <div class="left">
+                <h2><span id="ch">PHAM INSURANCES</span></h2>
+            </div>
+            <div class="right" id="right">
+                <li id="n1"><a href="index.html">Home</a></li>
+                <li id="n2"><a href="profile.html">My Profile</a></li>
+                <li id="n1"><a href="login.html">Sign Up</a></li>
+                <li id="n5"><a href="aboutUs.html">About Us</a></li>
+                <li id="n5"><a href="TermsAndCondition.html">Terms And Condition</a></li>
+            </div>
+        </div>
+    </header>
+    <div class="hidden" id="hidden">
+        <li id="n1"><a href="index.html">Home</a></li>
+                <li id="n2"><a href="profile.html">My Profile</a></li>
+                <li id="n1"><a href="login.html">Sign Up</a></li>
+                <li id="n5"><a href="aboutUs.html">About Us</a></li>
+                <li id="n5"><a href="TermsAndCondition.html">Terms And Condition</a></li>
+    </div>
+    <script>
+        let w = document.getElementById("ch");
+        w.addEventListener("click", () => {
+            location.href = "index.html"
+        })
+    </script>
+    <script>
+        let x = window.matchMedia("(max-width:1000px)");
+        let a = document.getElementById("right");
+        let b = document.getElementById("hidden");
+
+        let count = 0;
+        a.addEventListener("click", () => {
+            if (x.matches) {
+                count++;
+                if (count % 2 != 0) {
+                    a.style.background = "url(https://i.ibb.co/rt3HybH/close.png)no-repeat center center/cover";
+                    a.style.backgroundSize = "25px";
+                    b.style.height = "100vh";
+                    b.style.opacity = "1";
+                    b.style.fontSize = "1.5em";
+                } else {
+                    a.style.background = "url(https://i.ibb.co/HrfVRcx/menu.png)no-repeat center center/cover";
+                    a.style.backgroundSize = "30px";
+                    b.style.height = "0vh";
+                    b.style.opacity = "0";
+                    b.style.fontSize = "0px";
+                }
+            }
+        });
+    </script>
+
+    <!-- <img src="PHAM_Logo.png" alt="" id="logo_about_us"> -->
+    <section class="section-3">
+        <h1 id="heading_about_us">PHAM Insurances Pvt Ltd.</h1>
+        <img src="PHAM_Logo.png" id="logo_about_us" alt="">
+        <h2 id="h2_about_us_font">"No one can surely predict their future,<br> But we can surely Protect it."</h2>
+
+        <!-- <h1 id="heading_about_us">Our Creators</h1> -->
+    </section>
+
+    <section class="section_heading_creators">
+        <h1>Our Creators</h1>
+    </section>
+    <div id="lower-line"></div>
+    <div id="upper-line"></div>
+    <section class="section-1">
+        <!-- <h1 id="heading_about_us_creators">Our Creators</h1> -->
+
+        <div class="member_card">
+            <img src="PHAM_Logo.png" alt="">
+            <h2>Aarya Ahjolia</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis quod nihil molestias, dicta veritatis impedit aspernatur aliquid? Maxime possimus fuga totam illum alias soluta, ducimus aperiam itaque a, temporibus omnis doloribus earum aut quae reprehenderit similique ab repellat obcaecati aliquam odio, dolorem laudantium deleniti at facere. Porro animi dignissimos obcaecati.</p>
+        </div>
+        <div class="member_card" id="h">
+            <img src="PHAM_Logo.png" alt="">
+            <h2>XYZ</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, modi dignissimos quam mollitia impedit tenetur excepturi obcaecati voluptas quae fuga autem nesciunt at incidunt aut repellat. Quam ipsam excepturi dolor mollitia optio libero inventore exercitationem repellendus id unde recusandae sed cumque, quasi, voluptate, ipsa aut commodi. Voluptas totam error omnis!</p>
+        </div>
+    </section>
+    <section class="section-2">
+        <div class="member_card" id="p">
+            <img src="PHAM_Logo.png" alt="">
+            <h2>ABC</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae ad deleniti reprehenderit et quas, illum, soluta veritatis enim sed quis eum tempore quaerat eligendi officiis magni voluptatum nisi odit odio similique. At nostrum eveniet laborum voluptas? Neque vero officia in, accusantium commodi eum quod? Delectus nobis distinctio sunt quis blanditiis.</p>
+        </div>
+        <div class="member_card" id="m">
+            <img src="PHAM_Logo.png" alt="">
+            <h2>FGH</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, atque! Quos sed totam quaerat fugit! Delectus dicta id vitae repudiandae voluptate, vel quibusdam? Quibusdam ratione quam illum dolorem fugiat maxime, eaque explicabo? Maxime magnam quam corrupti sit quaerat. Magni ea, reiciendis voluptates et quidem maxime necessitatibus tempore fuga laboriosam mollitia.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="containerd">
+            <div class="rowa">
+                <div class="cont1">
+                    <div class="1hu">
+                        <h1>PHAM Insurance Ltd.</h1>
+                        <br>
+                        <p>Get Insurance with Best Benifits.</p>
+                        <span><b>Be Responsible.</b></span>
+                    </div>
+                </div>
+                <div class="cont2">
+                    <div class="2hu">
+                        <h3>Explore</h2>
+                            <li><a href="index.html" class="fa">Home</a></li>
+                            <li><a href="profile.html" class="fa">Profile</a></li>
+                            <li><a href="TermsAndCondition.html" class="fa">Terms And Conditions</a></li>
+                    </div>
+                </div>
+                <div class="cont3">
+                    <div class="3hu">
+                        <h3>Creators</h2>
+                            <li>Aarya Ahjolia</li>
+                            <br>
+                            <h3>Contact Us</h3>
+                            <a href="#" class="fa">PHAM@gmail.com</a>
+                            <br>
+                            <p>9999999999</p>
+                    </div>
+                </div>
+                <div class="cont4">
+                    <div class="4hu">
+                        <h3>Follow</h3>
+                        <li><a href="#" class="fa">Instagram</a></li>
+                        <li><a href="#" class="fa">Twitter</a></li>
+                        <li><a href="#" class="fa">LinkedIn</a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="rowa">
+                <div class="cpy">
+                    <p> Copyright © 2021 PHAM Insurance Pvt Ltd. All Rights Reserved </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
