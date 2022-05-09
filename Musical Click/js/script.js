@@ -14,3 +14,22 @@ const EVER = new Audio("../audio/EVER.wav");
 const AFTER = new Audio("../audio/AFTER.wav");
 const WORK_IS = new Audio("../audio/WORK_IS.wav");
 const OVER = new Audio("../audio/OVER.wav");
+
+const orderedAudioObject = {
+    a: WORK_IT,
+    b: MAKE_IT,
+    c: DO_IT,
+    d: MAKES_US,
+    e: HARDER,
+    f: BETTER,
+    g: FASTER,
+    h: STRONGER,
+    i: MORE_THAN,
+    j: HOUR,
+    k: OUR,
+    l: NEVER,
+    m: EVER,
+    n: AFTER,
+    o: WORK_IS,
+    p: OVER
+}
