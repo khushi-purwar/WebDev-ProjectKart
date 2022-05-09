@@ -1,0 +1,116 @@
+<html>
+ 
+<head>
+    <title>Mail Extractor</title>
+    <style>
+        body{
+            background-image: linear-gradient(white, rgb(111, 215, 225));
+        }
+ h1{
+     font-size: 40px;
+     font-family: 'Times New Roman', Times, serif;
+     color:rgb(116, 3, 3);
+     margin-left: 45%;
+ }
+ #txt
+ {
+    margin-left: 27%;
+    color:rgb(161, 19, 19);
+    font-family: cursive;
+    font-size: 20px;
+ }
+ #couts
+ {
+    font-size: 20px;
+     font-family: 'Times New Roman', Times, serif;
+     color:rgb(116, 3, 3);
+     margin-left: 45%;
+     margin-bottom: 4%;
+ 
+ }
+ button{
+     margin-left: 45%;
+     margin-top: 2%;
+     margin-bottom: 2%;
+     width:10%;
+     height: 10%;
+     border-radius: 2px solid rgb(171, 18, 18);
+     background-color: rgb(244, 244, 112);
+     font-size: 20px;
+     color:rgb(170, 22, 22);
+     font-weight: bolder;
+ }
+ @media only screen and (max-width: 600px) {
+    h1{
+     font-size: 20px;
+     font-family: 'Times New Roman', Times, serif;
+     color:rgb(116, 3, 3);
+     margin-left: 25%;
+ }
+ #txt
+ {
+    margin-left: 17%;
+    color:rgb(161, 19, 19);
+    font-family: cursive;
+    font-size: 12px;
+ }
+ #couts
+ {
+    font-size: 20px;
+     font-family: 'Times New Roman', Times, serif;
+     color:rgb(116, 3, 3);
+     margin-left: 45%;
+     margin-bottom: 4%;
+ 
+ }
+ button{
+     margin-left: 29%;
+     margin-top: 2%;
+     margin-bottom: 2%;
+     width:6%;
+     height: 6%;
+     border-radius: 2px solid rgb(171, 18, 18);
+     background-color: rgb(244, 244, 112);
+     font-size: 20px;
+     color:rgb(170, 22, 22);
+     font-weight: bolder;
+ }
+ }
+
+    </style>
+</head>
+ 
+<body> <h1>Paste Text :</h1>
+    <br>
+    <textarea name="txtarea"id="txt" rows="5" cols="50">heloo email world real@email.com asddsa jldkjjlkj jkljl sdajlkdasjdsa kljadsj dklja real1@email.com real.test@email.com helllo hkjdshsdkjh jkh real-time@email.com </textarea>
+    <br>
+    <button type="button">Get Emails</button>
+    <br> <span class="counter" id="couts"> Emails in text:</span> 
+    <br>
+    <textarea name="output" id="txt" rows="5" cols="50"></textarea>
+    <script>
+        const rawTxt = document.querySelector("textarea[name=txtarea]");
+        const finTxt = document.querySelector("textarea[name=output]");
+        const btn = document.querySelector("button");
+        const counter = document.querySelector(".counter");
+        btn.addEventListener("click", function () {
+            let temp = rawTxt.value;
+            let exp = /([A-Za-z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi;
+            let emailData = temp.match(exp);
+            let holder = [];
+            for (let x = 0; x < emailData.length; x++) {
+                if (holder.indexOf(emailData[x]) == -1) {
+                    holder.push(emailData[x]);
+                }
+            }
+            let tempHolder = holder.join(";");
+            counter.innerText = "Emails Found " + holder.length;
+            finTxt.innerText = tempHolder;
+        })
+        finTxt.addEventListener("click", function () {
+            this.select();
+        })
+    </script>
+</body>
+ 
+</html>

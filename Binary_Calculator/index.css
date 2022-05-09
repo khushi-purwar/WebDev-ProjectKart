@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;0,900;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color:rgb(253, 255, 221);
+}
+.main{
+    width: 33%;
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+}
+.main h1{
+    margin: 40px;
+    font-size: 2.6rem;
+}
+#res{
+    margin-bottom: 2rem;
+    padding: 50px auto;
+    background-color: lightgray;
+    border: solid;
+    height: 48px;
+    font-size: 40px;
+}
+#btn0,#btn1{
+    background-color: lightgreen;
+    color: brown;
+}
+#btnClr,#btnEql{
+    background-color: darkgreen;
+    color: white;
+}
+#btnMul,#btnDiv,#btnSum,#btnSub{
+    background-color: rgb(152, 59, 100);
+    color: white;
+}
+button{
+    width: 25%;
+    height: 48px;
+    font-size: 28px;
+    margin: 0px;
+    float: left;
+}
+@media screen and (max-width: 900px){
+    .main{
+        width: 80%;
+    }
+    button{
+        width: 50%;
+        height: 60px;
+    }
+}

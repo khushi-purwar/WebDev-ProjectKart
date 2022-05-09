@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-family: monospace;
+    font-size: 20px;
+  }
+  section {
+    min-height: 96.5vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    background:linear-gradient(to top left, #ffffcc 0%, #ff9999 100%);
+    flex-direction: column;
+    padding: 50px 0;
+    font-size: 100px;
+    
+  }
+  section h1 {
+    color: rgba(255, 255, 255, 0.600);
+    text-align: center;
+    width: 100%;
+    font-size: 140px;
+    margin-bottom: 10px;
+  }
+  .container {
+    width: 90%;
+    max-width: 2500px;
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 100px;
+    }
+  .texts p {
+    color: black;
+    text-align: left;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    /* padding: 10px 60px; */
+  }
+  .texts p.reply {
+    text-align: right;
+  }
+  
+
+  /* *********************MEDIA QUERIES********************** */
+
+  /* 33%zoom */
+@media (max-width:4700px) { 
+	.container {
+    width: 90%;
+    max-width: 2000px;
+    }
+    section {
+      font-size: 80px;    
+    }
+    section h1 {
+      font-size: 120px;      
+}
+}
+
+/*50  */
+@media (max-width:3100px) {
+	.container {
+    width: 90%;
+    max-width: 1400px;
+    }
+    section {
+      font-size: 55px;    
+    }
+    section h1 {
+      font-size: 70px;      
+}
+}
+/* 67% zoom */
+@media (max-width:2500px) {
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    }
+    section {
+      font-size: 40px;    
+    }
+    section h1 {
+      font-size: 50px;      
+}
+}
+
+ /* 75%  zoom */
+ @media (max-width:2100px) {
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    }
+    section {
+      font-size: 35px;    
+    }
+    section h1 {
+      font-size: 45px;      
+}
+	}	
+
+
+
+@media (max-width:2000px) {
+  .container {
+    width: 90%;
+    max-width:900px;
+    }
+    section {
+      font-size: 30px;    
+    }
+    section h1 {
+      font-size: 40px;      
+}
+}
+/* 90% zoom*/
+@media (max-width:1800px) {
+    .container {
+      width: 90%;
+      max-width: 800px;
+      }
+      section {
+        font-size: 27px;    
+      }
+      section h1 {
+        font-size: 36px;      
+  }
+}
+
+
+
+/* @media (max-width:1600px) {
+
+}
+
+
+@media (max-width:1200px) {
+
+}
+@media (max-width:1000px) {
+
+}
+
+@media (max-width:700px) {
+
+}
+
+@media (max-width:420px){
+
+} */

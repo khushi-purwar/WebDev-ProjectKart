@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object manipulator - RAHULBAWA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu">
+        <div class="block">
+            <h3 class="block-heading">Position Y</h3>
+            <div class="wrapper vertical">
+                <input type="range" id="pos-y" min="0" max="600" value="0">
+                <label for="pos-y">
+                    <span>0</span>
+                    <span>600</span>
+                </label>
+            </div>
+        </div>
+        <div class="block">
+            <h3 class="block-heading">Position X</h3>
+            <div class="wrapper horizontal">
+                <label for="pos-x">
+                    <span>0</span>
+                    <span>800</span>
+                </label>
+                <input type="range" id="pos-x" min="0" max="800" value="0">
+            </div>
+        </div>
+        <div class="block">
+            <h3 class="block-heading">Size</h3>
+            <div class="wrapper horizontal">
+                <label for="size">
+                    <span>0</span>
+                    <span>2</span>
+                </label>
+                <input type="range" id="size" min="0" max="2" step="0.1">
+            </div>
+        </div>
+        <div class="block">
+            <h3 class="block-heading">Opacity</h3>
+            <div class="wrapper horizontal">
+                <label for="opacity">
+                    <span>0</span>
+                    <span>1</span>
+                </label>
+                <input type="range" id="opacity" min="0" max="1" step="0.01" value="1">
+            </div>
+        </div>
+        <div class="block">
+            <h3 class="block-heading">Shape Type</h3>
+            <div class="wrapper center">
+                <select id="shape-select">
+                    <option value="1">Square</option>
+                    <option value="2">Circle</option>
+                    <option value="3">Rhombus</option>
+                </select>
+                <button id="ok-shape">OK</button>
+            </div>
+        </div>
+        <div class="block">
+            <h3 class="block-heading">HEX</h3>
+            <div class="wrapper hex-container">
+                <label for="hex">#</label>
+                <input type="text" id="hex">
+            </div>
+        </div>
+        <div class="block">
+            <h3 class="block-heading">RGBA</h3>
+            <div class="wrapper rgba-container">
+                <input type="range" min="0" max="255" value="255" id="rgba-r"><label for="rgba-r">r</label>
+                <input type="range" min="0" max="255" value="0" id="rgba-g"><label for="rgba-g">g</label>
+                <input type="range" min="0" max="255" value="0" id="rgba-b"><label for="rgba-b">b</label>
+                <input type="range" min="0" max="1" value="1" step="0.01" id="rgba-a"><label for="rgba-a">a</label>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="block"></div>
+    </div>
+
+    <div style="color: aqua; font-size: 40px; position: absolute; top: 40rem;"><b> <a href="https://github.com/RAHULBAWA777">made with ❤ by RAHULBAWA </a></b></div>
+    <script src="script.js"></script>
+</body>
+</html>

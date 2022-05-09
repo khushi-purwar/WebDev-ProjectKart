@@ -1,0 +1,246 @@
+body{
+    background-color: darkgray;    
+}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Pacifico', cursive;
+}
+nav ul{
+    height: 21.8rem;
+    display: flex;
+    background-color: black;
+    color: white;
+    font-size: 5rem;
+    list-style-type: none;
+   align-items: center;
+}
+nav ul li{
+padding: 0 4.3rem;
+}
+.brand img{
+    padding: 1.1rem;
+    width: 20rem;
+}
+.brand{
+    display: flex;
+    align-items: center;
+}
+.container{
+    min-height: 140.5rem;
+    /* min-height: 140.5rem; */
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    border-radius: 1.2rem;
+    background-image:url("1626442057935-2.jpg") ;
+    background-repeat: no-repeat;
+    background-size: 250rem;
+}
+.containerTwo{
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    right:0;
+    min-width: 80rem;
+    /* min-height: 74; */
+    display: flex;
+}
+.songItem{
+    height: 12.5rem;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 0.75rem 0px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6.25rem;
+    /* width: 20vw; */
+    font-size: 3.125rem;    
+}
+.songItem img{
+    width: 7.06rem;   
+    margin: 0 5.625rem;
+    margin-right: 1px; 
+}
+.songlistplay{
+    margin: 0 1rem;
+}
+.timestamp{
+    margin:0 1em;
+}
+.progress{
+    position: sticky;
+    bottom: 0;
+    height: 27.5rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.icons{
+    margin-top: 0px;
+}
+.icons i{
+    cursor: pointer;
+}
+.songlistplay i{
+    cursor: pointer;
+}
+#bar{
+    cursor: pointer;
+    width: 300rem;
+    height: 9rem;
+    margin-left:37.5rem ;
+    
+}
+.gif img{
+    position: absolute;
+    left: 130rem;
+    top: 130rem;
+    width: 120rem;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+#masterSongName{
+    margin: 25vh 30px;
+    font-size: 7rem;
+    transform-origin: 0 0;
+    transform: rotate(90deg);
+}
+
+/* 33%zoom */
+@media (max-width:4700px) { 
+	html{
+        font-size: 75%;
+    }
+}
+
+@media (max-width:4600px) {
+   
+}
+
+@media (max-width:3700px) {
+	
+}
+/*50  */
+@media (max-width:3100px) {
+    html{
+        font-size: 50%;
+    }
+}
+/* 67% zoom */
+@media (max-width:2500px) {
+    html{
+        font-size: 37.5%;
+    }
+}
+
+ /* 75%  zoom */
+ @media (max-width:2100px) {
+    html{
+        font-size: 33.32%;
+    }
+	}	
+
+
+/* 80 */
+@media (max-width:2000px) {
+    html{
+        font-size: 31.24%;
+        /* min-height: 200rem; */
+    }
+}
+/* 90% zoom*/
+@media (max-width:1800px) {
+    html{
+        font-size: 27.8%;
+    }
+}
+
+
+@media (max-width:1600px) {
+    html{
+        font-size: 25%;
+    }
+}
+
+@media (max-width:1400px) {
+    html{
+        font-size: 22.75%;
+    }
+}
+@media (max-width:1300px) {
+    html{
+        font-size: 20%;
+    }
+}
+
+@media (max-width:1100px) {
+    html{
+        font-size: 16.68%;
+    }
+}
+@media (max-width:900px) {
+    html{
+        font-size: 14.3%;
+    }
+}
+
+@media (max-width:800px) {
+    html{
+        font-size: 12.5%;
+    }
+}
+@media (max-width:700px) {
+    html{
+        font-size: 10%;
+    }
+}
+@media (max-width:420px){
+    .container{
+        min-height: 500rem;
+        background-size: 400rem;
+        background-position:center;
+    }
+    .containerTwo{
+        display: flex;
+        flex-direction: column;
+        min-width: 258rem;
+        min-height: 153rem;
+    }
+    .songItem{
+        margin: 0.75rem 0px;
+        font-size: 3.125rem;    
+    }
+    #masterSongName{
+        position: absolute;
+        top: 260rem;
+        left: -150px;
+        font-size: 13rem;
+        transform-origin: 0 0;
+        transform: rotate(0deg);
+    }
+    .progress{
+        height: 37.5rem;
+    }
+    .gif img{
+        position: absolute;
+        left: 0rem;
+        top: 442rem;
+        width: 210rem;
+        opacity: 0;
+        transition: opacity 1s ease-in;
+    }
+    #bar{
+        cursor: pointer;
+        width: 180rem;
+        height: 9rem;
+        margin-left:37.5rem ;
+    }
+
+}

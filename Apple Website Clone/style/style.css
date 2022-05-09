@@ -414,4 +414,78 @@ body{
     left: 1px;
     z-index: -1;
 }
+.flex-cols{
+  
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+ 
+}
+.flex-cols h4{
+  margin-top: 3%;
+  font-size: 16px;
+  font-weight: 600;
+}
+.flex-cols p{
+  position: relative;
+ font-weight: 400;
+ text-decoration: none;
+ color: #000000;
+ font-size: 12px;
+ cursor: pointer;
+ margin-top: 2%;
+ margin-bottom: 2%;
 
+}
+
+.flex-cols p:after{
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: black;
+  width: 0%;
+  left: 0;
+  bottom: -4px;
+  
+
+}
+.flex-cols p:hover:after{
+  width: 100%;
+}
+
+.five-cols{
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.cont{
+  display: flex;
+  width: 100%;
+  margin-top: 4%;
+  
+  
+ 
+}
+.cont p{
+  margin-left: 10%;
+}
+hr{
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.copyright{
+  width: 100%;
+ 
+}
+.copyright p{
+  margin-left: 10%;
+  margin-bottom: 2%
+}
+@media (max-width:843px){
+  .flex-cols{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer_content{
+    text-align: center;
+  }
+}
