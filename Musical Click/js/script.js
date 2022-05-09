@@ -33,3 +33,21 @@ const orderedAudioObject = {
     o: WORK_IS,
     p: OVER
 }
+
+function activateAudioBasedOnKey(key) {
+    if (orderedAudioObject[key])
+        orderedAudioObject[key].play()
+}
+
+window.addEventListener("keydown", (e) => {
+    const pressedKey = e.key.toLowerCase();
+    activateAudioBasedOnKey(pressedKey)
+})
+
+const musicalButtons = document.querySelectorAll("ul li button");
+
+for (let x = 0; x < musicalButtons.length; x++) {
+    const currentButton = musicalButtons[x];
+    const key = currentButton.getAttribute("data-key");
+    currentButton.addEventListener("click", activateAudioBasedOnKey.bind(this, key));
+}
