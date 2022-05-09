@@ -1,0 +1,3 @@
+export const SET_ACTIVE_USER_ID = "SET_ACTIVE_USER_ID"
+export const SET_VALUE_TYPE = "SET_VALUE_TYPE"
+export const SEND_MESSAGE = "SEND_MESSAGE"

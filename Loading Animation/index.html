@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Loading Animation</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360">
+	<radialGradient id="gradient1" cx="89" cy="147" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#000" />
+      <stop offset="70%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+	<radialGradient id="gradient2" cx="197" cy="116" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#000" />
+      <stop offset="40%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+	<radialGradient id="gradient3" cx="90" cy="198" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#000" />
+      <stop offset="40%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+	<radialGradient id="gradient4" cx="163" cy="224" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#000"/>
+      <stop offset="25%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  <g stroke="#000" stroke-width="14" fill="none"  stroke-linecap="round" >
+		<g class="sparks" stroke-dasharray="33 500" stroke-dashoffset="402">
+			<line x1="180" y1="187" x2="23" y2="88"/>
+			<line x1="180" y1="187" x2="90" y2="29"/>
+			<line x1="180" y1="187" x2="180" y2="10"/>
+			<line x1="180" y1="187" x2="270" y2="29"/>
+			<line x1="180" y1="187" x2="337" y2="88"/>
+		</g>
+			<g stroke-width="12">
+				<ellipse class="orbit4" stroke="url(#gradient4)" transform="rotate(-60 180 180)" cx="180" cy="180" rx="95" ry="45"/>
+				<ellipse class="orbit3" stroke="url(#gradient3)" transform="rotate(-30 180 180)" cx="180" cy="180" rx="95" ry="52"/>
+				<ellipse class="orbit2" stroke="url(#gradient2)" transform="rotate(30 180 180)" cx="180" cy="180" rx="95" ry="65"/>
+			</g>
+			<ellipse class="orbit1" stroke="url(#gradient1)"  cx="180" cy="180" rx="97" ry="97"/>
+		</g>
+</svg>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

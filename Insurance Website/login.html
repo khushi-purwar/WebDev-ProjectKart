@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login / Signup</title>
+    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .big {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #7cb6ec;
+            background-image: linear-gradient(62deg, #7cb6ec 16%, #d1b1ec 67%);
+        }
+        
+        .main {
+            width: 350px;
+            height: 700px;
+            border: 2px solid red;
+            position: relative;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .upper {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px 10px;
+            opacity: 0;
+            background-color: #7cb6ec;
+            background-image: linear-gradient(62deg, #7cb6ec 16%, #d1b1ec 67%);
+        }
+        
+        .lower {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px 10px;
+            /* background-color:#CCE5FF; */
+            background-color: #7cb6ec;
+            background-image: linear-gradient(62deg, #7cb6ec 16%, #d1b1ec 67%);
+        }
+        
+        h3 {
+            font-size: 1.1em;
+            font-family: cursive;
+            color: white;
+        }
+        
+        .btn-grad {
+            background-image: linear-gradient( to right, #77a1d3 0%, #79cbca 51%, #77a1d3 100%);
+        }
+        
+        .btn-grad {
+            background-image: linear-gradient(to right, #6190E8 0%, #A7BFE8 51%, #6190E8 100%)
+        }
+        
+        .btn-grad {
+            margin: 10px;
+            padding: 12px 35px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            /* box-shadow: 0 0 20px #eee; */
+            border-radius: 5px;
+            display: block;
+        }
+        
+        .btn-grad:hover {
+            background-position: right center;
+            /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .formcard {
+            /* background-color: turquoise; */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 580px;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            gap: 60px;
+            align-items: center;
+            z-index: 1000;
+            transition: 0.5s all;
+        }
+        
+        .formcard h1 {
+            color: white;
+            font-family: cursive;
+            margin-top: 40px;
+        }
+        
+        .add {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            /* display: none;
+        position: absolute;
+        top: -1000px;
+        left: -1000px; */
+        }
+        
+        .subtract {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            position: absolute;
+            top: -1000px;
+            left: -1000px
+            /* display: none; */
+        }
+        
+        .username,
+        .email,
+        .number,
+        .password,
+        .cpassword,
+        .s,
+        .ss {
+            width: 100%;
+            height: 50px;
+            padding: 0px 20px;
+            font-size: 15px;
+            border-radius: 5px;
+            outline: none;
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .submit {
+            width: 120%;
+            height: 50px;
+            font-size: 18px;
+            border-radius: 5px;
+            color: rgb(167, 144, 144);
+            background: rgba(255, 255, 255, 0.2);
+            /* background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%); */
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            color: rgb(77, 74, 74);
+            /* color: white; */
+            /* transition: 0.5s; */
+            /* background-color: transparent; */
+            margin-top: 20px;
+            color: rgb(105, 105, 105);
+        }
+        
+        #two {
+            margin-bottom: 60px;
+            display: none;
+        }
+        
+        #ha {
+            margin-top: 120px;
+        }
+        
+        .circle1,
+        .circle2,
+        .circle3,
+        .circle4 {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            /* opacity: 0.5; */
+            filter: blur(2px);
+        }
+        
+        .circle1 {
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            top: -5%;
+            left: 5%;
+            animation: an 7s linear infinite;
+        }
+        
+        .circle2 {
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            top: -5%;
+            left: 50%;
+            animation: an 7s linear infinite;
+            animation-delay: 1s;
+        }
+        
+        .circle3 {
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            top: -5%;
+            left: 25%;
+            animation: an 7s linear infinite;
+            animation-delay: 3s;
+        }
+        
+        .circle4 {
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            top: -5%;
+            left: 85%;
+            animation: an 7s linear infinite;
+            animation-delay: 2s;
+        }
+        
+        @keyframes an {
+            from {
+                transform: translateY(-15px);
+                width: 40px;
+                height: 40px;
+            }
+            to {
+                transform: translateY(700px);
+                width: 60px;
+                height: 60px;
+            }
+        }
+        
+        header {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 170px;
+            transition: 0.4s ease;
+            z-index: 1000000;
+            /* background: rgb(208,12,51);
+background: linear-gradient(163deg, rgba(208,12,51,1) 29%, rgba(255,255,255,1) 81%); */
+        }
+        
+        .ourname {
+            color: black;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        
+        span {
+            font-size: 2em;
+            color: #ffffff;
+        }
+        
+        #spn2 {
+            margin-left: 15px;
+        }
+        
+        .navbar {
+            position: relative;
+        }
+        
+        .navbaritems a {
+            color: black!important;
+            text-decoration: none;
+            font-size: 1.4em;
+            font-weight: 500;
+            margin: 0px 15px;
+            transition: 0.4s ease;
+            position: relative;
+            top: 18;
+        }
+        
+        .navbaritems a::before {
+            content: "";
+            background: #D00C33;
+            width: 0%;
+            height: 3px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: 0.4s ease;
+        }
+        
+        .navbaritems a:hover::before {
+            width: 100%;
+        }
+        
+        @media (max-width: 1000px) and (min-width:701px) {
+            header {
+                padding: 15px 61px;
+                width: 97%;
+            }
+            .navbaritems a {
+                font-size: 1.1em;
+                margin: 0px 6px;
+            }
+            .ourname {
+                font-size: 1.2em;
+            }
+        }
+        
+        @media (max-width: 700px) {
+            header {
+                padding: 15px 15px;
+            }
+            .navbar {
+                display: none;
+            }
+            .navbar.active {
+                position: fixed;
+                border: 3px solid black;
+                width: 100%;
+                height: 100vh;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(1, 1, 1, 0.5);
+                backdrop-filter: blur(2px);
+            }
+            .navbar.active .navbaritems {
+                backdrop-filter: blur(4px);
+                background: transparent;
+                width: 400px;
+                height: 400px;
+                margin: 20px;
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                box-shadow: 0 5px 50px rgb(1 1 1 /20%);
+                font-size: 14px;
+            }
+            .navbaritems a {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1.2em;
+                margin: 20px;
+                font-weight: bold;
+                color: white !important;
+            }
+            .menunav {
+                background: url("menu-outline.svg") no-repeat;
+                background-position: center;
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+                transition: 0.4s ease;
+                z-index: 1000000;
+            }
+            .menunav.active {
+                z-index: 1000000;
+                transition: 0.4s ease;
+                background: url("close-outline.svg") no-repeat;
+                background-position: center;
+            }
+            .rainbow {
+                opacity: 0;
+            }
+            .ourname {
+                font-size: 1.1em;
+            }
+        }
+        
+        .rainbow {
+            background: rgb(52, 43, 40);
+            background: linear-gradient( 90deg, rgba(52, 43, 40, 1) 2%, rgba(212, 64, 32, 1) 20%, rgba(71, 175, 93, 1) 38%, rgba(32, 139, 212, 1) 54%, rgba(190, 212, 32, 1) 72%, rgba(192, 32, 212, 1) 89%);
+            position: absolute;
+            width: 80%;
+            top: 8%;
+            height: 3px;
+            left: 10%;
+            height: 3px;
+            z-index: 1000000;
+            transition: 0.5s ease;
+        }
+        
+        @media(max-width:1150px) and (min-width:1000px) {
+            .ourname {
+                font-size: 1.5em;
+            }
+            .navbaritems a {
+                font-size: 1.4em;
+                margin: 0px 7px;
+            }
+        }
+        
+        @media(max-width:300px) {
+            .ourname {
+                font-size: 0.9em;
+            }
+        }
+        
+        .ourname {
+            cursor: pointer;
+        }
+        
+        @media(min-height:1000px)and (min-width:600px) {
+            .ourname {
+                font-size: 1.4em;
+            }
+            .rainbow {
+                top: 8%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p class="ourname" id="ourname"><span>P</span>HAM<span id="spn2">I</span>nsurances</p>
+        <div class="menunav"></div>
+        <div class="navbar">
+            <div class="navbaritems">
+                <a href="index.html" style="color:black; font-weight: 600;  ">Home</a>
+                <a href="profile.html" style="color:black; font-weight: 600; ">MyProfile</a>
+                <a href="aboutUs.html" style="color:black; font-weight: 600; ">About Us</a>
+                <!-- <a href="" style="color:black; font-weight: 600; ">AboutUs</a> -->
+            </div>
+        </div>
+    </header>
+    <script>
+        let w = document.getElementById("ourname");
+        w.addEventListener("click", () => {
+            location.href = "index.html"
+        })
+    </script>
+    <script>
+        let btn = document.querySelector(".menunav");
+        let nav = document.querySelector(".navbar");
+        btn.addEventListener("click", () => {
+            btn.classList.toggle("active");
+            nav.classList.toggle("active");
+        });
+    </script>
+    <div class="circle1">
+
+    </div>
+    <div class="circle2">
+
+    </div>
+    <div class="circle3">
+
+    </div>
+    <div class="circle4">
+
+    </div>
+    <div class="big">
+        <div class="main">
+            <div class="upper">
+                <h3>Create New Account Now..</h3>
+                <button class="btn-grad" id="btnone">SIGN UP</button>
+            </div>
+            <div class="lower">
+                <h3>Already have an account ?</h3>
+                <button class="btn-grad" id="btntwo">LOGIN</button>
+            </div>
+            <div class="formcard">
+                <h1 id="one" style="border-bottom: 2px solid white;">SIGN UP</h1>
+                <form action="/signup" method="POST" class="add">
+                    <input type="text" class="username" name="username" placeholder="Enter You Name" />
+                    <input type="email" class="email" placeholder="Enter Your Email" name="email" />
+                    <input type="number" class="number" name="number" placeholder="Enter You Number" />
+                    <input type="password" class="password" name="passord" placeholder="Enter password" />
+                    <input type="password" class="cpassword" name="cpassord" placeholder="Confirm password" />
+                    <input type="submit" class="submit" value="Sign Up" />
+                </form>
+
+                <h1 id="two" style="border-bottom: 2px solid white;">LOGIN</h1>
+                <form action="/login" method="POST" class="subtract">
+                    <input type="text" name="userid" placeholder="Enter Your Username" class="s" required />
+                    <input class="ss" type="password" name="passwordid" placeholder="Enter Your Password" required />
+                    <input type="submit" class="submit" value="Login" id="ha" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        let btn1 = document.getElementById('btnone');
+        let btn2 = document.getElementById('btntwo');
+        let upper = document.querySelector('.upper');
+        let lower = document.querySelector('.lower');
+        let form1 = document.querySelector('.add');
+        let form2 = document.querySelector('.subtract');
+        let oneheading = document.querySelector('#one');
+        let twoheading = document.querySelector('#two');
+        let formcard = document.querySelector('.formcard');
+
+        console.log(btn2);
+        btn2.addEventListener('click', () => {
+            console.log('clicked');
+            formcard.style.bottom = '0';
+            formcard.style.left = '0';
+            formcard.style.top = '17%'
+            lower.style.opacity = '0';
+            upper.style.opacity = '1';
+            oneheading.style.display = 'none'
+            twoheading.style.display = 'block'
+            form1.style.position = 'absolute'
+            form1.style.top = '-1000px'
+            form1.style.left = '-1000px'
+            form2.style.position = 'static'
+            form2.style.top = '0'
+            form2.style.left = '0'
+
+
+        })
+        btn1.addEventListener('click', () => {
+            console.log('clicked');
+
+            formcard.style.left = '0';
+            formcard.style.top = '0'
+
+            lower.style.opacity = '1';
+            upper.style.opacity = '0';
+            oneheading.style.display = 'block'
+            twoheading.style.display = 'none'
+
+            form1.style.position = 'static'
+            form1.style.top = '0px'
+            form1.style.left = '0px'
+
+            form2.style.position = 'absolute'
+            form2.style.top = '-1000px'
+            form2.style.left = '-1000px'
+
+
+        })
+    </script>
+</body>
+
+</html>
