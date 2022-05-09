@@ -1,16 +1,11 @@
-### Project title
-CV Screener
+# Function Plotter
 
-### Project Description
-This is a resume screening website that tells us employee details along with their skills, name, age, city, languagea and show us their image. We can view different employee details by clicking next button. At the end website is resert to first employee details.
- 
+A calculator used to perform arithmetic operations on complex numbers.
 
-### Stack:  
-And in order to tick the check box just put x inside them for example - [x] like this. Please delete options that are not relevant.
+- Free to adjust ranges of X & Y.
 
-- [x] Html
-- [x] CSS
-- [x] JavaScript
+## Built with :-
 
-
-
+- HTML
+- CSS
+- Javascript
