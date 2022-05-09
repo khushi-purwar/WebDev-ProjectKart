@@ -60,3 +60,52 @@ li {
     align-items: center;
     list-style: none;
 }
+
+button {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 0;
+    color: white;
+    position: relative;
+}
+
+button.left::before,
+button.right::before {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    background-color: #48ff0d;
+    transition: 0.5s;
+}
+
+button.left::before {
+    left: 0px;
+}
+
+button.right::before {
+    right: 0px;
+}
+
+button:hover::before {
+    width: 100% !important;
+}
+
+button p {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 2px solid white;
+    font-size: 1rem;
+}
