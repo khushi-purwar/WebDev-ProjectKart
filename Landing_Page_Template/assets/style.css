@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #83a4d4;
+    /* fallback for old browsers */
+    background: linear-gradient(to right, #b6fbff, #83a4d4);
+}
+
+header {
+    display: flex;
+    position: fixed;
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    font-size: 1.5rem;
+    background-color: black;
+    color: #eee;
+    border-bottom: 1px solid black;
+    z-index: 2;
+}
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+.toggle-button {
+    position: absolute;
+    top: 3.5rem;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    margin-right: 2rem;
+    border-radius: 5px;
+    background: #eee;
+}
+
+#header-img {
+    margin-left: 15px;
+    margin-right: 100rem;
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  display: block;
+}
+
+/* .navbar-links li:hover {
+  background-color: var(--text-color);
+} */
+
+
+
+/* li {
+    display: inline-block;
+    padding: 0 20px;
+    font-weight: bold;
+} */
+
+.nav-link {
+    text-decoration: none;
+    color: #eee;
+}
+
+.contact {
+    padding: 15px;
+    margin-right: 15px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    background: #6EECEE;
+    font-weight: bold;
+
+}
+@media (max-width: 480px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        font-size: 1.5rem;
+        padding: 1rem 1.2rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    #nav-bar {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        font-size: 1.8rem;
+    }
+}
+
+h1 {
+    color: #04319b;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.container {
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    color: #201e20;
+    font-size: 1.8rem;
+    top: 100px;
+    padding:  1rem 5rem;
+    z-index: 1;
+}
+
+h2 {
+    color: #04319b;
+    font-size: 3rem;
+    margin-bottom: 1.6rem;
+}
+
+.about {
+    margin-top: 2rem;
+}
+
+#appointment>h2 {
+    color: #04319b;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.procedures {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+}
+
+#email {
+    padding: 5px 10px;
+    width: 40%;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn {
+    width: 15%;
+    border: none;
+    padding: 1rem;
+    margin-top: 15px;
+    color: #eee;
+    background: #04319b;
+    border-radius: 10px;
+}
+
+#appointment {
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+}
+
+.procedures {
+    padding: 2rem;
+    margin: 0 auto;
+    border: 2px solid #04319b;
+}
+
+#services-heading {
+    text-align: center;
+}
+
+.heading {
+    font-weight: 700;
+    text-align: center;
+    font-size: 2rem;
+    color: #04319b;
+}
+
+.price {
+    font-weight: bold;
+}
+
+#how-it-works {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+@media(max-width: 600px) {
+    .home{
+        display: block;
+    }
+    header {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    li {
+        display: block;
+        margin: 5px 0;
+        padding: 5px 0;
+    }
+
+    h1 {
+        margin-top: 1rem;
+        font-size: 2.5rem;
+    }
+    .home p{
+        margin-bottom: 2.5rem;
+    }
+    .home {
+        font-size: 1.3rem;
+    }
+
+    #appointment>h2 {
+        font-size: 2.2rem;
+    }
+
+    #appointment {
+        font-size: 1.3rem;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .procedures {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+    }
+}

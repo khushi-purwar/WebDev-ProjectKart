@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Landing page template</title>
+</head>
+
+<body>
+    <nav id="nav-bar">
+        <header id="header">
+            <img src="assets/images/logo.jpeg"
+                id="header-img" alt="logo">
+            <div class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <button class="contact">Contact</button>
+                </ul>
+            </div>
+        </header>
+    </nav>
+    <div class="container">
+        <div class="home" id="home">
+            <div>
+                <h1>Creating beautiful smiles everyday</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra diam imperdiet, tincidunt
+                    neque
+                    vel, volutpat nibh.
+                    Aenean sed nisl blandit, iaculis dui vitae, iaculis orci. Sed molestie vestibulum massa, vel maximus
+                    magna sodales eu. Maecenas ullamcorper, elit vel tincidunt cursus, mauris ligula laoreet lacus, at
+                    suscipit tortor nulla ac lorem. Sed facilisis enim nec efficitur mollis.</p><br>
+                <p>Sed neque elit, accumsan sed mollis eget, semper sed felis. Quisque faucibus varius metus, vitae
+                    pellentesque enim
+                    euismod at. Aenean in porttitor justo, at bibendum dolor. Vestibulum eu finibus orci. Phasellus
+                    gravida eleifend tellus,
+                    quis dignissim enim tempus id. Donec at rhoncus sapien. Orci varius natoque penatibus et magnis dis
+                    parturient montes,
+                    nascetur ridiculus mus. Suspendisse potenti.
+                </p>
+            </div>
+            <img src="assets/images/img-1.jpeg"
+                class="image">
+        </div>
+        <hr>
+        <section class="about home" id="about">
+            <img src="assets/images/img-2.jpeg"
+                class="image" id="about-image">
+            <div>
+                <h2>About Us</h2>
+                <p>
+                    Fusce non accumsan mauris. Fusce commodo risus sed congue sagittis. Etiam mi turpis, sodales ac
+                    dolor
+                    in, pulvinar mattis quam.usce non accumsan mauris. Fusce commodo risus sed congue sagittis. Etiam mi
+                    turpis, sodales ac dolor in, pulvinar mattis quam. Vivamus laoreet libero eget consectetur
+                    ullamcorper.
+                    Vivamus vel turpis ac orci viverra viverra eu rhoncus nisl.</p>
+            </div>
+        </section>
+        <hr>
+        <h2 id="services-heading">Services</h2>
+        <section class="services" id="services">
+            <div class="procedures">
+                <div class="heading">Dental Cleaning</div>
+                <span class="price">$100-$200</span>
+                <p>Lorem ipsum</p>
+                <p>Lorem ipsum</p>
+                <p>Lorem ipsum
+                <p>
+            </div>
+            <div class="procedures">
+                <div class="heading">Tooth Extraction</div>
+                <span class="price">$750-$1600</span>
+                <p>Lorem ipsum</p>
+                <p>Lorem ipsum</p>
+                <p>Lorem ipsum
+                <p>
+            </div>
+            <div class="procedures">
+                <div class="heading">Tooth Fillings</div>
+                <span class="price">$1500-$2500</span>
+                <p>Lorem ipsum</p>
+                <p>Lorem ipsum</p>
+                <p>Lorem ipsum
+                <p>
+            </div>
+            <div class="procedures">
+                <div class="heading">Dental Implants</div>
+                <span class="price">$2500-$6000</span>
+                <p>Lorem ipsum</p>
+                <p>Lorem ipsum</p>
+                <p>Lorem ipsum
+                <p>
+            </div>
+        </section>
+        <hr>
+        <section id="how-it-works">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/g2EoOZQYVbQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen id="video"></iframe>
+        </section>
+        <section id="appointment">
+            <h2>Want to book an Appointment?</h2>
+            <p>Send an email and we'll get back to you</p>
+            <br>
+            <form id="form">
+                <input name="email" id="email" type="email" placeholder="Enter your email address" required /><br>
+                <input id="submit" type="submit" value="Book" class="btn" />
+            </form>
+        </section>
+    </div>
+    <script>
+        const toggleButton = document.getElementsByClassName("toggle-button")[0];
+        const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+        toggleButton.addEventListener("click", () => {
+            navbarLinks.classList.toggle("active");
+        });
+    </script>
+</body>
+
+</html>
