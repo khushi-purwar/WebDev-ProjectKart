@@ -1,0 +1,4 @@
+{
+  "mongoURI": "Your Mongo Connection String",
+  "jwtSecret": "Your Jwt Secret"
+}
