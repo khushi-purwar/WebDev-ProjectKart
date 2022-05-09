@@ -41,3 +41,22 @@ body::before {
         background-color: rgba(0, 0, 0, 0.8);
     }
 }
+
+ul {
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
