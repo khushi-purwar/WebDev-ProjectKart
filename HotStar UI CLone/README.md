@@ -4,6 +4,10 @@
 
 ## Tech Stack:
 **HTML,CSS,JS**
-## Screenshot:
+
 
 ## Demo:
+
+
+https://user-images.githubusercontent.com/77873383/167391412-97a5e70b-a192-430b-bb36-64b841c22f63.mp4
+
