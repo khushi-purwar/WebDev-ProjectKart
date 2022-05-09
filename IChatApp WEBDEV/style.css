@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+height: 100vh;    
+}
+#img{
+    width: 20em;
+    display: block;
+    margin: auto;
+}
+.container{
+    max-width: 40%;
+    background-image: linear-gradient(white, rgb(95, 88, 88));
+    margin: auto;
+    height: 70vh;
+    margin-bottom: 2em;
+    overflow-y: auto;
+    border-radius: 90px;
+}
+.message{
+background-color: bisque;
+width: 30%;
+margin: 2em 1em;
+padding: 20px;
+font-size: 50px;
+border: black solid;
+border-radius: 20px;
+font-family: 'Pacifico', cursive;
+}
+.right{
+    float: right;
+    clear: both;
+}
+.left{
+    float: left;
+    clear: both;
+}
+#send-container{
+    display: block;
+    margin: auto;
+   text-align: center;
+   width: 40%;
+   display: flex;
+   justify-content: center;
+  align-items: center;
+}
+#messageInp{
+    width: 85%;
+    border: 2px solid black;
+    border-radius: 10px;
+   height: 2em;
+   font-size: 50px;
+}
+.btn{
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: rgb(20, 92, 247);
+    border-radius: 10px;
+    height: 6rem;
+    width: 7rem;
+    margin-left: 10px;
+    font-size: 50px;
+}

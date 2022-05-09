@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* reseting base font-size to 10px */
+  scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-size: 1.6em; /* base font size is 16px */
+  line-height: 1.4;
+  font-family: -apple-system, sans-serif, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  background-color: white;
+  color: rgba(0, 0, 0, 0.9);
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+}
+
+/* ———————————————————————— */
+
+.canvasElm {
+  box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.1);
+  background: #222222;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.titles {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  color: rgba(255, 255, 255, 1);
+  max-width: 240px;
+  line-height: 1.2;
+  z-index: 2;
+  pointer-events: none;
+}
+.titles h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.titles h3 {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.6;
+}

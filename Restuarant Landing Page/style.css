@@ -1,0 +1,251 @@
+body {
+    overflow: hidden;
+    overflow-y: scroll;
+    -ms-overflow-style: none;   
+    scrollbar-width: none; 
+  }
+  
+/* Hide scrollbar */
+
+  body::-webkit-scrollbar {
+      display: none;
+  }
+  
+  /* section */
+  
+  .main {
+    display: flex;
+    padding: 1em ;
+  }
+  
+  .container h1 {
+    font-family: 'Abril Fatface';
+    display: block;
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+  }
+
+  h2 {
+      display: none;
+  }
+
+  .column i {
+      display: none;
+  }
+
+  .container__right{
+    padding: 3rem 2rem;
+  }
+  
+  /* left navigations */
+  .container a {
+    text-decoration: none;
+    color: #868686;
+    font-family: Roboto;
+    display: block;
+  }
+  
+  .container > div > a {
+    padding: 1.6rem 0;
+  }
+  
+  /* Strike inside a tag */
+  p {
+    text-decoration: line-through; 
+  }
+  
+  #tag {
+    text-decoration-color: #FF4E4E;
+  }
+  
+  /* middle container using flex */
+  
+  .middle {
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+    justify-content: space-between;
+  }
+
+  .left-side h1 {
+    font-size: 3rem;
+    font-family: 'Abril Fatface';
+    line-height: 5rem;
+  }
+  
+  .right-side h3 {  
+    font-family: Roboto;
+    color: #868686;
+    font-weight: 300;
+    line-height: 1.5rem;
+  }
+  
+  hr {
+    background-color: #FF4E4E;
+    border:none; 
+    color: #FF4E4E;
+    width: 20%;
+    text-align: left;
+    margin-left: 0;
+    height: 1.5px;
+  }
+  
+  .dishes {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 0 4rem;
+  }
+  
+  .cards {
+    padding: 1em;
+    margin: 1em ;
+    width: 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px   inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,   rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+  
+  .cards img {
+    width: 110px;
+    border-radius: 50%;
+    height: 110px;
+  }
+  
+  .cards h4 {
+    text-align: center;
+    margin: 1em 0;
+    font-family: Roboto;
+    font-weight: 900;
+  }
+  
+  button {
+    border-radius: 500px;
+    padding: .8rem 2.7rem;
+    border: none;
+    margin-top: 1rem;
+    color: #fff;
+    background-color:#FF4E4E;
+    outline: 0;
+    cursor: pointer;
+  }
+  
+  #footer {
+      display: none;
+  }
+
+  @media screen and (max-width: 900px) {
+    
+    .right-side h3 {
+        display: none;
+      }
+  }
+
+  @media screen and (max-width: 680px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .container__right {
+        padding: 0;
+    }
+
+    .navbar{
+        display: none;
+    }
+    button {
+        display: none;
+    }
+    .right-side h3 {
+        display: none;
+    }
+
+    .left-side h1 {
+        margin: 0;
+        font-size: 2em;
+        line-height: 1.3em;
+    }
+
+    .dishes {
+        padding: 4rem 0 4rem 2rem;
+    }
+
+    .middle {
+        padding: 1rem 0;
+        justify-content: center;
+    }
+
+    .cards {
+        padding: .6em;
+        margin: .6em ;
+        width: 7em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px   inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,   rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+
+    #noodles {
+        display: none;
+    }
+
+    .cards h4 {
+        font-size: .8rem;
+        font-family: Roboto;
+        font-weight: 500;
+    }
+      
+    .cards img {
+        width: 90px;
+        border-radius: 50%;
+        height: 90px;
+    }
+
+    .container h1 {
+        display: none;
+    }  
+
+    .column {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .column h2 {
+        display: flex;
+        font-family: 'Abril Fatface';
+    }
+
+    .column i {
+        display: flex;
+        color: #FF4E4E;
+        font-size: 24px;
+        margin: 1.5rem 1rem;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer h4 {
+        font-family: Roboto;
+        color: #868686;
+        font-weight: 300;
+        line-height: 1.5rem;
+    }
+
+    #footer hr{
+        background-color: #FF4E4E;
+        width: 10%;
+        border:none; 
+        color: #FF4E4E;
+        height: 2px;
+        text-align: right; 
+        margin: 0 15rem 0 0;
+    }
+  }
