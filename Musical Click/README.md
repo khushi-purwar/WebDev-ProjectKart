@@ -23,6 +23,6 @@ Musical Click is a collection of music every click make new sound
 
 ## 📷 Screenshots
 
-![ss1]()
+![ss1](./images/music-clickss.png)
 
 
