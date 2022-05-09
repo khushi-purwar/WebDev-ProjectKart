@@ -27,7 +27,7 @@ git clone https://github.com/<your-github-username>/WebDev-ProjectKart
 cd WebDev-ProjectKart/Phone Number Locator
 ```
 
-**4.** Navigate to index.html and click on `Go Live`
+**4.** Navigate to popup.html and click on `Go Live`
 
 </br>
 
