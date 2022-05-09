@@ -1,0 +1,42 @@
+Optimist-Pessimist|
+Float - Sink|
+Fat - Skinny|
+Hostile-Friendly|
+Dense- Sparse~
+Divide- Join|
+Hungry - Full|
+Gentle - Rough|
+Raise - Lower|
+Rise - Sink|
+Rough - Smooth~
+Extinct-Abundant|
+Sour - Sweet|
+Stay - Leave|
+Tidy - Messy|
+Ugly - Beautiful|
+White - Black~
+Wild - Tame|
+Win - Lose|
+Well - Sick|
+Wet - Dry|
+Young - Old~
+Agree -	Disagree|
+Arrive -Depart|
+Brave -	Coward|
+Belief -Disbelief|
+Cruel-  Kind|
+Dry	 -  Wet|
+Evil -	Good~
+Foolish-Wise|
+Famous- Ordinary|
+Faithful-Unfaithful|
+Fresh -	Stale|
+Alone -	Together|
+Dull -	Interesting|
+Few	  -  Many~
+Follow - Lead|
+Forget - Remember|
+Fat	  -  Thin|
+Far	  -  Near|
+Gain -	Loss|
+Kind  -  Cruel~
