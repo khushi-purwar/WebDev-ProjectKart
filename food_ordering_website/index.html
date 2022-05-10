@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Paradise | Online Food Order</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/c1c97e61e2.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./img/mylogi.png" type="image/x-icon">
+    <link rel="stylesheet" media="screen and (max-width:1400px)" href="./css/phone.css">
+</head>
+<body>
+    <nav id="navbar" class="nav h-list" >
+        <div id="logo" class="pic v-list">
+            <img src="./img/toplogo.jpg" alt="MyOnlineMeal.com">
+        </div>
+        <ul class="navlist v-list" >
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#service-container">Service</a></li>
+            <li class="item"><a href="#client-section">Our Clients</a></li>
+            <li class="item"><a href="#contact">Contact us</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section id="home">
+        <h1 id="h-primary">Welcome to Food Paradise!</h1>
+        <p>If you are running short of food, you can simply order food online from Food Paradise and have the food home delivery done right to your location.</p>
+        <button class="btn"><a href="./static/test.html">Our Menu</a></button>
+    </section>
+    <section id="service-container">
+        <h1 class="h-primarycentre">Our Services</h1>
+        <div id="services">
+            <div class="box" id="box1">
+                <img id="pizza" src="./img/vv.png" alt="">
+                <h2 class="h-secondarycentre">Food Catering</h2>
+                <P class="centre">We provide best catering service. Food prepared here are good in quality and fully hygenic.You can enjoy food at our place with your family friends and special ones.</P>
+            </div>
+            <div class="box" id="box2">
+                <img id="burger" src="./img/bur.png" alt="">
+                <h2 class="h-secondarycentre">Bulk Ordering</h2>
+                <P class="centre">We also provide facilities for organizing events like birthday,festivals,different function.Special attention and services are given to guests of particular event.</P>
+            </div>
+            <div class="box" id="box3">
+                <img id="man" src="./img/logo7.jpg" alt="">
+                <h2 class="h-secondarycentre">Food Delivery</h2>
+                <P class="centre">Don't want to step out of your house...You can also order our food online and enjoy it at comfort of your home with your family members.Our Delivery service is fast and safe.</P>
+                <div class="icon">
+
+                    <i class="fa fa-phone"></i><span>123456789</span>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-client">Our Clients</h1>
+        <div id="clients">
+            <div class="clientsItem">
+                <img src="./img/bb.png" alt="">
+            </div>
+            <div class="clientsItem">
+                <img src="./img/hp.png" alt="">
+            </div>
+            <div class="clientsItem">
+                <img src="./img/mic.png" alt="">
+            </div>
+            <div class="clientsItem">
+                <img src="./img/skupe.png" alt="">
+            </div>
+        </div>
+    </section>
+   <section id="contact">
+       <h1 class="h-primarycentre">Contact us</h1>
+       <div id="contact-box">
+        <form action="#" class="">
+                <input type="text" id="name" placeholder="Enter your Name">
+                <input type="email" id="email" placeholder="Enter your Email">
+                <input type="number" id="phone" placeholder="Enter your Phone Number">
+                <textarea name="area" id="area" cols="30" rows="10" placeholder="Write about us"></textarea>
+            <button class="btn last" onclick="run()">Submit</button>
+        </form>
+       </div>
+   </section>
+   <footer>
+       <div class="last">
+           Copyright&copy;  www.FoodParadise.com | All right reserved!
+       </div>
+   </footer>
+   <script src="./index.js"></script>
+   <script>
+       let last =document.getElementsByClassName('last');
+       function run(){
+           alert("Your form is successfully submitted")
+       }
+   </script>
+</body>
+</html> 

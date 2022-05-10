@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/mylogi.png" type="image/x-icon">
+    <title>Food Paradise | Our Menu</title>
+    <style>
+        body {
+            background: rgba(0, 0, 0, 0.7) url("../img/rest.jpeg");
+            background-size: cover;
+            background-blend-mode: darken;
+        }
+
+        h1 {
+            margin: 16px 0px;
+            font-size: 4.6rem;
+            font-weight: bold;
+            color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item2 {
+            display: flex;
+            margin-top: 32px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .food p {
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 8px 0px;
+            font-size: 40px;
+            font-weight: bold;
+            color: rgb(206, 206, 191);
+        }
+
+        .food {
+            margin: 35px 160px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+
+            height: 300px;
+            width: 300px;
+            border: 4px solid black;
+            border-radius: 58px
+        }
+
+        @media only screen and (max-width:1253px) {
+            .item {
+                flex-wrap: wrap;
+                align-items: center;
+            }
+
+            .item2 {
+                flex-wrap: wrap;
+                align-items: center;
+            }
+
+            .food {
+                margin: 35px 30px;
+            }
+
+            img {
+                height: 250px;
+                width: 250px
+            }
+            .container h1{
+                font-size: 3.1rem;
+            }
+            .food p{
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Our Menu</h1>
+        <div class="item">
+            <div class="food">
+                <img src="../img/pizza.jpeg" alt="">
+                <p>Pizza : Rs.200</p>
+            </div>
+            <div class="food">
+                <img src="../img/burger.jpeg" alt="">
+                <p>Burger : Rs.90</p>
+            </div>
+        </div>
+        <div class="item2">
+            <div class="food">
+                <img src="../img/cake.jpeg" alt="">
+                <p>Cake : Rs.150</p>
+            </div>
+            <div class="food">
+                <img src="../img/drink.jpeg" alt="">
+                <p>Beverages : Rs.100</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
