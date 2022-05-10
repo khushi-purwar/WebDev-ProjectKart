@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plot views</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" /> -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script> -->
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 80vh;
+            width: 100vw;
+            background-color: #f3f3f3;
+        }
+
+        .tooltip-inner {
+            background-color: #FFBF00;
+            color: black;
+            border-radius: 10px;
+        }
+
+        img {
+            width: 40px;
+        }
+
+        svg {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        path {
+            fill: transparent;
+            transition: .5s fill;
+        }
+
+        path:hover {
+            fill: #FFBF00;
+            stroke: #fff
+        }
+
+        .button-73 {
+            appearance: none;
+            background-color: #FFFFFF;
+            border-radius: 40em;
+            border-style: none;
+            box-shadow: #ADCFFF 0 -12px 6px inset;
+            box-sizing: border-box;
+            color: #000000;
+            cursor: pointer;
+            display: inline-block;
+            font-family: -apple-system, sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: -.24px;
+            margin: 0;
+            outline: none;
+            padding: 1rem 1.3rem;
+            quotes: auto;
+            text-align: center;
+            text-decoration: none;
+            transition: all .15s;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            position: absolute;
+            left: 40px;
+            top: 80px;
+        }
+
+        .button-73:hover {
+            background-color: #FFC229;
+            box-shadow: #FF6314 0 -6px 8px inset;
+            transform: scale(1.125);
+        }
+
+        .button-73:active {
+            transform: scale(1.025);
+        }
+
+        @media (min-width: 768px) {
+            .button-73 {
+                font-size: 1.5rem;
+                padding: .75rem 2rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Modal -->
+    <!-- PLOT 1 -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Plot-1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="color: red;" class="text-center danger">
+                        <h1>SOLD !!</h1>
+                    </div>
+                    <div class="text-center ">
+                        <h2>Per sq yds = Rs 6000/-</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PLOT-2 -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Plot-2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="color: red;" class="text-center danger">
+                        <h1>SOLD !!</h1>
+                    </div>
+                    <div class="text-center ">
+                        <h2>Per sq yds = Rs 6000/-</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PLOT-3 -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Plot-3</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="color: green;" class="text-center danger">
+                        <h1>AVAILABLE !!</h1>
+                    </div>
+                    <div class="text-center ">
+                        <h2>Per sq yds = Rs 6000/-</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PLOT-4 -->
+    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Plot-4</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="color: green;" class="text-center danger">
+                        <h1>AVAILABLE !!</h1>
+                    </div>
+                    <div class="text-center ">
+                        <h2>Per sq yds = Rs 6000/-</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PLOT-5 -->
+    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Plot-5</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="color: red;" class="text-center danger">
+                        <h1>SOLD !!</h1>
+                    </div>
+                    <div class="text-center ">
+                        <h2>Per sq yds = Rs 6000/-</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- PLOT-16 -->
+    <div class="modal fade" id="exampleModal16" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Plot-16</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="color: green;" class="text-center danger">
+                        <h1>AVAILABLE !!</h1>
+                    </div>
+                    <div class="text-center ">
+                        <h2>Per sq yds = Rs 6000/-</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PLOT-17 -->
+    <div class="modal fade" id="exampleModal17" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Plot-17</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="color: red;" class="text-center danger">
+                        <h1>SOLD !!</h1>
+                    </div>
+                    <div class="text-center ">
+                        <h2>Per sq yds = Rs 6000/-</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PLOT-18 -->
+    <div class="modal fade" id="exampleModal18" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Plot-18</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="color: green;" class="text-center danger">
+                        <h1>AVAILABLE !!</h1>
+                    </div>
+                    <div class="text-center ">
+                        <h2>Per sq yds = Rs 6000/-</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PLOT-19 -->
+    <div class="modal fade" id="exampleModal19" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Plot-19</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="color: green;" class="text-center danger">
+                        <h1>AVAILABLE !!</h1>
+                    </div>
+                    <div class="text-center ">
+                        <h2>Per sq yds = Rs 6000/-</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PLOT-20 -->
+    <div class="modal fade" id="exampleModal20" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Plot-20</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="color: red;" class="text-center danger">
+                        <h1>SOLD !!</h1>
+                    </div>
+                    <div class="text-center ">
+                        <h2>Per sq yds = Rs 6000/-</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+    <div id="sideBar">
+        <nav class="navbar navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://github.com/RAHULBAWA777">made with ❤ by RAHULBAWA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a href="https://github.com/RAHULBAWA777">made with ❤ by RAHULBAWA</a></h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html" target="_self">3-D
+                                    View</a>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="svg.html" target="_self">2-D
+                                    View</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- <button onclick="backBtn()"  role="button">&larr; Go Back</button> -->
+    <button class="button-73" onclick="gb()"> &larr; Go Back</button>
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <svg width="100%" height="100%" version="1.1" viewBox="0 0 210 297" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <image x="-90.48" y="31.594" width="427.66" height="256.9" preserveAspectRatio="none"
+            xlink:href="Screenshot (268).png" />
+        <g fill="#FFBF00" opacity="0.8" stroke-width="1.26458px">
+
+            <!-- PATHS -->
+            <path data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-toggle="tooltip" data-bs-html="true"
+                data-bs-placement="left" title="<img src='loacation icon.png'>Commercial Plot 1"
+                d="m50.797 200.51-62.492 43.245 24.241 40.93 75.16-56.035z" stroke="transparent" stroke-opacity="3" />
+
+            <path data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-toggle="tooltip" data-bs-html="true"
+                data-bs-placement="left" title="<img src='loacation icon.png'>Commercial Plot 2"
+                d="m15.227 173.59-49.823 30.941 22.78 36.667 60.664-42.148z" stroke="transparent" />
+            <g stroke="transparent">
+
+                <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left"
+                    title="<img src='loacation icon.png'> Non-Commercial Plot 25"
+                    d="m-18.394 148.01-35.327 19.856 18.638 31.916 47.995-27.896z" />
+
+                <path data-bs-toggle="modal" data-bs-target="#exampleModal3" data-bs-toggle="tooltip"
+                    data-bs-html="true" data-bs-placement="left" title="<img src='loacation icon.png'>Commercial Plot 3"
+                    d="m43.001 157.39-27.774 16.202 75.039 54.695 24.85-20.587z" />
+
+                <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left"
+                    title="<img src='loacation icon.png'> Non-Commercial Plot 24"
+                    d="m-15.349 147.88 26.069-13.156 32.281 22.658-27.53 13.643z" />
+
+                <path d="m43.001 157.39" />
+
+                <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left"
+                    title="<img src='loacation icon.png'> Non-Commercial Plot 23"
+                    d="m67.364 141.43-31.307-19.978-23.145 11.938 30.698 21.44z" />
+
+
+                <path d="m67.364 141.43" />
+
+                <path data-bs-toggle="modal" data-bs-target="#exampleModal4" data-bs-toggle="tooltip"
+                    data-bs-html="true" data-bs-placement="left" title="<img src='loacation icon.png'>Commercial Plot 4"
+                    d="m69.435 143.01-23.023 13.522 69.07 48.361 22.536-18.638z" />
+
+                <path data-bs-toggle="modal" data-bs-target="#exampleModal5" data-bs-toggle="tooltip"
+                    data-bs-html="true" data-bs-placement="left" title="<img src='loacation icon.png'>Commercial Plot 5"
+                    d="m92.093 128.64-21.074 12.425 68.948 43.366 20.465-17.176z" />
+
+                <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left"
+                    title="<img src='loacation icon.png'> Non-Commercial Plot 22"
+                    d="m59.446 109.76-20.952 10.476 30.576 19.247 20.587-12.791z" />
+
+                <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left"
+                    title="<img src='loacation icon.png'> Non-Commercial Plot 21"
+                    d="m82.348 98.062-19.612 10.354 29.236 17.054 19.369-10.963z" />
+
+                <path d="m111.34 114.51" />
+
+                <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left"
+                    title="<img src='loacation icon.png'>Commercial Plot 6"
+                    d="m113.9 115.6 63.588 36.301-15.227 13.4-68.217-38.25z" />
+
+                <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left"
+                    title="<img src='loacation icon.png'>Commercial Plot 7"
+                    d="m134 103.91-17.785 10.233 63.71 36.545 19.125-14.252z" />
+
+                <path data-bs-toggle="modal" data-bs-target="#exampleModal20" data-bs-toggle="tooltip"
+                    data-bs-html="true" data-bs-placement="left"
+                    title="<img src='loacation icon.png'> Non-Commercial Plot 20"
+                    d="m101.84 87.342-17.298 9.258 28.749 15.836 17.907-9.3798z" />
+
+                <path data-bs-toggle="modal" data-bs-target="#exampleModal19" data-bs-toggle="tooltip"
+                    data-bs-html="true" data-bs-placement="left"
+                    title="<img src='loacation icon.png'> Non-Commercial Plot 19"
+                    d="m120.6 77.719-16.567 8.4053 28.505 14.862 17.42-9.3798z" />
+
+                <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left"
+                    title="<img src='loacation icon.png'>Commercial Plot 8"
+                    d="m152.15 92.946-16.08 9.258 64.075 31.916 17.054-9.8671z" />
+
+                <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left"
+                    title="<img src='loacation icon.png'>Commercial Plot 9"
+                    d="m169.69 82.957-15.105 8.0399 63.953 30.941 15.836-10.111z" />
+
+                <path data-bs-toggle="modal" data-bs-target="#exampleModal18" data-bs-toggle="tooltip"
+                    data-bs-html="true" data-bs-placement="left"
+                    title="<img src='loacation icon.png'> Non-Commercial Plot 18"
+                    d="m137.53 68.217-14.374 8.4053 28.505 13.034 15.714-8.6489z" />
+
+                <path data-bs-toggle="modal" data-bs-target="#exampleModal17" data-bs-toggle="tooltip"
+                    data-bs-html="true" data-bs-placement="left"
+                    title="<img src='loacation icon.png'> Non-Commercial Plot 17"
+                    d="m154.46 60.177-14.74 6.9435 29.358 12.06 13.887-6.6999-28.505-12.912z" />
+
+                <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left"
+                    title="<img src='loacation icon.png'>Commercial Plot 10"
+                    d="m185.28 73.333-13.4 7.6744 64.197 28.87 12.669-8.8926z" />
+
+                <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left"
+                    title="<img src='loacation icon.png'>Commercial Plot 11"
+                    d="m199.9 64.075-13.278 7.1871 62.735 27.287 11.694-9.3798z" />
+
+                <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left"
+                    title="<img src='loacation icon.png'>Commercial Plot 12"
+                    d="m231.21 44.828-29.114 17.907 60.421 24.241 16.08-12.912z" />
+
+                <path data-bs-toggle="modal" data-bs-target="#exampleModal16" data-bs-toggle="tooltip"
+                    data-bs-html="true" data-bs-placement="left"
+                    title="<img src='loacation icon.png'> Non-Commercial Plot 16"
+                    d="m168.72 52.746-11.329 6.3344 26.678 11.085 13.4-6.8217-27.53-11.451z" />
+
+                <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left"
+                    title="<img src='loacation icon.png'> Non-Commercial Plot 15"
+                    d="m184.31 44.097-11.938 6.9435 26.312 9.9889 12.547-5.8472z" />
+
+                <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left"
+                    title="<img src='loacation icon.png'> Non-Commercial Plot 14"
+                    d="m196.61 37.519-9.7453 5.6035 25.703 9.7453 11.207-5.3599z" />
+
+                <path data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left"
+                    title="<img src='loacation icon.png'> Non-Commercial Plot 13"
+                    d="m207.21 32.403-7.7962 4.2636 26.434 9.3798 2.8018-3.1672z" />
+            </g>
+        </g>
+    </svg>
+
+    <!-- <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+title="Tooltip on left">
+Tooltip on left
+</button> -->
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+        //         function backBtn() {
+        //   document.getElementById("button-73").onclick( window.open('index.html','_self'));
+
+
+        // }
+
+        function gb() {
+            //   window.open('index.html','_self');
+            history.back()
+        }
+
+    </script>
+</body>
+
+</html>
