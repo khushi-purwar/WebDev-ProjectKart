@@ -19,12 +19,6 @@
 
 \*\*1.\*\* Clone this Repository to your local machine.
 
-\```bash
-
-git clone https://github.com/<your-github-username>/Dev-Scripts
-
-\```
-
 \*\*2.\*\* Navigate to the project directory:
 
 After cloning this to your local machine. Open the project folder. And here you can directly run the Index.html file.
