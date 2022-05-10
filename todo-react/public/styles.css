@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    font-family: 'Architects Daughter', cursive;
+    display: flex-box;
+}
+
+.heading{
+    background-color: rgb(248, 237, 79);
+    padding: 15px;
+    font-size: 1.5rem;
+    color: rgb(43, 25, 25);
+}
+
+.heading h1{
+    margin: 0 10px;
+}
+
+.write{
+    text-align: center;
+    margin: 80px auto;
+}
+.write input{
+    width: 30rem;
+    border: none;
+    background: transparent;
+    border-bottom: 2px dashed  rgb(43, 25, 25);
+    color: rgb(43, 25, 25) ;
+    font-size: 1.5rem;
+}
+
+.write input:focus
+{
+    outline:none;
+    font-size: 1.5rem;
+}
+
+.write button{
+    background: transparent;
+    border: 2px solid rgb(43, 25, 25) ;
+    color: rgb(43, 25, 25) ;
+    border-radius: 50px;
+    margin: 0 20px;
+    padding: 3px 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.write button:hover{
+    background: rgb(43, 25, 25);
+   color: #fff;
+   
+} 
+
+.display{
+    font-size: 1.5rem;
+    margin-left:25% ;
+    cursor: pointer;
+}
+@media (max-width:600px) {
+    .write input{
+        width: 15rem;
+        font-size: 1.2rem;
+       
+    }
+}
