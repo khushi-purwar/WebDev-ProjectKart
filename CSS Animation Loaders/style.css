@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.one {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F2994A;  
+    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  
+    background: linear-gradient(to right, #F2C94C, #F2994A); 
+    
+}
+
+.spinner {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-top-color: #444;
+    border-left-color: #444;
+  
+    animation: spinner 400ms linear infinite;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50%;  
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  @keyframes spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  
+  .spinner-large {
+    width: 5rem;
+    height: 5rem;
+    border-width: 6px;
+  }
+  
+  .spinner-slow {
+    animation: spinner 1s linear infinite;
+  }
+  
+  .spinner-blue {
+    border-top-color: #09d;
+    border-left-color: rgb(0, 221, 37);
+    border-right-color: rgb(220, 0, 140);
+    border-BOTTOM-color: rgb(220, 40, 0);
+  }
+  
+
+/* #################################### */
+.two {
+    height: 100vh;
+    background: #d9a7c7;
+    background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);
+    background: linear-gradient(to right, #fffcdc, #d9a7c7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes load {
+    0% {
+        box-shadow: 0 0 #ed3b65 inset;
+    }
+
+    100% {
+        box-shadow: 0 -70px #ed3b65 inset;
+    }
+
+}
+
+.loaderTwo {
+
+    /* margin: auto; */
+    transform: perspective(140px) rotateX(-45deg);
+    width: 52px;
+    height: 102px;
+    position: relative;
+    border: 2px solid #fff;
+    animation: load 1.5s linear infinite alternate;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+.three {
+    height: 100vh;
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #0f9b0f, #000000);
+    background: linear-gradient(to right, #0f9b0f, #000000);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes tick {
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+
+.loaderThree {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 2px solid #f9f9f9;
+}
+
+.loaderThree::after {
+    content: "";
+    position: absolute;
+    bottom: 29px;
+    left: 30px;
+    display: block;
+    transform-origin: 0% 100%;
+    width: 1px;
+    height: 24px;
+    background: #f9f9f9;
+    animation: tick 1s infinite linear;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.four {
+    height: 100vh;
+    background: #36D1DC;
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);
+    background: linear-gradient(to right, #5B86E5, #36D1DC);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.15);
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+
+}
+
+.loaderFour {
+
+    width: 62px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: pulse 0.85s linear infinite;
+}
