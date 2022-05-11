@@ -1,0 +1,36 @@
+### VisualStudioCode ###
+.vscode/*
+.vscode/settings.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# ignore node/grunt dependency directories
+node_modules/
+jspm_packages/
+
+# ignore composer vendor directory
+/vendor
+
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+
+# Optional npm cache directory
+.npm
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Thumbnails
+._*
+
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
