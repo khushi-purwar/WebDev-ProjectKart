@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pronic Number Checker</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="container"> 
+        <p id="title">Pronic Number Checker</p>
+        <p id="Pronic">A number is said to be a pronic number if the product of two consecutive integers is equal to the number. Example- 42 is said to be a pronic number, 42=6×7, here 6 and 7 are consecutive integers
+
+        </p>
+        
+            <input type="text" id="userinput">
+            <label for="userinput">Enter a Number :</label>
+
+            <input type="text" id="result" readonly value=" ">
+            <label for="result">Result :</label>
+
+            <button onclick="getInputValue(this)">Submit</button>
+            <button id="reset" onclick="reset(this)">Reset</button>
+    </div>
+
+
+</body>
+<script src="script/script.js"></script>
+
+</html>
