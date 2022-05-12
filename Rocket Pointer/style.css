@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.scene {
+	align-items: center;
+	background-color: #01070a;
+	cursor: pointer;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.scene i {
+	-webkit-animation: stars linear infinite;
+	        animation: stars linear infinite;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	top: -250px;
+}
+
+.scene .rocket:before,
+.scene .rocket:after {
+	background-image: linear-gradient(
+											#00d0ff,
+											rgba(0, 0, 0, 0)											
+										);
+	bottom: -200px;
+	content: '';
+	height: 200px;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	width: 10px;
+}
+
+.scene .rocket {
+	-webkit-animation: animate 0.2s ease infinite;
+	        animation: animate 0.2s ease infinite;
+	pointer-events: none;
+	position: absolute;
+	transform: translate(-50%, -52px);
+}
+
+.scene .rocket:after {
+	filter: blur(20px);
+}
+
+.scene:active .rocket:before,
+.scene:active .rocket:after {
+	background-image: linear-gradient(
+											#ff12d7,
+											rgba(0, 0, 0, 0)
+										);
+	bottom: -300px;
+	filter: blur(2px);
+	height: 300px;
+}
+
+.scene .rocket img {
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+
+@-webkit-keyframes stars {	
+	100% {
+		transform: translateY(200vh);
+	}
+}
+
+@keyframes stars {	
+	100% {
+		transform: translateY(200vh);
+	}
+}
+
+@-webkit-keyframes animate {
+	50% {
+		transform: translate(-50%, -48px);
+	}
+}
+
+@keyframes animate {
+	50% {
+		transform: translate(-50%, -48px);
+	}
+}
