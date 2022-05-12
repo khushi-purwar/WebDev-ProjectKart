@@ -31,3 +31,10 @@ cd WebDev-ProjectKart/Image Background Modifier
 </br>
 
 <h3> ScreenShots </h3>
+
+![image](https://user-images.githubusercontent.com/72400676/167989648-87745ec7-bdbb-46e3-8937-680d0f6ae8be.png)
+
+
+https://user-images.githubusercontent.com/72400676/167989695-95c81780-5d76-4690-9951-f49d6da072a0.mp4
+
+
