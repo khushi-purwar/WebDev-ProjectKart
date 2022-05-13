@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMW Bike Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="bike">
+      <nav>
+        <img src="img/logo.png" class="logo" />
+        <a href="#" class="btn">Test Drive</a>
+      </nav>
+
+      <div class="content">
+        <h2>THE BMW</h2>
+        <h1 id="modal">R 1200 R</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iure
+          tempora iusto deleniti atque placeat, libero porro. Fugiat quaerat
+          beatae laborum magni consectetur labore fuga ducimus hic perspiciatis!
+          Voluptatibus, nesciunt.
+        </p>
+        <h3>Choose your colour</h3>
+        <div class="colour-select">
+          <div id="blue"></div>
+          <div id="yellow"></div>
+          <div id="green"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+            let blueBtn=document.getElementById("blue");
+            let yellowBtn=document.getElementById("yellow");
+            let greenBtn=document.getElementById("green");
+            let bike=document.getElementById("bike");
+            
+            blueBtn.onclick=function (){
+        bike.style.backgroundImage="url(img/BMW1.png)";
+        document.getElementById('modal').innerHTML="R 1200 R";
+    }
+            yellowBtn.onclick=function(){
+        bike.style.backgroundImage="url(img/BMW3.png)";
+        document.getElementById('modal').innerHTML="F 800 R";
+    }
+    greenBtn.onclick=function (){
+        bike.style.backgroundImage="url(img/BMW2.png)";
+        document.getElementById('modal').innerHTML="K 1200 R";
+    }
+    </script>
+  </body>
+</html>
