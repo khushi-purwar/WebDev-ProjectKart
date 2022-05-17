@@ -1,0 +1,174 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-color: black;
+    background-image: url('how-to-create-portraits-with-a-black-background-6.avif');
+    background-repeat: no-repeat;
+    background-position: right top;
+    position: relative;
+}
+body background-image{
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+}
+#navbar{
+    position:absolute ;
+    display:flex;
+    height: 100em;
+    width: 14rem;
+    margin-top: 100px;
+}
+#navbar ul li {
+    display: flex;
+    list-style: none;
+    font-size: 1.3em;
+    border-right: 2px solid white;
+}
+#navbar ul li a{
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    padding: 65px 22px;
+    color: whitesmoke;
+    border-radius: 50px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+.home{
+color: white;
+font-size: 30px;
+text-align: center;
+}
+.container{
+    color: white;
+    margin: 93px 270px;
+    margin-bottom: 23px;
+    font-size: 50px;
+}
+.skills{
+   color: white;
+}
+.contact{
+    color: white;
+    margin: 3px 70px;
+    margin-bottom: 13px;
+    padding-bottom: 3px;
+    display: inline inline-block;
+}
+.social{
+    color: white;
+    margin: 3px 70px;
+    margin-top: 52px;
+
+}
+.para{
+    color: white;font-size: 30px;width: 700px;  margin: 3px;
+}
+#p{
+    
+        transition: all 0.5s ease-in-out 0s;
+        -moz-transition: all 0.5s ease-in-out 0s;
+        -webkit-transition: all 0.5s ease-in-out 0s;
+        -o-transition: all 0.5s ease-in-out 0s;
+    }
+#p:hover {
+    transform: scale(1.5) rotateZ(-5deg);
+    -moz-transform: scale(1.5) rotateZ(-5deg);
+    -webkit-transform: scale(1.5) rotateZ(-5deg);
+    -o-transform: scale(1.5) rotateZ(-5deg);
+}
+#q{
+    
+    transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+}
+#q:hover {
+transform: scale(1.5) rotateZ(-5deg);
+-moz-transform: scale(1.5) rotateZ(-5deg);
+-webkit-transform: scale(1.5) rotateZ(-5deg);
+-o-transform: scale(1.5) rotateZ(-5deg);
+}
+#r{
+    
+    transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+}
+#r:hover {
+transform: scale(1.5) rotateZ(-5deg);
+-moz-transform: scale(1.5) rotateZ(-5deg);
+-webkit-transform: scale(1.5) rotateZ(-5deg);
+-o-transform: scale(1.5) rotateZ(-5deg);
+}
+#s{
+    
+    transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+}
+#s:hover {
+transform: scale(1.5) rotateZ(-5deg);
+-moz-transform: scale(1.5) rotateZ(-5deg);
+-webkit-transform: scale(1.5) rotateZ(-5deg);
+-o-transform: scale(1.5) rotateZ(-5deg);
+}
+.im{
+    width: 55rem; margin-top: 20px; display: flex;
+}
+#t{
+    
+    transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+}
+#t:hover {
+transform: scale(1.5) rotateZ(-5deg);
+-moz-transform: scale(1.5) rotateZ(-5deg);
+-webkit-transform: scale(1.5) rotateZ(-5deg);
+-o-transform: scale(1.5) rotateZ(-5deg);
+}
+
+/* ==========MEDIA QUERIES (medium devices) ========= */
+@media screen and (max-width:1024px) {
+  .para{
+      font-size: 20px;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  #navbar{
+      font-size: 10px;
+  }
+  }
+  /* ==========MEDIA QUERIES (small devices) ========= */
+  @media screen and (max-width:600px) {
+    .para{
+        font-size: 45px;
+       
+    }
+    #navbar{
+        font-size: 15px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    p{
+        font-size: 40px;
+    }
+    .im{
+        width: 59rem;
+    }
+    header{
+        margin-left: 30rem;
+    }
+  }

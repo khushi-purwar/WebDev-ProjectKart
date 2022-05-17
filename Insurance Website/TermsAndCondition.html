@@ -1,0 +1,621 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms and Conditions</title>
+    <link rel="stylesheet" href="terms.css" />
+    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        z-index: 1;
+        /* overflow-x: hidden; */
+    }
+    
+    .hc {
+        width: 100vw;
+        min-height: 12vh;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        background: rgb(51, 0, 112);
+        background: linear-gradient(90deg, rgba(51, 0, 112, 0.9612219887955182) 0%, rgba(32, 95, 139, 1) 23%, rgba(0, 77, 182, 1) 100%);
+    }
+    
+    .right {
+        font-size: clamp(1em, 1.1em, 1.2em);
+        position: absolute;
+        right: 5%;
+        display: flex;
+        cursor: pointer;
+        transition: 0.1s ease-in-out;
+    }
+    
+    .right li a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .right li a:hover {
+        text-decoration: overline;
+        color: rgb(233, 74, 74);
+    }
+    
+    .left {
+        cursor: pointer;
+        position: absolute;
+        left: 5%;
+    }
+    
+    .right li {
+        list-style: none;
+        padding: 10px 12px;
+    }
+    
+    .left h2 span {
+        color: rgb(233, 74, 74);
+    }
+    
+    @media(max-width: 1000px) {
+        .left h2 span {
+            font-size: 20px;
+        }
+        .right li {
+            display: none;
+        }
+        .right {
+            width: 60px;
+            height: 60px;
+            background: url(https://i.ibb.co/HrfVRcx/menu.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+            background-position: center;
+            cursor: pointer;
+        }
+    }
+    
+    .hidden {
+        width: 0vw;
+        position: absolute;
+        background-color: rgba(7, 3, 3, 0.8);
+        /* height: 97vh; */
+        height: 0vh;
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* font-size: 1.5em; */
+        font-size: 0px;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .hidden li a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .hidden li a:hover {
+        text-decoration: underline;
+        color: rgb(207, 29, 29);
+    }
+    
+    body {
+        height: 100vh;
+    }
+    
+    html {
+        height: 100vh;
+    }
+    
+    main {
+        min-height: max-content;
+        /* padding: 100px; */
+    }
+    
+    footer {
+        background-color: rgba(0, 0, 0, 0.856);
+        color: whitesmoke;
+        margin-top: 35px;
+        min-height: 60vh;
+        max-height: max-content;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .containerd {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .cont1 {
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    
+    .cont2 {
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    
+    .cont3 {
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    
+    .cont4 {
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    
+    .cont5 {
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    
+    .rowa {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    
+    li {
+        list-style: none;
+        margin-top: 4px;
+    }
+    
+    .fa {
+        text-decoration: none;
+        color: white !important;
+    }
+    
+    li .fa {
+        text-decoration: none;
+        color: white !important;
+    }
+    
+    u .fa {
+        text-decoration: none;
+        color: white !important;
+    }
+    
+    .cpy p {
+        position: relative;
+        bottom: -34px;
+    }
+    
+    @media(min-width:1000px) {
+        .cpy p {
+            bottom: -100px;
+        }
+    }
+    
+    .cont1 h1 {
+        color: rgb(0, 153, 255);
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    main {
+        width: 100%;
+        height: max-content;
+    }
+    
+    .container {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 50px;
+    }
+    
+    .box {
+        width: 100%;
+        height: max-content;
+        border: 2px solid rgba(0, 0, 0, 0.9);
+        border-radius: 20px;
+        padding: 30px;
+        margin-bottom: 30px;
+        box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.6);
+    }
+    
+    .box h2 {
+        text-align: center;
+    }
+    
+    .box ul li {
+        list-style: disc;
+        padding: 10px;
+    }
+    
+    .navi {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .navi li {
+        padding: 20px;
+        border: 2px solid rgb(87, 86, 86);
+        border-radius: 10px;
+    }
+    
+    .navi li:hover {
+        background: rgb(105, 173, 219);
+        color: white;
+        cursor: pointer;
+    }
+    
+    .block {
+        display: none;
+    }
+    
+    select {
+        height: 40px;
+        border-radius: 14px;
+    }
+    
+    .img img {
+        width: 500px;
+        margin-right: 12px;
+        height: 500px;
+    }
+    
+    .img {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+    
+    @media screen and (max-width:1000px) {
+        .img img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <div class="hc">
+            <div class="left">
+                <h2><span id="ch">PHAM INSURANCES</span></h2>
+            </div>
+            <div class="right" id="right">
+                <li id="n1"><a href="index.html">Home</a></li>
+                <li id="n2"><a href="profile.html">My Profile</a></li>
+                <li id="n1"><a href="login.html">Sign Up</a></li>
+                <li id="n5"><a href="aboutUs.html">About Us</a></li>
+                <li id="n5"><a href="TermsAndCondition.html">Terms And Condition</a></li>
+            </div>
+        </div>
+    </header>
+    <div class="hidden" id="hidden">
+                <li id="n1"><a href="index.html">Home</a></li>
+                <li id="n2"><a href="profile.html">My Profile</a></li>
+                <li id="n1"><a href="login.html">Sign Up</a></li>
+                <li id="n5"><a href="aboutUs.html">About Us</a></li>
+                <li id="n5"><a href="TermsAndCondition.html">Terms And Condition</a></li>
+    </div>
+    <script>
+        let w = document.getElementById("ch");
+        w.addEventListener("click", () => {
+            location.href = "index.html"
+        })
+    </script>
+    <main>
+        <div class="container">
+            <ul class="navi" id="navi">
+                <li onclick="terms()">Terms and Conditions</li>
+                <li onclick="pham()">PHAM Policies</li>
+                <li onclick="photos()">Photos</li>
+                <li onclick="servic()">Serivce Centers</li>
+            </ul>
+            <select class="block" id="select" onchange="change()">
+                <option value="terms">Terms and Conditions</option>
+                <option value="PHAM">PHAM Policies</option>
+                <option value="Photos">Photos</option>
+                <option value="Services">Services</option>
+            </select>
+            <div class="box" id="terms">
+                <ul>
+                    <li>
+                        Company shall respect intellectual property (IP) and conduct its business in compliance with the IP-related laws as applicable in the jurisdiction of Republic of India and its agreements with other companies. Company shall actively protect its own IP.
+                    </li>
+                    <li>
+                        Company shall maintain an effective system of IP asset management, including maintaining an inventory and records of IP-related assets and agreements.
+                    </li>
+                    <li>
+                        Company shall not knowingly infringe a third party's intellectual property in its products, services, or components, or disclose or use a third party's trade secrets without the express or implied consent of the owner or as permitted by law.
+                    </li>
+                    <li>
+                        Company shall not knowingly purchase or use counterfeit or other infringing goods and services in running its business, including counterfeit trademark goods or infringing copyright material (such as software, publications, video, audio, or other content).
+                    </li>
+                    <li>
+                        Company shall document and maintain written records of all substantial transactions and uses that involve the exercise of IP rights. (This includes, for example, licenses or assignments of rights; manufacture, reproduction or distribution of patented,
+                        trademarked or copyrighted items; and disclosure and use of trade secrets.)
+                    </li>
+                    <li>
+                        Company shall require, through binding policies or agreements with employees and contractors that its personnel comply with the applicable IP laws and the Company's IP policies and IP-related provisions in agreements with other companies.
+                    </li>
+                    <li>
+                        Company shall develop and implement a management system to help ensure that all personnel follow its IP policies. This management system shall encompass all IP-related policies, procedures and adequate and accurate records necessary to implement, measure,
+                        and improve Company's IP protection and compliance program
+                    </li>
+                </ul>
+
+            </div>
+            <div class="box block" id="PHAM">
+                <ul>
+                    <li>
+                        PHAM.com including online platform(s), its web applications and other domain owned by the Company ('Website') recognizes the importance of maintaining your privacy.
+                    </li>
+                    <li>
+                        PHAM.com is committed to maintain the confidentiality, integrity and security of all information of our users. This Privacy Policy describes how PHAM.com collects and handles certain information it may collect and/or receive from you via the use of this
+                        Website.
+                    </li>
+                    <li>
+                        Please see below for details on what type of information we may collect from you, how that information is used in connection with the services offered through our Website and other shared with our business partners.
+                    </li>
+                    <li>
+                        We can check your medical tests and fitbit statistics and if you are in the criteria of fitness which was decided by us then you get lower insurance premium.
+                    </li>
+                    <li>
+                        In case of any reason you have not get illness and not get any accidents in your insurances years then we can not get back you your premimums.
+                    </li>
+                    <li>
+                        We can give you GYM facilities (if you get our premium package). This GYM facilities eligible upto your insurance package is valid.
+                    </li>
+                    <li>
+                        This Privacy Policy applies to current and former visitors to our Website, our customers, and POSP agents. By visiting and/or using our Website, you agree to this Privacy Policy
+                    </li>
+                </ul>
+            </div>
+            <div class="box block" id="photos">
+                <div class="img">
+                    <img src="pic.jpeg" alt="">
+                    <img src="pics.jpeg" alt="">
+                </div>
+
+            </div>
+            <div class="box block" id="service">
+                <h3>Service centers for fitbit</h3>
+                <ul>
+                    <li>
+                        CROMA <br> Located in: <a href="https://www.google.com/search?rlz=1C1CHBF_enIN846IN846&output=search&q=Liberty+Exclusive+Showroom&ludocid=14125762684573216959&gsas=1&lsig=AB86z5XB0RYLp3FN12lkEM7KJrHn&sa=X&ved=2ahUKEwj6tPOB39PyAhVJQH0KHXb9DJQQ8G0oADAGegQIGBAB&biw=1536&bih=722&dpr=1.25">Liberty
+                            Exclusive Showroom</a> <br> Address: Basement-Himalaya Mall, Drive In Rd, Memnagar, Ahmedabad, Gujarat 380052
+                    </li>
+                    <li>
+                        Helios Watch Store - By Titan <br> Located in: <a href="https://www.google.com/search?rlz=1C1CHBF_enIN846IN846&output=search&q=Ahmedabad+One+Mall&ludocid=16232087726262906797&gsas=1&lsig=AB86z5Xw201Wch4hHmuE4GhZZlmq&sa=X&ved=2ahUKEwjSgc7h39PyAhU473MBHTERBs8Q8G0oADAIegQIGxAB&biw=1536&bih=722&dpr=1.25">
+                            Ahmedabad One Mall </a><br> Address: Alpha One Mall, G-33/34, Ground floor, near Vastrapur, Vastrapur, Ahmedabad, Gujarat 380054
+
+
+                    </li>
+                    <li>
+                        Fastrack Store <br> Located in: <a href="https://www.google.com/search?rlz=1C1CHBF_enIN846IN846&output=search&q=Ahmedabad+One+Mall&ludocid=16232087726262906797&gsas=1&lsig=AB86z5Xw201Wch4hHmuE4GhZZlmq&sa=X&ved=2ahUKEwjSgc7h39PyAhU473MBHTERBs8Q8G0oADAIegQIGxAB&biw=1536&bih=722&dpr=1.25">
+                            Ahmedabad One Mall </a><br> Address: Alpha One Mall, G-33/34, Ground floor, near Vastrapur, Vastrapur, Ahmedabad, Gujarat 380054
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="containerd">
+            <div class="rowa">
+                <div class="cont1">
+                    <div class="1hu">
+                        <h1>PHAM Insurance PVT</h1>
+                        <br>
+                        <p>Get Insurance with Best Benifits.</p>
+                        <span><b>Be Responsible.</b></span>
+                    </div>
+                </div>
+                <div class="cont2">
+                    <div class="2hu">
+                        <h3>Explore</h2>
+                            <li><a href="index.html" class="fa">Home</a></li>
+                            <li><a href="profile.html" class="fa">Profile</a></li>
+                            <li><a href="login.html" class="fa">LoginIn</a></li>
+                    </div>
+                </div>
+                <div class="cont3">
+                    <div class="3hu">
+                        <h3>Creators</h2>
+                            <li>
+                                Harshul Shah.
+                            </li>
+                            <li>Meet Shah</li>
+                            <li>Preet Shah</li>
+                            <li>Aarya Ahjolia</li>
+                            <br>
+                            <h3>ContactUs</h3>
+                            <a href="#" class="fa">PHAM@gmail.com</a>
+                            <br>
+                            <p>98789544648454</p>
+                    </div>
+                </div>
+                <div class="cont4">
+                    <div class="4hu">
+                        <h3>Follow</h3>
+                        <li><a href="#" class="fa">Instagram</a></li>
+                        <li><a href="#" class="fa">Twitter</a></li>
+                        <li><a href="#" class="fa">LinkedIn</a></li>
+                    </div>
+                </div>
+                <div class="cont5">
+                    <div class="5hu">
+                        <h3>
+                            <u>Next</u>
+                            <u> : </u>
+                            <u> <a href="aboutUs.html" class="fa">AboutUs</a></u>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="rowa">
+                <div class="cpy">
+                    <p> Copyright © 2021 PHAM Insurance PVT. All Rights Reserved </p>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+
+    </footer>
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function() {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function(msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        } else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+</body>
+<script>
+    let x = window.matchMedia("(max-width:1000px)");
+    let a = document.getElementById("right");
+    let b = document.getElementById("hidden");
+
+
+    let count = 0;
+    a.addEventListener("click", () => {
+        if (x.matches) {
+            count++;
+            if (count % 2 != 0) {
+                a.style.background = "url(https://i.ibb.co/rt3HybH/close.png)no-repeat center center/cover";
+                a.style.backgroundSize = "25px";
+                b.style.height = "100vh";
+                b.style.opacity = "1";
+                b.style.fontSize = "1.5em";
+                b.style.width = "100vw";
+                b.style.zIndex = "100";
+            } else {
+                a.style.background = "url(https://i.ibb.co/HrfVRcx/menu.png)no-repeat center center/cover";
+                a.style.backgroundSize = "30px";
+                b.style.height = "0vh";
+                b.style.opacity = "0";
+                b.style.fontSize = "0px";
+                b.style.width = "0vw";
+                b.style.zIndex = "-1";
+            }
+        }
+    });
+    window.addEventListener("load", function() {
+        let y = window.innerWidth;
+        if (y < 991) {
+            document.getElementById("navi").classList.add('block');
+            document.querySelector('select').classList.remove('block');
+        } else {
+            document.getElementById("navi").classList.remove('block');
+            document.querySelector('select').classList.add('block');
+        }
+    });
+    window.addEventListener("scroll", function() {
+        let y = window.innerWidth;
+        if (y < 991) {
+            document.getElementById("navi").classList.add('block');
+            document.querySelector('select').classList.remove('block');
+        } else {
+            document.getElementById("navi").classList.remove('block');
+            document.querySelector('select').classList.add('block');
+        }
+    });
+
+    function terms() {
+        document.querySelector("#terms").classList.remove("block");
+        document.querySelector("#PHAM").classList.add("block");
+        document.querySelector("#photos").classList.add("block");
+        document.querySelector("#service").classList.add("block");
+    };
+
+    function pham() {
+        document.querySelector("#terms").classList.add("block");
+        document.querySelector("#PHAM").classList.remove("block");
+        document.querySelector("#photos").classList.add("block");
+        document.querySelector("#service").classList.add("block");
+    };
+
+    function photos() {
+        document.querySelector("#terms").classList.add("block");
+        document.querySelector("#PHAM").classList.add("block");
+        document.querySelector("#photos").classList.remove("block");
+        document.querySelector("#service").classList.add("block");
+    };
+
+    function servic() {
+        document.querySelector("#terms").classList.add("block");
+        document.querySelector("#PHAM").classList.add("block");
+        document.querySelector("#photos").classList.add("block");
+        document.querySelector("#service").classList.remove("block");
+    }
+
+    function change() {
+        var ab = document.getElementById('select').selectedIndex;
+        if (document.getElementsByTagName('option')[ab].value == "terms") {
+            terms();
+        } else if (document.getElementsByTagName('option')[ab].value == "PHAM") {
+            pham();
+        } else if (document.getElementsByTagName('option')[ab].value == "Photos") {
+            photos();
+        } else if (document.getElementsByTagName('option')[ab].value == "Services") {
+            servic();
+        } else if (document.getElementsByTagName('option')[ab].value == "term") {
+            terms();
+        }
+        // console.log(ab);
+    }
+</script>
+
+</html>

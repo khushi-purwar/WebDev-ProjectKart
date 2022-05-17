@@ -1,0 +1,143 @@
+body {
+  /*text-align: center;*/
+  color: white;
+  font-family: 'Merriweather', serif;
+}
+
+.container {
+  position: relative;
+}
+
+p {
+  padding-left: 20px;
+}
+
+/*
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+The .container did not originally have a position property, so I needed to add that to make it behave "better"
+*/
+
+#quote-box {
+  position: absolute;
+  /*top: 20%;*/
+  margin-top: 100px;
+  left: 20%;
+  right: 30%;
+  /* create a media query for smaller screens to set this width  ??? */
+  width: 70%;
+  line-height: .5;
+}
+
+#button-box {
+  position: relative;
+  display: block;
+}
+
+.quote {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.1;
+  position: relative;
+  margin: 0;
+  } 
+.quote:before, .quote:after {
+  font-size: 5rem;
+  line-height: 2.5rem;
+  position: absolute;
+}
+.quote:before {
+  content: "“";
+  top: .25em;
+  left: -.5em;
+}
+.quote:after {
+  content: "”";
+  bottom: -.1em;
+  margin-left: .1em;
+  position: absolute;
+}
+.source {
+  font-size: 1.25rem;;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+  text-align: right;
+  margin-right: 4em;
+}
+.source:before {
+  content: "—";
+}
+.citation {
+  font-style: italic;
+}
+.citation:before {
+  content: ", ";
+  font-style: normal;
+}
+.year:before {
+  content: ", ";
+  font-style: normal;
+}
+
+.tags {
+  font-weight: bold;
+  font-size: 0.80rem;
+  text-transform: uppercase;
+
+}
+
+#loadQuote {
+  position: fixed;
+  width: 12em;
+  display: inline-block;
+  left: 50%;
+  margin-left: -6em;
+  bottom: 150px;
+  border-radius: 4px;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 15px 0;
+  transition: .5s ;
+}
+#loadQuote:hover {
+  background-color: rgba(255,255,255,.25);
+}
+#loadQuote:focus {
+  outline: none;
+}
+
+@media (max-width: 300px) {
+  .quote {
+    font-size: 1rem;
+  }
+
+  .quote:before, .quote:after {
+    font-size: 1.5rem;
+  }
+
+  .source {
+    font-size: 0.75rem;
+  }
+
+}
+
+@media (max-width: 442px) {
+  .quote {
+    font-size: 2.5rem;
+  }
+  .quote:before, .quote:after {
+    font-size: 3rem;
+  }
+  .source {
+    font-size: 1rem;
+  }
+
+  #quote-box {
+    margin-top: 50px;
+  }
+
+  #loadQuote {
+    bottom: 5%;
+  }
+}
+

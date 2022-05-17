@@ -1,5 +1,8 @@
 console.log("welcome to spotify");
 //initialize the variables
+
+let isPlaying=false;
+
 let songIndex = 0;
 let audioElement = new Audio('1.mp3');
 let masterPlayButton = document.getElementById("masterPlayButton");
@@ -54,17 +57,36 @@ const makeAllPlays = () => {
 }
 Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) => {
     element.addEventListener('click', (e) => {
-        makeAllPlays();
-        songIndex = parseInt(e.target.id);
-        e.target.classList.remove('fa-play-circle');
-        e.target.classList.add('fa-pause-circle');
-        audioElement.src = `${songIndex+1}.mp3`;
-        masterSongName.innerText = songs[songIndex].songName;
-        audioElement.currentTime = 0;
-        audioElement.play();
-        gif.style.opacity = 0.5;
-        masterPlayButton.classList.remove('fa-play-circle');
-        masterPlayButton.classList.add('fa-pause-circle');
+
+        isPlaying=!isPlaying;
+
+        function callPlay(){
+            makeAllPlays();
+            songIndex = parseInt(e.target.id);
+            e.target.classList.remove('fa-play-circle');
+            e.target.classList.add('fa-pause-circle');
+            audioElement.src = `${songIndex+1}.mp3`;
+            masterSongName.innerText = songs[songIndex].songName;
+            audioElement.currentTime = 0;
+            audioElement.play();
+            gif.style.opacity = 0.5;
+            masterPlayButton.classList.remove('fa-play-circle');
+            masterPlayButton.classList.add('fa-pause-circle');
+        }
+        function callPause(){
+            
+            songIndex = parseInt(e.target.id);
+            e.target.classList.remove('fa-pause-circle');
+            e.target.classList.add('fa-play-circle');
+            audioElement.src = `${songIndex+1}.mp3`;
+            masterSongName.innerText = songs[songIndex].songName;
+            audioElement.currentTime = 0;
+            audioElement.pause();
+            gif.style.opacity = 0.5;
+            masterPlayButton.classList.remove('fa-pause-circle');
+            masterPlayButton.classList.add('fa-play-circle');
+        }
+        isPlaying?callPlay():callPause();
     })
 })
 document.getElementById('next').addEventListener('click', () => {

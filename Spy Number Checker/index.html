@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spy Number Checker</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="container"> 
+        <p id="title">Spy Number Checker</p>
+        <p id="Spy">A spy number is a number where the sum of its digits equals the product of its digits. For example, 1124 is a spy number, the sum of its digits is 1+1+2+4=8 and the product of its digits is 1 * 1 * 2 * 4=8.
+
+        </p>
+        
+            <input type="text" id="userinput">
+            <label for="userinput">Enter a Number :</label>
+
+            <input type="text" id="result" readonly value=" ">
+            <label for="result">Result :</label>
+
+            <button onclick="getInputValue(this)">Submit</button>
+            <button id="reset" onclick="reset(this)">Reset</button>
+    </div>
+
+
+</body>
+<script src="script/script.js"></script>
+
+</html>

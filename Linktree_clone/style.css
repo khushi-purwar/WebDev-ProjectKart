@@ -1,0 +1,101 @@
+:root {
+    --accentColor: #E6E6E6;
+    --font:  sans-serif;
+    --delay: .3s;
+}
+
+/* Background */
+body {
+	background: linear-gradient(169deg, #fb513c, #e7ca3c, #e73c7e,#23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    
+    font-family: var(--font);
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Pic */
+#profile, #profile img {
+    position: relative;
+    display: block;
+    margin: 35px auto 20px;
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Introduction/Main content */
+#content {
+    font-size: 1rem;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    color: var(--accentColor);
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+#links {
+    max-width: 675px;
+    width: auto;
+    display: block;
+    margin: 25px auto;
+}
+
+.link {
+    position: relative;
+    padding:  10px ;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    color: var(--accentColor);
+    border: solid var(--accentColor) 2px;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Effect */
+@media (hover: hover) {
+.link:hover {
+        background-color: var(--accentColor);
+        color: var(--bgColor);
+    }
+}
+
+.link:active {
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+}
+
+
+#hashtag {
+    position: relative;
+    padding-bottom: 20px;
+    color: var(--accentColor);
+    font-size: 1rem;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center; }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>8 ball pool game</title>
+    </head>
+    <body>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .container {
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+        <div class="container">
+        <canvas id = "screen" width="1500" height="825"></canvas> 
+        </div>
+        <script src = "Vector2.js"></script>  
+        <script src = "input/ButtonState.js"></script>
+        <script src = "input/Mouse.js"></script>
+        <script src = "Canvas.js"></script> 
+        <script src = "Tools.js"></script> 
+        <script src = "Game.js"></script> 
+        <script src = "Stick.js"></script>
+        <script src = "GameWorld.js"></script> 
+        <script src = "Ball.js"> </script> 
+        <script src = "Color.js"></script>
+        <script src = "Constants.js"></script>
+        <script>
+        loadAssets(PoolGame.start); 
+        </script>
+    </body>
+</html>
