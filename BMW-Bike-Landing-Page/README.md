@@ -1,5 +1,5 @@
-# Myntra clone
-## Overview Of Myntra clone
+# BMW Bike Landing Page
+## Description
 
 A full responsive BMW Bike Landing Page build using HTML, CSS & JavaScript.
 
