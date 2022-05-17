@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ-Contributor @GSSoC'22,Competitive Programmer, Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/work.html">Work</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="menu">
+                <img class="menu-item" src="download.png" alt="" width="23">
+                <img class="close" src="close-icon-30.png" alt="" width="23">
+            </div>
+            <div class="contactform">
+                <h2>Contact Me</h2>
+                <!-- <form action="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post"> -->
+                <form name="form">
+                    <div class="mb">
+                        <label for="fname" class="form-label">First Name : </label>
+                        <input type="text" class="form-control" id="fname" name="firstname" minlength="3" required
+                            placeholder="Your name.."><span class="error"></span>
+                    </div>
+                    <div class="mb">
+                        <label for="lname" class="form-label">Last Name : </label>
+                        <input type="text" class="form-control" id="lname" name="lastname" minlength="3" required
+                            placeholder="Your last name.."><span class="error"></span>
+                    </div>
+                    <div class="mb">
+                        <label for="email" class="form-label">Email Id : </label>
+                        <input type="email" class="form-control" id="email" name="email" required
+                            placeholder="Your email.."><span class="error"></span>
+                    </div>
+
+                    <div class="mb">
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="India">Australia</option>
+                            <option value="USA">Canada</option>
+                            <option value="Australia">India</option>
+                            <option value="UK">USA</option>
+                        </select>
+                    </div>
+                    <div class="mb class">
+
+                        <label for="message" class="form-label">Your Message : </label>
+
+                        <textarea id="message" name="message" rows="10" cols="70"></textarea>
+                    </div>
+                    <input type="submit" value="Submit" id="s">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+<footer class="flex-all-center">
+    <div class="logo">
+        <div class="signs">
+            <a href="mailto:rahulsharma03@example.com"><img src="Email.png" alt="Gmail"
+                    style="width:35px ; height:30px"></a>
+            <a href="https://www.instagram.com"><img src="insta.png" alt="Insta" style="width:30px ; height:30px"></a>
+            <a href="https://www.linkedin.com"><img src="Linkedin.png" alt="Linkedin"
+                    style="width:30px ; height:30px"></a>
+        </div>
+        <p>Copyright &copy; MyPortfolio.com All Rights Reserved</p>
+    </div>
+</footer>
+
+</html>

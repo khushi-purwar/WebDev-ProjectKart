@@ -2,7 +2,7 @@
 name: Add readme to already existing project
 about: Adding readme to existing project
 title: ''
-labels: GSSoC
+labels: ''
 assignees: ''
 
 ---
