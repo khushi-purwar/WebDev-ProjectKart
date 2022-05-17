@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Profile</title>
+    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="profile.css" />
+</head>
+
+<body>
+    <header>
+        <div class="hc">
+            <div class="left">
+                <h2><span id="ch">PHAM INSURANCES</span></h2>
+            </div>
+            <div class="right" id="right">
+                <li id="n1"><a href="index.html">Home</a></li>
+                <li id="n2"><a href="profile.html">My Profile</a></li>
+                <li id="n1"><a href="login.html">Sign Up</a></li>
+                <li id="n5"><a href="aboutUs.html">About Us</a></li>
+                <li id="n5"><a href="TermsAndCondition.html">Terms And Condition</a></li>
+            </div>
+        </div>
+    </header>
+    <script>
+        let w = document.getElementById("ch");
+        w.addEventListener("click", () => {
+            location.href = "index.html"
+        })
+    </script>
+
+    <div class="hidden" id="hidden">
+                <li id="n1"><a href="index.html">Home</a></li>
+                <li id="n2"><a href="profile.html">My Profile</a></li>
+                <li id="n1"><a href="login.html">Sign Up</a></li>
+                <li id="n5"><a href="aboutUs.html">About Us</a></li>
+                <li id="n5"><a href="TermsAndCondition.html">Terms And Condition</a></li>>
+    </div>
+    <main>
+        <div class="container">
+            <h2>My Profile</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover">
+                    <tbody>
+                        <tr>
+                            <th>Entity</th>
+                            <th>Detais</th>
+                        </tr>
+                        <tr>
+                            <td>FullName</td>
+                            <td id="1">NO DATA</td>
+                        </tr>
+                        <tr>
+                            <td>Age</td>
+                            <td id="2">NO DATA</td>
+                        </tr>
+                        <tr>
+                            <td>Pre-existing Disease?</td>
+                            <td id="3">NO DATA</td>
+                        </tr>
+                        <tr>
+                            <td>BloodGroup</td>
+                            <td id="4">NO DATA</td>
+                        </tr>
+                        <tr>
+                            <td>DailyExcercise-Hours</td>
+                            <td id="5">NO DATA</td>
+                        </tr>
+                        <tr>
+                            <td>SleepHours</td>
+                            <td id="6">NO DATA</td>
+                        </tr>
+                        <tr>
+                            <td>HeartRate</td>
+                            <td id="7">NO DATA</td>
+                        </tr>
+                        <tr>
+                            <td>BloodPressure</td>
+                            <td id="8">NO DATA</td>
+                        </tr>
+                        <tr>
+                            <td>Cholestrol</td>
+                            <td id="9">NO DATA</td>
+                        </tr>
+                        <tr>
+                            <td>ECG</td>
+                            <td id="10">NO DATA</td>
+                        </tr>
+                        <tr>
+                            <td>BMI</td>
+                            <td id="11">NO DATA</td>
+                        </tr>
+                        <tr>
+                            <td>GeneticHeritage</td>
+                            <td id="12">NO DATA</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button class="btn btn-lg btn-primary" id="update" onclick="myFunction()">
+            Update/Add
+          </button>
+            <button class="btn btn-lg btn-primary" id="search" onclick="searchName()">
+            Search Data
+          </button>
+            <button class="btn btn-lg btn-danger" id="btn">Insurances</button>
+        </div>
+
+        <script>
+            let x = document.getElementById("btn");
+            x.addEventListener("click", () => {
+                location.href = "index.html";
+            })
+            console.log("WELCOME!");
+            let update = document.getElementById("update");
+
+            function myFunction() {
+                let f1 = prompt("Enter Name:");
+                let f2 = prompt("Enter Age:");
+                let f3 = prompt("Enter Pre existing disease:");
+                let f4 = prompt("Enter Blood group:");
+                let f5 = prompt("Enter daily exercise hour:");
+                let f6 = prompt("Enter sleep hour:");
+                let f7 = prompt("Enter heart rate:");
+                let f8 = prompt("Enter BP:");
+                let f9 = prompt("Enter cholestrol:");
+                let f10 = prompt("Enter ECG:");
+                let f11 = prompt("Enter BMI:");
+                let f12 = prompt("Enter Genetic heritage:");
+
+                let fu1 = document.getElementById("1");
+                let fu2 = document.getElementById("2");
+                let fu3 = document.getElementById("3");
+                let fu4 = document.getElementById("4");
+                let fu5 = document.getElementById("5");
+                let fu6 = document.getElementById("6");
+                let fu7 = document.getElementById("7");
+                let fu8 = document.getElementById("8");
+                let fu9 = document.getElementById("9");
+                let fu10 = document.getElementById("10");
+                let fu11 = document.getElementById("11");
+                let fu12 = document.getElementById("12");
+
+                fu1.innerText = f1;
+                fu2.innerText = f2;
+                fu3.innerText = f3;
+                fu4.innerText = f4;
+                fu5.innerText = f5;
+                fu6.innerText = f6;
+                fu7.innerText = f7;
+                fu8.innerText = f8;
+                fu9.innerText = f9;
+                fu10.innerText = f10;
+                fu11.innerText = f11;
+                fu12.innerText = f12;
+
+                let details = localStorage.getItem("details");
+                let details_array;
+                if (details == null) {
+                    details_array = [];
+                } else {
+                    details_array = JSON.parse(details);
+                }
+                let myObj = {
+                    name: f1,
+                    age: f2,
+                    disease: f3,
+                    bloodgroup: f4,
+                    exercise: f5,
+                    sleephours: f6,
+                    heartrate: f7,
+                    bp: f8,
+                    cholestrol: f9,
+                    ecg: f10,
+                    bmi: f11,
+                    geneticheritage: f12,
+                };
+                details_array.push(myObj);
+                localStorage.setItem("details", JSON.stringify(details_array));
+            }
+
+
+            function searchName() {
+                let search = document.getElementById("search");
+                let tname = prompt("Enter name to search:");
+                let details = localStorage.getItem("details");
+                let details_array;
+                if (details == null) {
+                    alert("No Data available to Show");
+                } else {
+                    details_array = JSON.parse(details);
+                    let count_details_array = 0;
+                    Array.from(details_array).forEach(function(element) {
+                        console.log(element.name + " " + tname);
+                        if (element.name === tname) {
+                            let fu1 = document.getElementById("1");
+                            let fu2 = document.getElementById("2");
+                            let fu3 = document.getElementById("3");
+                            let fu4 = document.getElementById("4");
+                            let fu5 = document.getElementById("5");
+                            let fu6 = document.getElementById("6");
+                            let fu7 = document.getElementById("7");
+                            let fu8 = document.getElementById("8");
+                            let fu9 = document.getElementById("9");
+                            let fu10 = document.getElementById("10");
+                            let fu11 = document.getElementById("11");
+                            let fu12 = document.getElementById("12");
+                            fu1.innerText = element.name;
+                            fu2.innerText = element.age;
+                            fu3.innerText = element.disease;
+                            fu4.innerText = element.bloodgroup;
+                            fu5.innerText = element.exercise;
+                            fu6.innerText = element.sleephours;
+                            fu7.innerText = element.heartrate;
+                            fu8.innerText = element.bp;
+                            fu9.innerText = element.cholestrol;
+                            fu10.innerText = element.ecg;
+                            fu11.innerText = element.bmi;
+                            fu12.innerText = element.geneticheritage;
+                        } else count_details_array++;
+                    });
+                    if (count_details_array == details_array.length) {
+                        alert("Name didn't found in Database!");
+                    }
+                }
+                // let myObj = {
+                //   title: addTitle.value,
+                //   text: addTxt.value,
+                // };
+                // details_array.push(myObj);
+                // localStorage.setItem("details", JSON.stringify(details_array));
+            }
+        </script>
+    </main>
+    <footer>
+        <div class="containerd">
+            <div class="rowa">
+                <div class="cont1">
+                    <div class="1hu">
+                        <h1>PHAM Insurance PVT</h1>
+                        <br>
+                        <p>Get Insurance with Best Benifits.</p>
+                        <span><b>Be Responsible.</b></span>
+                    </div>
+                </div>
+                <div class="cont2">
+                    <div class="2hu">
+                        <h3>Explore</h2>
+                            <li><a href="index.html" class="fa">Home</a></li>
+                            <li><a href="TermsAndCondition.html" class="fa">TermsAndConditions</a></li>
+                            <li><a href="login.html" class="fa">LogIn</a></li>
+                    </div>
+                </div>
+                <div class="cont3">
+                    <div class="3hu">
+                        <h3>Creators</h2>
+                            <li>
+                                Harshul Shah.
+                            </li>
+                            <li>Meet Shah</li>
+                            <li>Preet Shah</li>
+                            <li>Aarya Ahjolia</li>
+                            <br>
+                            <h3>ContactUs</h3>
+                            <a href="#" class="fa">PHAM@gmail.com</a>
+                            <br>
+                            <p>98789544648454</p>
+                    </div>
+                </div>
+                <div class="cont4">
+                    <div class="4hu">
+                        <h3>Follow</h3>
+                        <li><a href="#" class="fa">Instagram</a></li>
+                        <li><a href="#" class="fa">Twitter</a></li>
+                        <li><a href="#" class="fa">LinkedIn</a></li>
+                    </div>
+                </div>
+                <div class="cont5">
+                    <div class="5hu">
+                        <h3>
+                            <u>Next</u>
+                            <u> : </u>
+                            <u> <a href="aboutUs.html" class="fa">AboutUs</a></u>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="rowa">
+                <div class="cpy">
+                    <p> Copyright © 2021 PHAM Insurance PVT. All Rights Reserved </p>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </footer>
+    <script>
+        let gh = window.matchMedia("(max-width:1000px)");
+        let a = document.getElementById("right");
+        let b = document.getElementById("hidden");
+
+        var count = 0;
+        a.addEventListener("click", () => {
+            if (gh.matches) {
+                count++;
+                console.log(count);
+                if (count % 2 != 0) {
+                    a.style.background = "url(https://i.ibb.co/rt3HybH/close.png)no-repeat center center/cover";
+                    a.style.backgroundSize = "25px";
+                    b.style.height = "100vh";
+                    b.style.opacity = "1";
+                    b.style.fontSize = "1.5em";
+                } else {
+                    a.style.background = "url(https://i.ibb.co/HrfVRcx/menu.png)no-repeat center center/cover";
+                    a.style.backgroundSize = "30px";
+                    b.style.height = "0vh";
+                    b.style.opacity = "0";
+                    b.style.fontSize = "0px";
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

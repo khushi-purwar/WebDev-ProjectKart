@@ -1,0 +1,336 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-image
+  {
+   
+    background-image: url("antonyms_background.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bg-image-synonyms 
+  {
+   
+    background-image: url("Synonyms.png");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  .bg-image-idioms
+  {
+   
+    background-image: url("antonyms_background.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+
+  .bg-text {
+    background: linear-gradient(-45deg, #52e9ee, #39e9c3, #3dc44f, #f0c91c);
+    background-color:white; /* Black w/opacity/see-through */
+    color: black;
+    /* font-weight: bold; */
+    border: 3px solid #f1f1f1;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 40%;
+    height: 50%;
+    padding: 20px;
+    text-align: left;
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+  .letters{
+    border:3px solid red;
+    border-radius:80px;
+    margin-bottom:5px;
+    background-color: white;
+     width:50%;
+     height:14%;
+     float:left;
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     font-size:25px;
+      color:black;
+       font-family: 'Fredoka One', cursive; 
+         letter-spacing: 5px ;
+    /* animation: animate 10s linear infinite; */
+    animation-delay: calc(3s * var(--delay));
+  }
+  .letters{
+    animation-delay: calc(-3s * var(--delay));
+  }
+    @keyframes animate {
+      0%{
+        opacity: 0;
+        transform: translateY(100%) scale(0.5);
+      }
+      5%, 20%{
+        opacity: 0.4;
+        transform: translateY(100%) scale(0.7);
+      }
+      25%, 40%{
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0%) scale(1);
+      }
+      45%, 60%{
+        opacity: 0.4;
+        transform: translateY(-100%) scale(0.7);
+      }
+      65%, 100%{
+        opacity: 0;
+        transform: translateY(-100%) scale(0.5);
+      }
+    }
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  
+  a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .previous {
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 15px;
+    border-radius: 4px;
+  }
+  
+  .next {
+    background-color: #f44336;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+  }
+  
+  .round {
+    border-radius: 50%;
+  }
+  .letters{
+    animation: typing 3s steps(90), blink 1s step-end infinite alternate,bounce 3s ease-in-out infinite ;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+  }
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+  @keyframes bounce{
+    0%{
+      transform: translateY(0px);
+    }
+    20%{
+      transform: translateY(-10px);
+    }
+  }
+
+
+  .multicolortext{
+    background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+.kids{
+  width: 20%;
+  height: 10%;
+  /* background-color: white; */
+  position: absolute;
+  left: 75%;
+  top: 45%;
+}
+.skip{
+width: 9em;
+}
+.fishy{
+  width: 10%;
+  height: 10%;
+  /* background-color: white; */
+  position: absolute;
+  left:55%;
+  top: 75%;
+}
+.fish{
+width:8em;
+}
+.frogy{
+  width: 15%;
+  height: 10%;
+  /* background-color: white; */
+  position: absolute;
+  left:10%;
+  top: 85%;
+}
+.frog{
+width: 9em;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+@media (min-width:320px)  { .bg-text {
+  background: linear-gradient(-45deg, #52e9ee, #39e9c3, #3dc44f, #f0c91c);
+  background-color:white; /* Black w/opacity/see-through */
+  color: rgb(0, 0, 0);
+  /* font-weight: bold; */
+  border: 3px solid #f1f1f1;
+  border-radius: 8px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 70%;
+  height: 80%;
+  padding: 20px;
+  text-align: left;
+  animation: gradient 15s ease infinite;
+  /* background-size: 400% 400%; */
+  
+} 
+.letters{
+  font-size: 15px;
+  letter-spacing: 0;
+} 
+.frog{
+  width: 3em;
+  }
+  .fish{
+    width:4em;
+    }
+    .skip{
+      width: 5.5em;
+      }
+ }
+
+
+
+@media (min-width:641px)  {.bg-text {
+  background: linear-gradient(-45deg, #52e9ee, #39e9c3, #3dc44f, #f0c91c);
+  background-color:white; /* Black w/opacity/see-through */
+  color: rgb(0, 0, 0);
+  /* font-weight: bold; */
+  border: 3px solid #f1f1f1;
+  border-radius: 8px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 40%;
+  height: 50%;
+  padding: 20px;
+  text-align: left;
+  animation: gradient 15s ease infinite;
+  /* background-size: 400% 400%; */
+  
+} 
+.letters{
+  font-size: 15px;
+  letter-spacing: 0;
+} }
+
+@media (min-width:1025px) { .bg-text {
+  background: linear-gradient(-45deg, #52e9ee, #39e9c3, #3dc44f, #f0c91c);
+  background-color:white; /* Black w/opacity/see-through */
+  color: black;
+  /* font-weight: bold; */
+  border: 3px solid #f1f1f1;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 40%;
+  height: 50%;
+  padding: 20px;
+  text-align: left;
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  
+}
+.frog{
+  width: 9em;
+  }
+  .fish{
+    width:8em;
+    }
+    .skip{
+      width: 9em;
+      }
+}
+@media (min-width:1281px) { .bg-text {
+  background: linear-gradient(-45deg, #52e9ee, #39e9c3, #3dc44f, #f0c91c);
+  background-color:white; /* Black w/opacity/see-through */
+  color: black;
+  /* font-weight: bold; */
+  border: 3px solid #f1f1f1;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 40%;
+  height: 50%;
+  padding: 20px;
+  text-align: left;
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  
+}
+.frog{
+  width: 9em;
+  }
+  .fish{
+    width:8em;
+    }
+    .skip{
+      width: 9em;
+      }
+}

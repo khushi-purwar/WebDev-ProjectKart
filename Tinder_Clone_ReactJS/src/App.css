@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  background-color: #f7f7f7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+.app {
+	text-align: center;
+	max-width: 500px;
+	margin: auto;
+}
+
+header {
+	background-color: white;
+	overflow: hidden;
+	display: flex;
+}
+
+header {
+	background-color: white;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 5px;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+}
+
+header button {
+	background-color: transparent;
+	border: 0;
+	width: 50px;
+	cursor: pointer;
+}
+
+header button img {
+	width: 100%;
+}
+
+header .fl {
+	float: left;
+	width: 33%;
+}
+
+header .fl:first-child {
+	text-align: left;
+}
+
+header .fl:last-child {
+	text-align: right;
+}
+
+.person .person-photo {
+	overflow: hidden;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.3);
+}
+
+.person .person-description {
+	text-align: left;
+	padding: 20px;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+	border-radius: 1px;
+	background-color: white;
+}
+
+.person .person-name-age {
+	font-weight: bold;
+	font-size: 30px;
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+
+.person .person-info {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 20px;
+}
+
+.person img {
+	width: 500px;
+	height: 700px;
+	display: block;
+	object-fit: cover;
+}
+
+#actions {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+#actions button {
+	width: 50px;
+	height: 50px;
+	margin-right: 30px;
+	padding: 12px;
+	border: 0;
+	border-radius: 50px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	float: left;
+	cursor: pointer;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+}
+
+#actions button img {
+	width: 100%;
+	height: auto;
+}
+
+#actions button:nth-of-type(2),
+#actions button:nth-of-type(3) {
+	width: 60px;
+	height: 60px;
+	padding: 15px;
+}
+
+#lonely {
+	padding: 10px;
+	border-radius: 1px;
+	background-color: white;
+	border-top: 1px solid #eee;
+}
+
+#liked-people {
+	margin: auto;
+	overflow: hidden;
+}
+
+#liked-people .liked-person {
+	display: inline-block;
+	width: 33%;
+	margin-top: 10px;
+}
+
+#liked-people .liked-person-image {
+	border-radius: 5px;
+}
+
+#liked-people .liked-person-image img {
+	width: 140px;
+	height: 100px;
+	object-fit: cover;
+	object-position: 50% 50%;
+}
+
+/* Stolen CSS */
+.pulse {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #FFDEDF;
+  box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+  margin-top: 50px;
+  margin-bottom: 35px;
+  border: 3px solid #F5C9CA;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pulse img {
+  width: 70%;
+  border-radius: 100px;
+  border: 5px solid white;
+}
+
+.pulse:hover {
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+		-webkit-box-shadow: 0 0 0 0 rgba(241, 201, 202, 0.4);
+  }
+  100% {
+		-webkit-box-shadow: 0 0 0 35px rgba(241, 201, 202, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(241, 201, 202, 0.4);
+    box-shadow: 0 0 0 0 rgba(241, 201, 202, 0.4);
+  }
+  100% {
+		-moz-box-shadow: 0 0 35px 35px rgba(241, 201, 202, 0);
+		box-shadow: 0 0 35px 35px rgba(241, 201, 202, 0);
+  }
+}
