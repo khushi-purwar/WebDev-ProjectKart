@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: pink;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    /* width: 300px; */
+    height: 132vh;
+    transition: transform 0.3s ease-in;
+    position: absolute;
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    background-color: lightblue;
+    /* background-color: white; */
+    width: 100vw;
+    height: 132vh;
+}
+
+.main h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Secular One', sans-serif;
+    font-size: 50px;
+}
+
+
+
+.container {
+    display: flex;
+}
+
+.infocontainer {
+    background-color: bisque;
+    /* background-color: lightblue; */
+    height: 70vh;
+    width: 82vw;
+    margin: 65px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devinfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hello {
+    font-size: 65px;
+}
+
+.name {
+    font-size: 50px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-weight: bold;
+}
+
+.about {
+    font-size: 30px;
+
+}
+
+.desc {
+    font-size: 20px;
+    margin-top: 23px;
+}
+
+.btn {
+    margin-top: 34px;
+}
+
+.btn button {
+    padding: 8px;
+    border-radius: 25px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    color: black;
+    background-color: red;
+}
+
+.devpic img {
+    height: 70vh;
+
+}
+
+.contactform {
+    font-family: cursive;
+    padding: 0 50px;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.contactform h2 {
+    font-family: 'Secular One', sans-serif;
+    font-size: 90px;
+    text-align: center;
+}
+
+.contactform div {
+    padding: 10px 0;
+}
+
+.contactform div input {
+    width: 30vw;
+    border-radius: 10px;
+    margin: 6px 0;
+    padding: 3px;
+}
+
+
+#s {
+    font-size: 20px;
+    background-color: pink;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#s:hover {
+    font-size: 22px;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.contactform {
+    margin: 0, 40px;
+}
+
+.about h2 {
+    font-family: 'Secular One', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+
+.skillcontainer {
+    padding: 12px;
+}
+
+.skillitem {
+    align-items: center;
+}
+
+.skill {
+    width: 348px;
+    height: 10px;
+    background-color: red;
+    margin: 7px;
+    border: 1px solid black;
+}
+
+.s1 {
+    width: 348px;
+}
+
+.s2 {
+    width: 300px;
+}
+
+.s3 {
+    width: 250px;
+}
+
+.s4 {
+    width: 348px;
+}
+
+.s5 {
+    width: 348px;
+}
+
+.s6 {
+    width: 200px;
+}
+
+.menu {
+    position: absolute;
+    cursor: pointer;
+    top: 12px;
+    left: 12px;
+}
+
+.close {
+    margin-left: 137px;
+}
+
+.sidebarGo {
+    transform: translate(-300px, 0px);
+    position: absolute;
+}
+
+.about p1 {
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    padding-left: 36px;
+}
+
+.about p {
+    margin-left: 28px;
+}
+
+textarea {
+    width: 450px;
+    height: 100px;
+    padding: 7px;
+    /* border-radius: 10px; */
+}
+
+
+.p {
+    background-color: rgb(245, 245, 155);
+    ;
+    height: 20vh;
+    padding-top: 1px;
+}
+
+.contri {
+    /* height: 100%; */
+    width: 50%;
+    position: static;
+    float: left;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    /* padding-top: 20px; */
+    height: 112vh;
+}
+
+.contri h2 {
+    font-size: 30px;
+    padding: 5px;
+}
+
+.contri p1 {
+    font-size: 20px;
+}
+
+.left {
+    left: 0;
+    background-color: aliceblue;
+
+
+}
+
+.right {
+    right: 0;
+    /* background-color: lavenderblush; */
+    background-color: lightyellow;
+
+}
+
+.class {
+    padding-left: 52px;
+}
+
+.centered {
+    font-size: 30px;
+    padding-left: 40px;
+}
+
+.array {
+    font-size: 20px;
+    padding-left: 11px;
+    font-style: italic;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 60px;
+    padding-top: 30px;
+}
+
+.logo {
+    padding-left: 100px;
+    padding-top: 0px;
+}
+
+.signs {
+    padding-left: 50px;
+    background-color: black;
+}
+
+.error {
+    color: red;
+}
+
+@media (max-width:1500px) {
+    * {
+
+        background-color: lightblue;
+        /* background-color: white; */
+    }
+
+    .devpic img {
+        height: 23vh;
+    }
+
+    .infocontainer {
+        background-color: lightblue;
+        /* background-color: white; */
+    }
+
+    .main h1 {
+        margin-left: 30px;
+        padding-top: 10px;
+    }
+
+    textarea {
+        width: 300px;
+        height: 70px;
+    }
+
+    .contactform {
+        padding: 50px;
+    }
+
+    .contactform h2 {
+        font-size: 50px;
+    }
+
+    .contri {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .p h1 {
+        margin-top: 3px;
+    }
+
+    .sidebar {
+        background-color: lightblue;
+    }
+
+    .class {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    footer {
+        padding-top: 25px;
+    }
+
+    footer p {
+        background-color: black;
+    }
+
+    .logo {
+        background-color: black;
+        /* padding-left: 45px; */
+        padding-left: 0px;
+    }
+
+    .signs {
+        padding-left: 100px;
+    }
+
+    .p {
+        background-color: lightblue;
+    }
+
+    .left {
+        background-color: lightblue;
+    }
+
+    .right {
+        background-color: lightblue;
+    }
+
+}

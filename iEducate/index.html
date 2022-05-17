@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iEducate-Transferring Online Education</title>
+    <link rel="shortcut icon" href="./img/logo2.webp" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="navbar background h-list">
+        <div class="rightnav v-list">
+            <img src="./img/logo.jpg" alt="Logo Image">
+            <ul class="navlist">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="leftnav v-list">
+            <input type="text" class="search" >
+            <button class="btn">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section id="about" class="firstsec background">
+        <div class="firsthalf">
+            <h1 class="heading">iEducate-Best Online Education</h1>
+            <p class="paras">
+                The future of education is here. We provide best online education with experienced teachers since 20 years.
+            </p>
+                <button id="subs" onclick="run()" class="btn btn-sm">Subscribe Now</button>
+                <button id="wat"  class="btn btn-sm">Watch Video </button>
+        </div>
+        <div class="secondhalf">
+            <img src="./img/pic.jpeg" alt="Education Image">
+        </div>
+    </section>
+    <section id="services" class="secondsec">
+        <div class="box">
+            <div class="content">
+                <h1>The end of search is here</h1>
+                <p>
+                    True education is beyond earning degrees it is more than bookish knowledge. Education means inculcating moral values, positive thinking, attitude of helping, attitude of giving to society and ethical values these kind of students are only able to bring changes in society.</p>
+            </div>
+            <img src="https://source.unsplash.com/250x250/?laptop" alt="Laptop Image">
+        </div>
+        <hr>
+        <div class="box box2">
+            <div class="content">
+                <h1>The importance of education</h1>
+                <p>Education shows us the importance of hard work and, at the same time, helps us grow and develop. Learning languages through educational processes helps interact with different people in order to exchange ideas, knowledge, good practices. It teaches us to live in harmony.</p>
+            </div>
+            <img src="https://source.unsplash.com/250x250/?books" alt="Book Image">
+        </div>
+        <hr>
+        <div class="box">
+            <div class="content">
+                <h1>Lets grow together</h1>
+                <p>
+                    Education matters to our young people– good public schools give them the tools they need: to lead fulfilling and we hope to become strong, contributing citizens and to compete in a challenging economy, where perhaps now more than ever education is a key to opportunity and success.</p>
+            </div>
+            <img src="https://source.unsplash.com/250x250/?education" alt="Education Image">
+        </div>
+        <hr>
+    </section>
+    <section id="contact" class="thirdsec">
+        <h1>Contact us</h1>
+            <form   class="contact">
+                <input type="text" class="name" name="name" placeholder="Enter Your Name">
+                <input type="number" class="phone" name="phone" placeholder="Enter Your Phone Number">
+                <input type="email" class="email" name="email" placeholder="Enter Your Email">
+                <input type="text" class="address" name="address" placeholder="Enter Your Address">
+                <input type="text" class="gender" name="gender" placeholder="Enter Your Gender">
+                <button class="btn last"  >Submit</button>
+            </form>
+    </section>
+    <footer class="background">
+        Copyrights&copy; 2020 www.iEducate.com | All rights reserved.
+    </footer>
+    <script src="./js/index.js"></script>
+ <script>
+     let subs=document.getElementById('subs');
+     function run(){
+        alert("Added to Subscribe")
+     }
+     let wat=document.getElementById('wat')
+     wat.addEventListener('click',()=>{
+         prompt("Enter your name",'Guest')
+     })
+ </script>
+</body>
+</html>
