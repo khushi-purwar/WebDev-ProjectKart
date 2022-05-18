@@ -155,6 +155,4 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 		bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
 	}
 
-
-
-
+  

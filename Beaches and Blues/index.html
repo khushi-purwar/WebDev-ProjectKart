@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    </head>
+    <body>
+        <section class="showcase">
+            <header>
+              <h2 class="logo"><img src="logo.png"></h2>
+              <div class="toggle"></div>
+            </header>
+            <video src="drone.mp4" muted loop autoplay></video>
+            <div class="overlay"></div>
+            <div class="text">
+              <h2>Beaches </h2> 
+              <h3>and Blues</h3>
+              <p>Dive into the world of blue seas with side side serving of exotic culture and cuisine. Let's enjoy these blues while overcoming problems of society.</p>
+              <a href="https://www.holidify.com/collections/best-beaches-in-india">Explore Indian Beaches</a>
+            </div>
+            <ul class="social">
+              <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+              <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+              <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+            </ul>
+          </section>
+          <div class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="login.html">Login</a></li>
+              
+              <li><a href="contact.html">Contact</a></li>
+              
+            </ul>
+          </div>
+          <script>
+               const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+          </script>
+    </body>
+</html>

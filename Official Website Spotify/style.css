@@ -1,0 +1,328 @@
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.alert-custom{
+    background-color: #1D75DE;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+a{
+    color: whitesmoke;
+}
+
+.bg-custom{
+    background-color: black;
+    color: white;
+}
+ .logo{
+    width: 120px;
+    margin-left: 10rem;
+}
+
+.nav-link{
+    color: azure;
+}
+
+.nav-link:hover{
+    color: #1ed760;
+}
+.d1{
+    background-color: #993399;
+    width: 100%;
+    height: 82vh;
+}
+.premium{
+    /* background-color: #14960F; */
+    display: inline-block;
+    width: 44rem;
+    height: 30rem;
+    margin-left: 13%;
+    margin-top: 5%;
+}
+.premiumPara{
+    color: white;
+}
+.premiumButton{
+    background-color: black;
+    color: white;
+    padding: 14px 32px;
+    border-radius: 500px;
+    margin-top: 2rem;
+
+}
+ .p2{
+    line-height: 1.2;
+            margin: 0px;
+            padding: 0px;
+            font-weight: 900;
+            max-width: 100%;
+            width: auto;
+            display: inline-block;
+            font-size: 3.5rem;
+            margin-top: 2rem;
+}
+.p3{
+    line-height: 1.5;
+            margin: 15px 0px 0px;
+            padding: 0px;
+            width: 100%;
+            max-width: 100%;
+            display: inline-block;
+            font-weight: 400;
+            font-size: 24px;
+            margin-top: 2rem;
+
+}
+.p4{
+    box-sizing: border-box;
+            font-family: spotify-circular, Helvetica, Arial, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+            display: block;
+            padding: 0px 0px 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0.25px;
+            color: inherit;
+            margin-top: 2rem;
+
+}
+
+.premiumPic{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 410px;
+    top: 8rem;
+    right: 8%;
+}
+
+.d2{
+    width: 100%;
+  height: auto;
+  background-color: #2941ab;
+  background-image: url('pic/bg-musicas-tablet.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 9rem 0;
+}
+
+.d2 .para{
+    color: #1ed760;
+}
+
+.d2 .para h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    max-width: 560px;
+}
+.d2 .para h2 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 2rem;
+    font-weight: normal;
+    max-width: 560px;
+  }
+
+  .d2 .para h3 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+   .butt{
+    width: 280px;
+    padding: 0.8rem 3rem;
+    background-color: #1ed760;
+    color: #2941ab;
+    letter-spacing: 2px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 500px;
+    cursor: pointer;
+    font-family: "Circular Std Book", sans-serif;
+    
+  }
+
+  
+  #footer {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    padding: 4rem 0;
+  }
+  
+  #footer a {
+    color: #fff;
+  }
+  
+  #footer a:hover {
+    color: #1ed760;
+    text-decoration: none;
+  }
+  
+  #footer .logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  
+  #footer .logos .socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  #footer .logos .socials .svg {
+    background: #222326;
+    width: 54px;
+    height: 54px;
+    -webkit-clip-path: circle();
+            clip-path: circle();
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  #footer .logos .socials .svg a {
+    color: #fff;
+  }
+  
+  #footer .logos .socials .svg a:hover {
+    color: #1ed760;
+    text-decoration: none;
+  }
+  
+  #footer .links {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  #footer .links h6 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #919496;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+  
+  #footer .links li {
+    list-style: none;
+    margin-bottom: 1rem;
+  }
+  
+  
+  #footer .pais a {
+    color: #919496;
+  }
+  
+  #footer .pais a:hover {
+    color: #1ed760;
+    text-decoration: none;
+  }
+  
+  #footer .copyrights {
+    color: #919496;
+    font-size: 0.8rem;
+  }
+  
+  #footer .copyrights .copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  
+  #footer .copyrights .a ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    list-style: none;
+    gap: 2rem;
+  }
+  
+  #footer .copyrights .a ul a {
+    color: #919496;
+  }
+  
+  #footer .copyrights .a ul a:hover {
+    color: #1ed760;
+    text-decoration: none;
+  }
+
+  a{
+      text-decoration: none;
+  }
+
+
+
+  /* ==========MEDIA QUERIES (medium devices) ========= */
+@media screen and (max-width:1024px) {
+    .p4{
+        display: none;
+    }
+    .premiumPic{
+        display: none;
+    }
+    .premium{
+        width: fit-content;
+        max-width: 550px;
+        /* font-size: 20px; */
+    }
+  }
+  /* ==========MEDIA QUERIES (small devices) ========= */
+  @media screen and (max-width:600px) {
+  
+   .para{
+       font-size: 1px;
+   }
+  }
