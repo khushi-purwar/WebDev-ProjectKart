@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Align Planet and Sun</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<svg version="1.1" id="sunExplorer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-50 -50 900 700">
+  <style>
+    .noselect {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  </style>
+  <linearGradient id="gradient" gradientTransform="rotate(90)">
+    <stop offset="35%" stop-color="#fff" />
+    <stop offset="40%" stop-color="#fff" stop-opacity="0" />
+    <stop offset="60%" stop-color="#fff" stop-opacity="0" />
+    <stop offset="65%" stop-color="#fff" />
+  </linearGradient>
+  <linearGradient id="strokeGradient">
+    <stop offset="0%" stop-color="#000" stop-opacity="0.13" />
+    <stop offset="40%" stop-color="#000" stop-opacity="0" />
+  </linearGradient>
+  <pattern id="pattern" x="0" y="300" width="500" height="35" patternTransform="rotate(0)" patternUnits="userSpaceOnUse">
+    <rect y="15" width="100%" height="10" fill="skyblue" opacity="0.1" />
+  </pattern>
+  <rect x="-100%" y="-100%" width="300%" height="300%" fill="url(#pattern)" />
+  <rect x="-100%" y="-100%" width="300%" height="300%" fill="url(#gradient)" />
+  <path fill="none" stroke="url(#strokeGradient)" stroke-width="10" d="M0,300l1834,798M0,300l1834,-798M0,300h2000" />
+  <circle fill="#5BA7D6" stroke="#FFFFFF" stroke-width="10" cx="0" cy="300" r="200" />
+  <polygon id="houseStroke" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="20" points="220,340 244,300 220,260 205.2,260 205.2,340" />
+  <g id="house">
+    <g id="houseArrows" opacity="0">
+      <path fill="none" stroke="#DB1507" stroke-width="20" d="M190,400c15.7-30,25-63.9,25-100s-9.3-71-25-100" />
+      <path fill="#DB1507" stroke="#DB1507" stroke-width="8" d="M199,195.6l-8.8,4.7l-8.8,4.7l3-15.7L199,195.6z M184,410.9l14.7-6.3l-8.8-4.7l-8.8-4.7L184,410.9z" />
+    </g>
+    <polygon fill="#CECECE" points="220,340 244,300 220,260 174,260 174,340" />
+    <rect x="179.4" y="292.6" fill="#DB1507" width="32" height="16" />
+    <path fill="#FFFFFF" d="M197.4,330.6v-12h19v12H197.4z M216.4,282.6v-12h-19v12H216.4z" />
+    <polyline fill="none" stroke="#000000" stroke-width="4" points="216,346.5 243.9,300 216,253.5" />
+    <text id="houseDegrees" class="noselect" x="170" y="307" text-anchor="end" fill="#ffffff" font-size="40" font-weight="bold">0°</text>
+    <rect id="houseHit" x="125" y="210" fill="#FFFFFF" opacity="0" width="150" height="180" cursor="pointer" />
+  </g>
+  <g id="sun">
+    <g id="sunArrows" opacity="0">
+      <path fill="none" stroke="#DB1507" stroke-width="20" d="M695,400c4.7-32.7,7-66,7-100s-2.3-67.3-7-100" />
+      <path fill="#DB1507" stroke="#DB1507" stroke-width="8" d="M704.8,198.6l-9.9,1.4l-9.9,1.4l8.2-13.8L704.8,198.6z M692.9,412.5l11.6-11l-9.9-1.4l-9.9-1.4L692.9,412.5z" />
+    </g>
+    <circle fill="#F9CF00" stroke="#FFFFFF" stroke-width="10.625" cx="700" cy="300" r="42.5" />
+    <path id="sunRays" fill="none" stroke="#F9CF00" stroke-width="10" d="M673,235l9,20 M727,365l-9-20 M745,282l20-9 M635,327l20-9 M727,235l-9,20 M682,345l-9,20 M745,318l20,9 M635,273l20,9" />
+    <text id="sunDegrees" class="noselect" x="702" y="310" fill="#fff" text-anchor="middle" font-size="30" font-weight="bold">0°</text>
+    <rect id="sunHit" x="625" y="210" fill="#FFFFFF" opacity="0" width="150" height="180" cursor="pointer" />
+  </g>
+</svg>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
