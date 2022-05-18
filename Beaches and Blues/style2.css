@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+    
+    background-image: url('bg.gif');
+	background-position: center;
+	background-size: cover;
+	
+}
+
+.container{
+    height: 75vh;
+    width:30%;
+    background:rgba(0,0,0,0.6);
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 0 20px;
+}
+.container .img{
+    width:70px;
+    height:70px;
+    background:url('abl.jpg')no-repeat;
+    border-radius: 50px;
+    top: 0%;
+    left:50%;
+    background-position: center;
+	background-size: cover;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.container h1{
+    color:white;
+    margin-top:40px;
+    text-align: center;
+    margin-top: 50px;
+}
+.container p{
+    color:white;
+    font-style: italic;
+    font-size:22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: auto;
+
+}
+
+.btn{
+    
+    background-color: aqua;
+    color:rgba(3, 3, 83, 0.89);
+    border-radius: 19px;
+    
+    width:150px;
+    position: relative;
+    margin-left: 33%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top:auto;
+    box-shadow: rgb(117, 245, 245);
+}
+.btn:hover{
+    background-color: rgba(3, 3, 83, 0.89);
+    color:aqua;
+    box-shadow: rgb(117, 245, 245);
+}
