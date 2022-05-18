@@ -1,127 +1,138 @@
-* {
-  box-sizing: border-box;
-}
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  
+  background: #fff;
+  background-image: url("background.jpg");
+  background-size: 700px 700px;
+  color: #333;
+  font-family: Lato, sans-serif;
 }
-.todo-container {
-  width: 600px;
-  min-height: 260px;
-  margin: 30px auto 0px;
-  background-color: rgb(240, 238, 241);
+.container {
+  display: block;
+  width: 400px;
+  margin: 100px auto 0;
 }
-.todo-container .add-task {
-  display:flex ;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 260px;
-  padding: 15px;
-  background-color: rgb(21, 83, 112);
-  position: relative;
+h1 {
+     
+    width:500px;
+    margin: 0 auto;
+    background: gray;
+    text-align: center;
+    text-decoration: solid;
+}
+h4 {
+width:200px;
+margin: 0 auto;
+text-align: center;
+text-decoration: solid;
 }
 
-.todo-container .add-task h1{
-  color: whitesmoke;
+ul {
+  margin: 0;
+  padding: 0;
 }
-.todo-container .add-task input {
-  display: inline-block;
-  padding: 10px 15px;
-  border: none;
-  background-color: rgba(57, 130, 215, 0.3);
-  width: calc(100% - 15px);
-  color: #fff;
-  font-size: 20px;
+li * {
+  float: left;
 }
-.todo-container .add-task input:focus {
+li, h3 {
+  clear:both;
+  list-style:none;
+}
+input, button {
   outline: none;
 }
-.todo-container .add-task .plus {
-  position: absolute;
-  height: 43px;
-  width: 73px;
-  top: 146px;
-  background-color: rgb(57, 183, 183);
-  right: 12px;
-  border-radius: 5px;
-  line-height: 43px;
-  text-align: center;
-  color:white;
-  cursor: pointer;
-  font-size: 40px;
-  transition: transform 0.3s ease;
-}
-
-.todo-container .tasks-content {
-  padding: 5px;
-}
-.todo-container .tasks-content .no-tasks-message {
-  color: #777;
+button {
+  background: none;
+  border: 0px;
+  color: white;
   font-size: 15px;
+  width: 60px;
+  margin: 10px 0 0;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
 }
-.todo-container .tasks-content > span {
-  /* all direct children */
+button:hover {
+  color: #333;
+}
+
+h3,
+label[for='new-task'] {
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #fff;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+  text-decoration: solid;
+}
+input[type="text"] {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: black;
+}
+input[type="text"]:focus {
+  color: white;
+}
+
+
+label[for='new-task'] {
   display: block;
-  background-color: rgb(145, 229, 246);
-  padding: 10px;
+  margin: 0 0 20px;
 }
-.todo-container .tasks-content > span:not(:last-child) {
-  /* all direct children except last child */
-  margin-bottom: 10px;
-}
-.todo-container .tasks-content .task-box .delete {
-  float: right;
-  background-color: #d80909;
-  padding: 4px 10px;
-  color: #fff;
-  font-size: 12px;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.todo-container .tasks-content .task-box .edit {
-  margin-right: 2%;
-  float: right;
-  background-color: rgb(7, 150, 38);
-  padding: 4px 10px;
-  color: #fff;
-  font-size: 12px;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.todo-container .tasks-content .task-box.finished {
-  text-decoration: line-through;
-}
-.task-stats {
-  overflow: hidden;
-  margin: 10px auto;
-  width: 600px;
-  font-size: 12px;
-}
-.task-stats .tasks-count,
-.task-stats .tasks-completed {
-  width: 50%;
+input#new-task {
   float: left;
-  padding: 10px;
+  width: 318px;
 }
-.task-stats .tasks-completed {
-  text-align: right;
+p > button:hover {
+  color: #0FC57C;
 }
-.task-stats .tasks-count span,
-.task-stats .tasks-completed span {
-  color: #fff;
-  padding: 1px 5px;
-  font-size: 9px;
-  border-radius: 3px;
-  font-weight: bold;
-}
-.task-stats .tasks-count span {
-  background-color: #e91e63;
-}
-.task-stats .tasks-completed span {
-  background-color: #03a9f4;
 
+
+li {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+li > input[type="checkbox"] {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+}
+li > label {
+  font-size: 18px;
+  line-height: 40px;
+  width: 237px;
+  padding: 0 0 0 11px;
+}
+li >  input[type="text"] {
+  width: 226px;
+}
+li > .delete:hover {
+  color: #CF2323;
+}
+
+
+#completed-tasks label {
+  text-decoration: line-through;
+  color: white;
+}
+
+
+ul li input[type=text] {
+  display:none;
+}
+
+ul li.editMode input[type=text] {
+  display:block;
+}
+
+ul li.editMode label {
+  display:none;
 }
