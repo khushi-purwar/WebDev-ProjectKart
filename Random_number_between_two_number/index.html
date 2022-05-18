@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Number Generator</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+          <h3>Fill the respective column</h3>
+        <div class="input-wrapper">
+          <label for="min">Min:</label>
+          <input type="number" id="min" value="0" />
+        </div>
+        <div class="input-wrapper">
+          <label for="max">Max:</label>
+          <input type="number" id="max" value="10" />
+        </div>
+      </div>
+      <button id="generate">Generate</button>
+      <div id="result"></div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
