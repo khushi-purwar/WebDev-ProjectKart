@@ -1,30 +1,35 @@
+<html>
+  <head>
+    <title>To-Do List</title>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">    
+  </head>
+  <body>
+    <div class="container">
+    <h1> TO-DO list </h1>
 
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDo App</title>
-    <link rel="stylesheet" href="assests/style.css">
-</head>
-<body>
-    <div class="todo-container">
-        <div class="add-task">
-          <h1>
-            ToDo App
-          </h1>
-            <input type="text">
-            <span class="plus">Add</span>
-        </div>
-        <div class="tasks-content">
-            <span class="no-tasks-message">No Tasks To Show</span>
-        </div>
+      <p>
+        <label for="new-task">Add Item</label><input id="new-task" type="text"><button>Add</button>
+      </p>
+      
+      <h3>Todo</h3>
+      <ul id="incomplete-tasks">
+        <li><input type="checkbox"><label>This is example check1</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+        <li><input type="checkbox"><label>This is example check2</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+        
+      </ul>
+      
+      <h3>Completed</h3>
+      <ul id="completed-tasks">
+        <li><input type="checkbox" checked><label>This is example check3</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+      </ul>
     </div>
-    
-    <script src="script/script.js"></script>
-</body>
+<br>
+   
+   <h4> Ⓒ created by Aditya Prakash </h4>
 
+    <script type="text/javascript" src="script.js"></script>
+
+  </body>
 </html>
-
