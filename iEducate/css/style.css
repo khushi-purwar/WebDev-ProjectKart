@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Besley&family=Kaisei+Decol&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    display: flex;
+}
+.rightnav{
+    width: 50%;
+    display: flex;
+}
+.rightnav img{
+    margin: 3px 10px;
+    height: 70px;
+    width: 70px;
+    border-radius: 54px;
+    border: 3px solid black;
+    transition: all 0.5s ease-in-out;
+}
+.rightnav img:hover{
+    transform: rotate(360deg);
+}
+.leftnav{
+    text-align: right;
+    width: 50%;
+   
+}
+.navlist{
+    display: flex;
+}
+.leftnav input{
+    width: 31%;
+    border: 3px solid black;
+    border-radius: 9px;
+    outline: none;
+    margin: 22px;
+    height: 27px;
+}
+.btn{
+    font-family: 'Besley', serif;
+    color: white;
+    background: none;
+    margin-right: 21px;
+    border: 2px solid white;
+    border-radius: 21px;
+    outline: none;
+    cursor: pointer;
+    padding: 6px 14px;
+    font-size: 15px;
+}
+.btn:hover{
+    color: black;
+    background-color: rgb(218, 210, 210);
+    
+}
+.navlist li{
+    margin: 26px 38px;
+    list-style: none;  
+}
+.navlist li a{
+    font-family: 'Besley', serif;
+    padding: 0px 6px;
+    font-size: 20px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+.navlist li a:hover{
+    color: rgb(141, 131, 131);
+}
+.firstsec{
+    height: 90vh;
+    display: flex;
+}
+.secondhalf img{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 153px;
+    
+}
+.secondhalf{
+    display: block;
+    margin: 116px auto;
+}
+.firsthalf{
+    width: 61%;
+    text-align: center;
+}
+.firsthalf .heading{
+    font-family: 'Kaisei Decol', serif;
+    color: white;
+    padding-top: 155px;
+    font-size: 3.3rem;
+    padding-left: 75px;
+}
+.firsthalf .paras{
+    font-family: 'Baloo Bhaina 2', cursive;
+    color: white;
+    padding-top: 35px;
+    font-size: 28px;
+    padding-left: 55px;
+}
+.btn-sm{
+    color: white;
+    margin: 24px 25px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 7px;
+}
+.background{
+    background: url("../img/bg.jpeg") rgba(0,0,0,0.7);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.box{
+    display: flex;
+    padding: 50px 50px
+}
+.box2 img{
+    margin-right: 30px;
+}
+.box2{
+    padding-left: 48px;
+    flex-direction: row-reverse;
+}
+
+.box .content{
+    text-align: center;
+}
+.box .content h1{
+    font-family: 'Rampart One', cursive;
+    font-size: 55px;
+    
+}
+.box .content p{
+    font-family: 'Baloo Bhaina 2', cursive;
+    
+    font-size: 26px;
+    padding-top: 76px;
+    padding-right: 50px;
+}
+.box img{
+    border-radius: 74px;
+    border: 2px solid black;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.thirdsec{
+    background-color: #e3dcea;
+    height: 80vh;
+}
+.thirdsec h1{
+    padding-top: 25px ;
+    font-size: 55px;
+    text-decoration: underline;
+    text-align: center;
+}
+.contact input{
+    font-family: 'Baloo Bhaina 2', cursive;
+    margin: 10px 0px;
+    width: 50%;
+    height: 34px;
+    border: 2px solid black;
+    border-radius: 12px;
+    font-size: 22px;
+    padding: 3px 3px;
+    outline: none;
+   
+}
+.burger{
+    display: none;
+    width: 46px;
+    border: 2px solid black;
+    position: absolute;
+    top: 3%;
+    right: 2%;
+    height: 46px;
+    border-radius: 10px;
+}
+.line{
+    display: block;
+    background-color: white;
+    width: 81%;
+    height: 3px;
+    margin: 9px 5px;
+}
+.last{
+    width: 8%;
+    margin-top: 30px;
+    padding: 6px 0px;
+    border: 2px solid black;
+    color: black;
+    font-size: 20px;
+}
+footer{
+    font-family: 'Baloo Bhaina 2', cursive;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    height: 50px;
+    padding-top: 20px;
+}
+@media only screen and (max-width:1085px) {
+        .rightnav{
+            flex-direction: column;
+            width: 100%;
+        }
+        .navlist{
+            flex-direction: column;
+            align-items: center;
+        }
+        .leftnav{
+            flex-direction: column;
+            display: flex;
+            width: 100%;
+            text-align: center;
+        }
+        .navlist li {
+            margin: 2px 38px;
+        }
+        .rightnav img{
+            display: block;
+            margin: auto;
+        }
+        .navbar{
+            transition: all 0.7s ease-out;
+            height: 320px;
+            flex-direction: column;
+        }
+        .burger{
+            display: block;
+        }
+        .h-list{
+            height: 72px;
+        }
+        .v-list{
+            opacity: 0;
+        }
+        .leftnav input{
+            display: block;
+            margin: auto;
+            width: 75%;
+        }
+        .leftnav .btn{
+            width: 25%;
+            display: block;
+            margin: 12px auto;
+            padding: 2px 0px;
+        }
+      
+        .firstsec{
+            align-items: center;
+            height: 200%;
+            flex-direction: column-reverse;
+        }
+        .secondhalf{
+            margin: 36px 0px;
+        }
+        .secondhalf img{
+            width: 215px;
+            height: 215px;
+        }
+        .firsthalf .heading{
+            font-size: 30px;
+            padding: 0px 0px;
+        }
+        .firsthalf .paras{
+            padding: 15px 0px;
+            font-size: 22px;
+        }
+        .firsthalf .btn{
+            padding: 0px 5px;
+            margin: 20px 14px;
+            font-size: 15px;
+        }
+        .box{
+            align-items: center;
+            flex-direction: column-reverse;
+        }
+        .box img{
+            width: 224px;
+            height: 244px;
+        }
+        .box .content p{
+            font-size: 20px;
+            padding: 45px 0px;
+        }
+        .box .content h1{
+            font-size: 32px;
+            padding-top: 22px;
+        }
+        .last{
+            padding: 0px 0px;
+            margin: 7px 0px;
+            width: 100px;
+        }
+        footer{
+            font-size: 12px;
+            padding-top: 25px;
+        }
+        .thirdsec{
+            height: 63vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+        }
+        .thirdsec h1{
+            padding-top: 0px;
+        }
+        .contact{
+            margin: 0px 0px;
+            margin-top: 5px;
+        }
+        .contact input{
+            margin: 7px 0px;
+            height: 22px;
+            font-size: 17px;
+            width: 132%;
+        }
+}

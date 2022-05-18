@@ -1,0 +1,199 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.full-page
+{
+    height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('bg.gif');
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+nav
+{
+    flex: 1;
+    text-align: right;
+}
+nav ul 
+{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 70px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+nav ul li button
+{
+    font-size: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+nav ul li button:hover
+{
+    color: aqua;
+}
+nav ul li a:hover
+{
+    color: aqua;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+}
+a:hover{
+    text-decoration: none;
+    color: aqua;
+    font-size: 32px;
+	cursor: pointer;
+	outline: none;
+	border: none;
+}
+.log{
+	height: 60vh;
+    width:26%;
+    background:rgba(0,0,0,0.6);
+    position: absolute;
+   top:55%;
+   left:10%;
+   margin-left: 20%;
+    transform: translate(-50%,-50%);
+    padding: 0 20px;
+}
+.reg{
+	height: 60vh;
+    width:26%;
+    background:rgba(0,0,0,0.6);
+    position: absolute;
+   top:55%;
+   left:10%;
+   margin-left: 60%;
+    transform: translate(-50%,-50%);
+    padding: 0 20px;
+}
+.top{
+	width:100%;
+	height: 50px;
+	
+	margin:20px auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px rgb(2, 77, 77);
+	border-radius: 3px;
+	background-color: aqua;
+	color:black;
+}
+.submit-btn
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: aqua;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+    box-shadow: 0 0 20px 9px rgb(2, 77, 77);
+}
+#login-form
+{
+    display: none;
+}
+.input-group-login
+{
+	top: 250px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-group-register
+{
+    top: 80px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-field
+{
+	width: 100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid #999;
+	outline:none;
+	background: transparent;
+	color: aliceblue;
+}
+.submit-btn
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: aqua;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+    box-shadow: 0 0 20px 9px rgb(2, 77, 77);
+}
+.check-box
+{
+	margin: 30px 10px 34px 0;
+}
+span
+{
+	color:#777;
+	font-size:12px;
+	bottom:68px;
+	position:absolute;
+}
+#login
+{
+	left:50px;
+	top:30px;
+}
+#login input
+{
+	color:white;
+	font-size:15;
+}
+#register
+{
+	left:30px;
+}
+#register input
+{
+	color:white;
+	font-size: 15;
+}
