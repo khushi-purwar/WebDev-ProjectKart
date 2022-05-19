@@ -19,3 +19,10 @@ Start the live server
 This project is used by the following companies:
 
 - https://github.com/khushi-purwar/WebDev-ProjectKart
+
+
+## Video 
+
+
+https://user-images.githubusercontent.com/91609324/169364075-d4ac7c77-3c3f-418c-81e7-87c729182123.mp4
+
