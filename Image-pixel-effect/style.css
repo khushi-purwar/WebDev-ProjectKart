@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: black;
+
+}
+#canvas1{
+    border: 2px solid white;
+    top: 50%;
+    left: 50%;
+    transform: translate(29%,18%);
+    width: 620px;
+    height: 424px;}
