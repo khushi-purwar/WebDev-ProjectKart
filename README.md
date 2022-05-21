@@ -201,7 +201,7 @@
 
 Thanks to all the **people who contribute** 💜
 
-![Contributors](https://contributors-img.web.app/image?repo=khushi-purwar/Web-Dev-ProjectKart)
+![Contributors](https://contrib.rocks/image?repo=khushi-purwar/WebDev-ProjectKart&max=200&coulmns=16)
 
 
 
