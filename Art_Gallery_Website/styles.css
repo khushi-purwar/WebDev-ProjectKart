@@ -1,0 +1,111 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Dancing+Script:wght@400;600;700&family=Roboto&family=Tiro+Devanagari+Marathi:ital@1&family=Tiro+Telugu:ital@1&family=Ubuntu&display=swap');
+</style>
+
+.navbar-nav{
+  padding-right : 70px;
+}
+
+.size{
+  margin-right: 20px;
+}
+
+.nav-link{
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+}
+
+.nav-brand{
+  font-family: 'Dancing Script', cursive;
+  font-weight: bolder;
+  padding-left: 20px;
+}
+
+.firstpic{
+  float : left;
+  margin-left: 8px;
+  margin-top: 10px;
+}
+
+.head{
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 130px;
+  color: #46244C;
+  line-height: 1.5;
+}
+.image1{
+  width:21.5%;
+  margin-left: 30px;
+}
+
+.image2{
+  width : 50%;
+}
+
+.image3{
+  width: 20%;
+}
+
+.image4{
+  width: 61.5%;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+.image5{
+  width: 30.5%;
+  padding-top: 5px;
+}
+
+.carousel-item{
+  width: 70%;
+  margin: 0 50px 10px 170px;
+
+}
+
+.carousel-caption{
+  font-family: 'Tiro Telugu', serif;
+  font-size: 25px;
+  background-color: white;
+  opacity: 70%;
+  color: black;
+}
+
+.headings{
+  background-color: #8E3200;
+  color: white;
+  margin: 25px 0 25px 0;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  padding: 5px 0 5px 0;
+}
+
+.clear{
+  clear: both;
+}
+
+.footer{
+  background-color: #4D96FF;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: 'Tiro Devanagari Marathi', serif;
+  font-size: 18px;
+}
+
+.notice{
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.icon{
+  padding: 15px 5px 15px 5px;
+  color: black;
+}
+
+.icon:hover{
+  color:white;
+}
