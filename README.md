@@ -9,7 +9,7 @@
 <div align="center">
 
 ![Contributors](https://img.shields.io/github/contributors/khushi-purwar/WebDev-ProjectKart?style=for-the-badge) ![Forks](https://img.shields.io/github/forks/khushi-purwar/WebDev-ProjectKart?style=for-the-badge) ![Stars](https://img.shields.io/github/stars/khushi-purwar/WebDev-ProjectKart?style=for-the-badge) ![License](https://img.shields.io/github/license/khushi-purwar/WebDev-ProjectKart?style=for-the-badge)
-![PRs-Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge) ![](https://img.shields.io/github/issues-raw/khushi-purwar/WebDev-ProjectKart?color=orange&style=for-the-badge) ![](https://img.shields.io/github/issues-closed/khushi-purwar/WebDev-ProjectKart?style=for-the-badge) ![](https://img.shields.io/github/issues-pr/khushi-purwar/WebDev-ProjectKart?style=for-the-badge) ![](https://img.shields.io/github/issues-pr-closed-raw/khushi-purwar/WebDev-ProjectKart?style=for-the-badge)
+![PRs-Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge) ![](https://img.shields.io/github/issues-raw/khushi-purwar/WebDev-ProjectKart?color=orange&style=for-the-badge) ![](https://img.shields.io/github/issues-closed/khushi-purwar/WebDev-ProjectKart?style=for-the-badge) ![](https://img.shields.io/github/issues-pr/khushi-purwar/WebDev-ProjectKart?style=for-the-badge) ![](https://img.shields.io/github/issues-pr-closed-raw/khushi-purwar/WebDev-ProjectKart?style=for-the-badge) ![Repo Size](https://img.shields.io/github/repo-size/khushi-purwar/WebDev-ProjectKart?style=for-the-badge)
   
 </div>
 
