@@ -19,10 +19,9 @@
 
 <div align="center">
   
-  <img src="https://github.com/khushi-purwar/Web-Dev-ProjectKart/blob/master/weblogo.jpg" width="770" height="400" />
+  <img src="https://raw.githubusercontent.com/halfrost/halfrost/master/icons/header_.png" width="1000" height="250" />
 
-  
-  </div>
+</div>
 
 <br>
 
