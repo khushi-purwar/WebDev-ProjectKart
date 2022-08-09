@@ -17,18 +17,7 @@
 
 <!-- ---------------------------------------------------------------------------------------------------------------------- -->
 
-<div align="center">
-  
-  <img src="https://raw.githubusercontent.com/halfrost/halfrost/master/icons/header_.png" width="1000" height="250" />
 
-</div>
-
-<br>
-
-<br>
-
-<!-- ---------------------------------------------------------------------------------------------------------------------- -->  
-  
 <p align="center">
     <a href="https://github.com/khushi-purwar/Web-Dev-ProjectKart/issues">Report Bug</a>
     ·
