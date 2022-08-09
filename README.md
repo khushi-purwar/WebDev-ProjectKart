@@ -169,7 +169,7 @@
 
 <table>
 <tr>
-<td align="center"><a href="https://github.com/khushi-purwar"><img src="https://media-exp1.licdn.com/dms/image/C5603AQFQjgQVGH77fQ/profile-displayphoto-shrink_800_800/0/1621153995462?e=1656547200&v=beta&t=BELSczhDO3qkGwwwmguL-NZcoqc6YQqNuPzaleZGH1M" width=150px height=150px /></a></br> <h4 style="color:red;">Khushi Purwar</h4>
+<td align="center"><a href="https://github.com/khushi-purwar"><img src="https://media-exp1.licdn.com/dms/image/C5603AQFQjgQVGH77fQ/profile-displayphoto-shrink_400_400/0/1621153995462?e=1665619200&v=beta&t=UbD9DOfYiLYRtpnhCkZrKZt52WNBO5FNJgAC2JseJdw" width=150px height=150px /></a></br> <h4 style="color:red;">Khushi Purwar</h4>
 <a href="https://www.linkedin.com/in/khushi-purwar/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a></td>
 </tr>
 </table>
